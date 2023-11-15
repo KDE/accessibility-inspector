@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: CC0-1.0
+# SPDX-FileCopyrightText: 2023 Carl Schwan <carl@carlschwan.eu>
+
+[Desktop Entry]
+Name=Accessibility Inspector
+GenericName=Accessibility Inspector
+Comment=Inspect your application and detect accessibility issues
+Exec=accessibilityinspector
+Terminal=false
+Icon=org.kde.accessibilityinspector
+Type=Application
+Categories=Qt;KDE;Utility;Development;

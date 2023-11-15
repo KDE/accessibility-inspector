@@ -20,8 +20,10 @@ target_sources(accessibilityinspector PRIVATE
 )
 
 target_link_libraries(accessibilityinspector
-    QAccessibilityClient
-    Qt${QT_MAJOR_VERSION}::Widgets
+    QAccessibilityClient${QT_MAJOR_VERSION}
+    KF${QT_MAJOR_VERSION}::I18n
+    KF${QT_MAJOR_VERSION}::CoreAddons
+    Qt::Widgets
 )
 
 install(TARGETS accessibilityinspector DESTINATION bin)

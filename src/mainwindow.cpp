@@ -14,7 +14,9 @@
 #include <qurl.h>
 #include <QClipboard>
 
-#include "qaccessibilityclient/registrycache_p.h"
+#include <KLocalizedString>
+
+#include <qaccessibilityclient/registrycache_p.h>
 
 #include "accessibleproperties.h"
 #include "accessibletree.h"
@@ -26,7 +28,6 @@ using namespace QAccessibleClient;
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
 {
-    setWindowTitle(QLatin1String("Randamizer"));
     m_registry = new QAccessibleClient::Registry(this);
 
     initUi();
@@ -106,7 +107,7 @@ void MainWindow::MainWindow::closeEvent(QCloseEvent *event)
 void MainWindow::MainWindow::initActions()
 {
     m_resetTreeAction = new QAction(this);
-    m_resetTreeAction->setText(QStringLiteral("Reset Tree"));
+    m_resetTreeAction->setText(i18nc("@action:button", "Reset Tree"));
     m_resetTreeAction->setShortcut(QKeySequence(QKeySequence::Refresh));
     connect(m_resetTreeAction, SIGNAL(triggered()), m_accessibleObjectTreeModel, SLOT(resetModel()));
 

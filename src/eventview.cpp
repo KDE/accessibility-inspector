@@ -72,8 +72,10 @@ public:
         m_apps.clear();
         setColumnCount(4);
         QStringList headerLabels;
-        for (Role r : QList<Role>() << AccessibleRole << RoleRole << EventRole << ActionRole)
+        const QList<Role> roles{ AccessibleRole, RoleRole, EventRole, ActionRole };
+        for (Role r : roles) {
             headerLabels << roleLabel(r);
+        }
         setHorizontalHeaderLabels(headerLabels);
     }
     struct LogItem {

@@ -7,8 +7,8 @@
 #ifndef UIVIEW_H
 #define UIVIEW_H
 
-#include "qaccessibilityclient/accessibleobject.h"
-#include "qaccessibilityclient/registry.h"
+#include <qaccessibilityclient/accessibleobject.h>
+#include <qaccessibilityclient/registry.h>
 
 #include <QImage>
 #include <QPixmap>

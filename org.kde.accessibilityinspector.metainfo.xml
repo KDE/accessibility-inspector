@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  - SPDX-License-Identifier: CC0-1.0
+  - SPDX-FileCopyrightText: 2023 Carl Schwan <carlschwan@kde.org>
+ -->
+<component type="desktop">
+  <id>org.kde.accessibilityinspector</id>
+  <provides>
+    <binary>accessibilityinspector</binary>
+  </provides>
+  <name>Acccessibility Inspector</name>
+  <summary>Inspect your application accessibility tree</summary>
+  <description>
+    <p>Acccessibility Inspector is like the name suggest an inspector for your application accessibility tree. It lets you check all the item exposed via At-SPI to .</p>
+  </description>
+  <url type="homepage">https://apps.kde.org/accessibilityinspector/</url>
+  <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?product=AccessibilityInspector</url>
+  <categories>
+    <category>Development</category>
+  </categories>
+  <developer_name>The KDE Community</developer_name>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>LGPL-2.0-or-later</project_license>
+  <custom>
+    <value key="KDE::matrix">#kde-accessibility:kde.org</value>
+  </custom>
+  <launchable type="desktop-id">org.kde.accessibilityinspector.desktop</launchable>
+  <content_rating type="oars-1.1" />
+  <screenshots>
+    <screenshot type="default">
+      <image>https://cdn.kde.org/screenshots/accessibilityinspector/properties.png</image>
+    </screenshot>
+    <screenshot type="default">
+      <image>https://cdn.kde.org/screenshots/accessibilityinspector/events.png</image>
+    </screenshot>
+  </screenshots>
+</component>

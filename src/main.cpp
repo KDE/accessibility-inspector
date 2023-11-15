@@ -5,13 +5,43 @@
 */
 
 #include <QApplication>
+#include <QCommandLineParser>
+#include <KLocalizedString>
+#include <KAboutData>
 
 #include "mainwindow.h"
+#include "inspector-version.h"
 
 int main(int argc, char** argv)
 {
     QApplication app(argc, argv);
-    app.setApplicationName(QLatin1String("Accessibility Inspector"));
+
+    KLocalizedString::setApplicationDomain("accessibilityinspector");
+
+    KAboutData about(QStringLiteral("accessibilityinspector"),
+                     i18n("Accessibility Inspector"),
+                     QStringLiteral(INSPECTOR_VERSION_STRING),
+                     i18n("Accessibility inspector"),
+                     KAboutLicense::LGPL_V2,
+                     i18n("© 2021-2023 Carl Schwan, 2021-2023 KDE Community"));
+
+    about.addAuthor(i18n("Carl Schwan"),
+                    i18n("Original author"),
+                    QStringLiteral("gladhorn@kde.org")
+            );
+
+    about.addAuthor(i18n("Frederik Gladhorn"),
+                    i18n("Maintainer"),
+                    QStringLiteral("carl@carlschwan.eu"),
+                    QStringLiteral("https://carlschwan.eu"),
+                    QUrl(QStringLiteral("https://carlschwan.eu/avatar.png")));
+
+    KAboutData::setApplicationData(about);
+    QGuiApplication::setWindowIcon(QIcon::fromTheme(QStringLiteral("org.kde.accessibilityinspector")));
+
+    QCommandLineParser parser;
+    about.setupCommandLine(&parser);
+    parser.process(app);
 
     MainWindow window;
     window.show();
