@@ -7,12 +7,12 @@
 #ifndef EVENTVIEW_H
 #define EVENTVIEW_H
 
-#include <QTimer>
-#include <QBoxLayout>
 #include <QAccessible>
+#include <QBoxLayout>
+#include <QTimer>
 
-#include "qaccessibilityclient/registry.h"
 #include "qaccessibilityclient/accessibleobject.h"
+#include "qaccessibilityclient/registry.h"
 
 #include "ui_eventview.h"
 
@@ -22,7 +22,7 @@ class QSettings;
 class EventsModel;
 class EventsProxyModel;
 
-class EventsWidget :public QWidget
+class EventsWidget : public QWidget
 {
     Q_OBJECT
 public:
@@ -37,8 +37,6 @@ public:
         Object = 0x40,
         Text = 0x80,
         Table = 0x100,
-
-
 
         Others = 0x100000,
 
@@ -69,13 +67,14 @@ private Q_SLOTS:
     void eventActivated(const QModelIndex &index);
     void accessibleFilterChanged();
     void roleFilterChanged();
+
 private:
     QAccessibleClient::Registry *m_registry;
     Ui::EventViewWidget m_ui;
     EventsModel *m_model;
     EventsProxyModel *m_proxyModel;
     QTimer m_pendingTimer;
-    QVector< QList<QStandardItem*> > m_pendingLogs;
+    QVector<QList<QStandardItem *>> m_pendingLogs;
 
     // This is to avoid sending updates for the events view.
     // The reason is that we end up in endless loops with other accessible tools such as accerciser.

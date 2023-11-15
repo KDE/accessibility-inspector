@@ -17,12 +17,15 @@ class AccessibleWrapper
 {
 public:
     AccessibleWrapper(const QAccessibleClient::AccessibleObject &object, AccessibleWrapper *parent)
-    : acc(object), m_parent(parent)
-    {}
+        : acc(object)
+        , m_parent(parent)
+    {
+    }
 
     QAccessibleClient::AccessibleObject acc;
 
-    ~AccessibleWrapper() {
+    ~AccessibleWrapper()
+    {
         qDeleteAll(m_children);
     }
 
@@ -34,14 +37,14 @@ private:
     friend class AccessibleTree;
 
     AccessibleWrapper *m_parent;
-    QList<AccessibleWrapper*> m_children;
+    QList<AccessibleWrapper *> m_children;
 };
 
-class AccessibleTree :public QAbstractItemModel
+class AccessibleTree : public QAbstractItemModel
 {
     Q_OBJECT
 public:
-    explicit AccessibleTree(QObject* parent = nullptr);
+    explicit AccessibleTree(QObject *parent = nullptr);
     ~AccessibleTree() override;
 
     void setRegistry(QAccessibleClient::Registry *registry);
@@ -52,13 +55,16 @@ public:
     bool removeAccessible(const QModelIndex &index);
     void updateAccessible(const QAccessibleClient::AccessibleObject &object);
 
-    QList<AccessibleWrapper*> apps() const { return m_apps; }
+    QList<AccessibleWrapper *> apps() const
+    {
+        return m_apps;
+    }
 
-    int columnCount(const QModelIndex& parent = QModelIndex()) const override;
-    QVariant data(const QModelIndex& index, int role = Qt::DisplayRole) const override;
-    QModelIndex index(int row, int column, const QModelIndex& parent = QModelIndex()) const override;
-    QModelIndex parent(const QModelIndex& child) const override;
-    int rowCount(const QModelIndex& parent = QModelIndex()) const override;
+    int columnCount(const QModelIndex &parent = QModelIndex()) const override;
+    QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;
+    QModelIndex index(int row, int column, const QModelIndex &parent = QModelIndex()) const override;
+    QModelIndex parent(const QModelIndex &child) const override;
+    int rowCount(const QModelIndex &parent = QModelIndex()) const override;
     QVariant headerData(int section, Qt::Orientation orientation, int role = Qt::DisplayRole) const override;
 
 public Q_SLOTS:
@@ -75,7 +81,7 @@ Q_SIGNALS:
 
 private:
     QAccessibleClient::Registry *m_registry;
-    QList<AccessibleWrapper*> m_apps;
+    QList<AccessibleWrapper *> m_apps;
 };
 
 #endif // ACCESSIBLETREE_H

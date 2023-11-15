@@ -4,15 +4,15 @@
     SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
 */
 
+#include <KAboutData>
+#include <KLocalizedString>
 #include <QApplication>
 #include <QCommandLineParser>
-#include <KLocalizedString>
-#include <KAboutData>
 
-#include "mainwindow.h"
 #include "inspector-version.h"
+#include "mainwindow.h"
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
     QApplication app(argc, argv);
 
@@ -25,10 +25,7 @@ int main(int argc, char** argv)
                      KAboutLicense::LGPL_V2,
                      i18n("© 2021-2023 Carl Schwan, 2021-2023 KDE Community"));
 
-    about.addAuthor(i18n("Carl Schwan"),
-                    i18n("Original author"),
-                    QStringLiteral("gladhorn@kde.org")
-            );
+    about.addAuthor(i18n("Carl Schwan"), i18n("Original author"), QStringLiteral("gladhorn@kde.org"));
 
     about.addAuthor(i18n("Frederik Gladhorn"),
                     i18n("Maintainer"),

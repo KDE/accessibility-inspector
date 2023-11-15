@@ -28,6 +28,7 @@ private Q_SLOTS:
     void clearCache();
     void cacheStrategyChanged();
     void updateView();
+
 private:
     QAccessibleClient::Registry *m_registry;
     QAccessibleClient::RegistryPrivateCacheApi *m_cache;

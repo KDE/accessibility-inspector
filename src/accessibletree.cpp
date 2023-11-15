@@ -11,12 +11,12 @@
 
 using namespace QAccessibleClient;
 
-AccessibleWrapper* AccessibleWrapper::parent()
+AccessibleWrapper *AccessibleWrapper::parent()
 {
     return m_parent;
 }
 
-AccessibleWrapper* AccessibleWrapper::child(int index)
+AccessibleWrapper *AccessibleWrapper::child(int index)
 {
     if (m_children.isEmpty()) {
         const QList<AccessibleObject> children = acc.children();
@@ -37,8 +37,9 @@ int AccessibleWrapper::childCount()
     return m_children.count();
 }
 
-AccessibleTree::AccessibleTree(QObject* parent)
-    : QAbstractItemModel(parent), m_registry(nullptr)
+AccessibleTree::AccessibleTree(QObject *parent)
+    : QAbstractItemModel(parent)
+    , m_registry(nullptr)
 {
 }
 
@@ -58,48 +59,48 @@ QVariant AccessibleTree::headerData(int section, Qt::Orientation orientation, in
     return QVariant();
 }
 
-int AccessibleTree::columnCount(const QModelIndex& parent) const
+int AccessibleTree::columnCount(const QModelIndex &parent) const
 {
     Q_UNUSED(parent);
     return 2;
 }
 
-QVariant AccessibleTree::data(const QModelIndex& index, int role) const
+QVariant AccessibleTree::data(const QModelIndex &index, int role) const
 {
     if (!m_registry || !index.isValid())
         return QVariant();
 
-    AccessibleObject acc = static_cast<AccessibleWrapper*>(index.internalPointer())->acc;
+    AccessibleObject acc = static_cast<AccessibleWrapper *>(index.internalPointer())->acc;
 
     switch (role) {
-        case Qt::DisplayRole:
-            if (index.column() == 0) {
-                QString name = acc.name();
-                if (name.isEmpty())
-                    name = QStringLiteral("[%1]").arg(acc.roleName());
-                return name;
-            } else if (index.column() == 1) {
-                return acc.roleName();
-            }
+    case Qt::DisplayRole:
+        if (index.column() == 0) {
+            QString name = acc.name();
+            if (name.isEmpty())
+                name = QStringLiteral("[%1]").arg(acc.roleName());
+            return name;
+        } else if (index.column() == 1) {
+            return acc.roleName();
+        }
 
-        default:
-            return QVariant();
+    default:
+        return QVariant();
     }
     return QVariant();
 }
 
-QModelIndex AccessibleTree::index(int row, int column, const QModelIndex& parent) const
+QModelIndex AccessibleTree::index(int row, int column, const QModelIndex &parent) const
 {
     if (!m_registry || (column < 0) || (column > 1) || (row < 0))
         return QModelIndex();
 
-//     qDebug() << "index:" << row << column << parent;
+    //     qDebug() << "index:" << row << column << parent;
     if (!parent.isValid()) {
         if (row < m_apps.count()) {
             return createIndex(row, column, m_apps.at(row));
         }
     } else {
-        AccessibleWrapper *wraper = static_cast<AccessibleWrapper*>(parent.internalPointer());
+        AccessibleWrapper *wraper = static_cast<AccessibleWrapper *>(parent.internalPointer());
         if (row < wraper->childCount()) {
             QModelIndex newIndex = createIndex(row, column, wraper->child(row));
             if (newIndex.parent() != parent) {
@@ -115,11 +116,11 @@ QModelIndex AccessibleTree::index(int row, int column, const QModelIndex& parent
     return QModelIndex();
 }
 
-QModelIndex AccessibleTree::parent(const QModelIndex& child) const
+QModelIndex AccessibleTree::parent(const QModelIndex &child) const
 {
-//     qDebug() << "Parent: " << child;
+    //     qDebug() << "Parent: " << child;
     if (child.isValid()) {
-        AccessibleWrapper *wraper = static_cast<AccessibleWrapper*>(child.internalPointer());
+        AccessibleWrapper *wraper = static_cast<AccessibleWrapper *>(child.internalPointer());
         AccessibleWrapper *parent = wraper->parent();
         if (parent) {
             // if this is a top-level item, it has no parent
@@ -134,27 +135,27 @@ QModelIndex AccessibleTree::parent(const QModelIndex& child) const
     return QModelIndex();
 }
 
-int AccessibleTree::rowCount(const QModelIndex& parent) const
+int AccessibleTree::rowCount(const QModelIndex &parent) const
 {
     if (!m_registry || parent.column() > 0)
         return 0;
 
-//     qDebug() << "row count:" << parent << parent.internalPointer();
+    //     qDebug() << "row count:" << parent << parent.internalPointer();
     if (!parent.isValid()) {
         return m_apps.count();
     } else {
         if (!parent.internalPointer())
             return 0;
 
-        AccessibleWrapper *wraper = static_cast<AccessibleWrapper*>(parent.internalPointer());
-//         qDebug() << "     row count:" << wraper->acc.name() << wraper->acc.roleName() << wraper->childCount();
+        AccessibleWrapper *wraper = static_cast<AccessibleWrapper *>(parent.internalPointer());
+        //         qDebug() << "     row count:" << wraper->acc.name() << wraper->acc.roleName() << wraper->childCount();
         return wraper->childCount();
     }
 
     return 0;
 }
 
-void AccessibleTree::setRegistry(QAccessibleClient::Registry* registry)
+void AccessibleTree::setRegistry(QAccessibleClient::Registry *registry)
 {
     m_registry = registry;
     resetModel();
@@ -192,7 +193,7 @@ void AccessibleTree::updateTopLevelApps()
     }
 }
 
-QModelIndex AccessibleTree::indexForAccessible(const AccessibleObject& object)
+QModelIndex AccessibleTree::indexForAccessible(const AccessibleObject &object)
 {
     if (!object.isValid())
         return QModelIndex();
@@ -213,7 +214,8 @@ QModelIndex AccessibleTree::indexForAccessible(const AccessibleObject& object)
             QModelIndex parentIndex = indexForAccessible(parent);
             if (!parentIndex.isValid()) {
                 if (object.isValid() && object.application().isValid())
-                    qWarning() << Q_FUNC_INFO << object.application().name() << object.name() << object.roleName() << "Parent model index is invalid: " << object;
+                    qWarning() << Q_FUNC_INFO << object.application().name() << object.name() << object.roleName()
+                               << "Parent model index is invalid: " << object;
 
                 return QModelIndex();
             }
@@ -223,12 +225,13 @@ QModelIndex AccessibleTree::indexForAccessible(const AccessibleObject& object)
                 return QModelIndex();
             }
             QModelIndex in = index(indexInParent, 0, parentIndex);
-            //qDebug() << "indexForAccessible: " << object.name() << data(in).toString()  << " parent: " << data(parentIndex).toString();//" row: " << object.indexInParent() << "parentIndex: " << parentIndex;
+            // qDebug() << "indexForAccessible: " << object.name() << data(in).toString()  << " parent: " << data(parentIndex).toString();//" row: " <<
+            // object.indexInParent() << "parentIndex: " << parentIndex;
             return in;
         } else {
             qWarning() << Q_FUNC_INFO << "Invalid indexForAccessible: " << object;
-//Q_ASSERT(!object.supportedInterfaces().testFlag(QAccessibleClient::AccessibleObject::Application));
-//return indexForAccessible(object.application());
+            // Q_ASSERT(!object.supportedInterfaces().testFlag(QAccessibleClient::AccessibleObject::Application));
+            // return indexForAccessible(object.application());
 
             for (const QAccessibleClient::AccessibleObject &child : object.children()) {
                 if (child.supportedInterfaces().testFlag(QAccessibleClient::AccessibleObject::ApplicationInterface)) {
@@ -273,17 +276,17 @@ bool AccessibleTree::addAccessible(const QAccessibleClient::AccessibleObject &ob
     // Add this item (or emit dataChanged, if it's there already).
     int idx = object.indexInParent();
     if (idx < 0) {
-            qWarning() << Q_FUNC_INFO << "Could not add accessible (invalid index in parent): " << object;
-            return false;
+        qWarning() << Q_FUNC_INFO << "Could not add accessible (invalid index in parent): " << object;
+        return false;
     }
     QModelIndex objectIndex = index(idx, 0, parentIndex);
-    if (objectIndex.isValid() && static_cast<AccessibleWrapper*>(objectIndex.internalPointer())->acc == object) {
+    if (objectIndex.isValid() && static_cast<AccessibleWrapper *>(objectIndex.internalPointer())->acc == object) {
         Q_EMIT dataChanged(objectIndex, objectIndex);
         return false;
     }
 
     beginInsertRows(parentIndex, idx, idx);
-    AccessibleWrapper *parentWrapper = static_cast<AccessibleWrapper*>(parentIndex.internalPointer());
+    AccessibleWrapper *parentWrapper = static_cast<AccessibleWrapper *>(parentIndex.internalPointer());
     Q_ASSERT(parentWrapper);
     parentWrapper->m_children.insert(idx, new AccessibleWrapper(object, parentWrapper));
     endInsertRows();
@@ -309,12 +312,12 @@ bool AccessibleTree::removeAccessible(const QModelIndex &index)
     bool removed = false;
     beginRemoveRows(parent, row, row);
     if (parent.isValid()) {
-        AccessibleWrapper *wraper = static_cast<AccessibleWrapper*>(parent.internalPointer());
+        AccessibleWrapper *wraper = static_cast<AccessibleWrapper *>(parent.internalPointer());
         Q_ASSERT(wraper);
         delete wraper->m_children.takeAt(row);
         removed = true;
     } else {
-        AccessibleWrapper *wraper = static_cast<AccessibleWrapper*>(index.internalPointer());
+        AccessibleWrapper *wraper = static_cast<AccessibleWrapper *>(index.internalPointer());
         Q_ASSERT(wraper);
         Q_ASSERT(m_apps[row] == wraper);
         if (m_apps[row] == wraper) {

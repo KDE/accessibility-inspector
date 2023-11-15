@@ -14,7 +14,7 @@ ObjectProperties::ObjectProperties(QObject *parent)
     : QStandardItemModel(parent)
 {
     setColumnCount(2);
-    setHorizontalHeaderLabels( QStringList() << QStringLiteral("Property") << QStringLiteral("Value") );
+    setHorizontalHeaderLabels(QStringList() << QStringLiteral("Property") << QStringLiteral("Value"));
 
     connect(this, SIGNAL(itemChanged(QStandardItem *)), this, SLOT(slotDataChanged(QStandardItem *)));
 }
@@ -23,7 +23,8 @@ ObjectProperties::~ObjectProperties()
 {
 }
 
-void ObjectProperties::slotDataChanged(QStandardItem *item) {
+void ObjectProperties::slotDataChanged(QStandardItem *item)
+{
     if (item == m_textItem) {
         QString newText = item->data(Qt::EditRole).toString();
         m_acc.setText(newText);
@@ -34,7 +35,7 @@ void ObjectProperties::slotDataChanged(QStandardItem *item) {
             m_acc.setCurrentValue(value);
         }
 
-        m_valueItem = nullptr; //Prevent recursion
+        m_valueItem = nullptr; // Prevent recursion
         item->setData(m_acc.currentValue(), Qt::DisplayRole);
         m_valueItem = item;
     }
@@ -53,7 +54,7 @@ QVariant ObjectProperties::headerData(int section, Qt::Orientation orientation, 
     return QVariant();
 }
 
-QHash<int,QByteArray> ObjectProperties::roleNames() const
+QHash<int, QByteArray> ObjectProperties::roleNames() const
 {
     QHash<int, QByteArray> roles;
     roles[NameRole] = "name";
@@ -100,7 +101,7 @@ void ObjectProperties::setAccessibleObject(const QAccessibleClient::AccessibleOb
                 append(child.name().isEmpty() ? tr("[%1]").arg(child.roleName()) : child.name(), child.url(), children);
             }
         }
-        //GetAttributes
+        // GetAttributes
     }
     if (interfaces.testFlag(QAccessibleClient::AccessibleObject::ComponentInterface)) {
         QStandardItem *item = append(QStringLiteral("Component"));
@@ -124,9 +125,9 @@ void ObjectProperties::setAccessibleObject(const QAccessibleClient::AccessibleOb
     if (interfaces.testFlag(QAccessibleClient::AccessibleObject::DocumentInterface)) {
         QStandardItem *item = append(QStringLiteral("Document"));
         Q_UNUSED(item);
-        //GetLocale
-        //GetAttributeValue
-        //GetAttributes
+        // GetLocale
+        // GetAttributeValue
+        // GetAttributes
     }
 
     if (interfaces.testFlag(QAccessibleClient::AccessibleObject::EditableTextInterface)) {
@@ -230,16 +231,14 @@ void ObjectProperties::setAccessibleObject(const QAccessibleClient::AccessibleOb
             append(QStringLiteral("Text"), text, item);
         }
 
-        QList< QPair<int,int> > selections = acc.textSelections();
+        QList<QPair<int, int>> selections = acc.textSelections();
         QStandardItem *selectionsItem = append(QStringLiteral("Selections"), selections.count(), item);
         for (int i = 0; i < selections.count(); ++i) {
-            QPair<int,int> sel = selections[i];
+            QPair<int, int> sel = selections[i];
             int startOffset = sel.first;
             int endOffset = sel.second;
             Q_ASSERT(startOffset <= endOffset);
-            append( QStringLiteral("%1:%2").arg(startOffset).arg(endOffset),
-                    text.mid(startOffset, endOffset - startOffset),
-                    selectionsItem );
+            append(QStringLiteral("%1:%2").arg(startOffset).arg(endOffset), text.mid(startOffset, endOffset - startOffset), selectionsItem);
         }
     }
     if (interfaces.testFlag(QAccessibleClient::AccessibleObject::ValueInterface)) {
@@ -282,7 +281,7 @@ void ObjectProperties::setAccessibleObject(const QAccessibleClient::AccessibleOb
             QStandardItem *valueItem = new QStandardItem(a->whatsThis());
             nameItem->setEditable(false);
             valueItem->setEditable(false);
-            item->appendRow(QList<QStandardItem*>() << nameItem << valueItem);
+            item->appendRow(QList<QStandardItem *>() << nameItem << valueItem);
         }
     }
 
@@ -303,7 +302,7 @@ void ObjectProperties::doubleClicked(const QModelIndex &index)
     }
 }
 
-QStandardItem* ObjectProperties::append(const QString &name, const QVariant &value, QStandardItem *parentItem, QStandardItem **changeHandler)
+QStandardItem *ObjectProperties::append(const QString &name, const QVariant &value, QStandardItem *parentItem, QStandardItem **changeHandler)
 {
     if (!parentItem)
         parentItem = invisibleRootItem();
@@ -314,28 +313,32 @@ QStandardItem* ObjectProperties::append(const QString &name, const QVariant &val
 #else
     switch (value.type()) {
 #endif
-        case QMetaType::QPoint: {
-            QPoint p = value.toPoint();
-            text = QStringLiteral("%1:%2").arg(p.x()).arg(p.y());
-        } break;
-        case QMetaType::QPointF: {
-            QPointF p = value.toPointF();
-            text = QStringLiteral("%1:%2").arg(p.x()).arg(p.y());
-        } break;
-        case QMetaType::QRect: {
-            QRect r = value.toRect();
-            text = QStringLiteral("%1:%2 %3x%4").arg(r.left()).arg(r.top()).arg(r.width()).arg(r.height());
-        } break;
-        case QMetaType::QRectF: {
-            QRectF r = value.toRectF();
-            text = QStringLiteral("%1:%2 %3x%4").arg(r.left()).arg(r.top()).arg(r.width()).arg(r.height());
-        } break;
-        default:
-            text = value.toString();
-            break;
+    case QMetaType::QPoint: {
+        QPoint p = value.toPoint();
+        text = QStringLiteral("%1:%2").arg(p.x()).arg(p.y());
+        break;
+    }
+    case QMetaType::QPointF: {
+        QPointF p = value.toPointF();
+        text = QStringLiteral("%1:%2").arg(p.x()).arg(p.y());
+        break;
+    }
+    case QMetaType::QRect: {
+        QRect r = value.toRect();
+        text = QStringLiteral("%1:%2 %3x%4").arg(r.left()).arg(r.top()).arg(r.width()).arg(r.height());
+        break;
+    }
+    case QMetaType::QRectF: {
+        QRectF r = value.toRectF();
+        text = QStringLiteral("%1:%2 %3x%4").arg(r.left()).arg(r.top()).arg(r.width()).arg(r.height());
+        break;
+    }
+    default:
+        text = value.toString();
+        break;
     }
     QStandardItem *valueItem = new QStandardItem(text);
-    parentItem->appendRow(QList<QStandardItem*>() << nameItem << valueItem);
+    parentItem->appendRow(QList<QStandardItem *>() << nameItem << valueItem);
     nameItem->setEditable(false);
 
     if (changeHandler) {

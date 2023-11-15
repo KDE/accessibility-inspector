@@ -4,15 +4,14 @@
     SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
 */
 
-
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include <QMainWindow>
-#include <QTreeView>
-#include <QTextBrowser>
 #include <QAction>
 #include <QDebug>
+#include <QMainWindow>
+#include <QTextBrowser>
+#include <QTreeView>
 
 #include "qaccessibilityclient/accessibleobject.h"
 #include "qaccessibilityclient/registry.h"
@@ -24,8 +23,7 @@ class ObjectProperties;
 class EventsWidget;
 class UiView;
 
-
-class MainWindow :public QMainWindow
+class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
@@ -76,9 +74,9 @@ private Q_SLOTS:
     void textCaretMoved(const QAccessibleClient::AccessibleObject &object, int pos);
     void textSelectionChanged(const QAccessibleClient::AccessibleObject &object);
 
-    void textChanged(const QAccessibleClient::AccessibleObject &object, const QString& text, int startOffset, int endOffset);
-    void textInserted(const QAccessibleClient::AccessibleObject &object, const QString& text, int startOffset, int endOffset);
-    void textRemoved(const QAccessibleClient::AccessibleObject &object, const QString& text, int startOffset, int endOffset);
+    void textChanged(const QAccessibleClient::AccessibleObject &object, const QString &text, int startOffset, int endOffset);
+    void textInserted(const QAccessibleClient::AccessibleObject &object, const QString &text, int startOffset, int endOffset);
+    void textRemoved(const QAccessibleClient::AccessibleObject &object, const QString &text, int startOffset, int endOffset);
 
     void accessibleNameChanged(const QAccessibleClient::AccessibleObject &object);
     void accessibleDescriptionChanged(const QAccessibleClient::AccessibleObject &object);
