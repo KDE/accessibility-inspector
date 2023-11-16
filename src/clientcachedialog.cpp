@@ -68,11 +68,11 @@ ClientCacheDialog::ClientCacheDialog(QAccessibleClient::Registry *registry, QWid
     buttonsLay->addWidget(m_countLabel);
     buttonsLay->addStretch(1);
 
-    connect(clearButton, SIGNAL(clicked(bool)), this, SLOT(clearCache()));
+    connect(clearButton, &QPushButton::clicked, this, &ClientCacheDialog::clearCache);
     QDialogButtonBox *buttons = new QDialogButtonBox(QDialogButtonBox::Close, Qt::Horizontal, this);
     buttonsLay->addWidget(buttons);
     QPushButton *closeButton = buttons->button(QDialogButtonBox::Close);
-    connect(closeButton, SIGNAL(clicked(bool)), this, SLOT(accept()));
+    connect(closeButton, &QPushButton::clicked, this, &ClientCacheDialog::accept);
     lay->addLayout(buttonsLay);
 
     resize(minimumSize().expandedTo(QSize(660, 420)));
