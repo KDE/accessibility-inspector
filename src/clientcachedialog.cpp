@@ -27,7 +27,6 @@ ClientCacheDialog::ClientCacheDialog(QAccessibleClient::Registry *registry, QWid
 {
     setModal(true);
     QVBoxLayout *lay = new QVBoxLayout(this);
-    setLayout(lay);
 
     m_view = new QTreeView(this);
     m_view->setEditTriggers(QAbstractItemView::NoEditTriggers);
