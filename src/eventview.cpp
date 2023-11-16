@@ -1,8 +1,5 @@
-/*
-    SPDX-FileCopyrightText: 2012 Frederik Gladhorn <gladhorn@kde.org>
-
-    SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
-*/
+// SPDX-FileCopyrightText: 2012 Frederik Gladhorn <gladhorn@kde.org>
+// SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
 
 #include "eventview.h"
 
@@ -24,7 +21,16 @@
 class EventsModel : public QStandardItemModel
 {
 public:
-    enum Role { AccessibleRole = 0, RoleRole = 1, EventRole = 2, ActionRole = 3, EventTypeRole = Qt::UserRole, UrlRole, AppNameRole, AppUrlRole };
+    enum Role {
+        AccessibleRole = 0,
+        RoleRole = 1,
+        EventRole = 2,
+        ActionRole = 3,
+        EventTypeRole = Qt::UserRole,
+        UrlRole,
+        AppNameRole,
+        AppUrlRole,
+    };
 
     struct LogItem {
         QStandardItem *appItem;

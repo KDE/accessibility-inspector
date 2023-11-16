@@ -1,0 +1,13 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Accessibility Inspector
+Upstream-Contact: Carl Schwan <carl@carlschwan.eu>
+Source: https://invent.kde.org/accessibility/accessibility-inspector
+
+
+Files: README.md
+Copyright: Carl Schwan <carl@carlschwan.eu>
+License: CC0-1.0
+
+Files: org.kde.accessibilityinspector.svg
+Copyright: Uri Herrera <uri_herrera@nitrux.in> and others
+License: LGPL-3.0-or-later

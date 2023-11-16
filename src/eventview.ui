@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
+<!--
+SPDX-FileCopyrightText: 2012 Frederik Gladhorn <gladhorn@kde.org>
+SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
+-->
  <class>EventViewWidget</class>
  <widget class="QWidget" name="EventViewWidget">
   <property name="geometry">
