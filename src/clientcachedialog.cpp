@@ -18,6 +18,8 @@
 #include <QStandardItemModel>
 #include <QTreeView>
 
+#include <KLocalizedString>
+
 ClientCacheDialog::ClientCacheDialog(QAccessibleClient::Registry *registry, QWidget *parent)
     : QDialog(parent)
     , m_registry(registry)
@@ -41,19 +43,19 @@ ClientCacheDialog::ClientCacheDialog(QAccessibleClient::Registry *registry, QWid
     QHBoxLayout *buttonsLay = new QHBoxLayout(this);
     buttonsLay->setContentsMargins(0, 0, 0, 0);
     buttonsLay->setSpacing(0);
-    QPushButton *updateButton = new QPushButton(QStringLiteral("Refresh"), this);
+    QPushButton *updateButton = new QPushButton(i18nc("@action:button", "Refresh"), this);
     buttonsLay->addWidget(updateButton);
     connect(updateButton, SIGNAL(clicked(bool)), this, SLOT(updateView()));
-    QPushButton *clearButton = new QPushButton(QStringLiteral("Clear"), this);
+    QPushButton *clearButton = new QPushButton(i18nc("@action:button", "Clear"), this);
     buttonsLay->addWidget(clearButton);
 
-    QLabel *cacheLabel = new QLabel(QStringLiteral("Strategy:"), this);
+    QLabel *cacheLabel = new QLabel(i18nc("@label", "Strategy:"), this);
     buttonsLay->addWidget(cacheLabel);
     m_cacheCombo = new QComboBox(this);
     cacheLabel->setBuddy(m_cacheCombo);
     m_cacheCombo->setEditable(false);
-    m_cacheCombo->addItem(QStringLiteral("Disable"), int(QAccessibleClient::RegistryPrivateCacheApi::NoCache));
-    m_cacheCombo->addItem(QStringLiteral("Weak"), int(QAccessibleClient::RegistryPrivateCacheApi::WeakCache));
+    m_cacheCombo->addItem(i18nc("@item:inlistbox", "Disable"), int(QAccessibleClient::RegistryPrivateCacheApi::NoCache));
+    m_cacheCombo->addItem(i18nc("@item:inlistbox", "Weak"), int(QAccessibleClient::RegistryPrivateCacheApi::WeakCache));
     for (int i = 0; i < m_cacheCombo->count(); ++i) {
         if (m_cacheCombo->itemData(i).toInt() == m_cache->cacheType()) {
             m_cacheCombo->setCurrentIndex(i);
@@ -62,7 +64,7 @@ ClientCacheDialog::ClientCacheDialog(QAccessibleClient::Registry *registry, QWid
     }
     connect(m_cacheCombo, SIGNAL(currentIndexChanged(int)), this, SLOT(cacheStrategyChanged()));
     buttonsLay->addWidget(m_cacheCombo);
-    buttonsLay->addWidget(new QLabel(QStringLiteral("Count:"), this));
+    buttonsLay->addWidget(new QLabel(i18nc("@label:listbox", "Count:"), this));
     m_countLabel = new QLabel(this);
     buttonsLay->addWidget(m_countLabel);
     buttonsLay->addStretch(1);
@@ -96,7 +98,7 @@ void ClientCacheDialog::cacheStrategyChanged()
 void ClientCacheDialog::updateView()
 {
     m_model->clear();
-    m_model->setHorizontalHeaderLabels(QStringList() << QStringLiteral("Name") << QStringLiteral("Role") << QStringLiteral("Identifier"));
+    m_model->setHorizontalHeaderLabels(QStringList{i18nc("@title:row", "Name"), i18nc("@title:row", "Role"), i18nc("@title:row", "Identifier")});
     const QStringList cache = m_cache->clientCacheObjects();
     m_countLabel->setText(QString::number(cache.count()));
     for (const QString &c : cache) {

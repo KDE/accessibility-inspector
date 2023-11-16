@@ -12,7 +12,6 @@
 #include <QMenuBar>
 #include <QPointer>
 #include <QSettings>
-#include <qurl.h>
 
 #include <KLocalizedString>
 
@@ -134,21 +133,21 @@ void MainWindow::MainWindow::closeEvent(QCloseEvent *event)
 void MainWindow::MainWindow::initActions()
 {
     m_resetTreeAction = new QAction(this);
-    m_resetTreeAction->setText(i18nc("@action:button", "Reset Tree"));
+    m_resetTreeAction->setText(i18nc("@action:inmenu", "Reset Tree"));
     m_resetTreeAction->setShortcut(QKeySequence(QKeySequence::Refresh));
     connect(m_resetTreeAction, SIGNAL(triggered()), m_accessibleObjectTreeModel, SLOT(resetModel()));
 
     m_followFocusAction = new QAction(this);
-    m_followFocusAction->setText(QStringLiteral("Follow Focus"));
+    m_followFocusAction->setText(i18nc("@action:inmenu", "Follow Focus"));
     m_followFocusAction->setCheckable(true);
     m_followFocusAction->setShortcut(QKeySequence(Qt::CTRL | Qt::Key_F));
 
     m_showClientCacheAction = new QAction(this);
-    m_showClientCacheAction->setText(QStringLiteral("Cache..."));
+    m_showClientCacheAction->setText(i18nc("@action:inmenu", "Cache..."));
     connect(m_showClientCacheAction, SIGNAL(triggered()), this, SLOT(showClientCache()));
 
     m_enableA11yAction = new QAction(this);
-    m_enableA11yAction->setText(QStringLiteral("Enable Accessibility"));
+    m_enableA11yAction->setText(i18nc("@action:inmenu", "Enable Accessibility"));
     m_enableA11yAction->setShortcut(QKeySequence(Qt::CTRL | Qt::Key_E));
     m_enableA11yAction->setCheckable(true);
     m_enableA11yAction->setChecked(m_registry->isEnabled());
@@ -156,18 +155,18 @@ void MainWindow::MainWindow::initActions()
     connect(m_enableA11yAction, SIGNAL(toggled(bool)), m_registry, SLOT(setEnabled(bool)));
 
     m_enableScreenReaderAction = new QAction(this);
-    m_enableScreenReaderAction->setText(QStringLiteral("Enable Screen Reader"));
+    m_enableScreenReaderAction->setText(i18nc("@action:inmenu", "Enable Screen Reader"));
     m_enableScreenReaderAction->setShortcut(QKeySequence(Qt::CTRL | Qt::Key_R));
     m_enableScreenReaderAction->setCheckable(true);
     m_enableScreenReaderAction->setChecked(m_registry->isScreenReaderEnabled());
     connect(m_registry, SIGNAL(screenReaderEnabledChanged(bool)), m_enableScreenReaderAction, SLOT(setChecked(bool)));
     connect(m_enableScreenReaderAction, SIGNAL(toggled(bool)), m_registry, SLOT(setScreenReaderEnabled(bool)));
 
-    m_quitAction = new QAction(tr("&Quit"), this);
+    m_quitAction = new QAction(i18nc("@action:inmenu", "Quit"), this);
     m_quitAction->setShortcuts(QKeySequence::Quit);
     connect(m_quitAction, SIGNAL(triggered()), this, SLOT(close()));
 
-    m_copyValueAction = new QAction(tr("&Copy property value"), this);
+    m_copyValueAction = new QAction(i18nc("@action:inmenu", "Copy property value"), this);
     m_copyValueAction->setShortcuts(QKeySequence::Copy);
     connect(m_copyValueAction, SIGNAL(triggered()), this, SLOT(copyValue()));
 }
@@ -190,17 +189,17 @@ void MainWindow::copyValue()
 
 void MainWindow::MainWindow::initMenu()
 {
-    QMenu *fileMenu = menuBar()->addMenu(QStringLiteral("&Tree"));
+    QMenu *fileMenu = menuBar()->addMenu(i18nc("@title:menu", "Tree"));
     fileMenu->addAction(m_resetTreeAction);
     fileMenu->addAction(m_followFocusAction);
     fileMenu->addSeparator();
     fileMenu->addAction(m_quitAction);
 
-    QMenu *editMenu = menuBar()->addMenu(QStringLiteral("&Edit"));
+    QMenu *editMenu = menuBar()->addMenu(i18nc("@action:inmenu", "Edit"));
     editMenu->addAction(m_copyValueAction);
 
-    QMenu *settingsMenu = menuBar()->addMenu(QStringLiteral("&Settings"));
-    QMenu *dockerMenu = settingsMenu->addMenu(QStringLiteral("Docker"));
+    QMenu *settingsMenu = menuBar()->addMenu(i18nc("@title:menu", "Settings"));
+    QMenu *dockerMenu = settingsMenu->addMenu(i18nc("@title:menu", "Docker"));
     for (const QDockWidget *docker : findChildren<QDockWidget *>()) {
         dockerMenu->addAction(docker->toggleViewAction());
     }
@@ -237,13 +236,13 @@ void MainWindow::MainWindow::initUi()
             SLOT(selectionChanged(QModelIndex, QModelIndex)));
     connect(m_accessibleObjectTreeView, SIGNAL(customContextMenuRequested(QPoint)), this, SLOT(treeCustomContextMenuRequested(QPoint)));
 
-    QDockWidget *propertyDocker = new QDockWidget(QStringLiteral("&Properties"), this);
+    QDockWidget *propertyDocker = new QDockWidget(i18nc("@title:window", "Properties"), this);
     propertyDocker->setObjectName(QStringLiteral("properties"));
     propertyDocker->setFeatures(QDockWidget::DockWidgetClosable | QDockWidget::DockWidgetMovable | QDockWidget::DockWidgetFloatable);
     m_propertyView = new QTreeView(propertyDocker);
     propertyDocker->setWidget(m_propertyView);
-    m_propertyView->setAccessibleName(QStringLiteral("List of properties"));
-    m_propertyView->setAccessibleDescription(QStringLiteral("Displays a the properties of the selected accessible object"));
+    m_propertyView->setAccessibleName(i18nc("@info:whatsthis", "List of properties"));
+    m_propertyView->setAccessibleDescription(i18nc("@info:whatsthis", "Displays a the properties of the selected accessible object"));
     m_propertyView->setRootIsDecorated(false);
     m_propertyView->setItemsExpandable(true);
     m_propertyView->setExpandsOnDoubleClick(false);
@@ -251,21 +250,21 @@ void MainWindow::MainWindow::initUi()
     m_propertyModel = new ObjectProperties(this);
     m_propertyView->setModel(m_propertyModel);
     m_propertyView->setAlternatingRowColors(true);
-    connect(m_propertyView, SIGNAL(doubleClicked(QModelIndex)), m_propertyModel, SLOT(doubleClicked(QModelIndex)));
+    connect(m_propertyView, &QTreeView::doubleClicked, m_propertyModel, &ObjectProperties::doubleClicked);
 
-    QDockWidget *uiDocker = new QDockWidget(QStringLiteral("&Boundaries"), this);
+    QDockWidget *uiDocker = new QDockWidget(i18nc("@title:window", "Boundaries"), this);
     uiDocker->setObjectName(QStringLiteral("boundaries"));
     uiDocker->setFeatures(QDockWidget::DockWidgetClosable | QDockWidget::DockWidgetMovable | QDockWidget::DockWidgetFloatable);
     m_uiview = new UiView(uiDocker);
-    m_uiview->setAccessibleName(QStringLiteral("Boundaries"));
-    m_uiview->setAccessibleDescription(QStringLiteral("Visualize the component boundaries"));
+    m_uiview->setAccessibleName(i18nc("@info:whatsthis", "Boundaries"));
+    m_uiview->setAccessibleDescription(i18nc("@info:whatsthis", "Visualize the component boundaries"));
     uiDocker->setWidget(m_uiview);
 
-    QDockWidget *eventsDocker = new QDockWidget(QStringLiteral("E&vents"), this);
+    QDockWidget *eventsDocker = new QDockWidget(i18nc("@title:window", "Events"), this);
     eventsDocker->setObjectName(QStringLiteral("events"));
     eventsDocker->setFeatures(QDockWidget::DockWidgetClosable | QDockWidget::DockWidgetMovable | QDockWidget::DockWidgetFloatable);
     m_eventsWidget = new EventsWidget(m_registry, eventsDocker);
-    connect(m_eventsWidget, SIGNAL(anchorClicked(QUrl)), this, SLOT(anchorClicked(QUrl)));
+    connect(m_eventsWidget, &EventsWidget::anchorClicked, this, &MainWindow::anchorClicked);
     eventsDocker->setWidget(m_eventsWidget);
 
     addDockWidget(Qt::LeftDockWidgetArea, treeDocker);

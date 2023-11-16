@@ -199,6 +199,13 @@ EventsWidget::EventsWidget(QAccessibleClient::Registry *registry, QWidget *paren
 
     m_ui.eventListView->setAccessibleName(QLatin1String("Events View"));
     m_ui.eventListView->setAccessibleDescription(QStringLiteral("Displays all received events"));
+    m_ui.eventListView->setProperty("_breeze_borders_sides", QVariant::fromValue(QFlags{Qt::TopEdge}));
+
+    m_ui.horizontalLayout->setSpacing(style()->pixelMetric(QStyle::PM_LayoutHorizontalSpacing));
+    m_ui.horizontalLayout->setContentsMargins(style()->pixelMetric(QStyle::PM_LayoutLeftMargin),
+                                              style()->pixelMetric(QStyle::PM_LayoutBottomMargin),
+                                              style()->pixelMetric(QStyle::PM_LayoutRightMargin),
+                                              style()->pixelMetric(QStyle::PM_LayoutTopMargin));
 
     m_proxyModel->setSourceModel(m_model);
     m_ui.eventListView->setModel(m_proxyModel);
