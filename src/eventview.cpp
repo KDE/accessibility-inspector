@@ -33,7 +33,7 @@ public:
     };
 
     struct LogItem {
-        QStandardItem *appItem;
+        QStandardItem *appItem = nullptr;
         bool isNewAppItem;
         LogItem(QStandardItem *appItem, bool isNewAppItem)
             : appItem(appItem)
@@ -44,7 +44,6 @@ public:
 
     explicit EventsModel(EventsWidget *view)
         : QStandardItemModel(view)
-        , m_view(view)
     {
         clearLog();
     }
@@ -113,7 +112,6 @@ public:
     }
 
 private:
-    EventsWidget *m_view;
     QMap<QString, QStandardItem *> m_apps;
 };
 

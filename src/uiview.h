@@ -54,7 +54,7 @@ public:
     void setAccessibleObject(const QAccessibleClient::AccessibleObject &acc);
 
 private:
-    UiWidget *m_uiWidget;
+    UiWidget *const m_uiWidget;
 };
 
 #endif

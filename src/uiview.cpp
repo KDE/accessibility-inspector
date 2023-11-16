@@ -255,12 +255,12 @@ void UiWidget::drawObject(QPainter *painter, const QAccessibleClient::Accessible
 
 UiView::UiView(QWidget *parent)
     : QScrollArea(parent)
+    , m_uiWidget(new UiWidget(this))
 {
     QWidget *widget = new QWidget(this);
     QVBoxLayout *layout = new QVBoxLayout(widget);
     widget->setLayout(layout);
 
-    m_uiWidget = new UiWidget(this);
     layout->addWidget(m_uiWidget);
 
     setWidget(widget);

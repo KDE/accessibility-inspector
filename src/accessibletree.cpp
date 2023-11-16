@@ -39,7 +39,6 @@ int AccessibleWrapper::childCount()
 
 AccessibleTree::AccessibleTree(QObject *parent)
     : QAbstractItemModel(parent)
-    , m_registry(nullptr)
 {
 }
 

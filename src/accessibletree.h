@@ -80,7 +80,7 @@ Q_SIGNALS:
     void navigationError(const QModelIndex &) const;
 
 private:
-    QAccessibleClient::Registry *m_registry;
+    QAccessibleClient::Registry *m_registry = nullptr;
     QList<AccessibleWrapper *> m_apps;
 };
 
