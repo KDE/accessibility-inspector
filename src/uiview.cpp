@@ -137,7 +137,6 @@ static RoleColor roleColors[] = {
 
 UiWidget::UiWidget(UiView *view)
     : QWidget(view)
-    , m_image(nullptr)
 {
     QPalette p = view->palette();
     p.setColor(QPalette::Window, Qt::white);
@@ -170,6 +169,7 @@ QSize UiWidget::sizeHint() const
 
 void UiWidget::paintEvent(QPaintEvent *event)
 {
+    Q_UNUSED(event);
     if (!m_image) {
         if (m_bounds.isNull())
             return;

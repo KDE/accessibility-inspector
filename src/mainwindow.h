@@ -90,24 +90,24 @@ private:
     void setCurrentObject(const QAccessibleClient::AccessibleObject &object);
     void updateDetails(const QAccessibleClient::AccessibleObject &object, bool force = false);
 
-    QAccessibleClient::Registry *m_registry;
+    QAccessibleClient::Registry *m_registry = nullptr;
 
-    QTreeView *m_accessibleObjectTreeView;
-    AccessibleTree *m_accessibleObjectTreeModel;
+    QTreeView *m_accessibleObjectTreeView = nullptr;
+    AccessibleTree *m_accessibleObjectTreeModel = nullptr;
 
-    QTreeView *m_propertyView;
-    ObjectProperties *m_propertyModel;
+    QTreeView *m_propertyView = nullptr;
+    ObjectProperties *m_propertyModel = nullptr;
 
-    EventsWidget *m_eventsWidget;
-    UiView *m_uiview;
+    EventsWidget *m_eventsWidget = nullptr;
+    UiView *m_uiview = nullptr;
 
-    QAction *m_resetTreeAction;
-    QAction *m_followFocusAction;
-    QAction *m_showClientCacheAction;
-    QAction *m_enableA11yAction;
-    QAction *m_enableScreenReaderAction;
-    QAction *m_quitAction;
-    QAction *m_copyValueAction;
+    QAction *m_resetTreeAction = nullptr;
+    QAction *m_followFocusAction = nullptr;
+    QAction *m_showClientCacheAction = nullptr;
+    QAction *m_enableA11yAction = nullptr;
+    QAction *m_enableScreenReaderAction = nullptr;
+    QAction *m_quitAction = nullptr;
+    QAction *m_copyValueAction = nullptr;
 };
 
 #endif

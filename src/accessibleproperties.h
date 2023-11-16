@@ -37,8 +37,8 @@ private:
     append(const QString &name, const QVariant &value = QVariant(), QStandardItem *parentItem = nullptr, QStandardItem **changeHandler = nullptr);
     QString stateString(const QAccessibleClient::AccessibleObject &acc);
     QAccessibleClient::AccessibleObject m_acc;
-    QStandardItem *m_textItem;
-    QStandardItem *m_valueItem;
+    QStandardItem *m_textItem = nullptr;
+    QStandardItem *m_valueItem = nullptr;
 };
 
 #endif

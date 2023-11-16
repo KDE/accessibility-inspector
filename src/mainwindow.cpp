@@ -325,7 +325,7 @@ void MainWindow::stateChanged(const QAccessibleClient::AccessibleObject &object,
     if (state == QLatin1String("focused")) {
         m_eventsWidget->addLog(object, EventsWidget::Focus, (active ? QStringLiteral("true") : QStringLiteral("false")));
     } else {
-        QString s = state + QStringLiteral(": ") + (active ? QStringLiteral("true") : QStringLiteral("false"));
+        const QString s = state + QStringLiteral(": ") + (active ? QStringLiteral("true") : QStringLiteral("false"));
         m_eventsWidget->addLog(object, EventsWidget::StateChanged, s);
     }
     updateDetails(object);
@@ -527,7 +527,7 @@ QString descriptionForText(const QString &type, const QString &text, int startOf
         shortText.truncate(50);
         shortText.append(QLatin1String("..."));
     }
-    QString desc = QStringLiteral("Text %1 (%2, %3): \"%4\"").arg(type).arg(QString::number(startOffset)).arg(QString::number(endOffset)).arg(shortText);
+    const QString desc = QStringLiteral("Text %1 (%2, %3): \"%4\"").arg(type).arg(QString::number(startOffset)).arg(QString::number(endOffset)).arg(shortText);
     return desc;
 }
 

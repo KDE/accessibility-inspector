@@ -23,19 +23,19 @@ class ClientCacheDialog : public QDialog
 {
     Q_OBJECT
 public:
-    ClientCacheDialog(QAccessibleClient::Registry *registry, QWidget *parent = nullptr);
+    explicit ClientCacheDialog(QAccessibleClient::Registry *registry, QWidget *parent = nullptr);
 private Q_SLOTS:
     void clearCache();
     void cacheStrategyChanged();
     void updateView();
 
 private:
-    QAccessibleClient::Registry *m_registry;
-    QAccessibleClient::RegistryPrivateCacheApi *m_cache;
-    QTreeView *m_view;
-    QStandardItemModel *m_model;
-    QComboBox *m_cacheCombo;
-    QLabel *m_countLabel;
+    QAccessibleClient::Registry *m_registry = nullptr;
+    QAccessibleClient::RegistryPrivateCacheApi *const m_cache;
+    QTreeView *m_view = nullptr;
+    QStandardItemModel *m_model = nullptr;
+    QComboBox *m_cacheCombo = nullptr;
+    QLabel *m_countLabel = nullptr;
 };
 
 #endif

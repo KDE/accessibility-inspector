@@ -11,7 +11,7 @@
 
 using namespace QAccessibleClient;
 
-AccessibleWrapper *AccessibleWrapper::parent()
+AccessibleWrapper *AccessibleWrapper::parent() const
 {
     return m_parent;
 }
@@ -30,7 +30,7 @@ AccessibleWrapper *AccessibleWrapper::child(int index)
     return nullptr;
 }
 
-int AccessibleWrapper::childCount()
+int AccessibleWrapper::childCount() const
 {
     if (m_children.isEmpty())
         return acc.childCount();
@@ -210,7 +210,7 @@ QModelIndex AccessibleTree::indexForAccessible(const AccessibleObject &object)
     } else {
         AccessibleObject parent = object.parent();
         if (parent.isValid()) {
-            QModelIndex parentIndex = indexForAccessible(parent);
+            const QModelIndex parentIndex = indexForAccessible(parent);
             if (!parentIndex.isValid()) {
                 if (object.isValid() && object.application().isValid())
                     qCWarning(ACCESSIBILITYINSPECTOR_LOG)
@@ -223,7 +223,7 @@ QModelIndex AccessibleTree::indexForAccessible(const AccessibleObject &object)
                 qCWarning(ACCESSIBILITYINSPECTOR_LOG) << Q_FUNC_INFO << "indexInParent is invalid: " << object;
                 return QModelIndex();
             }
-            QModelIndex in = index(indexInParent, 0, parentIndex);
+            const QModelIndex in = index(indexInParent, 0, parentIndex);
             // qDebug() << "indexForAccessible: " << object.name() << data(in).toString()  << " parent: " << data(parentIndex).toString();//" row: " <<
             // object.indexInParent() << "parentIndex: " << parentIndex;
             return in;
@@ -273,12 +273,12 @@ bool AccessibleTree::addAccessible(const QAccessibleClient::AccessibleObject &ob
     }
 
     // Add this item (or emit dataChanged, if it's there already).
-    int idx = object.indexInParent();
+    const int idx = object.indexInParent();
     if (idx < 0) {
         qCWarning(ACCESSIBILITYINSPECTOR_LOG) << Q_FUNC_INFO << "Could not add accessible (invalid index in parent): " << object;
         return false;
     }
-    QModelIndex objectIndex = index(idx, 0, parentIndex);
+    const QModelIndex objectIndex = index(idx, 0, parentIndex);
     if (objectIndex.isValid() && static_cast<AccessibleWrapper *>(objectIndex.internalPointer())->acc == object) {
         Q_EMIT dataChanged(objectIndex, objectIndex);
         return false;
@@ -295,7 +295,7 @@ bool AccessibleTree::addAccessible(const QAccessibleClient::AccessibleObject &ob
 bool AccessibleTree::removeAccessible(const QAccessibleClient::AccessibleObject &object)
 {
     qCDebug(ACCESSIBILITYINSPECTOR_LOG) << Q_FUNC_INFO << object;
-    QModelIndex index = indexForAccessible(object);
+    const QModelIndex index = indexForAccessible(object);
     if (!index.isValid())
         return false;
     return removeAccessible(index);
@@ -331,7 +331,7 @@ bool AccessibleTree::removeAccessible(const QModelIndex &index)
 
 void AccessibleTree::updateAccessible(const QAccessibleClient::AccessibleObject &object)
 {
-    QModelIndex index = indexForAccessible(object);
+    const QModelIndex index = indexForAccessible(object);
     Q_EMIT dataChanged(index, index);
 }
 

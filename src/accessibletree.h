@@ -29,14 +29,14 @@ public:
         qDeleteAll(m_children);
     }
 
-    int childCount();
+    int childCount() const;
     AccessibleWrapper *child(int index);
-    AccessibleWrapper *parent();
+    AccessibleWrapper *parent() const;
 
 private:
     friend class AccessibleTree;
 
-    AccessibleWrapper *m_parent;
+    AccessibleWrapper *const m_parent;
     QList<AccessibleWrapper *> m_children;
 };
 

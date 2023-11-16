@@ -30,7 +30,7 @@ public:
     QSize sizeHint() const override;
 
 protected:
-    QImage *m_image;
+    QImage *m_image = nullptr;
     QPixmap m_screen;
     QRect m_bounds;
     QAccessibleClient::AccessibleObject m_object;
