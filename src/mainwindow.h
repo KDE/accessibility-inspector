@@ -9,7 +9,6 @@
 
 #include <QAction>
 #include <QMainWindow>
-#include <QTextBrowser>
 #include <QTreeView>
 
 #include "qaccessibilityclient/accessibleobject.h"

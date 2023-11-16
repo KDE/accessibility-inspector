@@ -7,7 +7,6 @@
 #include "accessibletree.h"
 
 #include "accessibilityinspector_debug.h"
-#include <QStack>
 
 using namespace QAccessibleClient;
 

@@ -6,16 +6,11 @@
 
 #include <KLocalizedString>
 #include <QMetaEnum>
-#include <QMetaObject>
-#include <QPair>
 #include <QScrollBar>
 #include <QSettings>
 #include <QSortFilterProxyModel>
 #include <QStandardItem>
 #include <QStandardItemModel>
-#include <QTextCursor>
-#include <QTextDocument>
-#include <QTextObject>
 #include <QTimer>
 
 class EventsModel : public QStandardItemModel

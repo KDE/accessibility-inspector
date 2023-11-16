@@ -10,13 +10,13 @@
 
 #include "qaccessibilityclient/registrycache_p.h"
 
-#include <QBoxLayout>
 #include <QComboBox>
 #include <QDialogButtonBox>
 #include <QLabel>
 #include <QPushButton>
 #include <QStandardItemModel>
 #include <QTreeView>
+#include <QVBoxLayout>
 
 #include <KLocalizedString>
 

@@ -6,11 +6,7 @@
 
 #include "uiview.h"
 
-#include <QApplication>
-#include <QDebug>
-#include <QHBoxLayout>
 #include <QPainter>
-#include <QScreen>
 #include <QVBoxLayout>
 
 using namespace QAccessibleClient;
