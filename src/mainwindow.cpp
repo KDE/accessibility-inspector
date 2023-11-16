@@ -5,6 +5,7 @@
 */
 
 #include "mainwindow.h"
+#include "accessibilityinspector_debug.h"
 
 #include <QClipboard>
 #include <QDialog>
@@ -304,7 +305,7 @@ void MainWindow::setCurrentObject(const QAccessibleClient::AccessibleObject &obj
         // Unlike calling setCurrentIndex the select call aboves doe not emit the selectionChanged signal. So, do explicit.
         selectionChanged(index, QModelIndex());
     } else {
-        qWarning() << "No such indexForAccessible=" << object;
+        qCWarning(ACCESSIBILITYINSPECTOR_LOG) << "No such indexForAccessible=" << object;
     }
 }
 

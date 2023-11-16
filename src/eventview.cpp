@@ -2,9 +2,9 @@
 // SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
 
 #include "eventview.h"
+#include "accessibilityinspector_debug.h"
 
 #include <KLocalizedString>
-#include <QDebug>
 #include <QMetaEnum>
 #include <QMetaObject>
 #include <QPair>
@@ -438,7 +438,7 @@ void EventsWidget::eventActivated(const QModelIndex &index)
     QString s = m_proxyModel->data(firstIndex, parent.isValid() ? EventsModel::UrlRole : EventsModel::AppUrlRole).toString();
     QUrl url(s);
     if (!url.isValid()) {
-        qWarning() << Q_FUNC_INFO << "Invalid url=" << s;
+        qCWarning(ACCESSIBILITYINSPECTOR_LOG) << Q_FUNC_INFO << "Invalid url=" << s;
         return;
     }
     Q_EMIT anchorClicked(url);

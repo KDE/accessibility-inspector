@@ -25,6 +25,9 @@ target_sources(accessibilityinspector PRIVATE
     ${accessibleapps_UI_HDRS}
 )
 
+ecm_qt_declare_logging_category(accessibilityinspector HEADER accessibilityinspector_debug.h IDENTIFIER ACCESSIBILITYINSPECTOR_LOG
+    CATEGORY_NAME org.kde.accessibilityinspector DESCRIPTION "accessibility-inspector" EXPORT ACCESSIBILITYINSPECTOR)
+
 target_link_libraries(accessibilityinspector
     QAccessibilityClient${QT_MAJOR_VERSION}
     KF${QT_MAJOR_VERSION}::I18n

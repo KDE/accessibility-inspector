@@ -56,6 +56,12 @@ set_package_properties(QAccessibilityClient${QT_MAJOR_VERSION} PROPERTIES
 
 add_subdirectory(src)
 
+ecm_qt_install_logging_categories(
+        EXPORT ACCESSIBILITYINSPECTOR
+        FILE accessibilityinspector.categories
+        DESTINATION ${KDE_INSTALL_LOGGINGCATEGORIESDIR}
+        )
+
 install(FILES org.kde.accessibilityinspector.desktop DESTINATION ${KDE_INSTALL_APPDIR})
 install(FILES org.kde.accessibilityinspector.metainfo.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
 install(FILES org.kde.accessibilityinspector.svg DESTINATION ${KDE_INSTALL_FULL_ICONDIR}/hicolor/scalable/apps)

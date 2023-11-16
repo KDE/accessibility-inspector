@@ -8,7 +8,6 @@
 #define MAINWINDOW_H
 
 #include <QAction>
-#include <QDebug>
 #include <QMainWindow>
 #include <QTextBrowser>
 #include <QTreeView>
