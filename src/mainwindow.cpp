@@ -145,7 +145,7 @@ void MainWindow::MainWindow::initActions()
 
     m_showClientCacheAction = new QAction(this);
     m_showClientCacheAction->setText(i18nc("@action:inmenu", "Cache..."));
-    connect(m_showClientCacheAction, SIGNAL(triggered()), this, SLOT(showClientCache()));
+    connect(m_showClientCacheAction, &QAction::triggered, this, &MainWindow::showClientCache);
 
     m_enableA11yAction = new QAction(this);
     m_enableA11yAction->setText(i18nc("@action:inmenu", "Enable Accessibility"));
@@ -165,11 +165,11 @@ void MainWindow::MainWindow::initActions()
 
     m_quitAction = new QAction(i18nc("@action:inmenu", "Quit"), this);
     m_quitAction->setShortcuts(QKeySequence::Quit);
-    connect(m_quitAction, SIGNAL(triggered()), this, SLOT(close()));
+    connect(m_quitAction, &QAction::triggered, this, &MainWindow::close);
 
     m_copyValueAction = new QAction(i18nc("@action:inmenu", "Copy property value"), this);
     m_copyValueAction->setShortcuts(QKeySequence::Copy);
-    connect(m_copyValueAction, SIGNAL(triggered()), this, SLOT(copyValue()));
+    connect(m_copyValueAction, &QAction::triggered, this, &MainWindow::copyValue);
 }
 
 void MainWindow::copyValue()
