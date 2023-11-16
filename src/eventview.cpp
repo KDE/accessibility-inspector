@@ -1,8 +1,5 @@
-/*
-    SPDX-FileCopyrightText: 2012 Frederik Gladhorn <gladhorn@kde.org>
-
-    SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
-*/
+// SPDX-FileCopyrightText: 2012 Frederik Gladhorn <gladhorn@kde.org>
+// SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
 
 #include "eventview.h"
 
@@ -24,7 +21,16 @@
 class EventsModel : public QStandardItemModel
 {
 public:
-    enum Role { AccessibleRole = 0, RoleRole = 1, EventRole = 2, ActionRole = 3, EventTypeRole = Qt::UserRole, UrlRole, AppNameRole, AppUrlRole };
+    enum Role {
+        AccessibleRole = 0,
+        RoleRole = 1,
+        EventRole = 2,
+        ActionRole = 3,
+        EventTypeRole = Qt::UserRole,
+        UrlRole,
+        AppNameRole,
+        AppUrlRole,
+    };
 
     struct LogItem {
         QStandardItem *appItem;
@@ -193,6 +199,13 @@ EventsWidget::EventsWidget(QAccessibleClient::Registry *registry, QWidget *paren
 
     m_ui.eventListView->setAccessibleName(QLatin1String("Events View"));
     m_ui.eventListView->setAccessibleDescription(QStringLiteral("Displays all received events"));
+    m_ui.eventListView->setProperty("_breeze_borders_sides", QVariant::fromValue(QFlags{Qt::TopEdge}));
+
+    m_ui.horizontalLayout->setSpacing(style()->pixelMetric(QStyle::PM_LayoutHorizontalSpacing));
+    m_ui.horizontalLayout->setContentsMargins(style()->pixelMetric(QStyle::PM_LayoutLeftMargin),
+                                              style()->pixelMetric(QStyle::PM_LayoutBottomMargin),
+                                              style()->pixelMetric(QStyle::PM_LayoutRightMargin),
+                                              style()->pixelMetric(QStyle::PM_LayoutTopMargin));
 
     m_proxyModel->setSourceModel(m_model);
     m_ui.eventListView->setModel(m_proxyModel);
