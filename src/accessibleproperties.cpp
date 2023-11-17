@@ -19,9 +19,7 @@ ObjectProperties::ObjectProperties(QObject *parent)
     connect(this, SIGNAL(itemChanged(QStandardItem *)), this, SLOT(slotDataChanged(QStandardItem *)));
 }
 
-ObjectProperties::~ObjectProperties()
-{
-}
+ObjectProperties::~ObjectProperties() = default;
 
 void ObjectProperties::slotDataChanged(QStandardItem *item)
 {
@@ -51,7 +49,7 @@ QVariant ObjectProperties::headerData(int section, Qt::Orientation orientation, 
             return QStringLiteral("Value");
         }
     }
-    return QVariant();
+    return {};
 }
 
 QHash<int, QByteArray> ObjectProperties::roleNames() const
@@ -277,8 +275,8 @@ void ObjectProperties::setAccessibleObject(const QAccessibleClient::AccessibleOb
     if (interfaces.testFlag(QAccessibleClient::AccessibleObject::ActionInterface)) {
         QStandardItem *item = append(QStringLiteral("Action"));
         for (const QSharedPointer<QAction> &a : acc.actions()) {
-            QStandardItem *nameItem = new QStandardItem(a->text());
-            QStandardItem *valueItem = new QStandardItem(a->whatsThis());
+            auto nameItem = new QStandardItem(a->text());
+            auto valueItem = new QStandardItem(a->whatsThis());
             nameItem->setEditable(false);
             valueItem->setEditable(false);
             item->appendRow(QList<QStandardItem *>() << nameItem << valueItem);
@@ -306,7 +304,7 @@ QStandardItem *ObjectProperties::append(const QString &name, const QVariant &val
 {
     if (!parentItem)
         parentItem = invisibleRootItem();
-    QStandardItem *nameItem = new QStandardItem(name);
+    auto nameItem = new QStandardItem(name);
     QString text;
 #if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
     switch (value.metaType().id()) {
@@ -337,7 +335,7 @@ QStandardItem *ObjectProperties::append(const QString &name, const QVariant &val
         text = value.toString();
         break;
     }
-    QStandardItem *valueItem = new QStandardItem(text);
+    auto valueItem = new QStandardItem(text);
     parentItem->appendRow(QList<QStandardItem *>() << nameItem << valueItem);
     nameItem->setEditable(false);
 

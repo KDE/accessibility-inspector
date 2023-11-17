@@ -8,7 +8,7 @@
 
 #include "clientcachedialog.h"
 
-#include "qaccessibilityclient/registrycache_p.h"
+#include <qaccessibilityclient/registrycache_p.h>
 
 #include <QComboBox>
 #include <QDialogButtonBox>
@@ -26,7 +26,7 @@ ClientCacheDialog::ClientCacheDialog(QAccessibleClient::Registry *registry, QWid
     , m_cache(new QAccessibleClient::RegistryPrivateCacheApi(m_registry))
 {
     setModal(true);
-    QVBoxLayout *lay = new QVBoxLayout(this);
+    auto lay = new QVBoxLayout(this);
 
     m_view = new QTreeView(this);
     m_view->setEditTriggers(QAbstractItemView::NoEditTriggers);
@@ -39,16 +39,16 @@ ClientCacheDialog::ClientCacheDialog(QAccessibleClient::Registry *registry, QWid
     m_view->setModel(m_model);
     lay->addWidget(m_view);
 
-    QHBoxLayout *buttonsLay = new QHBoxLayout(this);
+    auto buttonsLay = new QHBoxLayout(this);
     buttonsLay->setContentsMargins(0, 0, 0, 0);
     buttonsLay->setSpacing(0);
-    QPushButton *updateButton = new QPushButton(i18nc("@action:button", "Refresh"), this);
+    auto updateButton = new QPushButton(i18nc("@action:button", "Refresh"), this);
     buttonsLay->addWidget(updateButton);
     connect(updateButton, &QPushButton::clicked, this, &ClientCacheDialog::updateView);
-    QPushButton *clearButton = new QPushButton(i18nc("@action:button", "Clear"), this);
+    auto clearButton = new QPushButton(i18nc("@action:button", "Clear"), this);
     buttonsLay->addWidget(clearButton);
 
-    QLabel *cacheLabel = new QLabel(i18nc("@label", "Strategy:"), this);
+    auto cacheLabel = new QLabel(i18nc("@label", "Strategy:"), this);
     buttonsLay->addWidget(cacheLabel);
     m_cacheCombo = new QComboBox(this);
     cacheLabel->setBuddy(m_cacheCombo);
@@ -69,7 +69,7 @@ ClientCacheDialog::ClientCacheDialog(QAccessibleClient::Registry *registry, QWid
     buttonsLay->addStretch(1);
 
     connect(clearButton, &QPushButton::clicked, this, &ClientCacheDialog::clearCache);
-    QDialogButtonBox *buttons = new QDialogButtonBox(QDialogButtonBox::Close, Qt::Horizontal, this);
+    auto buttons = new QDialogButtonBox(QDialogButtonBox::Close, Qt::Horizontal, this);
     buttonsLay->addWidget(buttons);
     QPushButton *closeButton = buttons->button(QDialogButtonBox::Close);
     connect(closeButton, &QPushButton::clicked, this, &ClientCacheDialog::accept);

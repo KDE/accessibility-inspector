@@ -215,7 +215,7 @@ void MainWindow::initUi()
     setDockOptions(QMainWindow::AnimatedDocks | QMainWindow::AllowNestedDocks | QMainWindow::AllowTabbedDocks);
     // setTabPosition(Qt::AllDockWidgetAreas, QTabWidget::North);
 
-    QDockWidget *treeDocker = new QDockWidget(QStringLiteral("Tree"), this);
+    auto treeDocker = new QDockWidget(QStringLiteral("Tree"), this);
     treeDocker->setObjectName(QStringLiteral("tree"));
     treeDocker->setFeatures(QDockWidget::DockWidgetClosable | QDockWidget::DockWidgetMovable | QDockWidget::DockWidgetFloatable);
     m_accessibleObjectTreeView = new QTreeView(treeDocker);
@@ -237,7 +237,7 @@ void MainWindow::initUi()
             SLOT(selectionChanged(QModelIndex, QModelIndex)));
     connect(m_accessibleObjectTreeView, SIGNAL(customContextMenuRequested(QPoint)), this, SLOT(treeCustomContextMenuRequested(QPoint)));
 
-    QDockWidget *propertyDocker = new QDockWidget(i18nc("@title:window", "Properties"), this);
+    auto propertyDocker = new QDockWidget(i18nc("@title:window", "Properties"), this);
     propertyDocker->setObjectName(QStringLiteral("properties"));
     propertyDocker->setFeatures(QDockWidget::DockWidgetClosable | QDockWidget::DockWidgetMovable | QDockWidget::DockWidgetFloatable);
     m_propertyView = new QTreeView(propertyDocker);
@@ -253,7 +253,7 @@ void MainWindow::initUi()
     m_propertyView->setAlternatingRowColors(true);
     connect(m_propertyView, &QTreeView::doubleClicked, m_propertyModel, &ObjectProperties::doubleClicked);
 
-    QDockWidget *uiDocker = new QDockWidget(i18nc("@title:window", "Boundaries"), this);
+    auto uiDocker = new QDockWidget(i18nc("@title:window", "Boundaries"), this);
     uiDocker->setObjectName(QStringLiteral("boundaries"));
     uiDocker->setFeatures(QDockWidget::DockWidgetClosable | QDockWidget::DockWidgetMovable | QDockWidget::DockWidgetFloatable);
     m_uiview = new UiView(uiDocker);
@@ -261,7 +261,7 @@ void MainWindow::initUi()
     m_uiview->setAccessibleDescription(i18nc("@info:whatsthis", "Visualize the component boundaries"));
     uiDocker->setWidget(m_uiview);
 
-    QDockWidget *eventsDocker = new QDockWidget(i18nc("@title:window", "Events"), this);
+    auto eventsDocker = new QDockWidget(i18nc("@title:window", "Events"), this);
     eventsDocker->setObjectName(QStringLiteral("events"));
     eventsDocker->setFeatures(QDockWidget::DockWidgetClosable | QDockWidget::DockWidgetMovable | QDockWidget::DockWidgetFloatable);
     m_eventsWidget = new EventsWidget(m_registry, eventsDocker);
@@ -377,7 +377,7 @@ void MainWindow::treeCustomContextMenuRequested(const QPoint &pos)
     if (!current.isValid())
         return;
     QAccessibleClient::AccessibleObject acc = static_cast<AccessibleWrapper *>(current.internalPointer())->acc;
-    QMenu *menu = new QMenu(this);
+    auto menu = new QMenu(this);
     connect(menu, SIGNAL(aboutToHide()), menu, SLOT(deleteLater()));
     for (const QSharedPointer<QAction> &a : acc.actions()) {
         menu->addAction(a.data());

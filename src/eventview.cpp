@@ -73,7 +73,7 @@ public:
         case AppUrlRole:
             break;
         }
-        return QString();
+        return {};
     }
     void clearLog()
     {
@@ -103,7 +103,7 @@ public:
             appItem = it.value();
         }
         appItem->appendRow(item);
-        return LogItem(appItem, isNewAppItem);
+        return {appItem, isNewAppItem};
     }
 
 private:
@@ -153,7 +153,7 @@ protected:
             return true;
         if (!m_types.testFlag(EventsWidget::AllEvents)) {
             QModelIndex index = sourceModel()->index(source_row, 0, source_parent);
-            EventsWidget::EventType type = index.data(EventsModel::EventTypeRole).value<EventsWidget::EventType>();
+            auto type = index.data(EventsModel::EventTypeRole).value<EventsWidget::EventType>();
             if (!m_types.testFlag(type))
                 return false;
         }
@@ -206,8 +206,8 @@ EventsWidget::EventsWidget(QAccessibleClient::Registry *registry, QWidget *paren
     connect(m_ui.accessibleFilterEdit, SIGNAL(textChanged(QString)), this, SLOT(accessibleFilterChanged()));
     connect(m_ui.roleFilterEdit, SIGNAL(textChanged(QString)), this, SLOT(roleFilterChanged()));
 
-    QStandardItemModel *filerModel = new QStandardItemModel();
-    QStandardItem *firstFilterItem = new QStandardItem(QStringLiteral("Event Filter"));
+    auto filerModel = new QStandardItemModel();
+    auto firstFilterItem = new QStandardItem(QStringLiteral("Event Filter"));
     firstFilterItem->setFlags(Qt::ItemIsEnabled);
     filerModel->appendRow(firstFilterItem);
 
@@ -215,7 +215,7 @@ EventsWidget::EventsWidget(QAccessibleClient::Registry *registry, QWidget *paren
     filterList << StateChanged << NameChanged << DescriptionChanged << Window << Focus << Document << Object << Text << Table << Others;
     for (int i = 0; i < filterList.count(); ++i) {
         EventType t = filterList[i];
-        QStandardItem *item = new QStandardItem(eventName(t));
+        auto item = new QStandardItem(eventName(t));
         item->setFlags(Qt::ItemIsUserCheckable | Qt::ItemIsEnabled);
         item->setData(QVariant::fromValue<EventType>(t), EventsModel::EventTypeRole);
         item->setData(Qt::Checked, Qt::CheckStateRole);
@@ -308,7 +308,7 @@ void EventsWidget::loadSettings(QSettings &settings)
     if (eventsFilter != m_proxyModel->filter()) {
         for (int i = 1; i < model->rowCount(); ++i) {
             QModelIndex index = model->index(i, 0);
-            EventType type = model->data(index, EventsModel::EventTypeRole).value<EventType>();
+            auto type = model->data(index, EventsModel::EventTypeRole).value<EventType>();
             if (eventsFilter.testFlag(type))
                 model->setData(index, Qt::Checked, Qt::CheckStateRole);
             else
@@ -384,7 +384,7 @@ void EventsWidget::addLog(const QAccessibleClient::AccessibleObject &object, Eve
     if (!object.isValid())
         return;
 
-    QStandardItem *nameItem = new QStandardItem(object.name());
+    auto nameItem = new QStandardItem(object.name());
     nameItem->setData(QVariant::fromValue<EventType>(eventType), EventsModel::EventTypeRole);
     nameItem->setData(object.url().toString(), EventsModel::UrlRole);
 
@@ -394,9 +394,9 @@ void EventsWidget::addLog(const QAccessibleClient::AccessibleObject &object, Eve
         nameItem->setData(app.url().toString(), EventsModel::AppUrlRole);
     }
 
-    QStandardItem *roleItem = new QStandardItem(object.roleName());
-    QStandardItem *typeItem = new QStandardItem(eventName(eventType));
-    QStandardItem *textItem = new QStandardItem(text);
+    auto roleItem = new QStandardItem(object.roleName());
+    auto typeItem = new QStandardItem(eventName(eventType));
+    auto textItem = new QStandardItem(text);
     m_pendingLogs.append(QList<QStandardItem *>() << nameItem << roleItem << typeItem << textItem);
     if (!m_pendingTimer.isActive()) {
         m_pendingTimer.start();
@@ -415,7 +415,7 @@ void EventsWidget::checkStateChanged()
         QModelIndex index = model->index(i, 0);
         bool checked = model->data(index, Qt::CheckStateRole).toBool();
         if (checked) {
-            EventType type = model->data(index, EventsModel::EventTypeRole).value<EventType>();
+            auto type = model->data(index, EventsModel::EventTypeRole).value<EventType>();
             types |= type;
             names.append(QString::fromLatin1(e.valueToKey(type)));
         } else {

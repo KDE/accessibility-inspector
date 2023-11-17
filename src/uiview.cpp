@@ -189,7 +189,7 @@ void UiWidget::paintEvent(QPaintEvent *event)
 QPixmap UiWidget::grabScreen()
 {
     if (m_bounds.isNull())
-        return QPixmap();
+        return {};
     Q_ASSERT(m_bounds.left() < m_bounds.right() && m_bounds.top() < m_bounds.bottom());
     QPixmap pm = grab(QRect(m_bounds.x(), m_bounds.y(), m_bounds.width(), m_bounds.height()));
     return pm;
@@ -198,7 +198,7 @@ QPixmap UiWidget::grabScreen()
 QRect UiWidget::bounds(const QAccessibleClient::AccessibleObject &acc) const
 {
     if (!acc.isValid())
-        return QRect();
+        return {};
     QRect rect;
     AccessibleObject::Interfaces ifaces = acc.supportedInterfaces();
     if (!(ifaces & AccessibleObject::ApplicationInterface)) {
@@ -253,17 +253,15 @@ UiView::UiView(QWidget *parent)
     : QScrollArea(parent)
     , m_uiWidget(new UiWidget(this))
 {
-    QWidget *widget = new QWidget(this);
-    QVBoxLayout *layout = new QVBoxLayout(widget);
+    auto widget = new QWidget(this);
+    auto layout = new QVBoxLayout(widget);
 
     layout->addWidget(m_uiWidget);
 
     setWidget(widget);
 }
 
-UiView::~UiView()
-{
-}
+UiView::~UiView() = default;
 
 void UiView::setAccessibleObject(const QAccessibleClient::AccessibleObject &acc)
 {
