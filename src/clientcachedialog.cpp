@@ -25,7 +25,7 @@ ClientCacheDialog::ClientCacheDialog(QAccessibleClient::Registry *registry, QWid
     , m_registry(registry)
     , m_cache(new QAccessibleClient::RegistryPrivateCacheApi(m_registry))
 {
-    setModal(true);
+    setWindowTitle(i18nc("@title:window", "Cache"));
     auto lay = new QVBoxLayout(this);
 
     m_view = new QTreeView(this);
@@ -41,7 +41,6 @@ ClientCacheDialog::ClientCacheDialog(QAccessibleClient::Registry *registry, QWid
 
     auto buttonsLay = new QHBoxLayout(this);
     buttonsLay->setContentsMargins(0, 0, 0, 0);
-    buttonsLay->setSpacing(0);
     auto updateButton = new QPushButton(i18nc("@action:button", "Refresh"), this);
     buttonsLay->addWidget(updateButton);
     connect(updateButton, &QPushButton::clicked, this, &ClientCacheDialog::updateView);
