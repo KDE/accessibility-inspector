@@ -255,7 +255,6 @@ UiView::UiView(QWidget *parent)
 {
     QWidget *widget = new QWidget(this);
     QVBoxLayout *layout = new QVBoxLayout(widget);
-    widget->setLayout(layout);
 
     layout->addWidget(m_uiWidget);
 
