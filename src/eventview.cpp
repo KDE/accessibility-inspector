@@ -152,20 +152,20 @@ protected:
         if (!source_parent.isValid())
             return true;
         if (!m_types.testFlag(EventsWidget::AllEvents)) {
-            QModelIndex index = sourceModel()->index(source_row, 0, source_parent);
-            auto type = index.data(EventsModel::EventTypeRole).value<EventsWidget::EventType>();
+            const QModelIndex index = sourceModel()->index(source_row, 0, source_parent);
+            const auto type = index.data(EventsModel::EventTypeRole).value<EventsWidget::EventType>();
             if (!m_types.testFlag(type))
                 return false;
         }
         if (!m_accessibleFilter.isEmpty()) {
-            QModelIndex index = sourceModel()->index(source_row, EventsModel::AccessibleRole, source_parent);
-            QString accessibleName = index.data(Qt::DisplayRole).toString();
+            const QModelIndex index = sourceModel()->index(source_row, EventsModel::AccessibleRole, source_parent);
+            const QString accessibleName = index.data(Qt::DisplayRole).toString();
             if (!accessibleName.contains(m_accessibleFilter, Qt::CaseInsensitive))
                 return false;
         }
         if (!m_roleFilter.isEmpty()) {
-            QModelIndex index = sourceModel()->index(source_row, EventsModel::RoleRole, source_parent);
-            QString roleName = index.data(Qt::DisplayRole).toString();
+            const QModelIndex index = sourceModel()->index(source_row, EventsModel::RoleRole, source_parent);
+            const QString roleName = index.data(Qt::DisplayRole).toString();
             if (!roleName.contains(m_roleFilter, Qt::CaseInsensitive))
                 return false;
         }

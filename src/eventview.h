@@ -68,10 +68,10 @@ private Q_SLOTS:
     void roleFilterChanged();
 
 private:
-    QAccessibleClient::Registry *m_registry = nullptr;
+    QAccessibleClient::Registry *const m_registry;
     Ui::EventViewWidget m_ui;
-    EventsModel *m_model = nullptr;
-    EventsProxyModel *m_proxyModel = nullptr;
+    EventsModel *const m_model;
+    EventsProxyModel *const m_proxyModel;
     QTimer m_pendingTimer;
     QVector<QList<QStandardItem *>> m_pendingLogs;
 
