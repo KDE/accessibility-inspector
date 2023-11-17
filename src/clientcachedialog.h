@@ -24,12 +24,11 @@ class ClientCacheDialog : public QDialog
     Q_OBJECT
 public:
     explicit ClientCacheDialog(QAccessibleClient::Registry *registry, QWidget *parent = nullptr);
-private Q_SLOTS:
+
+private:
     void clearCache();
     void cacheStrategyChanged();
     void updateView();
-
-private:
     QAccessibleClient::Registry *m_registry = nullptr;
     QAccessibleClient::RegistryPrivateCacheApi *const m_cache;
     QTreeView *m_view = nullptr;

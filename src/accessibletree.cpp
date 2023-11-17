@@ -41,9 +41,7 @@ AccessibleTree::AccessibleTree(QObject *parent)
 {
 }
 
-AccessibleTree::~AccessibleTree()
-{
-}
+AccessibleTree::~AccessibleTree() = default;
 
 QVariant AccessibleTree::headerData(int section, Qt::Orientation orientation, int role) const
 {

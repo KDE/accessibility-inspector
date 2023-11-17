@@ -225,7 +225,7 @@ EventsWidget::EventsWidget(QAccessibleClient::Registry *registry, QWidget *paren
 
     m_ui.clearButton->setFixedWidth(QFontMetrics(m_ui.clearButton->font()).boundingRect(m_ui.clearButton->text()).width() + 4);
     m_ui.clearButton->setFixedHeight(m_ui.filterComboBox->sizeHint().height());
-    connect(m_ui.clearButton, SIGNAL(clicked()), this, SLOT(clearLog()));
+    connect(m_ui.clearButton, &QPushButton::clicked, this, &EventsWidget::clearLog);
     connect(m_ui.filterComboBox->model(), SIGNAL(itemChanged(QStandardItem *)), this, SLOT(checkStateChanged()));
     connect(m_ui.eventListView, SIGNAL(activated(QModelIndex)), this, SLOT(eventActivated(QModelIndex)));
 
@@ -428,10 +428,10 @@ void EventsWidget::checkStateChanged()
 void EventsWidget::eventActivated(const QModelIndex &index)
 {
     Q_ASSERT(index.isValid());
-    QModelIndex parent = index.parent();
-    QModelIndex firstIndex = m_proxyModel->index(index.row(), 0, parent);
-    QString s = m_proxyModel->data(firstIndex, parent.isValid() ? EventsModel::UrlRole : EventsModel::AppUrlRole).toString();
-    QUrl url(s);
+    const QModelIndex parent = index.parent();
+    const QModelIndex firstIndex = m_proxyModel->index(index.row(), 0, parent);
+    const QString s = m_proxyModel->data(firstIndex, parent.isValid() ? EventsModel::UrlRole : EventsModel::AppUrlRole).toString();
+    const QUrl url(s);
     if (!url.isValid()) {
         qCWarning(ACCESSIBILITYINSPECTOR_LOG) << Q_FUNC_INFO << "Invalid url=" << s;
         return;

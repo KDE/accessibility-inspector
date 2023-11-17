@@ -44,7 +44,7 @@ ClientCacheDialog::ClientCacheDialog(QAccessibleClient::Registry *registry, QWid
     buttonsLay->setSpacing(0);
     QPushButton *updateButton = new QPushButton(i18nc("@action:button", "Refresh"), this);
     buttonsLay->addWidget(updateButton);
-    connect(updateButton, SIGNAL(clicked(bool)), this, SLOT(updateView()));
+    connect(updateButton, &QPushButton::clicked, this, &ClientCacheDialog::updateView);
     QPushButton *clearButton = new QPushButton(i18nc("@action:button", "Clear"), this);
     buttonsLay->addWidget(clearButton);
 
@@ -61,7 +61,7 @@ ClientCacheDialog::ClientCacheDialog(QAccessibleClient::Registry *registry, QWid
             break;
         }
     }
-    connect(m_cacheCombo, SIGNAL(currentIndexChanged(int)), this, SLOT(cacheStrategyChanged()));
+    connect(m_cacheCombo, &QComboBox::currentIndexChanged, this, &ClientCacheDialog::cacheStrategyChanged);
     buttonsLay->addWidget(m_cacheCombo);
     buttonsLay->addWidget(new QLabel(i18nc("@label:listbox", "Count:"), this));
     m_countLabel = new QLabel(this);
