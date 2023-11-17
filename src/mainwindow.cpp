@@ -117,7 +117,7 @@ MainWindow::~MainWindow()
     delete m_registry;
 }
 
-void MainWindow::MainWindow::closeEvent(QCloseEvent *event)
+void MainWindow::closeEvent(QCloseEvent *event)
 {
     QSettings settings(QStringLiteral("kde.org"), QStringLiteral("kdea11yapp"));
     settings.setValue(QStringLiteral("cacheStrategy"), int(QAccessibleClient::RegistryPrivateCacheApi(m_registry).cacheType()));
@@ -131,7 +131,7 @@ void MainWindow::MainWindow::closeEvent(QCloseEvent *event)
     QMainWindow::closeEvent(event);
 }
 
-void MainWindow::MainWindow::initActions()
+void MainWindow::initActions()
 {
     m_resetTreeAction = new QAction(this);
     m_resetTreeAction->setText(i18nc("@action:inmenu", "Reset Tree"));
@@ -188,7 +188,7 @@ void MainWindow::copyValue()
     QGuiApplication::clipboard()->setText(selected.data(Qt::DisplayRole).toString());
 }
 
-void MainWindow::MainWindow::initMenu()
+void MainWindow::initMenu()
 {
     QMenu *fileMenu = menuBar()->addMenu(i18nc("@title:menu", "Tree"));
     fileMenu->addAction(m_resetTreeAction);
@@ -210,7 +210,7 @@ void MainWindow::MainWindow::initMenu()
     settingsMenu->addAction(m_enableScreenReaderAction);
 }
 
-void MainWindow::MainWindow::initUi()
+void MainWindow::initUi()
 {
     setDockOptions(QMainWindow::AnimatedDocks | QMainWindow::AllowNestedDocks | QMainWindow::AllowTabbedDocks);
     // setTabPosition(Qt::AllDockWidgetAreas, QTabWidget::North);
@@ -508,13 +508,13 @@ void MainWindow::focusChanged(const QAccessibleClient::AccessibleObject &object)
     }
 }
 
-void MainWindow::MainWindow::textCaretMoved(const QAccessibleClient::AccessibleObject &object, int pos)
+void MainWindow::textCaretMoved(const QAccessibleClient::AccessibleObject &object, int pos)
 {
     updateDetails(object);
     m_eventsWidget->addLog(object, EventsWidget::Text, QStringLiteral("Text caret moved (%1)").arg(pos));
 }
 
-void MainWindow::MainWindow::textSelectionChanged(const QAccessibleClient::AccessibleObject &object)
+void MainWindow::textSelectionChanged(const QAccessibleClient::AccessibleObject &object)
 {
     updateDetails(object);
     m_eventsWidget->addLog(object, EventsWidget::Text, QStringLiteral("TextSelectionChanged"));
