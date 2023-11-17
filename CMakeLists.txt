@@ -23,6 +23,7 @@ include(KDEInstallDirs)
 include(ECMFindQmlModule)
 include(KDEClangFormat)
 include(ECMQtDeclareLoggingCategory)
+include(ECMDeprecationSettings)
 include(KDECMakeSettings)
 include(KDECompilerSettings NO_POLICY_SCOPE)
 include(ECMAddTests)
@@ -52,6 +53,10 @@ set_package_properties(QAccessibilityClient${QT_MAJOR_VERSION} PROPERTIES
     DESCRIPTION "KDE client-side accessibility library"
     PURPOSE "Required to enable accessibility features"
 )
+
+ecm_set_disabled_deprecation_versions(QT 6.5
+    KF 5.245.0
+    )
 
 add_subdirectory(src)
 
