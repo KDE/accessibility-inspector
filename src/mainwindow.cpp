@@ -287,8 +287,7 @@ void MainWindow::anchorClicked(const QUrl &url)
 void MainWindow::showClientCache()
 {
     QPointer<ClientCacheDialog> dlg(new ClientCacheDialog(m_registry, this));
-    dlg->setWindowTitle(m_showClientCacheAction->text());
-    if (dlg->exec() == QDialog::Accepted && dlg) { }
+    dlg->exec();
     if (dlg)
         dlg->deleteLater();
 }
