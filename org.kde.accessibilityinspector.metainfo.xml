@@ -18,7 +18,9 @@
   <categories>
     <category>Development</category>
   </categories>
-  <developer_name>The KDE Community</developer_name>
+  <developer id="https://kde.org">
+    <name>The KDE Community</name>
+  </developer>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>LGPL-2.0-or-later</project_license>
   <custom>
@@ -29,9 +31,12 @@
   <screenshots>
     <screenshot type="default">
       <image>https://cdn.kde.org/screenshots/accessibility-inspector/properties.png</image>
+      <caption>The properties of an node of the accessibility tree.</caption>
     </screenshot>
     <screenshot type="default">
       <image>https://cdn.kde.org/screenshots/accessibility-inspector/events.png</image>
+      <caption>The list of all the recent events.</caption>
     </screenshot>
   </screenshots>
+  <translation type="gettext">accessibilityinspector</translation>
 </component>
