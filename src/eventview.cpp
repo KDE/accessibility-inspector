@@ -191,7 +191,7 @@ EventsWidget::EventsWidget(QAccessibleClient::Registry *registry, QWidget *paren
     m_ui.setupUi(this);
 
     m_ui.eventListView->setAccessibleName(QLatin1String("Events View"));
-    m_ui.eventListView->setAccessibleDescription(QStringLiteral("Displays all received events"));
+    m_ui.eventListView->setAccessibleDescription(i18n("Displays all received events"));
     m_ui.eventListView->setProperty("_breeze_borders_sides", QVariant::fromValue(QFlags{Qt::TopEdge}));
 
     m_ui.horizontalLayout->setSpacing(style()->pixelMetric(QStyle::PM_LayoutHorizontalSpacing));
@@ -262,34 +262,34 @@ QString EventsWidget::eventName(EventType eventType) const
     QString s;
     switch (eventType) {
     case EventsWidget::Focus:
-        s = QLatin1String("Focus");
+        s = i18n("Focus");
         break;
     case EventsWidget::StateChanged:
-        s = QLatin1String("State");
+        s = i18n("State");
         break;
     case EventsWidget::NameChanged:
-        s = QLatin1String("Name");
+        s = i18n("Name");
         break;
     case EventsWidget::DescriptionChanged:
-        s = QLatin1String("Description");
+        s = i18n("Description");
         break;
     case EventsWidget::Window:
-        s = QLatin1String("Window");
+        s = i18n("Window");
         break;
     case EventsWidget::Document:
-        s = QLatin1String("Document");
+        s = i18n("Document");
         break;
     case EventsWidget::Object:
-        s = QLatin1String("Object");
+        s = i18n("Object");
         break;
     case EventsWidget::Text:
-        s = QLatin1String("Text");
+        s = i18n("Text");
         break;
     case EventsWidget::Table:
-        s = QLatin1String("Table");
+        s = i18n("Table");
         break;
     case EventsWidget::Others:
-        s = QLatin1String("Others");
+        s = i18n("Others");
         break;
     }
     return s;

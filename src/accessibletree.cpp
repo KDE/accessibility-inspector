@@ -8,6 +8,8 @@
 
 #include "accessibilityinspector_debug.h"
 
+#include <KLocalizedString>
+
 using namespace QAccessibleClient;
 
 AccessibleWrapper *AccessibleWrapper::parent() const
@@ -47,9 +49,9 @@ QVariant AccessibleTree::headerData(int section, Qt::Orientation orientation, in
 {
     if (orientation == Qt::Horizontal && role == Qt::DisplayRole) {
         if (section == 0) {
-            return QStringLiteral("Accessible");
+            return i18n("Accessible");
         } else if (section == 1) {
-            return QStringLiteral("Role");
+            return i18n("Role");
         }
     }
     return {};
