@@ -261,34 +261,37 @@ QString EventsWidget::eventName(EventType eventType) const
     QString s;
     switch (eventType) {
     case EventsWidget::Focus:
-        s = i18n("Focus");
+        s = i18nc("Accessibility event name", "Focus");
         break;
     case EventsWidget::StateChanged:
-        s = i18n("State");
+        s = i18nc("Accessibility event name: state changed", "State");
         break;
     case EventsWidget::NameChanged:
-        s = i18n("Name");
+        s = i18nc("Accessibility event name: name changed", "Name");
         break;
     case EventsWidget::DescriptionChanged:
-        s = i18n("Description");
+        s = i18nc("Accessibility event name: description changed", "Description");
         break;
     case EventsWidget::Window:
-        s = i18n("Window");
+        s = i18nc("Accessibility event name", "Window");
         break;
     case EventsWidget::Document:
-        s = i18n("Document");
+        s = i18nc("Accessibility event name", "Document");
         break;
     case EventsWidget::Object:
-        s = i18n("Object");
+        s = i18nc("Accessibility event name", "Object");
         break;
     case EventsWidget::Text:
-        s = i18n("Text");
+        s = i18nc("Accessibility event name", "Text");
         break;
     case EventsWidget::Table:
-        s = i18n("Table");
+        s = i18nc("Accessibility event name", "Table");
         break;
     case EventsWidget::Others:
-        s = i18n("Others");
+        s = i18nc("Accessibility event name", "Others");
+        break;
+    case EventsWidget::NoEvents:
+        s = i18nc("Accessibility event name", "No Event");
         break;
     }
     return s;
@@ -406,7 +409,6 @@ void EventsWidget::checkStateChanged()
 {
     EventTypes types;
     QStringList names;
-    bool allEvents = true;
     QMetaEnum e = metaObject()->enumerator(metaObject()->indexOfEnumerator("EventType"));
     Q_ASSERT(e.isValid());
     QAbstractItemModel *model = m_ui.filterComboBox->model();
@@ -417,8 +419,6 @@ void EventsWidget::checkStateChanged()
             auto type = model->data(index, EventsModel::EventTypeRole).value<EventType>();
             types |= type;
             names.append(QString::fromLatin1(e.valueToKey(type)));
-        } else {
-            allEvents = false;
         }
     }
     m_proxyModel->setFilter(types);

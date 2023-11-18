@@ -80,7 +80,7 @@ QVariant AccessibleTree::data(const QModelIndex &index, int role) const
         } else if (index.column() == 1) {
             return acc.roleName();
         }
-
+        [[fallthrough]];
     default:
         return {};
     }

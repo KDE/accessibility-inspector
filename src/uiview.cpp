@@ -139,7 +139,7 @@ UiWidget::UiWidget(UiView *view)
     view->setPalette(p);
     view->setAutoFillBackground(true);
 
-    for (int i = 0; i < ROLECOLORSCOUNT; ++i) {
+    for (size_t i = 0; i < ROLECOLORSCOUNT; ++i) {
         RoleColor &rc = roleColors[i];
         m_roleColors[rc.m_role] = rc.m_color;
     }
