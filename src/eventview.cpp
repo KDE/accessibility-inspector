@@ -184,7 +184,6 @@ QObject *EventsWidget::m_textEditForAccessibilityUpdateHandler = nullptr;
 
 EventsWidget::EventsWidget(QAccessibleClient::Registry *registry, QWidget *parent)
     : QWidget(parent)
-    , m_registry(registry)
     , m_model(new EventsModel(this))
     , m_proxyModel(new EventsProxyModel(this))
 {

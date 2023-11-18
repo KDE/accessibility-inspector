@@ -68,7 +68,6 @@ private Q_SLOTS:
     void roleFilterChanged();
 
 private:
-    QAccessibleClient::Registry *const m_registry;
     Ui::EventViewWidget m_ui;
     EventsModel *const m_model;
     EventsProxyModel *const m_proxyModel;
