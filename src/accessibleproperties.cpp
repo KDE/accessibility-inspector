@@ -6,7 +6,9 @@
 
 #include "accessibleproperties.h"
 
-#include "qaccessibilityclient/registry.h"
+#include <KLocalizedString>
+
+#include <qaccessibilityclient/registry.h>
 
 using namespace QAccessibleClient;
 
@@ -85,10 +87,10 @@ void ObjectProperties::setAccessibleObject(const QAccessibleClient::AccessibleOb
         append(QStringLiteral("Default"), acc.isDefault(), item);
         append(QStringLiteral("State"), acc.stateString(), item);
         append(QStringLiteral("AccessibleId"), acc.accessibleId(), item);
-        append(tr("Url"), acc.url(), item);
+        append(i18n("Url"), acc.url(), item);
         AccessibleObject parent = acc.parent();
         if (parent.isValid())
-            append(tr("Parent"), parent.url(), item);
+            append(i18n("Parent"), parent.url(), item);
         int childCount = acc.childCount();
         QStandardItem *children = append(QStringLiteral("Children"), acc.childCount(), item);
         for (int i = 0; i < childCount; ++i) {
