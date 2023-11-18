@@ -46,8 +46,7 @@ QVariant ObjectProperties::headerData(int section, Qt::Orientation orientation, 
     if (orientation == Qt::Horizontal && role == Qt::DisplayRole) {
         if (section == 0) {
             return QStringLiteral("Property");
-        }
-        if (section == 1) {
+        } else if (section == 1) {
             return QStringLiteral("Value");
         }
     }
