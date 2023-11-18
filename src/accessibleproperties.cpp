@@ -97,7 +97,7 @@ void ObjectProperties::setAccessibleObject(const QAccessibleClient::AccessibleOb
             if (!child.isValid()) {
                 append(QLatin1String("Broken child"), QString::number(i), children);
             } else {
-                append(child.name().isEmpty() ? tr("[%1]").arg(child.roleName()) : child.name(), child.url(), children);
+                append(child.name().isEmpty() ? QStringLiteral("[%1]").arg(child.roleName()) : child.name(), child.url(), children);
             }
         }
         // GetAttributes
