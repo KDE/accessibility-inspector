@@ -6,8 +6,7 @@
     SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
 */
 
-#ifndef CLIENTCACHEDIALOG_H
-#define CLIENTCACHEDIALOG_H
+#pragma once
 
 #include <QDialog>
 
@@ -36,5 +35,3 @@ private:
     QComboBox *m_cacheCombo = nullptr;
     QLabel *m_countLabel = nullptr;
 };
-
-#endif

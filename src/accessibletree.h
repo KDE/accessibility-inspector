@@ -4,8 +4,7 @@
     SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
 */
 
-#ifndef ACCESSIBLETREE_H
-#define ACCESSIBLETREE_H
+#pragma once
 
 #include <QAbstractItemModel>
 
@@ -57,5 +56,3 @@ private:
     QAccessibleClient::Registry *m_registry = nullptr;
     QList<AccessibleWrapper *> m_apps;
 };
-
-#endif // ACCESSIBLETREE_H

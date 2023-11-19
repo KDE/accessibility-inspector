@@ -4,8 +4,7 @@
     SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
 */
 
-#ifndef ACCESSIBLEPROPERTIES_H
-#define ACCESSIBLEPROPERTIES_H
+#pragma once
 
 #include "qaccessibilityclient/accessibleobject.h"
 #include <QObject>
@@ -40,5 +39,3 @@ private:
     QStandardItem *m_textItem = nullptr;
     QStandardItem *m_valueItem = nullptr;
 };
-
-#endif
