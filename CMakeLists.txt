@@ -48,6 +48,7 @@ set_package_properties(KF${QT_MAJOR_VERSION} PROPERTIES
 
 find_package(QAccessibilityClient${QT_MAJOR_VERSION} CONFIG)
 set_package_properties(QAccessibilityClient${QT_MAJOR_VERSION} PROPERTIES
+    TYPE REQUIRED
     URL "https://commits.kde.org/libqaccessibilityclient"
     DESCRIPTION "KDE client-side accessibility library"
     PURPOSE "Required to enable accessibility features"
