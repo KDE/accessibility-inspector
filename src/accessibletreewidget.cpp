@@ -5,6 +5,7 @@
 */
 
 #include "accessibletreewidget.h"
+#include "accessibletreeview.h"
 #include <KLocalizedString>
 #include <QLineEdit>
 #include <QTreeView>
@@ -13,13 +14,13 @@
 AccessibleTreeWidget::AccessibleTreeWidget(QWidget *parent)
     : QWidget{parent}
     , mSearchLineEdit(new QLineEdit(this))
-    , mAccessibleTreeView(new QTreeView(this))
+    , mAccessibleTreeView(new AccessibleTreeView(this))
 {
     auto mainLayout = new QVBoxLayout(this);
     mainLayout->setObjectName(QStringLiteral("mainLayout"));
     mainLayout->addWidget(mSearchLineEdit);
 
-    mAccessibleTreeView->setObjectName(QStringLiteral("mAccessibleTree"));
+    mAccessibleTreeView->setObjectName(QStringLiteral("mAccessibleTreeView"));
     mainLayout->addWidget(mAccessibleTreeView);
 }
 

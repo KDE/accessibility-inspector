@@ -26,6 +26,9 @@ target_sources(accessibilityinspector PRIVATE
     accessibletreewidget.h
     accessibletreewidget.cpp
 
+    accessibletreeview.h
+    accessibletreeview.cpp
+
     ${accessibleapps_UI_HDRS}
 )
 

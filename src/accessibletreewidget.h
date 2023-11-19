@@ -8,7 +8,7 @@
 
 #include <QWidget>
 class QLineEdit;
-class QTreeView;
+class AccessibleTreeView;
 class AccessibleTreeWidget : public QWidget
 {
     Q_OBJECT
@@ -18,5 +18,5 @@ public:
 
 private:
     QLineEdit *const mSearchLineEdit;
-    QTreeView *const mAccessibleTreeView;
+    AccessibleTreeView *const mAccessibleTreeView;
 };
