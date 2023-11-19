@@ -20,6 +20,7 @@
 
 #include "accessibleproperties.h"
 #include "accessibletree.h"
+#include "accessiblewrapper.h"
 #include "eventview.h"
 #include "uiview.h"
 

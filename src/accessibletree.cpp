@@ -5,38 +5,13 @@
 */
 
 #include "accessibletree.h"
+#include "accessiblewrapper.h"
 
 #include "accessibilityinspector_debug.h"
 
 #include <KLocalizedString>
 
 using namespace QAccessibleClient;
-
-AccessibleWrapper *AccessibleWrapper::parent() const
-{
-    return m_parent;
-}
-
-AccessibleWrapper *AccessibleWrapper::child(int index)
-{
-    if (m_children.isEmpty()) {
-        const QList<AccessibleObject> children = acc.children();
-        for (const AccessibleObject &c : children) {
-            m_children.append(new AccessibleWrapper(c, this));
-        }
-    }
-    if (index >= 0 && index < m_children.count()) {
-        return m_children.at(index);
-    }
-    return nullptr;
-}
-
-int AccessibleWrapper::childCount() const
-{
-    if (m_children.isEmpty())
-        return acc.childCount();
-    return m_children.count();
-}
 
 AccessibleTree::AccessibleTree(QObject *parent)
     : QAbstractItemModel(parent)

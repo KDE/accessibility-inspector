@@ -12,33 +12,7 @@
 #include <qaccessibilityclient/registry.h>
 
 class AccessibleTree;
-
-class AccessibleWrapper
-{
-public:
-    AccessibleWrapper(const QAccessibleClient::AccessibleObject &object, AccessibleWrapper *parent)
-        : acc(object)
-        , m_parent(parent)
-    {
-    }
-
-    QAccessibleClient::AccessibleObject acc;
-
-    ~AccessibleWrapper()
-    {
-        qDeleteAll(m_children);
-    }
-
-    int childCount() const;
-    AccessibleWrapper *child(int index);
-    AccessibleWrapper *parent() const;
-
-private:
-    friend class AccessibleTree;
-
-    AccessibleWrapper *const m_parent;
-    QList<AccessibleWrapper *> m_children;
-};
+class AccessibleWrapper;
 
 class AccessibleTree : public QAbstractItemModel
 {

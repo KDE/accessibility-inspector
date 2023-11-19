@@ -20,7 +20,9 @@ target_sources(accessibilityinspector PRIVATE
     eventview.cpp
     eventview.h
     uiview.cpp
-    uiview.h
+    uiview.h    
+    accessiblewrapper.h
+    accessiblewrapper.cpp
 
     ${accessibleapps_UI_HDRS}
 )
