@@ -8,10 +8,10 @@
   <provides>
     <binary>accessibilityinspector</binary>
   </provides>
-  <name>Acccessibility Inspector</name>
+  <name>Accessibility Inspector</name>
   <summary>Inspect your application accessibility tree</summary>
   <description>
-    <p>Acccessibility Inspector is like the name suggest an inspector for your application accessibility tree. It lets you check all the item exposed via At-SPI to .</p>
+    <p>Accessibility Inspector is like the name suggest an inspector for your application accessibility tree. It lets you check all the items exposed via At-SPI to.</p>
   </description>
   <url type="homepage">https://apps.kde.org/accessibilityinspector/</url>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?product=AccessibilityInspector</url>

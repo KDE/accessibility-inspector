@@ -244,7 +244,7 @@ void MainWindow::initUi()
     m_propertyView = new QTreeView(propertyDocker);
     propertyDocker->setWidget(m_propertyView);
     m_propertyView->setAccessibleName(i18nc("@info:whatsthis", "List of properties"));
-    m_propertyView->setAccessibleDescription(i18nc("@info:whatsthis", "Displays a the properties of the selected accessible object"));
+    m_propertyView->setAccessibleDescription(i18nc("@info:whatsthis", "Displays properties of the selected accessible object"));
     m_propertyView->setRootIsDecorated(false);
     m_propertyView->setItemsExpandable(true);
     m_propertyView->setExpandsOnDoubleClick(false);
