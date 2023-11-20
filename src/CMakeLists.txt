@@ -42,4 +42,8 @@ target_link_libraries(accessibilityinspector
     Qt::Widgets
 )
 
+if (BUILD_TESTING)
+    add_subdirectory(autotests)
+endif()
+
 install(TARGETS accessibilityinspector DESTINATION bin)
