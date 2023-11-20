@@ -20,7 +20,7 @@ public:
     [[nodiscard]] AccessibleWrapper *parent() const;
 
 private:
-    friend class AccessibleTree;
+    friend class AccessibleObjectTreeModel;
 
     AccessibleWrapper *const m_parent;
     QList<AccessibleWrapper *> m_children;

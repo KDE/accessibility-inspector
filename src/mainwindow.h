@@ -16,7 +16,7 @@
 
 #include "clientcachedialog.h"
 
-class AccessibleTree;
+class AccessibleObjectTreeModel;
 class ObjectProperties;
 class EventsWidget;
 class UiView;
@@ -89,10 +89,10 @@ private:
     void setCurrentObject(const QAccessibleClient::AccessibleObject &object);
     void updateDetails(const QAccessibleClient::AccessibleObject &object, bool force = false);
 
-    QAccessibleClient::Registry *m_registry = nullptr;
+    QAccessibleClient::Registry *const m_registry;
 
     QTreeView *m_accessibleObjectTreeView = nullptr;
-    AccessibleTree *m_accessibleObjectTreeModel = nullptr;
+    AccessibleObjectTreeModel *m_accessibleObjectTreeModel = nullptr;
 
     QTreeView *m_propertyView = nullptr;
     ObjectProperties *m_propertyModel = nullptr;

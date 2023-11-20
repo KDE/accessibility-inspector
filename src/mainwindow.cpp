@@ -18,8 +18,8 @@
 
 #include <qaccessibilityclient/registrycache_p.h>
 
+#include "accessibleobjecttreemodel.h"
 #include "accessibleproperties.h"
-#include "accessibletree.h"
 #include "accessiblewrapper.h"
 #include "eventview.h"
 #include "uiview.h"
@@ -28,9 +28,8 @@ using namespace QAccessibleClient;
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
+    , m_registry(new QAccessibleClient::Registry(this))
 {
-    m_registry = new QAccessibleClient::Registry(this);
-
     initUi();
     initActions();
     initMenu();
@@ -43,7 +42,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     m_eventsWidget->loadSettings(settings);
 
-    connect(m_registry, SIGNAL(added(QAccessibleClient::AccessibleObject)), this, SLOT(added(QAccessibleClient::AccessibleObject)));
+    connect(m_registry, &QAccessibleClient::Registry::added, this, &MainWindow::added);
     connect(m_registry, SIGNAL(removed(QAccessibleClient::AccessibleObject)), this, SLOT(removed(QAccessibleClient::AccessibleObject)));
     connect(m_registry, SIGNAL(defunct(QAccessibleClient::AccessibleObject)), this, SLOT(defunct(QAccessibleClient::AccessibleObject)));
 
@@ -137,7 +136,7 @@ void MainWindow::initActions()
     m_resetTreeAction = new QAction(this);
     m_resetTreeAction->setText(i18nc("@action:inmenu", "Reset Tree"));
     m_resetTreeAction->setShortcut(QKeySequence(QKeySequence::Refresh));
-    connect(m_resetTreeAction, SIGNAL(triggered()), m_accessibleObjectTreeModel, SLOT(resetModel()));
+    connect(m_resetTreeAction, &QAction::triggered, m_accessibleObjectTreeModel, &AccessibleObjectTreeModel::resetModel);
 
     m_followFocusAction = new QAction(this);
     m_followFocusAction->setText(i18nc("@action:inmenu", "Follow Focus"));
@@ -227,7 +226,7 @@ void MainWindow::initUi()
     m_accessibleObjectTreeView->setAlternatingRowColors(true);
     treeDocker->setWidget(m_accessibleObjectTreeView);
 
-    m_accessibleObjectTreeModel = new AccessibleTree(this);
+    m_accessibleObjectTreeModel = new AccessibleObjectTreeModel(this);
     m_accessibleObjectTreeModel->setRegistry(m_registry);
     m_accessibleObjectTreeView->setModel(m_accessibleObjectTreeModel);
     m_accessibleObjectTreeView->setColumnWidth(0, 240);

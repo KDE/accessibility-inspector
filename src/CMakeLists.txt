@@ -13,8 +13,8 @@ qt_wrap_ui(accessibleapps_UI_HDRS
 target_sources(libaccessibilityinspector PRIVATE
     mainwindow.cpp
     mainwindow.h
-    accessibletree.cpp
-    accessibletree.h
+    accessibleobjecttreemodel.cpp
+    accessibleobjecttreemodel.h
     accessibleproperties.cpp
     accessibleproperties.h
     clientcachedialog.cpp

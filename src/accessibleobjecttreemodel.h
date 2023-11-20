@@ -10,15 +10,15 @@
 
 #include <qaccessibilityclient/registry.h>
 
-class AccessibleTree;
+class AccessibleObjectTreeModel;
 class AccessibleWrapper;
 
-class AccessibleTree : public QAbstractItemModel
+class AccessibleObjectTreeModel : public QAbstractItemModel
 {
     Q_OBJECT
 public:
-    explicit AccessibleTree(QObject *parent = nullptr);
-    ~AccessibleTree() override;
+    explicit AccessibleObjectTreeModel(QObject *parent = nullptr);
+    ~AccessibleObjectTreeModel() override;
 
     void setRegistry(QAccessibleClient::Registry *registry);
 
