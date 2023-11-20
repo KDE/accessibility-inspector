@@ -15,3 +15,5 @@ AccessibleTreeView::AccessibleTreeView(QWidget *parent)
 }
 
 AccessibleTreeView::~AccessibleTreeView() = default;
+
+#include "moc_accessibletreeview.cpp"
