@@ -182,7 +182,7 @@ using namespace QAccessibleClient;
 QAccessible::UpdateHandler EventsWidget::m_originalAccessibilityUpdateHandler = nullptr;
 QObject *EventsWidget::m_textEditForAccessibilityUpdateHandler = nullptr;
 
-EventsWidget::EventsWidget(QAccessibleClient::Registry *registry, QWidget *parent)
+EventsWidget::EventsWidget(QWidget *parent)
     : QWidget(parent)
     , m_model(new EventsModel(this))
     , m_proxyModel(new EventsProxyModel(this))

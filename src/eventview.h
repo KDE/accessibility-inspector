@@ -10,7 +10,6 @@
 #include <QTimer>
 
 #include "qaccessibilityclient/accessibleobject.h"
-#include "qaccessibilityclient/registry.h"
 
 #include "ui_eventview.h"
 
@@ -46,7 +45,7 @@ public:
 
     QString eventName(EventType eventType) const;
 
-    explicit EventsWidget(QAccessibleClient::Registry *registry, QWidget *parent = nullptr);
+    explicit EventsWidget(QWidget *parent = nullptr);
 
     void loadSettings(QSettings &settings);
     void saveSettings(QSettings &settings);

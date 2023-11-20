@@ -265,7 +265,7 @@ void MainWindow::initUi()
     auto eventsDocker = new QDockWidget(i18nc("@title:window", "Events"), this);
     eventsDocker->setObjectName(QStringLiteral("events"));
     eventsDocker->setFeatures(QDockWidget::DockWidgetClosable | QDockWidget::DockWidgetMovable | QDockWidget::DockWidgetFloatable);
-    m_eventsWidget = new EventsWidget(m_registry, eventsDocker);
+    m_eventsWidget = new EventsWidget(eventsDocker);
     connect(m_eventsWidget, &EventsWidget::anchorClicked, this, &MainWindow::anchorClicked);
     eventsDocker->setWidget(m_eventsWidget);
 
