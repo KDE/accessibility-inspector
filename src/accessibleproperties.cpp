@@ -18,7 +18,7 @@ ObjectProperties::ObjectProperties(QObject *parent)
     setColumnCount(2);
     setHorizontalHeaderLabels(QStringList() << QStringLiteral("Property") << QStringLiteral("Value"));
 
-    connect(this, SIGNAL(itemChanged(QStandardItem *)), this, SLOT(slotDataChanged(QStandardItem *)));
+    connect(this, &ObjectProperties::itemChanged, this, &ObjectProperties::slotDataChanged);
 }
 
 ObjectProperties::~ObjectProperties() = default;

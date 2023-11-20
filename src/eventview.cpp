@@ -202,8 +202,8 @@ EventsWidget::EventsWidget(QAccessibleClient::Registry *registry, QWidget *paren
     m_proxyModel->setSourceModel(m_model);
     m_ui.eventListView->setModel(m_proxyModel);
 
-    connect(m_ui.accessibleFilterEdit, SIGNAL(textChanged(QString)), this, SLOT(accessibleFilterChanged()));
-    connect(m_ui.roleFilterEdit, SIGNAL(textChanged(QString)), this, SLOT(roleFilterChanged()));
+    connect(m_ui.accessibleFilterEdit, &QLineEdit::textChanged, this, &EventsWidget::accessibleFilterChanged);
+    connect(m_ui.roleFilterEdit, &QLineEdit::textChanged, this, &EventsWidget::roleFilterChanged);
 
     auto filerModel = new QStandardItemModel();
     auto firstFilterItem = new QStandardItem(QStringLiteral("Event Filter"));
@@ -226,13 +226,13 @@ EventsWidget::EventsWidget(QAccessibleClient::Registry *registry, QWidget *paren
     m_ui.clearButton->setFixedHeight(m_ui.filterComboBox->sizeHint().height());
     connect(m_ui.clearButton, &QPushButton::clicked, this, &EventsWidget::clearLog);
     connect(m_ui.filterComboBox->model(), SIGNAL(itemChanged(QStandardItem *)), this, SLOT(checkStateChanged()));
-    connect(m_ui.eventListView, SIGNAL(activated(QModelIndex)), this, SLOT(eventActivated(QModelIndex)));
+    connect(m_ui.eventListView, &QTreeView::activated, this, &EventsWidget::eventActivated);
 
     // Collect multiple addLog calls and process them after 500 ms earliest. This
     // makes sure multiple calls to addLog will be compressed to one only one
     // view refresh what improves performance.
     m_pendingTimer.setInterval(500);
-    connect(&m_pendingTimer, SIGNAL(timeout()), this, SLOT(processPending()));
+    connect(&m_pendingTimer, &QTimer::timeout, this, &EventsWidget::processPending);
     m_textEditForAccessibilityUpdateHandler = m_ui.eventListView;
     checkStateChanged();
 
