@@ -6,10 +6,11 @@
 
 #pragma once
 
+#include "libaccessibilityinspector_private_export.h"
 #include <QWidget>
 class QLineEdit;
 class AccessibleTreeView;
-class AccessibleTreeWidget : public QWidget
+class LIBACCESSIBILITYINSPECTOR_TEXT_EXPORT AccessibleTreeWidget : public QWidget
 {
     Q_OBJECT
 public:
