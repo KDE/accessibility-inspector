@@ -6,7 +6,23 @@
 
 #include "accessiblewrapper.h"
 
-#include <qaccessibilityclient/accessibleobject.h>
+AccessibleWrapper::AccessibleWrapper(const QAccessibleClient::AccessibleObject &object, AccessibleWrapper *parent)
+    : acc(object)
+    , m_parent(parent)
+{
+}
+
+AccessibleWrapper::~AccessibleWrapper()
+{
+    qDeleteAll(m_children);
+}
+
+int AccessibleWrapper::childCount() const
+{
+    if (m_children.isEmpty())
+        return acc.childCount();
+    return m_children.count();
+}
 
 AccessibleWrapper *AccessibleWrapper::parent() const
 {
@@ -25,11 +41,4 @@ AccessibleWrapper *AccessibleWrapper::child(int index)
         return m_children.at(index);
     }
     return nullptr;
-}
-
-int AccessibleWrapper::childCount() const
-{
-    if (m_children.isEmpty())
-        return acc.childCount();
-    return m_children.count();
 }

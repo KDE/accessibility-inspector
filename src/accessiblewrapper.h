@@ -10,22 +10,14 @@
 class AccessibleWrapper
 {
 public:
-    AccessibleWrapper(const QAccessibleClient::AccessibleObject &object, AccessibleWrapper *parent)
-        : acc(object)
-        , m_parent(parent)
-    {
-    }
+    explicit AccessibleWrapper(const QAccessibleClient::AccessibleObject &object, AccessibleWrapper *parent);
+    ~AccessibleWrapper();
 
     QAccessibleClient::AccessibleObject acc;
 
-    ~AccessibleWrapper()
-    {
-        qDeleteAll(m_children);
-    }
-
-    int childCount() const;
+    [[nodiscard]] int childCount() const;
     AccessibleWrapper *child(int index);
-    AccessibleWrapper *parent() const;
+    [[nodiscard]] AccessibleWrapper *parent() const;
 
 private:
     friend class AccessibleTree;
