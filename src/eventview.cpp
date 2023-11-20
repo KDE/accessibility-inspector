@@ -237,7 +237,7 @@ EventsWidget::EventsWidget(QWidget *parent)
     checkStateChanged();
 
     // We need to wait for a11y to be active for this hack.
-    QTimer::singleShot(500, this, SLOT(installUpdateHandler()));
+    QTimer::singleShot(500, this, &EventsWidget::installUpdateHandler);
 }
 
 void EventsWidget::installUpdateHandler()

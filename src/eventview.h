@@ -55,17 +55,14 @@ public:
 Q_SIGNALS:
     void anchorClicked(const QUrl &);
 
-public Q_SLOTS:
+private:
     void checkStateChanged();
-private Q_SLOTS:
-    void installUpdateHandler();
-    void clearLog();
     void processPending();
     void eventActivated(const QModelIndex &index);
-    void accessibleFilterChanged();
     void roleFilterChanged();
-
-private:
+    void accessibleFilterChanged();
+    void clearLog();
+    void installUpdateHandler();
     Ui::EventViewWidget m_ui;
     EventsModel *const m_model;
     EventsProxyModel *const m_proxyModel;

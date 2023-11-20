@@ -24,8 +24,6 @@ AccessibleTreeWidget::AccessibleTreeWidget(QWidget *parent)
     mainLayout->addWidget(mAccessibleTreeView);
 }
 
-AccessibleTreeWidget::~AccessibleTreeWidget()
-{
-}
+AccessibleTreeWidget::~AccessibleTreeWidget() = default;
 
 #include "moc_accessibletreewidget.cpp"

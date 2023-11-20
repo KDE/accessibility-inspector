@@ -26,12 +26,10 @@ public:
     {
         return m_acc;
     }
-
-public Q_SLOTS:
     void doubleClicked(const QModelIndex &index);
-    void slotDataChanged(QStandardItem *item);
 
 private:
+    void slotDataChanged(QStandardItem *item);
     QStandardItem *
     append(const QString &name, const QVariant &value = QVariant(), QStandardItem *parentItem = nullptr, QStandardItem **changeHandler = nullptr);
     QString stateString(const QAccessibleClient::AccessibleObject &acc);
