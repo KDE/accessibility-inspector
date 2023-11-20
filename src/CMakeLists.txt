@@ -48,22 +48,6 @@ set_target_properties(libaccessibilityinspector
 
 install(TARGETS libaccessibilityinspector ${KDE_INSTALL_TARGETS_DEFAULT_ARGS} LIBRARY NAMELINK_SKIP)
 
-
-
-add_executable(accessibilityinspector)
-
-
-
-target_sources(accessibilityinspector PRIVATE
-    main.cpp
-)
-
-target_link_libraries(accessibilityinspector
-    libaccessibilityinspector
-)
-
 if (BUILD_TESTING)
     add_subdirectory(autotests)
 endif()
-
-install(TARGETS accessibilityinspector DESTINATION ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
