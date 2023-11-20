@@ -39,6 +39,10 @@ set(ACCESSIBILITYINSPECTOR_LIB_SOVERSION "1")
 
 find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} NO_MODULE COMPONENTS Widgets Core)
 
+if (BUILD_TESTING)
+    find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Test)
+endif()
+
 set_package_properties(Qt${QT_MAJOR_VERSION} PROPERTIES
     TYPE REQUIRED
     PURPOSE "Required application components"
