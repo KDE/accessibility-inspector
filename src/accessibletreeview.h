@@ -14,4 +14,7 @@ class AccessibleTreeView : public QTreeView
 public:
     explicit AccessibleTreeView(QWidget *parent = nullptr);
     ~AccessibleTreeView() override;
+
+Q_SIGNALS:
+    void accessibleTreeviewSelectionChanged(const QModelIndex &current, const QModelIndex &previous);
 };

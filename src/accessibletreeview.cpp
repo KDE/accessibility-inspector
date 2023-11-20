@@ -11,6 +11,7 @@ AccessibleTreeView::AccessibleTreeView(QWidget *parent)
 {
     setColumnWidth(0, 240);
     setContextMenuPolicy(Qt::CustomContextMenu);
+    connect(selectionModel(), &QItemSelectionModel::currentChanged, this, &AccessibleTreeView::accessibleTreeviewSelectionChanged);
 }
 
 AccessibleTreeView::~AccessibleTreeView() = default;
