@@ -27,11 +27,15 @@ include(KDECMakeSettings)
 include(KDECompilerSettings NO_POLICY_SCOPE)
 include(ECMAddTests)
 include(KDEGitCommitHooks)
+include(GenerateExportHeader)
 
 ecm_setup_version(${PROJECT_VERSION}
     VARIABLE_PREFIX INSPECTOR
     VERSION_HEADER ${CMAKE_CURRENT_BINARY_DIR}/src/inspector-version.h
 )
+
+set(ACCESSIBILITYINSPECTOR_LIB_VERSION "1.0")
+set(ACCESSIBILITYINSPECTOR_LIB_SOVERSION "1")
 
 find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} NO_MODULE COMPONENTS Widgets Core)
 

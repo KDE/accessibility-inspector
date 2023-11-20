@@ -6,6 +6,7 @@
 
 #pragma once
 
+#include "libaccessibilityinspector_export.h"
 #include <QAction>
 #include <QMainWindow>
 #include <QTreeView>
@@ -20,7 +21,7 @@ class ObjectProperties;
 class EventsWidget;
 class UiView;
 
-class MainWindow : public QMainWindow
+class LIBACCESSIBILITYINSPECTOR_EXPORT MainWindow : public QMainWindow
 {
     Q_OBJECT
 

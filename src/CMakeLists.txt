@@ -1,14 +1,16 @@
 # SPDX-FileCopyrightText: 2023 Carl Schwan <carlschwan@kde.org>
 # SPDX-License-Identifier: BSD-2-Clause
 
-add_executable(accessibilityinspector)
+add_library(libaccessibilityinspector SHARED)
+
+ecm_qt_declare_logging_category(libaccessibilityinspector HEADER accessibilityinspector_debug.h IDENTIFIER ACCESSIBILITYINSPECTOR_LOG
+    CATEGORY_NAME org.kde.accessibilityinspector DESCRIPTION "accessibility-inspector" EXPORT ACCESSIBILITYINSPECTOR)
 
 qt_wrap_ui(accessibleapps_UI_HDRS
     eventview.ui
 )
 
-target_sources(accessibilityinspector PRIVATE
-    main.cpp
+target_sources(libaccessibilityinspector PRIVATE
     mainwindow.cpp
     mainwindow.h
     accessibletree.cpp
@@ -20,7 +22,7 @@ target_sources(accessibilityinspector PRIVATE
     eventview.cpp
     eventview.h
     uiview.cpp
-    uiview.h    
+    uiview.h
     accessiblewrapper.h
     accessiblewrapper.cpp
     accessibletreewidget.h
@@ -32,18 +34,36 @@ target_sources(accessibilityinspector PRIVATE
     ${accessibleapps_UI_HDRS}
 )
 
-ecm_qt_declare_logging_category(accessibilityinspector HEADER accessibilityinspector_debug.h IDENTIFIER ACCESSIBILITYINSPECTOR_LOG
-    CATEGORY_NAME org.kde.accessibilityinspector DESCRIPTION "accessibility-inspector" EXPORT ACCESSIBILITYINSPECTOR)
-
-target_link_libraries(accessibilityinspector
+generate_export_header(libaccessibilityinspector BASE_NAME libaccessibilityinspector)
+target_link_libraries(libaccessibilityinspector
     QAccessibilityClient${QT_MAJOR_VERSION}
     KF${QT_MAJOR_VERSION}::I18n
     KF${QT_MAJOR_VERSION}::CoreAddons
     Qt::Widgets
 )
 
+set_target_properties(libaccessibilityinspector
+    PROPERTIES OUTPUT_NAME libaccessibilityinspector VERSION ${ACCESSIBILITYINSPECTOR_LIB_VERSION} SOVERSION ${ACCESSIBILITYINSPECTOR_LIB_SOVERSION}
+    )
+
+install(TARGETS libaccessibilityinspector ${KDE_INSTALL_TARGETS_DEFAULT_ARGS} LIBRARY NAMELINK_SKIP)
+
+
+
+add_executable(accessibilityinspector)
+
+
+
+target_sources(accessibilityinspector PRIVATE
+    main.cpp
+)
+
+target_link_libraries(accessibilityinspector
+    libaccessibilityinspector
+)
+
 if (BUILD_TESTING)
     add_subdirectory(autotests)
 endif()
 
-install(TARGETS accessibilityinspector DESTINATION bin)
+install(TARGETS accessibilityinspector DESTINATION ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
