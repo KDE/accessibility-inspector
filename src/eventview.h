@@ -43,9 +43,9 @@ public:
     Q_ENUM(EventType)
     Q_ENUM(EventTypes)
 
-    QString eventName(EventType eventType) const;
-
     explicit EventsWidget(QWidget *parent = nullptr);
+
+    QString eventName(EventType eventType) const;
 
     void loadSettings(QSettings &settings);
     void saveSettings(QSettings &settings);

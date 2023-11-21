@@ -14,7 +14,10 @@ class ObjectProperties : public QStandardItemModel
 {
     Q_OBJECT
 public:
-    enum Role { NameRole, ValueRole };
+    enum Role {
+        NameRole,
+        ValueRole,
+    };
     explicit ObjectProperties(QObject *parent = nullptr);
     ~ObjectProperties() override;
 
@@ -22,10 +25,7 @@ public:
 
     QHash<int, QByteArray> roleNames() const override;
     void setAccessibleObject(const QAccessibleClient::AccessibleObject &acc);
-    QAccessibleClient::AccessibleObject currentObject() const
-    {
-        return m_acc;
-    }
+    [[nodiscard]] QAccessibleClient::AccessibleObject currentObject() const;
     void doubleClicked(const QModelIndex &index);
 
 private:

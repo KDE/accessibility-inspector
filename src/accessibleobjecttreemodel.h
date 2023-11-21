@@ -28,10 +28,7 @@ public:
     bool removeAccessible(const QModelIndex &index);
     void updateAccessible(const QAccessibleClient::AccessibleObject &object);
 
-    QList<AccessibleWrapper *> apps() const
-    {
-        return m_apps;
-    }
+    [[nodiscard]] QList<AccessibleWrapper *> apps() const;
 
     int columnCount(const QModelIndex &parent = QModelIndex()) const override;
     QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;

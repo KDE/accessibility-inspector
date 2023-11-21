@@ -309,4 +309,9 @@ void AccessibleObjectTreeModel::updateAccessible(const QAccessibleClient::Access
     Q_EMIT dataChanged(index, index);
 }
 
+QList<AccessibleWrapper *> AccessibleObjectTreeModel::apps() const
+{
+    return m_apps;
+}
+
 #include "moc_accessibleobjecttreemodel.cpp"

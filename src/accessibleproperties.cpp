@@ -287,6 +287,11 @@ void ObjectProperties::setAccessibleObject(const QAccessibleClient::AccessibleOb
     endResetModel();
 }
 
+AccessibleObject ObjectProperties::currentObject() const
+{
+    return m_acc;
+}
+
 void ObjectProperties::doubleClicked(const QModelIndex &index)
 {
     if (!index.isValid() || !index.parent().isValid() || index.parent().data().toString() != QLatin1String("Action"))
