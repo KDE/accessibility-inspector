@@ -318,22 +318,22 @@ QStandardItem *ObjectPropertiesModel::append(const QString &name, const QVariant
     switch (value.type()) {
 #endif
     case QMetaType::QPoint: {
-        QPoint p = value.toPoint();
+        const QPoint p = value.toPoint();
         text = QStringLiteral("%1:%2").arg(p.x()).arg(p.y());
         break;
     }
     case QMetaType::QPointF: {
-        QPointF p = value.toPointF();
+        const QPointF p = value.toPointF();
         text = QStringLiteral("%1:%2").arg(p.x()).arg(p.y());
         break;
     }
     case QMetaType::QRect: {
-        QRect r = value.toRect();
+        const QRect r = value.toRect();
         text = QStringLiteral("%1:%2 %3x%4").arg(r.left()).arg(r.top()).arg(r.width()).arg(r.height());
         break;
     }
     case QMetaType::QRectF: {
-        QRectF r = value.toRectF();
+        const QRectF r = value.toRectF();
         text = QStringLiteral("%1:%2 %3x%4").arg(r.left()).arg(r.top()).arg(r.width()).arg(r.height());
         break;
     }
