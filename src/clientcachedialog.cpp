@@ -24,11 +24,11 @@ ClientCacheDialog::ClientCacheDialog(QAccessibleClient::Registry *registry, QWid
     : QDialog(parent)
     , m_registry(registry)
     , m_cache(new QAccessibleClient::RegistryPrivateCacheApi(m_registry))
+    , m_view(new QTreeView(this))
 {
     setWindowTitle(i18nc("@title:window", "Cache"));
     auto lay = new QVBoxLayout(this);
 
-    m_view = new QTreeView(this);
     m_view->setEditTriggers(QAbstractItemView::NoEditTriggers);
     m_view->setRootIsDecorated(false);
     m_view->setSortingEnabled(true);

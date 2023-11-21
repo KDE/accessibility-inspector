@@ -30,7 +30,7 @@ private:
     void updateView();
     QAccessibleClient::Registry *m_registry = nullptr;
     QAccessibleClient::RegistryPrivateCacheApi *const m_cache;
-    QTreeView *m_view = nullptr;
+    QTreeView *const m_view;
     QStandardItemModel *m_model = nullptr;
     QComboBox *m_cacheCombo = nullptr;
     QLabel *m_countLabel = nullptr;
