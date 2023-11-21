@@ -294,9 +294,9 @@ void MainWindow::showClientCache()
 
 void MainWindow::setCurrentObject(const QAccessibleClient::AccessibleObject &object)
 {
-    QModelIndex index = m_accessibleObjectTreeModel->indexForAccessible(object);
+    const QModelIndex index = m_accessibleObjectTreeModel->indexForAccessible(object);
     if (index.isValid()) {
-        QModelIndex other = m_accessibleObjectTreeModel->index(index.row(), index.column() + 1, index.parent());
+        const QModelIndex other = m_accessibleObjectTreeModel->index(index.row(), index.column() + 1, index.parent());
         Q_ASSERT(other.isValid());
         m_accessibleObjectTreeView->selectionModel()->select(QItemSelection(index, other), QItemSelectionModel::SelectCurrent);
         m_accessibleObjectTreeView->scrollTo(index);
@@ -372,7 +372,7 @@ void MainWindow::selectionChanged(const QModelIndex &current, const QModelIndex 
 
 void MainWindow::treeCustomContextMenuRequested(const QPoint &pos)
 {
-    QModelIndex current = m_accessibleObjectTreeView->currentIndex();
+    const QModelIndex current = m_accessibleObjectTreeView->currentIndex();
     if (!current.isValid())
         return;
     QAccessibleClient::AccessibleObject acc = static_cast<AccessibleWrapper *>(current.internalPointer())->acc;
