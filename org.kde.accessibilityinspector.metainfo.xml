@@ -10,6 +10,12 @@
   </provides>
   <name>Accessibility Inspector</name>
   <summary>Inspect your application accessibility tree</summary>
+  <summary xml:lang="ca">Inspecciona l'arbre d'accessibilitat de la vostra aplicació</summary>
+  <summary xml:lang="ca-valencia">Inspecciona l'arbre d'accessibilitat de la vostra aplicació</summary>
+  <summary xml:lang="nl">Inspecteer de boomstructuur voor toegankelijkheid van uw toepassing</summary>
+  <summary xml:lang="tr">Uygulamanızın erişilebilirlik ağacını denetleyin</summary>
+  <summary xml:lang="uk">Вивчення ієрархії доступності вашої програми</summary>
+  <summary xml:lang="x-test">xxInspect your application accessibility treexx</summary>
   <description>
     <p>Accessibility Inspector is like the name suggest an inspector for your application accessibility tree. It lets you check all the items exposed via At-SPI to.</p>
   </description>
@@ -27,7 +33,7 @@
     <value key="KDE::matrix">#kde-accessibility:kde.org</value>
   </custom>
   <launchable type="desktop-id">org.kde.accessibilityinspector.desktop</launchable>
-  <content_rating type="oars-1.1" />
+  <content_rating type="oars-1.1"/>
   <screenshots>
     <screenshot type="default">
       <image>https://cdn.kde.org/screenshots/accessibility-inspector/properties.png</image>
@@ -36,6 +42,12 @@
     <screenshot type="default">
       <image>https://cdn.kde.org/screenshots/accessibility-inspector/events.png</image>
       <caption>The list of all the recent events.</caption>
+      <caption xml:lang="ca">La llista de tots els esdeveniments recents.</caption>
+      <caption xml:lang="ca-valencia">La llista de tots els esdeveniments recents.</caption>
+      <caption xml:lang="nl">De lijst met alle recente gebeurtenissen.</caption>
+      <caption xml:lang="tr">Tüm son gerçekleşen olayların bir listesi.</caption>
+      <caption xml:lang="uk">Список усіх нещодавніх подій.</caption>
+      <caption xml:lang="x-test">xxThe list of all the recent events.xx</caption>
     </screenshot>
   </screenshots>
   <translation type="gettext">accessibilityinspector</translation>
