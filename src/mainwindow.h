@@ -17,7 +17,7 @@
 #include "clientcachedialog.h"
 
 class AccessibleObjectTreeModel;
-class ObjectProperties;
+class ObjectPropertiesModel;
 class EventsWidget;
 class UiView;
 
@@ -95,7 +95,7 @@ private:
     AccessibleObjectTreeModel *m_accessibleObjectTreeModel = nullptr;
 
     QTreeView *m_propertyView = nullptr;
-    ObjectProperties *m_propertyModel = nullptr;
+    ObjectPropertiesModel *m_propertyModel = nullptr;
 
     EventsWidget *m_eventsWidget = nullptr;
     UiView *m_uiview = nullptr;

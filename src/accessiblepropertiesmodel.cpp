@@ -4,7 +4,7 @@
     SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
 */
 
-#include "accessibleproperties.h"
+#include "accessiblepropertiesmodel.h"
 
 #include <KLocalizedString>
 
@@ -12,18 +12,18 @@
 
 using namespace QAccessibleClient;
 
-ObjectProperties::ObjectProperties(QObject *parent)
+ObjectPropertiesModel::ObjectPropertiesModel(QObject *parent)
     : QStandardItemModel(parent)
 {
     setColumnCount(2);
     setHorizontalHeaderLabels(QStringList() << QStringLiteral("Property") << QStringLiteral("Value"));
 
-    connect(this, &ObjectProperties::itemChanged, this, &ObjectProperties::slotDataChanged);
+    connect(this, &ObjectPropertiesModel::itemChanged, this, &ObjectPropertiesModel::slotDataChanged);
 }
 
-ObjectProperties::~ObjectProperties() = default;
+ObjectPropertiesModel::~ObjectPropertiesModel() = default;
 
-void ObjectProperties::slotDataChanged(QStandardItem *item)
+void ObjectPropertiesModel::slotDataChanged(QStandardItem *item)
 {
     if (item == m_textItem) {
         QString newText = item->data(Qt::EditRole).toString();
@@ -41,7 +41,7 @@ void ObjectProperties::slotDataChanged(QStandardItem *item)
     }
 }
 
-QVariant ObjectProperties::headerData(int section, Qt::Orientation orientation, int role) const
+QVariant ObjectPropertiesModel::headerData(int section, Qt::Orientation orientation, int role) const
 {
     if (orientation == Qt::Horizontal && role == Qt::DisplayRole) {
         if (section == 0) {
@@ -53,7 +53,7 @@ QVariant ObjectProperties::headerData(int section, Qt::Orientation orientation, 
     return {};
 }
 
-QHash<int, QByteArray> ObjectProperties::roleNames() const
+QHash<int, QByteArray> ObjectPropertiesModel::roleNames() const
 {
     QHash<int, QByteArray> roles;
     roles[NameRole] = "name";
@@ -61,7 +61,7 @@ QHash<int, QByteArray> ObjectProperties::roleNames() const
     return roles;
 }
 
-void ObjectProperties::setAccessibleObject(const QAccessibleClient::AccessibleObject &acc)
+void ObjectPropertiesModel::setAccessibleObject(const QAccessibleClient::AccessibleObject &acc)
 {
     beginResetModel();
     m_acc = acc;
@@ -287,12 +287,12 @@ void ObjectProperties::setAccessibleObject(const QAccessibleClient::AccessibleOb
     endResetModel();
 }
 
-AccessibleObject ObjectProperties::currentObject() const
+AccessibleObject ObjectPropertiesModel::currentObject() const
 {
     return m_acc;
 }
 
-void ObjectProperties::doubleClicked(const QModelIndex &index)
+void ObjectPropertiesModel::doubleClicked(const QModelIndex &index)
 {
     if (!index.isValid() || !index.parent().isValid() || index.parent().data().toString() != QLatin1String("Action"))
         return;
@@ -306,7 +306,7 @@ void ObjectProperties::doubleClicked(const QModelIndex &index)
     }
 }
 
-QStandardItem *ObjectProperties::append(const QString &name, const QVariant &value, QStandardItem *parentItem, QStandardItem **changeHandler)
+QStandardItem *ObjectPropertiesModel::append(const QString &name, const QVariant &value, QStandardItem *parentItem, QStandardItem **changeHandler)
 {
     if (!parentItem)
         parentItem = invisibleRootItem();
@@ -355,4 +355,4 @@ QStandardItem *ObjectProperties::append(const QString &name, const QVariant &val
     return nameItem;
 }
 
-#include "moc_accessibleproperties.cpp"
+#include "moc_accessiblepropertiesmodel.cpp"

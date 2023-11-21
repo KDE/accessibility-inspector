@@ -10,7 +10,7 @@
 #include <QObject>
 #include <QStandardItemModel>
 
-class ObjectProperties : public QStandardItemModel
+class ObjectPropertiesModel : public QStandardItemModel
 {
     Q_OBJECT
 public:
@@ -18,8 +18,8 @@ public:
         NameRole,
         ValueRole,
     };
-    explicit ObjectProperties(QObject *parent = nullptr);
-    ~ObjectProperties() override;
+    explicit ObjectPropertiesModel(QObject *parent = nullptr);
+    ~ObjectPropertiesModel() override;
 
     QVariant headerData(int section, Qt::Orientation orientation, int role) const override;
 

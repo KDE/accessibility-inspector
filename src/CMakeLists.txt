@@ -15,8 +15,8 @@ target_sources(libaccessibilityinspector PRIVATE
     mainwindow.h
     accessibleobjecttreemodel.cpp
     accessibleobjecttreemodel.h
-    accessibleproperties.cpp
-    accessibleproperties.h
+    accessiblepropertiesmodel.cpp
+    accessiblepropertiesmodel.h
     clientcachedialog.cpp
     clientcachedialog.h
     eventview.cpp

@@ -19,7 +19,7 @@
 #include <qaccessibilityclient/registrycache_p.h>
 
 #include "accessibleobjecttreemodel.h"
-#include "accessibleproperties.h"
+#include "accessiblepropertiesmodel.h"
 #include "accessiblewrapper.h"
 #include "eventview.h"
 #include "uiview.h"
@@ -248,10 +248,10 @@ void MainWindow::initUi()
     m_propertyView->setItemsExpandable(true);
     m_propertyView->setExpandsOnDoubleClick(false);
     m_propertyView->setEditTriggers(QAbstractItemView::DoubleClicked | QAbstractItemView::AnyKeyPressed | QAbstractItemView::EditKeyPressed);
-    m_propertyModel = new ObjectProperties(this);
+    m_propertyModel = new ObjectPropertiesModel(this);
     m_propertyView->setModel(m_propertyModel);
     m_propertyView->setAlternatingRowColors(true);
-    connect(m_propertyView, &QTreeView::doubleClicked, m_propertyModel, &ObjectProperties::doubleClicked);
+    connect(m_propertyView, &QTreeView::doubleClicked, m_propertyModel, &ObjectPropertiesModel::doubleClicked);
 
     auto uiDocker = new QDockWidget(i18nc("@title:window", "Boundaries"), this);
     uiDocker->setObjectName(QStringLiteral("boundaries"));
