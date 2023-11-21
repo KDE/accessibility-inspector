@@ -15,6 +15,7 @@
 #include <QSettings>
 
 #include <KLocalizedString>
+#include <KStandardAction>
 
 #include <qaccessibilityclient/registrycache_p.h>
 
@@ -163,9 +164,7 @@ void MainWindow::initActions()
     connect(m_registry, SIGNAL(screenReaderEnabledChanged(bool)), m_enableScreenReaderAction, SLOT(setChecked(bool)));
     connect(m_enableScreenReaderAction, SIGNAL(toggled(bool)), m_registry, SLOT(setScreenReaderEnabled(bool)));
 
-    m_quitAction = new QAction(i18nc("@action:inmenu", "Quit"), this);
-    m_quitAction->setShortcuts(QKeySequence::Quit);
-    connect(m_quitAction, &QAction::triggered, this, &MainWindow::close);
+    m_quitAction = KStandardAction::quit(this, &MainWindow::close, this);
 
     m_copyValueAction = new QAction(i18nc("@action:inmenu", "Copy property value"), this);
     m_copyValueAction->setShortcuts(QKeySequence::Copy);
