@@ -88,7 +88,7 @@ void ClientCacheDialog::clearCache()
 
 void ClientCacheDialog::cacheStrategyChanged()
 {
-    int c = m_cacheCombo->itemData(m_cacheCombo->currentIndex()).toInt();
+    const int c = m_cacheCombo->itemData(m_cacheCombo->currentIndex()).toInt();
     m_cache->setCacheType(QAccessibleClient::RegistryPrivateCacheApi::CacheType(c));
     updateView();
 }
