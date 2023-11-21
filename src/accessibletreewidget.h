@@ -10,6 +10,7 @@
 #include <QWidget>
 class QLineEdit;
 class AccessibleTreeView;
+class QSortFilterProxyModel;
 class LIBACCESSIBILITYINSPECTOR_TEXT_EXPORT AccessibleTreeWidget : public QWidget
 {
     Q_OBJECT
@@ -20,4 +21,5 @@ public:
 private:
     QLineEdit *const mSearchLineEdit;
     AccessibleTreeView *const mAccessibleTreeView;
+    QSortFilterProxyModel *const mSortFilterProxyModel;
 };
