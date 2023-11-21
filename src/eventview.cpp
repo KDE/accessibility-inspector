@@ -225,7 +225,7 @@ EventsWidget::EventsWidget(QWidget *parent)
     m_ui.clearButton->setFixedWidth(QFontMetrics(m_ui.clearButton->font()).boundingRect(m_ui.clearButton->text()).width() + 4);
     m_ui.clearButton->setFixedHeight(m_ui.filterComboBox->sizeHint().height());
     connect(m_ui.clearButton, &QPushButton::clicked, this, &EventsWidget::clearLog);
-    connect(m_ui.filterComboBox->model(), SIGNAL(itemChanged(QStandardItem *)), this, SLOT(checkStateChanged()));
+    connect(m_ui.filterComboBox, &QComboBox::activated, this, &EventsWidget::checkStateChanged);
     connect(m_ui.eventListView, &QTreeView::activated, this, &EventsWidget::eventActivated);
 
     // Collect multiple addLog calls and process them after 500 ms earliest. This
@@ -244,7 +244,7 @@ void EventsWidget::installUpdateHandler()
 {
     m_originalAccessibilityUpdateHandler = QAccessible::installUpdateHandler(customUpdateHandler);
     if (!m_originalAccessibilityUpdateHandler)
-        QTimer::singleShot(500, this, SLOT(installUpdateHandler()));
+        QTimer::singleShot(500, this, &EventsWidget::installUpdateHandler);
 }
 
 void EventsWidget::customUpdateHandler(QAccessibleEvent *event)
