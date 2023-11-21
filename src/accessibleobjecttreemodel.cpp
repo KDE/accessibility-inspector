@@ -153,7 +153,7 @@ void AccessibleObjectTreeModel::updateTopLevelApps()
     QList<AccessibleObject> topLevelApps = m_registry->applications();
     for (int i = m_apps.count() - 1; i >= 0; --i) {
         AccessibleObject app = m_apps.at(i)->acc;
-        int indexOfApp = topLevelApps.indexOf(app);
+        const int indexOfApp = topLevelApps.indexOf(app);
         if (indexOfApp < 0) {
             removeAccessible(index(i, 0, QModelIndex()));
         } else {

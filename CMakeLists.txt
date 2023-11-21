@@ -48,7 +48,7 @@ set_package_properties(Qt${QT_MAJOR_VERSION} PROPERTIES
     PURPOSE "Required application components"
 )
 
-find_package(KF${QT_MAJOR_VERSION} ${KF_MIN_VERSION} COMPONENTS CoreAddons I18n DBusAddons ConfigWidgets)
+find_package(KF${QT_MAJOR_VERSION} ${KF_MIN_VERSION} COMPONENTS CoreAddons I18n DBusAddons ConfigWidgets XmlGui Crash)
 set_package_properties(KF${QT_MAJOR_VERSION} PROPERTIES
     TYPE REQUIRED
     PURPOSE "Required application components"

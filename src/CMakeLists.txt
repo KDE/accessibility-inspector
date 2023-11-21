@@ -31,6 +31,7 @@ target_sources(libaccessibilityinspector PRIVATE
     accessibletreeview.h
     accessibletreeview.cpp
 
+    accessibilityinspector.qrc
     ${accessibleapps_UI_HDRS}
 )
 
@@ -40,6 +41,7 @@ target_link_libraries(libaccessibilityinspector
     KF${QT_MAJOR_VERSION}::I18n
     KF${QT_MAJOR_VERSION}::CoreAddons
     KF${QT_MAJOR_VERSION}::ConfigWidgets
+    KF${QT_MAJOR_VERSION}::XmlGui
     Qt::Widgets
 )
 

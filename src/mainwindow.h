@@ -7,8 +7,8 @@
 #pragma once
 
 #include "libaccessibilityinspector_export.h"
+#include <KXmlGuiWindow>
 #include <QAction>
-#include <QMainWindow>
 #include <QTreeView>
 
 #include "qaccessibilityclient/accessibleobject.h"
@@ -21,7 +21,7 @@ class ObjectPropertiesModel;
 class EventsWidget;
 class UiView;
 
-class LIBACCESSIBILITYINSPECTOR_EXPORT MainWindow : public QMainWindow
+class LIBACCESSIBILITYINSPECTOR_EXPORT MainWindow : public KXmlGuiWindow
 {
     Q_OBJECT
 

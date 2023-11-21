@@ -1,10 +1,12 @@
 /*
     SPDX-FileCopyrightText: 2012 Frederik Gladhorn <gladhorn@kde.org>
+    SPDX-FileCopyrightText: 2023 Laurent Montel <montel@kde.org>
 
     SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
 */
 
 #include <KAboutData>
+#include <KCrash>
 #include <KDBusService>
 #include <KLocalizedString>
 #include <QApplication>
@@ -16,6 +18,7 @@
 int main(int argc, char **argv)
 {
     QApplication app(argc, argv);
+    KCrash::initialize();
 
     KLocalizedString::setApplicationDomain("accessibilityinspector");
 

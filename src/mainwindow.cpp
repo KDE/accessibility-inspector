@@ -14,6 +14,7 @@
 #include <QPointer>
 #include <QSettings>
 
+#include <KActionCollection>
 #include <KLocalizedString>
 #include <KStandardAction>
 
@@ -28,12 +29,13 @@
 using namespace QAccessibleClient;
 
 MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent)
+    : KXmlGuiWindow(parent)
     , m_registry(new QAccessibleClient::Registry(this))
 {
     initUi();
     initActions();
     initMenu();
+    setupGUI();
 
     QSettings settings(QStringLiteral("kde.org"), QStringLiteral("kdea11yapp"));
     QAccessibleClient::RegistryPrivateCacheApi cache(m_registry);
@@ -134,6 +136,7 @@ void MainWindow::closeEvent(QCloseEvent *event)
 
 void MainWindow::initActions()
 {
+    KActionCollection *ac = actionCollection();
     m_resetTreeAction = new QAction(this);
     m_resetTreeAction->setText(i18nc("@action:inmenu", "Reset Tree"));
     m_resetTreeAction->setShortcut(QKeySequence(QKeySequence::Refresh));
@@ -164,7 +167,7 @@ void MainWindow::initActions()
     connect(m_registry, SIGNAL(screenReaderEnabledChanged(bool)), m_enableScreenReaderAction, SLOT(setChecked(bool)));
     connect(m_enableScreenReaderAction, SIGNAL(toggled(bool)), m_registry, SLOT(setScreenReaderEnabled(bool)));
 
-    m_quitAction = KStandardAction::quit(this, &MainWindow::close, this);
+    m_quitAction = KStandardAction::quit(this, &MainWindow::close, ac);
 
     m_copyValueAction = new QAction(i18nc("@action:inmenu", "Copy property value"), this);
     m_copyValueAction->setShortcuts(QKeySequence::Copy);
