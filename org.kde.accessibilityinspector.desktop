@@ -3,8 +3,26 @@
 
 [Desktop Entry]
 Name=Accessibility Inspector
+Name[ca]=Inspector d'accessibilitat
+Name[ca@valencia]=Inspector d'accessibilitat
+Name[nl]=Toegankelijkheidsinspecteur
+Name[tr]=Erişilebilirlik Denetçisi
+Name[uk]=Ревізор доступності
+Name[x-test]=xxAccessibility Inspectorxx
 GenericName=Accessibility Inspector
+GenericName[ca]=Inspector d'accessibilitat
+GenericName[ca@valencia]=Inspector d'accessibilitat
+GenericName[nl]=Toegankelijkheidsinspecteur
+GenericName[tr]=Erişilebilirlik Denetçisi
+GenericName[uk]=Ревізор доступності
+GenericName[x-test]=xxAccessibility Inspectorxx
 Comment=Inspect your application and detect accessibility issues
+Comment[ca]=Inspecciona la vostra aplicació i detecta problemes d'accessibilitat
+Comment[ca@valencia]=Inspecciona la vostra aplicació i detecta problemes d'accessibilitat
+Comment[nl]=Inspecteer uw toepassing en detecteer problemen met toegankelijkheid
+Comment[tr]=Uygulamanızı denetleyin ve erişilebilirlik sorunlarını algılayın
+Comment[uk]=Вивчення вашої програми і виявлення проблем із доступністю
+Comment[x-test]=xxInspect your application and detect accessibility issuesxx
 Exec=accessibilityinspector
 Terminal=false
 Icon=org.kde.accessibilityinspector
