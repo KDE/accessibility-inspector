@@ -28,3 +28,5 @@ Terminal=false
 Icon=org.kde.accessibilityinspector
 Type=Application
 Categories=Qt;KDE;Utility;Development;
+X-DBUS-StartupType=Unique
+X-DBUS-ServiceName=org.kde.accessibilityinspector

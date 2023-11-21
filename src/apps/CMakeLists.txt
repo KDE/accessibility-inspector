@@ -9,6 +9,7 @@ target_sources(accessibilityinspector PRIVATE
 
 target_link_libraries(accessibilityinspector
     libaccessibilityinspector
+    KF${QT_MAJOR_VERSION}::DBusAddons
 )
 
 install(TARGETS accessibilityinspector DESTINATION ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})

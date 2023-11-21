@@ -5,6 +5,7 @@
 */
 
 #include <KAboutData>
+#include <KDBusService>
 #include <KLocalizedString>
 #include <QApplication>
 #include <QCommandLineParser>
@@ -39,6 +40,8 @@ int main(int argc, char **argv)
     QCommandLineParser parser;
     about.setupCommandLine(&parser);
     parser.process(app);
+
+    KDBusService service(KDBusService::Unique);
 
     MainWindow window;
     window.show();
