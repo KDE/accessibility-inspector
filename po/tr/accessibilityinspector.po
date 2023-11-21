@@ -1,0 +1,574 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the accessibility-inspector package.
+#
+# Emir SARI <emir_sari@icloud.com>, 2023.
+msgid ""
+msgstr ""
+"Project-Id-Version: accessibility-inspector\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2023-11-21 01:32+0000\n"
+"PO-Revision-Date: 2023-11-20 12:57+0300\n"
+"Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
+"Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Lokalize 23.11.70\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Emir SARI"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "emir_sari@icloud.com"
+
+#: accessibleobjecttreemodel.cpp:27 accessibleproperties.cpp:80
+#, kde-format
+msgid "Accessible"
+msgstr "Erişilebilir"
+
+#: accessibleobjecttreemodel.cpp:29 accessibleproperties.cpp:83
+#, kde-format
+msgid "Role"
+msgstr "Rol"
+
+#: accessibleproperties.cpp:81
+#, kde-format
+msgid "Name"
+msgstr "Ad"
+
+#: accessibleproperties.cpp:82 accessibleproperties.cpp:177
+#, kde-format
+msgid "Description"
+msgstr "Açıklama"
+
+#: accessibleproperties.cpp:84
+#, kde-format
+msgid "LocalizedRole"
+msgstr "Yerelleştirilmiş Rol"
+
+#: accessibleproperties.cpp:85
+#, kde-format
+msgid "Visible"
+msgstr "Görünür"
+
+#: accessibleproperties.cpp:86
+#, kde-format
+msgid "Default"
+msgstr "Öntanımlı"
+
+#: accessibleproperties.cpp:87
+#, kde-format
+msgid "State"
+msgstr "Durum"
+
+#: accessibleproperties.cpp:88
+#, kde-format
+msgid "AccessibleId"
+msgstr "Erişilebilirlik Kimliği"
+
+#: accessibleproperties.cpp:89
+#, kde-format
+msgid "Url"
+msgstr "URL"
+
+#: accessibleproperties.cpp:92
+#, kde-format
+msgid "Parent"
+msgstr "Üst Öge"
+
+#: accessibleproperties.cpp:94
+#, kde-format
+msgid "Children"
+msgstr "Alt Öge"
+
+#: accessibleproperties.cpp:98
+#, kde-format
+msgid "Broken child"
+msgstr "Hatalı Alt Öge"
+
+#: accessibleproperties.cpp:106
+#, kde-format
+msgid "Component"
+msgstr "Bileşen"
+
+#: accessibleproperties.cpp:107
+#, kde-format
+msgid "BoundingRect"
+msgstr "Sınırlandırılmış Dörtgen"
+
+#: accessibleproperties.cpp:108
+#, kde-format
+msgid "Layer"
+msgstr "Katman"
+
+#: accessibleproperties.cpp:109
+#, kde-format
+msgid "MDIZOrder"
+msgstr "MDIZ Sırası"
+
+#: accessibleproperties.cpp:110
+#, kde-format
+msgid "Alpha"
+msgstr "Alfa"
+
+#: accessibleproperties.cpp:117
+#, kde-format
+msgid "Application"
+msgstr "Uygulama"
+
+#: accessibleproperties.cpp:118
+#, kde-format
+msgid "ToolkitName"
+msgstr "Araç Kiti Adı"
+
+#: accessibleproperties.cpp:119
+#, kde-format
+msgid "Version"
+msgstr "Sürüm"
+
+#: accessibleproperties.cpp:120
+#, kde-format
+msgid "Id"
+msgstr "Kimlik"
+
+#: accessibleproperties.cpp:121 accessibleproperties.cpp:178
+#, kde-format
+msgid "Locale"
+msgstr "Yerel"
+
+#: accessibleproperties.cpp:122
+#, kde-format
+msgid "BusAddress"
+msgstr "Veri Yolu Adresi"
+
+#: accessibleproperties.cpp:125
+#, kde-format
+msgid "Document"
+msgstr "Belge"
+
+#: accessibleproperties.cpp:133
+#, kde-format
+msgid "Editable Text"
+msgstr "Düzenlenebilir Metin"
+
+#: accessibleproperties.cpp:137
+#, kde-format
+msgid "Hyperlink"
+msgstr "Köprü"
+
+#: accessibleproperties.cpp:158
+#, kde-format
+msgid "Hypertext"
+msgstr "Köprü Metni"
+
+#: accessibleproperties.cpp:176
+#, kde-format
+msgid "Image"
+msgstr "Görsel"
+
+#: accessibleproperties.cpp:179
+#, kde-format
+msgid "Rect"
+msgstr "Dörtgen"
+
+#: accessibleproperties.cpp:182
+#, kde-format
+msgid "Selection"
+msgstr "Seçim"
+
+#: accessibleproperties.cpp:188
+#, kde-format
+msgid "Table"
+msgstr "Tablo"
+
+#: accessibleproperties.cpp:220 accessibleproperties.cpp:228
+#: accessibleproperties.cpp:230
+#, kde-format
+msgid "Text"
+msgstr "Metin"
+
+#: accessibleproperties.cpp:222
+#, kde-format
+msgid "Caret Offset"
+msgstr "İmleç Ofseti"
+
+#: accessibleproperties.cpp:223
+#, kde-format
+msgid "Character Count"
+msgstr "Karakter Sayısı"
+
+#: accessibleproperties.cpp:224
+#, kde-format
+msgid "Character Rect"
+msgstr "Karakter Dörtgeni"
+
+#: accessibleproperties.cpp:234
+#, kde-format
+msgid "Selections"
+msgstr "Seçimler"
+
+#: accessibleproperties.cpp:244
+#, kde-format
+msgid "Value"
+msgstr "Değer"
+
+#: accessibleproperties.cpp:245
+#, kde-format
+msgid "Current"
+msgstr "Geçerli"
+
+#: accessibleproperties.cpp:246
+#, kde-format
+msgid "Minimum"
+msgstr "En Az"
+
+#: accessibleproperties.cpp:247
+#, kde-format
+msgid "Maximum"
+msgstr "En Çok"
+
+#: accessibleproperties.cpp:248
+#, kde-format
+msgid "Increment"
+msgstr "Artır"
+
+#: accessibleproperties.cpp:251
+#, kde-format
+msgid "Socket"
+msgstr "Yuva"
+
+#: accessibleproperties.cpp:256
+#, kde-format
+msgid "Event Keyboard"
+msgstr "Olay Klavyesi"
+
+#: accessibleproperties.cpp:260
+#, kde-format
+msgid "Event Mouse"
+msgstr "Olay Faresi"
+
+#: accessibleproperties.cpp:264
+#, kde-format
+msgid "Event Object"
+msgstr "Olay Nesnesi"
+
+#: accessibleproperties.cpp:268
+#, kde-format
+msgid "Event Window"
+msgstr "Olay Penceresi"
+
+#: accessibleproperties.cpp:272
+#, kde-format
+msgid "Event Focus"
+msgstr "Olay Odağı"
+
+#: accessibleproperties.cpp:277
+#, kde-format
+msgid "Action"
+msgstr "Eylem"
+
+#: apps/main.cpp:22
+#, kde-format
+msgid "Accessibility Inspector"
+msgstr "Erişilebilirlik Denetçisi"
+
+#: apps/main.cpp:24
+#, kde-format
+msgid "Accessibility inspector"
+msgstr "Erişilebilirlik Denetçisi"
+
+#: apps/main.cpp:26
+#, kde-format
+msgid "© 2021-2023 Carl Schwan, 2021-2023 KDE Community"
+msgstr "© 2021-2023 Carl Schwan, 2021-2023 KDE Topluluğu"
+
+#: apps/main.cpp:28
+#, kde-format
+msgid "Frederik Gladhorn"
+msgstr "Frederik Gladhorn"
+
+#: apps/main.cpp:28
+#, kde-format
+msgid "Original author"
+msgstr "Özgün yazar"
+
+#: apps/main.cpp:30
+#, kde-format
+msgid "Carl Schwan"
+msgstr "Carl Schwan"
+
+#: apps/main.cpp:31
+#, kde-format
+msgid "Maintainer"
+msgstr "Bakımcı"
+
+#: clientcachedialog.cpp:28
+#, kde-format
+msgctxt "@title:window"
+msgid "Cache"
+msgstr "Önbellek"
+
+#: clientcachedialog.cpp:44
+#, kde-format
+msgctxt "@action:button"
+msgid "Refresh"
+msgstr "Yenile"
+
+#: clientcachedialog.cpp:47
+#, kde-format
+msgctxt "@action:button"
+msgid "Clear"
+msgstr "Temizle"
+
+#: clientcachedialog.cpp:50
+#, kde-format
+msgctxt "@label"
+msgid "Strategy:"
+msgstr "Strateji:"
+
+#: clientcachedialog.cpp:55
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Disable"
+msgstr "Devre Dışı"
+
+#: clientcachedialog.cpp:56
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Weak"
+msgstr "Güçsüz"
+
+#: clientcachedialog.cpp:65
+#, kde-format
+msgctxt "@label:listbox"
+msgid "Count:"
+msgstr "Sayı:"
+
+#: clientcachedialog.cpp:99
+#, kde-format
+msgctxt "@title:row"
+msgid "Name"
+msgstr "Ad"
+
+#: clientcachedialog.cpp:99
+#, kde-format
+msgctxt "@title:row"
+msgid "Role"
+msgstr "Rol"
+
+#: clientcachedialog.cpp:99
+#, kde-format
+msgctxt "@title:row"
+msgid "Identifier"
+msgstr "Tanımlayıcı"
+
+#: eventview.cpp:63
+#, kde-format
+msgctxt "@label"
+msgid "Accessible"
+msgstr "Erişilebilir"
+
+#: eventview.cpp:65
+#, kde-format
+msgctxt "@label"
+msgid "Role"
+msgstr "Rol"
+
+#: eventview.cpp:67
+#, kde-format
+msgctxt "@label"
+msgid "Event"
+msgstr "Olay"
+
+#: eventview.cpp:69
+#, kde-format
+msgctxt "@label"
+msgid "Action"
+msgstr "Eylem"
+
+#: eventview.cpp:193
+#, kde-format
+msgid "Displays all received events"
+msgstr "Tüm alınan olayları görüntüler"
+
+#: eventview.cpp:264
+#, kde-format
+msgctxt "Accessibility event name"
+msgid "Focus"
+msgstr "Odak"
+
+#: eventview.cpp:267
+#, kde-format
+msgctxt "Accessibility event name: state changed"
+msgid "State"
+msgstr "Durum"
+
+#: eventview.cpp:270
+#, kde-format
+msgctxt "Accessibility event name: name changed"
+msgid "Name"
+msgstr "Ad"
+
+#: eventview.cpp:273
+#, kde-format
+msgctxt "Accessibility event name: description changed"
+msgid "Description"
+msgstr "Açıklama"
+
+#: eventview.cpp:276
+#, kde-format
+msgctxt "Accessibility event name"
+msgid "Window"
+msgstr "Pencere"
+
+#: eventview.cpp:279
+#, kde-format
+msgctxt "Accessibility event name"
+msgid "Document"
+msgstr "Belge"
+
+#: eventview.cpp:282
+#, kde-format
+msgctxt "Accessibility event name"
+msgid "Object"
+msgstr "Nesne"
+
+#: eventview.cpp:285
+#, kde-format
+msgctxt "Accessibility event name"
+msgid "Text"
+msgstr "Metin"
+
+#: eventview.cpp:288
+#, kde-format
+msgctxt "Accessibility event name"
+msgid "Table"
+msgstr "Tablo"
+
+#: eventview.cpp:291
+#, kde-format
+msgctxt "Accessibility event name"
+msgid "Others"
+msgstr "Diğerleri"
+
+#: eventview.cpp:294
+#, kde-format
+msgctxt "Accessibility event name"
+msgid "No Event"
+msgstr "Olay Yok"
+
+#: mainwindow.cpp:137
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Reset Tree"
+msgstr "Ağacı Sıfırla"
+
+#: mainwindow.cpp:142
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Follow Focus"
+msgstr "Odağı İzle"
+
+#: mainwindow.cpp:147
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Cache..."
+msgstr "Önbellek..."
+
+#: mainwindow.cpp:151
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Enable Accessibility"
+msgstr "Erişilebilirliği Etkinleştir"
+
+#: mainwindow.cpp:159
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Enable Screen Reader"
+msgstr "Ekran Okuyucusunu Etkinleştir"
+
+#: mainwindow.cpp:166
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Quit"
+msgstr "Çık"
+
+#: mainwindow.cpp:170
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Copy property value"
+msgstr "Özellik Değerini Kopyala"
+
+#: mainwindow.cpp:193
+#, kde-format
+msgctxt "@title:menu"
+msgid "Tree"
+msgstr "Ağaç"
+
+#: mainwindow.cpp:199
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Edit"
+msgstr "Düzenle"
+
+#: mainwindow.cpp:202
+#, kde-format
+msgctxt "@title:menu"
+msgid "Settings"
+msgstr "Ayarlar"
+
+#: mainwindow.cpp:203
+#, kde-format
+msgctxt "@title:menu"
+msgid "Docker"
+msgstr "Panel"
+
+#: mainwindow.cpp:240
+#, kde-format
+msgctxt "@title:window"
+msgid "Properties"
+msgstr "Özellikler"
+
+#: mainwindow.cpp:245
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "List of properties"
+msgstr "Özellikler listesi"
+
+#: mainwindow.cpp:246
+#, fuzzy, kde-format
+#| msgctxt "@info:whatsthis"
+#| msgid "Displays a the properties of the selected accessible object"
+msgctxt "@info:whatsthis"
+msgid "Displays properties of the selected accessible object"
+msgstr "Seçili erişilebilir nesnenin özelliklerini görüntüler"
+
+#: mainwindow.cpp:256
+#, kde-format
+msgctxt "@title:window"
+msgid "Boundaries"
+msgstr "Sınırlar"
+
+#: mainwindow.cpp:260
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Boundaries"
+msgstr "Sınırlar"
+
+#: mainwindow.cpp:261
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Visualize the component boundaries"
+msgstr "Bileşen sınırlarını görüntüler"
+
+#: mainwindow.cpp:264
+#, kde-format
+msgctxt "@title:window"
+msgid "Events"
+msgstr "Olaylar"
