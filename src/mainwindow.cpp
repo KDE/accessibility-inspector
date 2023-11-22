@@ -96,19 +96,10 @@ MainWindow::MainWindow(QWidget *parent)
             SIGNAL(textRemoved(QAccessibleClient::AccessibleObject, QString, int, int)),
             this,
             SLOT(textRemoved(QAccessibleClient::AccessibleObject, QString, int, int)));
-    connect(m_registry,
-            SIGNAL(textChanged(QAccessibleClient::AccessibleObject, QString, int, int)),
-            this,
-            SLOT(textChanged(QAccessibleClient::AccessibleObject, QString, int, int)));
+    connect(m_registry, &QAccessibleClient::Registry::textChanged, this, &MainWindow::textChanged);
 
-    connect(m_registry,
-            SIGNAL(accessibleNameChanged(QAccessibleClient::AccessibleObject)),
-            this,
-            SLOT(accessibleNameChanged(QAccessibleClient::AccessibleObject)));
-    connect(m_registry,
-            SIGNAL(accessibleDescriptionChanged(QAccessibleClient::AccessibleObject)),
-            this,
-            SLOT(accessibleDescriptionChanged(QAccessibleClient::AccessibleObject)));
+    connect(m_registry, &QAccessibleClient::Registry::accessibleNameChanged, this, &MainWindow::accessibleNameChanged);
+    connect(m_registry, &QAccessibleClient::Registry::accessibleDescriptionChanged, this, &MainWindow::accessibleDescriptionChanged);
 
     m_registry->subscribeEventListeners(QAccessibleClient::Registry::AllEventListeners);
 }
