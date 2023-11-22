@@ -200,7 +200,6 @@ void MainWindow::copyValue()
 void MainWindow::initUi()
 {
     setDockOptions(QMainWindow::AnimatedDocks | QMainWindow::AllowNestedDocks | QMainWindow::AllowTabbedDocks);
-    // setTabPosition(Qt::AllDockWidgetAreas, QTabWidget::North);
 
     auto treeDocker = new QDockWidget(QStringLiteral("Tree"), this);
     treeDocker->setObjectName(QStringLiteral("tree"));
