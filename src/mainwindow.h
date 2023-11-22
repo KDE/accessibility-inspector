@@ -81,7 +81,6 @@ private Q_SLOTS:
 
 private:
     void initActions();
-    void initMenu();
     void initUi();
 
     void addLog(const QAccessibleClient::AccessibleObject &object, const QString &eventName, const QString &text = QString());

@@ -3,9 +3,25 @@
   SPDX-License-Identifier: CC0-1.0
   SPDX-FileCopyrightText: 2023 Laurent Montel <montel@kde.org>
 -->
-<gui name="accessibilityinspectorui" version="1">
+<gui name="accessibilityinspectorui" version="2">
  <MenuBar>
   <Menu name="file" >
+  </Menu>
+  <Menu name="edit" >
+   <text>&amp;Edit</text>
+   <Action name="copy_property_value" />
+  </Menu>
+  <Menu name="view" >
+   <text>View</text>
+   <Action name="reset_tree"/>
+   <Action name="follow_focus"/>
+  </Menu>
+  <Menu name="settings" append="settings_merge">
+    <text>&amp;Settings</text>
+    <Action name="show_cache"/>
+    <Separator/>
+    <Action name="enable_accessibility"/>
+    <Action name="enable_screen_reader"/>
   </Menu>
  </MenuBar>
 </gui>

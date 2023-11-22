@@ -34,7 +34,6 @@ MainWindow::MainWindow(QWidget *parent)
 {
     initUi();
     initActions();
-    initMenu();
     setupGUI();
 
     QSettings settings(QStringLiteral("kde.org"), QStringLiteral("kdea11yapp"));
@@ -194,28 +193,6 @@ void MainWindow::copyValue()
     }
 
     QGuiApplication::clipboard()->setText(selected.data(Qt::DisplayRole).toString());
-}
-
-void MainWindow::initMenu()
-{
-    QMenu *fileMenu = menuBar()->addMenu(i18nc("@title:menu", "Tree"));
-    fileMenu->addAction(m_resetTreeAction);
-    fileMenu->addAction(m_followFocusAction);
-    fileMenu->addSeparator();
-    fileMenu->addAction(m_quitAction);
-
-    QMenu *editMenu = menuBar()->addMenu(i18nc("@action:inmenu", "Edit"));
-    editMenu->addAction(m_copyValueAction);
-
-    QMenu *settingsMenu = menuBar()->addMenu(i18nc("@title:menu", "Settings"));
-    QMenu *dockerMenu = settingsMenu->addMenu(i18nc("@title:menu", "Docker"));
-    for (const QDockWidget *docker : findChildren<QDockWidget *>()) {
-        dockerMenu->addAction(docker->toggleViewAction());
-    }
-    settingsMenu->addAction(m_showClientCacheAction);
-    settingsMenu->addSeparator();
-    settingsMenu->addAction(m_enableA11yAction);
-    settingsMenu->addAction(m_enableScreenReaderAction);
 }
 
 void MainWindow::initUi()
