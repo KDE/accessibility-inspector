@@ -39,7 +39,7 @@ ClientCacheDialog::ClientCacheDialog(QAccessibleClient::Registry *registry, QWid
     m_view->setModel(m_model);
     lay->addWidget(m_view);
 
-    auto buttonsLay = new QHBoxLayout(this);
+    auto buttonsLay = new QHBoxLayout;
     buttonsLay->setContentsMargins(0, 0, 0, 0);
     auto updateButton = new QPushButton(i18nc("@action:button", "Refresh"), this);
     buttonsLay->addWidget(updateButton);
