@@ -1,292 +1,293 @@
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the accessibility-inspector package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-# Emir SARI <emir_sari@icloud.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-22 01:33+0000\n"
-"PO-Revision-Date: 2023-11-21 11:38+0300\n"
-"Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
-"Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
-"Language: tr\n"
+"PO-Revision-Date: 2023-11-21 01:48+0100\n"
+"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
+"Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
+"Language: ka\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 23.11.70\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Emir SARI"
+msgstr "Temuri Doghonadze"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "emir_sari@icloud.com"
+msgstr "Temuri.doghonadze@gmail.com"
 
 #: accessibleobjecttreemodel.cpp:27 accessiblepropertiesmodel.cpp:80
 #, kde-format
 msgid "Accessible"
-msgstr "Erişilebilir"
+msgstr "წვდომადი"
 
 #: accessibleobjecttreemodel.cpp:29 accessiblepropertiesmodel.cpp:83
 #, kde-format
 msgid "Role"
-msgstr "Rol"
+msgstr "როლი"
 
 #: accessiblepropertiesmodel.cpp:81
 #, kde-format
 msgid "Name"
-msgstr "Ad"
+msgstr "სახელი"
 
 #: accessiblepropertiesmodel.cpp:82 accessiblepropertiesmodel.cpp:177
 #, kde-format
 msgid "Description"
-msgstr "Açıklama"
+msgstr "აღწერა"
 
 #: accessiblepropertiesmodel.cpp:84
 #, kde-format
 msgid "LocalizedRole"
-msgstr "Yerelleştirilmiş Rol"
+msgstr "თარგმნილიროლი"
 
 #: accessiblepropertiesmodel.cpp:85
 #, kde-format
 msgid "Visible"
-msgstr "Görünür"
+msgstr "ხილული"
 
 #: accessiblepropertiesmodel.cpp:86
 #, kde-format
 msgid "Default"
-msgstr "Öntanımlı"
+msgstr "ნაგულისხმევი"
 
 #: accessiblepropertiesmodel.cpp:87
 #, kde-format
 msgid "State"
-msgstr "Durum"
+msgstr "მდგომარეობა"
 
 #: accessiblepropertiesmodel.cpp:88
 #, kde-format
 msgid "AccessibleId"
-msgstr "Erişilebilirlik Kimliği"
+msgstr "წვდომადისID"
 
 #: accessiblepropertiesmodel.cpp:89
 #, kde-format
 msgid "Url"
-msgstr "URL"
+msgstr "Url"
 
 #: accessiblepropertiesmodel.cpp:92
 #, kde-format
 msgid "Parent"
-msgstr "Üst Öge"
+msgstr "მშობელი"
 
 #: accessiblepropertiesmodel.cpp:94
 #, kde-format
 msgid "Children"
-msgstr "Alt Öge"
+msgstr "ბავშვები"
 
 #: accessiblepropertiesmodel.cpp:98
 #, kde-format
 msgid "Broken child"
-msgstr "Hatalı Alt Öge"
+msgstr "გაფუჭებული შვილი"
 
 #: accessiblepropertiesmodel.cpp:106
 #, kde-format
 msgid "Component"
-msgstr "Bileşen"
+msgstr "კომპონენტი"
 
 #: accessiblepropertiesmodel.cpp:107
 #, kde-format
 msgid "BoundingRect"
-msgstr "Sınırlandırılmış Dörtgen"
+msgstr "შემომსაზღვრელიმართკუთხ"
 
 #: accessiblepropertiesmodel.cpp:108
 #, kde-format
 msgid "Layer"
-msgstr "Katman"
+msgstr "ფენა"
 
 #: accessiblepropertiesmodel.cpp:109
 #, kde-format
 msgid "MDIZOrder"
-msgstr "MDIZ Sırası"
+msgstr "MDIZOrder"
 
 #: accessiblepropertiesmodel.cpp:110
 #, kde-format
 msgid "Alpha"
-msgstr "Alfa"
+msgstr "ალფა"
 
 #: accessiblepropertiesmodel.cpp:117
 #, kde-format
 msgid "Application"
-msgstr "Uygulama"
+msgstr "აპლიკაცია"
 
 #: accessiblepropertiesmodel.cpp:118
 #, kde-format
 msgid "ToolkitName"
-msgstr "Araç Kiti Adı"
+msgstr "ხელსაწყოსსახელი"
 
 #: accessiblepropertiesmodel.cpp:119
 #, kde-format
 msgid "Version"
-msgstr "Sürüm"
+msgstr "ვერსია"
 
 #: accessiblepropertiesmodel.cpp:120
 #, kde-format
 msgid "Id"
-msgstr "Kimlik"
+msgstr "Id"
 
 #: accessiblepropertiesmodel.cpp:121 accessiblepropertiesmodel.cpp:178
 #, kde-format
 msgid "Locale"
-msgstr "Yerel"
+msgstr "ენა"
 
 #: accessiblepropertiesmodel.cpp:122
 #, kde-format
 msgid "BusAddress"
-msgstr "Veri Yolu Adresi"
+msgstr "მატარებლისმისამართი"
 
 #: accessiblepropertiesmodel.cpp:125
 #, kde-format
 msgid "Document"
-msgstr "Belge"
+msgstr "დოკუმენტი"
 
 #: accessiblepropertiesmodel.cpp:133
 #, kde-format
 msgid "Editable Text"
-msgstr "Düzenlenebilir Metin"
+msgstr "ჩასწორებადი ტექსტი"
 
 #: accessiblepropertiesmodel.cpp:137
 #, kde-format
 msgid "Hyperlink"
-msgstr "Köprü"
+msgstr "ჰიპერბმული"
 
 #: accessiblepropertiesmodel.cpp:158
 #, kde-format
 msgid "Hypertext"
-msgstr "Köprü Metni"
+msgstr "ჰიპერტექსტი"
 
 #: accessiblepropertiesmodel.cpp:176
 #, kde-format
 msgid "Image"
-msgstr "Görsel"
+msgstr "გამოსახულება"
 
 #: accessiblepropertiesmodel.cpp:179
 #, kde-format
 msgid "Rect"
-msgstr "Dörtgen"
+msgstr "Rect"
 
 #: accessiblepropertiesmodel.cpp:182
 #, kde-format
 msgid "Selection"
-msgstr "Seçim"
+msgstr "მონიშნული"
 
 #: accessiblepropertiesmodel.cpp:188
 #, kde-format
 msgid "Table"
-msgstr "Tablo"
+msgstr "ცხრილი"
 
 #: accessiblepropertiesmodel.cpp:220 accessiblepropertiesmodel.cpp:228
 #: accessiblepropertiesmodel.cpp:230
 #, kde-format
 msgid "Text"
-msgstr "Metin"
+msgstr "ტექსტი"
 
 #: accessiblepropertiesmodel.cpp:222
 #, kde-format
 msgid "Caret Offset"
-msgstr "İmleç Ofseti"
+msgstr "კარეტის წანაცვლება"
 
 #: accessiblepropertiesmodel.cpp:223
 #, kde-format
 msgid "Character Count"
-msgstr "Karakter Sayısı"
+msgstr "სიმბოლოების რაოდენობა"
 
 #: accessiblepropertiesmodel.cpp:224
 #, kde-format
 msgid "Character Rect"
-msgstr "Karakter Dörtgeni"
+msgstr "სიმბოლოს რაღაც"
 
 #: accessiblepropertiesmodel.cpp:234
 #, kde-format
 msgid "Selections"
-msgstr "Seçimler"
+msgstr "მონიშნულები"
 
 #: accessiblepropertiesmodel.cpp:244
 #, kde-format
 msgid "Value"
-msgstr "Değer"
+msgstr "მნიშვნელობა"
 
 #: accessiblepropertiesmodel.cpp:245
 #, kde-format
 msgid "Current"
-msgstr "Geçerli"
+msgstr "მიმდინარე"
 
 #: accessiblepropertiesmodel.cpp:246
 #, kde-format
 msgid "Minimum"
-msgstr "En Az"
+msgstr "მინიმუმი"
 
 #: accessiblepropertiesmodel.cpp:247
 #, kde-format
 msgid "Maximum"
-msgstr "En Çok"
+msgstr "მაქსიმუმი"
 
 #: accessiblepropertiesmodel.cpp:248
 #, kde-format
 msgid "Increment"
-msgstr "Artır"
+msgstr "გაზრდა"
 
 #: accessiblepropertiesmodel.cpp:251
 #, kde-format
 msgid "Socket"
-msgstr "Yuva"
+msgstr "სოკეტი"
 
 #: accessiblepropertiesmodel.cpp:256
 #, kde-format
 msgid "Event Keyboard"
-msgstr "Olay Klavyesi"
+msgstr "მოვლენის კლავიატურა"
 
 #: accessiblepropertiesmodel.cpp:260
 #, kde-format
 msgid "Event Mouse"
-msgstr "Olay Faresi"
+msgstr "მოვლენის თაგუნა"
 
 #: accessiblepropertiesmodel.cpp:264
 #, kde-format
 msgid "Event Object"
-msgstr "Olay Nesnesi"
+msgstr "მოვლენის ობიექტი"
 
 #: accessiblepropertiesmodel.cpp:268
 #, kde-format
 msgid "Event Window"
-msgstr "Olay Penceresi"
+msgstr "მოვლენის ფანჯარა"
 
 #: accessiblepropertiesmodel.cpp:272
 #, kde-format
 msgid "Event Focus"
-msgstr "Olay Odağı"
+msgstr "მოვლენის ფოკუსი"
 
 #: accessiblepropertiesmodel.cpp:277
 #, kde-format
 msgid "Action"
-msgstr "Eylem"
+msgstr "პარამეტრები"
 
 #: apps/main.cpp:26
 #, kde-format
 msgid "Accessibility Inspector"
-msgstr "Erişilebilirlik Denetçisi"
+msgstr "წვდომადობის ინსპექტორი"
 
 #: apps/main.cpp:28
 #, kde-format
 msgid "Accessibility inspector"
-msgstr "Erişilebilirlik Denetçisi"
+msgstr "წვდომადობის ინსპექტორი"
 
 #: apps/main.cpp:30
 #, kde-format
 msgid "© 2021-2023 Carl Schwan, 2021-2023 KDE Community"
-msgstr "© 2021-2023 Carl Schwan, 2021-2023 KDE Topluluğu"
+msgstr "© 2021-2023 Carl Schwan, 2021-2023 KDE -ის საზოგადოება"
 
 #: apps/main.cpp:32
 #, kde-format
@@ -296,7 +297,7 @@ msgstr "Frederik Gladhorn"
 #: apps/main.cpp:32
 #, kde-format
 msgid "Original author"
-msgstr "Özgün yazar"
+msgstr "საწყისი ავტორი"
 
 #: apps/main.cpp:34
 #, kde-format
@@ -306,162 +307,162 @@ msgstr "Carl Schwan"
 #: apps/main.cpp:35
 #, kde-format
 msgid "Maintainer"
-msgstr "Bakımcı"
+msgstr "წამყვანი პროგრამისტი"
 
 #: clientcachedialog.cpp:29
 #, kde-format
 msgctxt "@title:window"
 msgid "Cache"
-msgstr "Önbellek"
+msgstr "კეში"
 
 #: clientcachedialog.cpp:44
 #, kde-format
 msgctxt "@action:button"
 msgid "Refresh"
-msgstr "Yenile"
+msgstr "განახლება"
 
 #: clientcachedialog.cpp:47
 #, kde-format
 msgctxt "@action:button"
 msgid "Clear"
-msgstr "Temizle"
+msgstr "გაწმენდა"
 
 #: clientcachedialog.cpp:50
 #, kde-format
 msgctxt "@label"
 msgid "Strategy:"
-msgstr "Strateji:"
+msgstr "სტრატეგია:"
 
 #: clientcachedialog.cpp:55
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Disable"
-msgstr "Devre Dışı"
+msgstr "გამორთვა"
 
 #: clientcachedialog.cpp:56
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Weak"
-msgstr "Güçsüz"
+msgstr "სუსტი"
 
 #: clientcachedialog.cpp:65
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Count:"
-msgstr "Sayı:"
+msgstr "რაოდენობა:"
 
 #: clientcachedialog.cpp:99
 #, kde-format
 msgctxt "@title:row"
 msgid "Name"
-msgstr "Ad"
+msgstr "სახელი"
 
 #: clientcachedialog.cpp:99
 #, kde-format
 msgctxt "@title:row"
 msgid "Role"
-msgstr "Rol"
+msgstr "როლი"
 
 #: clientcachedialog.cpp:99
 #, kde-format
 msgctxt "@title:row"
 msgid "Identifier"
-msgstr "Tanımlayıcı"
+msgstr "იდენტიფიკატორი"
 
 #: eventview.cpp:63
 #, kde-format
 msgctxt "@label"
 msgid "Accessible"
-msgstr "Erişilebilir"
+msgstr "წვდომადი"
 
 #: eventview.cpp:65
 #, kde-format
 msgctxt "@label"
 msgid "Role"
-msgstr "Rol"
+msgstr "როლი"
 
 #: eventview.cpp:67
 #, kde-format
 msgctxt "@label"
 msgid "Event"
-msgstr "Olay"
+msgstr "მოვლენა"
 
 #: eventview.cpp:69
 #, kde-format
 msgctxt "@label"
 msgid "Action"
-msgstr "Eylem"
+msgstr "პარამეტრები"
 
 #: eventview.cpp:193
 #, kde-format
 msgid "Displays all received events"
-msgstr "Tüm alınan olayları görüntüler"
+msgstr "ყველა მიღებული მოვლენის ჩვენება"
 
 #: eventview.cpp:264
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Focus"
-msgstr "Odak"
+msgstr "ფოკუსი"
 
 #: eventview.cpp:267
 #, kde-format
 msgctxt "Accessibility event name: state changed"
 msgid "State"
-msgstr "Durum"
+msgstr "მდგომარეობა"
 
 #: eventview.cpp:270
 #, kde-format
 msgctxt "Accessibility event name: name changed"
 msgid "Name"
-msgstr "Ad"
+msgstr "სახელი"
 
 #: eventview.cpp:273
 #, kde-format
 msgctxt "Accessibility event name: description changed"
 msgid "Description"
-msgstr "Açıklama"
+msgstr "აღწერა"
 
 #: eventview.cpp:276
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Window"
-msgstr "Pencere"
+msgstr "ფანჯარა"
 
 #: eventview.cpp:279
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Document"
-msgstr "Belge"
+msgstr "დოკუმენტი"
 
 #: eventview.cpp:282
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Object"
-msgstr "Nesne"
+msgstr "ობიექტი"
 
 #: eventview.cpp:285
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Text"
-msgstr "Metin"
+msgstr "ტექსტი"
 
 #: eventview.cpp:288
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Table"
-msgstr "Tablo"
+msgstr "ცხრილი"
 
 #: eventview.cpp:291
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Others"
-msgstr "Diğerleri"
+msgstr "სხვები"
 
 #: eventview.cpp:294
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "No Event"
-msgstr "Olay Yok"
+msgstr "მოვლენის გარეშე"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, EventViewWidget)
 #: eventview.ui:18
@@ -474,7 +475,7 @@ msgstr ""
 #, fuzzy, kde-format
 #| msgid "Accessible"
 msgid "Accessible Filter"
-msgstr "Erişilebilir"
+msgstr "წვდომადი"
 
 #. i18n: ectx: property (accessibleName), widget (QLineEdit, roleFilterEdit)
 #. i18n: ectx: property (placeholderText), widget (QLineEdit, roleFilterEdit)
@@ -488,7 +489,7 @@ msgstr ""
 #, fuzzy, kde-format
 #| msgid "Event Keyboard"
 msgid "Event Filter"
-msgstr "Olay Klavyesi"
+msgstr "მოვლენის კლავიატურა"
 
 #. i18n: ectx: property (accessibleName), widget (QPushButton, clearButton)
 #: eventview.ui:65
@@ -496,7 +497,7 @@ msgstr "Olay Klavyesi"
 #| msgctxt "@title:window"
 #| msgid "Events"
 msgid "Clear Events"
-msgstr "Olaylar"
+msgstr "მოვლენები"
 
 #. i18n: ectx: property (text), widget (QPushButton, clearButton)
 #: eventview.ui:68
@@ -504,110 +505,112 @@ msgstr "Olaylar"
 #| msgctxt "@action:button"
 #| msgid "Clear"
 msgid "&Clear"
-msgstr "Temizle"
+msgstr "გაწმენდა"
 
 #: mainwindow.cpp:141
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Reset Tree"
-msgstr "Ağacı Sıfırla"
+msgstr "ხის განულება"
 
 #: mainwindow.cpp:146
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Follow Focus"
-msgstr "Odağı İzle"
+msgstr "ფოკუსის მიყოლა"
 
 #: mainwindow.cpp:151
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Cache..."
-msgstr "Önbellek..."
+msgstr "კეში..."
 
 #: mainwindow.cpp:155
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Enable Accessibility"
-msgstr "Erişilebilirliği Etkinleştir"
+msgstr "წვდომადობის ჩართვა"
 
 #: mainwindow.cpp:163
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Enable Screen Reader"
-msgstr "Ekran Okuyucusunu Etkinleştir"
+msgstr "ეკრანის მკითხველის ჩართვა"
 
 #: mainwindow.cpp:172
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy property value"
-msgstr "Özellik Değerini Kopyala"
+msgstr "თვისების მნიშვნელობის კოპირება"
 
 #: mainwindow.cpp:195
 #, kde-format
 msgctxt "@title:menu"
 msgid "Tree"
-msgstr "Ağaç"
+msgstr "ხე"
 
 #: mainwindow.cpp:201
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Edit"
-msgstr "Düzenle"
+msgstr "ჩასწორება"
 
 #: mainwindow.cpp:204
 #, kde-format
 msgctxt "@title:menu"
 msgid "Settings"
-msgstr "Ayarlar"
+msgstr "მორგება"
 
 #: mainwindow.cpp:205
 #, kde-format
 msgctxt "@title:menu"
 msgid "Docker"
-msgstr "Panel"
+msgstr "Docker"
 
 #: mainwindow.cpp:242
 #, kde-format
 msgctxt "@title:window"
 msgid "Properties"
-msgstr "Özellikler"
+msgstr "თვისებები"
 
 #: mainwindow.cpp:247
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "List of properties"
-msgstr "Özellikler listesi"
+msgstr "თვისებების ჩამონათვალი"
 
 #: mainwindow.cpp:248
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@info:whatsthis"
+#| msgid "Displays a the properties of the selected accessible object"
 msgctxt "@info:whatsthis"
 msgid "Displays properties of the selected accessible object"
-msgstr "Seçili erişilebilir nesnenin özelliklerini görüntüler"
+msgstr "აჩვენებს მონიშნული წვდომადი ობიექტის თვისებებს"
 
 #: mainwindow.cpp:258
 #, kde-format
 msgctxt "@title:window"
 msgid "Boundaries"
-msgstr "Sınırlar"
+msgstr "საზღვრები"
 
 #: mainwindow.cpp:262
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Boundaries"
-msgstr "Sınırlar"
+msgstr "საზღვრები"
 
 #: mainwindow.cpp:263
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Visualize the component boundaries"
-msgstr "Bileşen sınırlarını görüntüler"
+msgstr "კომპონენტის საზღვრების ვიზუალიზაცია"
 
 #: mainwindow.cpp:266
 #, kde-format
 msgctxt "@title:window"
 msgid "Events"
-msgstr "Olaylar"
+msgstr "მოვლენები"
 
 #~ msgctxt "@action:inmenu"
 #~ msgid "Quit"
-#~ msgstr "Çık"
+#~ msgstr "გასვლა"
