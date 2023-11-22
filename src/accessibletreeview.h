@@ -17,4 +17,7 @@ public:
 
 Q_SIGNALS:
     void accessibleTreeviewSelectionChanged(const QModelIndex &current, const QModelIndex &previous);
+
+private:
+    void treeCustomContextMenuRequested(const QPoint &pos);
 };
