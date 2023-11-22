@@ -11,7 +11,6 @@
 #include <QSortFilterProxyModel>
 #include <QStandardItem>
 #include <QStandardItemModel>
-#include <QTimer>
 
 class EventsModel : public QStandardItemModel
 {
