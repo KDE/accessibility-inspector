@@ -35,6 +35,7 @@ set(ACCESSIBILITYINSPECTOR_LIB_SOVERSION "1")
 find_package(Qt6 ${QT_MIN_VERSION} NO_MODULE COMPONENTS Widgets Core)
 
 if (BUILD_TESTING)
+    add_definitions(-DBUILD_TESTING)
     find_package(Qt6 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Test)
 endif()
 

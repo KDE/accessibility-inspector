@@ -15,4 +15,4 @@ macro(add_accessibilityinspector_unittest _source)
 endmacro ()
 
 
-#add_accessibilityinspector_unittest(accessibletreewidgettest.cpp)
+add_accessibilityinspector_unittest(accessibletreewidgettest.cpp)
