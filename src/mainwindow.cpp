@@ -140,15 +140,18 @@ void MainWindow::initActions()
     m_resetTreeAction = new QAction(this);
     m_resetTreeAction->setText(i18nc("@action:inmenu", "Reset Tree"));
     m_resetTreeAction->setShortcut(QKeySequence(QKeySequence::Refresh));
+    ac->addAction(QStringLiteral("reset_tree"), m_resetTreeAction);
     connect(m_resetTreeAction, &QAction::triggered, m_accessibleObjectTreeModel, &AccessibleObjectTreeModel::resetModel);
 
     m_followFocusAction = new QAction(this);
     m_followFocusAction->setText(i18nc("@action:inmenu", "Follow Focus"));
     m_followFocusAction->setCheckable(true);
+    ac->addAction(QStringLiteral("follow_focus"), m_followFocusAction);
     m_followFocusAction->setShortcut(QKeySequence(Qt::CTRL | Qt::Key_F));
 
     m_showClientCacheAction = new QAction(this);
     m_showClientCacheAction->setText(i18nc("@action:inmenu", "Cache..."));
+    ac->addAction(QStringLiteral("show_cache"), m_showClientCacheAction);
     connect(m_showClientCacheAction, &QAction::triggered, this, &MainWindow::showClientCache);
 
     m_enableA11yAction = new QAction(this);
@@ -156,6 +159,7 @@ void MainWindow::initActions()
     m_enableA11yAction->setShortcut(QKeySequence(Qt::CTRL | Qt::Key_E));
     m_enableA11yAction->setCheckable(true);
     m_enableA11yAction->setChecked(m_registry->isEnabled());
+    ac->addAction(QStringLiteral("enable_accessibility"), m_enableA11yAction);
     connect(m_registry, &QAccessibleClient::Registry::enabledChanged, m_enableA11yAction, &QAction::setChecked);
     connect(m_enableA11yAction, &QAction::toggled, m_registry, &QAccessibleClient::Registry::setEnabled);
 
@@ -164,12 +168,14 @@ void MainWindow::initActions()
     m_enableScreenReaderAction->setShortcut(QKeySequence(Qt::CTRL | Qt::Key_R));
     m_enableScreenReaderAction->setCheckable(true);
     m_enableScreenReaderAction->setChecked(m_registry->isScreenReaderEnabled());
+    ac->addAction(QStringLiteral("enable_screen_reader"), m_enableScreenReaderAction);
     connect(m_registry, &QAccessibleClient::Registry::screenReaderEnabledChanged, m_enableScreenReaderAction, &QAction::setChecked);
     connect(m_enableScreenReaderAction, &QAction::toggled, m_registry, &QAccessibleClient::Registry::setScreenReaderEnabled);
 
     m_quitAction = KStandardAction::quit(this, &MainWindow::close, ac);
 
     m_copyValueAction = new QAction(i18nc("@action:inmenu", "Copy property value"), this);
+    ac->addAction(QStringLiteral("copy_property_value"), m_copyValueAction);
     m_copyValueAction->setShortcuts(QKeySequence::Copy);
     connect(m_copyValueAction, &QAction::triggered, this, &MainWindow::copyValue);
 }
