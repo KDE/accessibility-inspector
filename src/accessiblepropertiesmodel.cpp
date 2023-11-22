@@ -312,11 +312,7 @@ QStandardItem *ObjectPropertiesModel::append(const QString &name, const QVariant
         parentItem = invisibleRootItem();
     auto nameItem = new QStandardItem(name);
     QString text;
-#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
     switch (value.metaType().id()) {
-#else
-    switch (value.type()) {
-#endif
     case QMetaType::QPoint: {
         const QPoint p = value.toPoint();
         text = QStringLiteral("%1:%2").arg(p.x()).arg(p.y());
