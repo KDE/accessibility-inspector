@@ -8,9 +8,8 @@
 #include "accessibilityinspector_debug.h"
 
 #include <QClipboard>
-#include <QDialog>
 #include <QDockWidget>
-#include <QMenuBar>
+#include <QMenu>
 #include <QPointer>
 #include <QSettings>
 
