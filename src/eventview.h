@@ -45,7 +45,7 @@ public:
 
     explicit EventsWidget(QWidget *parent = nullptr);
 
-    QString eventName(EventType eventType) const;
+    [[nodiscard]] QString eventName(EventType eventType) const;
 
     void loadSettings(QSettings &settings);
     void saveSettings(QSettings &settings);

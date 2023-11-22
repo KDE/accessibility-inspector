@@ -22,7 +22,7 @@ public:
 
     void setRegistry(QAccessibleClient::Registry *registry);
 
-    QModelIndex indexForAccessible(const QAccessibleClient::AccessibleObject &object);
+    [[nodiscard]] QModelIndex indexForAccessible(const QAccessibleClient::AccessibleObject &object);
     bool addAccessible(const QAccessibleClient::AccessibleObject &object);
     bool removeAccessible(const QAccessibleClient::AccessibleObject &object);
     bool removeAccessible(const QModelIndex &index);
