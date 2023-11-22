@@ -156,16 +156,16 @@ void MainWindow::initActions()
     m_enableA11yAction->setShortcut(QKeySequence(Qt::CTRL | Qt::Key_E));
     m_enableA11yAction->setCheckable(true);
     m_enableA11yAction->setChecked(m_registry->isEnabled());
-    connect(m_registry, SIGNAL(enabledChanged(bool)), m_enableA11yAction, SLOT(setChecked(bool)));
-    connect(m_enableA11yAction, SIGNAL(toggled(bool)), m_registry, SLOT(setEnabled(bool)));
+    connect(m_registry, &QAccessibleClient::Registry::enabledChanged, m_enableA11yAction, &QAction::setChecked);
+    connect(m_enableA11yAction, &QAction::toggled, m_registry, &QAccessibleClient::Registry::setEnabled);
 
     m_enableScreenReaderAction = new QAction(this);
     m_enableScreenReaderAction->setText(i18nc("@action:inmenu", "Enable Screen Reader"));
     m_enableScreenReaderAction->setShortcut(QKeySequence(Qt::CTRL | Qt::Key_R));
     m_enableScreenReaderAction->setCheckable(true);
     m_enableScreenReaderAction->setChecked(m_registry->isScreenReaderEnabled());
-    connect(m_registry, SIGNAL(screenReaderEnabledChanged(bool)), m_enableScreenReaderAction, SLOT(setChecked(bool)));
-    connect(m_enableScreenReaderAction, SIGNAL(toggled(bool)), m_registry, SLOT(setScreenReaderEnabled(bool)));
+    connect(m_registry, &QAccessibleClient::Registry::screenReaderEnabledChanged, m_enableScreenReaderAction, &QAction::setChecked);
+    connect(m_enableScreenReaderAction, &QAction::toggled, m_registry, &QAccessibleClient::Registry::setScreenReaderEnabled);
 
     m_quitAction = KStandardAction::quit(this, &MainWindow::close, ac);
 
@@ -379,7 +379,7 @@ void MainWindow::treeCustomContextMenuRequested(const QPoint &pos)
         return;
     QAccessibleClient::AccessibleObject acc = static_cast<AccessibleWrapper *>(current.internalPointer())->acc;
     auto menu = new QMenu(this);
-    connect(menu, SIGNAL(aboutToHide()), menu, SLOT(deleteLater()));
+    connect(menu, &QMenu::aboutToHide, menu, &QMenu::deleteLater);
     for (const QSharedPointer<QAction> &a : acc.actions()) {
         menu->addAction(a.data());
     }
