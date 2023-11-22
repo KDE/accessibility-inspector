@@ -294,7 +294,7 @@ AccessibleObject ObjectPropertiesModel::currentObject() const
 
 void ObjectPropertiesModel::doubleClicked(const QModelIndex &index)
 {
-    if (!index.isValid() || !index.parent().isValid() || index.parent().data().toString() != QLatin1String("Action"))
+    if (!index.isValid() || !index.parent().isValid() || index.parent().data().toString() != QLatin1String("Action")) // FIXME i18n ???
         return;
 
     const auto actions{m_acc.actions()};

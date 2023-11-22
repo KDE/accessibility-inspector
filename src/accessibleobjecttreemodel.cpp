@@ -64,8 +64,9 @@ QVariant AccessibleObjectTreeModel::data(const QModelIndex &index, int role) con
 
 QModelIndex AccessibleObjectTreeModel::index(int row, int column, const QModelIndex &parent) const
 {
-    if (!m_registry || (column < 0) || (column > 1) || (row < 0))
+    if (!m_registry || (column < 0) || (column > 1) || (row < 0)) {
         return {};
+    }
 
     //     qDebug() << "index:" << row << column << parent;
     if (!parent.isValid()) {
@@ -174,8 +175,9 @@ QModelIndex AccessibleObjectTreeModel::indexForAccessible(const AccessibleObject
     if (object.supportedInterfaces().testFlag(QAccessibleClient::AccessibleObject::ApplicationInterface)) {
         // top level
         for (int i = 0; i < m_apps.size(); ++i) {
-            if (m_apps.at(i)->acc == object)
+            if (m_apps.at(i)->acc == object) {
                 return createIndex(i, 0, m_apps.at(i));
+            }
         }
         int lastIndex = m_apps.size();
         if (addAccessible(object) && m_apps.at(lastIndex)->acc == object)
@@ -186,10 +188,10 @@ QModelIndex AccessibleObjectTreeModel::indexForAccessible(const AccessibleObject
         if (parent.isValid()) {
             const QModelIndex parentIndex = indexForAccessible(parent);
             if (!parentIndex.isValid()) {
-                if (object.isValid() && object.application().isValid())
+                if (object.isValid() && object.application().isValid()) {
                     qCWarning(ACCESSIBILITYINSPECTOR_LOG)
                         << Q_FUNC_INFO << object.application().name() << object.name() << object.roleName() << "Parent model index is invalid: " << object;
-
+                }
                 return {};
             }
             const int indexInParent = object.indexInParent();
@@ -270,8 +272,9 @@ bool AccessibleObjectTreeModel::removeAccessible(const QAccessibleClient::Access
 {
     qCDebug(ACCESSIBILITYINSPECTOR_LOG) << Q_FUNC_INFO << object;
     const QModelIndex index = indexForAccessible(object);
-    if (!index.isValid())
+    if (!index.isValid()) {
         return false;
+    }
     return removeAccessible(index);
 }
 
