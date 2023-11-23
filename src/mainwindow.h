@@ -65,7 +65,7 @@ private Q_SLOTS:
     void childAdded(const QAccessibleClient::AccessibleObject &object, int childIndex);
     void childRemoved(const QAccessibleClient::AccessibleObject &object, int childIndex);
     void visibleDataChanged(const QAccessibleClient::AccessibleObject &object);
-    void selectionChanged(const QAccessibleClient::AccessibleObject &object);
+    void selectionChanged2(const QAccessibleClient::AccessibleObject &object);
     void modelChanged(const QAccessibleClient::AccessibleObject &object);
 
     void focusChanged(const QAccessibleClient::AccessibleObject &object);
