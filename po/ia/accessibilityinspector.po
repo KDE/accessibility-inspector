@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-22 01:33+0000\n"
-"PO-Revision-Date: 2023-11-21 11:29+0100\n"
+"POT-Creation-Date: 2023-11-23 01:36+0000\n"
+"PO-Revision-Date: 2023-11-22 10:47+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -26,6 +26,28 @@ msgstr "Giovanni Sora"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "g.sora@tiscali.it"
+
+#. i18n: ectx: Menu (edit)
+#: accessibilityinspectorui.rc:11
+#, fuzzy, kde-format
+#| msgctxt "@action:inmenu"
+#| msgid "Edit"
+msgid "&Edit"
+msgstr "Modifica"
+
+#. i18n: ectx: Menu (view)
+#: accessibilityinspectorui.rc:15
+#, kde-format
+msgid "View"
+msgstr ""
+
+#. i18n: ectx: Menu (settings)
+#: accessibilityinspectorui.rc:20
+#, fuzzy, kde-format
+#| msgctxt "@title:menu"
+#| msgid "Settings"
+msgid "&Settings"
+msgstr "Preferentias"
 
 #: accessibleobjecttreemodel.cpp:27 accessiblepropertiesmodel.cpp:80
 #, kde-format
@@ -368,96 +390,96 @@ msgctxt "@title:row"
 msgid "Identifier"
 msgstr "Identificator"
 
-#: eventview.cpp:63
+#: eventview.cpp:62
 #, kde-format
 msgctxt "@label"
 msgid "Accessible"
 msgstr "Accessibile"
 
-#: eventview.cpp:65
+#: eventview.cpp:64
 #, kde-format
 msgctxt "@label"
 msgid "Role"
 msgstr "Rolo"
 
-#: eventview.cpp:67
+#: eventview.cpp:66
 #, kde-format
 msgctxt "@label"
 msgid "Event"
 msgstr "Evento"
 
-#: eventview.cpp:69
+#: eventview.cpp:68
 #, kde-format
 msgctxt "@label"
 msgid "Action"
 msgstr "Action"
 
-#: eventview.cpp:193
+#: eventview.cpp:192
 #, kde-format
 msgid "Displays all received events"
 msgstr "Monstra omne eventos recipite"
 
-#: eventview.cpp:264
+#: eventview.cpp:263
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Focus"
 msgstr "Foco"
 
-#: eventview.cpp:267
+#: eventview.cpp:266
 #, kde-format
 msgctxt "Accessibility event name: state changed"
 msgid "State"
 msgstr "Stato"
 
-#: eventview.cpp:270
+#: eventview.cpp:269
 #, kde-format
 msgctxt "Accessibility event name: name changed"
 msgid "Name"
 msgstr "Nomine"
 
-#: eventview.cpp:273
+#: eventview.cpp:272
 #, kde-format
 msgctxt "Accessibility event name: description changed"
 msgid "Description"
 msgstr "Description"
 
-#: eventview.cpp:276
+#: eventview.cpp:275
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Window"
 msgstr "Fenestra"
 
-#: eventview.cpp:279
+#: eventview.cpp:278
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Document"
 msgstr "Documento"
 
-#: eventview.cpp:282
+#: eventview.cpp:281
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Object"
 msgstr "Objecto"
 
-#: eventview.cpp:285
+#: eventview.cpp:284
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Text"
 msgstr "Texto"
 
-#: eventview.cpp:288
+#: eventview.cpp:287
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Table"
 msgstr "Tabella"
 
-#: eventview.cpp:291
+#: eventview.cpp:290
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Others"
 msgstr "Alteres"
 
-#: eventview.cpp:294
+#: eventview.cpp:293
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "No Event"
@@ -467,146 +489,124 @@ msgstr "Nulle evento"
 #: eventview.ui:18
 #, kde-format
 msgid "Form"
-msgstr ""
+msgstr "Forma"
 
 #. i18n: ectx: property (placeholderText), widget (QLineEdit, accessibleFilterEdit)
 #: eventview.ui:32
-#, fuzzy, kde-format
-#| msgid "Accessible"
+#, kde-format
 msgid "Accessible Filter"
-msgstr "Accessibile"
+msgstr "Filtro Accessibile"
 
 #. i18n: ectx: property (accessibleName), widget (QLineEdit, roleFilterEdit)
 #. i18n: ectx: property (placeholderText), widget (QLineEdit, roleFilterEdit)
 #: eventview.ui:39 eventview.ui:45
 #, kde-format
 msgid "Role Filter"
-msgstr ""
+msgstr "Filtro de rolo"
 
 #. i18n: ectx: property (accessibleName), widget (QComboBox, filterComboBox)
 #: eventview.ui:52
-#, fuzzy, kde-format
-#| msgid "Event Keyboard"
+#, kde-format
 msgid "Event Filter"
-msgstr "Evento claviero"
+msgstr "Filtro de Evento"
 
 #. i18n: ectx: property (accessibleName), widget (QPushButton, clearButton)
 #: eventview.ui:65
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Events"
+#, kde-format
 msgid "Clear Events"
-msgstr "Eventos"
+msgstr "Netta Eventos"
 
 #. i18n: ectx: property (text), widget (QPushButton, clearButton)
 #: eventview.ui:68
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Clear"
+#, kde-format
 msgid "&Clear"
-msgstr "Netta"
+msgstr "&Netta"
 
-#: mainwindow.cpp:141
+#: mainwindow.cpp:130
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Reset Tree"
 msgstr "Reinitialisa Arbore"
 
-#: mainwindow.cpp:146
+#: mainwindow.cpp:136
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Follow Focus"
 msgstr "Seque le foco"
 
-#: mainwindow.cpp:151
+#: mainwindow.cpp:142
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Cache..."
 msgstr "Cache"
 
-#: mainwindow.cpp:155
+#: mainwindow.cpp:147
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Enable Accessibility"
 msgstr "Habilita Accessibilitate"
 
-#: mainwindow.cpp:163
+#: mainwindow.cpp:157
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Enable Screen Reader"
 msgstr "Activa Lector de schermo"
 
-#: mainwindow.cpp:172
+#: mainwindow.cpp:168
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy property value"
 msgstr "Copia valor de proprietate"
 
-#: mainwindow.cpp:195
-#, kde-format
-msgctxt "@title:menu"
-msgid "Tree"
-msgstr "Arbore"
-
-#: mainwindow.cpp:201
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "Edit"
-msgstr "Modifica"
-
-#: mainwindow.cpp:204
-#, kde-format
-msgctxt "@title:menu"
-msgid "Settings"
-msgstr "Preferentias"
-
-#: mainwindow.cpp:205
-#, kde-format
-msgctxt "@title:menu"
-msgid "Docker"
-msgstr "Docker (stivator)"
-
-#: mainwindow.cpp:242
+#: mainwindow.cpp:217
 #, kde-format
 msgctxt "@title:window"
 msgid "Properties"
 msgstr "Proprietates"
 
-#: mainwindow.cpp:247
+#: mainwindow.cpp:222
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "List of properties"
 msgstr "Lista de proprietates"
 
-#: mainwindow.cpp:248
+#: mainwindow.cpp:223
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Displays properties of the selected accessible object"
 msgstr "Monstra proprietate del objecto accessibile seligite"
 
-#: mainwindow.cpp:258
+#: mainwindow.cpp:233
 #, kde-format
 msgctxt "@title:window"
 msgid "Boundaries"
 msgstr "Bordos"
 
-#: mainwindow.cpp:262
+#: mainwindow.cpp:237
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Boundaries"
 msgstr "Bordos"
 
-#: mainwindow.cpp:263
+#: mainwindow.cpp:238
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Visualize the component boundaries"
 msgstr "Visualisa le bordos de componente"
 
-#: mainwindow.cpp:266
+#: mainwindow.cpp:241
 #, kde-format
 msgctxt "@title:window"
 msgid "Events"
 msgstr "Eventos"
+
+#~ msgctxt "@title:menu"
+#~ msgid "Tree"
+#~ msgstr "Arbore"
+
+#~ msgctxt "@title:menu"
+#~ msgid "Docker"
+#~ msgstr "Docker (stivator)"
 
 #~ msgctxt "@action:inmenu"
 #~ msgid "Quit"

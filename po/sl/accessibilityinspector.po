@@ -3,57 +3,67 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-22 01:33+0000\n"
-"PO-Revision-Date: 2023-11-21 07:48+0100\n"
+"POT-Creation-Date: 2023-11-23 01:36+0000\n"
+"PO-Revision-Date: 2023-11-22 07:18+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 23.08.3\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
+"X-Generator: Poedit 3.4.1\n"
 
-#, fuzzy, kde-format
-#| msgid "Your names"
+#, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Matjaž Jeran"
 
-#, fuzzy, kde-format
-#| msgid "Your emails"
+#, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "matjaz.jeran@amis.net"
 
-#: accessibleobjecttreemodel.cpp:27 accessiblepropertiesmodel.cpp:80
+#. i18n: ectx: Menu (edit)
+#: accessibilityinspectorui.rc:11
 #, fuzzy, kde-format
-#| msgctxt "accessibleobjecttreemodel.cpp:27 accessibleproperties.cpp:80"
-#| msgid "Accessible"
+#| msgctxt "@action:inmenu"
+#| msgid "Edit"
+msgid "&Edit"
+msgstr "Uredi"
+
+#. i18n: ectx: Menu (view)
+#: accessibilityinspectorui.rc:15
+#, kde-format
+msgid "View"
+msgstr ""
+
+#. i18n: ectx: Menu (settings)
+#: accessibilityinspectorui.rc:20
+#, fuzzy, kde-format
+#| msgctxt "@title:menu"
+#| msgid "Settings"
+msgid "&Settings"
+msgstr "Nastavitve"
+
+#: accessibleobjecttreemodel.cpp:27 accessiblepropertiesmodel.cpp:80
+#, kde-format
 msgid "Accessible"
 msgstr "Dostopen"
 
 #: accessibleobjecttreemodel.cpp:29 accessiblepropertiesmodel.cpp:83
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "accessibleobjecttreemodel.cpp:29 accessibleproperties."
-#| "cpp:83accessibleobjecttreemodel.cpp:29 accessibleproperties.cpp:83"
-#| msgid "Role"
+#, kde-format
 msgid "Role"
 msgstr "Vloga"
 
 #: accessiblepropertiesmodel.cpp:81
-#, fuzzy, kde-format
-#| msgctxt "accessibleproperties.cpp:81accessibleproperties.cpp:81"
-#| msgid "Name"
+#, kde-format
 msgid "Name"
 msgstr "Ime"
 
 #: accessiblepropertiesmodel.cpp:82 accessiblepropertiesmodel.cpp:177
-#, fuzzy, kde-format
-#| msgctxt "accessibleproperties.cpp:82 accessibleproperties.cpp:177"
-#| msgid "Description"
+#, kde-format
 msgid "Description"
 msgstr "Opis"
 
@@ -73,9 +83,7 @@ msgid "Default"
 msgstr "Privzeto"
 
 #: accessiblepropertiesmodel.cpp:87
-#, fuzzy, kde-format
-#| msgctxt "accessibleproperties.cpp:87"
-#| msgid "State"
+#, kde-format
 msgid "State"
 msgstr "Stanje"
 
@@ -160,9 +168,7 @@ msgid "BusAddress"
 msgstr "BusAddress"
 
 #: accessiblepropertiesmodel.cpp:125
-#, fuzzy, kde-format
-#| msgctxt "accessibleproperties.cpp:125"
-#| msgid "Document"
+#, kde-format
 msgid "Document"
 msgstr "Dokument"
 
@@ -197,19 +203,13 @@ msgid "Selection"
 msgstr "Izbira"
 
 #: accessiblepropertiesmodel.cpp:188
-#, fuzzy, kde-format
-#| msgctxt "accessibleproperties.cpp:188"
-#| msgid "Table"
+#, kde-format
 msgid "Table"
 msgstr "Tabela"
 
 #: accessiblepropertiesmodel.cpp:220 accessiblepropertiesmodel.cpp:228
 #: accessiblepropertiesmodel.cpp:230
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "accessibleproperties.cpp:220 accessibleproperties.cpp:228 "
-#| "accessibleproperties.cpp:230"
-#| msgid "Text"
+#, kde-format
 msgid "Text"
 msgstr "Besedilo"
 
@@ -289,9 +289,7 @@ msgid "Event Focus"
 msgstr "Fokus dogodka"
 
 #: accessiblepropertiesmodel.cpp:277
-#, fuzzy, kde-format
-#| msgctxt "accessibleproperties.cpp:277"
-#| msgid "Action"
+#, kde-format
 msgid "Action"
 msgstr "Dejavnost"
 
@@ -331,198 +329,156 @@ msgid "Maintainer"
 msgstr "Vzdrževalec"
 
 #: clientcachedialog.cpp:29
-#, fuzzy, kde-format
-#| msgid "Cache"
+#, kde-format
 msgctxt "@title:window"
 msgid "Cache"
 msgstr "Predpomnilnik"
 
 #: clientcachedialog.cpp:44
-#, fuzzy, kde-format
-#| msgid "Refresh"
+#, kde-format
 msgctxt "@action:button"
 msgid "Refresh"
 msgstr "Osveži"
 
 #: clientcachedialog.cpp:47
-#, fuzzy, kde-format
-#| msgid "Clear"
+#, kde-format
 msgctxt "@action:button"
 msgid "Clear"
 msgstr "Očisti"
 
 #: clientcachedialog.cpp:50
-#, fuzzy, kde-format
-#| msgid "Strategy:"
+#, kde-format
 msgctxt "@label"
 msgid "Strategy:"
 msgstr "Strategija:"
 
 #: clientcachedialog.cpp:55
-#, fuzzy, kde-format
-#| msgid "Disable"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Disable"
 msgstr "Onemogoči"
 
 #: clientcachedialog.cpp:56
-#, fuzzy, kde-format
-#| msgid "Weak"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Weak"
 msgstr "Šibko"
 
 #: clientcachedialog.cpp:65
-#, fuzzy, kde-format
-#| msgid "Count:"
+#, kde-format
 msgctxt "@label:listbox"
 msgid "Count:"
 msgstr "Štetje:"
 
 #: clientcachedialog.cpp:99
-#, fuzzy, kde-format
-#| msgctxt "accessibleproperties.cpp:81accessibleproperties.cpp:81"
-#| msgid "Name"
+#, kde-format
 msgctxt "@title:row"
 msgid "Name"
 msgstr "Ime"
 
 #: clientcachedialog.cpp:99
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "accessibleobjecttreemodel.cpp:29 accessibleproperties."
-#| "cpp:83accessibleobjecttreemodel.cpp:29 accessibleproperties.cpp:83"
-#| msgid "Role"
+#, kde-format
 msgctxt "@title:row"
 msgid "Role"
 msgstr "Vloga"
 
 #: clientcachedialog.cpp:99
-#, fuzzy, kde-format
-#| msgid "Identifier"
+#, kde-format
 msgctxt "@title:row"
 msgid "Identifier"
-msgstr "Identifikator"
+msgstr "Določilnik"
 
-#: eventview.cpp:63
-#, fuzzy, kde-format
-#| msgctxt "accessibleobjecttreemodel.cpp:27 accessibleproperties.cpp:80"
-#| msgid "Accessible"
+#: eventview.cpp:62
+#, kde-format
 msgctxt "@label"
 msgid "Accessible"
 msgstr "Dostopen"
 
-#: eventview.cpp:65
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "accessibleobjecttreemodel.cpp:29 accessibleproperties."
-#| "cpp:83accessibleobjecttreemodel.cpp:29 accessibleproperties.cpp:83"
-#| msgid "Role"
+#: eventview.cpp:64
+#, kde-format
 msgctxt "@label"
 msgid "Role"
 msgstr "Vloga"
 
-#: eventview.cpp:67
-#, fuzzy, kde-format
-#| msgid "Event"
+#: eventview.cpp:66
+#, kde-format
 msgctxt "@label"
 msgid "Event"
 msgstr "Dogodek"
 
-#: eventview.cpp:69
-#, fuzzy, kde-format
-#| msgctxt "accessibleproperties.cpp:277"
-#| msgid "Action"
+#: eventview.cpp:68
+#, kde-format
 msgctxt "@label"
 msgid "Action"
 msgstr "Dejavnost"
 
-#: eventview.cpp:193
+#: eventview.cpp:192
 #, kde-format
 msgid "Displays all received events"
 msgstr "Prikaže vse prejete dogodke"
 
-#: eventview.cpp:264
-#, fuzzy, kde-format
-#| msgid "Focus"
+#: eventview.cpp:263
+#, kde-format
 msgctxt "Accessibility event name"
 msgid "Focus"
 msgstr "Fokus"
 
-#: eventview.cpp:267
-#, fuzzy, kde-format
-#| msgctxt "accessibleproperties.cpp:87"
-#| msgid "State"
+#: eventview.cpp:266
+#, kde-format
 msgctxt "Accessibility event name: state changed"
 msgid "State"
 msgstr "Stanje"
 
-#: eventview.cpp:270
-#, fuzzy, kde-format
-#| msgctxt "accessibleproperties.cpp:81accessibleproperties.cpp:81"
-#| msgid "Name"
+#: eventview.cpp:269
+#, kde-format
 msgctxt "Accessibility event name: name changed"
 msgid "Name"
 msgstr "Ime"
 
-#: eventview.cpp:273
-#, fuzzy, kde-format
-#| msgctxt "accessibleproperties.cpp:82 accessibleproperties.cpp:177"
-#| msgid "Description"
+#: eventview.cpp:272
+#, kde-format
 msgctxt "Accessibility event name: description changed"
 msgid "Description"
 msgstr "Opis"
 
-#: eventview.cpp:276
-#, fuzzy, kde-format
-#| msgid "Window"
+#: eventview.cpp:275
+#, kde-format
 msgctxt "Accessibility event name"
 msgid "Window"
 msgstr "Okno"
 
-#: eventview.cpp:279
-#, fuzzy, kde-format
-#| msgctxt "accessibleproperties.cpp:125"
-#| msgid "Document"
+#: eventview.cpp:278
+#, kde-format
 msgctxt "Accessibility event name"
 msgid "Document"
 msgstr "Dokument"
 
-#: eventview.cpp:282
-#, fuzzy, kde-format
-#| msgid "Object"
+#: eventview.cpp:281
+#, kde-format
 msgctxt "Accessibility event name"
 msgid "Object"
 msgstr "Objekt"
 
-#: eventview.cpp:285
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "accessibleproperties.cpp:220 accessibleproperties.cpp:228 "
-#| "accessibleproperties.cpp:230"
-#| msgid "Text"
+#: eventview.cpp:284
+#, kde-format
 msgctxt "Accessibility event name"
 msgid "Text"
 msgstr "Besedilo"
 
-#: eventview.cpp:288
-#, fuzzy, kde-format
-#| msgctxt "accessibleproperties.cpp:188"
-#| msgid "Table"
+#: eventview.cpp:287
+#, kde-format
 msgctxt "Accessibility event name"
 msgid "Table"
 msgstr "Tabela"
 
-#: eventview.cpp:291
-#, fuzzy, kde-format
-#| msgid "Others"
+#: eventview.cpp:290
+#, kde-format
 msgctxt "Accessibility event name"
 msgid "Others"
 msgstr "Drugi"
 
-#: eventview.cpp:294
-#, fuzzy, kde-format
-#| msgid "No Event"
+#: eventview.cpp:293
+#, kde-format
 msgctxt "Accessibility event name"
 msgid "No Event"
 msgstr "Ni dogodka"
@@ -531,164 +487,124 @@ msgstr "Ni dogodka"
 #: eventview.ui:18
 #, kde-format
 msgid "Form"
-msgstr ""
+msgstr "Oblika"
 
 #. i18n: ectx: property (placeholderText), widget (QLineEdit, accessibleFilterEdit)
 #: eventview.ui:32
-#, fuzzy, kde-format
-#| msgctxt "accessibleobjecttreemodel.cpp:27 accessibleproperties.cpp:80"
-#| msgid "Accessible"
+#, kde-format
 msgid "Accessible Filter"
-msgstr "Dostopen"
+msgstr "Filter dostopnosti"
 
 #. i18n: ectx: property (accessibleName), widget (QLineEdit, roleFilterEdit)
 #. i18n: ectx: property (placeholderText), widget (QLineEdit, roleFilterEdit)
 #: eventview.ui:39 eventview.ui:45
 #, kde-format
 msgid "Role Filter"
-msgstr ""
+msgstr "Filter vloge"
 
 #. i18n: ectx: property (accessibleName), widget (QComboBox, filterComboBox)
 #: eventview.ui:52
-#, fuzzy, kde-format
-#| msgid "Event Keyboard"
+#, kde-format
 msgid "Event Filter"
-msgstr "Dogodek tipkovnice"
+msgstr "Filter dogodka"
 
 #. i18n: ectx: property (accessibleName), widget (QPushButton, clearButton)
 #: eventview.ui:65
-#, fuzzy, kde-format
-#| msgid "Events"
+#, kde-format
 msgid "Clear Events"
-msgstr "Dogodki"
+msgstr "Počisti dogodke"
 
 #. i18n: ectx: property (text), widget (QPushButton, clearButton)
 #: eventview.ui:68
-#, fuzzy, kde-format
-#| msgid "Clear"
+#, kde-format
 msgid "&Clear"
 msgstr "Očisti"
 
-#: mainwindow.cpp:141
-#, fuzzy, kde-format
-#| msgid "Reset Tree"
+#: mainwindow.cpp:130
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Reset Tree"
 msgstr "Ponastavi drevo"
 
-#: mainwindow.cpp:146
-#, fuzzy, kde-format
-#| msgid "Follow Focus"
+#: mainwindow.cpp:136
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Follow Focus"
-msgstr "Sledi Focusu"
+msgstr "Sledi fokusu"
 
-#: mainwindow.cpp:151
-#, fuzzy, kde-format
-#| msgid "Cache..."
+#: mainwindow.cpp:142
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Cache..."
 msgstr "Predpomnilnik..."
 
-#: mainwindow.cpp:155
-#, fuzzy, kde-format
-#| msgid "Enable Accessibility"
+#: mainwindow.cpp:147
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Enable Accessibility"
 msgstr "Omogoči dostopnost"
 
-#: mainwindow.cpp:163
-#, fuzzy, kde-format
-#| msgid "Enable Screen Reader"
+#: mainwindow.cpp:157
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Enable Screen Reader"
 msgstr "Omogoči bralnik zaslona"
 
-#: mainwindow.cpp:172
-#, fuzzy, kde-format
-#| msgid "Copy property value"
+#: mainwindow.cpp:168
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy property value"
 msgstr "Kopiraj vrednost lastnosti"
 
-#: mainwindow.cpp:195
-#, fuzzy, kde-format
-#| msgid "Tree"
-msgctxt "@title:menu"
-msgid "Tree"
-msgstr "Drevo"
-
-#: mainwindow.cpp:201
-#, fuzzy, kde-format
-#| msgid "Edit"
-msgctxt "@action:inmenu"
-msgid "Edit"
-msgstr "Uredi"
-
-#: mainwindow.cpp:204
-#, fuzzy, kde-format
-#| msgid "Settings"
-msgctxt "@title:menu"
-msgid "Settings"
-msgstr "Nastavitve"
-
-#: mainwindow.cpp:205
-#, fuzzy, kde-format
-#| msgid "Docker"
-msgctxt "@title:menu"
-msgid "Docker"
-msgstr "Docker"
-
-#: mainwindow.cpp:242
-#, fuzzy, kde-format
-#| msgid "Properties"
+#: mainwindow.cpp:217
+#, kde-format
 msgctxt "@title:window"
 msgid "Properties"
 msgstr "Lastnosti"
 
-#: mainwindow.cpp:247
-#, fuzzy, kde-format
-#| msgid "List of properties"
+#: mainwindow.cpp:222
+#, kde-format
 msgctxt "@info:whatsthis"
 msgid "List of properties"
 msgstr "Seznam lastnosti"
 
-#: mainwindow.cpp:248
-#, fuzzy, kde-format
-#| msgid "Displays properties of the selected accessible object"
+#: mainwindow.cpp:223
+#, kde-format
 msgctxt "@info:whatsthis"
 msgid "Displays properties of the selected accessible object"
 msgstr "Prikaže lastnosti izbranega dostopnega predmeta"
 
-#: mainwindow.cpp:258
-#, fuzzy, kde-format
-#| msgctxt "mainwindow.cpp:256"
-#| msgid "Boundaries"
+#: mainwindow.cpp:233
+#, kde-format
 msgctxt "@title:window"
 msgid "Boundaries"
 msgstr "Meje"
 
-#: mainwindow.cpp:262
-#, fuzzy, kde-format
-#| msgctxt "mainwindow.cpp:256"
-#| msgid "Boundaries"
+#: mainwindow.cpp:237
+#, kde-format
 msgctxt "@info:whatsthis"
 msgid "Boundaries"
 msgstr "Meje"
 
-#: mainwindow.cpp:263
-#, fuzzy, kde-format
-#| msgid "Visualize the component boundaries"
+#: mainwindow.cpp:238
+#, kde-format
 msgctxt "@info:whatsthis"
 msgid "Visualize the component boundaries"
 msgstr "Vizualizirajte meje komponent"
 
-#: mainwindow.cpp:266
-#, fuzzy, kde-format
-#| msgid "Events"
+#: mainwindow.cpp:241
+#, kde-format
 msgctxt "@title:window"
 msgid "Events"
 msgstr "Dogodki"
+
+#~ msgctxt "@title:menu"
+#~ msgid "Tree"
+#~ msgstr "Drevo"
+
+#~ msgctxt "@title:menu"
+#~ msgid "Docker"
+#~ msgstr "Doker"
 
 #~ msgctxt "clientcachedialog.cpp:99"
 #~ msgid "Name"

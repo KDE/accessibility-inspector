@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-22 01:33+0000\n"
-"PO-Revision-Date: 2023-11-21 08:07+0200\n"
+"POT-Creation-Date: 2023-11-23 01:36+0000\n"
+"PO-Revision-Date: 2023-11-22 23:57+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -27,6 +27,28 @@ msgstr "Юрій Чорноіван"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "yurchor@ukr.net"
+
+#. i18n: ectx: Menu (edit)
+#: accessibilityinspectorui.rc:11
+#, fuzzy, kde-format
+#| msgctxt "@action:inmenu"
+#| msgid "Edit"
+msgid "&Edit"
+msgstr "Змінити"
+
+#. i18n: ectx: Menu (view)
+#: accessibilityinspectorui.rc:15
+#, kde-format
+msgid "View"
+msgstr ""
+
+#. i18n: ectx: Menu (settings)
+#: accessibilityinspectorui.rc:20
+#, fuzzy, kde-format
+#| msgctxt "@title:menu"
+#| msgid "Settings"
+msgid "&Settings"
+msgstr "Параметри"
 
 #: accessibleobjecttreemodel.cpp:27 accessiblepropertiesmodel.cpp:80
 #, kde-format
@@ -369,96 +391,96 @@ msgctxt "@title:row"
 msgid "Identifier"
 msgstr "Ідентифікатор"
 
-#: eventview.cpp:63
+#: eventview.cpp:62
 #, kde-format
 msgctxt "@label"
 msgid "Accessible"
 msgstr "Доступний"
 
-#: eventview.cpp:65
+#: eventview.cpp:64
 #, kde-format
 msgctxt "@label"
 msgid "Role"
 msgstr "Роль"
 
-#: eventview.cpp:67
+#: eventview.cpp:66
 #, kde-format
 msgctxt "@label"
 msgid "Event"
 msgstr "Подія"
 
-#: eventview.cpp:69
+#: eventview.cpp:68
 #, kde-format
 msgctxt "@label"
 msgid "Action"
 msgstr "Дія"
 
-#: eventview.cpp:193
+#: eventview.cpp:192
 #, kde-format
 msgid "Displays all received events"
 msgstr "Показати усі отримані події"
 
-#: eventview.cpp:264
+#: eventview.cpp:263
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Focus"
 msgstr "Фокусування"
 
-#: eventview.cpp:267
+#: eventview.cpp:266
 #, kde-format
 msgctxt "Accessibility event name: state changed"
 msgid "State"
 msgstr "Стан"
 
-#: eventview.cpp:270
+#: eventview.cpp:269
 #, kde-format
 msgctxt "Accessibility event name: name changed"
 msgid "Name"
 msgstr "Назва"
 
-#: eventview.cpp:273
+#: eventview.cpp:272
 #, kde-format
 msgctxt "Accessibility event name: description changed"
 msgid "Description"
 msgstr "Опис"
 
-#: eventview.cpp:276
+#: eventview.cpp:275
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Window"
 msgstr "Вікно"
 
-#: eventview.cpp:279
+#: eventview.cpp:278
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Document"
 msgstr "Документ"
 
-#: eventview.cpp:282
+#: eventview.cpp:281
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Object"
 msgstr "Об'єкт"
 
-#: eventview.cpp:285
+#: eventview.cpp:284
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Text"
 msgstr "Текст"
 
-#: eventview.cpp:288
+#: eventview.cpp:287
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Table"
 msgstr "Таблиця"
 
-#: eventview.cpp:291
+#: eventview.cpp:290
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Others"
 msgstr "Інші"
 
-#: eventview.cpp:294
+#: eventview.cpp:293
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "No Event"
@@ -468,146 +490,124 @@ msgstr "Без події"
 #: eventview.ui:18
 #, kde-format
 msgid "Form"
-msgstr ""
+msgstr "Формат"
 
 #. i18n: ectx: property (placeholderText), widget (QLineEdit, accessibleFilterEdit)
 #: eventview.ui:32
-#, fuzzy, kde-format
-#| msgid "Accessible"
+#, kde-format
 msgid "Accessible Filter"
-msgstr "Доступний"
+msgstr "Доступний фільтр"
 
 #. i18n: ectx: property (accessibleName), widget (QLineEdit, roleFilterEdit)
 #. i18n: ectx: property (placeholderText), widget (QLineEdit, roleFilterEdit)
 #: eventview.ui:39 eventview.ui:45
 #, kde-format
 msgid "Role Filter"
-msgstr ""
+msgstr "Фільтр ролі"
 
 #. i18n: ectx: property (accessibleName), widget (QComboBox, filterComboBox)
 #: eventview.ui:52
-#, fuzzy, kde-format
-#| msgid "Event Keyboard"
+#, kde-format
 msgid "Event Filter"
-msgstr "Клавіатура події"
+msgstr "Фільтр подій"
 
 #. i18n: ectx: property (accessibleName), widget (QPushButton, clearButton)
 #: eventview.ui:65
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Events"
+#, kde-format
 msgid "Clear Events"
-msgstr "Події"
+msgstr "Спорожнити список подій"
 
 #. i18n: ectx: property (text), widget (QPushButton, clearButton)
 #: eventview.ui:68
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Clear"
+#, kde-format
 msgid "&Clear"
-msgstr "Спорожнити"
+msgstr "Сп&орожнити"
 
-#: mainwindow.cpp:141
+#: mainwindow.cpp:130
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Reset Tree"
 msgstr "Скинути ієрархію"
 
-#: mainwindow.cpp:146
+#: mainwindow.cpp:136
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Follow Focus"
 msgstr "Слідувати за фокусом"
 
-#: mainwindow.cpp:151
+#: mainwindow.cpp:142
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Cache..."
 msgstr "Кеш…"
 
-#: mainwindow.cpp:155
+#: mainwindow.cpp:147
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Enable Accessibility"
 msgstr "Увімкнути можливості доступності"
 
-#: mainwindow.cpp:163
+#: mainwindow.cpp:157
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Enable Screen Reader"
 msgstr "Увімкнути засіб читання з екрана"
 
-#: mainwindow.cpp:172
+#: mainwindow.cpp:168
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy property value"
 msgstr "Копіювати значення властивості"
 
-#: mainwindow.cpp:195
-#, kde-format
-msgctxt "@title:menu"
-msgid "Tree"
-msgstr "Ієрархія"
-
-#: mainwindow.cpp:201
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "Edit"
-msgstr "Змінити"
-
-#: mainwindow.cpp:204
-#, kde-format
-msgctxt "@title:menu"
-msgid "Settings"
-msgstr "Параметри"
-
-#: mainwindow.cpp:205
-#, kde-format
-msgctxt "@title:menu"
-msgid "Docker"
-msgstr "Бічна панель"
-
-#: mainwindow.cpp:242
+#: mainwindow.cpp:217
 #, kde-format
 msgctxt "@title:window"
 msgid "Properties"
 msgstr "Властивості"
 
-#: mainwindow.cpp:247
+#: mainwindow.cpp:222
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "List of properties"
 msgstr "Список властивостей"
 
-#: mainwindow.cpp:248
+#: mainwindow.cpp:223
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Displays properties of the selected accessible object"
 msgstr "Показує властивості позначеного доступного об'єкта"
 
-#: mainwindow.cpp:258
+#: mainwindow.cpp:233
 #, kde-format
 msgctxt "@title:window"
 msgid "Boundaries"
 msgstr "Кордони"
 
-#: mainwindow.cpp:262
+#: mainwindow.cpp:237
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Boundaries"
 msgstr "Кордони"
 
-#: mainwindow.cpp:263
+#: mainwindow.cpp:238
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Visualize the component boundaries"
 msgstr "Візуалізувати межі компонентів"
 
-#: mainwindow.cpp:266
+#: mainwindow.cpp:241
 #, kde-format
 msgctxt "@title:window"
 msgid "Events"
 msgstr "Події"
+
+#~ msgctxt "@title:menu"
+#~ msgid "Tree"
+#~ msgstr "Ієрархія"
+
+#~ msgctxt "@title:menu"
+#~ msgid "Docker"
+#~ msgstr "Бічна панель"
 
 #~ msgctxt "@action:inmenu"
 #~ msgid "Quit"
