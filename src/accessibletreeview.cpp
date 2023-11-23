@@ -5,6 +5,8 @@
 */
 
 #include "accessibletreeview.h"
+#include "accessibilityinspector_debug.h"
+#include "accessibleobjecttreemodel.h"
 #include "accessiblewrapper.h"
 
 #include <QMenu>
@@ -12,6 +14,7 @@
 
 AccessibleTreeView::AccessibleTreeView(QWidget *parent)
     : QTreeView(parent)
+    , mAccessibleObjectTreeModel(new AccessibleObjectTreeModel(this))
 {
     setAccessibleDescription(QStringLiteral("Displays a hierachical tree of accessible objects"));
     setSelectionBehavior(QAbstractItemView::SelectRows);
@@ -21,6 +24,7 @@ AccessibleTreeView::AccessibleTreeView(QWidget *parent)
     setContextMenuPolicy(Qt::CustomContextMenu);
     connect(selectionModel(), &QItemSelectionModel::currentChanged, this, &AccessibleTreeView::accessibleTreeviewSelectionChanged);
     connect(this, &AccessibleTreeView::customContextMenuRequested, this, &AccessibleTreeView::treeCustomContextMenuRequested);
+    setModel(mAccessibleObjectTreeModel);
 }
 
 AccessibleTreeView::~AccessibleTreeView() = default;
@@ -37,6 +41,27 @@ void AccessibleTreeView::treeCustomContextMenuRequested(const QPoint &pos)
         menu->addAction(a.data());
     }
     menu->popup(mapToGlobal(pos));
+}
+
+AccessibleObjectTreeModel *AccessibleTreeView::accessibleObjectTreeModel() const
+{
+    return mAccessibleObjectTreeModel;
+}
+
+void AccessibleTreeView::setCurrentObject(const QAccessibleClient::AccessibleObject &object)
+{
+    const QModelIndex index = mAccessibleObjectTreeModel->indexForAccessible(object);
+    if (index.isValid()) {
+        const QModelIndex other = mAccessibleObjectTreeModel->index(index.row(), index.column() + 1, index.parent());
+        Q_ASSERT(other.isValid());
+        selectionModel()->select(QItemSelection(index, other), QItemSelectionModel::SelectCurrent);
+        scrollTo(index);
+
+        // Unlike calling setCurrentIndex the select call aboves doe not emit the selectionChanged signal. So, do explicit.
+        // TODO selectionChanged(index, QModelIndex());
+    } else {
+        qCWarning(ACCESSIBILITYINSPECTOR_LOG) << "No such indexForAccessible=" << object;
+    }
 }
 
 #include "moc_accessibletreeview.cpp"

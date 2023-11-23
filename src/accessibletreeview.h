@@ -5,19 +5,25 @@
 */
 
 #pragma once
-
+#include "libaccessibilityinspector_private_export.h"
 #include <QTreeView>
 
-class AccessibleTreeView : public QTreeView
+#include <qaccessibilityclient/accessibleobject.h>
+class AccessibleObjectTreeModel;
+class LIBACCESSIBILITYINSPECTOR_TEXT_EXPORT AccessibleTreeView : public QTreeView
 {
     Q_OBJECT
 public:
     explicit AccessibleTreeView(QWidget *parent = nullptr);
     ~AccessibleTreeView() override;
 
+    [[nodiscard]] AccessibleObjectTreeModel *accessibleObjectTreeModel() const;
+
+    void setCurrentObject(const QAccessibleClient::AccessibleObject &object);
 Q_SIGNALS:
     void accessibleTreeviewSelectionChanged(const QModelIndex &current, const QModelIndex &previous);
 
 private:
     void treeCustomContextMenuRequested(const QPoint &pos);
+    AccessibleObjectTreeModel *const mAccessibleObjectTreeModel;
 };

@@ -23,9 +23,9 @@ AccessibleObjectTreeModel::~AccessibleObjectTreeModel() = default;
 QVariant AccessibleObjectTreeModel::headerData(int section, Qt::Orientation orientation, int role) const
 {
     if (orientation == Qt::Horizontal && role == Qt::DisplayRole) {
-        if (section == 0) {
+        if (section == Accessible) {
             return i18n("Accessible");
-        } else if (section == 1) {
+        } else if (section == Role) {
             return i18n("Role");
         }
     }
@@ -47,12 +47,12 @@ QVariant AccessibleObjectTreeModel::data(const QModelIndex &index, int role) con
 
     switch (role) {
     case Qt::DisplayRole:
-        if (index.column() == 0) {
+        if (index.column() == Accessible) {
             QString name = acc.name();
             if (name.isEmpty())
                 name = QStringLiteral("[%1]").arg(acc.roleName());
             return name;
-        } else if (index.column() == 1) {
+        } else if (index.column() == Role) {
             return acc.roleName();
         }
         [[fallthrough]];

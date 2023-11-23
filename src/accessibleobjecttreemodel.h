@@ -17,6 +17,11 @@ class AccessibleObjectTreeModel : public QAbstractItemModel
 {
     Q_OBJECT
 public:
+    enum AccessibleObjectTreeModelRoles {
+        Accessible,
+        Role,
+    };
+    Q_ENUM(AccessibleObjectTreeModelRoles)
     explicit AccessibleObjectTreeModel(QObject *parent = nullptr);
     ~AccessibleObjectTreeModel() override;
 

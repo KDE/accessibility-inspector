@@ -11,12 +11,15 @@
 class QLineEdit;
 class AccessibleTreeView;
 class QSortFilterProxyModel;
+class AccessibleObjectTreeModel;
 class LIBACCESSIBILITYINSPECTOR_TEXT_EXPORT AccessibleTreeWidget : public QWidget
 {
     Q_OBJECT
 public:
     explicit AccessibleTreeWidget(QWidget *parent = nullptr);
     ~AccessibleTreeWidget() override;
+
+    [[nodiscard]] AccessibleObjectTreeModel *accessibleObjectTreeModel() const;
 
 private:
     QLineEdit *const mSearchLineEdit;

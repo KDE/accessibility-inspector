@@ -28,4 +28,9 @@ AccessibleTreeWidget::AccessibleTreeWidget(QWidget *parent)
 
 AccessibleTreeWidget::~AccessibleTreeWidget() = default;
 
+AccessibleObjectTreeModel *AccessibleTreeWidget::accessibleObjectTreeModel() const
+{
+    return mAccessibleTreeView->accessibleObjectTreeModel();
+}
+
 #include "moc_accessibletreewidget.cpp"
