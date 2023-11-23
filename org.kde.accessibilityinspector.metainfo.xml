@@ -12,6 +12,7 @@
   <name xml:lang="ca">Inspector d'accessibilitat</name>
   <name xml:lang="ca-valencia">Inspector d'accessibilitat</name>
   <name xml:lang="ia">Inspector de Accessibilitate</name>
+  <name xml:lang="ka">წვდომადობის ინსპექტორი</name>
   <name xml:lang="nl">Toegankelijkheidsinspecteur</name>
   <name xml:lang="sl">Accessibility Inspector</name>
   <name xml:lang="tr">Erişilebilirlik Denetçisi</name>
@@ -32,6 +33,7 @@
     <p xml:lang="ca">L'inspector d'accessibilitat és, com el nom suggereix, un inspector de l'arbre d'accessibilitat de l'aplicació. Permet comprovar tots els elements exposats mitjançant At-SPI.</p>
     <p xml:lang="ca-valencia">L'inspector d'accessibilitat és, com el nom suggerix, un inspector de l'arbre d'accessibilitat de l'aplicació. Permet comprovar tots els elements exposats mitjançant At-SPI.</p>
     <p xml:lang="ia">Inspector de Accessibiliatte (Accessibility Inspector) es como le nomine suggere un inspector per le arbore de accessibilitate de tu application.Illo te permitte verificar le elementos exponite via at-SPI.</p>
+    <p xml:lang="ka">წვდომადობის ინსპექტორი, როგორც ამას სახელით მიხვდებოდით, ინსპექტორია თქვენი აპლიკაციის წვდომადობის ხისთვის. ის საშუალებას გაძლევთ, შეამოწმოთ ყველა ელემენტი, რომელსაც At-SPI გამოაჩენს.</p>
     <p xml:lang="nl">Toegankelijkheidsinspecteur is zoals de naam suggereert een inspecteur voor de boomstructuur van toegankelijkheid van uw toepassing. Het laat u alle items controleren die zijn blootgesteld via At-SPI naar.</p>
     <p xml:lang="sl">Inšpektor za dostopnost je, kot ime nakazuje inšpektor za vaše drevo dostopnosti aplikacij. Omogoča vam, da preverite vse predmete, ki so izpostavljeni prek Ati-SPI.</p>
     <p xml:lang="tr">Erişilebilirlik Denetçisi, adından da anlaşılabileceği üzere, uygulamalar için bir erişilebilirlik ağacı denetçisidir. At-SPI tarafından kullanıma açılan tüm ögeleri denetlemenize izin verir.</p>
@@ -60,6 +62,7 @@
       <caption xml:lang="ca">Les propietats d'un node de l'arbre d'accessibilitat.</caption>
       <caption xml:lang="ca-valencia">Les propietats d'un node de l'arbre d'accessibilitat.</caption>
       <caption xml:lang="ia">Le proprietate de un nodo del arbore de accessibilitate.</caption>
+      <caption xml:lang="ka">წვდომადობის ხის კვანძის თვისებები.</caption>
       <caption xml:lang="nl">De eigenschappen van een node van de boomstructuur van toegankelijkheid</caption>
       <caption xml:lang="sl">Lastnosti vozlišča drevesa dostopnosti.</caption>
       <caption xml:lang="tr">Erişilebilirlik ağacının bir düğümünün özellikleri.</caption>
