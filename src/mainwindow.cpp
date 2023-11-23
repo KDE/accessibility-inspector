@@ -183,12 +183,12 @@ void MainWindow::initUi()
 {
     setDockOptions(QMainWindow::AnimatedDocks | QMainWindow::AllowNestedDocks | QMainWindow::AllowTabbedDocks);
 
-    auto treeDocker = new QDockWidget(QStringLiteral("Tree"), this);
+    auto treeDocker = new QDockWidget(i18n("Tree"), this);
     treeDocker->setObjectName(QStringLiteral("tree"));
     treeDocker->setFeatures(QDockWidget::DockWidgetClosable | QDockWidget::DockWidgetMovable | QDockWidget::DockWidgetFloatable);
     m_accessibleObjectTreeView = new QTreeView(treeDocker);
-    m_accessibleObjectTreeView->setAccessibleName(QStringLiteral("Tree of accessibles"));
-    m_accessibleObjectTreeView->setAccessibleDescription(QStringLiteral("Displays a hierachical tree of accessible objects"));
+    m_accessibleObjectTreeView->setAccessibleName(i18n("Tree of accessibles"));
+    m_accessibleObjectTreeView->setAccessibleDescription(i18n("Displays a hierachical tree of accessible objects"));
     m_accessibleObjectTreeView->setSelectionBehavior(QAbstractItemView::SelectRows);
     m_accessibleObjectTreeView->setEditTriggers(QAbstractItemView::NoEditTriggers);
     m_accessibleObjectTreeView->setAlternatingRowColors(true);
@@ -290,9 +290,9 @@ void MainWindow::updateDetails(const AccessibleObject &object, bool force)
 void MainWindow::stateChanged(const QAccessibleClient::AccessibleObject &object, const QString &state, bool active)
 {
     if (state == QLatin1String("focused")) {
-        m_eventsWidget->addLog(object, EventsWidget::Focus, (active ? QStringLiteral("true") : QStringLiteral("false")));
+        m_eventsWidget->addLog(object, EventsWidget::Focus, (active ? i18n("true") : i18n("false")));
     } else {
-        const QString s = state + QStringLiteral(": ") + (active ? QStringLiteral("true") : QStringLiteral("false"));
+        const QString s = state + QStringLiteral(": ") + (active ? i18n("true") : i18n("false"));
         m_eventsWidget->addLog(object, EventsWidget::StateChanged, s);
     }
     updateDetails(object);
@@ -354,13 +354,13 @@ void MainWindow::treeCustomContextMenuRequested(const QPoint &pos)
 
 void MainWindow::added(const QAccessibleClient::AccessibleObject &object)
 {
-    m_eventsWidget->addLog(object, EventsWidget::Object, QStringLiteral("Add Object"));
+    m_eventsWidget->addLog(object, EventsWidget::Object, i18n("Add Object"));
     m_accessibleObjectTreeModel->addAccessible(object);
 }
 
 void MainWindow::removed(const QAccessibleClient::AccessibleObject &object)
 {
-    m_eventsWidget->addLog(object, EventsWidget::Object, QStringLiteral("RemoveObject"));
+    m_eventsWidget->addLog(object, EventsWidget::Object, i18n("Remove Object"));
     m_accessibleObjectTreeModel->removeAccessible(object);
 }
 
@@ -371,13 +371,13 @@ void MainWindow::defunct(const QAccessibleClient::AccessibleObject &object)
 
 void MainWindow::windowCreated(const QAccessibleClient::AccessibleObject &object)
 {
-    m_eventsWidget->addLog(object, EventsWidget::Window, QStringLiteral("Create"));
+    m_eventsWidget->addLog(object, EventsWidget::Window, i18n("Create"));
     m_accessibleObjectTreeModel->addAccessible(object);
 }
 
 void MainWindow::windowDestroyed(const QAccessibleClient::AccessibleObject &object)
 {
-    m_eventsWidget->addLog(object, EventsWidget::Window, QStringLiteral("Destroy"));
+    m_eventsWidget->addLog(object, EventsWidget::Window, i18n("Destroy"));
     if (!m_accessibleObjectTreeModel->removeAccessible(object)) {
         // assume the app has gone
         m_accessibleObjectTreeModel->updateTopLevelApps();
@@ -478,7 +478,7 @@ void MainWindow::focusChanged(const QAccessibleClient::AccessibleObject &object)
 void MainWindow::textCaretMoved(const QAccessibleClient::AccessibleObject &object, int pos)
 {
     updateDetails(object);
-    m_eventsWidget->addLog(object, EventsWidget::Text, QStringLiteral("Text caret moved (%1)").arg(pos));
+    m_eventsWidget->addLog(object, EventsWidget::Text, i18n("Text caret moved (%1)", pos));
 }
 
 void MainWindow::textSelectionChanged(const QAccessibleClient::AccessibleObject &object)
