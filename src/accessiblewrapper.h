@@ -16,7 +16,7 @@ public:
     QAccessibleClient::AccessibleObject acc;
 
     [[nodiscard]] int childCount() const;
-    AccessibleWrapper *child(int index);
+    [[nodiscard]] AccessibleWrapper *child(int index);
     [[nodiscard]] AccessibleWrapper *parent() const;
 
 private:
