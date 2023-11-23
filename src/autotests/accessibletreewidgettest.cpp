@@ -5,8 +5,10 @@
 */
 
 #include "accessibletreewidgettest.h"
+#include "accessibletreeview.h"
 #include "accessibletreewidget.h"
 #include <QTest>
+#include <QVBoxLayout>
 QTEST_MAIN(AccessibleTreeWidgetTest)
 AccessibleTreeWidgetTest::AccessibleTreeWidgetTest(QObject *parent)
     : QObject{parent}
@@ -16,6 +18,13 @@ AccessibleTreeWidgetTest::AccessibleTreeWidgetTest(QObject *parent)
 void AccessibleTreeWidgetTest::shouldHaveDefaultValues()
 {
     AccessibleTreeWidget w;
+
+    auto mainLayout = w.findChild<QVBoxLayout *>(QStringLiteral("mainLayout"));
+    QVERIFY(mainLayout);
+
+    auto mAccessibleTreeView = w.findChild<AccessibleTreeView *>(QStringLiteral("mAccessibleTreeView"));
+    QVERIFY(mAccessibleTreeView);
+
     // TODO
 }
 
