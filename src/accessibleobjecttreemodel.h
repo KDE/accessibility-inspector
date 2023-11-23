@@ -20,6 +20,7 @@ public:
     enum AccessibleObjectTreeModelRoles {
         Accessible,
         Role,
+        LastColumn = Role,
     };
     Q_ENUM(AccessibleObjectTreeModelRoles)
     explicit AccessibleObjectTreeModel(QObject *parent = nullptr);

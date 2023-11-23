@@ -14,9 +14,10 @@ class ObjectPropertiesModel : public QStandardItemModel
 {
     Q_OBJECT
 public:
-    enum Role {
-        NameRole,
-        ValueRole,
+    enum ObjectPropertiesModelRoles {
+        Name,
+        Value,
+        LastColumn = Value,
     };
     explicit ObjectPropertiesModel(QObject *parent = nullptr);
     ~ObjectPropertiesModel() override;
@@ -27,6 +28,8 @@ public:
     void setAccessibleObject(const QAccessibleClient::AccessibleObject &acc);
     [[nodiscard]] QAccessibleClient::AccessibleObject currentObject() const;
     void doubleClicked(const QModelIndex &index);
+
+    [[nodiscard]] int columnCount(const QModelIndex &parent = {}) const override;
 
 private:
     void slotDataChanged(QStandardItem *item);

@@ -23,9 +23,10 @@ AccessibleObjectTreeModel::~AccessibleObjectTreeModel() = default;
 QVariant AccessibleObjectTreeModel::headerData(int section, Qt::Orientation orientation, int role) const
 {
     if (orientation == Qt::Horizontal && role == Qt::DisplayRole) {
-        if (section == Accessible) {
+        switch (static_cast<AccessibleObjectTreeModelRoles>(section)) {
+        case Accessible:
             return i18n("Accessible");
-        } else if (section == Role) {
+        case Role:
             return i18n("Role");
         }
     }
@@ -35,7 +36,8 @@ QVariant AccessibleObjectTreeModel::headerData(int section, Qt::Orientation orie
 int AccessibleObjectTreeModel::columnCount(const QModelIndex &parent) const
 {
     Q_UNUSED(parent);
-    return 2;
+    constexpr int val = static_cast<int>(AccessibleObjectTreeModelRoles::LastColumn) + 1;
+    return val;
 }
 
 QVariant AccessibleObjectTreeModel::data(const QModelIndex &index, int role) const

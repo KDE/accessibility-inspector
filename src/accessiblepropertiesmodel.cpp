@@ -15,13 +15,17 @@ using namespace QAccessibleClient;
 ObjectPropertiesModel::ObjectPropertiesModel(QObject *parent)
     : QStandardItemModel(parent)
 {
-    setColumnCount(2);
-    setHorizontalHeaderLabels(QStringList() << QStringLiteral("Property") << QStringLiteral("Value"));
-
     connect(this, &ObjectPropertiesModel::itemChanged, this, &ObjectPropertiesModel::slotDataChanged);
 }
 
 ObjectPropertiesModel::~ObjectPropertiesModel() = default;
+
+int ObjectPropertiesModel::columnCount(const QModelIndex &parent) const
+{
+    Q_UNUSED(parent)
+    constexpr int val = static_cast<int>(ObjectPropertiesModelRoles::LastColumn) + 1;
+    return val;
+}
 
 void ObjectPropertiesModel::slotDataChanged(QStandardItem *item)
 {
@@ -44,9 +48,10 @@ void ObjectPropertiesModel::slotDataChanged(QStandardItem *item)
 QVariant ObjectPropertiesModel::headerData(int section, Qt::Orientation orientation, int role) const
 {
     if (orientation == Qt::Horizontal && role == Qt::DisplayRole) {
-        if (section == 0) {
+        switch (static_cast<ObjectPropertiesModelRoles>(section)) {
+        case Name:
             return QStringLiteral("Property");
-        } else if (section == 1) {
+        case Value:
             return QStringLiteral("Value");
         }
     }
@@ -56,8 +61,8 @@ QVariant ObjectPropertiesModel::headerData(int section, Qt::Orientation orientat
 QHash<int, QByteArray> ObjectPropertiesModel::roleNames() const
 {
     QHash<int, QByteArray> roles;
-    roles[NameRole] = "name";
-    roles[ValueRole] = "value";
+    roles[Name] = "name";
+    roles[Value] = "value";
     return roles;
 }
 
