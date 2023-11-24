@@ -34,7 +34,7 @@ void ObjectPropertiesModel::slotDataChanged(QStandardItem *item)
         m_acc.setText(newText);
     } else if (item == m_valueItem) {
         bool couldConvert;
-        double value = item->data(Qt::EditRole).toDouble(&couldConvert);
+        const double value = item->data(Qt::EditRole).toDouble(&couldConvert);
         if (couldConvert) {
             m_acc.setCurrentValue(value);
         }
