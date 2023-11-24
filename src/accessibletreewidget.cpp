@@ -25,6 +25,7 @@ AccessibleTreeWidget::AccessibleTreeWidget(QAccessibleClient::Registry *registry
     mAccessibleTreeView->setObjectName(QStringLiteral("mAccessibleTreeView"));
     mainLayout->addWidget(mAccessibleTreeView);
     connect(mAccessibleTreeView, &AccessibleTreeView::accessibleTreeviewSelectionChanged, this, &AccessibleTreeWidget::accessibleTreeviewSelectionChanged);
+    connect(mSearchLineEdit, &QLineEdit::textChanged, mAccessibleTreeView, &AccessibleTreeView::setSearchTextChanged);
 }
 
 AccessibleTreeWidget::~AccessibleTreeWidget() = default;

@@ -25,6 +25,8 @@ public:
     [[nodiscard]] AccessibleObjectTreeModel *accessibleObjectTreeModel() const;
 
     void setCurrentObject(const QAccessibleClient::AccessibleObject &object);
+    void setSearchTextChanged(const QString &str);
+
 Q_SIGNALS:
     void accessibleTreeviewSelectionChanged(const QModelIndex &current, const QModelIndex &previous);
 

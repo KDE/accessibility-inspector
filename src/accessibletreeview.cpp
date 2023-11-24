@@ -27,7 +27,8 @@ AccessibleTreeView::AccessibleTreeView(QAccessibleClient::Registry *registry, QW
     setAlternatingRowColors(true);
     setColumnWidth(0, 240);
     setContextMenuPolicy(Qt::CustomContextMenu);
-    setModel(mSortFilterProxyModel);
+    // FIXME !!!! use mSortFilterProxyModel
+    setModel(mAccessibleObjectTreeModel);
     connect(selectionModel(), &QItemSelectionModel::currentChanged, this, &AccessibleTreeView::accessibleTreeviewSelectionChanged);
     connect(this, &AccessibleTreeView::customContextMenuRequested, this, &AccessibleTreeView::treeCustomContextMenuRequested);
     setModel(mAccessibleObjectTreeModel);
@@ -68,6 +69,11 @@ void AccessibleTreeView::setCurrentObject(const QAccessibleClient::AccessibleObj
     } else {
         qCWarning(ACCESSIBILITYINSPECTOR_LOG) << "No such indexForAccessible=" << object;
     }
+}
+
+void AccessibleTreeView::setSearchTextChanged(const QString &str)
+{
+    mSortFilterProxyModel->setFilterFixedString(str);
 }
 
 #include "moc_accessibletreeview.cpp"
