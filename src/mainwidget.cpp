@@ -6,12 +6,19 @@
 
 #include "mainwidget.h"
 #include <QHBoxLayout>
+#include <QSplitter>
 MainWidget::MainWidget(QWidget *parent)
     : QWidget{parent}
+    , mSplitter(new QSplitter(this))
 {
     auto mainLayout = new QHBoxLayout(this);
     mainLayout->setContentsMargins({});
     mainLayout->setObjectName(QStringLiteral("mainLayout"));
+
+    mSplitter->setObjectName(QStringLiteral("mSplitter"));
+    mainLayout->addWidget(mSplitter);
 }
 
 MainWidget::~MainWidget() = default;
+
+#include "moc_mainwidget.cpp"

@@ -7,11 +7,14 @@
 #pragma once
 #include "libaccessibilityinspector_private_export.h"
 #include <QWidget>
-
+class QSplitter;
 class LIBACCESSIBILITYINSPECTOR_TEST_EXPORT MainWidget : public QWidget
 {
     Q_OBJECT
 public:
     explicit MainWidget(QWidget *parent = nullptr);
     ~MainWidget() override;
+
+private:
+    QSplitter *const mSplitter;
 };
