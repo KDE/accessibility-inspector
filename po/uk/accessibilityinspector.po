@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-23 01:36+0000\n"
-"PO-Revision-Date: 2023-11-22 23:57+0200\n"
+"POT-Creation-Date: 2023-11-24 01:32+0000\n"
+"PO-Revision-Date: 2023-11-23 08:29+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -30,268 +30,264 @@ msgstr "yurchor@ukr.net"
 
 #. i18n: ectx: Menu (edit)
 #: accessibilityinspectorui.rc:11
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Edit"
+#, kde-format
 msgid "&Edit"
-msgstr "Змінити"
+msgstr "З&міни"
 
 #. i18n: ectx: Menu (view)
 #: accessibilityinspectorui.rc:15
 #, kde-format
 msgid "View"
-msgstr ""
+msgstr "Перегляд"
 
 #. i18n: ectx: Menu (settings)
 #: accessibilityinspectorui.rc:20
-#, fuzzy, kde-format
-#| msgctxt "@title:menu"
-#| msgid "Settings"
+#, kde-format
 msgid "&Settings"
-msgstr "Параметри"
+msgstr "П&араметри"
 
-#: accessibleobjecttreemodel.cpp:27 accessiblepropertiesmodel.cpp:80
+#: accessibleobjecttreemodel.cpp:28 accessiblepropertiesmodel.cpp:85
 #, kde-format
 msgid "Accessible"
 msgstr "Доступний"
 
-#: accessibleobjecttreemodel.cpp:29 accessiblepropertiesmodel.cpp:83
+#: accessibleobjecttreemodel.cpp:30 accessiblepropertiesmodel.cpp:88
 #, kde-format
 msgid "Role"
 msgstr "Роль"
 
-#: accessiblepropertiesmodel.cpp:81
+#: accessiblepropertiesmodel.cpp:86
 #, kde-format
 msgid "Name"
 msgstr "Назва"
 
-#: accessiblepropertiesmodel.cpp:82 accessiblepropertiesmodel.cpp:177
+#: accessiblepropertiesmodel.cpp:87 accessiblepropertiesmodel.cpp:182
 #, kde-format
 msgid "Description"
 msgstr "Опис"
 
-#: accessiblepropertiesmodel.cpp:84
+#: accessiblepropertiesmodel.cpp:89
 #, kde-format
 msgid "LocalizedRole"
 msgstr "Локалізована роль"
 
-#: accessiblepropertiesmodel.cpp:85
+#: accessiblepropertiesmodel.cpp:90
 #, kde-format
 msgid "Visible"
 msgstr "Видимий"
 
-#: accessiblepropertiesmodel.cpp:86
+#: accessiblepropertiesmodel.cpp:91
 #, kde-format
 msgid "Default"
 msgstr "Типовий"
 
-#: accessiblepropertiesmodel.cpp:87
+#: accessiblepropertiesmodel.cpp:92
 #, kde-format
 msgid "State"
 msgstr "Стан"
 
-#: accessiblepropertiesmodel.cpp:88
+#: accessiblepropertiesmodel.cpp:93
 #, kde-format
 msgid "AccessibleId"
 msgstr "Доступна мітка"
 
-#: accessiblepropertiesmodel.cpp:89
+#: accessiblepropertiesmodel.cpp:94
 #, kde-format
 msgid "Url"
 msgstr "Адреса"
 
-#: accessiblepropertiesmodel.cpp:92
+#: accessiblepropertiesmodel.cpp:97
 #, kde-format
 msgid "Parent"
 msgstr "Батьківський об'єкт"
 
-#: accessiblepropertiesmodel.cpp:94
+#: accessiblepropertiesmodel.cpp:99
 #, kde-format
 msgid "Children"
 msgstr "Дочірні об'єкти"
 
-#: accessiblepropertiesmodel.cpp:98
+#: accessiblepropertiesmodel.cpp:103
 #, kde-format
 msgid "Broken child"
 msgstr "Помилковий дочірній об'єкт"
 
-#: accessiblepropertiesmodel.cpp:106
+#: accessiblepropertiesmodel.cpp:111
 #, kde-format
 msgid "Component"
 msgstr "Компонент"
 
-#: accessiblepropertiesmodel.cpp:107
+#: accessiblepropertiesmodel.cpp:112
 #, kde-format
 msgid "BoundingRect"
 msgstr "Обмежувальний прямокутник"
 
-#: accessiblepropertiesmodel.cpp:108
+#: accessiblepropertiesmodel.cpp:113
 #, kde-format
 msgid "Layer"
 msgstr "Шар"
 
-#: accessiblepropertiesmodel.cpp:109
+#: accessiblepropertiesmodel.cpp:114
 #, kde-format
 msgid "MDIZOrder"
 msgstr "Порядок MDIZ"
 
-#: accessiblepropertiesmodel.cpp:110
+#: accessiblepropertiesmodel.cpp:115
 #, kde-format
 msgid "Alpha"
 msgstr "Альфа"
 
-#: accessiblepropertiesmodel.cpp:117
+#: accessiblepropertiesmodel.cpp:122
 #, kde-format
 msgid "Application"
 msgstr "Програма"
 
-#: accessiblepropertiesmodel.cpp:118
+#: accessiblepropertiesmodel.cpp:123
 #, kde-format
 msgid "ToolkitName"
 msgstr "Назва набору інструментів"
 
-#: accessiblepropertiesmodel.cpp:119
+#: accessiblepropertiesmodel.cpp:124
 #, kde-format
 msgid "Version"
 msgstr "Версія"
 
-#: accessiblepropertiesmodel.cpp:120
+#: accessiblepropertiesmodel.cpp:125
 #, kde-format
 msgid "Id"
 msgstr "Ід."
 
-#: accessiblepropertiesmodel.cpp:121 accessiblepropertiesmodel.cpp:178
+#: accessiblepropertiesmodel.cpp:126 accessiblepropertiesmodel.cpp:183
 #, kde-format
 msgid "Locale"
 msgstr "Локаль"
 
-#: accessiblepropertiesmodel.cpp:122
+#: accessiblepropertiesmodel.cpp:127
 #, kde-format
 msgid "BusAddress"
 msgstr "Адреса у шині"
 
-#: accessiblepropertiesmodel.cpp:125
+#: accessiblepropertiesmodel.cpp:130
 #, kde-format
 msgid "Document"
 msgstr "Документ"
 
-#: accessiblepropertiesmodel.cpp:133
+#: accessiblepropertiesmodel.cpp:138
 #, kde-format
 msgid "Editable Text"
 msgstr "Змінний текст"
 
-#: accessiblepropertiesmodel.cpp:137
+#: accessiblepropertiesmodel.cpp:142
 #, kde-format
 msgid "Hyperlink"
 msgstr "Гіперпосилання"
 
-#: accessiblepropertiesmodel.cpp:158
+#: accessiblepropertiesmodel.cpp:163
 #, kde-format
 msgid "Hypertext"
 msgstr "Гіпертекст"
 
-#: accessiblepropertiesmodel.cpp:176
+#: accessiblepropertiesmodel.cpp:181
 #, kde-format
 msgid "Image"
 msgstr "Зображення"
 
-#: accessiblepropertiesmodel.cpp:179
+#: accessiblepropertiesmodel.cpp:184
 #, kde-format
 msgid "Rect"
 msgstr "Прямокутник"
 
-#: accessiblepropertiesmodel.cpp:182
+#: accessiblepropertiesmodel.cpp:187
 #, kde-format
 msgid "Selection"
 msgstr "Позначення"
 
-#: accessiblepropertiesmodel.cpp:188
+#: accessiblepropertiesmodel.cpp:193
 #, kde-format
 msgid "Table"
 msgstr "Таблиця"
 
-#: accessiblepropertiesmodel.cpp:220 accessiblepropertiesmodel.cpp:228
-#: accessiblepropertiesmodel.cpp:230
+#: accessiblepropertiesmodel.cpp:225 accessiblepropertiesmodel.cpp:233
+#: accessiblepropertiesmodel.cpp:235
 #, kde-format
 msgid "Text"
 msgstr "Текст"
 
-#: accessiblepropertiesmodel.cpp:222
+#: accessiblepropertiesmodel.cpp:227
 #, kde-format
 msgid "Caret Offset"
 msgstr "Відступ каретки"
 
-#: accessiblepropertiesmodel.cpp:223
+#: accessiblepropertiesmodel.cpp:228
 #, kde-format
 msgid "Character Count"
 msgstr "Кількість символів"
 
-#: accessiblepropertiesmodel.cpp:224
+#: accessiblepropertiesmodel.cpp:229
 #, kde-format
 msgid "Character Rect"
 msgstr "Прямокутник символу"
 
-#: accessiblepropertiesmodel.cpp:234
+#: accessiblepropertiesmodel.cpp:239
 #, kde-format
 msgid "Selections"
 msgstr "Позначення"
 
-#: accessiblepropertiesmodel.cpp:244
+#: accessiblepropertiesmodel.cpp:249
 #, kde-format
 msgid "Value"
 msgstr "Значення"
 
-#: accessiblepropertiesmodel.cpp:245
+#: accessiblepropertiesmodel.cpp:250
 #, kde-format
 msgid "Current"
 msgstr "Поточне"
 
-#: accessiblepropertiesmodel.cpp:246
+#: accessiblepropertiesmodel.cpp:251
 #, kde-format
 msgid "Minimum"
 msgstr "Мінімум"
 
-#: accessiblepropertiesmodel.cpp:247
+#: accessiblepropertiesmodel.cpp:252
 #, kde-format
 msgid "Maximum"
 msgstr "Максимум"
 
-#: accessiblepropertiesmodel.cpp:248
+#: accessiblepropertiesmodel.cpp:253
 #, kde-format
 msgid "Increment"
 msgstr "Збільшення"
 
-#: accessiblepropertiesmodel.cpp:251
+#: accessiblepropertiesmodel.cpp:256
 #, kde-format
 msgid "Socket"
 msgstr "Сокет"
 
-#: accessiblepropertiesmodel.cpp:256
+#: accessiblepropertiesmodel.cpp:261
 #, kde-format
 msgid "Event Keyboard"
 msgstr "Клавіатура події"
 
-#: accessiblepropertiesmodel.cpp:260
+#: accessiblepropertiesmodel.cpp:265
 #, kde-format
 msgid "Event Mouse"
 msgstr "Миша події"
 
-#: accessiblepropertiesmodel.cpp:264
+#: accessiblepropertiesmodel.cpp:269
 #, kde-format
 msgid "Event Object"
 msgstr "Об'єкт події"
 
-#: accessiblepropertiesmodel.cpp:268
+#: accessiblepropertiesmodel.cpp:273
 #, kde-format
 msgid "Event Window"
 msgstr "Вікно події"
 
-#: accessiblepropertiesmodel.cpp:272
+#: accessiblepropertiesmodel.cpp:277
 #, kde-format
 msgid "Event Focus"
 msgstr "Фокусування події"
 
-#: accessiblepropertiesmodel.cpp:277
+#: accessiblepropertiesmodel.cpp:282
 #, kde-format
 msgid "Action"
 msgstr "Дія"
@@ -523,87 +519,141 @@ msgstr "Спорожнити список подій"
 msgid "&Clear"
 msgstr "Сп&орожнити"
 
-#: mainwindow.cpp:130
+#: mainwindow.cpp:121
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Reset Tree"
 msgstr "Скинути ієрархію"
 
-#: mainwindow.cpp:136
+#: mainwindow.cpp:127
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Follow Focus"
 msgstr "Слідувати за фокусом"
 
-#: mainwindow.cpp:142
+#: mainwindow.cpp:133
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Cache..."
 msgstr "Кеш…"
 
-#: mainwindow.cpp:147
+#: mainwindow.cpp:138
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Enable Accessibility"
 msgstr "Увімкнути можливості доступності"
 
-#: mainwindow.cpp:157
+#: mainwindow.cpp:148
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Enable Screen Reader"
 msgstr "Увімкнути засіб читання з екрана"
 
-#: mainwindow.cpp:168
+#: mainwindow.cpp:159
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy property value"
 msgstr "Копіювати значення властивості"
 
-#: mainwindow.cpp:217
+#: mainwindow.cpp:186
+#, fuzzy, kde-format
+#| msgctxt "@title:menu"
+#| msgid "Tree"
+msgid "Tree"
+msgstr "Ієрархія"
+
+#: mainwindow.cpp:190
+#, fuzzy, kde-format
+#| msgid "Accessible"
+msgid "Tree of accessibles"
+msgstr "Доступний"
+
+#: mainwindow.cpp:191
+#, fuzzy, kde-format
+#| msgctxt "@info:whatsthis"
+#| msgid "Displays properties of the selected accessible object"
+msgid "Displays a hierachical tree of accessible objects"
+msgstr "Показує властивості позначеного доступного об'єкта"
+
+#: mainwindow.cpp:208
 #, kde-format
 msgctxt "@title:window"
 msgid "Properties"
 msgstr "Властивості"
 
-#: mainwindow.cpp:222
+#: mainwindow.cpp:213
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "List of properties"
 msgstr "Список властивостей"
 
-#: mainwindow.cpp:223
+#: mainwindow.cpp:214
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Displays properties of the selected accessible object"
 msgstr "Показує властивості позначеного доступного об'єкта"
 
-#: mainwindow.cpp:233
+#: mainwindow.cpp:224
 #, kde-format
 msgctxt "@title:window"
 msgid "Boundaries"
 msgstr "Кордони"
 
-#: mainwindow.cpp:237
+#: mainwindow.cpp:228
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Boundaries"
 msgstr "Кордони"
 
-#: mainwindow.cpp:238
+#: mainwindow.cpp:229
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Visualize the component boundaries"
 msgstr "Візуалізувати межі компонентів"
 
-#: mainwindow.cpp:241
+#: mainwindow.cpp:232
 #, kde-format
 msgctxt "@title:window"
 msgid "Events"
 msgstr "Події"
 
-#~ msgctxt "@title:menu"
-#~ msgid "Tree"
-#~ msgstr "Ієрархія"
+#: mainwindow.cpp:293 mainwindow.cpp:295
+#, kde-format
+msgid "true"
+msgstr ""
+
+#: mainwindow.cpp:293 mainwindow.cpp:295
+#, kde-format
+msgid "false"
+msgstr ""
+
+#: mainwindow.cpp:357
+#, fuzzy, kde-format
+#| msgctxt "Accessibility event name"
+#| msgid "Object"
+msgid "Add Object"
+msgstr "Об'єкт"
+
+#: mainwindow.cpp:363
+#, fuzzy, kde-format
+#| msgid "Event Object"
+msgid "Remove Object"
+msgstr "Об'єкт події"
+
+#: mainwindow.cpp:374
+#, kde-format
+msgid "Create"
+msgstr ""
+
+#: mainwindow.cpp:380
+#, kde-format
+msgid "Destroy"
+msgstr ""
+
+#: mainwindow.cpp:481
+#, kde-format
+msgid "Text caret moved (%1)"
+msgstr ""
 
 #~ msgctxt "@title:menu"
 #~ msgid "Docker"

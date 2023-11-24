@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-23 01:36+0000\n"
+"POT-Creation-Date: 2023-11-24 01:32+0000\n"
 "PO-Revision-Date: 2023-11-22 11:37+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -51,248 +51,248 @@ msgstr ""
 msgid "&Settings"
 msgstr "Configuració"
 
-#: accessibleobjecttreemodel.cpp:27 accessiblepropertiesmodel.cpp:80
+#: accessibleobjecttreemodel.cpp:28 accessiblepropertiesmodel.cpp:85
 #, kde-format
 msgid "Accessible"
 msgstr "Accessible"
 
-#: accessibleobjecttreemodel.cpp:29 accessiblepropertiesmodel.cpp:83
+#: accessibleobjecttreemodel.cpp:30 accessiblepropertiesmodel.cpp:88
 #, kde-format
 msgid "Role"
 msgstr "Rol"
 
-#: accessiblepropertiesmodel.cpp:81
+#: accessiblepropertiesmodel.cpp:86
 #, kde-format
 msgid "Name"
 msgstr "Nom"
 
-#: accessiblepropertiesmodel.cpp:82 accessiblepropertiesmodel.cpp:177
+#: accessiblepropertiesmodel.cpp:87 accessiblepropertiesmodel.cpp:182
 #, kde-format
 msgid "Description"
 msgstr "Descripció"
 
-#: accessiblepropertiesmodel.cpp:84
+#: accessiblepropertiesmodel.cpp:89
 #, kde-format
 msgid "LocalizedRole"
 msgstr "RolLocalitzat"
 
-#: accessiblepropertiesmodel.cpp:85
+#: accessiblepropertiesmodel.cpp:90
 #, kde-format
 msgid "Visible"
 msgstr "Visible"
 
-#: accessiblepropertiesmodel.cpp:86
+#: accessiblepropertiesmodel.cpp:91
 #, kde-format
 msgid "Default"
 msgstr "Predeterminat"
 
-#: accessiblepropertiesmodel.cpp:87
+#: accessiblepropertiesmodel.cpp:92
 #, kde-format
 msgid "State"
 msgstr "Estat"
 
-#: accessiblepropertiesmodel.cpp:88
+#: accessiblepropertiesmodel.cpp:93
 #, kde-format
 msgid "AccessibleId"
 msgstr "IDAccessible"
 
-#: accessiblepropertiesmodel.cpp:89
+#: accessiblepropertiesmodel.cpp:94
 #, kde-format
 msgid "Url"
 msgstr "URL"
 
-#: accessiblepropertiesmodel.cpp:92
+#: accessiblepropertiesmodel.cpp:97
 #, kde-format
 msgid "Parent"
 msgstr "Pare"
 
-#: accessiblepropertiesmodel.cpp:94
+#: accessiblepropertiesmodel.cpp:99
 #, kde-format
 msgid "Children"
 msgstr "Fills"
 
-#: accessiblepropertiesmodel.cpp:98
+#: accessiblepropertiesmodel.cpp:103
 #, kde-format
 msgid "Broken child"
 msgstr "Fill trencat"
 
-#: accessiblepropertiesmodel.cpp:106
+#: accessiblepropertiesmodel.cpp:111
 #, kde-format
 msgid "Component"
 msgstr "Component"
 
-#: accessiblepropertiesmodel.cpp:107
+#: accessiblepropertiesmodel.cpp:112
 #, kde-format
 msgid "BoundingRect"
 msgstr "RectangleLimitant"
 
-#: accessiblepropertiesmodel.cpp:108
+#: accessiblepropertiesmodel.cpp:113
 #, kde-format
 msgid "Layer"
 msgstr "Capa"
 
-#: accessiblepropertiesmodel.cpp:109
+#: accessiblepropertiesmodel.cpp:114
 #, kde-format
 msgid "MDIZOrder"
 msgstr "OrdreMDIZ"
 
-#: accessiblepropertiesmodel.cpp:110
+#: accessiblepropertiesmodel.cpp:115
 #, kde-format
 msgid "Alpha"
 msgstr "Alfa"
 
-#: accessiblepropertiesmodel.cpp:117
+#: accessiblepropertiesmodel.cpp:122
 #, kde-format
 msgid "Application"
 msgstr "Aplicació"
 
-#: accessiblepropertiesmodel.cpp:118
+#: accessiblepropertiesmodel.cpp:123
 #, kde-format
 msgid "ToolkitName"
 msgstr "NomJocEines"
 
-#: accessiblepropertiesmodel.cpp:119
+#: accessiblepropertiesmodel.cpp:124
 #, kde-format
 msgid "Version"
 msgstr "Versió"
 
-#: accessiblepropertiesmodel.cpp:120
+#: accessiblepropertiesmodel.cpp:125
 #, kde-format
 msgid "Id"
 msgstr "ID"
 
-#: accessiblepropertiesmodel.cpp:121 accessiblepropertiesmodel.cpp:178
+#: accessiblepropertiesmodel.cpp:126 accessiblepropertiesmodel.cpp:183
 #, kde-format
 msgid "Locale"
 msgstr "Configuració regional"
 
-#: accessiblepropertiesmodel.cpp:122
+#: accessiblepropertiesmodel.cpp:127
 #, kde-format
 msgid "BusAddress"
 msgstr "AdreçaBus"
 
-#: accessiblepropertiesmodel.cpp:125
+#: accessiblepropertiesmodel.cpp:130
 #, kde-format
 msgid "Document"
 msgstr "Document"
 
-#: accessiblepropertiesmodel.cpp:133
+#: accessiblepropertiesmodel.cpp:138
 #, kde-format
 msgid "Editable Text"
 msgstr "Text editable"
 
-#: accessiblepropertiesmodel.cpp:137
+#: accessiblepropertiesmodel.cpp:142
 #, kde-format
 msgid "Hyperlink"
 msgstr "Enllaç"
 
-#: accessiblepropertiesmodel.cpp:158
+#: accessiblepropertiesmodel.cpp:163
 #, kde-format
 msgid "Hypertext"
 msgstr "Hipertext"
 
-#: accessiblepropertiesmodel.cpp:176
+#: accessiblepropertiesmodel.cpp:181
 #, kde-format
 msgid "Image"
 msgstr "Imatge"
 
-#: accessiblepropertiesmodel.cpp:179
+#: accessiblepropertiesmodel.cpp:184
 #, kde-format
 msgid "Rect"
 msgstr "Rect"
 
-#: accessiblepropertiesmodel.cpp:182
+#: accessiblepropertiesmodel.cpp:187
 #, kde-format
 msgid "Selection"
 msgstr "Selecció"
 
-#: accessiblepropertiesmodel.cpp:188
+#: accessiblepropertiesmodel.cpp:193
 #, kde-format
 msgid "Table"
 msgstr "Taula"
 
-#: accessiblepropertiesmodel.cpp:220 accessiblepropertiesmodel.cpp:228
-#: accessiblepropertiesmodel.cpp:230
+#: accessiblepropertiesmodel.cpp:225 accessiblepropertiesmodel.cpp:233
+#: accessiblepropertiesmodel.cpp:235
 #, kde-format
 msgid "Text"
 msgstr "Text"
 
-#: accessiblepropertiesmodel.cpp:222
+#: accessiblepropertiesmodel.cpp:227
 #, kde-format
 msgid "Caret Offset"
 msgstr "Desplaçament del cursor"
 
-#: accessiblepropertiesmodel.cpp:223
+#: accessiblepropertiesmodel.cpp:228
 #, kde-format
 msgid "Character Count"
 msgstr "Comptador de caràcters"
 
-#: accessiblepropertiesmodel.cpp:224
+#: accessiblepropertiesmodel.cpp:229
 #, kde-format
 msgid "Character Rect"
 msgstr "Rectangle de caràcters"
 
-#: accessiblepropertiesmodel.cpp:234
+#: accessiblepropertiesmodel.cpp:239
 #, kde-format
 msgid "Selections"
 msgstr "Seleccions"
 
-#: accessiblepropertiesmodel.cpp:244
+#: accessiblepropertiesmodel.cpp:249
 #, kde-format
 msgid "Value"
 msgstr "Valor"
 
-#: accessiblepropertiesmodel.cpp:245
+#: accessiblepropertiesmodel.cpp:250
 #, kde-format
 msgid "Current"
 msgstr "Actual"
 
-#: accessiblepropertiesmodel.cpp:246
+#: accessiblepropertiesmodel.cpp:251
 #, kde-format
 msgid "Minimum"
 msgstr "Mínim"
 
-#: accessiblepropertiesmodel.cpp:247
+#: accessiblepropertiesmodel.cpp:252
 #, kde-format
 msgid "Maximum"
 msgstr "Màxim"
 
-#: accessiblepropertiesmodel.cpp:248
+#: accessiblepropertiesmodel.cpp:253
 #, kde-format
 msgid "Increment"
 msgstr "Increment"
 
-#: accessiblepropertiesmodel.cpp:251
+#: accessiblepropertiesmodel.cpp:256
 #, kde-format
 msgid "Socket"
 msgstr "Sòcol"
 
-#: accessiblepropertiesmodel.cpp:256
+#: accessiblepropertiesmodel.cpp:261
 #, kde-format
 msgid "Event Keyboard"
 msgstr "Esdeveniment de teclat"
 
-#: accessiblepropertiesmodel.cpp:260
+#: accessiblepropertiesmodel.cpp:265
 #, kde-format
 msgid "Event Mouse"
 msgstr "Esdeveniment de ratolí"
 
-#: accessiblepropertiesmodel.cpp:264
+#: accessiblepropertiesmodel.cpp:269
 #, kde-format
 msgid "Event Object"
 msgstr "Esdeveniment d'objecte"
 
-#: accessiblepropertiesmodel.cpp:268
+#: accessiblepropertiesmodel.cpp:273
 #, kde-format
 msgid "Event Window"
 msgstr "Esdeveniment de finestra"
 
-#: accessiblepropertiesmodel.cpp:272
+#: accessiblepropertiesmodel.cpp:277
 #, kde-format
 msgid "Event Focus"
 msgstr "Esdeveniment de focus"
 
-#: accessiblepropertiesmodel.cpp:277
+#: accessiblepropertiesmodel.cpp:282
 #, kde-format
 msgid "Action"
 msgstr "Acció"
@@ -524,87 +524,141 @@ msgstr "Neteja els esdeveniments"
 msgid "&Clear"
 msgstr "&Neteja"
 
-#: mainwindow.cpp:130
+#: mainwindow.cpp:121
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Reset Tree"
 msgstr "Reinicia l'arbre"
 
-#: mainwindow.cpp:136
+#: mainwindow.cpp:127
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Follow Focus"
 msgstr "Seguix al focus"
 
-#: mainwindow.cpp:142
+#: mainwindow.cpp:133
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Cache..."
 msgstr "Memòria cau..."
 
-#: mainwindow.cpp:147
+#: mainwindow.cpp:138
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Enable Accessibility"
 msgstr "Activa l'accessibilitat"
 
-#: mainwindow.cpp:157
+#: mainwindow.cpp:148
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Enable Screen Reader"
 msgstr "Activa el lector de pantalla"
 
-#: mainwindow.cpp:168
+#: mainwindow.cpp:159
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy property value"
 msgstr "Copia el valor de la propietat"
 
-#: mainwindow.cpp:217
+#: mainwindow.cpp:186
+#, fuzzy, kde-format
+#| msgctxt "@title:menu"
+#| msgid "Tree"
+msgid "Tree"
+msgstr "Arbre"
+
+#: mainwindow.cpp:190
+#, fuzzy, kde-format
+#| msgid "Accessible"
+msgid "Tree of accessibles"
+msgstr "Accessible"
+
+#: mainwindow.cpp:191
+#, fuzzy, kde-format
+#| msgctxt "@info:whatsthis"
+#| msgid "Displays properties of the selected accessible object"
+msgid "Displays a hierachical tree of accessible objects"
+msgstr "Mostra les propietats de l'objecte accessible seleccionat"
+
+#: mainwindow.cpp:208
 #, kde-format
 msgctxt "@title:window"
 msgid "Properties"
 msgstr "Propietats"
 
-#: mainwindow.cpp:222
+#: mainwindow.cpp:213
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "List of properties"
 msgstr "Llista de propietats"
 
-#: mainwindow.cpp:223
+#: mainwindow.cpp:214
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Displays properties of the selected accessible object"
 msgstr "Mostra les propietats de l'objecte accessible seleccionat"
 
-#: mainwindow.cpp:233
+#: mainwindow.cpp:224
 #, kde-format
 msgctxt "@title:window"
 msgid "Boundaries"
 msgstr "Límits"
 
-#: mainwindow.cpp:237
+#: mainwindow.cpp:228
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Boundaries"
 msgstr "Límits"
 
-#: mainwindow.cpp:238
+#: mainwindow.cpp:229
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Visualize the component boundaries"
 msgstr "Visualitza els límits del component"
 
-#: mainwindow.cpp:241
+#: mainwindow.cpp:232
 #, kde-format
 msgctxt "@title:window"
 msgid "Events"
 msgstr "Esdeveniments"
 
-#~ msgctxt "@title:menu"
-#~ msgid "Tree"
-#~ msgstr "Arbre"
+#: mainwindow.cpp:293 mainwindow.cpp:295
+#, kde-format
+msgid "true"
+msgstr ""
+
+#: mainwindow.cpp:293 mainwindow.cpp:295
+#, kde-format
+msgid "false"
+msgstr ""
+
+#: mainwindow.cpp:357
+#, fuzzy, kde-format
+#| msgctxt "Accessibility event name"
+#| msgid "Object"
+msgid "Add Object"
+msgstr "Objecte"
+
+#: mainwindow.cpp:363
+#, fuzzy, kde-format
+#| msgid "Event Object"
+msgid "Remove Object"
+msgstr "Esdeveniment d'objecte"
+
+#: mainwindow.cpp:374
+#, kde-format
+msgid "Create"
+msgstr ""
+
+#: mainwindow.cpp:380
+#, kde-format
+msgid "Destroy"
+msgstr ""
+
+#: mainwindow.cpp:481
+#, kde-format
+msgid "Text caret moved (%1)"
+msgstr ""
 
 #~ msgctxt "@title:menu"
 #~ msgid "Docker"
