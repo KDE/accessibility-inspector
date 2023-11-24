@@ -301,31 +301,31 @@ void MainWindow::stateChanged(const QAccessibleClient::AccessibleObject &object,
 void MainWindow::childAdded(const QAccessibleClient::AccessibleObject &object, int childIndex)
 {
     updateDetails(object);
-    m_eventsWidget->addLog(object, EventsWidget::Object, QLatin1String("ChildAdded ") + QString::number(childIndex));
+    m_eventsWidget->addLog(object, EventsWidget::Object, i18n("Child Added %1", QString::number(childIndex)));
 }
 
 void MainWindow::childRemoved(const QAccessibleClient::AccessibleObject &object, int childIndex)
 {
     updateDetails(object);
-    m_eventsWidget->addLog(object, EventsWidget::Object, QLatin1String("ChildRemoved ") + QString::number(childIndex));
+    m_eventsWidget->addLog(object, EventsWidget::Object, i18n("Child Removed %1", QString::number(childIndex)));
 }
 
 void MainWindow::visibleDataChanged(const QAccessibleClient::AccessibleObject &object)
 {
     updateDetails(object);
-    m_eventsWidget->addLog(object, EventsWidget::Object, QStringLiteral("VisibleDataChanged"));
+    m_eventsWidget->addLog(object, EventsWidget::Object, i18n("Visible Data Changed"));
 }
 
 void MainWindow::selectionChanged2(const QAccessibleClient::AccessibleObject &object)
 {
     updateDetails(object);
-    m_eventsWidget->addLog(object, EventsWidget::Table, QStringLiteral("SelectionChanged"));
+    m_eventsWidget->addLog(object, EventsWidget::Table, i18n("Selection Changed"));
 }
 
 void MainWindow::modelChanged(const QAccessibleClient::AccessibleObject &object)
 {
     updateDetails(object);
-    m_eventsWidget->addLog(object, EventsWidget::Table, QStringLiteral("ModelChanged"));
+    m_eventsWidget->addLog(object, EventsWidget::Table, i18n("Model Changed"));
 }
 
 void MainWindow::selectionChanged(const QModelIndex &current, const QModelIndex &)
