@@ -56,14 +56,8 @@ MainWindow::MainWindow(QWidget *parent)
     connect(m_registry, &QAccessibleClient::Registry::windowRestored, this, &MainWindow::windowRestored);
     connect(m_registry, &QAccessibleClient::Registry::windowActivated, this, &MainWindow::windowActivated);
     connect(m_registry, &QAccessibleClient::Registry::windowDeactivated, this, &MainWindow::windowDeactivated);
-    connect(m_registry,
-            SIGNAL(windowDesktopCreated(QAccessibleClient::AccessibleObject)),
-            this,
-            SLOT(windowDesktopCreated(QAccessibleClient::AccessibleObject)));
-    connect(m_registry,
-            SIGNAL(windowDesktopDestroyed(QAccessibleClient::AccessibleObject)),
-            this,
-            SLOT(windowDesktopDestroyed(QAccessibleClient::AccessibleObject)));
+    connect(m_registry, &QAccessibleClient::Registry::windowDesktopCreated, this, &MainWindow::windowDesktopCreated);
+    connect(m_registry, &QAccessibleClient::Registry::windowDesktopDestroyed, this, &MainWindow::windowDesktopDestroyed);
     connect(m_registry, &QAccessibleClient::Registry::windowRaised, this, &MainWindow::windowRaised);
     connect(m_registry, &QAccessibleClient::Registry::windowLowered, this, &MainWindow::windowLowered);
     connect(m_registry, &QAccessibleClient::Registry::windowMoved, this, &MainWindow::windowMoved);
@@ -71,10 +65,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(m_registry, &QAccessibleClient::Registry::windowShaded, this, &MainWindow::windowShaded);
     connect(m_registry, &QAccessibleClient::Registry::windowUnshaded, this, &MainWindow::windowUnshaded);
 
-    connect(m_registry,
-            SIGNAL(stateChanged(QAccessibleClient::AccessibleObject, QString, bool)),
-            this,
-            SLOT(stateChanged(QAccessibleClient::AccessibleObject, QString, bool)));
+    connect(m_registry, &QAccessibleClient::Registry::stateChanged, this, &MainWindow::stateChanged);
     connect(m_registry, &QAccessibleClient::Registry::childAdded, this, &MainWindow::childAdded);
     connect(m_registry, &QAccessibleClient::Registry::childRemoved, this, &MainWindow::childRemoved);
     connect(m_registry, &QAccessibleClient::Registry::visibleDataChanged, this, &MainWindow::visibleDataChanged);
