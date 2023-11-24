@@ -9,6 +9,8 @@
 #include "accessibleobjecttreemodel.h"
 #include "accessiblewrapper.h"
 
+#include <KLocalizedString>
+
 #include <QMenu>
 #include <QSortFilterProxyModel>
 #include <qaccessibilityclient/registrycache_p.h>
@@ -21,7 +23,7 @@ AccessibleTreeView::AccessibleTreeView(QAccessibleClient::Registry *registry, QW
     mAccessibleObjectTreeModel->setRegistry(registry);
     mSortFilterProxyModel->setSourceModel(mAccessibleObjectTreeModel);
     setSortingEnabled(true);
-    setAccessibleDescription(QStringLiteral("Displays a hierachical tree of accessible objects"));
+    setAccessibleDescription(i18n("Displays a hierachical tree of accessible objects"));
     setSelectionBehavior(QAbstractItemView::SelectRows);
     setEditTriggers(QAbstractItemView::NoEditTriggers);
     setAlternatingRowColors(true);
@@ -42,12 +44,12 @@ void AccessibleTreeView::treeCustomContextMenuRequested(const QPoint &pos)
     if (!current.isValid())
         return;
     QAccessibleClient::AccessibleObject acc = static_cast<AccessibleWrapper *>(current.internalPointer())->acc;
-    auto menu = new QMenu(this);
-    connect(menu, &QMenu::aboutToHide, menu, &QMenu::deleteLater);
+    QMenu menu(this);
+    connect(&menu, &QMenu::aboutToHide, &menu, &QMenu::deleteLater);
     for (const QSharedPointer<QAction> &a : acc.actions()) {
-        menu->addAction(a.data());
+        menu.addAction(a.data());
     }
-    menu->popup(mapToGlobal(pos));
+    menu.exec(viewport()->mapToGlobal(pos));
 }
 
 AccessibleObjectTreeModel *AccessibleTreeView::accessibleObjectTreeModel() const
