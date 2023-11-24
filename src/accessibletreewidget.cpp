@@ -8,7 +8,6 @@
 #include "accessibletreeview.h"
 #include <KLocalizedString>
 #include <QLineEdit>
-#include <QSortFilterProxyModel>
 #include <QTreeView>
 #include <QVBoxLayout>
 
@@ -16,11 +15,12 @@ AccessibleTreeWidget::AccessibleTreeWidget(QAccessibleClient::Registry *registry
     : QWidget{parent}
     , mSearchLineEdit(new QLineEdit(this))
     , mAccessibleTreeView(new AccessibleTreeView(registry, this))
-    , mSortFilterProxyModel(new QSortFilterProxyModel(this))
 {
     auto mainLayout = new QVBoxLayout(this);
     mainLayout->setObjectName(QStringLiteral("mainLayout"));
     mainLayout->addWidget(mSearchLineEdit);
+    mSearchLineEdit->setObjectName(QStringLiteral("mSearchLineEdit"));
+    mSearchLineEdit->setClearButtonEnabled(true);
 
     mAccessibleTreeView->setObjectName(QStringLiteral("mAccessibleTreeView"));
     mainLayout->addWidget(mAccessibleTreeView);

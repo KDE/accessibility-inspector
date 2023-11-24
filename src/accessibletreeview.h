@@ -10,6 +10,7 @@
 
 #include <qaccessibilityclient/accessibleobject.h>
 class AccessibleObjectTreeModel;
+class QSortFilterProxyModel;
 namespace QAccessibleClient
 {
 class Registry;
@@ -30,4 +31,5 @@ Q_SIGNALS:
 private:
     void treeCustomContextMenuRequested(const QPoint &pos);
     AccessibleObjectTreeModel *const mAccessibleObjectTreeModel;
+    QSortFilterProxyModel *const mSortFilterProxyModel;
 };

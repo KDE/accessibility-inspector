@@ -10,7 +10,6 @@
 #include <QWidget>
 class QLineEdit;
 class AccessibleTreeView;
-class QSortFilterProxyModel;
 class AccessibleObjectTreeModel;
 namespace QAccessibleClient
 {
@@ -34,5 +33,4 @@ Q_SIGNALS:
 private:
     QLineEdit *const mSearchLineEdit;
     AccessibleTreeView *const mAccessibleTreeView;
-    QSortFilterProxyModel *const mSortFilterProxyModel;
 };

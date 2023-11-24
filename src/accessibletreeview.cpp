@@ -10,20 +10,24 @@
 #include "accessiblewrapper.h"
 
 #include <QMenu>
+#include <QSortFilterProxyModel>
 #include <qaccessibilityclient/registrycache_p.h>
 
 AccessibleTreeView::AccessibleTreeView(QAccessibleClient::Registry *registry, QWidget *parent)
     : QTreeView(parent)
     , mAccessibleObjectTreeModel(new AccessibleObjectTreeModel(this))
+    , mSortFilterProxyModel(new QSortFilterProxyModel(this))
 {
     mAccessibleObjectTreeModel->setRegistry(registry);
+    mSortFilterProxyModel->setSourceModel(mAccessibleObjectTreeModel);
+    setSortingEnabled(true);
     setAccessibleDescription(QStringLiteral("Displays a hierachical tree of accessible objects"));
     setSelectionBehavior(QAbstractItemView::SelectRows);
     setEditTriggers(QAbstractItemView::NoEditTriggers);
     setAlternatingRowColors(true);
     setColumnWidth(0, 240);
     setContextMenuPolicy(Qt::CustomContextMenu);
-    setModel(mAccessibleObjectTreeModel);
+    setModel(mSortFilterProxyModel);
     connect(selectionModel(), &QItemSelectionModel::currentChanged, this, &AccessibleTreeView::accessibleTreeviewSelectionChanged);
     connect(this, &AccessibleTreeView::customContextMenuRequested, this, &AccessibleTreeView::treeCustomContextMenuRequested);
     setModel(mAccessibleObjectTreeModel);
