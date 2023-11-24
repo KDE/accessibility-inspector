@@ -6,6 +6,12 @@
 
 #include "mainwindow.h"
 #include "accessibilityinspector_debug.h"
+#include "accessibleobjecttreemodel.h"
+#include "accessiblepropertiesmodel.h"
+#include "accessibletreewidget.h"
+#include "accessiblewrapper.h"
+#include "eventview.h"
+#include "uiview.h"
 
 #include <QClipboard>
 #include <QDockWidget>
@@ -19,17 +25,12 @@
 
 #include <qaccessibilityclient/registrycache_p.h>
 
-#include "accessibleobjecttreemodel.h"
-#include "accessiblepropertiesmodel.h"
-#include "accessiblewrapper.h"
-#include "eventview.h"
-#include "uiview.h"
-
 using namespace QAccessibleClient;
 
 MainWindow::MainWindow(QWidget *parent)
     : KXmlGuiWindow(parent)
     , m_registry(new QAccessibleClient::Registry(this))
+    , mAccessibleTreeWidget(new AccessibleTreeWidget(m_registry, this))
 {
     initUi();
     initActions();
@@ -43,6 +44,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     m_eventsWidget->loadSettings(settings);
 
+    connect(mAccessibleTreeWidget, &AccessibleTreeWidget::accessibleTreeviewSelectionChanged, this, &MainWindow::selectionChanged);
     connect(m_registry, &QAccessibleClient::Registry::added, this, &MainWindow::added);
     connect(m_registry, &QAccessibleClient::Registry::removed, this, &MainWindow::removed);
     connect(m_registry, &QAccessibleClient::Registry::defunct, this, &MainWindow::defunct);
@@ -112,7 +114,7 @@ void MainWindow::initActions()
     m_resetTreeAction->setText(i18nc("@action:inmenu", "Reset Tree"));
     ac->setDefaultShortcut(m_resetTreeAction, QKeySequence(QKeySequence::Refresh));
     ac->addAction(QStringLiteral("reset_tree"), m_resetTreeAction);
-    connect(m_resetTreeAction, &QAction::triggered, m_accessibleObjectTreeModel, &AccessibleObjectTreeModel::resetModel);
+    connect(m_resetTreeAction, &QAction::triggered, mAccessibleTreeWidget->accessibleObjectTreeModel(), &AccessibleObjectTreeModel::resetModel);
 
     m_followFocusAction = new QAction(this);
     m_followFocusAction->setText(i18nc("@action:inmenu", "Follow Focus"));
@@ -177,24 +179,7 @@ void MainWindow::initUi()
     auto treeDocker = new QDockWidget(i18n("Tree"), this);
     treeDocker->setObjectName(QStringLiteral("tree"));
     treeDocker->setFeatures(QDockWidget::DockWidgetClosable | QDockWidget::DockWidgetMovable | QDockWidget::DockWidgetFloatable);
-    m_accessibleObjectTreeView = new QTreeView(treeDocker);
-    m_accessibleObjectTreeView->setAccessibleName(i18n("Tree of accessibles"));
-    m_accessibleObjectTreeView->setAccessibleDescription(i18n("Displays a hierachical tree of accessible objects"));
-    m_accessibleObjectTreeView->setSelectionBehavior(QAbstractItemView::SelectRows);
-    m_accessibleObjectTreeView->setEditTriggers(QAbstractItemView::NoEditTriggers);
-    m_accessibleObjectTreeView->setAlternatingRowColors(true);
-    treeDocker->setWidget(m_accessibleObjectTreeView);
-
-    m_accessibleObjectTreeModel = new AccessibleObjectTreeModel(this);
-    m_accessibleObjectTreeModel->setRegistry(m_registry);
-    m_accessibleObjectTreeView->setModel(m_accessibleObjectTreeModel);
-    m_accessibleObjectTreeView->setColumnWidth(0, 240);
-    m_accessibleObjectTreeView->setContextMenuPolicy(Qt::CustomContextMenu);
-    connect(m_accessibleObjectTreeView->selectionModel(),
-            SIGNAL(currentChanged(QModelIndex, QModelIndex)),
-            this,
-            SLOT(selectionChanged(QModelIndex, QModelIndex)));
-    connect(m_accessibleObjectTreeView, &QTreeView::customContextMenuRequested, this, &MainWindow::treeCustomContextMenuRequested);
+    treeDocker->setWidget(mAccessibleTreeWidget);
 
     auto propertyDocker = new QDockWidget(i18nc("@title:window", "Properties"), this);
     propertyDocker->setObjectName(QStringLiteral("properties"));
@@ -240,7 +225,7 @@ void MainWindow::initUi()
 void MainWindow::anchorClicked(const QUrl &url)
 {
     AccessibleObject object = m_registry->accessibleFromUrl(url);
-    setCurrentObject(object);
+    mAccessibleTreeWidget->setCurrentObject(object);
 }
 
 void MainWindow::showClientCache()
@@ -249,22 +234,6 @@ void MainWindow::showClientCache()
     dlg->exec();
     if (dlg)
         dlg->deleteLater();
-}
-
-void MainWindow::setCurrentObject(const QAccessibleClient::AccessibleObject &object)
-{
-    const QModelIndex index = m_accessibleObjectTreeModel->indexForAccessible(object);
-    if (index.isValid()) {
-        const QModelIndex other = m_accessibleObjectTreeModel->index(index.row(), index.column() + 1, index.parent());
-        Q_ASSERT(other.isValid());
-        m_accessibleObjectTreeView->selectionModel()->select(QItemSelection(index, other), QItemSelectionModel::SelectCurrent);
-        m_accessibleObjectTreeView->scrollTo(index);
-
-        // Unlike calling setCurrentIndex the select call aboves doe not emit the selectionChanged signal. So, do explicit.
-        selectionChanged(index, QModelIndex());
-    } else {
-        qCWarning(ACCESSIBILITYINSPECTOR_LOG) << "No such indexForAccessible=" << object;
-    }
 }
 
 void MainWindow::updateDetails(const AccessibleObject &object, bool force)
@@ -329,30 +298,16 @@ void MainWindow::selectionChanged(const QModelIndex &current, const QModelIndex 
     updateDetails(acc, true);
 }
 
-void MainWindow::treeCustomContextMenuRequested(const QPoint &pos)
-{
-    const QModelIndex current = m_accessibleObjectTreeView->currentIndex();
-    if (!current.isValid())
-        return;
-    QAccessibleClient::AccessibleObject acc = static_cast<AccessibleWrapper *>(current.internalPointer())->acc;
-    auto menu = new QMenu(this);
-    connect(menu, &QMenu::aboutToHide, menu, &QMenu::deleteLater);
-    for (const QSharedPointer<QAction> &a : acc.actions()) {
-        menu->addAction(a.data());
-    }
-    menu->popup(m_accessibleObjectTreeView->mapToGlobal(pos));
-}
-
 void MainWindow::added(const QAccessibleClient::AccessibleObject &object)
 {
     m_eventsWidget->addLog(object, EventsWidget::Object, i18n("Add Object"));
-    m_accessibleObjectTreeModel->addAccessible(object);
+    mAccessibleTreeWidget->accessibleObjectTreeModel()->addAccessible(object);
 }
 
 void MainWindow::removed(const QAccessibleClient::AccessibleObject &object)
 {
     m_eventsWidget->addLog(object, EventsWidget::Object, i18n("Remove Object"));
-    m_accessibleObjectTreeModel->removeAccessible(object);
+    mAccessibleTreeWidget->accessibleObjectTreeModel()->removeAccessible(object);
 }
 
 void MainWindow::defunct(const QAccessibleClient::AccessibleObject &object)
@@ -363,15 +318,15 @@ void MainWindow::defunct(const QAccessibleClient::AccessibleObject &object)
 void MainWindow::windowCreated(const QAccessibleClient::AccessibleObject &object)
 {
     m_eventsWidget->addLog(object, EventsWidget::Window, i18n("Create"));
-    m_accessibleObjectTreeModel->addAccessible(object);
+    mAccessibleTreeWidget->accessibleObjectTreeModel()->addAccessible(object);
 }
 
 void MainWindow::windowDestroyed(const QAccessibleClient::AccessibleObject &object)
 {
     m_eventsWidget->addLog(object, EventsWidget::Window, i18n("Destroy"));
-    if (!m_accessibleObjectTreeModel->removeAccessible(object)) {
+    if (!mAccessibleTreeWidget->accessibleObjectTreeModel()->removeAccessible(object)) {
         // assume the app has gone
-        m_accessibleObjectTreeModel->updateTopLevelApps();
+        mAccessibleTreeWidget->accessibleObjectTreeModel()->updateTopLevelApps();
     }
 }
 
@@ -452,15 +407,16 @@ void MainWindow::windowUnshaded(const QAccessibleClient::AccessibleObject &objec
 
 void MainWindow::focusChanged(const QAccessibleClient::AccessibleObject &object)
 {
+    // TODO FIXME
     if (m_followFocusAction->isChecked()) {
         // We need to block the focus for the treeView while setting the current item
         // to prevent that setting that item would change focus to the treeView.
-        Qt::FocusPolicy prevFocusPolicy = m_accessibleObjectTreeView->focusPolicy();
-        m_accessibleObjectTreeView->setFocusPolicy(Qt::NoFocus);
+        Qt::FocusPolicy prevFocusPolicy = mAccessibleTreeWidget->focusPolicy();
+        mAccessibleTreeWidget->setFocusPolicy(Qt::NoFocus);
 
-        setCurrentObject(object);
+        mAccessibleTreeWidget->setCurrentObject(object);
 
-        m_accessibleObjectTreeView->setFocusPolicy(prevFocusPolicy);
+        mAccessibleTreeWidget->setFocusPolicy(prevFocusPolicy);
     } else {
         updateDetails(object);
     }
@@ -511,14 +467,14 @@ void MainWindow::accessibleNameChanged(const QAccessibleClient::AccessibleObject
 {
     updateDetails(object);
     m_eventsWidget->addLog(object, EventsWidget::NameChanged);
-    m_accessibleObjectTreeModel->updateAccessible(object);
+    mAccessibleTreeWidget->accessibleObjectTreeModel()->updateAccessible(object);
 }
 
 void MainWindow::accessibleDescriptionChanged(const QAccessibleClient::AccessibleObject &object)
 {
     updateDetails(object);
     m_eventsWidget->addLog(object, EventsWidget::DescriptionChanged);
-    m_accessibleObjectTreeModel->updateAccessible(object);
+    mAccessibleTreeWidget->accessibleObjectTreeModel()->updateAccessible(object);
 }
 
 #include "moc_mainwindow.cpp"

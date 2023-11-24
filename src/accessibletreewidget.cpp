@@ -24,6 +24,7 @@ AccessibleTreeWidget::AccessibleTreeWidget(QAccessibleClient::Registry *registry
 
     mAccessibleTreeView->setObjectName(QStringLiteral("mAccessibleTreeView"));
     mainLayout->addWidget(mAccessibleTreeView);
+    connect(mAccessibleTreeView, &AccessibleTreeView::accessibleTreeviewSelectionChanged, this, &AccessibleTreeWidget::accessibleTreeviewSelectionChanged);
 }
 
 AccessibleTreeWidget::~AccessibleTreeWidget() = default;
@@ -31,6 +32,11 @@ AccessibleTreeWidget::~AccessibleTreeWidget() = default;
 AccessibleObjectTreeModel *AccessibleTreeWidget::accessibleObjectTreeModel() const
 {
     return mAccessibleTreeView->accessibleObjectTreeModel();
+}
+
+void AccessibleTreeWidget::setCurrentObject(const QAccessibleClient::AccessibleObject &object)
+{
+    mAccessibleTreeView->setCurrentObject(object);
 }
 
 #include "moc_accessibletreewidget.cpp"

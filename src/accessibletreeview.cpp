@@ -23,6 +23,7 @@ AccessibleTreeView::AccessibleTreeView(QAccessibleClient::Registry *registry, QW
     setAlternatingRowColors(true);
     setColumnWidth(0, 240);
     setContextMenuPolicy(Qt::CustomContextMenu);
+    setModel(mAccessibleObjectTreeModel);
     connect(selectionModel(), &QItemSelectionModel::currentChanged, this, &AccessibleTreeView::accessibleTreeviewSelectionChanged);
     connect(this, &AccessibleTreeView::customContextMenuRequested, this, &AccessibleTreeView::treeCustomContextMenuRequested);
     setModel(mAccessibleObjectTreeModel);
@@ -59,7 +60,7 @@ void AccessibleTreeView::setCurrentObject(const QAccessibleClient::AccessibleObj
         scrollTo(index);
 
         // Unlike calling setCurrentIndex the select call aboves doe not emit the selectionChanged signal. So, do explicit.
-        // TODO selectionChanged(index, QModelIndex());
+        accessibleTreeviewSelectionChanged(index, QModelIndex());
     } else {
         qCWarning(ACCESSIBILITYINSPECTOR_LOG) << "No such indexForAccessible=" << object;
     }

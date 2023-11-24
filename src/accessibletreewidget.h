@@ -15,6 +15,7 @@ class AccessibleObjectTreeModel;
 namespace QAccessibleClient
 {
 class Registry;
+class AccessibleObject;
 }
 class LIBACCESSIBILITYINSPECTOR_TEXT_EXPORT AccessibleTreeWidget : public QWidget
 {
@@ -24,6 +25,11 @@ public:
     ~AccessibleTreeWidget() override;
 
     [[nodiscard]] AccessibleObjectTreeModel *accessibleObjectTreeModel() const;
+
+    void setCurrentObject(const QAccessibleClient::AccessibleObject &object);
+
+Q_SIGNALS:
+    void accessibleTreeviewSelectionChanged(const QModelIndex &current, const QModelIndex &previous);
 
 private:
     QLineEdit *const mSearchLineEdit;
