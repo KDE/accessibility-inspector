@@ -37,7 +37,7 @@
   <summary xml:lang="uk">Вивчення ієрархії доступності вашої програми</summary>
   <summary xml:lang="x-test">xxInspect your application accessibility treexx</summary>
   <description>
-    <p>Accessibility Inspector is like the name suggest an inspector for your application accessibility tree. It lets you check all the items exposed via At-SPI to.</p>
+    <p>Accessibility Inspector is as the name suggests an inspector for your application accessibility tree. It lets you check all the items exposed via At-SPI, too.</p>
     <p xml:lang="ca">L'inspector d'accessibilitat és, com el nom suggereix, un inspector de l'arbre d'accessibilitat de l'aplicació. Permet comprovar tots els elements exposats mitjançant At-SPI.</p>
     <p xml:lang="ca-valencia">L'inspector d'accessibilitat és, com el nom suggerix, un inspector de l'arbre d'accessibilitat de l'aplicació. Permet comprovar tots els elements exposats mitjançant At-SPI.</p>
     <p xml:lang="eo">Accessibility Inspector estas inspektilo por la alireblo-arbo de via aplikaĵo. Ĝi ebligas al vi ankaŭ kontroli ĉiujn objektojn elmontritajn per At-SPI.</p>
