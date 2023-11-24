@@ -45,7 +45,6 @@ void AccessibleTreeView::treeCustomContextMenuRequested(const QPoint &pos)
         return;
     QAccessibleClient::AccessibleObject acc = static_cast<AccessibleWrapper *>(current.internalPointer())->acc;
     QMenu menu(this);
-    connect(&menu, &QMenu::aboutToHide, &menu, &QMenu::deleteLater);
     for (const QSharedPointer<QAction> &a : acc.actions()) {
         menu.addAction(a.data());
     }
