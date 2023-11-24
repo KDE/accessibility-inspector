@@ -16,7 +16,7 @@ namespace QAccessibleClient
 class Registry;
 class AccessibleObject;
 }
-class LIBACCESSIBILITYINSPECTOR_TEXT_EXPORT AccessibleTreeWidget : public QWidget
+class LIBACCESSIBILITYINSPECTOR_TEST_EXPORT AccessibleTreeWidget : public QWidget
 {
     Q_OBJECT
 public:

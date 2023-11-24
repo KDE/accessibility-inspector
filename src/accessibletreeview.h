@@ -15,7 +15,7 @@ namespace QAccessibleClient
 {
 class Registry;
 }
-class LIBACCESSIBILITYINSPECTOR_TEXT_EXPORT AccessibleTreeView : public QTreeView
+class LIBACCESSIBILITYINSPECTOR_TEST_EXPORT AccessibleTreeView : public QTreeView
 {
     Q_OBJECT
 public:
