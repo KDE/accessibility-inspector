@@ -17,3 +17,4 @@ endmacro ()
 
 add_accessibilityinspector_unittest(accessibletreewidgettest.cpp)
 add_accessibilityinspector_unittest(accessibletreeviewtest.cpp)
+add_accessibilityinspector_unittest(mainwidgettest.cpp)
