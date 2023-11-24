@@ -11,7 +11,11 @@
   <name>Accessibility Inspector</name>
   <name xml:lang="ca">Inspector d'accessibilitat</name>
   <name xml:lang="ca-valencia">Inspector d'accessibilitat</name>
+  <name xml:lang="eo">Accessibility Inspector</name>
+  <name xml:lang="es">Inspector de accesibilidad</name>
+  <name xml:lang="fr">Analyseur d'accessibilité</name>
   <name xml:lang="ia">Inspector de Accessibilitate</name>
+  <name xml:lang="it">Ispettore dell'accessibilità</name>
   <name xml:lang="ka">წვდომადობის ინსპექტორი</name>
   <name xml:lang="nl">Toegankelijkheidsinspecteur</name>
   <name xml:lang="sl">Accessibility Inspector</name>
@@ -21,7 +25,11 @@
   <summary>Inspect your application accessibility tree</summary>
   <summary xml:lang="ca">Inspecciona l'arbre d'accessibilitat de la vostra aplicació</summary>
   <summary xml:lang="ca-valencia">Inspecciona l'arbre d'accessibilitat de la vostra aplicació</summary>
+  <summary xml:lang="eo">Inspektu la alireblo-arbon de via aplikaĵo</summary>
+  <summary xml:lang="es">Inspeccionar el árbol de accesibilidad de las aplicaciones</summary>
+  <summary xml:lang="fr">Inspecter l'arborescence d'accessibilité de votre application</summary>
   <summary xml:lang="ia">Inspecta arbore de accessibilitate de tu application</summary>
+  <summary xml:lang="it">Ispeziona l'albero di accessibilità della tua applicazione</summary>
   <summary xml:lang="ka">შეამოწმეთ თქვენი აპლიკაციის წვდომადობის ხე</summary>
   <summary xml:lang="nl">Inspecteer de boomstructuur voor toegankelijkheid van uw toepassing</summary>
   <summary xml:lang="sl">Preglejte drevo dostopnosti vaše aplikacije</summary>
@@ -32,7 +40,11 @@
     <p>Accessibility Inspector is like the name suggest an inspector for your application accessibility tree. It lets you check all the items exposed via At-SPI to.</p>
     <p xml:lang="ca">L'inspector d'accessibilitat és, com el nom suggereix, un inspector de l'arbre d'accessibilitat de l'aplicació. Permet comprovar tots els elements exposats mitjançant At-SPI.</p>
     <p xml:lang="ca-valencia">L'inspector d'accessibilitat és, com el nom suggerix, un inspector de l'arbre d'accessibilitat de l'aplicació. Permet comprovar tots els elements exposats mitjançant At-SPI.</p>
+    <p xml:lang="eo">Accessibility Inspector estas inspektilo por la alireblo-arbo de via aplikaĵo. Ĝi ebligas al vi ankaŭ kontroli ĉiujn objektojn elmontritajn per At-SPI.</p>
+    <p xml:lang="es">El inspector de accesibilidad es, como su nombre sugiere, un inspector del árbol de accesibilidad de las aplicaciones. Permite comprobar todos los elementos expuestos mediante At-SPI.</p>
+    <p xml:lang="fr">L'analyseur d'accessibilité est comme son nom l'indique, un analyseur de l'arborescence d'accessibilité de votre application. Il vous permet de vérifier tous les éléments exposés grâce à « At-SPI to ».</p>
     <p xml:lang="ia">Inspector de Accessibiliatte (Accessibility Inspector) es como le nomine suggere un inspector per le arbore de accessibilitate de tu application.Illo te permitte verificar le elementos exponite via at-SPI.</p>
+    <p xml:lang="it">Ispettore dell'accessibilità è come il nome che suggerisce un ispettore per l'albero di accessibilità della tua applicazione. Ti consente di controllare tutti gli elementi esposti tramite At-SPI.</p>
     <p xml:lang="ka">წვდომადობის ინსპექტორი, როგორც ამას სახელით მიხვდებოდით, ინსპექტორია თქვენი აპლიკაციის წვდომადობის ხისთვის. ის საშუალებას გაძლევთ, შეამოწმოთ ყველა ელემენტი, რომელსაც At-SPI გამოაჩენს.</p>
     <p xml:lang="nl">Toegankelijkheidsinspecteur is zoals de naam suggereert een inspecteur voor de boomstructuur van toegankelijkheid van uw toepassing. Het laat u alle items controleren die zijn blootgesteld via At-SPI naar.</p>
     <p xml:lang="sl">Inšpektor za dostopnost je, kot ime nakazuje inšpektor za vaše drevo dostopnosti aplikacij. Omogoča vam, da preverite vse predmete, ki so izpostavljeni prek Ati-SPI.</p>
@@ -61,7 +73,11 @@
       <caption>The properties of a node of the accessibility tree.</caption>
       <caption xml:lang="ca">Les propietats d'un node de l'arbre d'accessibilitat.</caption>
       <caption xml:lang="ca-valencia">Les propietats d'un node de l'arbre d'accessibilitat.</caption>
+      <caption xml:lang="eo">La proprecoj de nodo en la alireblo-arbo</caption>
+      <caption xml:lang="es">Las propiedades de un nodo del árbol de accesibilidad.</caption>
+      <caption xml:lang="fr">Les propriétés d'un nœud dans l'arborescence d'accessibilité.</caption>
       <caption xml:lang="ia">Le proprietate de un nodo del arbore de accessibilitate.</caption>
+      <caption xml:lang="it">Le proprietà di un nodo dell'albero di accessibilità.</caption>
       <caption xml:lang="ka">წვდომადობის ხის კვანძის თვისებები.</caption>
       <caption xml:lang="nl">De eigenschappen van een node van de boomstructuur van toegankelijkheid</caption>
       <caption xml:lang="sl">Lastnosti vozlišča drevesa dostopnosti.</caption>
@@ -74,7 +90,11 @@
       <caption>The list of all the recent events.</caption>
       <caption xml:lang="ca">La llista de tots els esdeveniments recents.</caption>
       <caption xml:lang="ca-valencia">La llista de tots els esdeveniments recents.</caption>
+      <caption xml:lang="eo">La listo de la lasttempaj eventoj.</caption>
+      <caption xml:lang="es">La lista de todos los eventos recientes.</caption>
+      <caption xml:lang="fr">La liste de tous les évènements récents.</caption>
       <caption xml:lang="ia">Le lista de omne eventois recente.</caption>
+      <caption xml:lang="it">L'elenco di tutti gli eventi recenti.</caption>
       <caption xml:lang="ka">ყველა უახლესი მოვლენის სია.</caption>
       <caption xml:lang="nl">De lijst met alle recente gebeurtenissen.</caption>
       <caption xml:lang="sl">Seznam vseh zadnjih dogodkov.</caption>
