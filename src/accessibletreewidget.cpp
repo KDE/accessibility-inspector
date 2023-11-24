@@ -12,10 +12,10 @@
 #include <QTreeView>
 #include <QVBoxLayout>
 
-AccessibleTreeWidget::AccessibleTreeWidget(QWidget *parent)
+AccessibleTreeWidget::AccessibleTreeWidget(QAccessibleClient::Registry *registry, QWidget *parent)
     : QWidget{parent}
     , mSearchLineEdit(new QLineEdit(this))
-    , mAccessibleTreeView(new AccessibleTreeView(this))
+    , mAccessibleTreeView(new AccessibleTreeView(registry, this))
     , mSortFilterProxyModel(new QSortFilterProxyModel(this))
 {
     auto mainLayout = new QVBoxLayout(this);

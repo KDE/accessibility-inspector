@@ -17,7 +17,7 @@ AccessibleTreeWidgetTest::AccessibleTreeWidgetTest(QObject *parent)
 
 void AccessibleTreeWidgetTest::shouldHaveDefaultValues()
 {
-    AccessibleTreeWidget w;
+    AccessibleTreeWidget w(nullptr);
 
     auto mainLayout = w.findChild<QVBoxLayout *>(QStringLiteral("mainLayout"));
     QVERIFY(mainLayout);

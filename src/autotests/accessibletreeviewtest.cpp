@@ -16,7 +16,7 @@ AccessibleTreeViewTest::AccessibleTreeViewTest(QObject *parent)
 
 void AccessibleTreeViewTest::shouldHaveDefaultValues()
 {
-    AccessibleTreeView w;
+    AccessibleTreeView w(nullptr);
     QVERIFY(w.alternatingRowColors());
     QCOMPARE(w.selectionBehavior(), QAbstractItemView::SelectRows);
     QCOMPARE(w.editTriggers(), QAbstractItemView::NoEditTriggers);

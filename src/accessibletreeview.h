@@ -10,11 +10,15 @@
 
 #include <qaccessibilityclient/accessibleobject.h>
 class AccessibleObjectTreeModel;
+namespace QAccessibleClient
+{
+class Registry;
+}
 class LIBACCESSIBILITYINSPECTOR_TEXT_EXPORT AccessibleTreeView : public QTreeView
 {
     Q_OBJECT
 public:
-    explicit AccessibleTreeView(QWidget *parent = nullptr);
+    explicit AccessibleTreeView(QAccessibleClient::Registry *registry, QWidget *parent = nullptr);
     ~AccessibleTreeView() override;
 
     [[nodiscard]] AccessibleObjectTreeModel *accessibleObjectTreeModel() const;

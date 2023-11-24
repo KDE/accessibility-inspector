@@ -12,11 +12,15 @@ class QLineEdit;
 class AccessibleTreeView;
 class QSortFilterProxyModel;
 class AccessibleObjectTreeModel;
+namespace QAccessibleClient
+{
+class Registry;
+}
 class LIBACCESSIBILITYINSPECTOR_TEXT_EXPORT AccessibleTreeWidget : public QWidget
 {
     Q_OBJECT
 public:
-    explicit AccessibleTreeWidget(QWidget *parent = nullptr);
+    explicit AccessibleTreeWidget(QAccessibleClient::Registry *registry, QWidget *parent = nullptr);
     ~AccessibleTreeWidget() override;
 
     [[nodiscard]] AccessibleObjectTreeModel *accessibleObjectTreeModel() const;

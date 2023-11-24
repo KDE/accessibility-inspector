@@ -12,10 +12,11 @@
 #include <QMenu>
 #include <qaccessibilityclient/registrycache_p.h>
 
-AccessibleTreeView::AccessibleTreeView(QWidget *parent)
+AccessibleTreeView::AccessibleTreeView(QAccessibleClient::Registry *registry, QWidget *parent)
     : QTreeView(parent)
     , mAccessibleObjectTreeModel(new AccessibleObjectTreeModel(this))
 {
+    mAccessibleObjectTreeModel->setRegistry(registry);
     setAccessibleDescription(QStringLiteral("Displays a hierachical tree of accessible objects"));
     setSelectionBehavior(QAbstractItemView::SelectRows);
     setEditTriggers(QAbstractItemView::NoEditTriggers);
