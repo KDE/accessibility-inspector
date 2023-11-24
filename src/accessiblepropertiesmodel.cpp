@@ -50,9 +50,9 @@ QVariant ObjectPropertiesModel::headerData(int section, Qt::Orientation orientat
     if (orientation == Qt::Horizontal && role == Qt::DisplayRole) {
         switch (static_cast<ObjectPropertiesModelRoles>(section)) {
         case Name:
-            return QStringLiteral("Property");
+            return i18n("Property");
         case Value:
-            return QStringLiteral("Value");
+            return i18n("Value");
         }
     }
     return {};
