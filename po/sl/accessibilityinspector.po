@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-24 01:32+0000\n"
-"PO-Revision-Date: 2023-11-23 09:34+0100\n"
+"POT-Creation-Date: 2023-11-25 01:32+0000\n"
+"PO-Revision-Date: 2023-11-24 09:15+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -52,6 +52,18 @@ msgstr "Dostopen"
 #, kde-format
 msgid "Role"
 msgstr "Vloga"
+
+#: accessiblepropertiesmodel.cpp:53
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Properties"
+msgid "Property"
+msgstr "Lastnosti"
+
+#: accessiblepropertiesmodel.cpp:55 accessiblepropertiesmodel.cpp:249
+#, kde-format
+msgid "Value"
+msgstr "Vrednost"
 
 #: accessiblepropertiesmodel.cpp:86
 #, kde-format
@@ -229,11 +241,6 @@ msgstr "Character Rect"
 msgid "Selections"
 msgstr "Izbire"
 
-#: accessiblepropertiesmodel.cpp:249
-#, kde-format
-msgid "Value"
-msgstr "Vrednost"
-
 #: accessiblepropertiesmodel.cpp:250
 #, kde-format
 msgid "Current"
@@ -288,6 +295,11 @@ msgstr "Fokus dogodka"
 #, kde-format
 msgid "Action"
 msgstr "Dejavnost"
+
+#: accessibletreeview.cpp:26
+#, kde-format
+msgid "Displays a hierachical tree of accessible objects"
+msgstr "Prikaži hierarhično drevo dostopnih objektov"
 
 #: apps/main.cpp:26
 #, kde-format
@@ -516,141 +528,152 @@ msgstr "Počisti dogodke"
 msgid "&Clear"
 msgstr "Očisti"
 
-#: mainwindow.cpp:121
+#: mainwindow.cpp:114
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Reset Tree"
 msgstr "Ponastavi drevo"
 
-#: mainwindow.cpp:127
+#: mainwindow.cpp:120
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Follow Focus"
 msgstr "Sledi fokusu"
 
-#: mainwindow.cpp:133
+#: mainwindow.cpp:126
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Cache..."
 msgstr "Predpomnilnik..."
 
-#: mainwindow.cpp:138
+#: mainwindow.cpp:131
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Enable Accessibility"
 msgstr "Omogoči dostopnost"
 
-#: mainwindow.cpp:148
+#: mainwindow.cpp:141
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Enable Screen Reader"
 msgstr "Omogoči bralnik zaslona"
 
-#: mainwindow.cpp:159
+#: mainwindow.cpp:152
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy property value"
 msgstr "Kopiraj vrednost lastnosti"
 
-#: mainwindow.cpp:186
-#, fuzzy, kde-format
-#| msgctxt "@title:menu"
-#| msgid "Tree"
+#: mainwindow.cpp:179
+#, kde-format
 msgid "Tree"
 msgstr "Drevo"
 
-#: mainwindow.cpp:190
-#, fuzzy, kde-format
-#| msgid "Accessible"
-msgid "Tree of accessibles"
-msgstr "Dostopen"
-
-#: mainwindow.cpp:191
-#, fuzzy, kde-format
-#| msgctxt "@info:whatsthis"
-#| msgid "Displays properties of the selected accessible object"
-msgid "Displays a hierachical tree of accessible objects"
-msgstr "Prikaže lastnosti izbranega dostopnega predmeta"
-
-#: mainwindow.cpp:208
+#: mainwindow.cpp:184
 #, kde-format
 msgctxt "@title:window"
 msgid "Properties"
 msgstr "Lastnosti"
 
-#: mainwindow.cpp:213
+#: mainwindow.cpp:189
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "List of properties"
 msgstr "Seznam lastnosti"
 
-#: mainwindow.cpp:214
+#: mainwindow.cpp:190
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Displays properties of the selected accessible object"
 msgstr "Prikaže lastnosti izbranega dostopnega predmeta"
 
-#: mainwindow.cpp:224
+#: mainwindow.cpp:200
 #, kde-format
 msgctxt "@title:window"
 msgid "Boundaries"
 msgstr "Meje"
 
-#: mainwindow.cpp:228
+#: mainwindow.cpp:204
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Boundaries"
 msgstr "Meje"
 
-#: mainwindow.cpp:229
+#: mainwindow.cpp:205
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Visualize the component boundaries"
 msgstr "Vizualizirajte meje komponent"
 
-#: mainwindow.cpp:232
+#: mainwindow.cpp:208
 #, kde-format
 msgctxt "@title:window"
 msgid "Events"
 msgstr "Dogodki"
 
-#: mainwindow.cpp:293 mainwindow.cpp:295
+#: mainwindow.cpp:253 mainwindow.cpp:255
 #, kde-format
 msgid "true"
-msgstr ""
+msgstr "true"
 
-#: mainwindow.cpp:293 mainwindow.cpp:295
+#: mainwindow.cpp:253 mainwindow.cpp:255
 #, kde-format
 msgid "false"
+msgstr "false"
+
+#: mainwindow.cpp:264
+#, kde-format
+msgid "Child Added %1"
 msgstr ""
 
-#: mainwindow.cpp:357
+#: mainwindow.cpp:270
+#, kde-format
+msgid "Child Removed %1"
+msgstr ""
+
+#: mainwindow.cpp:276
+#, kde-format
+msgid "Visible Data Changed"
+msgstr ""
+
+#: mainwindow.cpp:282
 #, fuzzy, kde-format
-#| msgctxt "Accessibility event name"
-#| msgid "Object"
+#| msgid "Selection"
+msgid "Selection Changed"
+msgstr "Izbira"
+
+#: mainwindow.cpp:288
+#, kde-format
+msgid "Model Changed"
+msgstr ""
+
+#: mainwindow.cpp:303
+#, kde-format
 msgid "Add Object"
-msgstr "Objekt"
+msgstr "Dodaj objekt"
 
-#: mainwindow.cpp:363
-#, fuzzy, kde-format
-#| msgid "Event Object"
+#: mainwindow.cpp:309
+#, kde-format
 msgid "Remove Object"
-msgstr "Objekt dogodka"
+msgstr "Odstrani objekt"
 
-#: mainwindow.cpp:374
+#: mainwindow.cpp:320
 #, kde-format
 msgid "Create"
-msgstr ""
+msgstr "Ustvari"
 
-#: mainwindow.cpp:380
+#: mainwindow.cpp:326
 #, kde-format
 msgid "Destroy"
-msgstr ""
+msgstr "Uniči"
 
-#: mainwindow.cpp:481
+#: mainwindow.cpp:428
 #, kde-format
 msgid "Text caret moved (%1)"
-msgstr ""
+msgstr "Kazalec besedila premaknjen (%1)"
+
+#~ msgid "Tree of accessibles"
+#~ msgstr "Drevo dostopnosti"
 
 #~ msgctxt "@title:menu"
 #~ msgid "Docker"
