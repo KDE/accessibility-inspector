@@ -6,7 +6,7 @@ add_library(libaccessibilityinspector SHARED)
 ecm_qt_declare_logging_category(libaccessibilityinspector HEADER accessibilityinspector_debug.h IDENTIFIER ACCESSIBILITYINSPECTOR_LOG
     CATEGORY_NAME org.kde.accessibilityinspector DESCRIPTION "accessibility-inspector" EXPORT ACCESSIBILITYINSPECTOR)
 
-qt_wrap_ui(accessibleapps_UI_HDRS
+ki18n_wrap_ui(accessibleapps_UI_HDRS
     eventview.ui
 )
 
