@@ -1,7 +1,8 @@
 # SPDX-FileCopyrightText: 2023 Carl Schwan <carlschwan@kde.org>
 # SPDX-License-Identifier: BSD-2-Clause
 
-add_library(libaccessibilityinspector SHARED)
+add_library(libaccessibilityinspector SHARED
+    propertytreewidget.h propertytreewidget.cpp)
 
 ecm_qt_declare_logging_category(libaccessibilityinspector HEADER accessibilityinspector_debug.h IDENTIFIER ACCESSIBILITYINSPECTOR_LOG
     CATEGORY_NAME org.kde.accessibilityinspector DESCRIPTION "accessibility-inspector" EXPORT ACCESSIBILITYINSPECTOR)
