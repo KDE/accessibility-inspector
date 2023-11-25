@@ -35,6 +35,9 @@ target_sources(libaccessibilityinspector PRIVATE
     accessibletreeview.h
     accessibletreeview.cpp
 
+    propertytreeview.h
+    propertytreeview.cpp
+
     accessibilityinspector.qrc
     ${accessibleapps_UI_HDRS}
 )
