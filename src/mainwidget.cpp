@@ -5,11 +5,16 @@
 */
 
 #include "mainwidget.h"
+#include "accessibletreewidget.h"
 #include <QHBoxLayout>
 #include <QSplitter>
-MainWidget::MainWidget(QWidget *parent)
+#include <QTabWidget>
+
+MainWidget::MainWidget(QAccessibleClient::Registry *registry, QWidget *parent)
     : QWidget{parent}
     , mSplitter(new QSplitter(this))
+    , mTabWidget(new QTabWidget(this))
+    , mAccessibleTreeWidget(new AccessibleTreeWidget(registry, this))
 {
     auto mainLayout = new QHBoxLayout(this);
     mainLayout->setContentsMargins({});
@@ -17,6 +22,12 @@ MainWidget::MainWidget(QWidget *parent)
 
     mSplitter->setObjectName(QStringLiteral("mSplitter"));
     mainLayout->addWidget(mSplitter);
+
+    mAccessibleTreeWidget->setObjectName(QStringLiteral("mAccessibleTreeWidget"));
+    mTabWidget->setObjectName(QStringLiteral("mTabWidget"));
+
+    mSplitter->addWidget(mAccessibleTreeWidget);
+    mSplitter->addWidget(mTabWidget);
 }
 
 MainWidget::~MainWidget() = default;

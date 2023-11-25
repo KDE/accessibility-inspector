@@ -8,13 +8,21 @@
 #include "libaccessibilityinspector_private_export.h"
 #include <QWidget>
 class QSplitter;
+class QTabWidget;
+class AccessibleTreeWidget;
+namespace QAccessibleClient
+{
+class Registry;
+}
 class LIBACCESSIBILITYINSPECTOR_TEST_EXPORT MainWidget : public QWidget
 {
     Q_OBJECT
 public:
-    explicit MainWidget(QWidget *parent = nullptr);
+    explicit MainWidget(QAccessibleClient::Registry *registry, QWidget *parent = nullptr);
     ~MainWidget() override;
 
 private:
     QSplitter *const mSplitter;
+    QTabWidget *const mTabWidget;
+    AccessibleTreeWidget *const mAccessibleTreeWidget;
 };

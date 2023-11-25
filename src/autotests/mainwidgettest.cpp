@@ -16,7 +16,7 @@ MainWidgetTest::MainWidgetTest(QObject *parent)
 void MainWidgetTest::shouldHaveDefaultValues()
 {
     // TODO
-    MainWidget d;
+    MainWidget d(nullptr);
     // TODO
 }
 
