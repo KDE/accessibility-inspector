@@ -17,12 +17,12 @@ AccessibleTreeWidget::AccessibleTreeWidget(QAccessibleClient::Registry *registry
     , mAccessibleTreeView(new AccessibleTreeView(registry, this))
 {
     auto mainLayout = new QVBoxLayout(this);
-    mainLayout->setObjectName(QStringLiteral("mainLayout"));
+    mainLayout->setObjectName(QLatin1StringView("mainLayout"));
     mainLayout->addWidget(mSearchLineEdit);
-    mSearchLineEdit->setObjectName(QStringLiteral("mSearchLineEdit"));
+    mSearchLineEdit->setObjectName(QLatin1StringView("mSearchLineEdit"));
     mSearchLineEdit->setClearButtonEnabled(true);
 
-    mAccessibleTreeView->setObjectName(QStringLiteral("mAccessibleTreeView"));
+    mAccessibleTreeView->setObjectName(QLatin1StringView("mAccessibleTreeView"));
     mainLayout->addWidget(mAccessibleTreeView);
     connect(mAccessibleTreeView, &AccessibleTreeView::accessibleTreeviewSelectionChanged, this, &AccessibleTreeWidget::accessibleTreeviewSelectionChanged);
     connect(mSearchLineEdit, &QLineEdit::textChanged, mAccessibleTreeView, &AccessibleTreeView::setSearchTextChanged);

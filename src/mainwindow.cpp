@@ -177,12 +177,12 @@ void MainWindow::initUi()
     setDockOptions(QMainWindow::AnimatedDocks | QMainWindow::AllowNestedDocks | QMainWindow::AllowTabbedDocks);
 
     auto treeDocker = new QDockWidget(i18n("Tree"), this);
-    treeDocker->setObjectName(QStringLiteral("tree"));
+    treeDocker->setObjectName(QLatin1StringView("tree"));
     treeDocker->setFeatures(QDockWidget::DockWidgetClosable | QDockWidget::DockWidgetMovable | QDockWidget::DockWidgetFloatable);
     treeDocker->setWidget(mAccessibleTreeWidget);
 
     auto propertyDocker = new QDockWidget(i18nc("@title:window", "Properties"), this);
-    propertyDocker->setObjectName(QStringLiteral("properties"));
+    propertyDocker->setObjectName(QLatin1StringView("properties"));
     propertyDocker->setFeatures(QDockWidget::DockWidgetClosable | QDockWidget::DockWidgetMovable | QDockWidget::DockWidgetFloatable);
     m_propertyView = new QTreeView(propertyDocker);
     propertyDocker->setWidget(m_propertyView);
@@ -198,7 +198,7 @@ void MainWindow::initUi()
     connect(m_propertyView, &QTreeView::doubleClicked, m_propertyModel, &ObjectPropertiesModel::doubleClicked);
 
     auto uiDocker = new QDockWidget(i18nc("@title:window", "Boundaries"), this);
-    uiDocker->setObjectName(QStringLiteral("boundaries"));
+    uiDocker->setObjectName(QLatin1StringView("boundaries"));
     uiDocker->setFeatures(QDockWidget::DockWidgetClosable | QDockWidget::DockWidgetMovable | QDockWidget::DockWidgetFloatable);
     m_uiview = new UiView(uiDocker);
     m_uiview->setAccessibleName(i18nc("@info:whatsthis", "Boundaries"));
@@ -206,7 +206,7 @@ void MainWindow::initUi()
     uiDocker->setWidget(m_uiview);
 
     auto eventsDocker = new QDockWidget(i18nc("@title:window", "Events"), this);
-    eventsDocker->setObjectName(QStringLiteral("events"));
+    eventsDocker->setObjectName(QLatin1StringView("events"));
     eventsDocker->setFeatures(QDockWidget::DockWidgetClosable | QDockWidget::DockWidgetMovable | QDockWidget::DockWidgetFloatable);
     m_eventsWidget = new EventsWidget(eventsDocker);
     connect(m_eventsWidget, &EventsWidget::anchorClicked, this, &MainWindow::anchorClicked);

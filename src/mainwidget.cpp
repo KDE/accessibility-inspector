@@ -18,13 +18,13 @@ MainWidget::MainWidget(QAccessibleClient::Registry *registry, QWidget *parent)
 {
     auto mainLayout = new QHBoxLayout(this);
     mainLayout->setContentsMargins({});
-    mainLayout->setObjectName(QStringLiteral("mainLayout"));
+    mainLayout->setObjectName(QLatin1StringView("mainLayout"));
 
-    mSplitter->setObjectName(QStringLiteral("mSplitter"));
+    mSplitter->setObjectName(QLatin1StringView("mSplitter"));
     mainLayout->addWidget(mSplitter);
 
-    mAccessibleTreeWidget->setObjectName(QStringLiteral("mAccessibleTreeWidget"));
-    mTabWidget->setObjectName(QStringLiteral("mTabWidget"));
+    mAccessibleTreeWidget->setObjectName(QLatin1StringView("mAccessibleTreeWidget"));
+    mTabWidget->setObjectName(QLatin1StringView("mTabWidget"));
 
     mSplitter->addWidget(mAccessibleTreeWidget);
     mSplitter->addWidget(mTabWidget);
