@@ -5,13 +5,18 @@
 */
 
 #include "propertytreewidget.h"
+#include "propertytreeview.h"
 #include <QVBoxLayout>
 
 PropertyTreeWidget::PropertyTreeWidget(QWidget *parent)
     : QWidget{parent}
+    , mPropertyTreeView(new PropertyTreeView(this))
 {
     auto mainLayout = new QVBoxLayout(this);
     mainLayout->setObjectName(QLatin1StringView("mainLayout"));
+
+    mPropertyTreeView->setObjectName(QLatin1StringView("mPropertyTreeView"));
+    mainLayout->addWidget(mPropertyTreeView);
 }
 
 PropertyTreeWidget::~PropertyTreeWidget() = default;

@@ -7,11 +7,14 @@
 #pragma once
 
 #include <QWidget>
-
+class PropertyTreeView;
 class PropertyTreeWidget : public QWidget
 {
     Q_OBJECT
 public:
     explicit PropertyTreeWidget(QWidget *parent = nullptr);
     ~PropertyTreeWidget() override;
+
+private:
+    PropertyTreeView *const mPropertyTreeView;
 };
