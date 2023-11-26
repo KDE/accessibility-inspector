@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-25 01:32+0000\n"
-"PO-Revision-Date: 2023-11-25 00:04+0200\n"
+"POT-Creation-Date: 2023-11-26 01:57+0000\n"
+"PO-Revision-Date: 2023-11-25 12:20+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -57,11 +57,9 @@ msgid "Role"
 msgstr "Роль"
 
 #: accessiblepropertiesmodel.cpp:53
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Properties"
+#, kde-format
 msgid "Property"
-msgstr "Властивості"
+msgstr "Властивість"
 
 #: accessiblepropertiesmodel.cpp:55 accessiblepropertiesmodel.cpp:249
 #, kde-format
@@ -578,13 +576,13 @@ msgctxt "@title:window"
 msgid "Properties"
 msgstr "Властивості"
 
-#: mainwindow.cpp:189
+#: mainwindow.cpp:189 propertytreeview.cpp:13
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "List of properties"
 msgstr "Список властивостей"
 
-#: mainwindow.cpp:190
+#: mainwindow.cpp:190 propertytreeview.cpp:14
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Displays properties of the selected accessible object"
@@ -627,28 +625,27 @@ msgstr "ні"
 #: mainwindow.cpp:264
 #, kde-format
 msgid "Child Added %1"
-msgstr ""
+msgstr "Додано дочірній запис %1"
 
 #: mainwindow.cpp:270
 #, kde-format
 msgid "Child Removed %1"
-msgstr ""
+msgstr "Вилучено дочірній запис %1"
 
 #: mainwindow.cpp:276
 #, kde-format
 msgid "Visible Data Changed"
-msgstr ""
+msgstr "Змінено видимі дані"
 
 #: mainwindow.cpp:282
-#, fuzzy, kde-format
-#| msgid "Selection"
+#, kde-format
 msgid "Selection Changed"
-msgstr "Позначення"
+msgstr "Змінено позначене"
 
 #: mainwindow.cpp:288
 #, kde-format
 msgid "Model Changed"
-msgstr ""
+msgstr "Змінено модель"
 
 #: mainwindow.cpp:303
 #, kde-format

@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-25 01:32+0000\n"
-"PO-Revision-Date: 2023-11-24 13:06+0300\n"
+"POT-Creation-Date: 2023-11-26 01:57+0000\n"
+"PO-Revision-Date: 2023-11-25 19:54+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -56,11 +56,9 @@ msgid "Role"
 msgstr "Rol"
 
 #: accessiblepropertiesmodel.cpp:53
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Properties"
+#, kde-format
 msgid "Property"
-msgstr "Özellikler"
+msgstr "Özellik"
 
 #: accessiblepropertiesmodel.cpp:55 accessiblepropertiesmodel.cpp:249
 #, kde-format
@@ -558,7 +556,7 @@ msgstr "Erişilebilirliği Etkinleştir"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Enable Screen Reader"
-msgstr "Ekran Okuyucusunu Etkinleştir"
+msgstr "Ekran okuyucusunu etkinleştir"
 
 #: mainwindow.cpp:152
 #, kde-format
@@ -577,13 +575,13 @@ msgctxt "@title:window"
 msgid "Properties"
 msgstr "Özellikler"
 
-#: mainwindow.cpp:189
+#: mainwindow.cpp:189 propertytreeview.cpp:13
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "List of properties"
 msgstr "Özellikler listesi"
 
-#: mainwindow.cpp:190
+#: mainwindow.cpp:190 propertytreeview.cpp:14
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Displays properties of the selected accessible object"
@@ -626,28 +624,27 @@ msgstr "yanlış"
 #: mainwindow.cpp:264
 #, kde-format
 msgid "Child Added %1"
-msgstr ""
+msgstr "Alt Öge Eklendi %1"
 
 #: mainwindow.cpp:270
 #, kde-format
 msgid "Child Removed %1"
-msgstr ""
+msgstr "Alt Öge Kaldırıldı %1"
 
 #: mainwindow.cpp:276
 #, kde-format
 msgid "Visible Data Changed"
-msgstr ""
+msgstr "Görünür Veri Değiştirildi"
 
 #: mainwindow.cpp:282
-#, fuzzy, kde-format
-#| msgid "Selection"
+#, kde-format
 msgid "Selection Changed"
-msgstr "Seçim"
+msgstr "Seçim Değiştirildi"
 
 #: mainwindow.cpp:288
 #, kde-format
 msgid "Model Changed"
-msgstr ""
+msgstr "Model Değiştirildi"
 
 #: mainwindow.cpp:303
 #, kde-format

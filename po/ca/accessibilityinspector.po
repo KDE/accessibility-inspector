@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-25 01:32+0000\n"
-"PO-Revision-Date: 2023-11-24 09:19+0100\n"
+"POT-Creation-Date: 2023-11-26 01:57+0000\n"
+"PO-Revision-Date: 2023-11-25 11:27+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -58,11 +58,9 @@ msgid "Role"
 msgstr "Rol"
 
 #: accessiblepropertiesmodel.cpp:53
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Properties"
+#, kde-format
 msgid "Property"
-msgstr "Propietats"
+msgstr "Propietat"
 
 #: accessiblepropertiesmodel.cpp:55 accessiblepropertiesmodel.cpp:249
 #, kde-format
@@ -579,13 +577,13 @@ msgctxt "@title:window"
 msgid "Properties"
 msgstr "Propietats"
 
-#: mainwindow.cpp:189
+#: mainwindow.cpp:189 propertytreeview.cpp:13
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "List of properties"
 msgstr "Llista de propietats"
 
-#: mainwindow.cpp:190
+#: mainwindow.cpp:190 propertytreeview.cpp:14
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Displays properties of the selected accessible object"
@@ -628,28 +626,27 @@ msgstr "fals"
 #: mainwindow.cpp:264
 #, kde-format
 msgid "Child Added %1"
-msgstr ""
+msgstr "Fill afegit %1"
 
 #: mainwindow.cpp:270
 #, kde-format
 msgid "Child Removed %1"
-msgstr ""
+msgstr "Fill eliminat %1"
 
 #: mainwindow.cpp:276
 #, kde-format
 msgid "Visible Data Changed"
-msgstr ""
+msgstr "Les dades visibles han canviat"
 
 #: mainwindow.cpp:282
-#, fuzzy, kde-format
-#| msgid "Selection"
+#, kde-format
 msgid "Selection Changed"
-msgstr "Selecció"
+msgstr "La selecció ha canviat"
 
 #: mainwindow.cpp:288
 #, kde-format
 msgid "Model Changed"
-msgstr ""
+msgstr "El model ha canviat"
 
 #: mainwindow.cpp:303
 #, kde-format
@@ -675,7 +672,3 @@ msgstr "Destrueix"
 #, kde-format
 msgid "Text caret moved (%1)"
 msgstr "El cursor de text s'ha mogut (%1)"
-
-#~| msgid "Accessible"
-#~ msgid "Tree of accessibles"
-#~ msgstr "Arbre d'accessibilitats"

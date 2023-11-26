@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-25 01:32+0000\n"
+"POT-Creation-Date: 2023-11-26 01:57+0000\n"
 "PO-Revision-Date: 2023-11-24 09:15+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -575,13 +575,13 @@ msgctxt "@title:window"
 msgid "Properties"
 msgstr "Lastnosti"
 
-#: mainwindow.cpp:189
+#: mainwindow.cpp:189 propertytreeview.cpp:13
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "List of properties"
 msgstr "Seznam lastnosti"
 
-#: mainwindow.cpp:190
+#: mainwindow.cpp:190 propertytreeview.cpp:14
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Displays properties of the selected accessible object"

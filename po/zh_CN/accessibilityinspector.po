@@ -1,320 +1,323 @@
-# translation of accessibilityinspector.pot to esperanto
-# Copyright (C) 2023 Free Software Foundation, Inc.
-# This file is distributed under the same license as the accessibility-inspector package.
-# Oliver Kellogg <okellogg@users.sourceforge.net, 2023.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: accessibility-inspector\n"
+"Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-26 01:57+0000\n"
-"PO-Revision-Date: 2023-11-25 09:31+0100\n"
-"Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
-"Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
-"Language: eo\n"
+"PO-Revision-Date: 2023-11-25 02:26\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Simplified\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: kdeorg\n"
+"X-Crowdin-Project-ID: 269464\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-File: /kf6-trunk/messages/accessibility-inspector/"
+"accessibilityinspector.pot\n"
+"X-Crowdin-File-ID: 48640\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Oliver Kellogg"
+msgstr "Tyson Tan"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "okellogg@users.sourceforge.net"
+msgstr "tds00@qq.com"
 
 #. i18n: ectx: Menu (edit)
 #: accessibilityinspectorui.rc:11
 #, kde-format
 msgid "&Edit"
-msgstr "R&edakti"
+msgstr "编辑(&E)"
 
 #. i18n: ectx: Menu (view)
 #: accessibilityinspectorui.rc:15
 #, kde-format
 msgid "View"
-msgstr "Vido"
+msgstr "视图"
 
 #. i18n: ectx: Menu (settings)
 #: accessibilityinspectorui.rc:20
 #, kde-format
 msgid "&Settings"
-msgstr "&Agordoj"
+msgstr "设置(&S)"
 
 #: accessibleobjecttreemodel.cpp:28 accessiblepropertiesmodel.cpp:85
 #, kde-format
 msgid "Accessible"
-msgstr "Alirebla"
+msgstr "无障碍特性"
 
 #: accessibleobjecttreemodel.cpp:30 accessiblepropertiesmodel.cpp:88
 #, kde-format
 msgid "Role"
-msgstr "Rolo"
+msgstr "角色"
 
 #: accessiblepropertiesmodel.cpp:53
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Properties"
 msgid "Property"
-msgstr "Propreco"
+msgstr "属性"
 
 #: accessiblepropertiesmodel.cpp:55 accessiblepropertiesmodel.cpp:249
 #, kde-format
 msgid "Value"
-msgstr "Valoro"
+msgstr "值"
 
 #: accessiblepropertiesmodel.cpp:86
 #, kde-format
 msgid "Name"
-msgstr "Nomo"
+msgstr "名称"
 
 #: accessiblepropertiesmodel.cpp:87 accessiblepropertiesmodel.cpp:182
 #, kde-format
 msgid "Description"
-msgstr "Priskribo"
+msgstr "描述"
 
 #: accessiblepropertiesmodel.cpp:89
 #, kde-format
 msgid "LocalizedRole"
-msgstr "LocalizedRole"
+msgstr "本地化角色"
 
 #: accessiblepropertiesmodel.cpp:90
 #, kde-format
 msgid "Visible"
-msgstr "Videbla"
+msgstr "可见"
 
 #: accessiblepropertiesmodel.cpp:91
 #, kde-format
 msgid "Default"
-msgstr "Defaŭlto"
+msgstr "默认"
 
 #: accessiblepropertiesmodel.cpp:92
 #, kde-format
 msgid "State"
-msgstr "Stato"
+msgstr "状态"
 
 #: accessiblepropertiesmodel.cpp:93
 #, kde-format
 msgid "AccessibleId"
-msgstr "AccessibleId"
+msgstr "无障碍特性ID"
 
 #: accessiblepropertiesmodel.cpp:94
 #, kde-format
 msgid "Url"
-msgstr "Url"
+msgstr "URL"
 
 #: accessiblepropertiesmodel.cpp:97
 #, kde-format
 msgid "Parent"
-msgstr "Gepatro"
+msgstr "父级"
 
 #: accessiblepropertiesmodel.cpp:99
 #, kde-format
 msgid "Children"
-msgstr "Infanoj"
+msgstr "子级"
 
 #: accessiblepropertiesmodel.cpp:103
 #, kde-format
 msgid "Broken child"
-msgstr "Rompita infano"
+msgstr "损坏的自己"
 
 #: accessiblepropertiesmodel.cpp:111
 #, kde-format
 msgid "Component"
-msgstr "Komponanto"
+msgstr "组件"
 
 #: accessiblepropertiesmodel.cpp:112
 #, kde-format
 msgid "BoundingRect"
-msgstr "BoundingRect"
+msgstr "边界矩形"
 
 #: accessiblepropertiesmodel.cpp:113
 #, kde-format
 msgid "Layer"
-msgstr "Tavolo"
+msgstr "图层"
 
 #: accessiblepropertiesmodel.cpp:114
 #, kde-format
 msgid "MDIZOrder"
-msgstr "MDIZOrder"
+msgstr "MDIZ顺序"
 
 #: accessiblepropertiesmodel.cpp:115
 #, kde-format
 msgid "Alpha"
-msgstr "Alfa"
+msgstr "透明度"
 
 #: accessiblepropertiesmodel.cpp:122
 #, kde-format
 msgid "Application"
-msgstr "Apliko"
+msgstr "应用程序"
 
 #: accessiblepropertiesmodel.cpp:123
 #, kde-format
 msgid "ToolkitName"
-msgstr "ToolkitName"
+msgstr "工具箱名称"
 
 #: accessiblepropertiesmodel.cpp:124
 #, kde-format
 msgid "Version"
-msgstr "Versio"
+msgstr "版本"
 
 #: accessiblepropertiesmodel.cpp:125
 #, kde-format
 msgid "Id"
-msgstr "Id"
+msgstr "ID"
 
 #: accessiblepropertiesmodel.cpp:126 accessiblepropertiesmodel.cpp:183
 #, kde-format
 msgid "Locale"
-msgstr "Lokaĵaro"
+msgstr "区域设置"
 
 #: accessiblepropertiesmodel.cpp:127
 #, kde-format
 msgid "BusAddress"
-msgstr "BusAdress"
+msgstr "总线地址"
 
 #: accessiblepropertiesmodel.cpp:130
 #, kde-format
 msgid "Document"
-msgstr "Dokumento"
+msgstr "文档"
 
 #: accessiblepropertiesmodel.cpp:138
 #, kde-format
 msgid "Editable Text"
-msgstr "Redaktebla Teksto"
+msgstr "可编辑文本"
 
 #: accessiblepropertiesmodel.cpp:142
 #, kde-format
 msgid "Hyperlink"
-msgstr "Hiperligilo"
+msgstr "超链接"
 
 #: accessiblepropertiesmodel.cpp:163
 #, kde-format
 msgid "Hypertext"
-msgstr "Hiperteksto"
+msgstr "超文本"
 
 #: accessiblepropertiesmodel.cpp:181
 #, kde-format
 msgid "Image"
-msgstr "Bildo"
+msgstr "图像"
 
 #: accessiblepropertiesmodel.cpp:184
 #, kde-format
 msgid "Rect"
-msgstr "Ortangul"
+msgstr "矩形"
 
 #: accessiblepropertiesmodel.cpp:187
 #, kde-format
 msgid "Selection"
-msgstr "Elekto"
+msgstr "选中内容"
 
 #: accessiblepropertiesmodel.cpp:193
 #, kde-format
 msgid "Table"
-msgstr "Tabelo"
+msgstr "表格"
 
 #: accessiblepropertiesmodel.cpp:225 accessiblepropertiesmodel.cpp:233
 #: accessiblepropertiesmodel.cpp:235
 #, kde-format
 msgid "Text"
-msgstr "Teksto"
+msgstr "文字"
 
 #: accessiblepropertiesmodel.cpp:227
 #, kde-format
 msgid "Caret Offset"
-msgstr "Ĉapela Deŝovo"
+msgstr "脱字符偏移"
 
 #: accessiblepropertiesmodel.cpp:228
 #, kde-format
 msgid "Character Count"
-msgstr "Signo-Kalkulo"
+msgstr "字符数"
 
 #: accessiblepropertiesmodel.cpp:229
 #, kde-format
 msgid "Character Rect"
-msgstr "Signa Ortangulo"
+msgstr "字符矩形"
 
 #: accessiblepropertiesmodel.cpp:239
 #, kde-format
 msgid "Selections"
-msgstr "Elektoj"
+msgstr "选中内容"
 
 #: accessiblepropertiesmodel.cpp:250
 #, kde-format
 msgid "Current"
-msgstr "Nuna"
+msgstr "当前"
 
 #: accessiblepropertiesmodel.cpp:251
 #, kde-format
 msgid "Minimum"
-msgstr "Minimumo"
+msgstr "最小"
 
 #: accessiblepropertiesmodel.cpp:252
 #, kde-format
 msgid "Maximum"
-msgstr "Maksimumo"
+msgstr "最大"
 
 #: accessiblepropertiesmodel.cpp:253
 #, kde-format
 msgid "Increment"
-msgstr "Pliigi"
+msgstr "增量"
 
 #: accessiblepropertiesmodel.cpp:256
 #, kde-format
 msgid "Socket"
-msgstr "Ingo"
+msgstr "套接字"
 
 #: accessiblepropertiesmodel.cpp:261
 #, kde-format
 msgid "Event Keyboard"
-msgstr "Eventa Klavaro"
+msgstr "事件键盘"
 
 #: accessiblepropertiesmodel.cpp:265
 #, kde-format
 msgid "Event Mouse"
-msgstr "Eventa Muso"
+msgstr "事件鼠标"
 
 #: accessiblepropertiesmodel.cpp:269
 #, kde-format
 msgid "Event Object"
-msgstr "Eventa Objekto"
+msgstr "事件对象"
 
 #: accessiblepropertiesmodel.cpp:273
 #, kde-format
 msgid "Event Window"
-msgstr "Eventa Fenestro"
+msgstr "事件窗口"
 
 #: accessiblepropertiesmodel.cpp:277
 #, kde-format
 msgid "Event Focus"
-msgstr "Eventa Fokuso"
+msgstr "事件焦点"
 
 #: accessiblepropertiesmodel.cpp:282
 #, kde-format
 msgid "Action"
-msgstr "Ago"
+msgstr "操作"
 
 #: accessibletreeview.cpp:26
 #, kde-format
 msgid "Displays a hierachical tree of accessible objects"
-msgstr "Montras hierarkian arbon de la alireblaj objektoj"
+msgstr "显示无障碍对象的层级树"
 
 #: apps/main.cpp:26
 #, kde-format
 msgid "Accessibility Inspector"
-msgstr "Inspektisto de Alirebleco"
+msgstr "无障碍特性检测工具"
 
 #: apps/main.cpp:28
 #, kde-format
 msgid "Accessibility inspector"
-msgstr "Inspektisto de alirebleco"
+msgstr "无障碍特性检测工具"
 
 #: apps/main.cpp:30
 #, kde-format
 msgid "© 2021-2023 Carl Schwan, 2021-2023 KDE Community"
-msgstr "© 2021-2023 Carl Schwan, 2021-2023 KDE-Komunumo"
+msgstr "© 2021-2023 Carl Schwan, 2021-2023 KDE Community"
 
 #: apps/main.cpp:32
 #, kde-format
@@ -324,7 +327,7 @@ msgstr "Frederik Gladhorn"
 #: apps/main.cpp:32
 #, kde-format
 msgid "Original author"
-msgstr "Origina aŭtoro"
+msgstr "原始作者"
 
 #: apps/main.cpp:34
 #, kde-format
@@ -334,339 +337,343 @@ msgstr "Carl Schwan"
 #: apps/main.cpp:35
 #, kde-format
 msgid "Maintainer"
-msgstr "Prizorganto"
+msgstr "维护者"
 
 #: clientcachedialog.cpp:29
 #, kde-format
 msgctxt "@title:window"
 msgid "Cache"
-msgstr "Kaŝamemoro"
+msgstr "缓存"
 
 #: clientcachedialog.cpp:44
 #, kde-format
 msgctxt "@action:button"
 msgid "Refresh"
-msgstr "Refreŝigi"
+msgstr "刷新"
 
 #: clientcachedialog.cpp:47
 #, kde-format
 msgctxt "@action:button"
 msgid "Clear"
-msgstr "Forviŝi"
+msgstr "清除"
 
 #: clientcachedialog.cpp:50
 #, kde-format
 msgctxt "@label"
 msgid "Strategy:"
-msgstr "Strategio:"
+msgstr "策略："
 
 #: clientcachedialog.cpp:55
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Disable"
-msgstr "Malebligi"
+msgstr "禁用"
 
 #: clientcachedialog.cpp:56
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Weak"
-msgstr "Malforta"
+msgstr "弱"
 
 #: clientcachedialog.cpp:65
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Count:"
-msgstr "Kalkulo:"
+msgstr "数量："
 
 #: clientcachedialog.cpp:99
 #, kde-format
 msgctxt "@title:row"
 msgid "Name"
-msgstr "Nomo"
+msgstr "名称"
 
 #: clientcachedialog.cpp:99
 #, kde-format
 msgctxt "@title:row"
 msgid "Role"
-msgstr "Rolo"
+msgstr "角色"
 
 #: clientcachedialog.cpp:99
 #, kde-format
 msgctxt "@title:row"
 msgid "Identifier"
-msgstr "Identigilo"
+msgstr "标识符"
 
 #: eventview.cpp:62
 #, kde-format
 msgctxt "@label"
 msgid "Accessible"
-msgstr "Alirebla"
+msgstr "无障碍特性"
 
 #: eventview.cpp:64
 #, kde-format
 msgctxt "@label"
 msgid "Role"
-msgstr "Rolo"
+msgstr "角色"
 
 #: eventview.cpp:66
 #, kde-format
 msgctxt "@label"
 msgid "Event"
-msgstr "Evento"
+msgstr "事件"
 
 #: eventview.cpp:68
 #, kde-format
 msgctxt "@label"
 msgid "Action"
-msgstr "Ago"
+msgstr "操作"
 
 #: eventview.cpp:192
 #, kde-format
 msgid "Displays all received events"
-msgstr "Montras ĉiujn ricevitajn eventojn"
+msgstr "显示所有收到的事件"
 
 #: eventview.cpp:263
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Focus"
-msgstr "Fokuso"
+msgstr "焦点"
 
 #: eventview.cpp:266
 #, kde-format
 msgctxt "Accessibility event name: state changed"
 msgid "State"
-msgstr "Stato"
+msgstr "状态"
 
 #: eventview.cpp:269
 #, kde-format
 msgctxt "Accessibility event name: name changed"
 msgid "Name"
-msgstr "Nomo"
+msgstr "名称"
 
 #: eventview.cpp:272
 #, kde-format
 msgctxt "Accessibility event name: description changed"
 msgid "Description"
-msgstr "Priskribo"
+msgstr "描述"
 
 #: eventview.cpp:275
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Window"
-msgstr "Fenestro"
+msgstr "窗口"
 
 #: eventview.cpp:278
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Document"
-msgstr "Dokumento"
+msgstr "文档"
 
 #: eventview.cpp:281
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Object"
-msgstr "Objekto"
+msgstr "对象"
 
 #: eventview.cpp:284
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Text"
-msgstr "Teksto"
+msgstr "文本"
 
 #: eventview.cpp:287
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Table"
-msgstr "Tabelo"
+msgstr "表格"
 
 #: eventview.cpp:290
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Others"
-msgstr "Aliaj"
+msgstr "其他"
 
 #: eventview.cpp:293
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "No Event"
-msgstr "Neniu Evento"
+msgstr "没有事件"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, EventViewWidget)
 #: eventview.ui:18
 #, kde-format
 msgid "Form"
-msgstr "Formo"
+msgstr "表单"
 
 #. i18n: ectx: property (placeholderText), widget (QLineEdit, accessibleFilterEdit)
 #: eventview.ui:32
 #, kde-format
 msgid "Accessible Filter"
-msgstr "Alirebla Filtrilo"
+msgstr "无障碍特性过滤器"
 
 #. i18n: ectx: property (accessibleName), widget (QLineEdit, roleFilterEdit)
 #. i18n: ectx: property (placeholderText), widget (QLineEdit, roleFilterEdit)
 #: eventview.ui:39 eventview.ui:45
 #, kde-format
 msgid "Role Filter"
-msgstr "Rola Filtrilo"
+msgstr "角色过滤器"
 
 #. i18n: ectx: property (accessibleName), widget (QComboBox, filterComboBox)
 #: eventview.ui:52
 #, kde-format
 msgid "Event Filter"
-msgstr "Eventa Filtrilo"
+msgstr "事件过滤器"
 
 #. i18n: ectx: property (accessibleName), widget (QPushButton, clearButton)
 #: eventview.ui:65
 #, kde-format
 msgid "Clear Events"
-msgstr "Forviŝi Eventojn"
+msgstr "清除事件"
 
 #. i18n: ectx: property (text), widget (QPushButton, clearButton)
 #: eventview.ui:68
 #, kde-format
 msgid "&Clear"
-msgstr "&Forviŝi"
+msgstr "清除(&C)"
 
 #: mainwindow.cpp:114
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Reset Tree"
-msgstr "Restarigi Arbon"
+msgstr "重置树"
 
 #: mainwindow.cpp:120
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Follow Focus"
-msgstr "Sekvi Fokuson"
+msgstr "跟随焦点"
 
 #: mainwindow.cpp:126
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Cache..."
-msgstr "Kaŝmemoro..."
+msgstr "缓存..."
 
 #: mainwindow.cpp:131
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Enable Accessibility"
-msgstr "Ebligi Alireblecon"
+msgstr "启用无障碍辅助功能"
 
 #: mainwindow.cpp:141
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Enable Screen Reader"
-msgstr "Ebligi Ekranlegilon"
+msgstr "启用屏幕阅读器"
 
 #: mainwindow.cpp:152
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy property value"
-msgstr "Kopii posedaĵvaloron"
+msgstr "复制属性值"
 
 #: mainwindow.cpp:179
 #, kde-format
 msgid "Tree"
-msgstr "Arbo"
+msgstr "树"
 
 #: mainwindow.cpp:184
 #, kde-format
 msgctxt "@title:window"
 msgid "Properties"
-msgstr "Proprecoj"
+msgstr "属性"
 
 #: mainwindow.cpp:189 propertytreeview.cpp:13
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "List of properties"
-msgstr "Listo de proprecoj"
+msgstr "属性列表"
 
 #: mainwindow.cpp:190 propertytreeview.cpp:14
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Displays properties of the selected accessible object"
-msgstr "Montras ecojn de la elektita alirebla objekto"
+msgstr "显示选中的无障碍特性对象的属性"
 
 #: mainwindow.cpp:200
 #, kde-format
 msgctxt "@title:window"
 msgid "Boundaries"
-msgstr "Limoj"
+msgstr "边界"
 
 #: mainwindow.cpp:204
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Boundaries"
-msgstr "Limoj"
+msgstr "边界"
 
 #: mainwindow.cpp:205
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Visualize the component boundaries"
-msgstr "Bildigi la komponantajn limojn"
+msgstr "可视化组件的边界"
 
 #: mainwindow.cpp:208
 #, kde-format
 msgctxt "@title:window"
 msgid "Events"
-msgstr "Eventoj"
+msgstr "事件"
 
 #: mainwindow.cpp:253 mainwindow.cpp:255
 #, kde-format
 msgid "true"
-msgstr "vera"
+msgstr "是"
 
 #: mainwindow.cpp:253 mainwindow.cpp:255
 #, kde-format
 msgid "false"
-msgstr "malvera"
+msgstr "否"
 
 #: mainwindow.cpp:264
 #, kde-format
 msgid "Child Added %1"
-msgstr "Ido Aldonis %1"
+msgstr ""
 
 #: mainwindow.cpp:270
 #, kde-format
 msgid "Child Removed %1"
-msgstr "Ido Forigis %1"
+msgstr ""
 
 #: mainwindow.cpp:276
 #, kde-format
 msgid "Visible Data Changed"
-msgstr "Videblaj Datumoj Ŝanĝiĝis"
+msgstr ""
 
 #: mainwindow.cpp:282
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Selection"
 msgid "Selection Changed"
-msgstr "Elekto Ŝanĝiĝis"
+msgstr "选中内容"
 
 #: mainwindow.cpp:288
 #, kde-format
 msgid "Model Changed"
-msgstr "Modelo Ŝanĝiĝis"
+msgstr ""
 
 #: mainwindow.cpp:303
 #, kde-format
 msgid "Add Object"
-msgstr "Aldoni Objekton"
+msgstr "添加对象"
 
 #: mainwindow.cpp:309
 #, kde-format
 msgid "Remove Object"
-msgstr "Forigi Objekton"
+msgstr "移除对象"
 
 #: mainwindow.cpp:320
 #, kde-format
 msgid "Create"
-msgstr "Krei"
+msgstr "创建"
 
 #: mainwindow.cpp:326
 #, kde-format
 msgid "Destroy"
-msgstr "Detrui"
+msgstr "销毁"
 
 #: mainwindow.cpp:428
 #, kde-format
 msgid "Text caret moved (%1)"
-msgstr "Teksta ĉapeleto moviĝis (%1)"
+msgstr "文本脱字符已移动 (%1)"
+
+#~ msgid "Tree of accessibles"
+#~ msgstr "无障碍特性树"

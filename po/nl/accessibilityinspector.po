@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-25 01:32+0000\n"
-"PO-Revision-Date: 2023-11-24 22:27+0100\n"
+"POT-Creation-Date: 2023-11-26 01:57+0000\n"
+"PO-Revision-Date: 2023-11-25 10:23+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -56,11 +56,9 @@ msgid "Role"
 msgstr "Rol"
 
 #: accessiblepropertiesmodel.cpp:53
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Properties"
+#, kde-format
 msgid "Property"
-msgstr "Eigenschappen"
+msgstr "Eigenschap"
 
 #: accessiblepropertiesmodel.cpp:55 accessiblepropertiesmodel.cpp:249
 #, kde-format
@@ -577,13 +575,13 @@ msgctxt "@title:window"
 msgid "Properties"
 msgstr "Eigenschappen"
 
-#: mainwindow.cpp:189
+#: mainwindow.cpp:189 propertytreeview.cpp:13
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "List of properties"
 msgstr "Lijst van eigenschappen"
 
-#: mainwindow.cpp:190
+#: mainwindow.cpp:190 propertytreeview.cpp:14
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Displays properties of the selected accessible object"
@@ -626,28 +624,27 @@ msgstr "onwaar"
 #: mainwindow.cpp:264
 #, kde-format
 msgid "Child Added %1"
-msgstr ""
+msgstr "Dochter toegevoegd %1"
 
 #: mainwindow.cpp:270
 #, kde-format
 msgid "Child Removed %1"
-msgstr ""
+msgstr "Dochter verwijderd %1"
 
 #: mainwindow.cpp:276
 #, kde-format
 msgid "Visible Data Changed"
-msgstr ""
+msgstr "Zichtbare gegevens gewijzigd"
 
 #: mainwindow.cpp:282
-#, fuzzy, kde-format
-#| msgid "Selection"
+#, kde-format
 msgid "Selection Changed"
-msgstr "Selectie"
+msgstr "Selectie gewijzigd"
 
 #: mainwindow.cpp:288
 #, kde-format
 msgid "Model Changed"
-msgstr ""
+msgstr "Model gewijzigd"
 
 #: mainwindow.cpp:303
 #, kde-format

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-25 01:32+0000\n"
-"PO-Revision-Date: 2023-11-24 06:28+0100\n"
+"POT-Creation-Date: 2023-11-26 01:57+0000\n"
+"PO-Revision-Date: 2023-11-25 06:10+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -57,11 +57,9 @@ msgid "Role"
 msgstr "როლი"
 
 #: accessiblepropertiesmodel.cpp:53
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Properties"
+#, kde-format
 msgid "Property"
-msgstr "თვისებები"
+msgstr "თვისება"
 
 #: accessiblepropertiesmodel.cpp:55 accessiblepropertiesmodel.cpp:249
 #, kde-format
@@ -578,13 +576,13 @@ msgctxt "@title:window"
 msgid "Properties"
 msgstr "თვისებები"
 
-#: mainwindow.cpp:189
+#: mainwindow.cpp:189 propertytreeview.cpp:13
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "List of properties"
 msgstr "თვისებების ჩამონათვალი"
 
-#: mainwindow.cpp:190
+#: mainwindow.cpp:190 propertytreeview.cpp:14
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Displays properties of the selected accessible object"
@@ -627,28 +625,27 @@ msgstr "ცრუ"
 #: mainwindow.cpp:264
 #, kde-format
 msgid "Child Added %1"
-msgstr ""
+msgstr "დაემატა შვილი %1"
 
 #: mainwindow.cpp:270
 #, kde-format
 msgid "Child Removed %1"
-msgstr ""
+msgstr "წაიშალა შვილი %1"
 
 #: mainwindow.cpp:276
 #, kde-format
 msgid "Visible Data Changed"
-msgstr ""
+msgstr "ხილული მონაცემები შეიცვალა"
 
 #: mainwindow.cpp:282
-#, fuzzy, kde-format
-#| msgid "Selection"
+#, kde-format
 msgid "Selection Changed"
-msgstr "მონიშნული"
+msgstr "მონიშნული შეიცვალა"
 
 #: mainwindow.cpp:288
 #, kde-format
 msgid "Model Changed"
-msgstr ""
+msgstr "მოდელი შეიცვალა"
 
 #: mainwindow.cpp:303
 #, kde-format
