@@ -20,3 +20,5 @@ PropertyTreeWidget::PropertyTreeWidget(QWidget *parent)
 }
 
 PropertyTreeWidget::~PropertyTreeWidget() = default;
+
+#include "moc_propertytreewidget.cpp"
