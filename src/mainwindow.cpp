@@ -14,9 +14,7 @@
 #include "propertytreewidget.h"
 #include "uiview.h"
 
-#include <QClipboard>
 #include <QDockWidget>
-#include <QMenu>
 #include <QPointer>
 #include <QSettings>
 
