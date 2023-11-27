@@ -5,9 +5,7 @@
 */
 
 #include "mainwindow.h"
-#include "accessibilityinspector_debug.h"
 #include "accessibleobjecttreemodel.h"
-#include "accessiblepropertiesmodel.h"
 #include "accessibletreewidget.h"
 #include "accessiblewrapper.h"
 #include "eventview.h"
@@ -174,8 +172,6 @@ void MainWindow::initUi()
     uiDocker->setObjectName(QLatin1StringView("boundaries"));
     uiDocker->setFeatures(QDockWidget::DockWidgetClosable | QDockWidget::DockWidgetMovable | QDockWidget::DockWidgetFloatable);
     m_uiview = new UiView(uiDocker);
-    m_uiview->setAccessibleName(i18nc("@info:whatsthis", "Boundaries"));
-    m_uiview->setAccessibleDescription(i18nc("@info:whatsthis", "Visualize the component boundaries"));
     uiDocker->setWidget(m_uiview);
 
     auto eventsDocker = new QDockWidget(i18nc("@title:window", "Events"), this);

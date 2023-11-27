@@ -6,6 +6,7 @@
 
 #include "uiview.h"
 
+#include <KLocalizedString>
 #include <QPainter>
 #include <QVBoxLayout>
 
@@ -253,6 +254,9 @@ UiView::UiView(QWidget *parent)
     : QScrollArea(parent)
     , m_uiWidget(new UiWidget(this))
 {
+    setAccessibleName(i18nc("@info:whatsthis", "Boundaries"));
+    setAccessibleDescription(i18nc("@info:whatsthis", "Visualize the component boundaries"));
+
     auto widget = new QWidget(this);
     auto layout = new QVBoxLayout(widget);
 
