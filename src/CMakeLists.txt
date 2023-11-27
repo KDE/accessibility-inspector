@@ -38,7 +38,6 @@ target_sources(libaccessibilityinspector PRIVATE
     propertytreewidget.cpp
 
     accessibilityinspector.qrc
-    ${accessibleapps_UI_HDRS}
 )
 
 ki18n_wrap_ui(libaccessibilityinspector
