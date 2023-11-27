@@ -23,6 +23,8 @@ public:
 
     void updateDetails(const QAccessibleClient::AccessibleObject &object, bool force);
 
+    void copyValue();
+
 private:
     PropertyTreeView *const mPropertyTreeView;
     ObjectPropertiesModel *const mPropertyModel;

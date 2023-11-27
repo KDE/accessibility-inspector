@@ -8,6 +8,8 @@
 #include "accessiblepropertiesmodel.h"
 #include "propertytreeview.h"
 #include "qaccessibilityclient/accessibleobject.h"
+#include <QClipboard>
+#include <QGuiApplication>
 #include <QVBoxLayout>
 
 PropertyTreeWidget::PropertyTreeWidget(QWidget *parent)
@@ -17,6 +19,7 @@ PropertyTreeWidget::PropertyTreeWidget(QWidget *parent)
 {
     auto mainLayout = new QVBoxLayout(this);
     mainLayout->setObjectName(QLatin1StringView("mainLayout"));
+    mainLayout->setContentsMargins({});
 
     mPropertyTreeView->setObjectName(QLatin1StringView("mPropertyTreeView"));
     mainLayout->addWidget(mPropertyTreeView);
@@ -39,4 +42,19 @@ void PropertyTreeWidget::updateDetails(const QAccessibleClient::AccessibleObject
     mPropertyTreeView->resizeColumnToContents(0);
 }
 
+void PropertyTreeWidget::copyValue()
+{
+    QModelIndex selected = mPropertyTreeView->currentIndex();
+
+    if (!selected.isValid())
+        return;
+
+    if (selected.column() == 0) {
+        selected = mPropertyTreeView->model()->index(selected.row(), 1, selected.parent());
+        if (!selected.isValid())
+            return;
+    }
+
+    QGuiApplication::clipboard()->setText(selected.data(Qt::DisplayRole).toString());
+}
 #include "moc_propertytreewidget.cpp"

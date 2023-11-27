@@ -11,6 +11,7 @@
 #include "accessibletreewidget.h"
 #include "accessiblewrapper.h"
 #include "eventview.h"
+#include "propertytreewidget.h"
 #include "uiview.h"
 
 #include <QClipboard>
@@ -153,23 +154,7 @@ void MainWindow::initActions()
     ac->addAction(QStringLiteral("copy_property_value"), m_copyValueAction);
     ac->setDefaultShortcut(m_copyValueAction, QKeySequence::Copy);
     m_copyValueAction->setShortcuts(QKeySequence::Copy);
-    connect(m_copyValueAction, &QAction::triggered, this, &MainWindow::copyValue);
-}
-
-void MainWindow::copyValue()
-{
-    QModelIndex selected = m_propertyView->currentIndex();
-
-    if (!selected.isValid())
-        return;
-
-    if (selected.column() == 0) {
-        selected = m_propertyView->model()->index(selected.row(), 1, selected.parent());
-        if (!selected.isValid())
-            return;
-    }
-
-    QGuiApplication::clipboard()->setText(selected.data(Qt::DisplayRole).toString());
+    connect(m_copyValueAction, &QAction::triggered, m_propertyView, &PropertyTreeWidget::copyValue);
 }
 
 void MainWindow::initUi()
@@ -184,18 +169,8 @@ void MainWindow::initUi()
     auto propertyDocker = new QDockWidget(i18nc("@title:window", "Properties"), this);
     propertyDocker->setObjectName(QLatin1StringView("properties"));
     propertyDocker->setFeatures(QDockWidget::DockWidgetClosable | QDockWidget::DockWidgetMovable | QDockWidget::DockWidgetFloatable);
-    m_propertyView = new QTreeView(propertyDocker);
+    m_propertyView = new PropertyTreeWidget(propertyDocker);
     propertyDocker->setWidget(m_propertyView);
-    m_propertyView->setAccessibleName(i18nc("@info:whatsthis", "List of properties"));
-    m_propertyView->setAccessibleDescription(i18nc("@info:whatsthis", "Displays properties of the selected accessible object"));
-    m_propertyView->setRootIsDecorated(false);
-    m_propertyView->setItemsExpandable(true);
-    m_propertyView->setExpandsOnDoubleClick(false);
-    m_propertyView->setEditTriggers(QAbstractItemView::DoubleClicked | QAbstractItemView::AnyKeyPressed | QAbstractItemView::EditKeyPressed);
-    m_propertyModel = new ObjectPropertiesModel(this);
-    m_propertyView->setModel(m_propertyModel);
-    m_propertyView->setAlternatingRowColors(true);
-    connect(m_propertyView, &QTreeView::doubleClicked, m_propertyModel, &ObjectPropertiesModel::doubleClicked);
 
     auto uiDocker = new QDockWidget(i18nc("@title:window", "Boundaries"), this);
     uiDocker->setObjectName(QLatin1StringView("boundaries"));
@@ -238,13 +213,7 @@ void MainWindow::showClientCache()
 
 void MainWindow::updateDetails(const AccessibleObject &object, bool force)
 {
-    if (!force && object != m_propertyModel->currentObject())
-        return;
-
-    m_propertyModel->setAccessibleObject(object);
-    for (int r = m_propertyModel->rowCount() - 1; r >= 0; --r)
-        m_propertyView->setExpanded(m_propertyModel->indexFromItem(m_propertyModel->item(r, 0)), true);
-    m_propertyView->resizeColumnToContents(0);
+    m_propertyView->updateDetails(object, force);
 }
 
 void MainWindow::stateChanged(const QAccessibleClient::AccessibleObject &object, const QString &state, bool active)

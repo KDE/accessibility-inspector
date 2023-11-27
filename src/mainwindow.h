@@ -16,11 +16,10 @@
 
 #include "clientcachedialog.h"
 
-class ObjectPropertiesModel;
 class EventsWidget;
 class UiView;
 class AccessibleTreeWidget;
-
+class PropertyTreeWidget;
 class LIBACCESSIBILITYINSPECTOR_EXPORT MainWindow : public KXmlGuiWindow
 {
     Q_OBJECT
@@ -36,7 +35,6 @@ private Q_SLOTS:
     void selectionChanged(const QModelIndex &current, const QModelIndex &);
     void anchorClicked(const QUrl &url);
     void showClientCache();
-    void copyValue();
 
     void added(const QAccessibleClient::AccessibleObject &object);
     void removed(const QAccessibleClient::AccessibleObject &object);
@@ -90,8 +88,7 @@ private:
 
     AccessibleTreeWidget *const mAccessibleTreeWidget;
 
-    QTreeView *m_propertyView = nullptr;
-    ObjectPropertiesModel *m_propertyModel = nullptr;
+    PropertyTreeWidget *m_propertyView = nullptr;
 
     EventsWidget *m_eventsWidget = nullptr;
     UiView *m_uiview = nullptr;
