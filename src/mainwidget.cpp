@@ -34,6 +34,7 @@ MainWidget::MainWidget(QAccessibleClient::Registry *registry, QWidget *parent)
 
     mAccessibleTreeWidget->setObjectName(QLatin1StringView("mAccessibleTreeWidget"));
     mTabWidget->setObjectName(QLatin1StringView("mTabWidget"));
+    mTabWidget->setMovable(true);
 
     mSplitter->addWidget(mAccessibleTreeWidget);
     mSplitter->addWidget(mTabWidget);
