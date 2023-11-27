@@ -41,6 +41,7 @@
   <description>
     <p>Accessibility Inspector is as the name suggests an inspector for your application accessibility tree. It lets you check all the items exposed via At-SPI, too.</p>
     <p xml:lang="ca">L'inspector d'accessibilitat és, com el nom suggereix, un inspector de l'arbre d'accessibilitat de l'aplicació. Permet comprovar tots els elements exposats mitjançant At-SPI, també.</p>
+    <p xml:lang="ca-valencia">L'inspector d'accessibilitat és, com el nom suggerix, un inspector de l'arbre d'accessibilitat de l'aplicació. Permet comprovar tots els elements exposats mitjançant At-SPI, també.</p>
     <p xml:lang="eo">Kiel la nomo sugestus, Accessibility Inspector estas inspektilo por la alireblo-arbo de via aplikaĵo. Ĝi ebligas al vi ankaŭ kontroli ĉiujn objektojn elmontritajn per At-SPI.</p>
     <p xml:lang="es">El inspector de accesibilidad es, como su nombre sugiere, un inspector del árbol de accesibilidad de las aplicaciones. También permite comprobar todos los elementos expuestos mediante At-SPI.</p>
     <p xml:lang="ka">წვდომადობის ინსპექტორი, როგორც ამას სახელით მიხვდებოდით, ინსპექტორია თქვენი აპლიკაციის წვდომადობის ხისთვის. ის საშუალებას გაძლევთ, შეამოწმოთ ყველა ელემენტი, რომელსაც At-SPI გამოაჩენს.</p>
