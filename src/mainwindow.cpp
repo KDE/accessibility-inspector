@@ -154,7 +154,7 @@ void MainWindow::initActions()
     ac->addAction(QStringLiteral("copy_property_value"), m_copyValueAction);
     ac->setDefaultShortcut(m_copyValueAction, QKeySequence::Copy);
     m_copyValueAction->setShortcuts(QKeySequence::Copy);
-    connect(m_copyValueAction, &QAction::triggered, m_propertyView, &PropertyTreeWidget::copyValue);
+    connect(m_copyValueAction, &QAction::triggered, mPropertyTreeWidget, &PropertyTreeWidget::copyValue);
 }
 
 void MainWindow::initUi()
@@ -169,8 +169,8 @@ void MainWindow::initUi()
     auto propertyDocker = new QDockWidget(i18nc("@title:window", "Properties"), this);
     propertyDocker->setObjectName(QLatin1StringView("properties"));
     propertyDocker->setFeatures(QDockWidget::DockWidgetClosable | QDockWidget::DockWidgetMovable | QDockWidget::DockWidgetFloatable);
-    m_propertyView = new PropertyTreeWidget(propertyDocker);
-    propertyDocker->setWidget(m_propertyView);
+    mPropertyTreeWidget = new PropertyTreeWidget(propertyDocker);
+    propertyDocker->setWidget(mPropertyTreeWidget);
 
     auto uiDocker = new QDockWidget(i18nc("@title:window", "Boundaries"), this);
     uiDocker->setObjectName(QLatin1StringView("boundaries"));
@@ -213,7 +213,7 @@ void MainWindow::showClientCache()
 
 void MainWindow::updateDetails(const AccessibleObject &object, bool force)
 {
-    m_propertyView->updateDetails(object, force);
+    mPropertyTreeWidget->updateDetails(object, force);
 }
 
 void MainWindow::stateChanged(const QAccessibleClient::AccessibleObject &object, const QString &state, bool active)

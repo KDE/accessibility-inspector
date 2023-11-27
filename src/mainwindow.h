@@ -88,7 +88,7 @@ private:
 
     AccessibleTreeWidget *const mAccessibleTreeWidget;
 
-    PropertyTreeWidget *m_propertyView = nullptr;
+    PropertyTreeWidget *mPropertyTreeWidget = nullptr;
 
     EventsWidget *m_eventsWidget = nullptr;
     UiView *m_uiview = nullptr;
