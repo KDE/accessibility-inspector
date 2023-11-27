@@ -10,9 +10,13 @@
 class QSplitter;
 class QTabWidget;
 class AccessibleTreeWidget;
+class PropertyTreeWidget;
+class EventsWidget;
+class UiView;
 namespace QAccessibleClient
 {
 class Registry;
+class AccessibleObject;
 }
 class LIBACCESSIBILITYINSPECTOR_TEST_EXPORT MainWidget : public QWidget
 {
@@ -21,8 +25,13 @@ public:
     explicit MainWidget(QAccessibleClient::Registry *registry, QWidget *parent = nullptr);
     ~MainWidget() override;
 
+    void updateDetails(const QAccessibleClient::AccessibleObject &object, bool force);
+
 private:
     QSplitter *const mSplitter;
     QTabWidget *const mTabWidget;
     AccessibleTreeWidget *const mAccessibleTreeWidget;
+    PropertyTreeWidget *const mPropertyTreeWidget;
+    EventsWidget *const mEventsWidget;
+    UiView *const mUiview;
 };
