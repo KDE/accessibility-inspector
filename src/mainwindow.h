@@ -7,10 +7,13 @@
 #pragma once
 
 #include "libaccessibilityinspector_export.h"
-#include "qaccessibilityclient/registry.h"
 #include <KXmlGuiWindow>
 #include <QAction>
 class MainWidget;
+namespace QAccessibleClient
+{
+class Registry;
+}
 class LIBACCESSIBILITYINSPECTOR_EXPORT MainWindow : public KXmlGuiWindow
 {
     Q_OBJECT

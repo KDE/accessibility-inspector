@@ -73,7 +73,7 @@ private:
     // The reason is that we end up in endless loops with other accessible tools such as accerciser.
     // No normal application should have to do this.
     static void customUpdateHandler(QAccessibleEvent *event);
-    static QAccessible::UpdateHandler m_originalAccessibilityUpdateHandler;
+    static QAccessible::UpdateHandler mOriginalAccessibilityUpdateHandler;
     static QObject *m_textEditForAccessibilityUpdateHandler;
 };
 

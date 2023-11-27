@@ -25,7 +25,7 @@ class UiWidget : public QWidget
 {
     Q_OBJECT
 public:
-    explicit UiWidget(UiView *view);
+    explicit UiWidget(UiView *view = nullptr);
     void setAccessibleObject(const QAccessibleClient::AccessibleObject &acc);
     QSize sizeHint() const override;
 

@@ -178,7 +178,7 @@ private:
 };
 
 using namespace QAccessibleClient;
-QAccessible::UpdateHandler EventsWidget::m_originalAccessibilityUpdateHandler = nullptr;
+QAccessible::UpdateHandler EventsWidget::mOriginalAccessibilityUpdateHandler = nullptr;
 QObject *EventsWidget::m_textEditForAccessibilityUpdateHandler = nullptr;
 
 EventsWidget::EventsWidget(QWidget *parent)
@@ -209,8 +209,7 @@ EventsWidget::EventsWidget(QWidget *parent)
     firstFilterItem->setFlags(Qt::ItemIsEnabled);
     filerModel->appendRow(firstFilterItem);
 
-    QVector<EventType> filterList;
-    filterList << StateChanged << NameChanged << DescriptionChanged << Window << Focus << Document << Object << Text << Table << Others;
+    const QVector<EventType> filterList = {StateChanged, NameChanged, DescriptionChanged, Window, Focus, Document, Object, Text, Table, Others};
     for (int i = 0; i < filterList.count(); ++i) {
         EventType t = filterList[i];
         auto item = new QStandardItem(eventName(t));
@@ -241,8 +240,8 @@ EventsWidget::EventsWidget(QWidget *parent)
 
 void EventsWidget::installUpdateHandler()
 {
-    m_originalAccessibilityUpdateHandler = QAccessible::installUpdateHandler(customUpdateHandler);
-    if (!m_originalAccessibilityUpdateHandler)
+    mOriginalAccessibilityUpdateHandler = QAccessible::installUpdateHandler(customUpdateHandler);
+    if (!mOriginalAccessibilityUpdateHandler)
         QTimer::singleShot(500, this, &EventsWidget::installUpdateHandler);
 }
 
@@ -298,6 +297,8 @@ QString EventsWidget::eventName(EventType eventType) const
 
 void EventsWidget::loadSettings(QSettings &settings)
 {
+    // FIXME USE this method!!!
+
     settings.beginGroup(QStringLiteral("events"));
 
     bool eventsFilterOk;
@@ -327,6 +328,7 @@ void EventsWidget::loadSettings(QSettings &settings)
 
 void EventsWidget::saveSettings(QSettings &settings)
 {
+    // TODO use this method
     settings.beginGroup(QStringLiteral("events"));
     settings.setValue(QStringLiteral("eventsFilter"), int(m_proxyModel->filter()));
 

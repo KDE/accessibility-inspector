@@ -18,6 +18,7 @@
 #include <KLocalizedString>
 #include <KStandardAction>
 
+#include "qaccessibilityclient/registry.h"
 #include <qaccessibilityclient/registrycache_p.h>
 
 using namespace QAccessibleClient;
