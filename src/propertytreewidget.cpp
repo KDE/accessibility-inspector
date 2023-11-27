@@ -46,13 +46,15 @@ void PropertyTreeWidget::copyValue()
 {
     QModelIndex selected = mPropertyTreeView->currentIndex();
 
-    if (!selected.isValid())
+    if (!selected.isValid()) {
         return;
+    }
 
     if (selected.column() == 0) {
         selected = mPropertyTreeView->model()->index(selected.row(), 1, selected.parent());
-        if (!selected.isValid())
+        if (!selected.isValid()) {
             return;
+        }
     }
 
     QGuiApplication::clipboard()->setText(selected.data(Qt::DisplayRole).toString());
