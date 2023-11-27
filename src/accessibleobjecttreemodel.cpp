@@ -265,7 +265,7 @@ bool AccessibleObjectTreeModel::addAccessible(const QAccessibleClient::Accessibl
     beginInsertRows(parentIndex, idx, idx);
     auto parentWrapper = static_cast<AccessibleWrapper *>(parentIndex.internalPointer());
     Q_ASSERT(parentWrapper);
-    parentWrapper->m_children.insert(idx, new AccessibleWrapper(object, parentWrapper));
+    parentWrapper->mChildren.insert(idx, new AccessibleWrapper(object, parentWrapper));
     endInsertRows();
     return true;
 }
@@ -292,7 +292,7 @@ bool AccessibleObjectTreeModel::removeAccessible(const QModelIndex &index)
     if (parent.isValid()) {
         auto wraper = static_cast<AccessibleWrapper *>(parent.internalPointer());
         Q_ASSERT(wraper);
-        delete wraper->m_children.takeAt(row);
+        delete wraper->mChildren.takeAt(row);
         removed = true;
     } else {
         auto wraper = static_cast<AccessibleWrapper *>(index.internalPointer());

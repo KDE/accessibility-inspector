@@ -29,19 +29,19 @@ int ObjectPropertiesModel::columnCount(const QModelIndex &parent) const
 
 void ObjectPropertiesModel::slotDataChanged(QStandardItem *item)
 {
-    if (item == m_textItem) {
+    if (item == mTextItem) {
         QString newText = item->data(Qt::EditRole).toString();
-        m_acc.setText(newText);
-    } else if (item == m_valueItem) {
+        mAccessibleObject.setText(newText);
+    } else if (item == mValueItem) {
         bool couldConvert;
         const double value = item->data(Qt::EditRole).toDouble(&couldConvert);
         if (couldConvert) {
-            m_acc.setCurrentValue(value);
+            mAccessibleObject.setCurrentValue(value);
         }
 
-        m_valueItem = nullptr; // Prevent recursion
-        item->setData(m_acc.currentValue(), Qt::DisplayRole);
-        m_valueItem = item;
+        mValueItem = nullptr; // Prevent recursion
+        item->setData(mAccessibleObject.currentValue(), Qt::DisplayRole);
+        mValueItem = item;
     }
 }
 
@@ -69,9 +69,9 @@ QHash<int, QByteArray> ObjectPropertiesModel::roleNames() const
 void ObjectPropertiesModel::setAccessibleObject(const QAccessibleClient::AccessibleObject &acc)
 {
     beginResetModel();
-    m_acc = acc;
-    m_textItem = nullptr;
-    m_valueItem = nullptr;
+    mAccessibleObject = acc;
+    mTextItem = nullptr;
+    mValueItem = nullptr;
 
     clear();
 
@@ -230,7 +230,7 @@ void ObjectPropertiesModel::setAccessibleObject(const QAccessibleClient::Accessi
 
         QString text = acc.text();
         if (interfaces.testFlag(QAccessibleClient::AccessibleObject::EditableTextInterface)) {
-            append(i18n("Text"), text, item, &m_textItem);
+            append(i18n("Text"), text, item, &mTextItem);
         } else {
             append(i18n("Text"), text, item);
         }
@@ -247,7 +247,7 @@ void ObjectPropertiesModel::setAccessibleObject(const QAccessibleClient::Accessi
     }
     if (interfaces.testFlag(QAccessibleClient::AccessibleObject::ValueInterface)) {
         QStandardItem *item = append(i18n("Value"));
-        append(i18n("Current"), acc.currentValue(), item, &m_valueItem);
+        append(i18n("Current"), acc.currentValue(), item, &mValueItem);
         append(i18n("Minimum"), acc.minimumValue(), item);
         append(i18n("Maximum"), acc.maximumValue(), item);
         append(i18n("Increment"), acc.minimumValueIncrement(), item);
@@ -294,7 +294,7 @@ void ObjectPropertiesModel::setAccessibleObject(const QAccessibleClient::Accessi
 
 AccessibleObject ObjectPropertiesModel::currentObject() const
 {
-    return m_acc;
+    return mAccessibleObject;
 }
 
 void ObjectPropertiesModel::doubleClicked(const QModelIndex &index)
@@ -302,7 +302,7 @@ void ObjectPropertiesModel::doubleClicked(const QModelIndex &index)
     if (!index.isValid() || !index.parent().isValid() || index.parent().data().toString() != QLatin1String("Action")) // FIXME i18n ???
         return;
 
-    const auto actions{m_acc.actions()};
+    const auto actions{mAccessibleObject.actions()};
     for (const QSharedPointer<QAction> &action : actions) {
         if (action->text() == data(index).toString()) {
             action->trigger();

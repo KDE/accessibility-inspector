@@ -5,10 +5,10 @@
 */
 
 #pragma once
-
+#include "libaccessibilityinspector_private_export.h"
 #include <QTreeView>
 
-class PropertyTreeView : public QTreeView
+class LIBACCESSIBILITYINSPECTOR_TEST_EXPORT PropertyTreeView : public QTreeView
 {
     Q_OBJECT
 public:

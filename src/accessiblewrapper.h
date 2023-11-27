@@ -22,6 +22,6 @@ public:
 private:
     friend class AccessibleObjectTreeModel;
 
-    AccessibleWrapper *const m_parent;
-    QList<AccessibleWrapper *> m_children;
+    AccessibleWrapper *const mParent;
+    QList<AccessibleWrapper *> mChildren;
 };

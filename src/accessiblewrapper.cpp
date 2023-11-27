@@ -8,37 +8,37 @@
 
 AccessibleWrapper::AccessibleWrapper(const QAccessibleClient::AccessibleObject &object, AccessibleWrapper *parent)
     : acc(object)
-    , m_parent(parent)
+    , mParent(parent)
 {
 }
 
 AccessibleWrapper::~AccessibleWrapper()
 {
-    qDeleteAll(m_children);
+    qDeleteAll(mChildren);
 }
 
 int AccessibleWrapper::childCount() const
 {
-    if (m_children.isEmpty())
+    if (mChildren.isEmpty())
         return acc.childCount();
-    return m_children.count();
+    return mChildren.count();
 }
 
 AccessibleWrapper *AccessibleWrapper::parent() const
 {
-    return m_parent;
+    return mParent;
 }
 
 AccessibleWrapper *AccessibleWrapper::child(int index)
 {
-    if (m_children.isEmpty()) {
+    if (mChildren.isEmpty()) {
         const QList<QAccessibleClient::AccessibleObject> children = acc.children();
         for (const QAccessibleClient::AccessibleObject &c : children) {
-            m_children.append(new AccessibleWrapper(c, this));
+            mChildren.append(new AccessibleWrapper(c, this));
         }
     }
-    if (index >= 0 && index < m_children.count()) {
-        return m_children.at(index);
+    if (index >= 0 && index < mChildren.count()) {
+        return mChildren.at(index);
     }
     return nullptr;
 }
