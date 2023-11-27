@@ -88,10 +88,10 @@ private:
 
     AccessibleTreeWidget *const mAccessibleTreeWidget;
 
-    PropertyTreeWidget *mPropertyTreeWidget = nullptr;
+    PropertyTreeWidget *const mPropertyTreeWidget;
 
-    EventsWidget *m_eventsWidget = nullptr;
-    UiView *m_uiview = nullptr;
+    EventsWidget *const mEventsWidget;
+    UiView *const mUiview;
 
     QAction *m_resetTreeAction = nullptr;
     QAction *m_followFocusAction = nullptr;

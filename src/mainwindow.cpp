@@ -28,6 +28,9 @@ MainWindow::MainWindow(QWidget *parent)
     : KXmlGuiWindow(parent)
     , m_registry(new QAccessibleClient::Registry(this))
     , mAccessibleTreeWidget(new AccessibleTreeWidget(m_registry, this))
+    , mPropertyTreeWidget(new PropertyTreeWidget(this))
+    , mEventsWidget(new EventsWidget(this))
+    , mUiview(new UiView(this))
 {
     initUi();
     initActions();
@@ -39,7 +42,7 @@ MainWindow::MainWindow(QWidget *parent)
     restoreGeometry(settings.value(QStringLiteral("geometry")).toByteArray());
     restoreState(settings.value(QStringLiteral("windowState")).toByteArray());
 
-    m_eventsWidget->loadSettings(settings);
+    mEventsWidget->loadSettings(settings);
 
     connect(mAccessibleTreeWidget, &AccessibleTreeWidget::accessibleTreeviewSelectionChanged, this, &MainWindow::selectionChanged);
     connect(m_registry, &QAccessibleClient::Registry::added, this, &MainWindow::added);
@@ -97,7 +100,7 @@ void MainWindow::closeEvent(QCloseEvent *event)
     settings.setValue(QStringLiteral("geometry"), saveGeometry());
     settings.setValue(QStringLiteral("windowState"), saveState());
 
-    m_eventsWidget->saveSettings(settings);
+    mEventsWidget->saveSettings(settings);
 
     settings.sync();
 
@@ -165,21 +168,18 @@ void MainWindow::initUi()
     auto propertyDocker = new QDockWidget(i18nc("@title:window", "Properties"), this);
     propertyDocker->setObjectName(QLatin1StringView("properties"));
     propertyDocker->setFeatures(QDockWidget::DockWidgetClosable | QDockWidget::DockWidgetMovable | QDockWidget::DockWidgetFloatable);
-    mPropertyTreeWidget = new PropertyTreeWidget(propertyDocker);
     propertyDocker->setWidget(mPropertyTreeWidget);
 
     auto uiDocker = new QDockWidget(i18nc("@title:window", "Boundaries"), this);
     uiDocker->setObjectName(QLatin1StringView("boundaries"));
     uiDocker->setFeatures(QDockWidget::DockWidgetClosable | QDockWidget::DockWidgetMovable | QDockWidget::DockWidgetFloatable);
-    m_uiview = new UiView(uiDocker);
-    uiDocker->setWidget(m_uiview);
+    uiDocker->setWidget(mUiview);
 
     auto eventsDocker = new QDockWidget(i18nc("@title:window", "Events"), this);
     eventsDocker->setObjectName(QLatin1StringView("events"));
     eventsDocker->setFeatures(QDockWidget::DockWidgetClosable | QDockWidget::DockWidgetMovable | QDockWidget::DockWidgetFloatable);
-    m_eventsWidget = new EventsWidget(eventsDocker);
-    connect(m_eventsWidget, &EventsWidget::anchorClicked, this, &MainWindow::anchorClicked);
-    eventsDocker->setWidget(m_eventsWidget);
+    connect(mEventsWidget, &EventsWidget::anchorClicked, this, &MainWindow::anchorClicked);
+    eventsDocker->setWidget(mEventsWidget);
 
     addDockWidget(Qt::LeftDockWidgetArea, treeDocker);
     addDockWidget(Qt::RightDockWidgetArea, propertyDocker);
@@ -193,7 +193,7 @@ void MainWindow::initUi()
 
 void MainWindow::anchorClicked(const QUrl &url)
 {
-    AccessibleObject object = m_registry->accessibleFromUrl(url);
+    const AccessibleObject object = m_registry->accessibleFromUrl(url);
     mAccessibleTreeWidget->setCurrentObject(object);
 }
 
@@ -213,10 +213,10 @@ void MainWindow::updateDetails(const AccessibleObject &object, bool force)
 void MainWindow::stateChanged(const QAccessibleClient::AccessibleObject &object, const QString &state, bool active)
 {
     if (state == QLatin1String("focused")) {
-        m_eventsWidget->addLog(object, EventsWidget::Focus, (active ? i18n("true") : i18n("false")));
+        mEventsWidget->addLog(object, EventsWidget::Focus, (active ? i18n("true") : i18n("false")));
     } else {
         const QString s = state + QStringLiteral(": ") + (active ? i18n("true") : i18n("false"));
-        m_eventsWidget->addLog(object, EventsWidget::StateChanged, s);
+        mEventsWidget->addLog(object, EventsWidget::StateChanged, s);
     }
     updateDetails(object);
 }
@@ -224,31 +224,31 @@ void MainWindow::stateChanged(const QAccessibleClient::AccessibleObject &object,
 void MainWindow::childAdded(const QAccessibleClient::AccessibleObject &object, int childIndex)
 {
     updateDetails(object);
-    m_eventsWidget->addLog(object, EventsWidget::Object, i18n("Child Added %1", QString::number(childIndex)));
+    mEventsWidget->addLog(object, EventsWidget::Object, i18n("Child Added %1", QString::number(childIndex)));
 }
 
 void MainWindow::childRemoved(const QAccessibleClient::AccessibleObject &object, int childIndex)
 {
     updateDetails(object);
-    m_eventsWidget->addLog(object, EventsWidget::Object, i18n("Child Removed %1", QString::number(childIndex)));
+    mEventsWidget->addLog(object, EventsWidget::Object, i18n("Child Removed %1", QString::number(childIndex)));
 }
 
 void MainWindow::visibleDataChanged(const QAccessibleClient::AccessibleObject &object)
 {
     updateDetails(object);
-    m_eventsWidget->addLog(object, EventsWidget::Object, i18n("Visible Data Changed"));
+    mEventsWidget->addLog(object, EventsWidget::Object, i18n("Visible Data Changed"));
 }
 
 void MainWindow::selectionChanged2(const QAccessibleClient::AccessibleObject &object)
 {
     updateDetails(object);
-    m_eventsWidget->addLog(object, EventsWidget::Table, i18n("Selection Changed"));
+    mEventsWidget->addLog(object, EventsWidget::Table, i18n("Selection Changed"));
 }
 
 void MainWindow::modelChanged(const QAccessibleClient::AccessibleObject &object)
 {
     updateDetails(object);
-    m_eventsWidget->addLog(object, EventsWidget::Table, i18n("Model Changed"));
+    mEventsWidget->addLog(object, EventsWidget::Table, i18n("Model Changed"));
 }
 
 void MainWindow::selectionChanged(const QModelIndex &current, const QModelIndex &)
@@ -257,19 +257,19 @@ void MainWindow::selectionChanged(const QModelIndex &current, const QModelIndex 
     if (current.isValid() && current.internalPointer()) {
         acc = static_cast<AccessibleWrapper *>(current.internalPointer())->acc;
     }
-    m_uiview->setAccessibleObject(acc);
+    mUiview->setAccessibleObject(acc);
     updateDetails(acc, true);
 }
 
 void MainWindow::added(const QAccessibleClient::AccessibleObject &object)
 {
-    m_eventsWidget->addLog(object, EventsWidget::Object, i18n("Add Object"));
+    mEventsWidget->addLog(object, EventsWidget::Object, i18n("Add Object"));
     mAccessibleTreeWidget->accessibleObjectTreeModel()->addAccessible(object);
 }
 
 void MainWindow::removed(const QAccessibleClient::AccessibleObject &object)
 {
-    m_eventsWidget->addLog(object, EventsWidget::Object, i18n("Remove Object"));
+    mEventsWidget->addLog(object, EventsWidget::Object, i18n("Remove Object"));
     mAccessibleTreeWidget->accessibleObjectTreeModel()->removeAccessible(object);
 }
 
@@ -280,13 +280,13 @@ void MainWindow::defunct(const QAccessibleClient::AccessibleObject &object)
 
 void MainWindow::windowCreated(const QAccessibleClient::AccessibleObject &object)
 {
-    m_eventsWidget->addLog(object, EventsWidget::Window, i18n("Create"));
+    mEventsWidget->addLog(object, EventsWidget::Window, i18n("Create"));
     mAccessibleTreeWidget->accessibleObjectTreeModel()->addAccessible(object);
 }
 
 void MainWindow::windowDestroyed(const QAccessibleClient::AccessibleObject &object)
 {
-    m_eventsWidget->addLog(object, EventsWidget::Window, i18n("Destroy"));
+    mEventsWidget->addLog(object, EventsWidget::Window, i18n("Destroy"));
     if (!mAccessibleTreeWidget->accessibleObjectTreeModel()->removeAccessible(object)) {
         // assume the app has gone
         mAccessibleTreeWidget->accessibleObjectTreeModel()->updateTopLevelApps();
@@ -295,77 +295,77 @@ void MainWindow::windowDestroyed(const QAccessibleClient::AccessibleObject &obje
 
 void MainWindow::windowClosed(const QAccessibleClient::AccessibleObject &object)
 {
-    m_eventsWidget->addLog(object, EventsWidget::Window, QStringLiteral("WindowClose"));
+    mEventsWidget->addLog(object, EventsWidget::Window, QStringLiteral("WindowClose"));
 }
 
 void MainWindow::windowReparented(const QAccessibleClient::AccessibleObject &object)
 {
-    m_eventsWidget->addLog(object, EventsWidget::Window, QStringLiteral("WindowReparent"));
+    mEventsWidget->addLog(object, EventsWidget::Window, QStringLiteral("WindowReparent"));
 }
 
 void MainWindow::windowMinimized(const QAccessibleClient::AccessibleObject &object)
 {
-    m_eventsWidget->addLog(object, EventsWidget::Window, QStringLiteral("WindowMinimize"));
+    mEventsWidget->addLog(object, EventsWidget::Window, QStringLiteral("WindowMinimize"));
 }
 
 void MainWindow::windowMaximized(const QAccessibleClient::AccessibleObject &object)
 {
-    m_eventsWidget->addLog(object, EventsWidget::Window, QStringLiteral("WindowMaximize"));
+    mEventsWidget->addLog(object, EventsWidget::Window, QStringLiteral("WindowMaximize"));
 }
 
 void MainWindow::windowRestored(const QAccessibleClient::AccessibleObject &object)
 {
-    m_eventsWidget->addLog(object, EventsWidget::Window, QStringLiteral("WindowRestore"));
+    mEventsWidget->addLog(object, EventsWidget::Window, QStringLiteral("WindowRestore"));
 }
 
 void MainWindow::windowActivated(const QAccessibleClient::AccessibleObject &object)
 {
-    m_eventsWidget->addLog(object, EventsWidget::Window, QStringLiteral("WindowActivate"));
+    mEventsWidget->addLog(object, EventsWidget::Window, QStringLiteral("WindowActivate"));
 }
 
 void MainWindow::windowDeactivated(const QAccessibleClient::AccessibleObject &object)
 {
-    m_eventsWidget->addLog(object, EventsWidget::Window, QStringLiteral("WindowDeactivate"));
+    mEventsWidget->addLog(object, EventsWidget::Window, QStringLiteral("WindowDeactivate"));
 }
 
 void MainWindow::windowDesktopCreated(const QAccessibleClient::AccessibleObject &object)
 {
-    m_eventsWidget->addLog(object, EventsWidget::Window, QStringLiteral("WindowDesktopCreate"));
+    mEventsWidget->addLog(object, EventsWidget::Window, QStringLiteral("WindowDesktopCreate"));
 }
 
 void MainWindow::windowDesktopDestroyed(const QAccessibleClient::AccessibleObject &object)
 {
-    m_eventsWidget->addLog(object, EventsWidget::Window, QStringLiteral("WindowDesktopDestroy"));
+    mEventsWidget->addLog(object, EventsWidget::Window, QStringLiteral("WindowDesktopDestroy"));
 }
 
 void MainWindow::windowRaised(const QAccessibleClient::AccessibleObject &object)
 {
-    m_eventsWidget->addLog(object, EventsWidget::Window, QStringLiteral("WindowRaise"));
+    mEventsWidget->addLog(object, EventsWidget::Window, QStringLiteral("WindowRaise"));
 }
 
 void MainWindow::windowLowered(const QAccessibleClient::AccessibleObject &object)
 {
-    m_eventsWidget->addLog(object, EventsWidget::Window, QStringLiteral("WindowLower"));
+    mEventsWidget->addLog(object, EventsWidget::Window, QStringLiteral("WindowLower"));
 }
 
 void MainWindow::windowMoved(const QAccessibleClient::AccessibleObject &object)
 {
-    m_eventsWidget->addLog(object, EventsWidget::Window, QStringLiteral("WindowMove"));
+    mEventsWidget->addLog(object, EventsWidget::Window, QStringLiteral("WindowMove"));
 }
 
 void MainWindow::windowResized(const QAccessibleClient::AccessibleObject &object)
 {
-    m_eventsWidget->addLog(object, EventsWidget::Window, QStringLiteral("WindowResize"));
+    mEventsWidget->addLog(object, EventsWidget::Window, QStringLiteral("WindowResize"));
 }
 
 void MainWindow::windowShaded(const QAccessibleClient::AccessibleObject &object)
 {
-    m_eventsWidget->addLog(object, EventsWidget::Window, QStringLiteral("WindowShade"));
+    mEventsWidget->addLog(object, EventsWidget::Window, QStringLiteral("WindowShade"));
 }
 
 void MainWindow::windowUnshaded(const QAccessibleClient::AccessibleObject &object)
 {
-    m_eventsWidget->addLog(object, EventsWidget::Window, QStringLiteral("WindowUnshade"));
+    mEventsWidget->addLog(object, EventsWidget::Window, QStringLiteral("WindowUnshade"));
 }
 
 void MainWindow::focusChanged(const QAccessibleClient::AccessibleObject &object)
@@ -388,13 +388,13 @@ void MainWindow::focusChanged(const QAccessibleClient::AccessibleObject &object)
 void MainWindow::textCaretMoved(const QAccessibleClient::AccessibleObject &object, int pos)
 {
     updateDetails(object);
-    m_eventsWidget->addLog(object, EventsWidget::Text, i18n("Text caret moved (%1)", pos));
+    mEventsWidget->addLog(object, EventsWidget::Text, i18n("Text caret moved (%1)", pos));
 }
 
 void MainWindow::textSelectionChanged(const QAccessibleClient::AccessibleObject &object)
 {
     updateDetails(object);
-    m_eventsWidget->addLog(object, EventsWidget::Text, QStringLiteral("TextSelectionChanged"));
+    mEventsWidget->addLog(object, EventsWidget::Text, QStringLiteral("TextSelectionChanged"));
 }
 
 QString descriptionForText(const QString &type, const QString &text, int startOffset, int endOffset)
@@ -411,32 +411,32 @@ QString descriptionForText(const QString &type, const QString &text, int startOf
 void MainWindow::textChanged(const QAccessibleClient::AccessibleObject &object, const QString &text, int startOffset, int endOffset)
 {
     updateDetails(object);
-    m_eventsWidget->addLog(object, EventsWidget::Text, descriptionForText(QLatin1String("changed"), text, startOffset, endOffset));
+    mEventsWidget->addLog(object, EventsWidget::Text, descriptionForText(QLatin1String("changed"), text, startOffset, endOffset));
 }
 
 void MainWindow::textInserted(const QAccessibleClient::AccessibleObject &object, const QString &text, int startOffset, int endOffset)
 {
     updateDetails(object);
-    m_eventsWidget->addLog(object, EventsWidget::Text, descriptionForText(QLatin1String("inserted"), text, startOffset, endOffset));
+    mEventsWidget->addLog(object, EventsWidget::Text, descriptionForText(QLatin1String("inserted"), text, startOffset, endOffset));
 }
 
 void MainWindow::textRemoved(const QAccessibleClient::AccessibleObject &object, const QString &text, int startOffset, int endOffset)
 {
     updateDetails(object);
-    m_eventsWidget->addLog(object, EventsWidget::Text, descriptionForText(QLatin1String("removed"), text, startOffset, endOffset));
+    mEventsWidget->addLog(object, EventsWidget::Text, descriptionForText(QLatin1String("removed"), text, startOffset, endOffset));
 }
 
 void MainWindow::accessibleNameChanged(const QAccessibleClient::AccessibleObject &object)
 {
     updateDetails(object);
-    m_eventsWidget->addLog(object, EventsWidget::NameChanged);
+    mEventsWidget->addLog(object, EventsWidget::NameChanged);
     mAccessibleTreeWidget->accessibleObjectTreeModel()->updateAccessible(object);
 }
 
 void MainWindow::accessibleDescriptionChanged(const QAccessibleClient::AccessibleObject &object)
 {
     updateDetails(object);
-    m_eventsWidget->addLog(object, EventsWidget::DescriptionChanged);
+    mEventsWidget->addLog(object, EventsWidget::DescriptionChanged);
     mAccessibleTreeWidget->accessibleObjectTreeModel()->updateAccessible(object);
 }
 
