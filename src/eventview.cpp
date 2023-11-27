@@ -194,9 +194,9 @@ EventsWidget::EventsWidget(QWidget *parent)
 
     m_ui.horizontalLayout->setSpacing(style()->pixelMetric(QStyle::PM_LayoutHorizontalSpacing));
     m_ui.horizontalLayout->setContentsMargins(style()->pixelMetric(QStyle::PM_LayoutLeftMargin),
-                                              style()->pixelMetric(QStyle::PM_LayoutBottomMargin),
+                                              style()->pixelMetric(QStyle::PM_LayoutTopMargin),
                                               style()->pixelMetric(QStyle::PM_LayoutRightMargin),
-                                              style()->pixelMetric(QStyle::PM_LayoutTopMargin));
+                                              style()->pixelMetric(QStyle::PM_LayoutBottomMargin));
 
     m_proxyModel->setSourceModel(m_model);
     m_ui.eventListView->setModel(m_proxyModel);

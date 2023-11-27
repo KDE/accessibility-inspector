@@ -38,6 +38,7 @@ MainWidget::MainWidget(QAccessibleClient::Registry *registry, QWidget *parent)
     mAccessibleTreeWidget->setObjectName(QLatin1StringView("mAccessibleTreeWidget"));
     mTabWidget->setObjectName(QLatin1StringView("mTabWidget"));
     mTabWidget->setMovable(true);
+    mTabWidget->setDocumentMode(true);
 
     mSplitter->addWidget(mAccessibleTreeWidget);
     mSplitter->addWidget(mTabWidget);
@@ -46,9 +47,9 @@ MainWidget::MainWidget(QAccessibleClient::Registry *registry, QWidget *parent)
     mEventsWidget->setObjectName(QLatin1StringView("mEventsWidget"));
     mUiview->setObjectName(QLatin1StringView("mUiview"));
 
-    mTabWidget->addTab(mUiview, i18nc("@title:window", "Boundaries"));
-    mTabWidget->addTab(mEventsWidget, i18nc("@title:window", "Events"));
     mTabWidget->addTab(mPropertyTreeWidget, i18nc("@title:window", "Properties"));
+    mTabWidget->addTab(mEventsWidget, i18nc("@title:window", "Events"));
+    mTabWidget->addTab(mUiview, i18nc("@title:window", "Boundaries"));
 
     connect(mEventsWidget, &EventsWidget::anchorClicked, this, &MainWidget::anchorClicked);
     connect(mAccessibleTreeWidget, &AccessibleTreeWidget::accessibleTreeviewSelectionChanged, this, &MainWidget::selectionChanged);
