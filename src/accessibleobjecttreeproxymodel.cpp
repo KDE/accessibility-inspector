@@ -5,10 +5,17 @@
 */
 
 #include "accessibleobjecttreeproxymodel.h"
+#include "accessibleobjecttreemodel.h"
 
-AccessibleObjectTreeProxyModel::AccessibleObjectTreeProxyModel(QObject *parent)
+AccessibleObjectTreeProxyModel::AccessibleObjectTreeProxyModel(AccessibleObjectTreeModel *model, QObject *parent)
     : QSortFilterProxyModel{parent}
+    , mAccessibleObjectTreeModel(model)
 {
+    setSourceModel(mAccessibleObjectTreeModel);
+    setFilterCaseSensitivity(Qt::CaseInsensitive);
+    setFilterRole(AccessibleObjectTreeModel::Accessible);
+    setSortRole(AccessibleObjectTreeModel::Accessible);
+    sort(0, Qt::DescendingOrder);
 }
 
 AccessibleObjectTreeProxyModel::~AccessibleObjectTreeProxyModel() = default;

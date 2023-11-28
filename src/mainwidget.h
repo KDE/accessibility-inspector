@@ -29,7 +29,7 @@ public:
     void resetModel();
 
 private:
-    void selectionChanged(const QModelIndex &current, const QModelIndex &);
+    void selectionChanged(const QModelIndex &current);
     void showClientCache();
 
     void added(const QAccessibleClient::AccessibleObject &object);

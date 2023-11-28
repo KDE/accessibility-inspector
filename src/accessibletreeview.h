@@ -10,7 +10,7 @@
 
 #include <qaccessibilityclient/accessibleobject.h>
 class AccessibleObjectTreeModel;
-class QSortFilterProxyModel;
+class AccessibleObjectTreeProxyModel;
 namespace QAccessibleClient
 {
 class Registry;
@@ -28,10 +28,10 @@ public:
     void setSearchTextChanged(const QString &str);
 
 Q_SIGNALS:
-    void accessibleTreeviewSelectionChanged(const QModelIndex &current, const QModelIndex &previous);
+    void accessibleTreeviewSelectionChanged(const QModelIndex &current);
 
 private:
     void treeCustomContextMenuRequested(const QPoint &pos);
     AccessibleObjectTreeModel *const mAccessibleObjectTreeModel;
-    QSortFilterProxyModel *const mSortFilterProxyModel;
+    AccessibleObjectTreeProxyModel *const mSortFilterProxyModel;
 };

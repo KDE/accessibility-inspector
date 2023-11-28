@@ -7,11 +7,14 @@
 #pragma once
 
 #include <QSortFilterProxyModel>
-
+class AccessibleObjectTreeModel;
 class AccessibleObjectTreeProxyModel : public QSortFilterProxyModel
 {
     Q_OBJECT
 public:
-    explicit AccessibleObjectTreeProxyModel(QObject *parent = nullptr);
+    explicit AccessibleObjectTreeProxyModel(AccessibleObjectTreeModel *model, QObject *parent = nullptr);
     ~AccessibleObjectTreeProxyModel() override;
+
+private:
+    AccessibleObjectTreeModel *const mAccessibleObjectTreeModel;
 };

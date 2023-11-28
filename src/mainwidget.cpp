@@ -158,7 +158,7 @@ void MainWidget::modelChanged(const QAccessibleClient::AccessibleObject &object)
     mEventsWidget->addLog(object, EventsWidget::Table, i18n("Model Changed"));
 }
 
-void MainWidget::selectionChanged(const QModelIndex &current, const QModelIndex &)
+void MainWidget::selectionChanged(const QModelIndex &current)
 {
     QAccessibleClient::AccessibleObject acc;
     if (current.isValid() && current.internalPointer()) {

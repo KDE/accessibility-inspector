@@ -7,21 +7,20 @@
 #include "accessibletreeview.h"
 #include "accessibilityinspector_debug.h"
 #include "accessibleobjecttreemodel.h"
+#include "accessibleobjecttreeproxymodel.h"
 #include "accessiblewrapper.h"
 
 #include <KLocalizedString>
 
 #include <QMenu>
-#include <QSortFilterProxyModel>
 #include <qaccessibilityclient/registrycache_p.h>
 
 AccessibleTreeView::AccessibleTreeView(QAccessibleClient::Registry *registry, QWidget *parent)
     : QTreeView(parent)
     , mAccessibleObjectTreeModel(new AccessibleObjectTreeModel(this))
-    , mSortFilterProxyModel(new QSortFilterProxyModel(this))
+    , mSortFilterProxyModel(new AccessibleObjectTreeProxyModel(mAccessibleObjectTreeModel, this))
 {
     mAccessibleObjectTreeModel->setRegistry(registry);
-    mSortFilterProxyModel->setSourceModel(mAccessibleObjectTreeModel);
     setSortingEnabled(true);
     setAccessibleDescription(i18n("Displays a hierachical tree of accessible objects"));
     setSelectionBehavior(QAbstractItemView::SelectRows);
@@ -29,9 +28,8 @@ AccessibleTreeView::AccessibleTreeView(QAccessibleClient::Registry *registry, QW
     setAlternatingRowColors(true);
     setColumnWidth(0, 240);
     setContextMenuPolicy(Qt::CustomContextMenu);
-    // FIXME !!!! use mSortFilterProxyModel
     setModel(mAccessibleObjectTreeModel);
-    connect(selectionModel(), &QItemSelectionModel::currentChanged, this, &AccessibleTreeView::accessibleTreeviewSelectionChanged);
+    connect(this, &QTreeView::pressed, this, &AccessibleTreeView::accessibleTreeviewSelectionChanged);
     connect(this, &AccessibleTreeView::customContextMenuRequested, this, &AccessibleTreeView::treeCustomContextMenuRequested);
     setModel(mAccessibleObjectTreeModel);
 }
@@ -66,7 +64,7 @@ void AccessibleTreeView::setCurrentObject(const QAccessibleClient::AccessibleObj
         scrollTo(index);
 
         // Unlike calling setCurrentIndex the select call aboves doe not emit the selectionChanged signal. So, do explicit.
-        accessibleTreeviewSelectionChanged(index, QModelIndex());
+        accessibleTreeviewSelectionChanged(index);
     } else {
         qCWarning(ACCESSIBILITYINSPECTOR_LOG) << "No such indexForAccessible=" << object;
     }

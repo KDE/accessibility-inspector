@@ -28,7 +28,7 @@ public:
     void setCurrentObject(const QAccessibleClient::AccessibleObject &object);
 
 Q_SIGNALS:
-    void accessibleTreeviewSelectionChanged(const QModelIndex &current, const QModelIndex &previous);
+    void accessibleTreeviewSelectionChanged(const QModelIndex &current);
 
 private:
     QLineEdit *const mSearchLineEdit;
