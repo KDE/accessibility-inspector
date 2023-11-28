@@ -15,6 +15,7 @@ PropertyTreeView::PropertyTreeView(QWidget *parent)
     setRootIsDecorated(false);
     setItemsExpandable(true);
     setExpandsOnDoubleClick(false);
+    setSortingEnabled(true);
 }
 
 PropertyTreeView::~PropertyTreeView() = default;
