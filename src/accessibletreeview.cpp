@@ -28,19 +28,24 @@ AccessibleTreeView::AccessibleTreeView(QAccessibleClient::Registry *registry, QW
     setAlternatingRowColors(true);
     setColumnWidth(0, 240);
     setContextMenuPolicy(Qt::CustomContextMenu);
-    setModel(mAccessibleObjectTreeModel);
-    connect(this, &QTreeView::pressed, this, &AccessibleTreeView::accessibleTreeviewSelectionChanged);
+    setModel(mSortFilterProxyModel);
+    connect(this, &QTreeView::pressed, this, [this](const QModelIndex &index) {
+        if (index.isValid()) {
+            const QModelIndex i = mSortFilterProxyModel->mapToSource(index);
+            Q_EMIT accessibleTreeviewSelectionChanged(i);
+        }
+    });
     connect(this, &AccessibleTreeView::customContextMenuRequested, this, &AccessibleTreeView::treeCustomContextMenuRequested);
-    setModel(mAccessibleObjectTreeModel);
 }
 
 AccessibleTreeView::~AccessibleTreeView() = default;
 
 void AccessibleTreeView::treeCustomContextMenuRequested(const QPoint &pos)
 {
-    const QModelIndex current = currentIndex();
+    const QModelIndex current = mSortFilterProxyModel->mapToSource(currentIndex());
     if (!current.isValid())
         return;
+
     QAccessibleClient::AccessibleObject acc = static_cast<AccessibleWrapper *>(current.internalPointer())->acc;
     QMenu menu(this);
     for (const QSharedPointer<QAction> &a : acc.actions()) {
@@ -72,6 +77,7 @@ void AccessibleTreeView::setCurrentObject(const QAccessibleClient::AccessibleObj
 
 void AccessibleTreeView::setSearchTextChanged(const QString &str)
 {
+    qDebug() << " str " << str;
     mSortFilterProxyModel->setFilterFixedString(str);
 }
 

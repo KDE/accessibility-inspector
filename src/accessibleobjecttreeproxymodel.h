@@ -15,6 +15,9 @@ public:
     explicit AccessibleObjectTreeProxyModel(AccessibleObjectTreeModel *model, QObject *parent = nullptr);
     ~AccessibleObjectTreeProxyModel() override;
 
+protected:
+    [[nodiscard]] bool filterAcceptsRow(int source_row, const QModelIndex &source_parent) const override;
+
 private:
     AccessibleObjectTreeModel *const mAccessibleObjectTreeModel;
 };

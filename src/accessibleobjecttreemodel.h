@@ -43,7 +43,6 @@ public:
     int rowCount(const QModelIndex &parent = QModelIndex()) const override;
     QVariant headerData(int section, Qt::Orientation orientation, int role = Qt::DisplayRole) const override;
 
-public Q_SLOTS:
     void resetModel();
     /*!
         \brief Updates all applications in the tree.
@@ -56,6 +55,6 @@ Q_SIGNALS:
     void navigationError(const QModelIndex &) const;
 
 private:
-    QAccessibleClient::Registry *m_registry = nullptr;
-    QList<AccessibleWrapper *> m_apps;
+    QAccessibleClient::Registry *mRegistry = nullptr;
+    QList<AccessibleWrapper *> mApps;
 };

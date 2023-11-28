@@ -14,10 +14,15 @@ AccessibleObjectTreeProxyModel::AccessibleObjectTreeProxyModel(AccessibleObjectT
     setSourceModel(mAccessibleObjectTreeModel);
     setFilterCaseSensitivity(Qt::CaseInsensitive);
     setFilterRole(AccessibleObjectTreeModel::Accessible);
-    setSortRole(AccessibleObjectTreeModel::Accessible);
     sort(0, Qt::DescendingOrder);
 }
 
 AccessibleObjectTreeProxyModel::~AccessibleObjectTreeProxyModel() = default;
+
+bool AccessibleObjectTreeProxyModel::filterAcceptsRow(int source_row, const QModelIndex &source_parent) const
+{
+    // TODO implement
+    return QSortFilterProxyModel::filterAcceptsColumn(source_row, source_parent);
+}
 
 #include "moc_accessibleobjecttreeproxymodel.cpp"
