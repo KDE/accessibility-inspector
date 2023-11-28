@@ -204,7 +204,7 @@ EventsWidget::EventsWidget(QWidget *parent)
     connect(m_ui.accessibleFilterEdit, &QLineEdit::textChanged, this, &EventsWidget::accessibleFilterChanged);
     connect(m_ui.roleFilterEdit, &QLineEdit::textChanged, this, &EventsWidget::roleFilterChanged);
 
-    auto filerModel = new QStandardItemModel();
+    auto filerModel = new QStandardItemModel(this);
     auto firstFilterItem = new QStandardItem(QStringLiteral("Event Filter"));
     firstFilterItem->setFlags(Qt::ItemIsEnabled);
     filerModel->appendRow(firstFilterItem);
