@@ -44,8 +44,10 @@
     <p xml:lang="ca-valencia">L'inspector d'accessibilitat és, com el nom suggerix, un inspector de l'arbre d'accessibilitat de l'aplicació. Permet comprovar tots els elements exposats mitjançant At-SPI, també.</p>
     <p xml:lang="eo">Kiel la nomo sugestus, Accessibility Inspector estas inspektilo por la alireblo-arbo de via aplikaĵo. Ĝi ebligas al vi ankaŭ kontroli ĉiujn objektojn elmontritajn per At-SPI.</p>
     <p xml:lang="es">El inspector de accesibilidad es, como su nombre sugiere, un inspector del árbol de accesibilidad de las aplicaciones. También permite comprobar todos los elementos expuestos mediante At-SPI.</p>
+    <p xml:lang="ia">Inspector de Accessibilitate (Accessibility Inspector) es como le nomine suggere un inspector per le arbore de accessibilitate de tu application.Illo te permitte verificar anque le elementos exponite via At-SPI.</p>
     <p xml:lang="ka">წვდომადობის ინსპექტორი, როგორც ამას სახელით მიხვდებოდით, ინსპექტორია თქვენი აპლიკაციის წვდომადობის ხისთვის. ის საშუალებას გაძლევთ, შეამოწმოთ ყველა ელემენტი, რომელსაც At-SPI გამოაჩენს.</p>
     <p xml:lang="nl">Toegankelijkheidsinspecteur is zoals de naam suggereert een inspecteur voor de boomstructuur van toegankelijkheid van uw toepassing. Het laat u ook alle items controleren die zijn blootgesteld via At-SPI.</p>
+    <p xml:lang="sl">Inšpektor za dostopnost je, kot ime nakazuje inšpektor za vaše drevo dostopnosti aplikacij. Omogoča vam, da preverite vse predmete, ki so izpostavljeni tudi prek Ati-SPI.</p>
     <p xml:lang="tr">Erişilebilirlik Denetçisi, adından da anlaşılabileceği üzere, uygulamalar için bir erişilebilirlik ağacı denetçisidir. At-SPI tarafından kullanıma açılan tüm ögeleri denetlemenize de izin verir.</p>
     <p xml:lang="uk">«Ревізор доступності», як можна зрозуміти з назви, ревізор для ієрархії доступності вашої програми. За її допомогою можна перевіряти усі запис, які відкриваються за допомогою At-SPI.</p>
     <p xml:lang="x-test">xxAccessibility Inspector is as the name suggests an inspector for your application accessibility tree. It lets you check all the items exposed via At-SPI, too.xx</p>
