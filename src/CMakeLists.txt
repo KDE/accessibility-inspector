@@ -21,8 +21,13 @@ target_sources(libaccessibilityinspector PRIVATE
     clientcachedialog.h
     eventview.cpp
     eventview.h
+
     uiview.cpp
     uiview.h
+
+    uiwidget.h
+    uiwidget.cpp
+
     accessiblewrapper.h
     accessiblewrapper.cpp
     accessibletreewidget.h

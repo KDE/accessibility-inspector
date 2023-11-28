@@ -7,43 +7,10 @@
 #pragma once
 
 #include <qaccessibilityclient/accessibleobject.h>
-#include <qaccessibilityclient/registry.h>
 
-#include <QImage>
-#include <QPixmap>
-#include <QRect>
 #include <QScrollArea>
 
-namespace QAccessibleClient
-{
-class AccessibleObject;
-}
-
-class UiView;
-
-class UiWidget : public QWidget
-{
-    Q_OBJECT
-public:
-    explicit UiWidget(UiView *view = nullptr);
-    void setAccessibleObject(const QAccessibleClient::AccessibleObject &acc);
-    QSize sizeHint() const override;
-
-protected:
-    QImage *m_image = nullptr;
-    QPixmap m_screen;
-    QRect m_bounds;
-    QAccessibleClient::AccessibleObject m_object;
-    QMap<QAccessibleClient::AccessibleObject::Role, const char *> m_roleColors;
-
-    void paintEvent(QPaintEvent *event) override;
-
-private:
-    [[nodiscard]] QPixmap grabScreen();
-    [[nodiscard]] QRect bounds(const QAccessibleClient::AccessibleObject &acc) const;
-    void drawObject(QPainter *painter, const QAccessibleClient::AccessibleObject &acc, int depth = 0);
-};
-
+class UiWidget;
 class UiView : public QScrollArea
 {
     Q_OBJECT
