@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-26 01:57+0000\n"
+"POT-Creation-Date: 2023-11-28 01:34+0000\n"
 "PO-Revision-Date: 2023-11-25 09:31+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
@@ -425,67 +425,67 @@ msgstr "Ago"
 msgid "Displays all received events"
 msgstr "Montras ĉiujn ricevitajn eventojn"
 
-#: eventview.cpp:263
+#: eventview.cpp:262
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Focus"
 msgstr "Fokuso"
 
-#: eventview.cpp:266
+#: eventview.cpp:265
 #, kde-format
 msgctxt "Accessibility event name: state changed"
 msgid "State"
 msgstr "Stato"
 
-#: eventview.cpp:269
+#: eventview.cpp:268
 #, kde-format
 msgctxt "Accessibility event name: name changed"
 msgid "Name"
 msgstr "Nomo"
 
-#: eventview.cpp:272
+#: eventview.cpp:271
 #, kde-format
 msgctxt "Accessibility event name: description changed"
 msgid "Description"
 msgstr "Priskribo"
 
-#: eventview.cpp:275
+#: eventview.cpp:274
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Window"
 msgstr "Fenestro"
 
-#: eventview.cpp:278
+#: eventview.cpp:277
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Document"
 msgstr "Dokumento"
 
-#: eventview.cpp:281
+#: eventview.cpp:280
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Object"
 msgstr "Objekto"
 
-#: eventview.cpp:284
+#: eventview.cpp:283
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Text"
 msgstr "Teksto"
 
-#: eventview.cpp:287
+#: eventview.cpp:286
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Table"
 msgstr "Tabelo"
 
-#: eventview.cpp:290
+#: eventview.cpp:289
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Others"
 msgstr "Aliaj"
 
-#: eventview.cpp:293
+#: eventview.cpp:292
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "No Event"
@@ -528,145 +528,143 @@ msgstr "Forviŝi Eventojn"
 msgid "&Clear"
 msgstr "&Forviŝi"
 
-#: mainwindow.cpp:114
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "Reset Tree"
-msgstr "Restarigi Arbon"
-
-#: mainwindow.cpp:120
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "Follow Focus"
-msgstr "Sekvi Fokuson"
-
-#: mainwindow.cpp:126
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "Cache..."
-msgstr "Kaŝmemoro..."
-
-#: mainwindow.cpp:131
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "Enable Accessibility"
-msgstr "Ebligi Alireblecon"
-
-#: mainwindow.cpp:141
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "Enable Screen Reader"
-msgstr "Ebligi Ekranlegilon"
-
-#: mainwindow.cpp:152
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "Copy property value"
-msgstr "Kopii posedaĵvaloron"
-
-#: mainwindow.cpp:179
-#, kde-format
-msgid "Tree"
-msgstr "Arbo"
-
-#: mainwindow.cpp:184
+#: mainwidget.cpp:50
 #, kde-format
 msgctxt "@title:window"
 msgid "Properties"
 msgstr "Proprecoj"
 
-#: mainwindow.cpp:189 propertytreeview.cpp:13
-#, kde-format
-msgctxt "@info:whatsthis"
-msgid "List of properties"
-msgstr "Listo de proprecoj"
-
-#: mainwindow.cpp:190 propertytreeview.cpp:14
-#, kde-format
-msgctxt "@info:whatsthis"
-msgid "Displays properties of the selected accessible object"
-msgstr "Montras ecojn de la elektita alirebla objekto"
-
-#: mainwindow.cpp:200
-#, kde-format
-msgctxt "@title:window"
-msgid "Boundaries"
-msgstr "Limoj"
-
-#: mainwindow.cpp:204
-#, kde-format
-msgctxt "@info:whatsthis"
-msgid "Boundaries"
-msgstr "Limoj"
-
-#: mainwindow.cpp:205
-#, kde-format
-msgctxt "@info:whatsthis"
-msgid "Visualize the component boundaries"
-msgstr "Bildigi la komponantajn limojn"
-
-#: mainwindow.cpp:208
+#: mainwidget.cpp:51
 #, kde-format
 msgctxt "@title:window"
 msgid "Events"
 msgstr "Eventoj"
 
-#: mainwindow.cpp:253 mainwindow.cpp:255
+#: mainwidget.cpp:52
+#, kde-format
+msgctxt "@title:window"
+msgid "Boundaries"
+msgstr "Limoj"
+
+#: mainwidget.cpp:123 mainwidget.cpp:125
 #, kde-format
 msgid "true"
 msgstr "vera"
 
-#: mainwindow.cpp:253 mainwindow.cpp:255
+#: mainwidget.cpp:123 mainwidget.cpp:125
 #, kde-format
 msgid "false"
 msgstr "malvera"
 
-#: mainwindow.cpp:264
+#: mainwidget.cpp:134
 #, kde-format
 msgid "Child Added %1"
 msgstr "Ido Aldonis %1"
 
-#: mainwindow.cpp:270
+#: mainwidget.cpp:140
 #, kde-format
 msgid "Child Removed %1"
 msgstr "Ido Forigis %1"
 
-#: mainwindow.cpp:276
+#: mainwidget.cpp:146
 #, kde-format
 msgid "Visible Data Changed"
 msgstr "Videblaj Datumoj Ŝanĝiĝis"
 
-#: mainwindow.cpp:282
+#: mainwidget.cpp:152
 #, kde-format
 msgid "Selection Changed"
 msgstr "Elekto Ŝanĝiĝis"
 
-#: mainwindow.cpp:288
+#: mainwidget.cpp:158
 #, kde-format
 msgid "Model Changed"
 msgstr "Modelo Ŝanĝiĝis"
 
-#: mainwindow.cpp:303
+#: mainwidget.cpp:173
 #, kde-format
 msgid "Add Object"
 msgstr "Aldoni Objekton"
 
-#: mainwindow.cpp:309
+#: mainwidget.cpp:179
 #, kde-format
 msgid "Remove Object"
 msgstr "Forigi Objekton"
 
-#: mainwindow.cpp:320
+#: mainwidget.cpp:190
 #, kde-format
 msgid "Create"
 msgstr "Krei"
 
-#: mainwindow.cpp:326
+#: mainwidget.cpp:196
 #, kde-format
 msgid "Destroy"
 msgstr "Detrui"
 
-#: mainwindow.cpp:428
+#: mainwidget.cpp:301
 #, kde-format
 msgid "Text caret moved (%1)"
 msgstr "Teksta ĉapeleto moviĝis (%1)"
+
+#: mainwindow.cpp:64
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Reset Tree"
+msgstr "Restarigi Arbon"
+
+#: mainwindow.cpp:70
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Follow Focus"
+msgstr "Sekvi Fokuson"
+
+#: mainwindow.cpp:76
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Cache..."
+msgstr "Kaŝmemoro..."
+
+#: mainwindow.cpp:81
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Enable Accessibility"
+msgstr "Ebligi Alireblecon"
+
+#: mainwindow.cpp:91
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Enable Screen Reader"
+msgstr "Ebligi Ekranlegilon"
+
+#: mainwindow.cpp:102
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Copy property value"
+msgstr "Kopii posedaĵvaloron"
+
+#: propertytreeview.cpp:13
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "List of properties"
+msgstr "Listo de proprecoj"
+
+#: propertytreeview.cpp:14
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Displays properties of the selected accessible object"
+msgstr "Montras ecojn de la elektita alirebla objekto"
+
+#: uiview.cpp:257
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Boundaries"
+msgstr "Limoj"
+
+#: uiview.cpp:258
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Visualize the component boundaries"
+msgstr "Bildigi la komponantajn limojn"
+
+#~ msgid "Tree"
+#~ msgstr "Arbo"
