@@ -18,3 +18,5 @@ void PropertyTreeViewTest::shoudlHaveDefaultValues()
     PropertyTreeView w;
     // TODO
 }
+
+#include "moc_propertytreeviewtest.cpp"
