@@ -8,7 +8,6 @@
 #include "uiwidget.h"
 
 #include <KLocalizedString>
-#include <QPainter>
 #include <QVBoxLayout>
 
 using namespace QAccessibleClient;
