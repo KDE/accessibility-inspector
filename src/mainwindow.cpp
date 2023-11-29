@@ -5,7 +5,6 @@
 */
 
 #include "mainwindow.h"
-#include "accessibleobjecttreemodel.h"
 #include "accessibletreewidget.h"
 #include "clientcachedialog.h"
 #include "mainwidget.h"

@@ -6,9 +6,9 @@
 
 #include "accessibletreeview.h"
 #include "accessibilityinspector_debug.h"
-#include "accessibleobjecttreemodel.h"
-#include "accessibleobjecttreeproxymodel.h"
 #include "accessiblewrapper.h"
+#include "model/accessibleobjecttreemodel.h"
+#include "model/accessibleobjecttreeproxymodel.h"
 
 #include <KLocalizedString>
 

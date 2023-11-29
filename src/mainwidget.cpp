@@ -5,10 +5,10 @@
 */
 
 #include "mainwidget.h"
-#include "accessibleobjecttreemodel.h"
 #include "accessibletreewidget.h"
 #include "accessiblewrapper.h"
 #include "eventview.h"
+#include "model/accessibleobjecttreemodel.h"
 #include "propertytreewidget.h"
 #include "uiview.h"
 

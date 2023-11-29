@@ -5,7 +5,7 @@
 */
 
 #include "propertytreewidget.h"
-#include "accessiblepropertiesmodel.h"
+#include "model/accessiblepropertiesmodel.h"
 #include "propertytreeview.h"
 #include "qaccessibilityclient/accessibleobject.h"
 #include <QClipboard>

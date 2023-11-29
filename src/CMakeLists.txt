@@ -13,13 +13,13 @@ target_sources(libaccessibilityinspector PRIVATE
     mainwidget.h
     mainwidget.cpp
 
-    accessibleobjecttreemodel.cpp
-    accessibleobjecttreemodel.h
-    accessibleobjecttreeproxymodel.h
-    accessibleobjecttreeproxymodel.cpp
+    model/accessibleobjecttreemodel.cpp
+    model/accessibleobjecttreemodel.h
+    model/accessibleobjecttreeproxymodel.h
+    model/accessibleobjecttreeproxymodel.cpp
 
-    accessiblepropertiesmodel.cpp
-    accessiblepropertiesmodel.h
+    model/accessiblepropertiesmodel.cpp
+    model/accessiblepropertiesmodel.h
 
     clientcachedialog.cpp
     clientcachedialog.h
