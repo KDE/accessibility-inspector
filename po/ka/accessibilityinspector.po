@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-28 01:34+0000\n"
+"POT-Creation-Date: 2023-11-29 01:35+0000\n"
 "PO-Revision-Date: 2023-11-25 06:10+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -297,7 +297,7 @@ msgstr "მოვლენის ფოკუსი"
 msgid "Action"
 msgstr "პარამეტრები"
 
-#: accessibletreeview.cpp:26
+#: accessibletreeview.cpp:25
 #, kde-format
 msgid "Displays a hierachical tree of accessible objects"
 msgstr "აჩვენებს მონიშნული წვდომადი ობიექტების იერარქიულ ხეს"
@@ -655,13 +655,13 @@ msgctxt "@info:whatsthis"
 msgid "Displays properties of the selected accessible object"
 msgstr "აჩვენებს მონიშნული წვდომადი ობიექტის თვისებებს"
 
-#: uiview.cpp:257
+#: uiview.cpp:19
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Boundaries"
 msgstr "საზღვრები"
 
-#: uiview.cpp:258
+#: uiview.cpp:20
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Visualize the component boundaries"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-28 01:34+0000\n"
+"POT-Creation-Date: 2023-11-29 01:35+0000\n"
 "PO-Revision-Date: 2023-11-27 10:49+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
@@ -296,7 +296,7 @@ msgstr "Evento Foco"
 msgid "Action"
 msgstr "Action"
 
-#: accessibletreeview.cpp:26
+#: accessibletreeview.cpp:25
 #, kde-format
 msgid "Displays a hierachical tree of accessible objects"
 msgstr "Monstra un arbore hierarchic de objectos accessibile "
@@ -654,13 +654,13 @@ msgctxt "@info:whatsthis"
 msgid "Displays properties of the selected accessible object"
 msgstr "Monstra proprietate del objecto accessibile seligite"
 
-#: uiview.cpp:257
+#: uiview.cpp:19
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Boundaries"
 msgstr "Bordos"
 
-#: uiview.cpp:258
+#: uiview.cpp:20
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Visualize the component boundaries"
