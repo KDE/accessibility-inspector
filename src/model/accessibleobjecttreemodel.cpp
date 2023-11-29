@@ -18,7 +18,10 @@ AccessibleObjectTreeModel::AccessibleObjectTreeModel(QObject *parent)
 {
 }
 
-AccessibleObjectTreeModel::~AccessibleObjectTreeModel() = default;
+AccessibleObjectTreeModel::~AccessibleObjectTreeModel()
+{
+    qDeleteAll(mApps);
+}
 
 QVariant AccessibleObjectTreeModel::headerData(int section, Qt::Orientation orientation, int role) const
 {
