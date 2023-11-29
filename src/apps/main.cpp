@@ -46,8 +46,8 @@ int main(int argc, char **argv)
 
     KDBusService service(KDBusService::Unique);
 
-    MainWindow window;
-    window.show();
+    auto window = new MainWindow;
+    window->show();
 
     return app.exec();
 }
