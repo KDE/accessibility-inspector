@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-29 01:35+0000\n"
+"POT-Creation-Date: 2023-11-29 13:37+0000\n"
 "PO-Revision-Date: 2023-11-22 14:32+0100\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -44,259 +44,6 @@ msgstr ""
 #, kde-format
 msgid "&Settings"
 msgstr ""
-
-#: accessibleobjecttreemodel.cpp:28 accessiblepropertiesmodel.cpp:85
-#, kde-format
-msgid "Accessible"
-msgstr "Accessibile"
-
-#: accessibleobjecttreemodel.cpp:30 accessiblepropertiesmodel.cpp:88
-#, kde-format
-msgid "Role"
-msgstr "Ruolo"
-
-#: accessiblepropertiesmodel.cpp:53
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Properties"
-msgid "Property"
-msgstr "Proprietà"
-
-#: accessiblepropertiesmodel.cpp:55 accessiblepropertiesmodel.cpp:249
-#, kde-format
-msgid "Value"
-msgstr "Valore"
-
-#: accessiblepropertiesmodel.cpp:86
-#, kde-format
-msgid "Name"
-msgstr "Nome"
-
-#: accessiblepropertiesmodel.cpp:87 accessiblepropertiesmodel.cpp:182
-#, kde-format
-msgid "Description"
-msgstr "Descrizione"
-
-#: accessiblepropertiesmodel.cpp:89
-#, kde-format
-msgid "LocalizedRole"
-msgstr ""
-
-#: accessiblepropertiesmodel.cpp:90
-#, kde-format
-msgid "Visible"
-msgstr "Visibile"
-
-#: accessiblepropertiesmodel.cpp:91
-#, kde-format
-msgid "Default"
-msgstr "Predefinito"
-
-#: accessiblepropertiesmodel.cpp:92
-#, kde-format
-msgid "State"
-msgstr "Stato"
-
-#: accessiblepropertiesmodel.cpp:93
-#, kde-format
-msgid "AccessibleId"
-msgstr ""
-
-#: accessiblepropertiesmodel.cpp:94
-#, kde-format
-msgid "Url"
-msgstr "URL"
-
-#: accessiblepropertiesmodel.cpp:97
-#, kde-format
-msgid "Parent"
-msgstr "Genitore"
-
-#: accessiblepropertiesmodel.cpp:99
-#, kde-format
-msgid "Children"
-msgstr "Figli"
-
-#: accessiblepropertiesmodel.cpp:103
-#, kde-format
-msgid "Broken child"
-msgstr ""
-
-#: accessiblepropertiesmodel.cpp:111
-#, kde-format
-msgid "Component"
-msgstr "Componente"
-
-#: accessiblepropertiesmodel.cpp:112
-#, kde-format
-msgid "BoundingRect"
-msgstr ""
-
-#: accessiblepropertiesmodel.cpp:113
-#, kde-format
-msgid "Layer"
-msgstr "Livello"
-
-#: accessiblepropertiesmodel.cpp:114
-#, kde-format
-msgid "MDIZOrder"
-msgstr ""
-
-#: accessiblepropertiesmodel.cpp:115
-#, kde-format
-msgid "Alpha"
-msgstr "Alfa"
-
-#: accessiblepropertiesmodel.cpp:122
-#, kde-format
-msgid "Application"
-msgstr "Applicazione"
-
-#: accessiblepropertiesmodel.cpp:123
-#, kde-format
-msgid "ToolkitName"
-msgstr ""
-
-#: accessiblepropertiesmodel.cpp:124
-#, kde-format
-msgid "Version"
-msgstr "Versione"
-
-#: accessiblepropertiesmodel.cpp:125
-#, kde-format
-msgid "Id"
-msgstr "Id"
-
-#: accessiblepropertiesmodel.cpp:126 accessiblepropertiesmodel.cpp:183
-#, kde-format
-msgid "Locale"
-msgstr "Localizzazione"
-
-#: accessiblepropertiesmodel.cpp:127
-#, kde-format
-msgid "BusAddress"
-msgstr ""
-
-#: accessiblepropertiesmodel.cpp:130
-#, kde-format
-msgid "Document"
-msgstr "Documento"
-
-#: accessiblepropertiesmodel.cpp:138
-#, kde-format
-msgid "Editable Text"
-msgstr "Testo modificabile"
-
-#: accessiblepropertiesmodel.cpp:142
-#, kde-format
-msgid "Hyperlink"
-msgstr "Collegamento ipertestuale"
-
-#: accessiblepropertiesmodel.cpp:163
-#, kde-format
-msgid "Hypertext"
-msgstr "Ipertesto"
-
-#: accessiblepropertiesmodel.cpp:181
-#, kde-format
-msgid "Image"
-msgstr "Immagine"
-
-#: accessiblepropertiesmodel.cpp:184
-#, kde-format
-msgid "Rect"
-msgstr "Rettangolo"
-
-#: accessiblepropertiesmodel.cpp:187
-#, kde-format
-msgid "Selection"
-msgstr "Selezione"
-
-#: accessiblepropertiesmodel.cpp:193
-#, kde-format
-msgid "Table"
-msgstr "Tabella"
-
-#: accessiblepropertiesmodel.cpp:225 accessiblepropertiesmodel.cpp:233
-#: accessiblepropertiesmodel.cpp:235
-#, kde-format
-msgid "Text"
-msgstr "Testo"
-
-#: accessiblepropertiesmodel.cpp:227
-#, kde-format
-msgid "Caret Offset"
-msgstr ""
-
-#: accessiblepropertiesmodel.cpp:228
-#, kde-format
-msgid "Character Count"
-msgstr ""
-
-#: accessiblepropertiesmodel.cpp:229
-#, kde-format
-msgid "Character Rect"
-msgstr ""
-
-#: accessiblepropertiesmodel.cpp:239
-#, kde-format
-msgid "Selections"
-msgstr "Selezioni"
-
-#: accessiblepropertiesmodel.cpp:250
-#, kde-format
-msgid "Current"
-msgstr "Attuale"
-
-#: accessiblepropertiesmodel.cpp:251
-#, kde-format
-msgid "Minimum"
-msgstr "Minimo"
-
-#: accessiblepropertiesmodel.cpp:252
-#, kde-format
-msgid "Maximum"
-msgstr "Massimo"
-
-#: accessiblepropertiesmodel.cpp:253
-#, kde-format
-msgid "Increment"
-msgstr "Incremento"
-
-#: accessiblepropertiesmodel.cpp:256
-#, kde-format
-msgid "Socket"
-msgstr "Socket"
-
-#: accessiblepropertiesmodel.cpp:261
-#, kde-format
-msgid "Event Keyboard"
-msgstr "Evento tastiera"
-
-#: accessiblepropertiesmodel.cpp:265
-#, kde-format
-msgid "Event Mouse"
-msgstr "Evento mouse"
-
-#: accessiblepropertiesmodel.cpp:269
-#, kde-format
-msgid "Event Object"
-msgstr "Evento oggetto"
-
-#: accessiblepropertiesmodel.cpp:273
-#, kde-format
-msgid "Event Window"
-msgstr "Evento finestra"
-
-#: accessiblepropertiesmodel.cpp:277
-#, kde-format
-msgid "Event Focus"
-msgstr "Evento focus"
-
-#: accessiblepropertiesmodel.cpp:282
-#, kde-format
-msgid "Action"
-msgstr "Azione"
 
 #: accessibletreeview.cpp:25
 #, fuzzy, kde-format
@@ -614,41 +361,300 @@ msgstr ""
 msgid "Text caret moved (%1)"
 msgstr ""
 
-#: mainwindow.cpp:64
+#: mainwindow.cpp:63
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Reset Tree"
 msgstr "Ripristina l'albero"
 
-#: mainwindow.cpp:70
+#: mainwindow.cpp:69
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Follow Focus"
 msgstr "Segui focus"
 
-#: mainwindow.cpp:76
+#: mainwindow.cpp:75
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Cache..."
 msgstr "Cache..."
 
-#: mainwindow.cpp:81
+#: mainwindow.cpp:80
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Enable Accessibility"
 msgstr "Abilita accessibilità"
 
-#: mainwindow.cpp:91
+#: mainwindow.cpp:90
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Enable Screen Reader"
 msgstr "Abilita il lettore dello schermo"
 
-#: mainwindow.cpp:102
+#: mainwindow.cpp:101
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy property value"
 msgstr "Copia il valore della proprietà"
+
+#: model/accessibleobjecttreemodel.cpp:31
+#: model/accessiblepropertiesmodel.cpp:85
+#, kde-format
+msgid "Accessible"
+msgstr "Accessibile"
+
+#: model/accessibleobjecttreemodel.cpp:33
+#: model/accessiblepropertiesmodel.cpp:88
+#, kde-format
+msgid "Role"
+msgstr "Ruolo"
+
+#: model/accessiblepropertiesmodel.cpp:53
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Properties"
+msgid "Property"
+msgstr "Proprietà"
+
+#: model/accessiblepropertiesmodel.cpp:55
+#: model/accessiblepropertiesmodel.cpp:249
+#, kde-format
+msgid "Value"
+msgstr "Valore"
+
+#: model/accessiblepropertiesmodel.cpp:86
+#, kde-format
+msgid "Name"
+msgstr "Nome"
+
+#: model/accessiblepropertiesmodel.cpp:87
+#: model/accessiblepropertiesmodel.cpp:182
+#, kde-format
+msgid "Description"
+msgstr "Descrizione"
+
+#: model/accessiblepropertiesmodel.cpp:89
+#, kde-format
+msgid "LocalizedRole"
+msgstr ""
+
+#: model/accessiblepropertiesmodel.cpp:90
+#, kde-format
+msgid "Visible"
+msgstr "Visibile"
+
+#: model/accessiblepropertiesmodel.cpp:91
+#, kde-format
+msgid "Default"
+msgstr "Predefinito"
+
+#: model/accessiblepropertiesmodel.cpp:92
+#, kde-format
+msgid "State"
+msgstr "Stato"
+
+#: model/accessiblepropertiesmodel.cpp:93
+#, kde-format
+msgid "AccessibleId"
+msgstr ""
+
+#: model/accessiblepropertiesmodel.cpp:94
+#, kde-format
+msgid "Url"
+msgstr "URL"
+
+#: model/accessiblepropertiesmodel.cpp:97
+#, kde-format
+msgid "Parent"
+msgstr "Genitore"
+
+#: model/accessiblepropertiesmodel.cpp:99
+#, kde-format
+msgid "Children"
+msgstr "Figli"
+
+#: model/accessiblepropertiesmodel.cpp:103
+#, kde-format
+msgid "Broken child"
+msgstr ""
+
+#: model/accessiblepropertiesmodel.cpp:111
+#, kde-format
+msgid "Component"
+msgstr "Componente"
+
+#: model/accessiblepropertiesmodel.cpp:112
+#, kde-format
+msgid "BoundingRect"
+msgstr ""
+
+#: model/accessiblepropertiesmodel.cpp:113
+#, kde-format
+msgid "Layer"
+msgstr "Livello"
+
+#: model/accessiblepropertiesmodel.cpp:114
+#, kde-format
+msgid "MDIZOrder"
+msgstr ""
+
+#: model/accessiblepropertiesmodel.cpp:115
+#, kde-format
+msgid "Alpha"
+msgstr "Alfa"
+
+#: model/accessiblepropertiesmodel.cpp:122
+#, kde-format
+msgid "Application"
+msgstr "Applicazione"
+
+#: model/accessiblepropertiesmodel.cpp:123
+#, kde-format
+msgid "ToolkitName"
+msgstr ""
+
+#: model/accessiblepropertiesmodel.cpp:124
+#, kde-format
+msgid "Version"
+msgstr "Versione"
+
+#: model/accessiblepropertiesmodel.cpp:125
+#, kde-format
+msgid "Id"
+msgstr "Id"
+
+#: model/accessiblepropertiesmodel.cpp:126
+#: model/accessiblepropertiesmodel.cpp:183
+#, kde-format
+msgid "Locale"
+msgstr "Localizzazione"
+
+#: model/accessiblepropertiesmodel.cpp:127
+#, kde-format
+msgid "BusAddress"
+msgstr ""
+
+#: model/accessiblepropertiesmodel.cpp:130
+#, kde-format
+msgid "Document"
+msgstr "Documento"
+
+#: model/accessiblepropertiesmodel.cpp:138
+#, kde-format
+msgid "Editable Text"
+msgstr "Testo modificabile"
+
+#: model/accessiblepropertiesmodel.cpp:142
+#, kde-format
+msgid "Hyperlink"
+msgstr "Collegamento ipertestuale"
+
+#: model/accessiblepropertiesmodel.cpp:163
+#, kde-format
+msgid "Hypertext"
+msgstr "Ipertesto"
+
+#: model/accessiblepropertiesmodel.cpp:181
+#, kde-format
+msgid "Image"
+msgstr "Immagine"
+
+#: model/accessiblepropertiesmodel.cpp:184
+#, kde-format
+msgid "Rect"
+msgstr "Rettangolo"
+
+#: model/accessiblepropertiesmodel.cpp:187
+#, kde-format
+msgid "Selection"
+msgstr "Selezione"
+
+#: model/accessiblepropertiesmodel.cpp:193
+#, kde-format
+msgid "Table"
+msgstr "Tabella"
+
+#: model/accessiblepropertiesmodel.cpp:225
+#: model/accessiblepropertiesmodel.cpp:233
+#: model/accessiblepropertiesmodel.cpp:235
+#, kde-format
+msgid "Text"
+msgstr "Testo"
+
+#: model/accessiblepropertiesmodel.cpp:227
+#, kde-format
+msgid "Caret Offset"
+msgstr ""
+
+#: model/accessiblepropertiesmodel.cpp:228
+#, kde-format
+msgid "Character Count"
+msgstr ""
+
+#: model/accessiblepropertiesmodel.cpp:229
+#, kde-format
+msgid "Character Rect"
+msgstr ""
+
+#: model/accessiblepropertiesmodel.cpp:239
+#, kde-format
+msgid "Selections"
+msgstr "Selezioni"
+
+#: model/accessiblepropertiesmodel.cpp:250
+#, kde-format
+msgid "Current"
+msgstr "Attuale"
+
+#: model/accessiblepropertiesmodel.cpp:251
+#, kde-format
+msgid "Minimum"
+msgstr "Minimo"
+
+#: model/accessiblepropertiesmodel.cpp:252
+#, kde-format
+msgid "Maximum"
+msgstr "Massimo"
+
+#: model/accessiblepropertiesmodel.cpp:253
+#, kde-format
+msgid "Increment"
+msgstr "Incremento"
+
+#: model/accessiblepropertiesmodel.cpp:256
+#, kde-format
+msgid "Socket"
+msgstr "Socket"
+
+#: model/accessiblepropertiesmodel.cpp:261
+#, kde-format
+msgid "Event Keyboard"
+msgstr "Evento tastiera"
+
+#: model/accessiblepropertiesmodel.cpp:265
+#, kde-format
+msgid "Event Mouse"
+msgstr "Evento mouse"
+
+#: model/accessiblepropertiesmodel.cpp:269
+#, kde-format
+msgid "Event Object"
+msgstr "Evento oggetto"
+
+#: model/accessiblepropertiesmodel.cpp:273
+#, kde-format
+msgid "Event Window"
+msgstr "Evento finestra"
+
+#: model/accessiblepropertiesmodel.cpp:277
+#, kde-format
+msgid "Event Focus"
+msgstr "Evento focus"
+
+#: model/accessiblepropertiesmodel.cpp:282
+#, kde-format
+msgid "Action"
+msgstr "Azione"
 
 #: propertytreeview.cpp:13
 #, kde-format

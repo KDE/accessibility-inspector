@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-29 01:35+0000\n"
+"POT-Creation-Date: 2023-11-29 13:37+0000\n"
 "PO-Revision-Date: 2023-11-25 06:10+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -45,257 +45,6 @@ msgstr "ხედი"
 #, kde-format
 msgid "&Settings"
 msgstr "&მორგება"
-
-#: accessibleobjecttreemodel.cpp:28 accessiblepropertiesmodel.cpp:85
-#, kde-format
-msgid "Accessible"
-msgstr "წვდომადი"
-
-#: accessibleobjecttreemodel.cpp:30 accessiblepropertiesmodel.cpp:88
-#, kde-format
-msgid "Role"
-msgstr "როლი"
-
-#: accessiblepropertiesmodel.cpp:53
-#, kde-format
-msgid "Property"
-msgstr "თვისება"
-
-#: accessiblepropertiesmodel.cpp:55 accessiblepropertiesmodel.cpp:249
-#, kde-format
-msgid "Value"
-msgstr "მნიშვნელობა"
-
-#: accessiblepropertiesmodel.cpp:86
-#, kde-format
-msgid "Name"
-msgstr "სახელი"
-
-#: accessiblepropertiesmodel.cpp:87 accessiblepropertiesmodel.cpp:182
-#, kde-format
-msgid "Description"
-msgstr "აღწერა"
-
-#: accessiblepropertiesmodel.cpp:89
-#, kde-format
-msgid "LocalizedRole"
-msgstr "თარგმნილიროლი"
-
-#: accessiblepropertiesmodel.cpp:90
-#, kde-format
-msgid "Visible"
-msgstr "ხილული"
-
-#: accessiblepropertiesmodel.cpp:91
-#, kde-format
-msgid "Default"
-msgstr "ნაგულისხმევი"
-
-#: accessiblepropertiesmodel.cpp:92
-#, kde-format
-msgid "State"
-msgstr "მდგომარეობა"
-
-#: accessiblepropertiesmodel.cpp:93
-#, kde-format
-msgid "AccessibleId"
-msgstr "წვდომადისID"
-
-#: accessiblepropertiesmodel.cpp:94
-#, kde-format
-msgid "Url"
-msgstr "Url"
-
-#: accessiblepropertiesmodel.cpp:97
-#, kde-format
-msgid "Parent"
-msgstr "მშობელი"
-
-#: accessiblepropertiesmodel.cpp:99
-#, kde-format
-msgid "Children"
-msgstr "ბავშვები"
-
-#: accessiblepropertiesmodel.cpp:103
-#, kde-format
-msgid "Broken child"
-msgstr "გაფუჭებული შვილი"
-
-#: accessiblepropertiesmodel.cpp:111
-#, kde-format
-msgid "Component"
-msgstr "კომპონენტი"
-
-#: accessiblepropertiesmodel.cpp:112
-#, kde-format
-msgid "BoundingRect"
-msgstr "შემომსაზღვრელიმართკუთხ"
-
-#: accessiblepropertiesmodel.cpp:113
-#, kde-format
-msgid "Layer"
-msgstr "ფენა"
-
-#: accessiblepropertiesmodel.cpp:114
-#, kde-format
-msgid "MDIZOrder"
-msgstr "MDIZOrder"
-
-#: accessiblepropertiesmodel.cpp:115
-#, kde-format
-msgid "Alpha"
-msgstr "ალფა"
-
-#: accessiblepropertiesmodel.cpp:122
-#, kde-format
-msgid "Application"
-msgstr "აპლიკაცია"
-
-#: accessiblepropertiesmodel.cpp:123
-#, kde-format
-msgid "ToolkitName"
-msgstr "ხელსაწყოსსახელი"
-
-#: accessiblepropertiesmodel.cpp:124
-#, kde-format
-msgid "Version"
-msgstr "ვერსია"
-
-#: accessiblepropertiesmodel.cpp:125
-#, kde-format
-msgid "Id"
-msgstr "Id"
-
-#: accessiblepropertiesmodel.cpp:126 accessiblepropertiesmodel.cpp:183
-#, kde-format
-msgid "Locale"
-msgstr "ენა"
-
-#: accessiblepropertiesmodel.cpp:127
-#, kde-format
-msgid "BusAddress"
-msgstr "მატარებლისმისამართი"
-
-#: accessiblepropertiesmodel.cpp:130
-#, kde-format
-msgid "Document"
-msgstr "დოკუმენტი"
-
-#: accessiblepropertiesmodel.cpp:138
-#, kde-format
-msgid "Editable Text"
-msgstr "ჩასწორებადი ტექსტი"
-
-#: accessiblepropertiesmodel.cpp:142
-#, kde-format
-msgid "Hyperlink"
-msgstr "ჰიპერბმული"
-
-#: accessiblepropertiesmodel.cpp:163
-#, kde-format
-msgid "Hypertext"
-msgstr "ჰიპერტექსტი"
-
-#: accessiblepropertiesmodel.cpp:181
-#, kde-format
-msgid "Image"
-msgstr "გამოსახულება"
-
-#: accessiblepropertiesmodel.cpp:184
-#, kde-format
-msgid "Rect"
-msgstr "Rect"
-
-#: accessiblepropertiesmodel.cpp:187
-#, kde-format
-msgid "Selection"
-msgstr "მონიშნული"
-
-#: accessiblepropertiesmodel.cpp:193
-#, kde-format
-msgid "Table"
-msgstr "ცხრილი"
-
-#: accessiblepropertiesmodel.cpp:225 accessiblepropertiesmodel.cpp:233
-#: accessiblepropertiesmodel.cpp:235
-#, kde-format
-msgid "Text"
-msgstr "ტექსტი"
-
-#: accessiblepropertiesmodel.cpp:227
-#, kde-format
-msgid "Caret Offset"
-msgstr "კარეტის წანაცვლება"
-
-#: accessiblepropertiesmodel.cpp:228
-#, kde-format
-msgid "Character Count"
-msgstr "სიმბოლოების რაოდენობა"
-
-#: accessiblepropertiesmodel.cpp:229
-#, kde-format
-msgid "Character Rect"
-msgstr "სიმბოლოს რაღაც"
-
-#: accessiblepropertiesmodel.cpp:239
-#, kde-format
-msgid "Selections"
-msgstr "მონიშნულები"
-
-#: accessiblepropertiesmodel.cpp:250
-#, kde-format
-msgid "Current"
-msgstr "მიმდინარე"
-
-#: accessiblepropertiesmodel.cpp:251
-#, kde-format
-msgid "Minimum"
-msgstr "მინიმუმი"
-
-#: accessiblepropertiesmodel.cpp:252
-#, kde-format
-msgid "Maximum"
-msgstr "მაქსიმუმი"
-
-#: accessiblepropertiesmodel.cpp:253
-#, kde-format
-msgid "Increment"
-msgstr "გაზრდა"
-
-#: accessiblepropertiesmodel.cpp:256
-#, kde-format
-msgid "Socket"
-msgstr "სოკეტი"
-
-#: accessiblepropertiesmodel.cpp:261
-#, kde-format
-msgid "Event Keyboard"
-msgstr "მოვლენის კლავიატურა"
-
-#: accessiblepropertiesmodel.cpp:265
-#, kde-format
-msgid "Event Mouse"
-msgstr "მოვლენის თაგუნა"
-
-#: accessiblepropertiesmodel.cpp:269
-#, kde-format
-msgid "Event Object"
-msgstr "მოვლენის ობიექტი"
-
-#: accessiblepropertiesmodel.cpp:273
-#, kde-format
-msgid "Event Window"
-msgstr "მოვლენის ფანჯარა"
-
-#: accessiblepropertiesmodel.cpp:277
-#, kde-format
-msgid "Event Focus"
-msgstr "მოვლენის ფოკუსი"
-
-#: accessiblepropertiesmodel.cpp:282
-#, kde-format
-msgid "Action"
-msgstr "პარამეტრები"
 
 #: accessibletreeview.cpp:25
 #, kde-format
@@ -607,41 +356,298 @@ msgstr "განადგურება"
 msgid "Text caret moved (%1)"
 msgstr "ტექსტის კარეტის გადაადგილდა (%1)"
 
-#: mainwindow.cpp:64
+#: mainwindow.cpp:63
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Reset Tree"
 msgstr "ხის განულება"
 
-#: mainwindow.cpp:70
+#: mainwindow.cpp:69
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Follow Focus"
 msgstr "ფოკუსის მიყოლა"
 
-#: mainwindow.cpp:76
+#: mainwindow.cpp:75
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Cache..."
 msgstr "კეში..."
 
-#: mainwindow.cpp:81
+#: mainwindow.cpp:80
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Enable Accessibility"
 msgstr "წვდომადობის ჩართვა"
 
-#: mainwindow.cpp:91
+#: mainwindow.cpp:90
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Enable Screen Reader"
 msgstr "ეკრანის მკითხველის ჩართვა"
 
-#: mainwindow.cpp:102
+#: mainwindow.cpp:101
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy property value"
 msgstr "თვისების მნიშვნელობის კოპირება"
+
+#: model/accessibleobjecttreemodel.cpp:31
+#: model/accessiblepropertiesmodel.cpp:85
+#, kde-format
+msgid "Accessible"
+msgstr "წვდომადი"
+
+#: model/accessibleobjecttreemodel.cpp:33
+#: model/accessiblepropertiesmodel.cpp:88
+#, kde-format
+msgid "Role"
+msgstr "როლი"
+
+#: model/accessiblepropertiesmodel.cpp:53
+#, kde-format
+msgid "Property"
+msgstr "თვისება"
+
+#: model/accessiblepropertiesmodel.cpp:55
+#: model/accessiblepropertiesmodel.cpp:249
+#, kde-format
+msgid "Value"
+msgstr "მნიშვნელობა"
+
+#: model/accessiblepropertiesmodel.cpp:86
+#, kde-format
+msgid "Name"
+msgstr "სახელი"
+
+#: model/accessiblepropertiesmodel.cpp:87
+#: model/accessiblepropertiesmodel.cpp:182
+#, kde-format
+msgid "Description"
+msgstr "აღწერა"
+
+#: model/accessiblepropertiesmodel.cpp:89
+#, kde-format
+msgid "LocalizedRole"
+msgstr "თარგმნილიროლი"
+
+#: model/accessiblepropertiesmodel.cpp:90
+#, kde-format
+msgid "Visible"
+msgstr "ხილული"
+
+#: model/accessiblepropertiesmodel.cpp:91
+#, kde-format
+msgid "Default"
+msgstr "ნაგულისხმევი"
+
+#: model/accessiblepropertiesmodel.cpp:92
+#, kde-format
+msgid "State"
+msgstr "მდგომარეობა"
+
+#: model/accessiblepropertiesmodel.cpp:93
+#, kde-format
+msgid "AccessibleId"
+msgstr "წვდომადისID"
+
+#: model/accessiblepropertiesmodel.cpp:94
+#, kde-format
+msgid "Url"
+msgstr "Url"
+
+#: model/accessiblepropertiesmodel.cpp:97
+#, kde-format
+msgid "Parent"
+msgstr "მშობელი"
+
+#: model/accessiblepropertiesmodel.cpp:99
+#, kde-format
+msgid "Children"
+msgstr "ბავშვები"
+
+#: model/accessiblepropertiesmodel.cpp:103
+#, kde-format
+msgid "Broken child"
+msgstr "გაფუჭებული შვილი"
+
+#: model/accessiblepropertiesmodel.cpp:111
+#, kde-format
+msgid "Component"
+msgstr "კომპონენტი"
+
+#: model/accessiblepropertiesmodel.cpp:112
+#, kde-format
+msgid "BoundingRect"
+msgstr "შემომსაზღვრელიმართკუთხ"
+
+#: model/accessiblepropertiesmodel.cpp:113
+#, kde-format
+msgid "Layer"
+msgstr "ფენა"
+
+#: model/accessiblepropertiesmodel.cpp:114
+#, kde-format
+msgid "MDIZOrder"
+msgstr "MDIZOrder"
+
+#: model/accessiblepropertiesmodel.cpp:115
+#, kde-format
+msgid "Alpha"
+msgstr "ალფა"
+
+#: model/accessiblepropertiesmodel.cpp:122
+#, kde-format
+msgid "Application"
+msgstr "აპლიკაცია"
+
+#: model/accessiblepropertiesmodel.cpp:123
+#, kde-format
+msgid "ToolkitName"
+msgstr "ხელსაწყოსსახელი"
+
+#: model/accessiblepropertiesmodel.cpp:124
+#, kde-format
+msgid "Version"
+msgstr "ვერსია"
+
+#: model/accessiblepropertiesmodel.cpp:125
+#, kde-format
+msgid "Id"
+msgstr "Id"
+
+#: model/accessiblepropertiesmodel.cpp:126
+#: model/accessiblepropertiesmodel.cpp:183
+#, kde-format
+msgid "Locale"
+msgstr "ენა"
+
+#: model/accessiblepropertiesmodel.cpp:127
+#, kde-format
+msgid "BusAddress"
+msgstr "მატარებლისმისამართი"
+
+#: model/accessiblepropertiesmodel.cpp:130
+#, kde-format
+msgid "Document"
+msgstr "დოკუმენტი"
+
+#: model/accessiblepropertiesmodel.cpp:138
+#, kde-format
+msgid "Editable Text"
+msgstr "ჩასწორებადი ტექსტი"
+
+#: model/accessiblepropertiesmodel.cpp:142
+#, kde-format
+msgid "Hyperlink"
+msgstr "ჰიპერბმული"
+
+#: model/accessiblepropertiesmodel.cpp:163
+#, kde-format
+msgid "Hypertext"
+msgstr "ჰიპერტექსტი"
+
+#: model/accessiblepropertiesmodel.cpp:181
+#, kde-format
+msgid "Image"
+msgstr "გამოსახულება"
+
+#: model/accessiblepropertiesmodel.cpp:184
+#, kde-format
+msgid "Rect"
+msgstr "Rect"
+
+#: model/accessiblepropertiesmodel.cpp:187
+#, kde-format
+msgid "Selection"
+msgstr "მონიშნული"
+
+#: model/accessiblepropertiesmodel.cpp:193
+#, kde-format
+msgid "Table"
+msgstr "ცხრილი"
+
+#: model/accessiblepropertiesmodel.cpp:225
+#: model/accessiblepropertiesmodel.cpp:233
+#: model/accessiblepropertiesmodel.cpp:235
+#, kde-format
+msgid "Text"
+msgstr "ტექსტი"
+
+#: model/accessiblepropertiesmodel.cpp:227
+#, kde-format
+msgid "Caret Offset"
+msgstr "კარეტის წანაცვლება"
+
+#: model/accessiblepropertiesmodel.cpp:228
+#, kde-format
+msgid "Character Count"
+msgstr "სიმბოლოების რაოდენობა"
+
+#: model/accessiblepropertiesmodel.cpp:229
+#, kde-format
+msgid "Character Rect"
+msgstr "სიმბოლოს რაღაც"
+
+#: model/accessiblepropertiesmodel.cpp:239
+#, kde-format
+msgid "Selections"
+msgstr "მონიშნულები"
+
+#: model/accessiblepropertiesmodel.cpp:250
+#, kde-format
+msgid "Current"
+msgstr "მიმდინარე"
+
+#: model/accessiblepropertiesmodel.cpp:251
+#, kde-format
+msgid "Minimum"
+msgstr "მინიმუმი"
+
+#: model/accessiblepropertiesmodel.cpp:252
+#, kde-format
+msgid "Maximum"
+msgstr "მაქსიმუმი"
+
+#: model/accessiblepropertiesmodel.cpp:253
+#, kde-format
+msgid "Increment"
+msgstr "გაზრდა"
+
+#: model/accessiblepropertiesmodel.cpp:256
+#, kde-format
+msgid "Socket"
+msgstr "სოკეტი"
+
+#: model/accessiblepropertiesmodel.cpp:261
+#, kde-format
+msgid "Event Keyboard"
+msgstr "მოვლენის კლავიატურა"
+
+#: model/accessiblepropertiesmodel.cpp:265
+#, kde-format
+msgid "Event Mouse"
+msgstr "მოვლენის თაგუნა"
+
+#: model/accessiblepropertiesmodel.cpp:269
+#, kde-format
+msgid "Event Object"
+msgstr "მოვლენის ობიექტი"
+
+#: model/accessiblepropertiesmodel.cpp:273
+#, kde-format
+msgid "Event Window"
+msgstr "მოვლენის ფანჯარა"
+
+#: model/accessiblepropertiesmodel.cpp:277
+#, kde-format
+msgid "Event Focus"
+msgstr "მოვლენის ფოკუსი"
+
+#: model/accessiblepropertiesmodel.cpp:282
+#, kde-format
+msgid "Action"
+msgstr "პარამეტრები"
 
 #: propertytreeview.cpp:13
 #, kde-format
