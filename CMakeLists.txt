@@ -54,7 +54,7 @@ set_package_properties(KF6 PROPERTIES
 find_package(QAccessibilityClient6 CONFIG)
 set_package_properties(QAccessibilityClient6 PROPERTIES
     TYPE REQUIRED
-    URL "https://commits.kde.org/libqaccessibilityclient"
+    URL "https://invent.kde.org/libraries/libqaccessibilityclient"
     DESCRIPTION "KDE client-side accessibility library"
     PURPOSE "Required to enable accessibility features"
 )
