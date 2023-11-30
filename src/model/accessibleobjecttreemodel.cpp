@@ -31,6 +31,8 @@ QVariant AccessibleObjectTreeModel::headerData(int section, Qt::Orientation orie
             return i18n("Accessible");
         case Role:
             return i18n("Role");
+        default:
+            return {};
         }
     }
     return {};
@@ -59,6 +61,8 @@ QVariant AccessibleObjectTreeModel::data(const QModelIndex &index, int role) con
             return name;
         } else if (index.column() == Role) {
             return acc.roleName();
+        } else if (index.column() == ChildrenCount) {
+            return acc.childCount();
         }
         [[fallthrough]];
     default:

@@ -34,6 +34,7 @@ AccessibleTreeView::AccessibleTreeView(QAccessibleClient::Registry *registry, QW
             Q_EMIT accessibleTreeviewSelectionChanged(i);
         }
     });
+    hideColumn(AccessibleObjectTreeModel::ChildrenCount);
     connect(this, &AccessibleTreeView::customContextMenuRequested, this, &AccessibleTreeView::treeCustomContextMenuRequested);
 }
 

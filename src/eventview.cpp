@@ -297,7 +297,7 @@ QString EventsWidget::eventName(EventType eventType) const
 
 void EventsWidget::loadSettings(QSettings &settings)
 {
-    // FIXME USE this method!!!
+    qDebug() << " loadSettings";
 
     settings.beginGroup(QStringLiteral("events"));
 
@@ -328,7 +328,7 @@ void EventsWidget::loadSettings(QSettings &settings)
 
 void EventsWidget::saveSettings(QSettings &settings)
 {
-    // TODO use this method
+    qDebug() << " saveSettings";
     settings.beginGroup(QStringLiteral("events"));
     settings.setValue(QStringLiteral("eventsFilter"), int(m_proxyModel->filter()));
 
