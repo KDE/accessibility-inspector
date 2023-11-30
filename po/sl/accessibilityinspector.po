@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-29 13:37+0000\n"
+"POT-Creation-Date: 2023-11-30 01:32+0000\n"
 "PO-Revision-Date: 2023-11-27 07:29+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -642,6 +642,7 @@ msgid "Event Focus"
 msgstr "Fokus dogodka"
 
 #: model/accessiblepropertiesmodel.cpp:282
+#: model/accessiblepropertiesmodel.cpp:302
 #, kde-format
 msgid "Action"
 msgstr "Dejavnost"
