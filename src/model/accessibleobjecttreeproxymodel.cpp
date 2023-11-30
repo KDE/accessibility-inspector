@@ -20,6 +20,9 @@ AccessibleObjectTreeProxyModel::~AccessibleObjectTreeProxyModel() = default;
 bool AccessibleObjectTreeProxyModel::filterAcceptsRow(int source_row, const QModelIndex &source_parent) const
 {
     const QModelIndex modelIndex = sourceModel()->index(source_row, 0, source_parent);
+    if (modelIndex.isValid() && modelIndex.parent().isValid()) {
+        return true;
+    }
     auto match = [&](int role) {
         if (mFilterString.isEmpty()) {
             return true;
