@@ -21,7 +21,6 @@ AccessibleTreeView::AccessibleTreeView(QAccessibleClient::Registry *registry, QW
     , mSortFilterProxyModel(new AccessibleObjectTreeProxyModel(mAccessibleObjectTreeModel, this))
 {
     mAccessibleObjectTreeModel->setRegistry(registry);
-    setSortingEnabled(true);
     setAccessibleDescription(i18n("Displays a hierachical tree of accessible objects"));
     setSelectionBehavior(QAbstractItemView::SelectRows);
     setEditTriggers(QAbstractItemView::NoEditTriggers);

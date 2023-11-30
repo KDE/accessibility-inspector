@@ -13,8 +13,6 @@ AccessibleObjectTreeProxyModel::AccessibleObjectTreeProxyModel(AccessibleObjectT
 {
     setSourceModel(mAccessibleObjectTreeModel);
     setFilterCaseSensitivity(Qt::CaseInsensitive);
-    setFilterRole(AccessibleObjectTreeModel::Accessible);
-    sort(0, Qt::DescendingOrder);
 }
 
 AccessibleObjectTreeProxyModel::~AccessibleObjectTreeProxyModel() = default;
