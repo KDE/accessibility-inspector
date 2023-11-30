@@ -32,6 +32,9 @@ public:
     void saveSettings(QSettings &settings);
     void loadSettings(QSettings &settings);
 
+    bool followFocus() const;
+    void setFollowFocus(bool newFollowFocus);
+
 private:
     void selectionChanged(const QModelIndex &current);
     void showClientCache();
@@ -81,6 +84,7 @@ private:
     void updateDetails(const QAccessibleClient::AccessibleObject &object, bool force = false);
 
     void anchorClicked(const QUrl &url);
+    bool mFollowFocus = false;
     QSplitter *const mSplitter;
     QTabWidget *const mTabWidget;
     AccessibleTreeWidget *const mAccessibleTreeWidget;

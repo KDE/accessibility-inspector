@@ -129,6 +129,16 @@ void MainWidget::anchorClicked(const QUrl &url)
     mAccessibleTreeWidget->setCurrentObject(object);
 }
 
+bool MainWidget::followFocus() const
+{
+    return mFollowFocus;
+}
+
+void MainWidget::setFollowFocus(bool newFollowFocus)
+{
+    mFollowFocus = newFollowFocus;
+}
+
 void MainWidget::stateChanged(const QAccessibleClient::AccessibleObject &object, const QString &state, bool active)
 {
     if (state == QLatin1String("focused")) {
@@ -289,10 +299,7 @@ void MainWidget::windowUnshaded(const QAccessibleClient::AccessibleObject &objec
 
 void MainWidget::focusChanged(const QAccessibleClient::AccessibleObject &object)
 {
-    // TODO FIXME !!!!!!
-#if 0
-    // TODO FIXME
-    if (m_followFocusAction->isChecked()) {
+    if (mFollowFocus) {
         // We need to block the focus for the treeView while setting the current item
         // to prevent that setting that item would change focus to the treeView.
         Qt::FocusPolicy prevFocusPolicy = mAccessibleTreeWidget->focusPolicy();
@@ -304,7 +311,6 @@ void MainWidget::focusChanged(const QAccessibleClient::AccessibleObject &object)
     } else {
         updateDetails(object);
     }
-#endif
 }
 
 void MainWidget::textCaretMoved(const QAccessibleClient::AccessibleObject &object, int pos)

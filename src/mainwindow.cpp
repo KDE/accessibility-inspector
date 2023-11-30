@@ -80,6 +80,7 @@ void MainWindow::initActions()
     m_followFocusAction->setCheckable(true);
     ac->addAction(QStringLiteral("follow_focus"), m_followFocusAction);
     ac->setDefaultShortcut(m_followFocusAction, QKeySequence(Qt::CTRL | Qt::Key_F));
+    connect(m_followFocusAction, &QAction::triggered, mMainWidget, &MainWidget::setFollowFocus);
 
     m_showClientCacheAction = new QAction(this);
     m_showClientCacheAction->setText(i18nc("@action:inmenu", "Cache..."));
