@@ -15,9 +15,12 @@ public:
     explicit AccessibleObjectTreeProxyModel(AccessibleObjectTreeModel *model, QObject *parent = nullptr);
     ~AccessibleObjectTreeProxyModel() override;
 
+    void setFilterString(const QString &str);
+
 protected:
     [[nodiscard]] bool filterAcceptsRow(int source_row, const QModelIndex &source_parent) const override;
 
 private:
+    QString mFilterString;
     AccessibleObjectTreeModel *const mAccessibleObjectTreeModel;
 };

@@ -76,8 +76,7 @@ void AccessibleTreeView::setCurrentObject(const QAccessibleClient::AccessibleObj
 
 void AccessibleTreeView::setSearchTextChanged(const QString &str)
 {
-    qDebug() << " str " << str;
-    mSortFilterProxyModel->setFilterFixedString(str);
+    mSortFilterProxyModel->setFilterString(str);
 }
 
 #include "moc_accessibletreeview.cpp"

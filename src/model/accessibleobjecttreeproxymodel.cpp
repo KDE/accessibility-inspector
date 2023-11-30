@@ -19,8 +19,26 @@ AccessibleObjectTreeProxyModel::~AccessibleObjectTreeProxyModel() = default;
 
 bool AccessibleObjectTreeProxyModel::filterAcceptsRow(int source_row, const QModelIndex &source_parent) const
 {
-    // TODO implement
-    return QSortFilterProxyModel::filterAcceptsColumn(source_row, source_parent);
+    const QModelIndex modelIndex = sourceModel()->index(source_row, 0, source_parent);
+    auto match = [&](int role) {
+        if (mFilterString.isEmpty()) {
+            return true;
+        };
+        const QString str = modelIndex.data(role).toString();
+        return str.contains(mFilterString, Qt::CaseInsensitive);
+    };
+    if (!match(AccessibleObjectTreeModel::Accessible)) {
+        return false;
+    }
+    return true;
+}
+
+void AccessibleObjectTreeProxyModel::setFilterString(const QString &str)
+{
+    if (mFilterString != str) {
+        mFilterString = str;
+        invalidate();
+    }
 }
 
 #include "moc_accessibleobjecttreeproxymodel.cpp"
