@@ -31,12 +31,7 @@ MainWindow::MainWindow(QWidget *parent)
     setCentralWidget(mMainWidget);
     initActions();
     setupGUI();
-
-    QSettings settings(QStringLiteral("kde.org"), QStringLiteral("kdea11yapp"));
-    QAccessibleClient::RegistryPrivateCacheApi cache(m_registry);
-    cache.setCacheType(QAccessibleClient::RegistryPrivateCacheApi::CacheType(settings.value(QStringLiteral("cacheStrategy"), cache.cacheType()).toInt()));
-    restoreGeometry(settings.value(QStringLiteral("geometry")).toByteArray());
-    restoreState(settings.value(QStringLiteral("windowState")).toByteArray());
+    loadSettings();
 }
 
 MainWindow::~MainWindow()
@@ -44,15 +39,30 @@ MainWindow::~MainWindow()
     delete m_registry;
 }
 
-void MainWindow::closeEvent(QCloseEvent *event)
+void MainWindow::loadSettings()
 {
-    QSettings settings(QStringLiteral("kde.org"), QStringLiteral("kdea11yapp"));
+    QSettings settings(QStringLiteral("kde.org"), QStringLiteral("accessibilityinspector"));
+    QAccessibleClient::RegistryPrivateCacheApi cache(m_registry);
+    cache.setCacheType(QAccessibleClient::RegistryPrivateCacheApi::CacheType(settings.value(QStringLiteral("cacheStrategy"), cache.cacheType()).toInt()));
+    restoreGeometry(settings.value(QStringLiteral("geometry")).toByteArray());
+    restoreState(settings.value(QStringLiteral("windowState")).toByteArray());
+    mMainWidget->loadSettings(settings);
+}
+
+void MainWindow::saveSettings()
+{
+    QSettings settings(QStringLiteral("kde.org"), QStringLiteral("accessibilityinspector"));
     settings.setValue(QStringLiteral("cacheStrategy"), int(QAccessibleClient::RegistryPrivateCacheApi(m_registry).cacheType()));
     settings.setValue(QStringLiteral("geometry"), saveGeometry());
     settings.setValue(QStringLiteral("windowState"), saveState());
 
+    mMainWidget->saveSettings(settings);
     settings.sync();
+}
 
+void MainWindow::closeEvent(QCloseEvent *event)
+{
+    saveSettings();
     QMainWindow::closeEvent(event);
 }
 

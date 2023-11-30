@@ -29,6 +29,8 @@ private:
     void initActions();
     void initUi();
     void showClientCache();
+    void loadSettings();
+    void saveSettings();
 
     QAccessibleClient::Registry *const m_registry;
 

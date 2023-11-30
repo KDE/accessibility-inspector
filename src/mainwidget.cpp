@@ -96,6 +96,18 @@ MainWidget::MainWidget(QAccessibleClient::Registry *registry, QWidget *parent)
 
 MainWidget::~MainWidget() = default;
 
+void MainWidget::saveSettings(QSettings &settings)
+{
+    mEventsWidget->saveSettings(settings);
+    mAccessibleTreeWidget->saveSettings(settings);
+}
+
+void MainWidget::loadSettings(QSettings &settings)
+{
+    mEventsWidget->loadSettings(settings);
+    mAccessibleTreeWidget->loadSettings(settings);
+}
+
 void MainWidget::copyValue()
 {
     mPropertyTreeWidget->copyValue();

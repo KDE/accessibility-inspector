@@ -13,6 +13,7 @@ class AccessibleTreeWidget;
 class PropertyTreeWidget;
 class EventsWidget;
 class UiView;
+class QSettings;
 namespace QAccessibleClient
 {
 class Registry;
@@ -27,6 +28,9 @@ public:
 
     void copyValue();
     void resetModel();
+
+    void saveSettings(QSettings &settings);
+    void loadSettings(QSettings &settings);
 
 private:
     void selectionChanged(const QModelIndex &current);

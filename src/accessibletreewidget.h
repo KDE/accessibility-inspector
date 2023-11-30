@@ -11,6 +11,7 @@
 class QLineEdit;
 class AccessibleTreeView;
 class AccessibleObjectTreeModel;
+class QSettings;
 namespace QAccessibleClient
 {
 class Registry;
@@ -26,6 +27,9 @@ public:
     [[nodiscard]] AccessibleObjectTreeModel *accessibleObjectTreeModel() const;
 
     void setCurrentObject(const QAccessibleClient::AccessibleObject &object);
+
+    void saveSettings(QSettings &settings);
+    void loadSettings(QSettings &settings);
 
 Q_SIGNALS:
     void accessibleTreeviewSelectionChanged(const QModelIndex &current);

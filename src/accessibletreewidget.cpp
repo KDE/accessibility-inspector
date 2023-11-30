@@ -50,4 +50,14 @@ void AccessibleTreeWidget::setCurrentObject(const QAccessibleClient::AccessibleO
     mAccessibleTreeView->setCurrentObject(object);
 }
 
+void AccessibleTreeWidget::saveSettings(QSettings &settings)
+{
+    // TODO
+}
+
+void AccessibleTreeWidget::loadSettings(QSettings &settings)
+{
+    // TODO
+}
+
 #include "moc_accessibletreewidget.cpp"
