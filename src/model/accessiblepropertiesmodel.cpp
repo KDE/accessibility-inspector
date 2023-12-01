@@ -123,7 +123,7 @@ void ObjectPropertiesModel::setAccessibleObject(const QAccessibleClient::Accessi
         append(i18n("Alpha"), acc.alpha(), item);
     }
     if (interfaces.testFlag(QAccessibleClient::AccessibleObject::CollectionInterface)) {
-        QStandardItem *item = append(QStringLiteral("Collection"));
+        QStandardItem *item = append(i18n("Collection"));
         setFontBold(item);
         Q_UNUSED(item);
     }
