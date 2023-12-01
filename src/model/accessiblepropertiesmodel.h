@@ -33,6 +33,7 @@ public:
 
 private:
     void slotDataChanged(QStandardItem *item);
+    void setFontBold(QStandardItem *item);
     QStandardItem *
     append(const QString &name, const QVariant &value = QVariant(), QStandardItem *parentItem = nullptr, QStandardItem **changeHandler = nullptr);
     QString stateString(const QAccessibleClient::AccessibleObject &acc);
