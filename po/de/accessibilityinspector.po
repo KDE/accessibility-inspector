@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-30 01:32+0000\n"
+"POT-Creation-Date: 2023-12-01 01:36+0000\n"
 "PO-Revision-Date: 2023-11-25 08:36+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -46,7 +46,7 @@ msgstr ""
 msgid "&Settings"
 msgstr ""
 
-#: accessibletreeview.cpp:25
+#: accessibletreeview.cpp:24
 #, kde-format
 msgid "Displays a hierachical tree of accessible objects"
 msgstr ""
@@ -296,97 +296,97 @@ msgctxt "@title:window"
 msgid "Boundaries"
 msgstr ""
 
-#: mainwidget.cpp:123 mainwidget.cpp:125
+#: mainwidget.cpp:145 mainwidget.cpp:147
 #, kde-format
 msgid "true"
 msgstr ""
 
-#: mainwidget.cpp:123 mainwidget.cpp:125
+#: mainwidget.cpp:145 mainwidget.cpp:147
 #, kde-format
 msgid "false"
 msgstr ""
 
-#: mainwidget.cpp:134
+#: mainwidget.cpp:156
 #, kde-format
 msgid "Child Added %1"
 msgstr ""
 
-#: mainwidget.cpp:140
+#: mainwidget.cpp:162
 #, kde-format
 msgid "Child Removed %1"
 msgstr ""
 
-#: mainwidget.cpp:146
+#: mainwidget.cpp:168
 #, kde-format
 msgid "Visible Data Changed"
 msgstr ""
 
-#: mainwidget.cpp:152
+#: mainwidget.cpp:174
 #, kde-format
 msgid "Selection Changed"
 msgstr ""
 
-#: mainwidget.cpp:158
+#: mainwidget.cpp:180
 #, kde-format
 msgid "Model Changed"
 msgstr ""
 
-#: mainwidget.cpp:173
+#: mainwidget.cpp:195
 #, kde-format
 msgid "Add Object"
 msgstr ""
 
-#: mainwidget.cpp:179
+#: mainwidget.cpp:201
 #, kde-format
 msgid "Remove Object"
 msgstr ""
 
-#: mainwidget.cpp:190
+#: mainwidget.cpp:212
 #, kde-format
 msgid "Create"
 msgstr ""
 
-#: mainwidget.cpp:196
+#: mainwidget.cpp:218
 #, kde-format
 msgid "Destroy"
 msgstr ""
 
-#: mainwidget.cpp:301
+#: mainwidget.cpp:319
 #, kde-format
 msgid "Text caret moved (%1)"
 msgstr ""
 
-#: mainwindow.cpp:63
+#: mainwindow.cpp:73
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Reset Tree"
 msgstr ""
 
-#: mainwindow.cpp:69
+#: mainwindow.cpp:79
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Follow Focus"
 msgstr ""
 
-#: mainwindow.cpp:75
+#: mainwindow.cpp:86
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Cache..."
 msgstr ""
 
-#: mainwindow.cpp:80
+#: mainwindow.cpp:91
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Enable Accessibility"
 msgstr ""
 
-#: mainwindow.cpp:90
+#: mainwindow.cpp:101
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Enable Screen Reader"
 msgstr ""
 
-#: mainwindow.cpp:101
+#: mainwindow.cpp:112
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy property value"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-30 01:32+0000\n"
+"POT-Creation-Date: 2023-12-01 01:36+0000\n"
 "PO-Revision-Date: 2023-11-25 06:10+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -46,7 +46,7 @@ msgstr "ხედი"
 msgid "&Settings"
 msgstr "&მორგება"
 
-#: accessibletreeview.cpp:25
+#: accessibletreeview.cpp:24
 #, kde-format
 msgid "Displays a hierachical tree of accessible objects"
 msgstr "აჩვენებს მონიშნული წვდომადი ობიექტების იერარქიულ ხეს"
@@ -296,97 +296,97 @@ msgctxt "@title:window"
 msgid "Boundaries"
 msgstr "საზღვრები"
 
-#: mainwidget.cpp:123 mainwidget.cpp:125
+#: mainwidget.cpp:145 mainwidget.cpp:147
 #, kde-format
 msgid "true"
 msgstr "ჭეშმარიტი"
 
-#: mainwidget.cpp:123 mainwidget.cpp:125
+#: mainwidget.cpp:145 mainwidget.cpp:147
 #, kde-format
 msgid "false"
 msgstr "ცრუ"
 
-#: mainwidget.cpp:134
+#: mainwidget.cpp:156
 #, kde-format
 msgid "Child Added %1"
 msgstr "დაემატა შვილი %1"
 
-#: mainwidget.cpp:140
+#: mainwidget.cpp:162
 #, kde-format
 msgid "Child Removed %1"
 msgstr "წაიშალა შვილი %1"
 
-#: mainwidget.cpp:146
+#: mainwidget.cpp:168
 #, kde-format
 msgid "Visible Data Changed"
 msgstr "ხილული მონაცემები შეიცვალა"
 
-#: mainwidget.cpp:152
+#: mainwidget.cpp:174
 #, kde-format
 msgid "Selection Changed"
 msgstr "მონიშნული შეიცვალა"
 
-#: mainwidget.cpp:158
+#: mainwidget.cpp:180
 #, kde-format
 msgid "Model Changed"
 msgstr "მოდელი შეიცვალა"
 
-#: mainwidget.cpp:173
+#: mainwidget.cpp:195
 #, kde-format
 msgid "Add Object"
 msgstr "ობიექტის დამატება"
 
-#: mainwidget.cpp:179
+#: mainwidget.cpp:201
 #, kde-format
 msgid "Remove Object"
 msgstr "ობიექტის წაშლა"
 
-#: mainwidget.cpp:190
+#: mainwidget.cpp:212
 #, kde-format
 msgid "Create"
 msgstr "შექმნა"
 
-#: mainwidget.cpp:196
+#: mainwidget.cpp:218
 #, kde-format
 msgid "Destroy"
 msgstr "განადგურება"
 
-#: mainwidget.cpp:301
+#: mainwidget.cpp:319
 #, kde-format
 msgid "Text caret moved (%1)"
 msgstr "ტექსტის კარეტის გადაადგილდა (%1)"
 
-#: mainwindow.cpp:63
+#: mainwindow.cpp:73
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Reset Tree"
 msgstr "ხის განულება"
 
-#: mainwindow.cpp:69
+#: mainwindow.cpp:79
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Follow Focus"
 msgstr "ფოკუსის მიყოლა"
 
-#: mainwindow.cpp:75
+#: mainwindow.cpp:86
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Cache..."
 msgstr "კეში..."
 
-#: mainwindow.cpp:80
+#: mainwindow.cpp:91
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Enable Accessibility"
 msgstr "წვდომადობის ჩართვა"
 
-#: mainwindow.cpp:90
+#: mainwindow.cpp:101
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Enable Screen Reader"
 msgstr "ეკრანის მკითხველის ჩართვა"
 
-#: mainwindow.cpp:101
+#: mainwindow.cpp:112
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy property value"
