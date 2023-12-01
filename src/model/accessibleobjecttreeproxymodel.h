@@ -17,10 +17,14 @@ public:
 
     void setFilterString(const QString &str);
 
+    [[nodiscard]] bool showAllElementWithChildren() const;
+    void setShowAllElementWithChildren(bool newShowAllElementWithChildren);
+
 protected:
     [[nodiscard]] bool filterAcceptsRow(int source_row, const QModelIndex &source_parent) const override;
 
 private:
     QString mFilterString;
+    bool mShowAllElementWithChildren = false;
     AccessibleObjectTreeModel *const mAccessibleObjectTreeModel;
 };

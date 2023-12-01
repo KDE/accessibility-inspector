@@ -22,22 +22,22 @@
 
 ClientCacheDialog::ClientCacheDialog(QAccessibleClient::Registry *registry, QWidget *parent)
     : QDialog(parent)
-    , m_registry(registry)
-    , m_cache(new QAccessibleClient::RegistryPrivateCacheApi(m_registry))
-    , m_view(new QTreeView(this))
+    , mRegistry(registry)
+    , mCache(new QAccessibleClient::RegistryPrivateCacheApi(mRegistry))
+    , mView(new QTreeView(this))
 {
     setWindowTitle(i18nc("@title:window", "Cache"));
     auto lay = new QVBoxLayout(this);
 
-    m_view->setEditTriggers(QAbstractItemView::NoEditTriggers);
-    m_view->setRootIsDecorated(false);
-    m_view->setSortingEnabled(true);
-    m_view->setItemsExpandable(false);
+    mView->setEditTriggers(QAbstractItemView::NoEditTriggers);
+    mView->setRootIsDecorated(false);
+    mView->setSortingEnabled(true);
+    mView->setItemsExpandable(false);
     // list->setHeaderHidden(true);
-    m_model = new QStandardItemModel(m_view);
-    m_model->setColumnCount(3);
-    m_view->setModel(m_model);
-    lay->addWidget(m_view);
+    mModel = new QStandardItemModel(mView);
+    mModel->setColumnCount(3);
+    mView->setModel(mModel);
+    lay->addWidget(mView);
 
     auto buttonsLay = new QHBoxLayout;
     buttonsLay->setContentsMargins(0, 0, 0, 0);
@@ -49,22 +49,22 @@ ClientCacheDialog::ClientCacheDialog(QAccessibleClient::Registry *registry, QWid
 
     auto cacheLabel = new QLabel(i18nc("@label", "Strategy:"), this);
     buttonsLay->addWidget(cacheLabel);
-    m_cacheCombo = new QComboBox(this);
-    cacheLabel->setBuddy(m_cacheCombo);
-    m_cacheCombo->setEditable(false);
-    m_cacheCombo->addItem(i18nc("@item:inlistbox", "Disable"), int(QAccessibleClient::RegistryPrivateCacheApi::NoCache));
-    m_cacheCombo->addItem(i18nc("@item:inlistbox", "Weak"), int(QAccessibleClient::RegistryPrivateCacheApi::WeakCache));
-    for (int i = 0; i < m_cacheCombo->count(); ++i) {
-        if (m_cacheCombo->itemData(i).toInt() == m_cache->cacheType()) {
-            m_cacheCombo->setCurrentIndex(i);
+    mCacheCombo = new QComboBox(this);
+    cacheLabel->setBuddy(mCacheCombo);
+    mCacheCombo->setEditable(false);
+    mCacheCombo->addItem(i18nc("@item:inlistbox", "Disable"), int(QAccessibleClient::RegistryPrivateCacheApi::NoCache));
+    mCacheCombo->addItem(i18nc("@item:inlistbox", "Weak"), int(QAccessibleClient::RegistryPrivateCacheApi::WeakCache));
+    for (int i = 0; i < mCacheCombo->count(); ++i) {
+        if (mCacheCombo->itemData(i).toInt() == mCache->cacheType()) {
+            mCacheCombo->setCurrentIndex(i);
             break;
         }
     }
-    connect(m_cacheCombo, &QComboBox::currentIndexChanged, this, &ClientCacheDialog::cacheStrategyChanged);
-    buttonsLay->addWidget(m_cacheCombo);
+    connect(mCacheCombo, &QComboBox::currentIndexChanged, this, &ClientCacheDialog::cacheStrategyChanged);
+    buttonsLay->addWidget(mCacheCombo);
     buttonsLay->addWidget(new QLabel(i18nc("@label:listbox", "Count:"), this));
-    m_countLabel = new QLabel(this);
-    buttonsLay->addWidget(m_countLabel);
+    mCountLabel = new QLabel(this);
+    buttonsLay->addWidget(mCountLabel);
     buttonsLay->addStretch(1);
 
     connect(clearButton, &QPushButton::clicked, this, &ClientCacheDialog::clearCache);
@@ -77,36 +77,38 @@ ClientCacheDialog::ClientCacheDialog(QAccessibleClient::Registry *registry, QWid
     resize(minimumSize().expandedTo(QSize(660, 420)));
 
     updateView();
-    m_view->sortByColumn(2, Qt::AscendingOrder);
+    mView->sortByColumn(2, Qt::AscendingOrder);
 }
+
+ClientCacheDialog::~ClientCacheDialog() = default;
 
 void ClientCacheDialog::clearCache()
 {
-    m_cache->clearClientCache();
+    mCache->clearClientCache();
     updateView();
 }
 
 void ClientCacheDialog::cacheStrategyChanged()
 {
-    const int c = m_cacheCombo->itemData(m_cacheCombo->currentIndex()).toInt();
-    m_cache->setCacheType(QAccessibleClient::RegistryPrivateCacheApi::CacheType(c));
+    const int c = mCacheCombo->itemData(mCacheCombo->currentIndex()).toInt();
+    mCache->setCacheType(QAccessibleClient::RegistryPrivateCacheApi::CacheType(c));
     updateView();
 }
 
 void ClientCacheDialog::updateView()
 {
-    m_model->clear();
-    m_model->setHorizontalHeaderLabels(QStringList{i18nc("@title:row", "Name"), i18nc("@title:row", "Role"), i18nc("@title:row", "Identifier")});
-    const QStringList cache = m_cache->clientCacheObjects();
-    m_countLabel->setText(QString::number(cache.count()));
+    mModel->clear();
+    mModel->setHorizontalHeaderLabels(QStringList{i18nc("@title:row", "Name"), i18nc("@title:row", "Role"), i18nc("@title:row", "Identifier")});
+    const QStringList cache = mCache->clientCacheObjects();
+    mCountLabel->setText(QString::number(cache.count()));
     for (const QString &c : cache) {
-        QAccessibleClient::AccessibleObject obj = m_cache->clientCacheObject(c);
+        QAccessibleClient::AccessibleObject obj = mCache->clientCacheObject(c);
         if (obj.isValid())
-            m_model->appendRow(QList<QStandardItem *>() << new QStandardItem(obj.name()) << new QStandardItem(obj.roleName()) << new QStandardItem(obj.id()));
+            mModel->appendRow(QList<QStandardItem *>() << new QStandardItem(obj.name()) << new QStandardItem(obj.roleName()) << new QStandardItem(obj.id()));
     }
-    m_view->setColumnWidth(0, 180);
-    m_view->resizeColumnToContents(1);
-    m_view->resizeColumnToContents(2);
+    mView->setColumnWidth(0, 180);
+    mView->resizeColumnToContents(1);
+    mView->resizeColumnToContents(2);
 }
 
 #include "moc_clientcachedialog.cpp"

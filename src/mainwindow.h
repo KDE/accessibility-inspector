@@ -32,15 +32,15 @@ private:
     void loadSettings();
     void saveSettings();
 
-    QAccessibleClient::Registry *const m_registry;
+    QAccessibleClient::Registry *const mRegistry;
 
     MainWidget *const mMainWidget;
 
-    QAction *m_resetTreeAction = nullptr;
-    QAction *m_followFocusAction = nullptr;
-    QAction *m_showClientCacheAction = nullptr;
-    QAction *m_enableA11yAction = nullptr;
-    QAction *m_enableScreenReaderAction = nullptr;
-    QAction *m_quitAction = nullptr;
-    QAction *m_copyValueAction = nullptr;
+    QAction *mResetTreeAction = nullptr;
+    QAction *mFollowFocusAction = nullptr;
+    QAction *mShowClientCacheAction = nullptr;
+    QAction *mEnableA11yAction = nullptr;
+    QAction *mEnableScreenReaderAction = nullptr;
+    QAction *mQuitAction = nullptr;
+    QAction *mCopyValueAction = nullptr;
 };

@@ -63,10 +63,10 @@ private:
     void accessibleFilterChanged();
     void clearLog();
     void installUpdateHandler();
-    Ui::EventViewWidget m_ui;
-    EventsModel *const m_model;
-    EventsProxyModel *const m_proxyModel;
-    QTimer m_pendingTimer;
+    Ui::EventViewWidget mUi;
+    EventsModel *const mModel;
+    EventsProxyModel *const mProxyModel;
+    QTimer mPendingTimer;
     QVector<QList<QStandardItem *>> m_pendingLogs;
 
     // This is to avoid sending updates for the events view.
@@ -74,7 +74,7 @@ private:
     // No normal application should have to do this.
     static void customUpdateHandler(QAccessibleEvent *event);
     static QAccessible::UpdateHandler mOriginalAccessibilityUpdateHandler;
-    static QObject *m_textEditForAccessibilityUpdateHandler;
+    static QObject *mTextEditForAccessibilityUpdateHandler;
 };
 
 Q_DECLARE_METATYPE(EventsWidget::EventType)

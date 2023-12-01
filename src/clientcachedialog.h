@@ -23,15 +23,16 @@ class ClientCacheDialog : public QDialog
     Q_OBJECT
 public:
     explicit ClientCacheDialog(QAccessibleClient::Registry *registry, QWidget *parent = nullptr);
+    ~ClientCacheDialog() override;
 
 private:
     void clearCache();
     void cacheStrategyChanged();
     void updateView();
-    QAccessibleClient::Registry *m_registry = nullptr;
-    QAccessibleClient::RegistryPrivateCacheApi *const m_cache;
-    QTreeView *const m_view;
-    QStandardItemModel *m_model = nullptr;
-    QComboBox *m_cacheCombo = nullptr;
-    QLabel *m_countLabel = nullptr;
+    QAccessibleClient::Registry *mRegistry = nullptr;
+    QAccessibleClient::RegistryPrivateCacheApi *const mCache;
+    QTreeView *const mView;
+    QStandardItemModel *mModel = nullptr;
+    QComboBox *mCacheCombo = nullptr;
+    QLabel *mCountLabel = nullptr;
 };

@@ -23,6 +23,14 @@ bool AccessibleObjectTreeProxyModel::filterAcceptsRow(int source_row, const QMod
     if (modelIndex.isValid() && modelIndex.parent().isValid()) {
         return true;
     }
+
+    if (mShowAllElementWithChildren) {
+        const bool hasChildren = modelIndex.data(AccessibleObjectTreeModel::ChildrenCount).toInt();
+        if (hasChildren == 0) {
+            return false;
+        }
+    }
+
     auto match = [&](int role) {
         if (mFilterString.isEmpty()) {
             return true;
@@ -34,6 +42,16 @@ bool AccessibleObjectTreeProxyModel::filterAcceptsRow(int source_row, const QMod
         return false;
     }
     return true;
+}
+
+bool AccessibleObjectTreeProxyModel::showAllElementWithChildren() const
+{
+    return mShowAllElementWithChildren;
+}
+
+void AccessibleObjectTreeProxyModel::setShowAllElementWithChildren(bool newShowAllElementWithChildren)
+{
+    mShowAllElementWithChildren = newShowAllElementWithChildren;
 }
 
 void AccessibleObjectTreeProxyModel::setFilterString(const QString &str)

@@ -24,10 +24,10 @@ using namespace QAccessibleClient;
 
 MainWindow::MainWindow(QWidget *parent)
     : KXmlGuiWindow(parent)
-    , m_registry(new QAccessibleClient::Registry(this))
-    , mMainWidget(new MainWidget(m_registry, this))
+    , mRegistry(new QAccessibleClient::Registry(this))
+    , mMainWidget(new MainWidget(mRegistry, this))
 {
-    m_registry->subscribeEventListeners(QAccessibleClient::Registry::AllEventListeners);
+    mRegistry->subscribeEventListeners(QAccessibleClient::Registry::AllEventListeners);
     setCentralWidget(mMainWidget);
     initActions();
     setupGUI();
@@ -36,13 +36,13 @@ MainWindow::MainWindow(QWidget *parent)
 
 MainWindow::~MainWindow()
 {
-    delete m_registry;
+    delete mRegistry;
 }
 
 void MainWindow::loadSettings()
 {
     QSettings settings(QStringLiteral("kde.org"), QStringLiteral("accessibilityinspector"));
-    QAccessibleClient::RegistryPrivateCacheApi cache(m_registry);
+    QAccessibleClient::RegistryPrivateCacheApi cache(mRegistry);
     cache.setCacheType(QAccessibleClient::RegistryPrivateCacheApi::CacheType(settings.value(QStringLiteral("cacheStrategy"), cache.cacheType()).toInt()));
     restoreGeometry(settings.value(QStringLiteral("geometry")).toByteArray());
     restoreState(settings.value(QStringLiteral("windowState")).toByteArray());
@@ -52,7 +52,7 @@ void MainWindow::loadSettings()
 void MainWindow::saveSettings()
 {
     QSettings settings(QStringLiteral("kde.org"), QStringLiteral("accessibilityinspector"));
-    settings.setValue(QStringLiteral("cacheStrategy"), int(QAccessibleClient::RegistryPrivateCacheApi(m_registry).cacheType()));
+    settings.setValue(QStringLiteral("cacheStrategy"), int(QAccessibleClient::RegistryPrivateCacheApi(mRegistry).cacheType()));
     settings.setValue(QStringLiteral("geometry"), saveGeometry());
     settings.setValue(QStringLiteral("windowState"), saveState());
 
@@ -69,56 +69,56 @@ void MainWindow::closeEvent(QCloseEvent *event)
 void MainWindow::initActions()
 {
     KActionCollection *ac = actionCollection();
-    m_resetTreeAction = new QAction(this);
-    m_resetTreeAction->setText(i18nc("@action:inmenu", "Reset Tree"));
-    ac->setDefaultShortcut(m_resetTreeAction, QKeySequence(QKeySequence::Refresh));
-    ac->addAction(QStringLiteral("reset_tree"), m_resetTreeAction);
-    connect(m_resetTreeAction, &QAction::triggered, mMainWidget, &MainWidget::resetModel);
+    mResetTreeAction = new QAction(this);
+    mResetTreeAction->setText(i18nc("@action:inmenu", "Reset Tree"));
+    ac->setDefaultShortcut(mResetTreeAction, QKeySequence(QKeySequence::Refresh));
+    ac->addAction(QStringLiteral("reset_tree"), mResetTreeAction);
+    connect(mResetTreeAction, &QAction::triggered, mMainWidget, &MainWidget::resetModel);
 
-    m_followFocusAction = new QAction(this);
-    m_followFocusAction->setText(i18nc("@action:inmenu", "Follow Focus"));
-    m_followFocusAction->setCheckable(true);
-    ac->addAction(QStringLiteral("follow_focus"), m_followFocusAction);
-    ac->setDefaultShortcut(m_followFocusAction, QKeySequence(Qt::CTRL | Qt::Key_F));
-    connect(m_followFocusAction, &QAction::triggered, mMainWidget, &MainWidget::setFollowFocus);
+    mFollowFocusAction = new QAction(this);
+    mFollowFocusAction->setText(i18nc("@action:inmenu", "Follow Focus"));
+    mFollowFocusAction->setCheckable(true);
+    ac->addAction(QStringLiteral("follow_focus"), mFollowFocusAction);
+    ac->setDefaultShortcut(mFollowFocusAction, QKeySequence(Qt::CTRL | Qt::Key_F));
+    connect(mFollowFocusAction, &QAction::triggered, mMainWidget, &MainWidget::setFollowFocus);
 
-    m_showClientCacheAction = new QAction(this);
-    m_showClientCacheAction->setText(i18nc("@action:inmenu", "Cache..."));
-    ac->addAction(QStringLiteral("show_cache"), m_showClientCacheAction);
-    connect(m_showClientCacheAction, &QAction::triggered, this, &MainWindow::showClientCache);
+    mShowClientCacheAction = new QAction(this);
+    mShowClientCacheAction->setText(i18nc("@action:inmenu", "Cache..."));
+    ac->addAction(QStringLiteral("show_cache"), mShowClientCacheAction);
+    connect(mShowClientCacheAction, &QAction::triggered, this, &MainWindow::showClientCache);
 
-    m_enableA11yAction = new QAction(this);
-    m_enableA11yAction->setText(i18nc("@action:inmenu", "Enable Accessibility"));
-    ac->setDefaultShortcut(m_enableA11yAction, QKeySequence(Qt::CTRL | Qt::Key_E));
+    mEnableA11yAction = new QAction(this);
+    mEnableA11yAction->setText(i18nc("@action:inmenu", "Enable Accessibility"));
+    ac->setDefaultShortcut(mEnableA11yAction, QKeySequence(Qt::CTRL | Qt::Key_E));
 
-    m_enableA11yAction->setCheckable(true);
-    m_enableA11yAction->setChecked(m_registry->isEnabled());
-    ac->addAction(QStringLiteral("enable_accessibility"), m_enableA11yAction);
-    connect(m_registry, &QAccessibleClient::Registry::enabledChanged, m_enableA11yAction, &QAction::setChecked);
-    connect(m_enableA11yAction, &QAction::toggled, m_registry, &QAccessibleClient::Registry::setEnabled);
+    mEnableA11yAction->setCheckable(true);
+    mEnableA11yAction->setChecked(mRegistry->isEnabled());
+    ac->addAction(QStringLiteral("enable_accessibility"), mEnableA11yAction);
+    connect(mRegistry, &QAccessibleClient::Registry::enabledChanged, mEnableA11yAction, &QAction::setChecked);
+    connect(mEnableA11yAction, &QAction::toggled, mRegistry, &QAccessibleClient::Registry::setEnabled);
 
-    m_enableScreenReaderAction = new QAction(this);
-    m_enableScreenReaderAction->setText(i18nc("@action:inmenu", "Enable Screen Reader"));
-    ac->setDefaultShortcut(m_enableScreenReaderAction, QKeySequence(Qt::CTRL | Qt::Key_R));
+    mEnableScreenReaderAction = new QAction(this);
+    mEnableScreenReaderAction->setText(i18nc("@action:inmenu", "Enable Screen Reader"));
+    ac->setDefaultShortcut(mEnableScreenReaderAction, QKeySequence(Qt::CTRL | Qt::Key_R));
 
-    m_enableScreenReaderAction->setCheckable(true);
-    m_enableScreenReaderAction->setChecked(m_registry->isScreenReaderEnabled());
-    ac->addAction(QStringLiteral("enable_screen_reader"), m_enableScreenReaderAction);
-    connect(m_registry, &QAccessibleClient::Registry::screenReaderEnabledChanged, m_enableScreenReaderAction, &QAction::setChecked);
-    connect(m_enableScreenReaderAction, &QAction::toggled, m_registry, &QAccessibleClient::Registry::setScreenReaderEnabled);
+    mEnableScreenReaderAction->setCheckable(true);
+    mEnableScreenReaderAction->setChecked(mRegistry->isScreenReaderEnabled());
+    ac->addAction(QStringLiteral("enable_screen_reader"), mEnableScreenReaderAction);
+    connect(mRegistry, &QAccessibleClient::Registry::screenReaderEnabledChanged, mEnableScreenReaderAction, &QAction::setChecked);
+    connect(mEnableScreenReaderAction, &QAction::toggled, mRegistry, &QAccessibleClient::Registry::setScreenReaderEnabled);
 
-    m_quitAction = KStandardAction::quit(this, &MainWindow::close, ac);
+    mQuitAction = KStandardAction::quit(this, &MainWindow::close, ac);
 
-    m_copyValueAction = new QAction(i18nc("@action:inmenu", "Copy property value"), this);
-    ac->addAction(QStringLiteral("copy_property_value"), m_copyValueAction);
-    ac->setDefaultShortcut(m_copyValueAction, QKeySequence::Copy);
-    m_copyValueAction->setShortcuts(QKeySequence::Copy);
-    connect(m_copyValueAction, &QAction::triggered, mMainWidget, &MainWidget::copyValue);
+    mCopyValueAction = new QAction(i18nc("@action:inmenu", "Copy property value"), this);
+    ac->addAction(QStringLiteral("copy_property_value"), mCopyValueAction);
+    ac->setDefaultShortcut(mCopyValueAction, QKeySequence::Copy);
+    mCopyValueAction->setShortcuts(QKeySequence::Copy);
+    connect(mCopyValueAction, &QAction::triggered, mMainWidget, &MainWidget::copyValue);
 }
 
 void MainWindow::showClientCache()
 {
-    QPointer<ClientCacheDialog> dlg(new ClientCacheDialog(m_registry, this));
+    QPointer<ClientCacheDialog> dlg(new ClientCacheDialog(mRegistry, this));
     dlg->exec();
     if (dlg)
         dlg->deleteLater();
