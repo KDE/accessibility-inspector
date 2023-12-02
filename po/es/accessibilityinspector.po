@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accessibilityinspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-01 01:36+0000\n"
+"POT-Creation-Date: 2023-12-02 01:34+0000\n"
 "PO-Revision-Date: 2023-11-26 01:02+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -129,114 +129,114 @@ msgctxt "@label:listbox"
 msgid "Count:"
 msgstr "Contador:"
 
-#: clientcachedialog.cpp:99
+#: clientcachedialog.cpp:101
 #, kde-format
 msgctxt "@title:row"
 msgid "Name"
 msgstr "Nombre"
 
-#: clientcachedialog.cpp:99
+#: clientcachedialog.cpp:101
 #, kde-format
 msgctxt "@title:row"
 msgid "Role"
 msgstr "Papel"
 
-#: clientcachedialog.cpp:99
+#: clientcachedialog.cpp:101
 #, kde-format
 msgctxt "@title:row"
 msgid "Identifier"
 msgstr "Identificador"
 
-#: eventview.cpp:62
+#: eventview.cpp:63
 #, kde-format
 msgctxt "@label"
 msgid "Accessible"
 msgstr "Accesible"
 
-#: eventview.cpp:64
+#: eventview.cpp:65
 #, kde-format
 msgctxt "@label"
 msgid "Role"
 msgstr "Papel"
 
-#: eventview.cpp:66
+#: eventview.cpp:67
 #, kde-format
 msgctxt "@label"
 msgid "Event"
 msgstr "Evento"
 
-#: eventview.cpp:68
+#: eventview.cpp:69
 #, kde-format
 msgctxt "@label"
 msgid "Action"
 msgstr "Acción"
 
-#: eventview.cpp:192
+#: eventview.cpp:194
 #, kde-format
 msgid "Displays all received events"
 msgstr "Muestra todos los eventos recibidos"
 
-#: eventview.cpp:262
+#: eventview.cpp:264
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Focus"
 msgstr "Foco"
 
-#: eventview.cpp:265
+#: eventview.cpp:267
 #, kde-format
 msgctxt "Accessibility event name: state changed"
 msgid "State"
 msgstr "Estado"
 
-#: eventview.cpp:268
+#: eventview.cpp:270
 #, kde-format
 msgctxt "Accessibility event name: name changed"
 msgid "Name"
 msgstr "Nombre"
 
-#: eventview.cpp:271
+#: eventview.cpp:273
 #, kde-format
 msgctxt "Accessibility event name: description changed"
 msgid "Description"
 msgstr "Descripción"
 
-#: eventview.cpp:274
+#: eventview.cpp:276
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Window"
 msgstr "Ventana"
 
-#: eventview.cpp:277
+#: eventview.cpp:279
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Document"
 msgstr "Documento"
 
-#: eventview.cpp:280
+#: eventview.cpp:282
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Object"
 msgstr "Objeto"
 
-#: eventview.cpp:283
+#: eventview.cpp:285
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Text"
 msgstr "Texto"
 
-#: eventview.cpp:286
+#: eventview.cpp:288
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Table"
 msgstr "Tabla"
 
-#: eventview.cpp:289
+#: eventview.cpp:291
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Others"
 msgstr "Otros"
 
-#: eventview.cpp:292
+#: eventview.cpp:294
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "No Event"
@@ -394,13 +394,13 @@ msgid "Copy property value"
 msgstr "Copiar valor de propiedad"
 
 #: model/accessibleobjecttreemodel.cpp:31
-#: model/accessiblepropertiesmodel.cpp:85
+#: model/accessiblepropertiesmodel.cpp:91
 #, kde-format
 msgid "Accessible"
 msgstr "Accesible"
 
 #: model/accessibleobjecttreemodel.cpp:33
-#: model/accessiblepropertiesmodel.cpp:88
+#: model/accessiblepropertiesmodel.cpp:95
 #, kde-format
 msgid "Role"
 msgstr "Papel"
@@ -411,242 +411,248 @@ msgid "Property"
 msgstr "Propiedad"
 
 #: model/accessiblepropertiesmodel.cpp:55
-#: model/accessiblepropertiesmodel.cpp:249
+#: model/accessiblepropertiesmodel.cpp:267
 #, kde-format
 msgid "Value"
 msgstr "Valor"
 
-#: model/accessiblepropertiesmodel.cpp:86
+#: model/accessiblepropertiesmodel.cpp:93
 #, kde-format
 msgid "Name"
 msgstr "Nombre"
 
-#: model/accessiblepropertiesmodel.cpp:87
-#: model/accessiblepropertiesmodel.cpp:182
+#: model/accessiblepropertiesmodel.cpp:94
+#: model/accessiblepropertiesmodel.cpp:197
 #, kde-format
 msgid "Description"
 msgstr "Descripción"
 
-#: model/accessiblepropertiesmodel.cpp:89
+#: model/accessiblepropertiesmodel.cpp:96
 #, kde-format
 msgid "LocalizedRole"
 msgstr "LocalizedRole"
 
-#: model/accessiblepropertiesmodel.cpp:90
+#: model/accessiblepropertiesmodel.cpp:97
 #, kde-format
 msgid "Visible"
 msgstr "Visible"
 
-#: model/accessiblepropertiesmodel.cpp:91
+#: model/accessiblepropertiesmodel.cpp:98
 #, kde-format
 msgid "Default"
 msgstr "Predeterminado"
 
-#: model/accessiblepropertiesmodel.cpp:92
+#: model/accessiblepropertiesmodel.cpp:99
 #, kde-format
 msgid "State"
 msgstr "Estado"
 
-#: model/accessiblepropertiesmodel.cpp:93
+#: model/accessiblepropertiesmodel.cpp:100
 #, kde-format
 msgid "AccessibleId"
 msgstr "AccessibleId"
 
-#: model/accessiblepropertiesmodel.cpp:94
+#: model/accessiblepropertiesmodel.cpp:101
 #, kde-format
 msgid "Url"
 msgstr "URL"
 
-#: model/accessiblepropertiesmodel.cpp:97
+#: model/accessiblepropertiesmodel.cpp:104
 #, kde-format
 msgid "Parent"
 msgstr "Padre"
 
-#: model/accessiblepropertiesmodel.cpp:99
+#: model/accessiblepropertiesmodel.cpp:106
 #, kde-format
 msgid "Children"
 msgstr "Descendientes"
 
-#: model/accessiblepropertiesmodel.cpp:103
+#: model/accessiblepropertiesmodel.cpp:110
 #, kde-format
 msgid "Broken child"
 msgstr "Descendiente dañado"
 
-#: model/accessiblepropertiesmodel.cpp:111
+#: model/accessiblepropertiesmodel.cpp:118
 #, kde-format
 msgid "Component"
 msgstr "Componente"
 
-#: model/accessiblepropertiesmodel.cpp:112
+#: model/accessiblepropertiesmodel.cpp:120
 #, kde-format
 msgid "BoundingRect"
 msgstr "Rectángulo delimitador"
 
-#: model/accessiblepropertiesmodel.cpp:113
+#: model/accessiblepropertiesmodel.cpp:121
 #, kde-format
 msgid "Layer"
 msgstr "Capa"
 
-#: model/accessiblepropertiesmodel.cpp:114
+#: model/accessiblepropertiesmodel.cpp:122
 #, kde-format
 msgid "MDIZOrder"
 msgstr "Orden MDIZ"
 
-#: model/accessiblepropertiesmodel.cpp:115
+#: model/accessiblepropertiesmodel.cpp:123
 #, kde-format
 msgid "Alpha"
 msgstr "Alfa"
 
-#: model/accessiblepropertiesmodel.cpp:122
+#: model/accessiblepropertiesmodel.cpp:126
+#, fuzzy, kde-format
+#| msgid "Selection"
+msgid "Collection"
+msgstr "Selección"
+
+#: model/accessiblepropertiesmodel.cpp:131
 #, kde-format
 msgid "Application"
 msgstr "Aplicación"
 
-#: model/accessiblepropertiesmodel.cpp:123
+#: model/accessiblepropertiesmodel.cpp:133
 #, kde-format
 msgid "ToolkitName"
 msgstr "Nombre del juego de herramientas"
 
-#: model/accessiblepropertiesmodel.cpp:124
+#: model/accessiblepropertiesmodel.cpp:134
 #, kde-format
 msgid "Version"
 msgstr "Versión"
 
-#: model/accessiblepropertiesmodel.cpp:125
+#: model/accessiblepropertiesmodel.cpp:135
 #, kde-format
 msgid "Id"
 msgstr "Id"
 
-#: model/accessiblepropertiesmodel.cpp:126
-#: model/accessiblepropertiesmodel.cpp:183
+#: model/accessiblepropertiesmodel.cpp:136
+#: model/accessiblepropertiesmodel.cpp:198
 #, kde-format
 msgid "Locale"
 msgstr "Configuración regional"
 
-#: model/accessiblepropertiesmodel.cpp:127
+#: model/accessiblepropertiesmodel.cpp:137
 #, kde-format
 msgid "BusAddress"
 msgstr "Dirección de bus"
 
-#: model/accessiblepropertiesmodel.cpp:130
+#: model/accessiblepropertiesmodel.cpp:140
 #, kde-format
 msgid "Document"
 msgstr "Documento"
 
-#: model/accessiblepropertiesmodel.cpp:138
+#: model/accessiblepropertiesmodel.cpp:149
 #, kde-format
 msgid "Editable Text"
 msgstr "Texto editable"
 
-#: model/accessiblepropertiesmodel.cpp:142
+#: model/accessiblepropertiesmodel.cpp:154
 #, kde-format
 msgid "Hyperlink"
 msgstr "Hiperenlace"
 
-#: model/accessiblepropertiesmodel.cpp:163
+#: model/accessiblepropertiesmodel.cpp:176
 #, kde-format
 msgid "Hypertext"
 msgstr "Hipertexto"
 
-#: model/accessiblepropertiesmodel.cpp:181
+#: model/accessiblepropertiesmodel.cpp:195
 #, kde-format
 msgid "Image"
 msgstr "Imagen"
 
-#: model/accessiblepropertiesmodel.cpp:184
+#: model/accessiblepropertiesmodel.cpp:199
 #, kde-format
 msgid "Rect"
 msgstr "Rectángulo"
 
-#: model/accessiblepropertiesmodel.cpp:187
+#: model/accessiblepropertiesmodel.cpp:202
 #, kde-format
 msgid "Selection"
 msgstr "Selección"
 
-#: model/accessiblepropertiesmodel.cpp:193
+#: model/accessiblepropertiesmodel.cpp:209
 #, kde-format
 msgid "Table"
 msgstr "Tabla"
 
-#: model/accessiblepropertiesmodel.cpp:225
-#: model/accessiblepropertiesmodel.cpp:233
-#: model/accessiblepropertiesmodel.cpp:235
+#: model/accessiblepropertiesmodel.cpp:242
+#: model/accessiblepropertiesmodel.cpp:251
+#: model/accessiblepropertiesmodel.cpp:253
 #, kde-format
 msgid "Text"
 msgstr "Texto"
 
-#: model/accessiblepropertiesmodel.cpp:227
+#: model/accessiblepropertiesmodel.cpp:245
 #, kde-format
 msgid "Caret Offset"
 msgstr "Desplazamiento del cursor"
 
-#: model/accessiblepropertiesmodel.cpp:228
+#: model/accessiblepropertiesmodel.cpp:246
 #, kde-format
 msgid "Character Count"
 msgstr "Contador de caracteres"
 
-#: model/accessiblepropertiesmodel.cpp:229
+#: model/accessiblepropertiesmodel.cpp:247
 #, kde-format
 msgid "Character Rect"
 msgstr "Rectángulo de caracteres"
 
-#: model/accessiblepropertiesmodel.cpp:239
+#: model/accessiblepropertiesmodel.cpp:257
 #, kde-format
 msgid "Selections"
 msgstr "Selecciones"
 
-#: model/accessiblepropertiesmodel.cpp:250
+#: model/accessiblepropertiesmodel.cpp:269
 #, kde-format
 msgid "Current"
 msgstr "Actual"
 
-#: model/accessiblepropertiesmodel.cpp:251
+#: model/accessiblepropertiesmodel.cpp:270
 #, kde-format
 msgid "Minimum"
 msgstr "Mínimo"
 
-#: model/accessiblepropertiesmodel.cpp:252
+#: model/accessiblepropertiesmodel.cpp:271
 #, kde-format
 msgid "Maximum"
 msgstr "Máximo"
 
-#: model/accessiblepropertiesmodel.cpp:253
+#: model/accessiblepropertiesmodel.cpp:272
 #, kde-format
 msgid "Increment"
 msgstr "Incremento"
 
-#: model/accessiblepropertiesmodel.cpp:256
+#: model/accessiblepropertiesmodel.cpp:275
 #, kde-format
 msgid "Socket"
 msgstr "Conector"
 
-#: model/accessiblepropertiesmodel.cpp:261
+#: model/accessiblepropertiesmodel.cpp:281
 #, kde-format
 msgid "Event Keyboard"
 msgstr "Evento de teclado"
 
-#: model/accessiblepropertiesmodel.cpp:265
+#: model/accessiblepropertiesmodel.cpp:286
 #, kde-format
 msgid "Event Mouse"
 msgstr "Evento de ratón"
 
-#: model/accessiblepropertiesmodel.cpp:269
+#: model/accessiblepropertiesmodel.cpp:291
 #, kde-format
 msgid "Event Object"
 msgstr "Evento de objeto"
 
-#: model/accessiblepropertiesmodel.cpp:273
+#: model/accessiblepropertiesmodel.cpp:296
 #, kde-format
 msgid "Event Window"
 msgstr "Evento de ventana"
 
-#: model/accessiblepropertiesmodel.cpp:277
+#: model/accessiblepropertiesmodel.cpp:301
 #, kde-format
 msgid "Event Focus"
 msgstr "Evento de foco"
 
-#: model/accessiblepropertiesmodel.cpp:282
-#: model/accessiblepropertiesmodel.cpp:302
+#: model/accessiblepropertiesmodel.cpp:308
+#: model/accessiblepropertiesmodel.cpp:330
 #, kde-format
 msgid "Action"
 msgstr "Acción"
