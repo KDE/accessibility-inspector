@@ -21,6 +21,8 @@ AccessibleTreeWidget::AccessibleTreeWidget(QAccessibleClient::Registry *registry
     mainLayout->setContentsMargins({});
     mainLayout->setSpacing(0);
 
+    mSearchLineEdit->setPlaceholderText(i18nc("@info:placeholder", "Filter..."));
+
     auto searchLineEditWrapper = new QVBoxLayout;
     searchLineEditWrapper->setContentsMargins(style()->pixelMetric(QStyle::PM_LayoutLeftMargin),
                                               style()->pixelMetric(QStyle::PM_LayoutTopMargin),
