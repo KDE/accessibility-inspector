@@ -5,10 +5,14 @@ cmake_minimum_required(VERSION 3.16.0)
 
 project(accessibilityinspector VERSION 1.0)
 
-set(KF_MIN_VERSION "5.245.0")
-set(REQUIRED_QT_VERSION "6.5.0")
-set(CMAKE_CXX_STANDARD 20)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(KF_MIN_VERSION "5.91.0")
+set(REQUIRED_QT_VERSION "5.15.2")
+
+if (QT_MAJOR_VERSION STREQUAL "6")
+    set(KF_MIN_VERSION "5.240.0")
+    set(REQUIRED_QT_VERSION "6.5.0")
+endif()
+
 find_package(ECM ${KF_MIN_VERSION} REQUIRED NO_MODULE)
 
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${CMAKE_SOURCE_DIR}/cmake)
@@ -33,26 +37,26 @@ ecm_setup_version(${PROJECT_VERSION}
 set(ACCESSIBILITYINSPECTOR_LIB_VERSION "1.0")
 set(ACCESSIBILITYINSPECTOR_LIB_SOVERSION "1")
 
-find_package(Qt6 ${QT_MIN_VERSION} NO_MODULE COMPONENTS Widgets Core)
+find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} NO_MODULE COMPONENTS Widgets Core)
 
 if (BUILD_TESTING)
     add_definitions(-DBUILD_TESTING)
-    find_package(Qt6 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Test)
+    find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Test)
 endif()
 
-set_package_properties(Qt6 PROPERTIES
+set_package_properties(Qt${QT_MAJOR_VERSION} PROPERTIES
     TYPE REQUIRED
     PURPOSE "Required application components"
 )
 
-find_package(KF6 ${KF_MIN_VERSION} COMPONENTS CoreAddons I18n DBusAddons ConfigWidgets XmlGui Crash)
-set_package_properties(KF6 PROPERTIES
+find_package(KF${QT_MAJOR_VERSION} ${KF_MIN_VERSION} COMPONENTS CoreAddons I18n DBusAddons ConfigWidgets XmlGui Crash)
+set_package_properties(KF${QT_MAJOR_VERSION} PROPERTIES
     TYPE REQUIRED
     PURPOSE "Required application components"
 )
 
-find_package(QAccessibilityClient6 CONFIG)
-set_package_properties(QAccessibilityClient6 PROPERTIES
+find_package(QAccessibilityClient${QT_MAJOR_VERSION} CONFIG)
+set_package_properties(QAccessibilityClient${QT_MAJOR_VERSION} PROPERTIES
     TYPE REQUIRED
     URL "https://invent.kde.org/libraries/libqaccessibilityclient"
     DESCRIPTION "KDE client-side accessibility library"
