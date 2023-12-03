@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-02 01:34+0000\n"
-"PO-Revision-Date: 2023-11-25 10:23+0100\n"
+"PO-Revision-Date: 2023-12-02 10:37+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -496,10 +496,9 @@ msgid "Alpha"
 msgstr "Alfa"
 
 #: model/accessiblepropertiesmodel.cpp:126
-#, fuzzy, kde-format
-#| msgid "Selection"
+#, kde-format
 msgid "Collection"
-msgstr "Selectie"
+msgstr "Verzameling"
 
 #: model/accessiblepropertiesmodel.cpp:131
 #, kde-format
