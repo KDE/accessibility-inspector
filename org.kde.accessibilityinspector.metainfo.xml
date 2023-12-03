@@ -107,4 +107,12 @@
     </screenshot>
   </screenshots>
   <translation type="gettext">accessibilityinspector</translation>
+  <releases>
+    <release version="1.0.0" date="2023-12-04">
+      <url>https://carlschwan.eu/2023/12/04/accessibility-inspector-1.0/</url>
+      <description>
+        <p>Initial version as a standalone component.</p>
+      </description>
+    </release>
+  </releases>
 </component>
