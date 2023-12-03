@@ -30,7 +30,7 @@ MainWindow::MainWindow(QWidget *parent)
     mRegistry->subscribeEventListeners(QAccessibleClient::Registry::AllEventListeners);
     setCentralWidget(mMainWidget);
     initActions();
-    setupGUI();
+    setupGUI(ToolBar | Keys | Save | Create);
     loadSettings();
 }
 
