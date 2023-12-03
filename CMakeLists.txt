@@ -55,13 +55,23 @@ set_package_properties(KF${QT_MAJOR_VERSION} PROPERTIES
     PURPOSE "Required application components"
 )
 
-find_package(QAccessibilityClient${QT_MAJOR_VERSION} CONFIG)
-set_package_properties(QAccessibilityClient${QT_MAJOR_VERSION} PROPERTIES
-    TYPE REQUIRED
-    URL "https://invent.kde.org/libraries/libqaccessibilityclient"
-    DESCRIPTION "KDE client-side accessibility library"
-    PURPOSE "Required to enable accessibility features"
-)
+if (${QT_MAJOR_VERSION} VERSION_GREATER_EQUAL 6)
+    find_package(QAccessibilityClient${QT_MAJOR_VERSION} CONFIG)
+    set_package_properties(QAccessibilityClient${QT_MAJOR_VERSION} PROPERTIES
+        TYPE REQUIRED
+        URL "https://invent.kde.org/libraries/libqaccessibilityclient"
+        DESCRIPTION "KDE client-side accessibility library"
+        PURPOSE "Required to enable accessibility features"
+    )
+else()
+    find_package(QAccessibilityClient CONFIG)
+    set_package_properties(QAccessibilityClient PROPERTIES
+        TYPE REQUIRED
+        URL "https://invent.kde.org/libraries/libqaccessibilityclient"
+        DESCRIPTION "KDE client-side accessibility library"
+        PURPOSE "Required to enable accessibility features"
+    )
+endif()
 
 ecm_set_disabled_deprecation_versions(QT 6.6
     KF 5.246.0

@@ -18,10 +18,10 @@ PropertyTreeWidget::PropertyTreeWidget(QWidget *parent)
     , mPropertyModel(new ObjectPropertiesModel(this))
 {
     auto mainLayout = new QVBoxLayout(this);
-    mainLayout->setObjectName(QLatin1StringView("mainLayout"));
+    mainLayout->setObjectName(QLatin1String("mainLayout"));
     mainLayout->setContentsMargins({});
 
-    mPropertyTreeView->setObjectName(QLatin1StringView("mPropertyTreeView"));
+    mPropertyTreeView->setObjectName(QLatin1String("mPropertyTreeView"));
     mainLayout->addWidget(mPropertyTreeView);
 
     mPropertyTreeView->setModel(mPropertyModel);

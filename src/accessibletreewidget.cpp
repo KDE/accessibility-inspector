@@ -17,7 +17,7 @@ AccessibleTreeWidget::AccessibleTreeWidget(QAccessibleClient::Registry *registry
     , mAccessibleTreeView(new AccessibleTreeView(registry, this))
 {
     auto mainLayout = new QVBoxLayout(this);
-    mainLayout->setObjectName(QLatin1StringView("mainLayout"));
+    mainLayout->setObjectName(QLatin1String("mainLayout"));
     mainLayout->setContentsMargins({});
     mainLayout->setSpacing(0);
 
@@ -29,11 +29,11 @@ AccessibleTreeWidget::AccessibleTreeWidget(QAccessibleClient::Registry *registry
                                               style()->pixelMetric(QStyle::PM_LayoutRightMargin),
                                               style()->pixelMetric(QStyle::PM_LayoutBottomMargin));
     searchLineEditWrapper->addWidget(mSearchLineEdit);
-    mSearchLineEdit->setObjectName(QLatin1StringView("mSearchLineEdit"));
+    mSearchLineEdit->setObjectName(QLatin1String("mSearchLineEdit"));
     mSearchLineEdit->setClearButtonEnabled(true);
     mainLayout->addLayout(searchLineEditWrapper);
 
-    mAccessibleTreeView->setObjectName(QLatin1StringView("mAccessibleTreeView"));
+    mAccessibleTreeView->setObjectName(QLatin1String("mAccessibleTreeView"));
     mAccessibleTreeView->setProperty("_breeze_borders_sides", QVariant::fromValue(QFlags{Qt::TopEdge}));
     mainLayout->addWidget(mAccessibleTreeView);
     connect(mAccessibleTreeView, &AccessibleTreeView::accessibleTreeviewSelectionChanged, this, &AccessibleTreeWidget::accessibleTreeviewSelectionChanged);

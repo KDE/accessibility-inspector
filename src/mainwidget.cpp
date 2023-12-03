@@ -30,22 +30,22 @@ MainWidget::MainWidget(QAccessibleClient::Registry *registry, QWidget *parent)
 {
     auto mainLayout = new QHBoxLayout(this);
     mainLayout->setContentsMargins({});
-    mainLayout->setObjectName(QLatin1StringView("mainLayout"));
+    mainLayout->setObjectName(QLatin1String("mainLayout"));
 
-    mSplitter->setObjectName(QLatin1StringView("mSplitter"));
+    mSplitter->setObjectName(QLatin1String("mSplitter"));
     mainLayout->addWidget(mSplitter);
 
-    mAccessibleTreeWidget->setObjectName(QLatin1StringView("mAccessibleTreeWidget"));
-    mTabWidget->setObjectName(QLatin1StringView("mTabWidget"));
+    mAccessibleTreeWidget->setObjectName(QLatin1String("mAccessibleTreeWidget"));
+    mTabWidget->setObjectName(QLatin1String("mTabWidget"));
     mTabWidget->setMovable(true);
     mTabWidget->setDocumentMode(true);
 
     mSplitter->addWidget(mAccessibleTreeWidget);
     mSplitter->addWidget(mTabWidget);
 
-    mPropertyTreeWidget->setObjectName(QLatin1StringView("mPropertyTreeWidget"));
-    mEventsWidget->setObjectName(QLatin1StringView("mEventsWidget"));
-    mUiview->setObjectName(QLatin1StringView("mUiview"));
+    mPropertyTreeWidget->setObjectName(QLatin1String("mPropertyTreeWidget"));
+    mEventsWidget->setObjectName(QLatin1String("mEventsWidget"));
+    mUiview->setObjectName(QLatin1String("mUiview"));
 
     mTabWidget->addTab(mPropertyTreeWidget, i18nc("@title:window", "Properties"));
     mTabWidget->addTab(mEventsWidget, i18nc("@title:window", "Events"));

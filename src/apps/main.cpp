@@ -31,11 +31,7 @@ int main(int argc, char **argv)
 
     about.addAuthor(i18n("Frederik Gladhorn"), i18n("Original author"), QStringLiteral("gladhorn@kde.org"));
 
-    about.addAuthor(i18n("Carl Schwan"),
-                    i18n("Maintainer"),
-                    QStringLiteral("carl@carlschwan.eu"),
-                    QStringLiteral("https://carlschwan.eu"),
-                    QUrl(QStringLiteral("https://carlschwan.eu/avatar.png")));
+    about.addAuthor(i18n("Carl Schwan"), i18n("Maintainer"), QStringLiteral("carl@carlschwan.eu"), QStringLiteral("https://carlschwan.eu"));
 
     KAboutData::setApplicationData(about);
     QGuiApplication::setWindowIcon(QIcon::fromTheme(QStringLiteral("org.kde.accessibilityinspector")));
