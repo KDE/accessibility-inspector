@@ -22,7 +22,7 @@ Dependencies:
       'frameworks/kconfigwidgets': '@stable'
       'frameworks/kxmlgui': '@stable'
       'frameworks/kcrash': '@stable'
-      'libraries/libqaccessibilityclient': '@latest-kf6'
+      'libraries/libqaccessibilityclient': '@latest'
 
 Options:
   require-passing-tests-on: [ '@all' ]
