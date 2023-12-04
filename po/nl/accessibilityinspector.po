@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-02 01:34+0000\n"
+"POT-Creation-Date: 2023-12-04 01:35+0000\n"
 "PO-Revision-Date: 2023-12-02 10:37+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -49,6 +49,13 @@ msgstr "In&stellingen"
 #, kde-format
 msgid "Displays a hierachical tree of accessible objects"
 msgstr "Toont een hiërarchische boomstructuur van toegankelijke objecten"
+
+#: accessibletreewidget.cpp:24
+#, fuzzy, kde-format
+#| msgid "Role Filter"
+msgctxt "@info:placeholder"
+msgid "Filter..."
+msgstr "Rolfilter"
 
 #: apps/main.cpp:26
 #, kde-format
