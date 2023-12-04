@@ -50,23 +50,26 @@ QVariant AccessibleObjectTreeModel::data(const QModelIndex &index, int role) con
     if (!mRegistry || !index.isValid())
         return {};
 
+    if (role != Qt::DisplayRole) {
+        return {};
+    }
+
     AccessibleObject acc = static_cast<AccessibleWrapper *>(index.internalPointer())->acc;
 
-    switch (role) {
-    case Qt::DisplayRole:
-        if (index.column() == Accessible) {
-            QString name = acc.name();
-            if (name.isEmpty())
-                name = QStringLiteral("[%1]").arg(acc.roleName());
-            return name;
-        } else if (index.column() == Role) {
-            return acc.roleName();
-        } else if (index.column() == ChildrenCount) {
-            return acc.childCount();
-        }
-        [[fallthrough]];
-    default:
-        return {};
+    const int col = index.column();
+    switch (static_cast<AccessibleObjectTreeModelRoles>(col)) {
+    case AccessibleObjectTreeModelRoles::Role:
+        return acc.roleName();
+    case AccessibleObjectTreeModelRoles::ChildrenCount:
+        qDebug() << " AccessibleObjectTreeModelRoles::ChildrenCount " << acc.childCount();
+        return acc.childCount();
+    case AccessibleObjectTreeModelRoles::Accessible: {
+        QString name = acc.name();
+        if (name.isEmpty())
+            name = QStringLiteral("[%1]").arg(acc.roleName());
+        qDebug() << " acc" << acc.imageLocale();
+        return name;
+    }
     }
     return {};
 }
@@ -183,7 +186,7 @@ QModelIndex AccessibleObjectTreeModel::indexForAccessible(const AccessibleObject
 
     if (object.supportedInterfaces().testFlag(QAccessibleClient::AccessibleObject::ApplicationInterface)) {
         // top level
-        for (int i = 0; i < mApps.size(); ++i) {
+        for (int i = 0, total = mApps.size(); i < total; ++i) {
             if (mApps.at(i)->acc == object) {
                 return createIndex(i, 0, mApps.at(i));
             }
@@ -219,7 +222,7 @@ QModelIndex AccessibleObjectTreeModel::indexForAccessible(const AccessibleObject
 
             for (const QAccessibleClient::AccessibleObject &child : object.children()) {
                 if (child.supportedInterfaces().testFlag(QAccessibleClient::AccessibleObject::ApplicationInterface)) {
-                    for (int i = 0; i < mApps.size(); ++i) {
+                    for (int i = 0, total = mApps.size(); i < total; ++i) {
                         if (mApps.at(i)->acc == object)
                             return createIndex(i, 0, mApps.at(i));
                     }
