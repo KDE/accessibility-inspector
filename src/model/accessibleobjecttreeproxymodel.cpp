@@ -25,7 +25,7 @@ bool AccessibleObjectTreeProxyModel::filterAcceptsRow(int source_row, const QMod
     }
 
     if (mShowAllElementWithChildren) {
-        const bool hasChildren = modelIndex.data(AccessibleObjectTreeModel::ChildrenCount).toInt();
+        const bool hasChildren = (modelIndex.data(AccessibleObjectTreeModel::ChildrenCount).toInt() > 0);
         if (hasChildren == 0) {
             return false;
         }
