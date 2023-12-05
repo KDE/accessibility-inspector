@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accessibilityinspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-02 01:34+0000\n"
-"PO-Revision-Date: 2023-12-02 12:57+0100\n"
+"POT-Creation-Date: 2023-12-04 01:35+0000\n"
+"PO-Revision-Date: 2023-12-05 02:12+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -51,6 +51,12 @@ msgstr "&Preferencias"
 #, kde-format
 msgid "Displays a hierachical tree of accessible objects"
 msgstr "Muestra un árbol jerárquico de los objetos accesibles"
+
+#: accessibletreewidget.cpp:24
+#, kde-format
+msgctxt "@info:placeholder"
+msgid "Filter..."
+msgstr "Filtro..."
 
 #: apps/main.cpp:26
 #, kde-format
