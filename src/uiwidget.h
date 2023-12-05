@@ -16,7 +16,7 @@ class UiWidget : public QWidget
 public:
     explicit UiWidget(QWidget *view = nullptr);
     void setAccessibleObject(const QAccessibleClient::AccessibleObject &acc);
-    QSize sizeHint() const override;
+    [[nodiscard]] QSize sizeHint() const override;
 
 protected:
     QImage *m_image = nullptr;

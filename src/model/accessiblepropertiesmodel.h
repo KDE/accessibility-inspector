@@ -22,9 +22,9 @@ public:
     explicit ObjectPropertiesModel(QObject *parent = nullptr);
     ~ObjectPropertiesModel() override;
 
-    QVariant headerData(int section, Qt::Orientation orientation, int role) const override;
+    [[nodiscard]] QVariant headerData(int section, Qt::Orientation orientation, int role) const override;
 
-    QHash<int, QByteArray> roleNames() const override;
+    [[nodiscard]] QHash<int, QByteArray> roleNames() const override;
     void setAccessibleObject(const QAccessibleClient::AccessibleObject &acc);
     [[nodiscard]] QAccessibleClient::AccessibleObject currentObject() const;
     void doubleClicked(const QModelIndex &index);

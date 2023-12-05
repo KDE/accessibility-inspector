@@ -32,7 +32,7 @@ public:
     void saveSettings(QSettings &settings);
     void loadSettings(QSettings &settings);
 
-    bool followFocus() const;
+    [[nodiscard]] bool followFocus() const;
     void setFollowFocus(bool newFollowFocus);
 
 private:
