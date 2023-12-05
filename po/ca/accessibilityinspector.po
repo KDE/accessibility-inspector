@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-04 01:35+0000\n"
-"PO-Revision-Date: 2023-12-02 10:52+0100\n"
+"PO-Revision-Date: 2023-12-04 12:36+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -53,11 +53,10 @@ msgid "Displays a hierachical tree of accessible objects"
 msgstr "Mostra un arbre jeràrquic d'objectes accessibles"
 
 #: accessibletreewidget.cpp:24
-#, fuzzy, kde-format
-#| msgid "Role Filter"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Filter..."
-msgstr "Filtre de rols"
+msgstr "Filtre..."
 
 #: apps/main.cpp:26
 #, kde-format
@@ -686,6 +685,3 @@ msgstr "Límits"
 msgctxt "@info:whatsthis"
 msgid "Visualize the component boundaries"
 msgstr "Visualitza els límits del component"
-
-#~ msgid "Tree"
-#~ msgstr "Arbre"
