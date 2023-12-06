@@ -88,7 +88,7 @@ public:
         setHorizontalHeaderLabels(headerLabels);
     }
 
-    LogItem addLog(QList<QStandardItem *> item)
+    LogItem addLog(const QList<QStandardItem *> &item)
     {
         const QString appUrl = item.first()->data(AppUrlRole).toString();
         QStandardItem *appItem = nullptr;
@@ -293,14 +293,14 @@ QString EventsWidget::eventName(EventType eventType) const
     case EventsWidget::NoEvents:
         s = i18nc("Accessibility event name", "No Event");
         break;
+    default:
+        break;
     }
     return s;
 }
 
 void EventsWidget::loadSettings(QSettings &settings)
 {
-    qDebug() << " loadSettings";
-
     settings.beginGroup(QStringLiteral("events"));
 
     bool eventsFilterOk;
@@ -330,7 +330,6 @@ void EventsWidget::loadSettings(QSettings &settings)
 
 void EventsWidget::saveSettings(QSettings &settings)
 {
-    qDebug() << " saveSettings";
     settings.beginGroup(QStringLiteral("events"));
     settings.setValue(QStringLiteral("eventsFilter"), int(mProxyModel->filter()));
 

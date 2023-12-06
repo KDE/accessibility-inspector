@@ -54,7 +54,7 @@ ClientCacheDialog::ClientCacheDialog(QAccessibleClient::Registry *registry, QWid
     mCacheCombo->setEditable(false);
     mCacheCombo->addItem(i18nc("@item:inlistbox", "Disable"), int(QAccessibleClient::RegistryPrivateCacheApi::NoCache));
     mCacheCombo->addItem(i18nc("@item:inlistbox", "Weak"), int(QAccessibleClient::RegistryPrivateCacheApi::WeakCache));
-    for (int i = 0; i < mCacheCombo->count(); ++i) {
+    for (int i = 0, total = mCacheCombo->count(); i < total; ++i) {
         if (mCacheCombo->itemData(i).toInt() == mCache->cacheType()) {
             mCacheCombo->setCurrentIndex(i);
             break;

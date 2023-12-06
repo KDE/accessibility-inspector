@@ -56,7 +56,6 @@ void PropertyTreeWidget::copyValue()
             return;
         }
     }
-
     QGuiApplication::clipboard()->setText(selected.data(Qt::DisplayRole).toString());
 }
 #include "moc_propertytreewidget.cpp"
