@@ -7,7 +7,9 @@
 #include "accessibletreewidget.h"
 #include "accessibletreeview.h"
 #include <KLocalizedString>
+#include <QHeaderView>
 #include <QLineEdit>
+#include <QSettings>
 #include <QTreeView>
 #include <QVBoxLayout>
 
@@ -54,12 +56,17 @@ void AccessibleTreeWidget::setCurrentObject(const QAccessibleClient::AccessibleO
 
 void AccessibleTreeWidget::saveSettings(QSettings &settings)
 {
-    // TODO
+    const QByteArray state = mAccessibleTreeView->header()->saveState();
+    settings.beginGroup(QStringLiteral("accessibleytreeview"));
+    settings.setValue(QStringLiteral("header"), state);
+    settings.endGroup();
 }
 
 void AccessibleTreeWidget::loadSettings(QSettings &settings)
 {
-    // TODO
+    settings.beginGroup(QStringLiteral("accessibleytreeview"));
+    mAccessibleTreeView->header()->restoreState(settings.value("header").toByteArray());
+    settings.endGroup();
 }
 
 #include "moc_accessibletreewidget.cpp"
