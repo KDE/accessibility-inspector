@@ -16,8 +16,15 @@ PropertyTreeView::PropertyTreeView(QWidget *parent)
     setItemsExpandable(true);
     setExpandsOnDoubleClick(false);
     setSortingEnabled(true);
+    setContextMenuPolicy(Qt::CustomContextMenu);
+    connect(this, &PropertyTreeView::customContextMenuRequested, this, &PropertyTreeView::treeCustomContextMenuRequested);
 }
 
 PropertyTreeView::~PropertyTreeView() = default;
+
+void PropertyTreeView::treeCustomContextMenuRequested(const QPoint &pos)
+{
+    // TODO
+}
 
 #include "moc_propertytreeview.cpp"

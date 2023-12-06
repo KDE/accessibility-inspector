@@ -14,4 +14,10 @@ class LIBACCESSIBILITYINSPECTOR_TEST_EXPORT PropertyTreeView : public QTreeView
 public:
     explicit PropertyTreeView(QWidget *parent = nullptr);
     ~PropertyTreeView() override;
+
+Q_SIGNALS:
+    void copyValue();
+
+private:
+    void treeCustomContextMenuRequested(const QPoint &pos);
 };
