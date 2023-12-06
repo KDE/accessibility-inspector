@@ -16,7 +16,13 @@ PropertyTreeViewTest::PropertyTreeViewTest(QObject *parent)
 void PropertyTreeViewTest::shoudlHaveDefaultValues()
 {
     PropertyTreeView w;
-    // TODO
+    QVERIFY(!w.accessibleDescription().isEmpty());
+    QVERIFY(!w.accessibleName().isEmpty());
+    QVERIFY(!w.rootIsDecorated());
+    QVERIFY(w.itemsExpandable());
+    QVERIFY(!w.expandsOnDoubleClick());
+    QVERIFY(w.isSortingEnabled());
+    QCOMPARE(w.contextMenuPolicy(), Qt::CustomContextMenu);
 }
 
 #include "moc_propertytreeviewtest.cpp"
