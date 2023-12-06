@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-04 01:35+0000\n"
+"POT-Creation-Date: 2023-12-06 02:31+0000\n"
 "PO-Revision-Date: 2023-11-25 09:31+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
@@ -87,7 +87,7 @@ msgstr "Origina aŭtoro"
 msgid "Carl Schwan"
 msgstr "Carl Schwan"
 
-#: apps/main.cpp:35
+#: apps/main.cpp:34
 #, kde-format
 msgid "Maintainer"
 msgstr "Prizorganto"
