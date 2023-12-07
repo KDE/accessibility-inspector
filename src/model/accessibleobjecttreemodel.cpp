@@ -61,13 +61,12 @@ QVariant AccessibleObjectTreeModel::data(const QModelIndex &index, int role) con
     case AccessibleObjectTreeModelRoles::Role:
         return acc.roleName();
     case AccessibleObjectTreeModelRoles::ChildrenCount:
-        qDebug() << " AccessibleObjectTreeModelRoles::ChildrenCount " << acc.childCount();
+        // qDebug() << " AccessibleObjectTreeModelRoles::ChildrenCount " << acc.childCount();
         return acc.childCount();
     case AccessibleObjectTreeModelRoles::Accessible: {
         QString name = acc.name();
         if (name.isEmpty())
             name = QStringLiteral("[%1]").arg(acc.roleName());
-        qDebug() << " acc" << acc.imageLocale();
         return name;
     }
     }

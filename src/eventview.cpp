@@ -321,7 +321,7 @@ void EventsWidget::loadSettings(QSettings &settings)
         mProxyModel->setFilter(eventsFilter);
     }
 
-    QByteArray eventListViewState = settings.value(QStringLiteral("listViewHeader")).toByteArray();
+    const QByteArray eventListViewState = settings.value(QStringLiteral("listViewHeader")).toByteArray();
     if (!eventListViewState.isEmpty())
         mUi.eventListView->header()->restoreState(eventListViewState);
 
@@ -333,7 +333,7 @@ void EventsWidget::saveSettings(QSettings &settings)
     settings.beginGroup(QStringLiteral("events"));
     settings.setValue(QStringLiteral("eventsFilter"), int(mProxyModel->filter()));
 
-    QByteArray eventListViewState = mUi.eventListView->header()->saveState();
+    const QByteArray eventListViewState = mUi.eventListView->header()->saveState();
     settings.setValue(QStringLiteral("listViewHeader"), eventListViewState);
 
     settings.endGroup();
