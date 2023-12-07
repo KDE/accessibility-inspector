@@ -10,6 +10,8 @@
 #include "qaccessibilityclient/accessibleobject.h"
 #include <QClipboard>
 #include <QGuiApplication>
+#include <QHeaderView>
+#include <QSettings>
 #include <QVBoxLayout>
 
 PropertyTreeWidget::PropertyTreeWidget(QWidget *parent)
@@ -58,4 +60,20 @@ void PropertyTreeWidget::copyValue()
     }
     QGuiApplication::clipboard()->setText(selected.data(Qt::DisplayRole).toString());
 }
+
+void PropertyTreeWidget::saveSettings(QSettings &settings)
+{
+    const QByteArray state = mPropertyTreeView->header()->saveState();
+    settings.beginGroup(QStringLiteral("propertytreeview"));
+    settings.setValue(QStringLiteral("header"), state);
+    settings.endGroup();
+}
+
+void PropertyTreeWidget::loadSettings(QSettings &settings)
+{
+    settings.beginGroup(QStringLiteral("propertytreeview"));
+    mPropertyTreeView->header()->restoreState(settings.value("header").toByteArray());
+    settings.endGroup();
+}
+
 #include "moc_propertytreewidget.cpp"

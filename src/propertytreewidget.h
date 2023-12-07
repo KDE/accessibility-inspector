@@ -7,6 +7,7 @@
 #pragma once
 
 #include <QWidget>
+class QSettings;
 class PropertyTreeView;
 class ObjectPropertiesModel;
 namespace QAccessibleClient
@@ -24,6 +25,9 @@ public:
     void updateDetails(const QAccessibleClient::AccessibleObject &object, bool force);
 
     void copyValue();
+
+    void saveSettings(QSettings &settings);
+    void loadSettings(QSettings &settings);
 
 private:
     PropertyTreeView *const mPropertyTreeView;

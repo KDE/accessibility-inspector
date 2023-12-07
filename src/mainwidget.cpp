@@ -100,12 +100,14 @@ void MainWidget::saveSettings(QSettings &settings)
 {
     mEventsWidget->saveSettings(settings);
     mAccessibleTreeWidget->saveSettings(settings);
+    mPropertyTreeWidget->saveSettings(settings);
 }
 
 void MainWidget::loadSettings(QSettings &settings)
 {
     mEventsWidget->loadSettings(settings);
     mAccessibleTreeWidget->loadSettings(settings);
+    mPropertyTreeWidget->loadSettings(settings);
 }
 
 void MainWidget::copyValue()
