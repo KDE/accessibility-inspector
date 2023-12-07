@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-04 01:35+0000\n"
+"POT-Creation-Date: 2023-12-07 01:39+0000\n"
 "PO-Revision-Date: 2023-11-22 12:16+0100\n"
 "Last-Translator: Xavier BESNARD <xavier.besnard@neuf.fr>\n"
 "Language-Team: \n"
@@ -47,7 +47,7 @@ msgstr ""
 msgid "Displays a hierachical tree of accessible objects"
 msgstr ""
 
-#: accessibletreewidget.cpp:24
+#: accessibletreewidget.cpp:26
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Filter..."

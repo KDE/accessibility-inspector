@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-04 01:35+0000\n"
+"POT-Creation-Date: 2023-12-07 01:39+0000\n"
 "PO-Revision-Date: 2023-11-25 02:26\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -51,7 +51,7 @@ msgstr "设置(&S)"
 msgid "Displays a hierachical tree of accessible objects"
 msgstr "显示无障碍对象的层级树"
 
-#: accessibletreewidget.cpp:24
+#: accessibletreewidget.cpp:26
 #, fuzzy, kde-format
 #| msgid "Role Filter"
 msgctxt "@info:placeholder"

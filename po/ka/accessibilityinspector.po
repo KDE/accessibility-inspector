@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-04 01:35+0000\n"
+"POT-Creation-Date: 2023-12-07 01:39+0000\n"
 "PO-Revision-Date: 2023-12-04 06:10+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -51,7 +51,7 @@ msgstr "&მორგება"
 msgid "Displays a hierachical tree of accessible objects"
 msgstr "აჩვენებს მონიშნული წვდომადი ობიექტების იერარქიულ ხეს"
 
-#: accessibletreewidget.cpp:24
+#: accessibletreewidget.cpp:26
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Filter..."
