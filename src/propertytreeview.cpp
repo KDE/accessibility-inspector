@@ -6,6 +6,7 @@
 
 #include "propertytreeview.h"
 #include <KLocalizedString>
+#include <QMenu>
 
 PropertyTreeView::PropertyTreeView(QWidget *parent)
     : QTreeView(parent)
@@ -24,7 +25,14 @@ PropertyTreeView::~PropertyTreeView() = default;
 
 void PropertyTreeView::treeCustomContextMenuRequested(const QPoint &pos)
 {
-    // TODO
+    const QModelIndex current = currentIndex();
+    if (!current.isValid()) {
+        return;
+    }
+
+    QMenu menu(this);
+    menu.addAction(i18nc("@action:inmenu", "Copy property value"), this, &PropertyTreeView::copyValue);
+    menu.exec(viewport()->mapToGlobal(pos));
 }
 
 #include "moc_propertytreeview.cpp"

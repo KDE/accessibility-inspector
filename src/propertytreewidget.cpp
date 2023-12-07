@@ -29,6 +29,7 @@ PropertyTreeWidget::PropertyTreeWidget(QWidget *parent)
     mPropertyTreeView->setModel(mPropertyModel);
 
     connect(mPropertyTreeView, &QTreeView::doubleClicked, mPropertyModel, &ObjectPropertiesModel::doubleClicked);
+    connect(mPropertyTreeView, &PropertyTreeView::copyValue, this, &PropertyTreeWidget::copyValue);
 }
 
 PropertyTreeWidget::~PropertyTreeWidget() = default;
