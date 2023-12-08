@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-07 01:39+0000\n"
+"POT-Creation-Date: 2023-12-08 01:33+0000\n"
 "PO-Revision-Date: 2023-12-04 21:13+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -299,62 +299,62 @@ msgctxt "@title:window"
 msgid "Boundaries"
 msgstr "Meje"
 
-#: mainwidget.cpp:145 mainwidget.cpp:147
+#: mainwidget.cpp:147 mainwidget.cpp:149
 #, kde-format
 msgid "true"
 msgstr "true"
 
-#: mainwidget.cpp:145 mainwidget.cpp:147
+#: mainwidget.cpp:147 mainwidget.cpp:149
 #, kde-format
 msgid "false"
 msgstr "false"
 
-#: mainwidget.cpp:156
+#: mainwidget.cpp:158
 #, kde-format
 msgid "Child Added %1"
 msgstr "Dodan otrok %1"
 
-#: mainwidget.cpp:162
+#: mainwidget.cpp:164
 #, kde-format
 msgid "Child Removed %1"
 msgstr "Odstranjen otrok %1"
 
-#: mainwidget.cpp:168
+#: mainwidget.cpp:170
 #, kde-format
 msgid "Visible Data Changed"
 msgstr "Vizualni podatki spremenjeni"
 
-#: mainwidget.cpp:174
+#: mainwidget.cpp:176
 #, kde-format
 msgid "Selection Changed"
 msgstr "Izbira spremenjena"
 
-#: mainwidget.cpp:180
+#: mainwidget.cpp:182
 #, kde-format
 msgid "Model Changed"
 msgstr "Model spremenjen"
 
-#: mainwidget.cpp:195
+#: mainwidget.cpp:197
 #, kde-format
 msgid "Add Object"
 msgstr "Dodaj objekt"
 
-#: mainwidget.cpp:201
+#: mainwidget.cpp:203
 #, kde-format
 msgid "Remove Object"
 msgstr "Odstrani objekt"
 
-#: mainwidget.cpp:212
+#: mainwidget.cpp:214
 #, kde-format
 msgid "Create"
 msgstr "Ustvari"
 
-#: mainwidget.cpp:218
+#: mainwidget.cpp:220
 #, kde-format
 msgid "Destroy"
 msgstr "Uniči"
 
-#: mainwidget.cpp:319
+#: mainwidget.cpp:321
 #, kde-format
 msgid "Text caret moved (%1)"
 msgstr "Kazalec besedila premaknjen (%1)"
@@ -389,7 +389,7 @@ msgctxt "@action:inmenu"
 msgid "Enable Screen Reader"
 msgstr "Omogoči bralnik zaslona"
 
-#: mainwindow.cpp:112
+#: mainwindow.cpp:112 propertytreeview.cpp:34
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy property value"
@@ -658,13 +658,13 @@ msgstr "Fokus dogodka"
 msgid "Action"
 msgstr "Dejavnost"
 
-#: propertytreeview.cpp:13
+#: propertytreeview.cpp:14
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "List of properties"
 msgstr "Seznam lastnosti"
 
-#: propertytreeview.cpp:14
+#: propertytreeview.cpp:15
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Displays properties of the selected accessible object"

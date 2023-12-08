@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-07 01:39+0000\n"
+"POT-Creation-Date: 2023-12-08 01:33+0000\n"
 "PO-Revision-Date: 2023-12-04 20:00+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -301,62 +301,62 @@ msgctxt "@title:window"
 msgid "Boundaries"
 msgstr "Sınırlar"
 
-#: mainwidget.cpp:145 mainwidget.cpp:147
+#: mainwidget.cpp:147 mainwidget.cpp:149
 #, kde-format
 msgid "true"
 msgstr "doğru"
 
-#: mainwidget.cpp:145 mainwidget.cpp:147
+#: mainwidget.cpp:147 mainwidget.cpp:149
 #, kde-format
 msgid "false"
 msgstr "yanlış"
 
-#: mainwidget.cpp:156
+#: mainwidget.cpp:158
 #, kde-format
 msgid "Child Added %1"
 msgstr "Alt Öge Eklendi %1"
 
-#: mainwidget.cpp:162
+#: mainwidget.cpp:164
 #, kde-format
 msgid "Child Removed %1"
 msgstr "Alt Öge Kaldırıldı %1"
 
-#: mainwidget.cpp:168
+#: mainwidget.cpp:170
 #, kde-format
 msgid "Visible Data Changed"
 msgstr "Görünür Veri Değiştirildi"
 
-#: mainwidget.cpp:174
+#: mainwidget.cpp:176
 #, kde-format
 msgid "Selection Changed"
 msgstr "Seçim Değiştirildi"
 
-#: mainwidget.cpp:180
+#: mainwidget.cpp:182
 #, kde-format
 msgid "Model Changed"
 msgstr "Model Değiştirildi"
 
-#: mainwidget.cpp:195
+#: mainwidget.cpp:197
 #, kde-format
 msgid "Add Object"
 msgstr "Nesne Ekle"
 
-#: mainwidget.cpp:201
+#: mainwidget.cpp:203
 #, kde-format
 msgid "Remove Object"
 msgstr "Nesneyi Kaldır"
 
-#: mainwidget.cpp:212
+#: mainwidget.cpp:214
 #, kde-format
 msgid "Create"
 msgstr "Oluştur"
 
-#: mainwidget.cpp:218
+#: mainwidget.cpp:220
 #, kde-format
 msgid "Destroy"
 msgstr "Yok Et"
 
-#: mainwidget.cpp:319
+#: mainwidget.cpp:321
 #, kde-format
 msgid "Text caret moved (%1)"
 msgstr "Metin imleci hareket etti (%1)"
@@ -391,7 +391,7 @@ msgctxt "@action:inmenu"
 msgid "Enable Screen Reader"
 msgstr "Ekran okuyucusunu etkinleştir"
 
-#: mainwindow.cpp:112
+#: mainwindow.cpp:112 propertytreeview.cpp:34
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy property value"
@@ -660,13 +660,13 @@ msgstr "Olay Odağı"
 msgid "Action"
 msgstr "Eylem"
 
-#: propertytreeview.cpp:13
+#: propertytreeview.cpp:14
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "List of properties"
 msgstr "Özellikler listesi"
 
-#: propertytreeview.cpp:14
+#: propertytreeview.cpp:15
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Displays properties of the selected accessible object"
