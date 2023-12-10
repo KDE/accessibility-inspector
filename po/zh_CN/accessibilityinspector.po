@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-06 02:31+0000\n"
-"PO-Revision-Date: 2023-11-25 02:26\n"
+"PO-Revision-Date: 2023-12-09 09:30\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -14,9 +14,9 @@ msgstr ""
 "X-Crowdin-Project: kdeorg\n"
 "X-Crowdin-Project-ID: 269464\n"
 "X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /kf6-trunk/messages/accessibility-inspector/"
+"X-Crowdin-File: /kf5-stable/messages/accessibility-inspector/"
 "accessibilityinspector.pot\n"
-"X-Crowdin-File-ID: 48640\n"
+"X-Crowdin-File-ID: 48730\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -52,11 +52,10 @@ msgid "Displays a hierachical tree of accessible objects"
 msgstr "显示无障碍对象的层级树"
 
 #: accessibletreewidget.cpp:24
-#, fuzzy, kde-format
-#| msgid "Role Filter"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Filter..."
-msgstr "角色过滤器"
+msgstr "过滤..."
 
 #: apps/main.cpp:26
 #, kde-format
@@ -316,28 +315,27 @@ msgstr "否"
 #: mainwidget.cpp:156
 #, kde-format
 msgid "Child Added %1"
-msgstr ""
+msgstr "子项已添加 %1"
 
 #: mainwidget.cpp:162
 #, kde-format
 msgid "Child Removed %1"
-msgstr ""
+msgstr "子项已移除 %1"
 
 #: mainwidget.cpp:168
 #, kde-format
 msgid "Visible Data Changed"
-msgstr ""
+msgstr "可见数据已更改"
 
 #: mainwidget.cpp:174
-#, fuzzy, kde-format
-#| msgid "Selection"
+#, kde-format
 msgid "Selection Changed"
-msgstr "选中内容"
+msgstr "选中内容已更改"
 
 #: mainwidget.cpp:180
 #, kde-format
 msgid "Model Changed"
-msgstr ""
+msgstr "模型已更改"
 
 #: mainwidget.cpp:195
 #, kde-format
@@ -413,9 +411,7 @@ msgid "Role"
 msgstr "角色"
 
 #: model/accessiblepropertiesmodel.cpp:53
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Properties"
+#, kde-format
 msgid "Property"
 msgstr "属性"
 
@@ -469,12 +465,12 @@ msgstr "URL"
 #: model/accessiblepropertiesmodel.cpp:104
 #, kde-format
 msgid "Parent"
-msgstr "父级"
+msgstr "父项"
 
 #: model/accessiblepropertiesmodel.cpp:106
 #, kde-format
 msgid "Children"
-msgstr "子级"
+msgstr "子项"
 
 #: model/accessiblepropertiesmodel.cpp:110
 #, kde-format
@@ -507,10 +503,9 @@ msgid "Alpha"
 msgstr "透明度"
 
 #: model/accessiblepropertiesmodel.cpp:126
-#, fuzzy, kde-format
-#| msgid "Selection"
+#, kde-format
 msgid "Collection"
-msgstr "选中内容"
+msgstr "集合"
 
 #: model/accessiblepropertiesmodel.cpp:131
 #, kde-format
@@ -689,9 +684,3 @@ msgstr "边界"
 msgctxt "@info:whatsthis"
 msgid "Visualize the component boundaries"
 msgstr "可视化组件的边界"
-
-#~ msgid "Tree"
-#~ msgstr "树"
-
-#~ msgid "Tree of accessibles"
-#~ msgstr "无障碍特性树"
