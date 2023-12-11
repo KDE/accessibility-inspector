@@ -1,77 +1,76 @@
-# Translation of accessibilityinspector.po to Catalan
-# Copyright (C) 2023 This_file_is_part_of_KDE
-# This file is distributed under the license LGPL version 2.1 or
-# version 3 or later versions approved by the membership of KDE e.V.
+# Copyright (C) 2023 This file is copyright:
+# This file is distributed under the same license as the accessibility-inspector package.
 #
-# Josep M. Ferrer <txemaq@gmail.com>, 2023.
+# SPDX-FileCopyrightText: 2023 Łukasz Wojniłowicz <lukasz.wojnilowicz@gmai.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-11 01:33+0000\n"
-"PO-Revision-Date: 2023-12-04 12:36+0100\n"
-"Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
-"Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
-"Language: ca\n"
+"PO-Revision-Date: 2023-12-10 13:34+0100\n"
+"Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmai.com>\n"
+"Language-Team: Polish <kde-i18n-doc@kde.org>\n"
+"Language: pl_PL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.12.3\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 23.08.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Josep M. Ferrer"
+msgstr "Łukasz Wojniłowicz"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "txemaq@gmail.com"
+msgstr "lukasz.wojnilowicz@gmail.com"
 
 #. i18n: ectx: Menu (edit)
 #: accessibilityinspectorui.rc:11
 #, kde-format
 msgid "&Edit"
-msgstr "&Edita"
+msgstr "&Edycja"
 
 #. i18n: ectx: Menu (view)
 #: accessibilityinspectorui.rc:15
 #, kde-format
 msgid "View"
-msgstr "Visualitza"
+msgstr "Widok"
 
 #. i18n: ectx: Menu (settings)
 #: accessibilityinspectorui.rc:20
 #, kde-format
 msgid "&Settings"
-msgstr "&Configuració"
+msgstr "U&stawienia"
 
 #: accessibletreeview.cpp:24
 #, kde-format
 msgid "Displays a hierachical tree of accessible objects"
-msgstr "Mostra un arbre jeràrquic d'objectes accessibles"
+msgstr "Wyświetla hierarchiczne drzewo obiektów dostępności"
 
 #: accessibletreewidget.cpp:26
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Filter..."
-msgstr "Filtre..."
+msgstr "Odfiltruj..."
 
 #: apps/main.cpp:26
 #, kde-format
 msgid "Accessibility Inspector"
-msgstr "Inspector d'accessibilitat"
+msgstr "Inspektor dostępności"
 
 #: apps/main.cpp:28
 #, kde-format
 msgid "Accessibility inspector"
-msgstr "Inspector d'accessibilitat"
+msgstr "Inspektor dostępności"
 
 #: apps/main.cpp:30
 #, kde-format
 msgid "© 2021-2023 Carl Schwan, 2021-2023 KDE Community"
-msgstr "© 2021-2023 Carl Schwan, 2021-2023 KDE Community"
+msgstr "© 2021-2023 Carl Schwan, 2021-2023 Społeczność KDE"
 
 #: apps/main.cpp:32
 #, kde-format
@@ -81,7 +80,7 @@ msgstr "Frederik Gladhorn"
 #: apps/main.cpp:32
 #, kde-format
 msgid "Original author"
-msgstr "Autor original"
+msgstr "Autor pierwszej wersji"
 
 #: apps/main.cpp:34
 #, kde-format
@@ -101,412 +100,412 @@ msgstr "Carl Schwan"
 #: apps/main.cpp:36
 #, kde-format
 msgid "Maintainer"
-msgstr "Mantenidor"
+msgstr "Opiekun"
 
 #: clientcachedialog.cpp:29
 #, kde-format
 msgctxt "@title:window"
 msgid "Cache"
-msgstr "Memòria cau"
+msgstr "Pamięć podręczna"
 
 #: clientcachedialog.cpp:44
 #, kde-format
 msgctxt "@action:button"
 msgid "Refresh"
-msgstr "Actualitza"
+msgstr "Odśwież"
 
 #: clientcachedialog.cpp:47
 #, kde-format
 msgctxt "@action:button"
 msgid "Clear"
-msgstr "Neteja"
+msgstr "Wyczyść"
 
 #: clientcachedialog.cpp:50
 #, kde-format
 msgctxt "@label"
 msgid "Strategy:"
-msgstr "Estratègia:"
+msgstr "Strategia:"
 
 #: clientcachedialog.cpp:55
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Disable"
-msgstr "Desactiva"
+msgstr "Wyłącz"
 
 #: clientcachedialog.cpp:56
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Weak"
-msgstr "Dèbil"
+msgstr "Słaby"
 
 #: clientcachedialog.cpp:65
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Count:"
-msgstr "Comptador:"
+msgstr "Liczność:"
 
 #: clientcachedialog.cpp:101
 #, kde-format
 msgctxt "@title:row"
 msgid "Name"
-msgstr "Nom"
+msgstr "Nazwa"
 
 #: clientcachedialog.cpp:101
 #, kde-format
 msgctxt "@title:row"
 msgid "Role"
-msgstr "Rol"
+msgstr "Rola"
 
 #: clientcachedialog.cpp:101
 #, kde-format
 msgctxt "@title:row"
 msgid "Identifier"
-msgstr "Identificador"
+msgstr "Identyfikator"
 
 #: eventview.cpp:63
 #, kde-format
 msgctxt "@label"
 msgid "Accessible"
-msgstr "Accessible"
+msgstr "Dostępny"
 
 #: eventview.cpp:65
 #, kde-format
 msgctxt "@label"
 msgid "Role"
-msgstr "Rol"
+msgstr "Rola"
 
 #: eventview.cpp:67
 #, kde-format
 msgctxt "@label"
 msgid "Event"
-msgstr "Esdeveniment"
+msgstr "Zdarzenie"
 
 #: eventview.cpp:69
 #, kde-format
 msgctxt "@label"
 msgid "Action"
-msgstr "Acció"
+msgstr "Działanie"
 
 #: eventview.cpp:194
 #, kde-format
 msgid "Displays all received events"
-msgstr "Mostra tots els esdeveniments rebuts"
+msgstr "Wyświetla wszystkie odebrane zdarzenia"
 
 #: eventview.cpp:264
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Focus"
-msgstr "Focus"
+msgstr "Uaktywnianie"
 
 #: eventview.cpp:267
 #, kde-format
 msgctxt "Accessibility event name: state changed"
 msgid "State"
-msgstr "Estat"
+msgstr "Stan"
 
 #: eventview.cpp:270
 #, kde-format
 msgctxt "Accessibility event name: name changed"
 msgid "Name"
-msgstr "Nom"
+msgstr "Nazwa"
 
 #: eventview.cpp:273
 #, kde-format
 msgctxt "Accessibility event name: description changed"
 msgid "Description"
-msgstr "Descripció"
+msgstr "Opis"
 
 #: eventview.cpp:276
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Window"
-msgstr "Finestra"
+msgstr "Okno"
 
 #: eventview.cpp:279
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Document"
-msgstr "Document"
+msgstr "Dokument"
 
 #: eventview.cpp:282
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Object"
-msgstr "Objecte"
+msgstr "Obiekt"
 
 #: eventview.cpp:285
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Text"
-msgstr "Text"
+msgstr "Tekst"
 
 #: eventview.cpp:288
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Table"
-msgstr "Taula"
+msgstr "Tabela"
 
 #: eventview.cpp:291
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Others"
-msgstr "Altres"
+msgstr "Inne"
 
 #: eventview.cpp:294
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "No Event"
-msgstr "Cap esdeveniment"
+msgstr "Bez zdarzenia"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, EventViewWidget)
 #: eventview.ui:18
 #, kde-format
 msgid "Form"
-msgstr "Formulari"
+msgstr "Formularz"
 
 #. i18n: ectx: property (placeholderText), widget (QLineEdit, accessibleFilterEdit)
 #: eventview.ui:32
 #, kde-format
 msgid "Accessible Filter"
-msgstr "Filtre d'accessibles"
+msgstr "Filtr z ułatwieniami"
 
 #. i18n: ectx: property (accessibleName), widget (QLineEdit, roleFilterEdit)
 #. i18n: ectx: property (placeholderText), widget (QLineEdit, roleFilterEdit)
 #: eventview.ui:39 eventview.ui:45
 #, kde-format
 msgid "Role Filter"
-msgstr "Filtre de rols"
+msgstr "Filtr roli"
 
 #. i18n: ectx: property (accessibleName), widget (QComboBox, filterComboBox)
 #: eventview.ui:52
 #, kde-format
 msgid "Event Filter"
-msgstr "Filtre d'esdeveniments"
+msgstr "Filtr zdarzeń"
 
 #. i18n: ectx: property (accessibleName), widget (QPushButton, clearButton)
 #: eventview.ui:65
 #, kde-format
 msgid "Clear Events"
-msgstr "Neteja els esdeveniments"
+msgstr "Wyczyść zdarzenia"
 
 #. i18n: ectx: property (text), widget (QPushButton, clearButton)
 #: eventview.ui:68
 #, kde-format
 msgid "&Clear"
-msgstr "&Neteja"
+msgstr "Wy&czyść"
 
 #: mainwidget.cpp:50
 #, kde-format
 msgctxt "@title:window"
 msgid "Properties"
-msgstr "Propietats"
+msgstr "Właściwości"
 
 #: mainwidget.cpp:51
 #, kde-format
 msgctxt "@title:window"
 msgid "Events"
-msgstr "Esdeveniments"
+msgstr "Zdarzenia"
 
 #: mainwidget.cpp:52
 #, kde-format
 msgctxt "@title:window"
 msgid "Boundaries"
-msgstr "Límits"
+msgstr "Granice"
 
 #: mainwidget.cpp:147 mainwidget.cpp:149
 #, kde-format
 msgid "true"
-msgstr "cert"
+msgstr "prawda"
 
 #: mainwidget.cpp:147 mainwidget.cpp:149
 #, kde-format
 msgid "false"
-msgstr "fals"
+msgstr "fałsz"
 
 #: mainwidget.cpp:158
 #, kde-format
 msgid "Child Added %1"
-msgstr "Fill afegit %1"
+msgstr "Dodano podrzędnego %1"
 
 #: mainwidget.cpp:164
 #, kde-format
 msgid "Child Removed %1"
-msgstr "Fill eliminat %1"
+msgstr "Usunięto podrzędnego %1"
 
 #: mainwidget.cpp:170
 #, kde-format
 msgid "Visible Data Changed"
-msgstr "Les dades visibles han canviat"
+msgstr "Widzialne dane uległy zmianie"
 
 #: mainwidget.cpp:176
 #, kde-format
 msgid "Selection Changed"
-msgstr "La selecció ha canviat"
+msgstr "Zaznaczenie uległo zmianie"
 
 #: mainwidget.cpp:182
 #, kde-format
 msgid "Model Changed"
-msgstr "El model ha canviat"
+msgstr "Model uległ zmianie"
 
 #: mainwidget.cpp:197
 #, kde-format
 msgid "Add Object"
-msgstr "Afegeix un objecte"
+msgstr "Dodaj obiekt"
 
 #: mainwidget.cpp:203
 #, kde-format
 msgid "Remove Object"
-msgstr "Elimina un objecte"
+msgstr "Usuń obiekt"
 
 #: mainwidget.cpp:214
 #, kde-format
 msgid "Create"
-msgstr "Crea"
+msgstr "Utwórz"
 
 #: mainwidget.cpp:220
 #, kde-format
 msgid "Destroy"
-msgstr "Destrueix"
+msgstr "Zniszcz"
 
 #: mainwidget.cpp:321
 #, kde-format
 msgid "Text caret moved (%1)"
-msgstr "El cursor de text s'ha mogut (%1)"
+msgstr "Przemieszczono karetkę tekstu (%1)"
 
 #: mainwindow.cpp:73
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Reset Tree"
-msgstr "Reinicia l'arbre"
+msgstr "Wyzeruj drzewo"
 
 #: mainwindow.cpp:79
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Follow Focus"
-msgstr "Segueix al focus"
+msgstr "Podążaj za uaktywnianiem"
 
 #: mainwindow.cpp:86
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Cache..."
-msgstr "Memòria cau..."
+msgstr "Pamięć podręczna..."
 
 #: mainwindow.cpp:91
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Enable Accessibility"
-msgstr "Activa l'accessibilitat"
+msgstr "Włącz dostępność"
 
 #: mainwindow.cpp:101
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Enable Screen Reader"
-msgstr "Activa el lector de pantalla"
+msgstr "Włącz czytnik ekranowy"
 
 #: mainwindow.cpp:112 propertytreeview.cpp:34
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy property value"
-msgstr "Copia el valor de la propietat"
+msgstr "Skopiuj wartość właściwości"
 
 #: model/accessibleobjecttreemodel.cpp:31
 #: model/accessiblepropertiesmodel.cpp:91
 #, kde-format
 msgid "Accessible"
-msgstr "Accessible"
+msgstr "Dostępny"
 
 #: model/accessibleobjecttreemodel.cpp:33
 #: model/accessiblepropertiesmodel.cpp:95
 #, kde-format
 msgid "Role"
-msgstr "Rol"
+msgstr "Rola"
 
 #: model/accessiblepropertiesmodel.cpp:53
 #, kde-format
 msgid "Property"
-msgstr "Propietat"
+msgstr "Właściwość"
 
 #: model/accessiblepropertiesmodel.cpp:55
 #: model/accessiblepropertiesmodel.cpp:267
 #, kde-format
 msgid "Value"
-msgstr "Valor"
+msgstr "Wartość"
 
 #: model/accessiblepropertiesmodel.cpp:93
 #, kde-format
 msgid "Name"
-msgstr "Nom"
+msgstr "Nazwa"
 
 #: model/accessiblepropertiesmodel.cpp:94
 #: model/accessiblepropertiesmodel.cpp:197
 #, kde-format
 msgid "Description"
-msgstr "Descripció"
+msgstr "Opis"
 
 #: model/accessiblepropertiesmodel.cpp:96
 #, kde-format
 msgid "LocalizedRole"
-msgstr "RolLocalitzat"
+msgstr "Przetłumaczona rola"
 
 #: model/accessiblepropertiesmodel.cpp:97
 #, kde-format
 msgid "Visible"
-msgstr "Visible"
+msgstr "Widoczny"
 
 #: model/accessiblepropertiesmodel.cpp:98
 #, kde-format
 msgid "Default"
-msgstr "Predeterminat"
+msgstr "Domyślne"
 
 #: model/accessiblepropertiesmodel.cpp:99
 #, kde-format
 msgid "State"
-msgstr "Estat"
+msgstr "Stan"
 
 #: model/accessiblepropertiesmodel.cpp:100
 #, kde-format
 msgid "AccessibleId"
-msgstr "IDAccessible"
+msgstr "Id dostępności"
 
 #: model/accessiblepropertiesmodel.cpp:101
 #, kde-format
 msgid "Url"
-msgstr "URL"
+msgstr "Adres URL"
 
 #: model/accessiblepropertiesmodel.cpp:104
 #, kde-format
 msgid "Parent"
-msgstr "Pare"
+msgstr "Nadrzędne"
 
 #: model/accessiblepropertiesmodel.cpp:106
 #, kde-format
 msgid "Children"
-msgstr "Fills"
+msgstr "Podrzędne"
 
 #: model/accessiblepropertiesmodel.cpp:110
 #, kde-format
 msgid "Broken child"
-msgstr "Fill trencat"
+msgstr "Uszkodzony podrzędny"
 
 #: model/accessiblepropertiesmodel.cpp:118
 #, kde-format
 msgid "Component"
-msgstr "Component"
+msgstr "Składnik"
 
 #: model/accessiblepropertiesmodel.cpp:120
 #, kde-format
 msgid "BoundingRect"
-msgstr "RectangleLimitant"
+msgstr "Prostokąt obejmujący"
 
 #: model/accessiblepropertiesmodel.cpp:121
 #, kde-format
 msgid "Layer"
-msgstr "Capa"
+msgstr "Warstwa"
 
 #: model/accessiblepropertiesmodel.cpp:122
 #, kde-format
 msgid "MDIZOrder"
-msgstr "OrdreMDIZ"
+msgstr "Kolejność Z MDI"
 
 #: model/accessiblepropertiesmodel.cpp:123
 #, kde-format
@@ -516,182 +515,182 @@ msgstr "Alfa"
 #: model/accessiblepropertiesmodel.cpp:126
 #, kde-format
 msgid "Collection"
-msgstr "Col·lecció"
+msgstr "Zbiór"
 
 #: model/accessiblepropertiesmodel.cpp:131
 #, kde-format
 msgid "Application"
-msgstr "Aplicació"
+msgstr "Program"
 
 #: model/accessiblepropertiesmodel.cpp:133
 #, kde-format
 msgid "ToolkitName"
-msgstr "NomJocEines"
+msgstr "Nazwa zestawu narzędzi"
 
 #: model/accessiblepropertiesmodel.cpp:134
 #, kde-format
 msgid "Version"
-msgstr "Versió"
+msgstr "Wersja"
 
 #: model/accessiblepropertiesmodel.cpp:135
 #, kde-format
 msgid "Id"
-msgstr "ID"
+msgstr "Id"
 
 #: model/accessiblepropertiesmodel.cpp:136
 #: model/accessiblepropertiesmodel.cpp:198
 #, kde-format
 msgid "Locale"
-msgstr "Configuració regional"
+msgstr "Język"
 
 #: model/accessiblepropertiesmodel.cpp:137
 #, kde-format
 msgid "BusAddress"
-msgstr "AdreçaBus"
+msgstr "Adres szyny"
 
 #: model/accessiblepropertiesmodel.cpp:140
 #, kde-format
 msgid "Document"
-msgstr "Document"
+msgstr "Dokument"
 
 #: model/accessiblepropertiesmodel.cpp:149
 #, kde-format
 msgid "Editable Text"
-msgstr "Text editable"
+msgstr "Zmienialny tekst"
 
 #: model/accessiblepropertiesmodel.cpp:154
 #, kde-format
 msgid "Hyperlink"
-msgstr "Enllaç"
+msgstr "Hiperłącze"
 
 #: model/accessiblepropertiesmodel.cpp:176
 #, kde-format
 msgid "Hypertext"
-msgstr "Hipertext"
+msgstr "Hipertekst"
 
 #: model/accessiblepropertiesmodel.cpp:195
 #, kde-format
 msgid "Image"
-msgstr "Imatge"
+msgstr "Obraz"
 
 #: model/accessiblepropertiesmodel.cpp:199
 #, kde-format
 msgid "Rect"
-msgstr "Rect"
+msgstr "Prostokąt"
 
 #: model/accessiblepropertiesmodel.cpp:202
 #, kde-format
 msgid "Selection"
-msgstr "Selecció"
+msgstr "Zaznaczenie"
 
 #: model/accessiblepropertiesmodel.cpp:209
 #, kde-format
 msgid "Table"
-msgstr "Taula"
+msgstr "Tabela"
 
 #: model/accessiblepropertiesmodel.cpp:242
 #: model/accessiblepropertiesmodel.cpp:251
 #: model/accessiblepropertiesmodel.cpp:253
 #, kde-format
 msgid "Text"
-msgstr "Text"
+msgstr "Tekst"
 
 #: model/accessiblepropertiesmodel.cpp:245
 #, kde-format
 msgid "Caret Offset"
-msgstr "Desplaçament del cursor"
+msgstr "Przesunięcie karetki"
 
 #: model/accessiblepropertiesmodel.cpp:246
 #, kde-format
 msgid "Character Count"
-msgstr "Comptador de caràcters"
+msgstr "Liczba znaków"
 
 #: model/accessiblepropertiesmodel.cpp:247
 #, kde-format
 msgid "Character Rect"
-msgstr "Rectangle de caràcters"
+msgstr "Prostokąt znaku"
 
 #: model/accessiblepropertiesmodel.cpp:257
 #, kde-format
 msgid "Selections"
-msgstr "Seleccions"
+msgstr "Zaznaczenia"
 
 #: model/accessiblepropertiesmodel.cpp:269
 #, kde-format
 msgid "Current"
-msgstr "Actual"
+msgstr "Bieżący"
 
 #: model/accessiblepropertiesmodel.cpp:270
 #, kde-format
 msgid "Minimum"
-msgstr "Mínim"
+msgstr "Minimum"
 
 #: model/accessiblepropertiesmodel.cpp:271
 #, kde-format
 msgid "Maximum"
-msgstr "Màxim"
+msgstr "Maksimum"
 
 #: model/accessiblepropertiesmodel.cpp:272
 #, kde-format
 msgid "Increment"
-msgstr "Increment"
+msgstr "Przyrost"
 
 #: model/accessiblepropertiesmodel.cpp:275
 #, kde-format
 msgid "Socket"
-msgstr "Sòcol"
+msgstr "Gniazdo"
 
 #: model/accessiblepropertiesmodel.cpp:281
 #, kde-format
 msgid "Event Keyboard"
-msgstr "Esdeveniment de teclat"
+msgstr "Zdarzenie klawiatury"
 
 #: model/accessiblepropertiesmodel.cpp:286
 #, kde-format
 msgid "Event Mouse"
-msgstr "Esdeveniment de ratolí"
+msgstr "Zdarzenie myszy"
 
 #: model/accessiblepropertiesmodel.cpp:291
 #, kde-format
 msgid "Event Object"
-msgstr "Esdeveniment d'objecte"
+msgstr "Obiekt zdarzenia"
 
 #: model/accessiblepropertiesmodel.cpp:296
 #, kde-format
 msgid "Event Window"
-msgstr "Esdeveniment de finestra"
+msgstr "Okno zdarzenia"
 
 #: model/accessiblepropertiesmodel.cpp:301
 #, kde-format
 msgid "Event Focus"
-msgstr "Esdeveniment de focus"
+msgstr "Zdarzenie uaktywnienia"
 
 #: model/accessiblepropertiesmodel.cpp:308
 #: model/accessiblepropertiesmodel.cpp:330
 #, kde-format
 msgid "Action"
-msgstr "Acció"
+msgstr "Działanie"
 
 #: propertytreeview.cpp:14
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "List of properties"
-msgstr "Llista de propietats"
+msgstr "Wykaz właściwości"
 
 #: propertytreeview.cpp:15
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Displays properties of the selected accessible object"
-msgstr "Mostra les propietats de l'objecte accessible seleccionat"
+msgstr "Wyświetla właściwości zaznaczonego obiektu dostępności"
 
 #: uiview.cpp:19
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Boundaries"
-msgstr "Límits"
+msgstr "Granice"
 
 #: uiview.cpp:20
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Visualize the component boundaries"
-msgstr "Visualitza els límits del component"
+msgstr "Zobrazuj granice składnika"
