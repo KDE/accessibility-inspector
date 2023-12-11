@@ -56,6 +56,7 @@
     <p xml:lang="tr">Erişilebilirlik Denetçisi, adından da anlaşılabileceği üzere, uygulamalar için bir erişilebilirlik ağacı denetçisidir. At-SPI tarafından kullanıma açılan tüm ögeleri denetlemenize de izin verir.</p>
     <p xml:lang="uk">«Ревізор доступності», як можна зрозуміти з назви, ревізор для ієрархії доступності вашої програми. За її допомогою можна перевіряти усі запис, які відкриваються за допомогою At-SPI.</p>
     <p xml:lang="x-test">xxAccessibility Inspector is as the name suggests an inspector for your application accessibility tree. It lets you check all the items exposed via At-SPI, too.xx</p>
+    <p xml:lang="zh-CN">无障碍特性检测工具，顾名思义，就是用于检测应用程序的无障碍特性树。您可以使用它检查通过 At-SPI 暴露的所有项目。</p>
   </description>
   <url type="homepage">https://apps.kde.org/accessibilityinspector/</url>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?product=AccessibilityInspector</url>
