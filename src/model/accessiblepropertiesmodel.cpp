@@ -308,7 +308,13 @@ void ObjectPropertiesModel::setAccessibleObject(const QAccessibleClient::Accessi
             QStandardItem *item = append(i18n("Action"));
             setFontBold(item);
             for (const QSharedPointer<QAction> &a : acc.actions()) {
-                auto nameItem = new QStandardItem(a->text());
+                const QString shortCut = a->shortcut().toString();
+                QString text = a->text();
+                qDebug() << " a->shortcut() " << a->shortcut() << " text " << text;
+                if (!shortCut.isEmpty()) {
+                    text += QStringLiteral(" (%1)").arg(shortCut);
+                }
+                auto nameItem = new QStandardItem(text);
                 auto valueItem = new QStandardItem(a->whatsThis());
                 nameItem->setEditable(false);
                 valueItem->setEditable(false);
