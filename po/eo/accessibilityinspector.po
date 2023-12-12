@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-11 01:33+0000\n"
+"POT-Creation-Date: 2023-12-12 01:35+0000\n"
 "PO-Revision-Date: 2023-12-04 15:25+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
@@ -665,7 +665,7 @@ msgid "Event Focus"
 msgstr "Eventa Fokuso"
 
 #: model/accessiblepropertiesmodel.cpp:308
-#: model/accessiblepropertiesmodel.cpp:330
+#: model/accessiblepropertiesmodel.cpp:336
 #, kde-format
 msgid "Action"
 msgstr "Ago"

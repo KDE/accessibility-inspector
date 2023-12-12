@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-11 01:33+0000\n"
+"POT-Creation-Date: 2023-12-12 01:35+0000\n"
 "PO-Revision-Date: 2023-11-24 21:44-0800\n"
 "Last-Translator: Japanese KDE translation team <kde-jp@kde.org>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -662,7 +662,7 @@ msgid "Event Focus"
 msgstr ""
 
 #: model/accessiblepropertiesmodel.cpp:308
-#: model/accessiblepropertiesmodel.cpp:330
+#: model/accessiblepropertiesmodel.cpp:336
 #, kde-format
 msgid "Action"
 msgstr ""

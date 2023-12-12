@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-11 01:33+0000\n"
-"PO-Revision-Date: 2023-12-04 08:33+0200\n"
+"POT-Creation-Date: 2023-12-12 01:35+0000\n"
+"PO-Revision-Date: 2023-12-11 23:45+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -85,12 +85,12 @@ msgstr "Початковий автор"
 #: apps/main.cpp:34
 #, kde-format
 msgid "Laurent Montel"
-msgstr ""
+msgstr "Laurent Montel"
 
 #: apps/main.cpp:34
 #, kde-format
 msgid "Developer"
-msgstr ""
+msgstr "Розробник"
 
 #: apps/main.cpp:35
 #, kde-format
@@ -666,7 +666,7 @@ msgid "Event Focus"
 msgstr "Фокусування події"
 
 #: model/accessiblepropertiesmodel.cpp:308
-#: model/accessiblepropertiesmodel.cpp:330
+#: model/accessiblepropertiesmodel.cpp:336
 #, kde-format
 msgid "Action"
 msgstr "Дія"

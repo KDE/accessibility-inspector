@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-11 01:33+0000\n"
-"PO-Revision-Date: 2023-12-04 06:10+0100\n"
+"POT-Creation-Date: 2023-12-12 01:35+0000\n"
+"PO-Revision-Date: 2023-12-11 05:40+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -85,12 +85,12 @@ msgstr "საწყისი ავტორი"
 #: apps/main.cpp:34
 #, kde-format
 msgid "Laurent Montel"
-msgstr ""
+msgstr "Laurent Montel"
 
 #: apps/main.cpp:34
 #, kde-format
 msgid "Developer"
-msgstr ""
+msgstr "პროგრამისტი"
 
 #: apps/main.cpp:35
 #, kde-format
@@ -666,7 +666,7 @@ msgid "Event Focus"
 msgstr "მოვლენის ფოკუსი"
 
 #: model/accessiblepropertiesmodel.cpp:308
-#: model/accessiblepropertiesmodel.cpp:330
+#: model/accessiblepropertiesmodel.cpp:336
 #, kde-format
 msgid "Action"
 msgstr "პარამეტრები"
