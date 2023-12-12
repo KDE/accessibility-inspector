@@ -31,7 +31,7 @@ int main(int argc, char **argv)
 
     about.addAuthor(i18n("Frederik Gladhorn"), i18n("Original author"), QStringLiteral("gladhorn@kde.org"));
 
-    about.addCredit(i18n("Laurent Montel"), i18n("Developer"), QStringLiteral("montel@kde.org"));
+    about.addCredit(i18n("Laurent Montel"), i18n("Maintainer"), QStringLiteral("montel@kde.org"));
     about.addAuthor(i18n("Carl Schwan"),
                     i18n("Maintainer"),
                     QStringLiteral("carl@carlschwan.eu"),
