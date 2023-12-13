@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-12 01:35+0000\n"
+"POT-Creation-Date: 2023-12-13 01:32+0000\n"
 "PO-Revision-Date: 2023-12-05 16:14+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -87,19 +87,14 @@ msgstr ""
 msgid "Laurent Montel"
 msgstr ""
 
-#: apps/main.cpp:34
+#: apps/main.cpp:34 apps/main.cpp:36
 #, kde-format
-msgid "Developer"
+msgid "Maintainer"
 msgstr ""
 
 #: apps/main.cpp:35
 #, kde-format
 msgid "Carl Schwan"
-msgstr ""
-
-#: apps/main.cpp:36
-#, kde-format
-msgid "Maintainer"
 msgstr ""
 
 #: clientcachedialog.cpp:29

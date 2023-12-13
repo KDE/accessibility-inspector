@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-12 01:35+0000\n"
-"PO-Revision-Date: 2023-12-04 15:25+0100\n"
+"POT-Creation-Date: 2023-12-13 01:32+0000\n"
+"PO-Revision-Date: 2023-12-12 07:09+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -84,22 +84,17 @@ msgstr "Origina aŭtoro"
 #: apps/main.cpp:34
 #, kde-format
 msgid "Laurent Montel"
-msgstr ""
+msgstr "Laurent Montel"
 
-#: apps/main.cpp:34
+#: apps/main.cpp:34 apps/main.cpp:36
 #, kde-format
-msgid "Developer"
-msgstr ""
+msgid "Maintainer"
+msgstr "Prizorganto"
 
 #: apps/main.cpp:35
 #, kde-format
 msgid "Carl Schwan"
 msgstr "Carl Schwan"
-
-#: apps/main.cpp:36
-#, kde-format
-msgid "Maintainer"
-msgstr "Prizorganto"
 
 #: clientcachedialog.cpp:29
 #, kde-format
@@ -693,3 +688,6 @@ msgstr "Limoj"
 msgctxt "@info:whatsthis"
 msgid "Visualize the component boundaries"
 msgstr "Bildigi la komponantajn limojn"
+
+#~ msgid "Developer"
+#~ msgstr "Evoluisto"

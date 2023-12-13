@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-12 01:35+0000\n"
-"PO-Revision-Date: 2023-12-04 11:24+0100\n"
+"POT-Creation-Date: 2023-12-13 01:32+0000\n"
+"PO-Revision-Date: 2023-12-11 11:10+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.08.3\n"
+"X-Generator: Lokalize 23.08.4\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -84,22 +84,17 @@ msgstr "Oorspronkelijke auteur"
 #: apps/main.cpp:34
 #, kde-format
 msgid "Laurent Montel"
-msgstr ""
+msgstr "Laurent Montel"
 
-#: apps/main.cpp:34
+#: apps/main.cpp:34 apps/main.cpp:36
 #, kde-format
-msgid "Developer"
-msgstr ""
+msgid "Maintainer"
+msgstr "Onderhouder"
 
 #: apps/main.cpp:35
 #, kde-format
 msgid "Carl Schwan"
 msgstr "Carl Schwan"
-
-#: apps/main.cpp:36
-#, kde-format
-msgid "Maintainer"
-msgstr "Onderhouder"
 
 #: clientcachedialog.cpp:29
 #, kde-format
@@ -693,6 +688,9 @@ msgstr "Grenzen"
 msgctxt "@info:whatsthis"
 msgid "Visualize the component boundaries"
 msgstr "De grenzen van componenten visualiseren"
+
+#~ msgid "Developer"
+#~ msgstr "Ontwikkelaar"
 
 #~ msgid "Tree"
 #~ msgstr "Boomstructuur"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-12 01:35+0000\n"
+"POT-Creation-Date: 2023-12-13 01:32+0000\n"
 "PO-Revision-Date: 2023-12-11 23:45+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -87,20 +87,15 @@ msgstr "Початковий автор"
 msgid "Laurent Montel"
 msgstr "Laurent Montel"
 
-#: apps/main.cpp:34
+#: apps/main.cpp:34 apps/main.cpp:36
 #, kde-format
-msgid "Developer"
-msgstr "Розробник"
+msgid "Maintainer"
+msgstr "Супровідник"
 
 #: apps/main.cpp:35
 #, kde-format
 msgid "Carl Schwan"
 msgstr "Carl Schwan"
-
-#: apps/main.cpp:36
-#, kde-format
-msgid "Maintainer"
-msgstr "Супровідник"
 
 #: clientcachedialog.cpp:29
 #, kde-format
@@ -694,6 +689,9 @@ msgstr "Кордони"
 msgctxt "@info:whatsthis"
 msgid "Visualize the component boundaries"
 msgstr "Візуалізувати межі компонентів"
+
+#~ msgid "Developer"
+#~ msgstr "Розробник"
 
 #~ msgid "Tree"
 #~ msgstr "Ієрархія"

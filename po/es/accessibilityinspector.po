@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accessibilityinspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-12 01:35+0000\n"
-"PO-Revision-Date: 2023-12-05 02:04+0100\n"
+"POT-Creation-Date: 2023-12-13 01:32+0000\n"
+"PO-Revision-Date: 2023-12-12 23:48+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -86,22 +86,17 @@ msgstr "Autor original"
 #: apps/main.cpp:34
 #, kde-format
 msgid "Laurent Montel"
-msgstr ""
+msgstr "Laurent Montel"
 
-#: apps/main.cpp:34
+#: apps/main.cpp:34 apps/main.cpp:36
 #, kde-format
-msgid "Developer"
-msgstr ""
+msgid "Maintainer"
+msgstr "Responsable"
 
 #: apps/main.cpp:35
 #, kde-format
 msgid "Carl Schwan"
 msgstr "Carl Schwan"
-
-#: apps/main.cpp:36
-#, kde-format
-msgid "Maintainer"
-msgstr "Responsable"
 
 #: clientcachedialog.cpp:29
 #, kde-format
@@ -695,6 +690,9 @@ msgstr "Límites"
 msgctxt "@info:whatsthis"
 msgid "Visualize the component boundaries"
 msgstr "Visualizar los límites del componente"
+
+#~ msgid "Developer"
+#~ msgstr "Desarrollador"
 
 #~ msgid "Tree"
 #~ msgstr "Árbol"
