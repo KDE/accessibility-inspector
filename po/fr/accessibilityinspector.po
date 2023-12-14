@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-13 01:32+0000\n"
-"PO-Revision-Date: 2023-12-09 13:31+0100\n"
+"PO-Revision-Date: 2023-12-12 11:09+0100\n"
 "Last-Translator: Xavier BESNARD <xavier.besnard@neuf.fr>\n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -81,7 +81,7 @@ msgstr "Auteur originel"
 #: apps/main.cpp:34
 #, kde-format
 msgid "Laurent Montel"
-msgstr ""
+msgstr "Laurent Montel"
 
 #: apps/main.cpp:34 apps/main.cpp:36
 #, kde-format
