@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-06 02:31+0000\n"
-"PO-Revision-Date: 2023-11-25 09:31+0100\n"
+"PO-Revision-Date: 2023-12-12 07:09+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -51,16 +51,15 @@ msgid "Displays a hierachical tree of accessible objects"
 msgstr "Montras hierarkian arbon de la alireblaj objektoj"
 
 #: accessibletreewidget.cpp:24
-#, fuzzy, kde-format
-#| msgid "Role Filter"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Filter..."
-msgstr "Rola Filtrilo"
+msgstr "Filtrilo..."
 
 #: apps/main.cpp:26
 #, kde-format
 msgid "Accessibility Inspector"
-msgstr "Inspektisto de Alirebleco"
+msgstr "Accessibility Inspector"
 
 #: apps/main.cpp:28
 #, kde-format
@@ -503,10 +502,9 @@ msgid "Alpha"
 msgstr "Alfa"
 
 #: model/accessiblepropertiesmodel.cpp:126
-#, fuzzy, kde-format
-#| msgid "Selection"
+#, kde-format
 msgid "Collection"
-msgstr "Elekto"
+msgstr "Kolekto"
 
 #: model/accessiblepropertiesmodel.cpp:131
 #, kde-format
@@ -685,6 +683,3 @@ msgstr "Limoj"
 msgctxt "@info:whatsthis"
 msgid "Visualize the component boundaries"
 msgstr "Bildigi la komponantajn limojn"
-
-#~ msgid "Tree"
-#~ msgstr "Arbo"
