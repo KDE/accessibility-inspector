@@ -46,14 +46,25 @@ void AccessibleTreeView::treeCustomContextMenuRequested(const QPoint &pos)
     if (!current.isValid())
         return;
 
-    QAccessibleClient::AccessibleObject acc = static_cast<AccessibleWrapper *>(current.internalPointer())->acc;
-    if (!acc.actions().isEmpty()) {
-        QMenu menu(this);
-        for (const QSharedPointer<QAction> &a : acc.actions()) {
-            menu.addAction(a.data());
-        }
-        menu.exec(viewport()->mapToGlobal(pos));
+    const QAccessibleClient::AccessibleObject acc = static_cast<AccessibleWrapper *>(current.internalPointer())->acc;
+    QMenu menu(this);
+    for (const QSharedPointer<QAction> &a : acc.actions()) {
+        menu.addAction(a.data());
     }
+    if (!menu.isEmpty()) {
+        menu.addSeparator();
+    }
+    menu.addAction(i18n("Expand Node"), this, [this]() {
+        expand(currentIndex());
+    });
+    menu.addAction(i18n("Collapse Node"), this, [this]() {
+        collapse(currentIndex());
+    });
+    menu.addSeparator();
+    menu.addAction(i18n("Expand All"), this, [this]() {
+        expandRecursively(currentIndex());
+    });
+    menu.exec(viewport()->mapToGlobal(pos));
 }
 
 AccessibleObjectTreeModel *AccessibleTreeView::accessibleObjectTreeModel() const
