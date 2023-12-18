@@ -47,11 +47,13 @@ void AccessibleTreeView::treeCustomContextMenuRequested(const QPoint &pos)
         return;
 
     QAccessibleClient::AccessibleObject acc = static_cast<AccessibleWrapper *>(current.internalPointer())->acc;
-    QMenu menu(this);
-    for (const QSharedPointer<QAction> &a : acc.actions()) {
-        menu.addAction(a.data());
+    if (!acc.actions().isEmpty()) {
+        QMenu menu(this);
+        for (const QSharedPointer<QAction> &a : acc.actions()) {
+            menu.addAction(a.data());
+        }
+        menu.exec(viewport()->mapToGlobal(pos));
     }
-    menu.exec(viewport()->mapToGlobal(pos));
 }
 
 AccessibleObjectTreeModel *AccessibleTreeView::accessibleObjectTreeModel() const
