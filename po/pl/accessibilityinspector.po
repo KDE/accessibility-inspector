@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-13 01:32+0000\n"
+"POT-Creation-Date: 2023-12-19 01:30+0000\n"
 "PO-Revision-Date: 2023-12-10 13:34+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmai.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -50,6 +50,21 @@ msgstr "U&stawienia"
 #, kde-format
 msgid "Displays a hierachical tree of accessible objects"
 msgstr "Wyświetla hierarchiczne drzewo obiektów dostępności"
+
+#: accessibletreeview.cpp:57
+#, kde-format
+msgid "Expand Node"
+msgstr ""
+
+#: accessibletreeview.cpp:60
+#, kde-format
+msgid "Collapse Node"
+msgstr ""
+
+#: accessibletreeview.cpp:64
+#, kde-format
+msgid "Expand All"
+msgstr ""
 
 #: accessibletreewidget.cpp:26
 #, kde-format

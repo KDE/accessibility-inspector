@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accessibilityinspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-13 01:32+0000\n"
+"POT-Creation-Date: 2023-12-19 01:30+0000\n"
 "PO-Revision-Date: 2023-12-09 09:33+0100\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -46,6 +46,21 @@ msgstr "&Nastavenia"
 #: accessibletreeview.cpp:24
 #, kde-format
 msgid "Displays a hierachical tree of accessible objects"
+msgstr ""
+
+#: accessibletreeview.cpp:57
+#, kde-format
+msgid "Expand Node"
+msgstr ""
+
+#: accessibletreeview.cpp:60
+#, kde-format
+msgid "Collapse Node"
+msgstr ""
+
+#: accessibletreeview.cpp:64
+#, kde-format
+msgid "Expand All"
 msgstr ""
 
 #: accessibletreewidget.cpp:26
