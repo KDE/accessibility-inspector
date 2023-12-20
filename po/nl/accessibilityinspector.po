@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-19 01:30+0000\n"
-"PO-Revision-Date: 2023-12-11 11:10+0100\n"
+"PO-Revision-Date: 2023-12-19 12:36+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -53,17 +53,17 @@ msgstr "Toont een hiërarchische boomstructuur van toegankelijke objecten"
 #: accessibletreeview.cpp:57
 #, kde-format
 msgid "Expand Node"
-msgstr ""
+msgstr "Node uitvouwen"
 
 #: accessibletreeview.cpp:60
 #, kde-format
 msgid "Collapse Node"
-msgstr ""
+msgstr "Node invouwen"
 
 #: accessibletreeview.cpp:64
 #, kde-format
 msgid "Expand All"
-msgstr ""
+msgstr "Alles uitvouwen"
 
 #: accessibletreewidget.cpp:26
 #, kde-format
