@@ -295,7 +295,7 @@ bool AccessibleObjectTreeModel::removeAccessible(const QModelIndex &index)
     Q_ASSERT(index.isValid());
     Q_ASSERT(index.model() == this);
     QModelIndex parent = index.parent();
-    int row = index.row();
+    const int row = index.row();
     bool removed = false;
     beginRemoveRows(parent, row, row);
     if (parent.isValid()) {
