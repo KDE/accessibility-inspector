@@ -1,14 +1,15 @@
 # Copyright (C) 2023 This file is copyright:
 # This file is distributed under the same license as the accessibility-inspector package.
 # SPDX-FileCopyrightText: 2023 Vincenzo Reale <smart2128vr@gmail.com>
+# SPDX-FileCopyrightText: 2023 Paolo Zamponi <feus73@gmail.com>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-19 01:30+0000\n"
-"PO-Revision-Date: 2023-11-22 14:32+0100\n"
-"Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
+"PO-Revision-Date: 2023-12-08 23:07+0100\n"
+"Last-Translator: Paolo Zamponi <feus73@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
@@ -31,26 +32,24 @@ msgstr "smart2128vr@gmail.com"
 #: accessibilityinspectorui.rc:11
 #, kde-format
 msgid "&Edit"
-msgstr ""
+msgstr "&Modifica"
 
 #. i18n: ectx: Menu (view)
 #: accessibilityinspectorui.rc:15
 #, kde-format
 msgid "View"
-msgstr ""
+msgstr "Visualizza"
 
 #. i18n: ectx: Menu (settings)
 #: accessibilityinspectorui.rc:20
 #, kde-format
 msgid "&Settings"
-msgstr ""
+msgstr "Impo&stazioni"
 
 #: accessibletreeview.cpp:24
-#, fuzzy, kde-format
-#| msgctxt "@info:whatsthis"
-#| msgid "Displays properties of the selected accessible object"
+#, kde-format
 msgid "Displays a hierachical tree of accessible objects"
-msgstr "Visualizza le proprietà dell'oggetto accessibile selezionato"
+msgstr "Visualizza un albero gerarchico degli oggetti accessibili"
 
 #: accessibletreeview.cpp:57
 #, kde-format
@@ -68,11 +67,10 @@ msgid "Expand All"
 msgstr ""
 
 #: accessibletreewidget.cpp:26
-#, fuzzy, kde-format
-#| msgid "Role Filter"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Filter..."
-msgstr "Filtro ruolo"
+msgstr "Filtro..."
 
 #: apps/main.cpp:26
 #, kde-format
@@ -327,12 +325,12 @@ msgstr "Confini"
 #: mainwidget.cpp:147 mainwidget.cpp:149
 #, kde-format
 msgid "true"
-msgstr ""
+msgstr "vero"
 
 #: mainwidget.cpp:147 mainwidget.cpp:149
 #, kde-format
 msgid "false"
-msgstr ""
+msgstr "falso"
 
 #: mainwidget.cpp:158
 #, kde-format
@@ -350,38 +348,34 @@ msgid "Visible Data Changed"
 msgstr ""
 
 #: mainwidget.cpp:176
-#, fuzzy, kde-format
-#| msgid "Selection"
+#, kde-format
 msgid "Selection Changed"
-msgstr "Selezione"
+msgstr "Selezione modificata"
 
 #: mainwidget.cpp:182
 #, kde-format
 msgid "Model Changed"
-msgstr ""
+msgstr "Modello modificato"
 
 #: mainwidget.cpp:197
-#, fuzzy, kde-format
-#| msgctxt "Accessibility event name"
-#| msgid "Object"
+#, kde-format
 msgid "Add Object"
-msgstr "Oggetto"
+msgstr "Aggiungi oggetto"
 
 #: mainwidget.cpp:203
-#, fuzzy, kde-format
-#| msgid "Event Object"
+#, kde-format
 msgid "Remove Object"
-msgstr "Evento oggetto"
+msgstr "Rimuovi oggetto"
 
 #: mainwidget.cpp:214
 #, kde-format
 msgid "Create"
-msgstr ""
+msgstr "Crea"
 
 #: mainwidget.cpp:220
 #, kde-format
 msgid "Destroy"
-msgstr ""
+msgstr "Distruggi"
 
 #: mainwidget.cpp:321
 #, kde-format
@@ -437,9 +431,7 @@ msgid "Role"
 msgstr "Ruolo"
 
 #: model/accessiblepropertiesmodel.cpp:53
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Properties"
+#, kde-format
 msgid "Property"
 msgstr "Proprietà"
 
@@ -531,10 +523,9 @@ msgid "Alpha"
 msgstr "Alfa"
 
 #: model/accessiblepropertiesmodel.cpp:126
-#, fuzzy, kde-format
-#| msgid "Selection"
+#, kde-format
 msgid "Collection"
-msgstr "Selezione"
+msgstr "Collezione"
 
 #: model/accessiblepropertiesmodel.cpp:131
 #, kde-format
@@ -622,7 +613,7 @@ msgstr ""
 #: model/accessiblepropertiesmodel.cpp:246
 #, kde-format
 msgid "Character Count"
-msgstr ""
+msgstr "Conteggio dei caratteri"
 
 #: model/accessiblepropertiesmodel.cpp:247
 #, kde-format
