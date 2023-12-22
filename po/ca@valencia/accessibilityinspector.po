@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-19 01:30+0000\n"
-"PO-Revision-Date: 2023-12-11 15:04+0100\n"
+"PO-Revision-Date: 2023-12-19 13:02+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -55,17 +55,17 @@ msgstr "Mostra un arbre jeràrquic d'objectes accessibles"
 #: accessibletreeview.cpp:57
 #, kde-format
 msgid "Expand Node"
-msgstr ""
+msgstr "Expandix un node"
 
 #: accessibletreeview.cpp:60
 #, kde-format
 msgid "Collapse Node"
-msgstr ""
+msgstr "Reduïx un node"
 
 #: accessibletreeview.cpp:64
 #, kde-format
 msgid "Expand All"
-msgstr ""
+msgstr "Expandix-ho tot"
 
 #: accessibletreewidget.cpp:26
 #, kde-format
@@ -705,6 +705,3 @@ msgstr "Límits"
 msgctxt "@info:whatsthis"
 msgid "Visualize the component boundaries"
 msgstr "Visualitza els límits del component"
-
-#~ msgid "Developer"
-#~ msgstr "Desenvolupador"
