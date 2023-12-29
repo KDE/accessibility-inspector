@@ -1,0 +1,47 @@
+{
+    "id": "org.kde.accessibilityinspector",
+    "branch": "master",
+    "runtime": "org.kde.Platform",
+    "runtime-version": "6.6-kf6preview",
+    "sdk": "org.kde.Sdk",
+    "command": "alpaka",
+    "tags": ["nightly"],
+    "desktop-file-name-suffix": " (Nightly)",
+    "finish-args": [
+        "--device=dri",
+        "--share=ipc",
+        "--socket=fallback-x11",
+        "--socket=wayland",
+        "--socket=pulseaudio",
+        "--share=network"
+    ],
+    "separate-locales": false,
+    "modules": [
+        {
+            "name": "qaccessibilityclient",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF",
+                "-DCMAKE_BUILD_TYPE=Release",
+                "-DQT_MAJOR_VERSION=6"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                { "type": "git", "url": "https://invent.kde.org/libraries/libqaccessibilityclient.git", "branch": "master" }
+            ]
+        },
+        {
+            "name": "accessibilityinspector",
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "sources": [
+                {
+                    "type": "dir",
+                    "path": ".",
+                    "skip": [
+                        ".git"
+                    ]
+                }
+            ]
+        }	    
+    ]
+}
