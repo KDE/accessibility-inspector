@@ -4,7 +4,7 @@
     "runtime": "org.kde.Platform",
     "runtime-version": "6.6-kf6preview",
     "sdk": "org.kde.Sdk",
-    "command": "alpaka",
+    "command": "accessibilityinspector",
     "tags": ["nightly"],
     "desktop-file-name-suffix": " (Nightly)",
     "finish-args": [
