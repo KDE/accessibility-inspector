@@ -20,7 +20,7 @@ int main(int argc, char **argv)
     QApplication app(argc, argv);
     KCrash::initialize();
 
-    KLocalizedString::setApplicationDomain("accessibilityinspector");
+    KLocalizedString::setApplicationDomain(QByteArrayLiteral("accessibilityinspector"));
 
     KAboutData about(QStringLiteral("accessibilityinspector"),
                      i18n("Accessibility Inspector"),
