@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2023 Laurent Montel <montel@kde.org>
+# SPDX-FileCopyrightText: 2023-2024 Laurent Montel <montel.org>
 # SPDX-License-Identifier: BSD-2-Clause
 # convenience macro to add qtest unit tests
 macro(add_accessibilityinspector_unittest _source)

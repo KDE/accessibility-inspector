@@ -1,7 +1,7 @@
 <!DOCTYPE gui SYSTEM "kpartgui.dtd">
 <!--
   SPDX-License-Identifier: CC0-1.0
-  SPDX-FileCopyrightText: 2023 Laurent Montel <montel@kde.org>
+  SPDX-FileCopyrightText: 2023-2024 Laurent Montel <montel.org>
 -->
 <gui name="accessibilityinspectorui" version="2">
  <MenuBar>
