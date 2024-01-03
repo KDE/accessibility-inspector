@@ -1,13 +1,13 @@
 # Copyright (C) 2023 This file is copyright:
 # This file is distributed under the same license as the accessibility-inspector package.
 #
-# SPDX-FileCopyrightText: 2023 Kisaragi Hiu <mail@kisaragi-hiu.com>
+# SPDX-FileCopyrightText: 2023, 2024 Kisaragi Hiu <mail@kisaragi-hiu.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-02 01:29+0000\n"
-"PO-Revision-Date: 2023-12-19 18:22+0900\n"
+"PO-Revision-Date: 2024-01-02 19:14+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -82,10 +82,9 @@ msgid "Accessibility inspector"
 msgstr "無障礙檢查工具"
 
 #: apps/main.cpp:30
-#, fuzzy, kde-format
-#| msgid "© 2021-2023 Carl Schwan, 2021-2023 KDE Community"
+#, kde-format
 msgid "© 2021-2023 Carl Schwan, 2021-2024 KDE Community"
-msgstr "© 2021-2023 Carl Schwan, 2021-2023 KDE 社群"
+msgstr "© 2021-2023 Carl Schwan, 2021-2024 社群"
 
 #: apps/main.cpp:32
 #, kde-format
@@ -455,7 +454,7 @@ msgstr "描述"
 #: model/accessiblepropertiesmodel.cpp:96
 #, kde-format
 msgid "LocalizedRole"
-msgstr ""
+msgstr "翻譯後角色"
 
 #: model/accessiblepropertiesmodel.cpp:97
 #, kde-format
@@ -475,7 +474,7 @@ msgstr "狀態"
 #: model/accessiblepropertiesmodel.cpp:100
 #, kde-format
 msgid "AccessibleId"
-msgstr ""
+msgstr "無障礙物件 ID"
 
 #: model/accessiblepropertiesmodel.cpp:101
 #, kde-format
@@ -485,7 +484,7 @@ msgstr "URL"
 #: model/accessiblepropertiesmodel.cpp:104
 #, kde-format
 msgid "Parent"
-msgstr "親"
+msgstr "親物件"
 
 #: model/accessiblepropertiesmodel.cpp:106
 #, kde-format
@@ -515,7 +514,7 @@ msgstr "層"
 #: model/accessiblepropertiesmodel.cpp:122
 #, kde-format
 msgid "MDIZOrder"
-msgstr ""
+msgstr "MDI Z 軸順序"
 
 #: model/accessiblepropertiesmodel.cpp:123
 #, kde-format
@@ -532,10 +531,11 @@ msgstr "收藏"
 msgid "Application"
 msgstr "應用程式"
 
+# 跟維基百科用一樣的
 #: model/accessiblepropertiesmodel.cpp:133
 #, kde-format
 msgid "ToolkitName"
-msgstr ""
+msgstr "部件工具箱名稱"
 
 #: model/accessiblepropertiesmodel.cpp:134
 #, kde-format
@@ -553,10 +553,14 @@ msgstr "ID"
 msgid "Locale"
 msgstr "地域"
 
+# 見 https://invent.kde.org/accessibility/accessibility-inspector/-/blob/master/src/model/accessiblepropertiesmodel.cpp#L137 (這個數值是 acc.appBusAddress())
+# 和 https://api.kde.org/libqaccessibilityclient/html/classQAccessibleClient_1_1AccessibleObject.html#ad79acd41f4a18136cb0edd8363889a2c (appBusAddress() 回傳應用程式的 DBus 位址)
+# 因為 DBus 不算匯流排，這樣翻應該比較好
+# -- kisaragi
 #: model/accessiblepropertiesmodel.cpp:137
 #, kde-format
 msgid "BusAddress"
-msgstr ""
+msgstr "DBus 位址"
 
 #: model/accessiblepropertiesmodel.cpp:140
 #, kde-format
@@ -608,7 +612,7 @@ msgstr "文字"
 #: model/accessiblepropertiesmodel.cpp:245
 #, kde-format
 msgid "Caret Offset"
-msgstr ""
+msgstr "文字游標位移"
 
 #: model/accessiblepropertiesmodel.cpp:246
 #, kde-format
@@ -640,10 +644,12 @@ msgstr "最小"
 msgid "Maximum"
 msgstr "最大"
 
+# 見 https://invent.kde.org/accessibility/accessibility-inspector/-/blob/master/src/model/accessiblepropertiesmodel.cpp#L272 (這個數值是 acc.minimumValueIncrement())
+# 和 https://api.kde.org/libqaccessibilityclient/html/classQAccessibleClient_1_1AccessibleObject.html#ab08a4c0dfbe66b150b37a6c10eef9b76 (minimumValueIncrement 是間隔值)
 #: model/accessiblepropertiesmodel.cpp:272
 #, kde-format
 msgid "Increment"
-msgstr ""
+msgstr "間隔值"
 
 #: model/accessiblepropertiesmodel.cpp:275
 #, kde-format
@@ -691,7 +697,7 @@ msgstr "屬性列表"
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Displays properties of the selected accessible object"
-msgstr ""
+msgstr "顯示所選無障礙物件的屬性"
 
 #: uiview.cpp:19
 #, kde-format

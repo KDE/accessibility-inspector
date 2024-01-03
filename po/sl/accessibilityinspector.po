@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-02 01:29+0000\n"
-"PO-Revision-Date: 2023-12-19 07:04+0100\n"
+"PO-Revision-Date: 2024-01-02 14:48+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
-"X-Generator: Poedit 3.4.1\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -80,10 +80,9 @@ msgid "Accessibility inspector"
 msgstr "Inšpektor za dostopnost"
 
 #: apps/main.cpp:30
-#, fuzzy, kde-format
-#| msgid "© 2021-2023 Carl Schwan, 2021-2023 KDE Community"
+#, kde-format
 msgid "© 2021-2023 Carl Schwan, 2021-2024 KDE Community"
-msgstr "© 2021-2023 Carl Schwan, 2021-2023 Skupnost KDE"
+msgstr "© 2021-2023 Carl Schwan, 2021-2024 Skupnost KDE"
 
 #: apps/main.cpp:32
 #, kde-format
