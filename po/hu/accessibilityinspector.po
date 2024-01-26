@@ -1,0 +1,685 @@
+# Copyright (C) 2024 This file is copyright:
+# This file is distributed under the same license as the accessibility-inspector package.
+#
+# SPDX-FileCopyrightText: 2024 Kristof Kiszel <ulysses@fsf.hu>
+msgid ""
+msgstr ""
+"Project-Id-Version: accessibility-inspector\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2023-12-06 02:31+0000\n"
+"PO-Revision-Date: 2024-01-25 13:40+0100\n"
+"Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
+"Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 24.01.90\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Kiszel Kristóf"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "ulysses@fsf.hu"
+
+#. i18n: ectx: Menu (edit)
+#: accessibilityinspectorui.rc:11
+#, kde-format
+msgid "&Edit"
+msgstr "Sz&erkesztés"
+
+#. i18n: ectx: Menu (view)
+#: accessibilityinspectorui.rc:15
+#, kde-format
+msgid "View"
+msgstr "Nézet"
+
+#. i18n: ectx: Menu (settings)
+#: accessibilityinspectorui.rc:20
+#, kde-format
+msgid "&Settings"
+msgstr "&Beállítások"
+
+#: accessibletreeview.cpp:24
+#, kde-format
+msgid "Displays a hierachical tree of accessible objects"
+msgstr "Megjeleníti az akadálymentes objektumok hierarchikus fáját"
+
+#: accessibletreewidget.cpp:24
+#, kde-format
+msgctxt "@info:placeholder"
+msgid "Filter..."
+msgstr "Szűrő…"
+
+#: apps/main.cpp:26
+#, kde-format
+msgid "Accessibility Inspector"
+msgstr "Akadálymentesítés-vizsgáló"
+
+#: apps/main.cpp:28
+#, kde-format
+msgid "Accessibility inspector"
+msgstr "Akadálymentesítés-vizsgáló"
+
+#: apps/main.cpp:30
+#, kde-format
+msgid "© 2021-2023 Carl Schwan, 2021-2023 KDE Community"
+msgstr "© Carl Schwan, 2021-2023., A KDE közösség, 2021-2023."
+
+#: apps/main.cpp:32
+#, kde-format
+msgid "Frederik Gladhorn"
+msgstr "Frederik Gladhorn"
+
+#: apps/main.cpp:32
+#, kde-format
+msgid "Original author"
+msgstr "Eredeti szerző"
+
+#: apps/main.cpp:34
+#, kde-format
+msgid "Carl Schwan"
+msgstr "Carl Schwan"
+
+#: apps/main.cpp:34
+#, kde-format
+msgid "Maintainer"
+msgstr "Karbantartó"
+
+#: clientcachedialog.cpp:29
+#, kde-format
+msgctxt "@title:window"
+msgid "Cache"
+msgstr "Gyorsítótár"
+
+#: clientcachedialog.cpp:44
+#, kde-format
+msgctxt "@action:button"
+msgid "Refresh"
+msgstr "Frissítés"
+
+#: clientcachedialog.cpp:47
+#, kde-format
+msgctxt "@action:button"
+msgid "Clear"
+msgstr "Törlés"
+
+#: clientcachedialog.cpp:50
+#, kde-format
+msgctxt "@label"
+msgid "Strategy:"
+msgstr "Stratégiai:"
+
+#: clientcachedialog.cpp:55
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Disable"
+msgstr "Kikapcsolás"
+
+#: clientcachedialog.cpp:56
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Weak"
+msgstr "Gyenge"
+
+#: clientcachedialog.cpp:65
+#, kde-format
+msgctxt "@label:listbox"
+msgid "Count:"
+msgstr "Szám:"
+
+#: clientcachedialog.cpp:101
+#, kde-format
+msgctxt "@title:row"
+msgid "Name"
+msgstr "Név"
+
+#: clientcachedialog.cpp:101
+#, kde-format
+msgctxt "@title:row"
+msgid "Role"
+msgstr "Szerep"
+
+#: clientcachedialog.cpp:101
+#, kde-format
+msgctxt "@title:row"
+msgid "Identifier"
+msgstr "Azonosító"
+
+#: eventview.cpp:63
+#, kde-format
+msgctxt "@label"
+msgid "Accessible"
+msgstr "Akadálymentes"
+
+#: eventview.cpp:65
+#, kde-format
+msgctxt "@label"
+msgid "Role"
+msgstr "Szerep"
+
+#: eventview.cpp:67
+#, kde-format
+msgctxt "@label"
+msgid "Event"
+msgstr "Esemény"
+
+#: eventview.cpp:69
+#, kde-format
+msgctxt "@label"
+msgid "Action"
+msgstr "Művelet"
+
+#: eventview.cpp:194
+#, kde-format
+msgid "Displays all received events"
+msgstr "Megjeleníti az összes fogadott eseményt"
+
+#: eventview.cpp:264
+#, kde-format
+msgctxt "Accessibility event name"
+msgid "Focus"
+msgstr "Fókusz"
+
+#: eventview.cpp:267
+#, kde-format
+msgctxt "Accessibility event name: state changed"
+msgid "State"
+msgstr "Állapot"
+
+#: eventview.cpp:270
+#, kde-format
+msgctxt "Accessibility event name: name changed"
+msgid "Name"
+msgstr "Név"
+
+#: eventview.cpp:273
+#, kde-format
+msgctxt "Accessibility event name: description changed"
+msgid "Description"
+msgstr "Leírás"
+
+#: eventview.cpp:276
+#, kde-format
+msgctxt "Accessibility event name"
+msgid "Window"
+msgstr "Ablak"
+
+#: eventview.cpp:279
+#, kde-format
+msgctxt "Accessibility event name"
+msgid "Document"
+msgstr "Dokumentum"
+
+#: eventview.cpp:282
+#, kde-format
+msgctxt "Accessibility event name"
+msgid "Object"
+msgstr "Objektum"
+
+#: eventview.cpp:285
+#, kde-format
+msgctxt "Accessibility event name"
+msgid "Text"
+msgstr "Szöveg"
+
+#: eventview.cpp:288
+#, kde-format
+msgctxt "Accessibility event name"
+msgid "Table"
+msgstr "Táblázat"
+
+#: eventview.cpp:291
+#, kde-format
+msgctxt "Accessibility event name"
+msgid "Others"
+msgstr "Egyéb"
+
+#: eventview.cpp:294
+#, kde-format
+msgctxt "Accessibility event name"
+msgid "No Event"
+msgstr "Nincs esemény"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, EventViewWidget)
+#: eventview.ui:18
+#, kde-format
+msgid "Form"
+msgstr "Űrlap"
+
+#. i18n: ectx: property (placeholderText), widget (QLineEdit, accessibleFilterEdit)
+#: eventview.ui:32
+#, kde-format
+msgid "Accessible Filter"
+msgstr "Akadálymentesség-szűrő"
+
+#. i18n: ectx: property (accessibleName), widget (QLineEdit, roleFilterEdit)
+#. i18n: ectx: property (placeholderText), widget (QLineEdit, roleFilterEdit)
+#: eventview.ui:39 eventview.ui:45
+#, kde-format
+msgid "Role Filter"
+msgstr "Szerepszűrő"
+
+#. i18n: ectx: property (accessibleName), widget (QComboBox, filterComboBox)
+#: eventview.ui:52
+#, kde-format
+msgid "Event Filter"
+msgstr "Eseményszűrő"
+
+#. i18n: ectx: property (accessibleName), widget (QPushButton, clearButton)
+#: eventview.ui:65
+#, kde-format
+msgid "Clear Events"
+msgstr "Események törlése"
+
+#. i18n: ectx: property (text), widget (QPushButton, clearButton)
+#: eventview.ui:68
+#, kde-format
+msgid "&Clear"
+msgstr "&Törlés"
+
+#: mainwidget.cpp:50
+#, kde-format
+msgctxt "@title:window"
+msgid "Properties"
+msgstr "Tulajdonságok"
+
+#: mainwidget.cpp:51
+#, kde-format
+msgctxt "@title:window"
+msgid "Events"
+msgstr "Események"
+
+#: mainwidget.cpp:52
+#, kde-format
+msgctxt "@title:window"
+msgid "Boundaries"
+msgstr "Határvonalak"
+
+#: mainwidget.cpp:145 mainwidget.cpp:147
+#, kde-format
+msgid "true"
+msgstr "igaz"
+
+#: mainwidget.cpp:145 mainwidget.cpp:147
+#, kde-format
+msgid "false"
+msgstr "hamis"
+
+#: mainwidget.cpp:156
+#, kde-format
+msgid "Child Added %1"
+msgstr "%1. gyermek hozzáadva"
+
+#: mainwidget.cpp:162
+#, kde-format
+msgid "Child Removed %1"
+msgstr "%1. gyermek eltávolítva"
+
+#: mainwidget.cpp:168
+#, kde-format
+msgid "Visible Data Changed"
+msgstr "Látható adat változott"
+
+#: mainwidget.cpp:174
+#, kde-format
+msgid "Selection Changed"
+msgstr "Kijelölés változott"
+
+#: mainwidget.cpp:180
+#, kde-format
+msgid "Model Changed"
+msgstr "Modell változott"
+
+#: mainwidget.cpp:195
+#, kde-format
+msgid "Add Object"
+msgstr "Objektum hozzáadása"
+
+#: mainwidget.cpp:201
+#, kde-format
+msgid "Remove Object"
+msgstr "Objektum eltávolítása"
+
+#: mainwidget.cpp:212
+#, kde-format
+msgid "Create"
+msgstr "Létrehozás"
+
+#: mainwidget.cpp:218
+#, kde-format
+msgid "Destroy"
+msgstr "Megsemmisítés"
+
+#: mainwidget.cpp:319
+#, kde-format
+msgid "Text caret moved (%1)"
+msgstr "Szövegkurzor áthelyezve (%1)"
+
+#: mainwindow.cpp:73
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Reset Tree"
+msgstr "Fa visszaállítása"
+
+#: mainwindow.cpp:79
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Follow Focus"
+msgstr "Fókuszkövetés"
+
+#: mainwindow.cpp:86
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Cache..."
+msgstr "Gyorsítótár…"
+
+#: mainwindow.cpp:91
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Enable Accessibility"
+msgstr "Akadálymentesítés bekapcsolása"
+
+#: mainwindow.cpp:101
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Enable Screen Reader"
+msgstr "Képernyőolvasó bekapcsolása"
+
+#: mainwindow.cpp:112
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Copy property value"
+msgstr "Tulajdonság értékének másolása"
+
+#: model/accessibleobjecttreemodel.cpp:31
+#: model/accessiblepropertiesmodel.cpp:91
+#, kde-format
+msgid "Accessible"
+msgstr "Akadálymentes"
+
+#: model/accessibleobjecttreemodel.cpp:33
+#: model/accessiblepropertiesmodel.cpp:95
+#, kde-format
+msgid "Role"
+msgstr "Szerep"
+
+#: model/accessiblepropertiesmodel.cpp:53
+#, kde-format
+msgid "Property"
+msgstr "Tulajdonság"
+
+#: model/accessiblepropertiesmodel.cpp:55
+#: model/accessiblepropertiesmodel.cpp:267
+#, kde-format
+msgid "Value"
+msgstr "Érték"
+
+#: model/accessiblepropertiesmodel.cpp:93
+#, kde-format
+msgid "Name"
+msgstr "Név"
+
+#: model/accessiblepropertiesmodel.cpp:94
+#: model/accessiblepropertiesmodel.cpp:197
+#, kde-format
+msgid "Description"
+msgstr "Leírás"
+
+#: model/accessiblepropertiesmodel.cpp:96
+#, kde-format
+msgid "LocalizedRole"
+msgstr "Lokalizált szerep"
+
+#: model/accessiblepropertiesmodel.cpp:97
+#, kde-format
+msgid "Visible"
+msgstr "Látható"
+
+#: model/accessiblepropertiesmodel.cpp:98
+#, kde-format
+msgid "Default"
+msgstr "Alapértelmezett"
+
+#: model/accessiblepropertiesmodel.cpp:99
+#, kde-format
+msgid "State"
+msgstr "Állapot"
+
+#: model/accessiblepropertiesmodel.cpp:100
+#, kde-format
+msgid "AccessibleId"
+msgstr "Akadálymentes azonosító"
+
+#: model/accessiblepropertiesmodel.cpp:101
+#, kde-format
+msgid "Url"
+msgstr "URL"
+
+#: model/accessiblepropertiesmodel.cpp:104
+#, kde-format
+msgid "Parent"
+msgstr "Szülő"
+
+#: model/accessiblepropertiesmodel.cpp:106
+#, kde-format
+msgid "Children"
+msgstr "Gyermek"
+
+#: model/accessiblepropertiesmodel.cpp:110
+#, kde-format
+msgid "Broken child"
+msgstr "Sérült gyermek"
+
+#: model/accessiblepropertiesmodel.cpp:118
+#, kde-format
+msgid "Component"
+msgstr "Komponens"
+
+#: model/accessiblepropertiesmodel.cpp:120
+#, kde-format
+msgid "BoundingRect"
+msgstr "Határoló téglalap"
+
+#: model/accessiblepropertiesmodel.cpp:121
+#, kde-format
+msgid "Layer"
+msgstr "Réteg"
+
+#: model/accessiblepropertiesmodel.cpp:122
+#, kde-format
+msgid "MDIZOrder"
+msgstr "MDIZOrder"
+
+#: model/accessiblepropertiesmodel.cpp:123
+#, kde-format
+msgid "Alpha"
+msgstr "Alfa"
+
+#: model/accessiblepropertiesmodel.cpp:126
+#, kde-format
+msgid "Collection"
+msgstr "Gyűjtemény"
+
+#: model/accessiblepropertiesmodel.cpp:131
+#, kde-format
+msgid "Application"
+msgstr "Alkalmazás"
+
+#: model/accessiblepropertiesmodel.cpp:133
+#, kde-format
+msgid "ToolkitName"
+msgstr "Eszközkészletnév"
+
+#: model/accessiblepropertiesmodel.cpp:134
+#, kde-format
+msgid "Version"
+msgstr "Verzió"
+
+#: model/accessiblepropertiesmodel.cpp:135
+#, kde-format
+msgid "Id"
+msgstr "Azonosító"
+
+#: model/accessiblepropertiesmodel.cpp:136
+#: model/accessiblepropertiesmodel.cpp:198
+#, kde-format
+msgid "Locale"
+msgstr "Területi beállítások"
+
+#: model/accessiblepropertiesmodel.cpp:137
+#, kde-format
+msgid "BusAddress"
+msgstr "Buszcím"
+
+#: model/accessiblepropertiesmodel.cpp:140
+#, kde-format
+msgid "Document"
+msgstr "Dokumentum"
+
+#: model/accessiblepropertiesmodel.cpp:149
+#, kde-format
+msgid "Editable Text"
+msgstr "Szerkeszthető szöveg"
+
+#: model/accessiblepropertiesmodel.cpp:154
+#, kde-format
+msgid "Hyperlink"
+msgstr "Hiperhivatkozás"
+
+#: model/accessiblepropertiesmodel.cpp:176
+#, kde-format
+msgid "Hypertext"
+msgstr "Hiperszöveg"
+
+#: model/accessiblepropertiesmodel.cpp:195
+#, kde-format
+msgid "Image"
+msgstr "Kép"
+
+#: model/accessiblepropertiesmodel.cpp:199
+#, kde-format
+msgid "Rect"
+msgstr "Téglalap"
+
+#: model/accessiblepropertiesmodel.cpp:202
+#, kde-format
+msgid "Selection"
+msgstr "Kijelölés"
+
+#: model/accessiblepropertiesmodel.cpp:209
+#, kde-format
+msgid "Table"
+msgstr "Táblázat"
+
+#: model/accessiblepropertiesmodel.cpp:242
+#: model/accessiblepropertiesmodel.cpp:251
+#: model/accessiblepropertiesmodel.cpp:253
+#, kde-format
+msgid "Text"
+msgstr "Szöveg"
+
+#: model/accessiblepropertiesmodel.cpp:245
+#, kde-format
+msgid "Caret Offset"
+msgstr "Kurzoreltolás"
+
+#: model/accessiblepropertiesmodel.cpp:246
+#, kde-format
+msgid "Character Count"
+msgstr "Karakterszám"
+
+#: model/accessiblepropertiesmodel.cpp:247
+#, kde-format
+msgid "Character Rect"
+msgstr "Karakterhatároló"
+
+#: model/accessiblepropertiesmodel.cpp:257
+#, kde-format
+msgid "Selections"
+msgstr "Kijelölések"
+
+#: model/accessiblepropertiesmodel.cpp:269
+#, kde-format
+msgid "Current"
+msgstr "Jelenlegi"
+
+#: model/accessiblepropertiesmodel.cpp:270
+#, kde-format
+msgid "Minimum"
+msgstr "Minimum"
+
+#: model/accessiblepropertiesmodel.cpp:271
+#, kde-format
+msgid "Maximum"
+msgstr "Maximum"
+
+#: model/accessiblepropertiesmodel.cpp:272
+#, kde-format
+msgid "Increment"
+msgstr "Növelés"
+
+#: model/accessiblepropertiesmodel.cpp:275
+#, kde-format
+msgid "Socket"
+msgstr "Foglalat"
+
+#: model/accessiblepropertiesmodel.cpp:281
+#, kde-format
+msgid "Event Keyboard"
+msgstr "Billentyűzetesemény"
+
+#: model/accessiblepropertiesmodel.cpp:286
+#, kde-format
+msgid "Event Mouse"
+msgstr "Egéresemény"
+
+#: model/accessiblepropertiesmodel.cpp:291
+#, kde-format
+msgid "Event Object"
+msgstr "Objektumesemény"
+
+#: model/accessiblepropertiesmodel.cpp:296
+#, kde-format
+msgid "Event Window"
+msgstr "Ablakesemény"
+
+#: model/accessiblepropertiesmodel.cpp:301
+#, kde-format
+msgid "Event Focus"
+msgstr "Fókuszesemény"
+
+#: model/accessiblepropertiesmodel.cpp:308
+#: model/accessiblepropertiesmodel.cpp:330
+#, kde-format
+msgid "Action"
+msgstr "Művelet"
+
+#: propertytreeview.cpp:13
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "List of properties"
+msgstr "Tulajdonságok listája"
+
+#: propertytreeview.cpp:14
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Displays properties of the selected accessible object"
+msgstr "Megjeleníti a kijelölt akadálymentes objektum tulajdonságait"
+
+#: uiview.cpp:19
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Boundaries"
+msgstr "Határvonalak"
+
+#: uiview.cpp:20
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Visualize the component boundaries"
+msgstr "Vizualizálja a komponens határvonalait"
