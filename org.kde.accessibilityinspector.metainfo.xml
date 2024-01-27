@@ -19,6 +19,7 @@
   <name xml:lang="ia">Inspector de Accessibilitate</name>
   <name xml:lang="it">Ispettore dell'accessibilità</name>
   <name xml:lang="ka">წვდომადობის ინსპექტორი</name>
+  <name xml:lang="lv">Pieejamības inspektors</name>
   <name xml:lang="nl">Toegankelijkheidsinspecteur</name>
   <name xml:lang="pl">Inspektor dostępności</name>
   <name xml:lang="sk">Inšpektor prístupnosti</name>
@@ -39,6 +40,7 @@
   <summary xml:lang="ia">Inspecta arbore de accessibilitate de tu application</summary>
   <summary xml:lang="it">Ispeziona l'albero di accessibilità della tua applicazione</summary>
   <summary xml:lang="ka">შეამოწმეთ თქვენი აპლიკაციის წვდომადობის ხე</summary>
+  <summary xml:lang="lv">Pārbaudi savu programmas pieejamības koku</summary>
   <summary xml:lang="nl">Inspecteer de boomstructuur voor toegankelijkheid van uw toepassing</summary>
   <summary xml:lang="pl">Zbadaj drzewo dostępności swojej aplikacji</summary>
   <summary xml:lang="sl">Preglejte drevo dostopnosti vaše aplikacije</summary>
@@ -59,6 +61,7 @@
     <p xml:lang="ia">Inspector de Accessibilitate (Accessibility Inspector) es como le nomine suggere un inspector per le arbore de accessibilitate de tu application.Illo te permitte verificar anque le elementos exponite via At-SPI.</p>
     <p xml:lang="it">Ispettore dell'accessibilità è, come il nome che suggerisce, un ispettore per l'albero di accessibilità della tua applicazione. Ti consente di controllare anche tutti gli elementi esposti tramite At-SPI.</p>
     <p xml:lang="ka">წვდომადობის ინსპექტორი, როგორც ამას სახელით მიხვდებოდით, ინსპექტორია თქვენი აპლიკაციის წვდომადობის ხისთვის. ის საშუალებას გაძლევთ, შეამოწმოთ ყველა ელემენტი, რომელსაც At-SPI გამოაჩენს.</p>
+    <p xml:lang="lv">Pieejamības inspektors, kā uz to norāda nosaukums, pārbauda programmas pieejamības koku. Tāpat tas ļauj pārbaudīt vienumus caur At-SPI saskarni.</p>
     <p xml:lang="nl">Toegankelijkheidsinspecteur is zoals de naam suggereert een inspecteur voor de boomstructuur van toegankelijkheid van uw toepassing. Het laat u ook alle items controleren die zijn blootgesteld via At-SPI.</p>
     <p xml:lang="pl">Inspektor dostępności, jak sama nazwa mówi, jest inspektorem drzewa dostępności twojej aplikacji. Umożliwia także sprawdzenie wszystkich rzeczy wystawionych przez nią do At-SPI.</p>
     <p xml:lang="sl">Inšpektor za dostopnost je, kot ime nakazuje inšpektor za vaše drevo dostopnosti aplikacij. Omogoča vam, da preverite vse predmete, ki so izpostavljeni tudi prek Ati-SPI.</p>
@@ -97,6 +100,7 @@
       <caption xml:lang="ia">Le proprietate de un nodo del arbore de accessibilitate.</caption>
       <caption xml:lang="it">Le proprietà di un nodo dell'albero di accessibilità.</caption>
       <caption xml:lang="ka">წვდომადობის ხის კვანძის თვისებები.</caption>
+      <caption xml:lang="lv">Pieejamības koka mezgla īpašības.</caption>
       <caption xml:lang="nl">De eigenschappen van een node van de boomstructuur van toegankelijkheid</caption>
       <caption xml:lang="pl">Właściwości węzła drzewa dostępności.</caption>
       <caption xml:lang="sl">Lastnosti vozlišča drevesa dostopnosti.</caption>
@@ -119,6 +123,7 @@
       <caption xml:lang="ia">Le lista de omne eventois recente.</caption>
       <caption xml:lang="it">L'elenco di tutti gli eventi recenti.</caption>
       <caption xml:lang="ka">ყველა უახლესი მოვლენის სია.</caption>
+      <caption xml:lang="lv">Visu pēdējo notikumu saraksts.</caption>
       <caption xml:lang="nl">De lijst met alle recente gebeurtenissen.</caption>
       <caption xml:lang="pl">Wykaz wszystkich ostatnich zdarzeń.</caption>
       <caption xml:lang="sl">Seznam vseh zadnjih dogodkov.</caption>
