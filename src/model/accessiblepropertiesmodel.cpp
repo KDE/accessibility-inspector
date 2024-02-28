@@ -310,7 +310,7 @@ void ObjectPropertiesModel::setAccessibleObject(const QAccessibleClient::Accessi
             for (const QSharedPointer<QAction> &a : acc.actions()) {
                 const QString shortCut = a->shortcut().toString();
                 QString text = a->text();
-                qDebug() << " a->shortcut() " << a->shortcut() << " text " << text;
+                // qDebug() << " a->shortcut() " << a->shortcut() << " text " << text;
                 if (!shortCut.isEmpty()) {
                     text += QStringLiteral(" (%1)").arg(shortCut);
                 }
