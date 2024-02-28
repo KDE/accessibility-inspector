@@ -60,7 +60,7 @@ set_package_properties(QAccessibilityClient6 PROPERTIES
 )
 
 ecm_set_disabled_deprecation_versions(QT 6.6
-    KF 5.246.0
+    KF 6.6.0
     )
 
 add_subdirectory(src)
