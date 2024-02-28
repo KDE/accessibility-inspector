@@ -434,7 +434,7 @@ void EventsWidget::eventActivated(const QModelIndex &index)
     const QString s = mProxyModel->data(firstIndex, parent.isValid() ? EventsModel::UrlRole : EventsModel::AppUrlRole).toString();
     const QUrl url(s);
     if (!url.isValid()) {
-        qCWarning(ACCESSIBILITYINSPECTOR_LOG) << Q_FUNC_INFO << "Invalid url=" << s;
+        qCWarning(ACCESSIBILITYINSPECTOR_LOG) << "Invalid url=" << s;
         return;
     }
     Q_EMIT anchorClicked(url);
