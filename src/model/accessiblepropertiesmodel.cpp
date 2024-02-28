@@ -30,7 +30,7 @@ int ObjectPropertiesModel::columnCount(const QModelIndex &parent) const
 void ObjectPropertiesModel::slotDataChanged(QStandardItem *item)
 {
     if (item == mTextItem) {
-        QString newText = item->data(Qt::EditRole).toString();
+        const QString newText = item->data(Qt::EditRole).toString();
         mAccessibleObject.setText(newText);
     } else if (item == mValueItem) {
         bool couldConvert;
