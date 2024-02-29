@@ -257,8 +257,8 @@ void ObjectPropertiesModel::setAccessibleObject(const QAccessibleClient::Accessi
         QStandardItem *selectionsItem = append(i18n("Selections"), selections.count(), item);
         for (int i = 0; i < selections.count(); ++i) {
             QPair<int, int> sel = selections[i];
-            int startOffset = sel.first;
-            int endOffset = sel.second;
+            const int startOffset = sel.first;
+            const int endOffset = sel.second;
             Q_ASSERT(startOffset <= endOffset);
             append(QStringLiteral("%1:%2").arg(startOffset).arg(endOffset), text.mid(startOffset, endOffset - startOffset), selectionsItem);
         }
