@@ -61,8 +61,8 @@ QVariant ObjectPropertiesModel::headerData(int section, Qt::Orientation orientat
 QHash<int, QByteArray> ObjectPropertiesModel::roleNames() const
 {
     QHash<int, QByteArray> roles;
-    roles[Name] = "name";
-    roles[Value] = "value";
+    roles[Name] = QByteArrayLiteral("name");
+    roles[Value] = QByteArrayLiteral("value");
     return roles;
 }
 

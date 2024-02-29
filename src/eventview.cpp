@@ -46,13 +46,13 @@ public:
     QHash<int, QByteArray> roleNames() const override
     {
         return {
-            {AccessibleRole, "accessible"},
-            {RoleRole, "role"},
-            {EventRole, "event"},
-            {EventTypeRole, "eventType"},
-            {UrlRole, "url"},
-            {AppNameRole, "appName"},
-            {AppUrlRole, "appUrl"},
+            {AccessibleRole, QByteArrayLiteral("accessible")},
+            {RoleRole, QByteArrayLiteral("role")},
+            {EventRole, QByteArrayLiteral("event")},
+            {EventTypeRole, QByteArrayLiteral("eventType")},
+            {UrlRole, QByteArrayLiteral("url")},
+            {AppNameRole, QByteArrayLiteral("appName")},
+            {AppUrlRole, QByteArrayLiteral("appUrl")},
         };
     }
 
