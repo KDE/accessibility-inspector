@@ -57,7 +57,7 @@ set_package_properties(KF6 PROPERTIES
     PURPOSE "Required application components"
 )
 
-find_package(QAccessibilityClient6 CONFIG)
+find_package(QAccessibilityClient6 0.6.0 CONFIG)
 set_package_properties(QAccessibilityClient6 PROPERTIES
     TYPE REQUIRED
     URL "https://invent.kde.org/libraries/libqaccessibilityclient"
