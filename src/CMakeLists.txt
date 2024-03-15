@@ -64,7 +64,7 @@ target_link_libraries(libaccessibilityinspector
 )
 
 set_target_properties(libaccessibilityinspector
-    PROPERTIES OUTPUT_NAME libaccessibilityinspector VERSION ${ACCESSIBILITYINSPECTOR_LIB_VERSION} SOVERSION ${ACCESSIBILITYINSPECTOR_LIB_SOVERSION}
+    PROPERTIES OUTPUT_NAME accessibilityinspector VERSION ${ACCESSIBILITYINSPECTOR_LIB_VERSION} SOVERSION ${ACCESSIBILITYINSPECTOR_LIB_SOVERSION}
     )
 
 install(TARGETS libaccessibilityinspector ${KDE_INSTALL_TARGETS_DEFAULT_ARGS} LIBRARY NAMELINK_SKIP)
