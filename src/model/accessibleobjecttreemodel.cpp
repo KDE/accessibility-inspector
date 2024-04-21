@@ -10,6 +10,8 @@
 #include "accessibilityinspector_debug.h"
 
 #include <KLocalizedString>
+#include <QApplication>
+#include <QFont>
 
 using namespace QAccessibleClient;
 
@@ -50,11 +52,20 @@ QVariant AccessibleObjectTreeModel::data(const QModelIndex &index, int role) con
     if (!mRegistry || !index.isValid())
         return {};
 
-    if (role != Qt::DisplayRole) {
+    AccessibleObject acc = static_cast<AccessibleWrapper *>(index.internalPointer())->acc;
+
+    if (role == Qt::FontRole) {
+        if (!acc.isVisible()) {
+            auto font = qApp->font();
+            font.setStrikeOut(true);
+            return font;
+        }
         return {};
     }
 
-    AccessibleObject acc = static_cast<AccessibleWrapper *>(index.internalPointer())->acc;
+    if (role != Qt::DisplayRole) {
+        return {};
+    }
 
     const int col = index.column();
     switch (static_cast<AccessibleObjectTreeModelRoles>(col)) {
