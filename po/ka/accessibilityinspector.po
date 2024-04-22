@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-02 01:29+0000\n"
+"POT-Creation-Date: 2024-04-22 00:35+0000\n"
 "PO-Revision-Date: 2024-01-02 05:21+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -418,13 +418,13 @@ msgctxt "@action:inmenu"
 msgid "Copy property value"
 msgstr "თვისების მნიშვნელობის კოპირება"
 
-#: model/accessibleobjecttreemodel.cpp:31
+#: model/accessibleobjecttreemodel.cpp:33
 #: model/accessiblepropertiesmodel.cpp:91
 #, kde-format
 msgid "Accessible"
 msgstr "წვდომადი"
 
-#: model/accessibleobjecttreemodel.cpp:33
+#: model/accessibleobjecttreemodel.cpp:35
 #: model/accessiblepropertiesmodel.cpp:95
 #, kde-format
 msgid "Role"

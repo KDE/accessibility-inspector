@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-02 01:29+0000\n"
+"POT-Creation-Date: 2024-04-22 00:35+0000\n"
 "PO-Revision-Date: 2024-02-06 16:51+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -417,13 +417,13 @@ msgctxt "@action:inmenu"
 msgid "Copy property value"
 msgstr "Kopioi ominaisuuden arvo"
 
-#: model/accessibleobjecttreemodel.cpp:31
+#: model/accessibleobjecttreemodel.cpp:33
 #: model/accessiblepropertiesmodel.cpp:91
 #, kde-format
 msgid "Accessible"
 msgstr "Esteetön"
 
-#: model/accessibleobjecttreemodel.cpp:33
+#: model/accessibleobjecttreemodel.cpp:35
 #: model/accessiblepropertiesmodel.cpp:95
 #, kde-format
 msgid "Role"

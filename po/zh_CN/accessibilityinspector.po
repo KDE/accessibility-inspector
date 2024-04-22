@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-02 01:29+0000\n"
-"PO-Revision-Date: 2024-03-30 19:37\n"
+"POT-Creation-Date: 2024-04-22 00:35+0000\n"
+"PO-Revision-Date: 2024-04-21 04:47\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -418,13 +418,13 @@ msgctxt "@action:inmenu"
 msgid "Copy property value"
 msgstr "复制属性值"
 
-#: model/accessibleobjecttreemodel.cpp:31
+#: model/accessibleobjecttreemodel.cpp:33
 #: model/accessiblepropertiesmodel.cpp:91
 #, kde-format
 msgid "Accessible"
 msgstr "无障碍特性"
 
-#: model/accessibleobjecttreemodel.cpp:33
+#: model/accessibleobjecttreemodel.cpp:35
 #: model/accessiblepropertiesmodel.cpp:95
 #, kde-format
 msgid "Role"

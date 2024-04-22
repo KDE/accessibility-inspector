@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-02 01:29+0000\n"
+"POT-Creation-Date: 2024-04-22 00:35+0000\n"
 "PO-Revision-Date: 2024-02-10 21:58+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -417,13 +417,13 @@ msgctxt "@action:inmenu"
 msgid "Copy property value"
 msgstr "속성 값 복사"
 
-#: model/accessibleobjecttreemodel.cpp:31
+#: model/accessibleobjecttreemodel.cpp:33
 #: model/accessiblepropertiesmodel.cpp:91
 #, kde-format
 msgid "Accessible"
 msgstr "접근 가능"
 
-#: model/accessibleobjecttreemodel.cpp:33
+#: model/accessibleobjecttreemodel.cpp:35
 #: model/accessiblepropertiesmodel.cpp:95
 #, kde-format
 msgid "Role"
