@@ -565,7 +565,7 @@ msgstr "Obrázek"
 #: model/accessiblepropertiesmodel.cpp:199
 #, kde-format
 msgid "Rect"
-msgstr ""
+msgstr "Oblast"
 
 #: model/accessiblepropertiesmodel.cpp:202
 #, kde-format
