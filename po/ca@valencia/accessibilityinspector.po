@@ -71,7 +71,7 @@ msgstr "Expandix-ho tot"
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Filter..."
-msgstr "Filtre..."
+msgstr "Filtre…"
 
 #: apps/main.cpp:26
 #, kde-format
@@ -399,7 +399,7 @@ msgstr "Seguix al focus"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Cache..."
-msgstr "Memòria cau..."
+msgstr "Memòria cau…"
 
 #: mainwindow.cpp:91
 #, kde-format
