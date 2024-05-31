@@ -1,6 +1,6 @@
 # Copyright (C) 2023 This file is copyright:
 # This file is distributed under the same license as the accessibility-inspector package.
-# SPDX-FileCopyrightText: 2023 Vincenzo Reale <smart2128vr@gmail.com>
+# SPDX-FileCopyrightText: 2023, 2024 Vincenzo Reale <smart2128vr@gmail.com>
 # SPDX-FileCopyrightText: 2023, 2024 Paolo Zamponi <feus73@gmail.com>
 #
 msgid ""
@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-06 02:31+0000\n"
-"PO-Revision-Date: 2024-01-14 14:58+0100\n"
-"Last-Translator: Paolo Zamponi <feus73@gmail.com>\n"
+"PO-Revision-Date: 2024-05-26 03:02+0200\n"
+"Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.08.4\n"
+"X-Generator: Lokalize 24.02.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -325,7 +325,7 @@ msgstr "Figlio rimosso %1"
 #: mainwidget.cpp:168
 #, kde-format
 msgid "Visible Data Changed"
-msgstr ""
+msgstr "Dati visibili modificati"
 
 #: mainwidget.cpp:174
 #, kde-format
@@ -360,7 +360,7 @@ msgstr "Distruggi"
 #: mainwidget.cpp:319
 #, kde-format
 msgid "Text caret moved (%1)"
-msgstr ""
+msgstr "Il cursore di testo è stato spostato (%1)"
 
 #: mainwindow.cpp:73
 #, kde-format
@@ -435,7 +435,7 @@ msgstr "Descrizione"
 #: model/accessiblepropertiesmodel.cpp:96
 #, kde-format
 msgid "LocalizedRole"
-msgstr ""
+msgstr "RuoloLocalizzato"
 
 #: model/accessiblepropertiesmodel.cpp:97
 #, kde-format
@@ -455,7 +455,7 @@ msgstr "Stato"
 #: model/accessiblepropertiesmodel.cpp:100
 #, kde-format
 msgid "AccessibleId"
-msgstr ""
+msgstr "IDAccessibile"
 
 #: model/accessiblepropertiesmodel.cpp:101
 #, kde-format
@@ -475,7 +475,7 @@ msgstr "Figli"
 #: model/accessiblepropertiesmodel.cpp:110
 #, kde-format
 msgid "Broken child"
-msgstr ""
+msgstr "Figlio interrotto"
 
 #: model/accessiblepropertiesmodel.cpp:118
 #, kde-format
@@ -485,7 +485,7 @@ msgstr "Componente"
 #: model/accessiblepropertiesmodel.cpp:120
 #, kde-format
 msgid "BoundingRect"
-msgstr ""
+msgstr "RettangoloDelimitante"
 
 #: model/accessiblepropertiesmodel.cpp:121
 #, kde-format
@@ -495,7 +495,7 @@ msgstr "Livello"
 #: model/accessiblepropertiesmodel.cpp:122
 #, kde-format
 msgid "MDIZOrder"
-msgstr ""
+msgstr "OrdineMDIZ"
 
 #: model/accessiblepropertiesmodel.cpp:123
 #, kde-format
@@ -515,7 +515,7 @@ msgstr "Applicazione"
 #: model/accessiblepropertiesmodel.cpp:133
 #, kde-format
 msgid "ToolkitName"
-msgstr ""
+msgstr "NomeToolkit"
 
 #: model/accessiblepropertiesmodel.cpp:134
 #, kde-format
@@ -536,7 +536,7 @@ msgstr "Localizzazione"
 #: model/accessiblepropertiesmodel.cpp:137
 #, kde-format
 msgid "BusAddress"
-msgstr ""
+msgstr "IndirizzoBus"
 
 #: model/accessiblepropertiesmodel.cpp:140
 #, kde-format
@@ -588,7 +588,7 @@ msgstr "Testo"
 #: model/accessiblepropertiesmodel.cpp:245
 #, kde-format
 msgid "Caret Offset"
-msgstr ""
+msgstr "Scostamento del cursore"
 
 #: model/accessiblepropertiesmodel.cpp:246
 #, kde-format
@@ -598,7 +598,7 @@ msgstr "Conteggio dei caratteri"
 #: model/accessiblepropertiesmodel.cpp:247
 #, kde-format
 msgid "Character Rect"
-msgstr ""
+msgstr "Rettangolo di caratteri"
 
 #: model/accessiblepropertiesmodel.cpp:257
 #, kde-format
