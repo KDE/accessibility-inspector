@@ -11,6 +11,7 @@
   <name>Accessibility Inspector</name>
   <name xml:lang="ca">Inspector d'accessibilitat</name>
   <name xml:lang="ca-valencia">Inspector d'accessibilitat</name>
+  <name xml:lang="en-GB">Accessibility Inspector</name>
   <name xml:lang="eo">Accessibility Inspector</name>
   <name xml:lang="es">Inspector de accesibilidad</name>
   <name xml:lang="eu">Irisgarritasun ikuskatzailea</name>
@@ -36,6 +37,7 @@
   <summary>Inspect your application accessibility tree</summary>
   <summary xml:lang="ca">Inspecciona l'arbre d'accessibilitat de la vostra aplicació</summary>
   <summary xml:lang="ca-valencia">Inspecciona l'arbre d'accessibilitat de la vostra aplicació</summary>
+  <summary xml:lang="en-GB">Inspect your application accessibility tree</summary>
   <summary xml:lang="eo">Inspektu la alireblo-arbon de via aplikaĵo</summary>
   <summary xml:lang="es">Inspeccionar el árbol de accesibilidad de las aplicaciones</summary>
   <summary xml:lang="eu">Ikuskatu zure aplikazioaren irisgarritasun zuhaitza</summary>
@@ -61,6 +63,7 @@
     <p>Accessibility Inspector is as the name suggests an inspector for your application accessibility tree. It lets you check all the items exposed via At-SPI, too.</p>
     <p xml:lang="ca">L'inspector d'accessibilitat és, com el nom suggereix, un inspector de l'arbre d'accessibilitat de l'aplicació. Permet comprovar tots els elements exposats mitjançant At-SPI, també.</p>
     <p xml:lang="ca-valencia">L'inspector d'accessibilitat és, com el nom suggerix, un inspector de l'arbre d'accessibilitat de l'aplicació. Permet comprovar tots els elements exposats mitjançant At-SPI, també.</p>
+    <p xml:lang="en-GB">Accessibility Inspector is as the name suggests an inspector for your application accessibility tree. It lets you check all the items exposed via At-SPI, too.</p>
     <p xml:lang="eo">Kiel la nomo sugestus, Accessibility Inspector estas inspektilo por la alireblo-arbo de via aplikaĵo. Ĝi ebligas al vi ankaŭ kontroli ĉiujn objektojn elmontritajn per At-SPI.</p>
     <p xml:lang="es">El inspector de accesibilidad es, como su nombre sugiere, un inspector del árbol de accesibilidad de las aplicaciones. También permite comprobar todos los elementos expuestos mediante At-SPI.</p>
     <p xml:lang="eu">Irisgarritasun ikuskatzailea, izenak iradoki bezala, zure aplikazioaren irisgarritasun zuhaitzerako ikuskatzaile bat da. At-SPI bidez agerian ipinitako elementu guztiak egiaztatzeko aukera ere ematen dizu.</p>
@@ -105,6 +108,7 @@
       <caption xml:lang="ast">Les propiedaes d'un noyu del árbole d'accesibilidá.</caption>
       <caption xml:lang="ca">Les propietats d'un node de l'arbre d'accessibilitat.</caption>
       <caption xml:lang="ca-valencia">Les propietats d'un node de l'arbre d'accessibilitat.</caption>
+      <caption xml:lang="en-GB">The properties of a node of the accessibility tree.</caption>
       <caption xml:lang="eo">La proprecoj de nodo en la alireblo-arbo</caption>
       <caption xml:lang="es">Las propiedades de un nodo del árbol de accesibilidad.</caption>
       <caption xml:lang="eu">Irisgarritasun zuhaitzeko nodo baten propietateak.</caption>
@@ -133,6 +137,7 @@
       <caption xml:lang="ast">La llista de tolos eventos de recién.</caption>
       <caption xml:lang="ca">La llista de tots els esdeveniments recents.</caption>
       <caption xml:lang="ca-valencia">La llista de tots els esdeveniments recents.</caption>
+      <caption xml:lang="en-GB">The list of all the recent events.</caption>
       <caption xml:lang="eo">La listo de la lasttempaj eventoj.</caption>
       <caption xml:lang="es">La lista de todos los eventos recientes.</caption>
       <caption xml:lang="eu">Azkenaldiko gertaera guztien zerrenda.</caption>
