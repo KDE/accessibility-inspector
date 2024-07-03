@@ -65,8 +65,8 @@ set_package_properties(QAccessibilityClient6 PROPERTIES
     PURPOSE "Required to enable accessibility features"
 )
 
-ecm_set_disabled_deprecation_versions(QT 6.6
-    KF 6.6.0
+ecm_set_disabled_deprecation_versions(QT 6.7
+    KF 6.4.0
     )
 
 add_subdirectory(src)
