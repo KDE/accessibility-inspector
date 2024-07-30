@@ -56,6 +56,7 @@
   <summary xml:lang="pl">Zbadaj drzewo dostępności swojej aplikacji</summary>
   <summary xml:lang="sl">Preglejte drevo dostopnosti vaše aplikacije</summary>
   <summary xml:lang="sv">Inspektera programmets tillgänglighetsträd</summary>
+  <summary xml:lang="tg">Дарахти қобилияти дастрасии барномаи худро тафтиш намоед</summary>
   <summary xml:lang="tr">Uygulamanızın erişilebilirlik ağacını denetleyin</summary>
   <summary xml:lang="uk">Вивчення ієрархії доступності вашої програми</summary>
   <summary xml:lang="x-test">xxInspect your application accessibility treexx</summary>
@@ -156,6 +157,7 @@
       <caption xml:lang="pl">Wykaz wszystkich ostatnich zdarzeń.</caption>
       <caption xml:lang="sl">Seznam vseh zadnjih dogodkov.</caption>
       <caption xml:lang="sv">Listan över alla de senaste händelserna.</caption>
+      <caption xml:lang="tg">Рӯйхати ҳамаи рӯйдодҳои қаблӣ</caption>
       <caption xml:lang="tr">Tüm son gerçekleşen olayların bir listesi.</caption>
       <caption xml:lang="uk">Список усіх нещодавніх подій.</caption>
       <caption xml:lang="x-test">xxThe list of all the recent events.xx</caption>
