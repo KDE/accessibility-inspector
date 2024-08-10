@@ -18,6 +18,7 @@
   <name xml:lang="eu">Irisgarritasun ikuskatzailea</name>
   <name xml:lang="fi">Esteettömyystutkain</name>
   <name xml:lang="fr">Analyseur d'accessibilité</name>
+  <name xml:lang="gl">Inspector de accesibilidade</name>
   <name xml:lang="he">בוחן נגישות</name>
   <name xml:lang="hu">Akadálymentesítés-vizsgáló</name>
   <name xml:lang="ia">Inspector de Accessibilitate</name>
@@ -45,6 +46,7 @@
   <summary xml:lang="eu">Ikuskatu zure aplikazioaren irisgarritasun zuhaitza</summary>
   <summary xml:lang="fi">Tutki sovelluksesi esteettömyyspuuta</summary>
   <summary xml:lang="fr">Inspecter l'arborescence d'accessibilité de votre application</summary>
+  <summary xml:lang="gl">Inspeccione a árbore de accesibilidade da aplicación.</summary>
   <summary xml:lang="he">בחינת עץ הנגישות של היישום שלך</summary>
   <summary xml:lang="hu">Vizsgálja meg alkalmazása akadálymentesítési fáját</summary>
   <summary xml:lang="ia">Inspecta arbore de accessibilitate de tu application</summary>
@@ -72,6 +74,7 @@
     <p xml:lang="eu">Irisgarritasun ikuskatzailea, izenak iradoki bezala, zure aplikazioaren irisgarritasun zuhaitzerako ikuskatzaile bat da. At-SPI bidez agerian ipinitako elementu guztiak egiaztatzeko aukera ere ematen dizu.</p>
     <p xml:lang="fi">Esteettömyystutkain on nimensä mukaisesti tutkain sovelluksesi esteettömyyspuuhun. Myös kaikkia At-SPI:n paljastamia kohteita voi tutkia.</p>
     <p xml:lang="fr">L'analyseur d'accessibilité est comme son nom l'indique, un analyseur de l'arborescence d'accessibilité de votre application. Il vous permet aussi de vérifier tous les éléments exposés grâce à « At-SPI to ».</p>
+    <p xml:lang="gl">O inspector de accesibilidade permite inspeccionar a árbore de accesibilidade. Ademais tamén lle permite comprobar que todos os elementos están expostos mediante At-SPI.</p>
     <p xml:lang="he">בוחן הנגישות, כמו שהשם מרמז, בוחן את עץ הנגישות. מאפשר לך לבדוק גם את כל הפריטים שחשופים דרך At-SPI.</p>
     <p xml:lang="hu">Az Akadálymentesítés-vizsgáló, mint azt a neve is mutatja, egy vizsgáló alkalmazása akadálymentesítési fájához. Lehetővé teszi az összes At-SPI-n keresztül közzétett elem ellenőrzését is.</p>
     <p xml:lang="ia">Inspector de Accessibilitate (Accessibility Inspector) es como le nomine suggere un inspector per le arbore de accessibilitate de tu application.Illo te permitte verificar anque le elementos exponite via At-SPI.</p>
@@ -117,6 +120,7 @@
       <caption xml:lang="eu">Irisgarritasun zuhaitzeko nodo baten propietateak.</caption>
       <caption xml:lang="fi">Esteettömyyspuun solmun ominaisuudet.</caption>
       <caption xml:lang="fr">Les propriétés d'un nœud dans l'arborescence d'accessibilité.</caption>
+      <caption xml:lang="gl">As propiedades dun nodo da árbore de accesibilidade.</caption>
       <caption xml:lang="he">מאפייני מפרק עץ הנגישות.</caption>
       <caption xml:lang="hu">Az akadálymentesítési fa egy csomópontjának tulajdonságai.</caption>
       <caption xml:lang="ia">Le proprietate de un nodo del arbore de accessibilitate.</caption>
@@ -146,6 +150,7 @@
       <caption xml:lang="eu">Azkenaldiko gertaera guztien zerrenda.</caption>
       <caption xml:lang="fi">Kaikkien viimeaikaisten tapahtumien luettelo.</caption>
       <caption xml:lang="fr">La liste de tous les évènements récents.</caption>
+      <caption xml:lang="gl">A lista de eventos recentes.</caption>
       <caption xml:lang="he">רשימת כל האירועים האחרונים.</caption>
       <caption xml:lang="hu">Az összes legutóbbi esemény listája.</caption>
       <caption xml:lang="ia">Le lista de omne eventois recente.</caption>
