@@ -18,7 +18,6 @@
 int main(int argc, char **argv)
 {
     QApplication app(argc, argv);
-    KCrash::initialize();
 
     KLocalizedString::setApplicationDomain(QByteArrayLiteral("accessibilityinspector"));
 
@@ -39,6 +38,7 @@ int main(int argc, char **argv)
                     QUrl(QStringLiteral("https://carlschwan.eu/avatar.png")));
 
     KAboutData::setApplicationData(about);
+    KCrash::initialize();
     QGuiApplication::setWindowIcon(QIcon::fromTheme(QStringLiteral("org.kde.accessibilityinspector")));
 
     QCommandLineParser parser;
