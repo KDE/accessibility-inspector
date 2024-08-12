@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-22 00:35+0000\n"
+"POT-Creation-Date: 2024-08-12 00:36+0000\n"
 "PO-Revision-Date: 2023-12-05 16:14+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -72,42 +72,42 @@ msgctxt "@info:placeholder"
 msgid "Filter..."
 msgstr ""
 
-#: apps/main.cpp:26
+#: apps/main.cpp:25
 #, kde-format
 msgid "Accessibility Inspector"
 msgstr ""
 
-#: apps/main.cpp:28
+#: apps/main.cpp:27
 #, kde-format
 msgid "Accessibility inspector"
 msgstr ""
 
-#: apps/main.cpp:30
+#: apps/main.cpp:29
 #, kde-format
 msgid "© 2021-2023 Carl Schwan, 2021-2024 KDE Community"
 msgstr ""
 
-#: apps/main.cpp:32
+#: apps/main.cpp:31
 #, kde-format
 msgid "Frederik Gladhorn"
 msgstr "Frederik Gladhorn"
 
-#: apps/main.cpp:32
+#: apps/main.cpp:31
 #, kde-format
 msgid "Original author"
 msgstr ""
 
-#: apps/main.cpp:34
+#: apps/main.cpp:33
 #, kde-format
 msgid "Laurent Montel"
 msgstr ""
 
-#: apps/main.cpp:34 apps/main.cpp:36
+#: apps/main.cpp:33 apps/main.cpp:35
 #, kde-format
 msgid "Maintainer"
 msgstr ""
 
-#: apps/main.cpp:35
+#: apps/main.cpp:34
 #, kde-format
 msgid "Carl Schwan"
 msgstr ""
