@@ -1,0 +1,784 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the accessibility-inspector package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2024-08-12 00:36+0000\n"
+"Language: sa\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr ""
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+
+# automatic translation
+#. i18n: ectx: Menu (edit)
+#: accessibilityinspectorui.rc:11
+#, kde-format
+msgid "&Edit"
+msgstr ""
+
+# automatic translation
+#. i18n: ectx: Menu (view)
+#: accessibilityinspectorui.rc:15
+#, kde-format
+msgid "View"
+msgstr ""
+
+# automatic translation
+#. i18n: ectx: Menu (settings)
+#: accessibilityinspectorui.rc:20
+#, kde-format
+msgid "&Settings"
+msgstr ""
+
+# automatic translation
+#: accessibletreeview.cpp:24
+#, kde-format
+msgid "Displays a hierachical tree of accessible objects"
+msgstr ""
+
+# automatic translation
+#: accessibletreeview.cpp:57
+#, kde-format
+msgid "Expand Node"
+msgstr ""
+
+# automatic translation
+#: accessibletreeview.cpp:60
+#, kde-format
+msgid "Collapse Node"
+msgstr ""
+
+# automatic translation
+#: accessibletreeview.cpp:64
+#, kde-format
+msgid "Expand All"
+msgstr ""
+
+#: accessibletreewidget.cpp:26
+#, kde-format
+msgctxt "@info:placeholder"
+msgid "Filter..."
+msgstr ""
+
+# automatic translation
+#: apps/main.cpp:25
+#, kde-format
+msgid "Accessibility Inspector"
+msgstr ""
+
+# automatic translation
+#: apps/main.cpp:27
+#, kde-format
+msgid "Accessibility inspector"
+msgstr ""
+
+# automatic translation
+#: apps/main.cpp:29
+#, kde-format
+msgid "© 2021-2023 Carl Schwan, 2021-2024 KDE Community"
+msgstr ""
+
+# automatic translation
+#: apps/main.cpp:31
+#, kde-format
+msgid "Frederik Gladhorn"
+msgstr ""
+
+# automatic translation
+#: apps/main.cpp:31
+#, kde-format
+msgid "Original author"
+msgstr ""
+
+# automatic translation
+#: apps/main.cpp:33
+#, kde-format
+msgid "Laurent Montel"
+msgstr ""
+
+# automatic translation
+#: apps/main.cpp:33 apps/main.cpp:35
+#, kde-format
+msgid "Maintainer"
+msgstr ""
+
+# automatic translation
+#: apps/main.cpp:34
+#, kde-format
+msgid "Carl Schwan"
+msgstr ""
+
+#: clientcachedialog.cpp:29
+#, kde-format
+msgctxt "@title:window"
+msgid "Cache"
+msgstr ""
+
+#: clientcachedialog.cpp:44
+#, kde-format
+msgctxt "@action:button"
+msgid "Refresh"
+msgstr ""
+
+#: clientcachedialog.cpp:47
+#, kde-format
+msgctxt "@action:button"
+msgid "Clear"
+msgstr ""
+
+#: clientcachedialog.cpp:50
+#, kde-format
+msgctxt "@label"
+msgid "Strategy:"
+msgstr ""
+
+#: clientcachedialog.cpp:55
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Disable"
+msgstr ""
+
+#: clientcachedialog.cpp:56
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Weak"
+msgstr ""
+
+#: clientcachedialog.cpp:65
+#, kde-format
+msgctxt "@label:listbox"
+msgid "Count:"
+msgstr ""
+
+#: clientcachedialog.cpp:101
+#, kde-format
+msgctxt "@title:row"
+msgid "Name"
+msgstr ""
+
+#: clientcachedialog.cpp:101
+#, kde-format
+msgctxt "@title:row"
+msgid "Role"
+msgstr ""
+
+#: clientcachedialog.cpp:101
+#, kde-format
+msgctxt "@title:row"
+msgid "Identifier"
+msgstr ""
+
+#: eventview.cpp:63
+#, kde-format
+msgctxt "@label"
+msgid "Accessible"
+msgstr ""
+
+#: eventview.cpp:65
+#, kde-format
+msgctxt "@label"
+msgid "Role"
+msgstr ""
+
+#: eventview.cpp:67
+#, kde-format
+msgctxt "@label"
+msgid "Event"
+msgstr ""
+
+#: eventview.cpp:69
+#, kde-format
+msgctxt "@label"
+msgid "Action"
+msgstr ""
+
+# automatic translation
+#: eventview.cpp:194
+#, kde-format
+msgid "Displays all received events"
+msgstr ""
+
+#: eventview.cpp:264
+#, kde-format
+msgctxt "Accessibility event name"
+msgid "Focus"
+msgstr ""
+
+#: eventview.cpp:267
+#, kde-format
+msgctxt "Accessibility event name: state changed"
+msgid "State"
+msgstr ""
+
+#: eventview.cpp:270
+#, kde-format
+msgctxt "Accessibility event name: name changed"
+msgid "Name"
+msgstr ""
+
+#: eventview.cpp:273
+#, kde-format
+msgctxt "Accessibility event name: description changed"
+msgid "Description"
+msgstr ""
+
+#: eventview.cpp:276
+#, kde-format
+msgctxt "Accessibility event name"
+msgid "Window"
+msgstr ""
+
+#: eventview.cpp:279
+#, kde-format
+msgctxt "Accessibility event name"
+msgid "Document"
+msgstr ""
+
+#: eventview.cpp:282
+#, kde-format
+msgctxt "Accessibility event name"
+msgid "Object"
+msgstr ""
+
+#: eventview.cpp:285
+#, kde-format
+msgctxt "Accessibility event name"
+msgid "Text"
+msgstr ""
+
+#: eventview.cpp:288
+#, kde-format
+msgctxt "Accessibility event name"
+msgid "Table"
+msgstr ""
+
+#: eventview.cpp:291
+#, kde-format
+msgctxt "Accessibility event name"
+msgid "Others"
+msgstr ""
+
+#: eventview.cpp:294
+#, kde-format
+msgctxt "Accessibility event name"
+msgid "No Event"
+msgstr ""
+
+# automatic translation
+#. i18n: ectx: property (windowTitle), widget (QWidget, EventViewWidget)
+#: eventview.ui:18
+#, kde-format
+msgid "Form"
+msgstr ""
+
+# automatic translation
+#. i18n: ectx: property (placeholderText), widget (QLineEdit, accessibleFilterEdit)
+#: eventview.ui:32
+#, kde-format
+msgid "Accessible Filter"
+msgstr ""
+
+# automatic translation
+#. i18n: ectx: property (accessibleName), widget (QLineEdit, roleFilterEdit)
+#. i18n: ectx: property (placeholderText), widget (QLineEdit, roleFilterEdit)
+#: eventview.ui:39 eventview.ui:45
+#, kde-format
+msgid "Role Filter"
+msgstr ""
+
+# automatic translation
+#. i18n: ectx: property (accessibleName), widget (QComboBox, filterComboBox)
+#: eventview.ui:52
+#, kde-format
+msgid "Event Filter"
+msgstr ""
+
+# automatic translation
+#. i18n: ectx: property (accessibleName), widget (QPushButton, clearButton)
+#: eventview.ui:65
+#, kde-format
+msgid "Clear Events"
+msgstr ""
+
+# automatic translation
+#. i18n: ectx: property (text), widget (QPushButton, clearButton)
+#: eventview.ui:68
+#, kde-format
+msgid "&Clear"
+msgstr ""
+
+#: mainwidget.cpp:50
+#, kde-format
+msgctxt "@title:window"
+msgid "Properties"
+msgstr ""
+
+#: mainwidget.cpp:51
+#, kde-format
+msgctxt "@title:window"
+msgid "Events"
+msgstr ""
+
+#: mainwidget.cpp:52
+#, kde-format
+msgctxt "@title:window"
+msgid "Boundaries"
+msgstr ""
+
+# automatic translation
+#: mainwidget.cpp:147 mainwidget.cpp:149
+#, kde-format
+msgid "true"
+msgstr ""
+
+# automatic translation
+#: mainwidget.cpp:147 mainwidget.cpp:149
+#, kde-format
+msgid "false"
+msgstr ""
+
+# automatic translation
+#: mainwidget.cpp:158
+#, kde-format
+msgid "Child Added %1"
+msgstr ""
+
+# automatic translation
+#: mainwidget.cpp:164
+#, kde-format
+msgid "Child Removed %1"
+msgstr ""
+
+# automatic translation
+#: mainwidget.cpp:170
+#, kde-format
+msgid "Visible Data Changed"
+msgstr ""
+
+# automatic translation
+#: mainwidget.cpp:176
+#, kde-format
+msgid "Selection Changed"
+msgstr ""
+
+# automatic translation
+#: mainwidget.cpp:182
+#, kde-format
+msgid "Model Changed"
+msgstr ""
+
+# automatic translation
+#: mainwidget.cpp:197
+#, kde-format
+msgid "Add Object"
+msgstr ""
+
+# automatic translation
+#: mainwidget.cpp:203
+#, kde-format
+msgid "Remove Object"
+msgstr ""
+
+# automatic translation
+#: mainwidget.cpp:214
+#, kde-format
+msgid "Create"
+msgstr ""
+
+# automatic translation
+#: mainwidget.cpp:220
+#, kde-format
+msgid "Destroy"
+msgstr ""
+
+# automatic translation
+#: mainwidget.cpp:321
+#, kde-format
+msgid "Text caret moved (%1)"
+msgstr ""
+
+#: mainwindow.cpp:73
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Reset Tree"
+msgstr ""
+
+#: mainwindow.cpp:79
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Follow Focus"
+msgstr ""
+
+#: mainwindow.cpp:86
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Cache..."
+msgstr ""
+
+#: mainwindow.cpp:91
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Enable Accessibility"
+msgstr ""
+
+#: mainwindow.cpp:101
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Enable Screen Reader"
+msgstr ""
+
+#: mainwindow.cpp:112 propertytreeview.cpp:34
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Copy property value"
+msgstr ""
+
+# automatic translation
+#: model/accessibleobjecttreemodel.cpp:33
+#: model/accessiblepropertiesmodel.cpp:91
+#, kde-format
+msgid "Accessible"
+msgstr ""
+
+# automatic translation
+#: model/accessibleobjecttreemodel.cpp:35
+#: model/accessiblepropertiesmodel.cpp:95
+#, kde-format
+msgid "Role"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:53
+#, kde-format
+msgid "Property"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:55
+#: model/accessiblepropertiesmodel.cpp:267
+#, kde-format
+msgid "Value"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:93
+#, kde-format
+msgid "Name"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:94
+#: model/accessiblepropertiesmodel.cpp:197
+#, kde-format
+msgid "Description"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:96
+#, kde-format
+msgid "LocalizedRole"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:97
+#, kde-format
+msgid "Visible"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:98
+#, kde-format
+msgid "Default"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:99
+#, kde-format
+msgid "State"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:100
+#, kde-format
+msgid "AccessibleId"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:101
+#, kde-format
+msgid "Url"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:104
+#, kde-format
+msgid "Parent"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:106
+#, kde-format
+msgid "Children"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:110
+#, kde-format
+msgid "Broken child"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:118
+#, kde-format
+msgid "Component"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:120
+#, kde-format
+msgid "BoundingRect"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:121
+#, kde-format
+msgid "Layer"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:122
+#, kde-format
+msgid "MDIZOrder"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:123
+#, kde-format
+msgid "Alpha"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:126
+#, kde-format
+msgid "Collection"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:131
+#, kde-format
+msgid "Application"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:133
+#, kde-format
+msgid "ToolkitName"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:134
+#, kde-format
+msgid "Version"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:135
+#, kde-format
+msgid "Id"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:136
+#: model/accessiblepropertiesmodel.cpp:198
+#, kde-format
+msgid "Locale"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:137
+#, kde-format
+msgid "BusAddress"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:140
+#, kde-format
+msgid "Document"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:149
+#, kde-format
+msgid "Editable Text"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:154
+#, kde-format
+msgid "Hyperlink"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:176
+#, kde-format
+msgid "Hypertext"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:195
+#, kde-format
+msgid "Image"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:199
+#, kde-format
+msgid "Rect"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:202
+#, kde-format
+msgid "Selection"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:209
+#, kde-format
+msgid "Table"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:242
+#: model/accessiblepropertiesmodel.cpp:251
+#: model/accessiblepropertiesmodel.cpp:253
+#, kde-format
+msgid "Text"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:245
+#, kde-format
+msgid "Caret Offset"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:246
+#, kde-format
+msgid "Character Count"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:247
+#, kde-format
+msgid "Character Rect"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:257
+#, kde-format
+msgid "Selections"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:269
+#, kde-format
+msgid "Current"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:270
+#, kde-format
+msgid "Minimum"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:271
+#, kde-format
+msgid "Maximum"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:272
+#, kde-format
+msgid "Increment"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:275
+#, kde-format
+msgid "Socket"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:281
+#, kde-format
+msgid "Event Keyboard"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:286
+#, kde-format
+msgid "Event Mouse"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:291
+#, kde-format
+msgid "Event Object"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:296
+#, kde-format
+msgid "Event Window"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:301
+#, kde-format
+msgid "Event Focus"
+msgstr ""
+
+# automatic translation
+#: model/accessiblepropertiesmodel.cpp:308
+#: model/accessiblepropertiesmodel.cpp:336
+#, kde-format
+msgid "Action"
+msgstr ""
+
+#: propertytreeview.cpp:14
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "List of properties"
+msgstr ""
+
+#: propertytreeview.cpp:15
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Displays properties of the selected accessible object"
+msgstr ""
+
+#: uiview.cpp:19
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Boundaries"
+msgstr ""
+
+#: uiview.cpp:20
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Visualize the component boundaries"
+msgstr ""
