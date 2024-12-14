@@ -1,296 +1,300 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the accessibility-inspector package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# SPDX-FileCopyrightText: 2024 kali <skkalwar999@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: accessibilityinspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-08-12 00:36+0000\n"
+"PO-Revision-Date: 2024-12-13 22:24+0530\n"
+"Last-Translator: kali <skkalwar999@gmail.com>\n"
+"Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
 "Language: sa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n>2);\n"
+"X-Generator: Lokalize 24.08.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Shreekant Kalwar"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "shreekantkalwar@gmail.com"
 
 # automatic translation
 #. i18n: ectx: Menu (edit)
 #: accessibilityinspectorui.rc:11
 #, kde-format
 msgid "&Edit"
-msgstr ""
+msgstr "&सम्पादन"
 
 # automatic translation
 #. i18n: ectx: Menu (view)
 #: accessibilityinspectorui.rc:15
 #, kde-format
 msgid "View"
-msgstr ""
+msgstr "दृश्यं"
 
 # automatic translation
 #. i18n: ectx: Menu (settings)
 #: accessibilityinspectorui.rc:20
 #, kde-format
 msgid "&Settings"
-msgstr ""
+msgstr "&सेटिंग्स"
 
 # automatic translation
 #: accessibletreeview.cpp:24
 #, kde-format
 msgid "Displays a hierachical tree of accessible objects"
-msgstr ""
+msgstr "सुलभवस्तूनाम् श्रेणीबद्धं वृक्षं प्रदर्शयति"
 
 # automatic translation
 #: accessibletreeview.cpp:57
 #, kde-format
 msgid "Expand Node"
-msgstr ""
+msgstr "Node इति विस्तारयन्तु"
 
 # automatic translation
 #: accessibletreeview.cpp:60
 #, kde-format
 msgid "Collapse Node"
-msgstr ""
+msgstr "संकुचन नोड"
 
 # automatic translation
 #: accessibletreeview.cpp:64
 #, kde-format
 msgid "Expand All"
-msgstr ""
+msgstr "सर्वं विस्तारयतु"
 
 #: accessibletreewidget.cpp:26
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Filter..."
-msgstr ""
+msgstr "फ़िल्टर..."
 
 # automatic translation
 #: apps/main.cpp:25
 #, kde-format
 msgid "Accessibility Inspector"
-msgstr ""
+msgstr "सुलभता निरीक्षक"
 
 # automatic translation
 #: apps/main.cpp:27
 #, kde-format
 msgid "Accessibility inspector"
-msgstr ""
+msgstr "सुलभता निरीक्षक"
 
 # automatic translation
 #: apps/main.cpp:29
 #, kde-format
 msgid "© 2021-2023 Carl Schwan, 2021-2024 KDE Community"
-msgstr ""
+msgstr "© 2021-2023 कार्ल श्वान, 2021-2024 केडीई समुदाय"
 
 # automatic translation
 #: apps/main.cpp:31
 #, kde-format
 msgid "Frederik Gladhorn"
-msgstr ""
+msgstr "फ्रेडरिक ग्लाडहोर्न्"
 
 # automatic translation
 #: apps/main.cpp:31
 #, kde-format
 msgid "Original author"
-msgstr ""
+msgstr "मूल लेखक"
 
 # automatic translation
 #: apps/main.cpp:33
 #, kde-format
 msgid "Laurent Montel"
-msgstr ""
+msgstr "लॉरेण्ट् मोंटेल्"
 
 # automatic translation
 #: apps/main.cpp:33 apps/main.cpp:35
 #, kde-format
 msgid "Maintainer"
-msgstr ""
+msgstr "परिपालकः"
 
 # automatic translation
 #: apps/main.cpp:34
 #, kde-format
 msgid "Carl Schwan"
-msgstr ""
+msgstr "कार्ल स्वान्"
 
 #: clientcachedialog.cpp:29
 #, kde-format
 msgctxt "@title:window"
 msgid "Cache"
-msgstr ""
+msgstr "संग्रहणम्"
 
 #: clientcachedialog.cpp:44
 #, kde-format
 msgctxt "@action:button"
 msgid "Refresh"
-msgstr ""
+msgstr "नवीकरण"
 
 #: clientcachedialog.cpp:47
 #, kde-format
 msgctxt "@action:button"
 msgid "Clear"
-msgstr ""
+msgstr "स्पष्टः"
 
 #: clientcachedialog.cpp:50
 #, kde-format
 msgctxt "@label"
 msgid "Strategy:"
-msgstr ""
+msgstr "रणनीति:"
 
 #: clientcachedialog.cpp:55
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Disable"
-msgstr ""
+msgstr "अक्षम"
 
 #: clientcachedialog.cpp:56
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Weak"
-msgstr ""
+msgstr "सप्ताहः"
 
 #: clientcachedialog.cpp:65
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Count:"
-msgstr ""
+msgstr "गणनां कारोतु:"
 
 #: clientcachedialog.cpp:101
 #, kde-format
 msgctxt "@title:row"
 msgid "Name"
-msgstr ""
+msgstr "नामः"
 
 #: clientcachedialog.cpp:101
 #, kde-format
 msgctxt "@title:row"
 msgid "Role"
-msgstr ""
+msgstr "भूमिका"
 
 #: clientcachedialog.cpp:101
 #, kde-format
 msgctxt "@title:row"
 msgid "Identifier"
-msgstr ""
+msgstr "परिचयकः"
 
 #: eventview.cpp:63
 #, kde-format
 msgctxt "@label"
 msgid "Accessible"
-msgstr ""
+msgstr "सुलभः"
 
 #: eventview.cpp:65
 #, kde-format
 msgctxt "@label"
 msgid "Role"
-msgstr ""
+msgstr "भूमिका"
 
 #: eventview.cpp:67
 #, kde-format
 msgctxt "@label"
 msgid "Event"
-msgstr ""
+msgstr "घटना"
 
 #: eventview.cpp:69
 #, kde-format
 msgctxt "@label"
 msgid "Action"
-msgstr ""
+msgstr "नामपत्र"
 
 # automatic translation
 #: eventview.cpp:194
 #, kde-format
 msgid "Displays all received events"
-msgstr ""
+msgstr "सर्वाणि प्राप्तानि घटनानि प्रदर्शयति"
 
 #: eventview.cpp:264
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Focus"
-msgstr ""
+msgstr "केंद्रबिन्दुः"
 
 #: eventview.cpp:267
 #, kde-format
 msgctxt "Accessibility event name: state changed"
 msgid "State"
-msgstr ""
+msgstr "राज्यम्‌"
 
 #: eventview.cpp:270
 #, kde-format
 msgctxt "Accessibility event name: name changed"
 msgid "Name"
-msgstr ""
+msgstr "नामः"
 
 #: eventview.cpp:273
 #, kde-format
 msgctxt "Accessibility event name: description changed"
 msgid "Description"
-msgstr ""
+msgstr "वर्णनम्‌"
 
 #: eventview.cpp:276
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Window"
-msgstr ""
+msgstr "कोष्ठ"
 
 #: eventview.cpp:279
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Document"
-msgstr ""
+msgstr "प्रलेख"
 
 #: eventview.cpp:282
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Object"
-msgstr ""
+msgstr "वस्तु"
 
 #: eventview.cpp:285
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Text"
-msgstr ""
+msgstr "पाठ"
 
 #: eventview.cpp:288
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Table"
-msgstr ""
+msgstr "पीठिका"
 
 #: eventview.cpp:291
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Others"
-msgstr ""
+msgstr "अन्ये"
 
 #: eventview.cpp:294
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "No Event"
-msgstr ""
+msgstr "न घटना"
 
 # automatic translation
 #. i18n: ectx: property (windowTitle), widget (QWidget, EventViewWidget)
 #: eventview.ui:18
 #, kde-format
 msgid "Form"
-msgstr ""
+msgstr "आवेदनपत्रं"
 
 # automatic translation
 #. i18n: ectx: property (placeholderText), widget (QLineEdit, accessibleFilterEdit)
 #: eventview.ui:32
 #, kde-format
 msgid "Accessible Filter"
-msgstr ""
+msgstr "सुलभं फ़िल्टर"
 
 # automatic translation
 #. i18n: ectx: property (accessibleName), widget (QLineEdit, roleFilterEdit)
@@ -298,369 +302,369 @@ msgstr ""
 #: eventview.ui:39 eventview.ui:45
 #, kde-format
 msgid "Role Filter"
-msgstr ""
+msgstr "भूमिका फ़िल्टर"
 
 # automatic translation
 #. i18n: ectx: property (accessibleName), widget (QComboBox, filterComboBox)
 #: eventview.ui:52
 #, kde-format
 msgid "Event Filter"
-msgstr ""
+msgstr "इवेण्ट् फ़िल्टर"
 
 # automatic translation
 #. i18n: ectx: property (accessibleName), widget (QPushButton, clearButton)
 #: eventview.ui:65
 #, kde-format
 msgid "Clear Events"
-msgstr ""
+msgstr "स्पष्ट घटनाः"
 
 # automatic translation
 #. i18n: ectx: property (text), widget (QPushButton, clearButton)
 #: eventview.ui:68
 #, kde-format
 msgid "&Clear"
-msgstr ""
+msgstr "&स्पष्टः"
 
 #: mainwidget.cpp:50
 #, kde-format
 msgctxt "@title:window"
 msgid "Properties"
-msgstr ""
+msgstr "गुणाः"
 
 #: mainwidget.cpp:51
 #, kde-format
 msgctxt "@title:window"
 msgid "Events"
-msgstr ""
+msgstr "घटनाः"
 
 #: mainwidget.cpp:52
 #, kde-format
 msgctxt "@title:window"
 msgid "Boundaries"
-msgstr ""
+msgstr "सीमा"
 
 # automatic translation
 #: mainwidget.cpp:147 mainwidget.cpp:149
 #, kde-format
 msgid "true"
-msgstr ""
+msgstr "सत्यम्‌"
 
 # automatic translation
 #: mainwidget.cpp:147 mainwidget.cpp:149
 #, kde-format
 msgid "false"
-msgstr ""
+msgstr "असत्य"
 
 # automatic translation
 #: mainwidget.cpp:158
 #, kde-format
 msgid "Child Added %1"
-msgstr ""
+msgstr "बालः योजितः %1"
 
 # automatic translation
 #: mainwidget.cpp:164
 #, kde-format
 msgid "Child Removed %1"
-msgstr ""
+msgstr "बालकः निष्कासितः %1"
 
 # automatic translation
 #: mainwidget.cpp:170
 #, kde-format
 msgid "Visible Data Changed"
-msgstr ""
+msgstr "दृश्यमानदत्तांशः परिवर्तितः"
 
 # automatic translation
 #: mainwidget.cpp:176
 #, kde-format
 msgid "Selection Changed"
-msgstr ""
+msgstr "चयनं परिवर्तितम्"
 
 # automatic translation
 #: mainwidget.cpp:182
 #, kde-format
 msgid "Model Changed"
-msgstr ""
+msgstr "मॉडल परिवर्तितम्"
 
 # automatic translation
 #: mainwidget.cpp:197
 #, kde-format
 msgid "Add Object"
-msgstr ""
+msgstr "Add Object इति"
 
 # automatic translation
 #: mainwidget.cpp:203
 #, kde-format
 msgid "Remove Object"
-msgstr ""
+msgstr "वस्तु निष्कासयतु"
 
 # automatic translation
 #: mainwidget.cpp:214
 #, kde-format
 msgid "Create"
-msgstr ""
+msgstr "निर्मियताम्"
 
 # automatic translation
 #: mainwidget.cpp:220
 #, kde-format
 msgid "Destroy"
-msgstr ""
+msgstr "विनश्"
 
 # automatic translation
 #: mainwidget.cpp:321
 #, kde-format
 msgid "Text caret moved (%1)"
-msgstr ""
+msgstr "पाठः कैरेट् चालितः (%1) ."
 
 #: mainwindow.cpp:73
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Reset Tree"
-msgstr ""
+msgstr "वृक्षं पुनः सेट् कुर्वन्तु"
 
 #: mainwindow.cpp:79
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Follow Focus"
-msgstr ""
+msgstr "Focus अनुसरणं कुर्वन्तु"
 
 #: mainwindow.cpp:86
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Cache..."
-msgstr ""
+msgstr "संग्रहण..."
 
 #: mainwindow.cpp:91
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Enable Accessibility"
-msgstr ""
+msgstr "अभिगम्यतां सक्षमं कुर्वन्तु"
 
 #: mainwindow.cpp:101
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Enable Screen Reader"
-msgstr ""
+msgstr "स्क्रीन रीडर सक्षमं कुर्वन्तु"
 
 #: mainwindow.cpp:112 propertytreeview.cpp:34
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy property value"
-msgstr ""
+msgstr "गुणमूल्यं प्रतिलिख्यताम्"
 
 # automatic translation
 #: model/accessibleobjecttreemodel.cpp:33
 #: model/accessiblepropertiesmodel.cpp:91
 #, kde-format
 msgid "Accessible"
-msgstr ""
+msgstr "सुलभः"
 
 # automatic translation
 #: model/accessibleobjecttreemodel.cpp:35
 #: model/accessiblepropertiesmodel.cpp:95
 #, kde-format
 msgid "Role"
-msgstr ""
+msgstr "भूमिका"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:53
 #, kde-format
 msgid "Property"
-msgstr ""
+msgstr "सम्पत्तिः"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:55
 #: model/accessiblepropertiesmodel.cpp:267
 #, kde-format
 msgid "Value"
-msgstr ""
+msgstr "मूल्यम्‌"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:93
 #, kde-format
 msgid "Name"
-msgstr ""
+msgstr "नामः"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:94
 #: model/accessiblepropertiesmodel.cpp:197
 #, kde-format
 msgid "Description"
-msgstr ""
+msgstr "वर्णनम्‌"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:96
 #, kde-format
 msgid "LocalizedRole"
-msgstr ""
+msgstr "स्थानीयकृतभूमिका"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:97
 #, kde-format
 msgid "Visible"
-msgstr ""
+msgstr "दृश्यमानम्"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:98
 #, kde-format
 msgid "Default"
-msgstr ""
+msgstr "मूलभूतम्‌"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:99
 #, kde-format
 msgid "State"
-msgstr ""
+msgstr "राज्यम्‌"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:100
 #, kde-format
 msgid "AccessibleId"
-msgstr ""
+msgstr "AccessibleId"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:101
 #, kde-format
 msgid "Url"
-msgstr ""
+msgstr "उर्ल्"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:104
 #, kde-format
 msgid "Parent"
-msgstr ""
+msgstr "मातापिता"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:106
 #, kde-format
 msgid "Children"
-msgstr ""
+msgstr "बालकाः"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:110
 #, kde-format
 msgid "Broken child"
-msgstr ""
+msgstr "भग्नः बालकः"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:118
 #, kde-format
 msgid "Component"
-msgstr ""
+msgstr "घटकः"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:120
 #, kde-format
 msgid "BoundingRect"
-msgstr ""
+msgstr "BoundingRect"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:121
 #, kde-format
 msgid "Layer"
-msgstr ""
+msgstr "स्तर"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:122
 #, kde-format
 msgid "MDIZOrder"
-msgstr ""
+msgstr "MDIZOrder इति"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:123
 #, kde-format
 msgid "Alpha"
-msgstr ""
+msgstr "अल्फा"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:126
 #, kde-format
 msgid "Collection"
-msgstr ""
+msgstr "सङ्ग्रह"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:131
 #, kde-format
 msgid "Application"
-msgstr ""
+msgstr "अनुप्रयोगः"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:133
 #, kde-format
 msgid "ToolkitName"
-msgstr ""
+msgstr "ToolkitName इति"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:134
 #, kde-format
 msgid "Version"
-msgstr ""
+msgstr "संस्करण"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:135
 #, kde-format
 msgid "Id"
-msgstr ""
+msgstr "Id"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:136
 #: model/accessiblepropertiesmodel.cpp:198
 #, kde-format
 msgid "Locale"
-msgstr ""
+msgstr "स्थानिक"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:137
 #, kde-format
 msgid "BusAddress"
-msgstr ""
+msgstr "BusAdress इति"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:140
 #, kde-format
 msgid "Document"
-msgstr ""
+msgstr "प्रलेख"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:149
 #, kde-format
 msgid "Editable Text"
-msgstr ""
+msgstr "सम्पादनीयः पाठः"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:154
 #, kde-format
 msgid "Hyperlink"
-msgstr ""
+msgstr "अतिलिङ्क्"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:176
 #, kde-format
 msgid "Hypertext"
-msgstr ""
+msgstr "अतिपाठ"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:195
 #, kde-format
 msgid "Image"
-msgstr ""
+msgstr "छवि"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:199
 #, kde-format
 msgid "Rect"
-msgstr ""
+msgstr "Rect"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:202
 #, kde-format
 msgid "Selection"
-msgstr ""
+msgstr "चयनम्"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:209
 #, kde-format
 msgid "Table"
-msgstr ""
+msgstr "पीठिका"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:242
@@ -668,119 +672,119 @@ msgstr ""
 #: model/accessiblepropertiesmodel.cpp:253
 #, kde-format
 msgid "Text"
-msgstr ""
+msgstr "पाठ"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:245
 #, kde-format
 msgid "Caret Offset"
-msgstr ""
+msgstr "Caret Offset"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:246
 #, kde-format
 msgid "Character Count"
-msgstr ""
+msgstr "वर्णगणना"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:247
 #, kde-format
 msgid "Character Rect"
-msgstr ""
+msgstr "चरित्र Rect"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:257
 #, kde-format
 msgid "Selections"
-msgstr ""
+msgstr "चयनम्"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:269
 #, kde-format
 msgid "Current"
-msgstr ""
+msgstr "वर्त्तमानः"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:270
 #, kde-format
 msgid "Minimum"
-msgstr ""
+msgstr "न्यूनतम"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:271
 #, kde-format
 msgid "Maximum"
-msgstr ""
+msgstr "अधिकतम"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:272
 #, kde-format
 msgid "Increment"
-msgstr ""
+msgstr "वृद्धिः"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:275
 #, kde-format
 msgid "Socket"
-msgstr ""
+msgstr "सॉकेट"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:281
 #, kde-format
 msgid "Event Keyboard"
-msgstr ""
+msgstr "घटना कीबोर्ड"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:286
 #, kde-format
 msgid "Event Mouse"
-msgstr ""
+msgstr "घटना मूषकः"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:291
 #, kde-format
 msgid "Event Object"
-msgstr ""
+msgstr "घटना वस्तु"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:296
 #, kde-format
 msgid "Event Window"
-msgstr ""
+msgstr "घटना विण्डो"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:301
 #, kde-format
 msgid "Event Focus"
-msgstr ""
+msgstr "इवेण्ट् फोकस"
 
 # automatic translation
 #: model/accessiblepropertiesmodel.cpp:308
 #: model/accessiblepropertiesmodel.cpp:336
 #, kde-format
 msgid "Action"
-msgstr ""
+msgstr "नामपत्र"
 
 #: propertytreeview.cpp:14
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "List of properties"
-msgstr ""
+msgstr "गुणानाम् सूची"
 
 #: propertytreeview.cpp:15
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Displays properties of the selected accessible object"
-msgstr ""
+msgstr "चयनितस्य अभिगम्यवस्तुनः गुणाः प्रदर्शयति"
 
 #: uiview.cpp:19
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Boundaries"
-msgstr ""
+msgstr "सीमा"
 
 #: uiview.cpp:20
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Visualize the component boundaries"
-msgstr ""
+msgstr "घटकसीमाः कल्पयन्तु"
