@@ -33,7 +33,7 @@
   <name xml:lang="ru">Accessibility Inspector</name>
   <name xml:lang="sa">सुलभता निरीक्षक</name>
   <name xml:lang="sk">Inšpektor prístupnosti</name>
-  <name xml:lang="sl">Accessibility Inspector</name>
+  <name xml:lang="sl">Inšpektor za dostopnost</name>
   <name xml:lang="sv">Tillgänglighetsinspektör</name>
   <name xml:lang="tg">Нозири қобилияти дастрасӣ</name>
   <name xml:lang="tr">Erişilebilirlik Denetçisi</name>
@@ -96,7 +96,7 @@
     <p xml:lang="pl">Inspektor dostępności, jak sama nazwa mówi, jest inspektorem drzewa dostępności twojej aplikacji. Umożliwia także sprawdzenie wszystkich rzeczy wystawionych przez nią do At-SPI.</p>
     <p xml:lang="ru">Интерфейс «Accessibility Inspector» позволяет проанализировать дерево доступности приложения. Все выявленные элементы также можно проверить через At-SPI.</p>
     <p xml:lang="sa">अभिगम्यतानिरीक्षकः यथा नाम सूचयति तथा भवतः अनुप्रयोगसुलभतावृक्षस्य निरीक्षकः अस्ति । एतत् भवन्तं At-SPI मार्गेण अपि उजागरितानि सर्वाणि वस्तूनि परीक्षितुं शक्नोति ।</p>
-    <p xml:lang="sl">Inšpektor za dostopnost je, kot ime nakazuje inšpektor za vaše drevo dostopnosti aplikacij. Omogoča vam, da preverite vse predmete, ki so izpostavljeni tudi prek Ati-SPI.</p>
+    <p xml:lang="sl">Inšpektor za dostopnost je, kot nakazuje ime, inšpektor za vaše drevo dostopnosti aplikacij. Omogoča vam, da preverite vse predmete, ki so izpostavljeni tudi prek At-SPI.</p>
     <p xml:lang="sv">Tillgänglighetsinspektören är som namnet anger en inspektör av ett programs tillgänglighetsträd. Den låter dig också kontrollera alla objekt som exponeras via At-SPI.</p>
     <p xml:lang="tr">Erişilebilirlik Denetçisi, adından da anlaşılabileceği üzere, uygulamalar için bir erişilebilirlik ağacı denetçisidir. At-SPI tarafından kullanıma açılan tüm ögeleri denetlemenize de izin verir.</p>
     <p xml:lang="uk">«Ревізор доступності», як можна зрозуміти з назви, ревізор для ієрархії доступності вашої програми. За її допомогою можна перевіряти усі запис, які відкриваються за допомогою At-SPI.</p>
