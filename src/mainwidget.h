@@ -37,7 +37,6 @@ public:
 
 private:
     void selectionChanged(const QModelIndex &current);
-    void showClientCache();
 
     void added(const QAccessibleClient::AccessibleObject &object);
     void removed(const QAccessibleClient::AccessibleObject &object);

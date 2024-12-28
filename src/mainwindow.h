@@ -27,7 +27,6 @@ protected:
 
 private:
     void initActions();
-    void initUi();
     void showClientCache();
     void loadSettings();
     void saveSettings();
