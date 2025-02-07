@@ -2,30 +2,31 @@
 # This file is distributed under the same license as the accessibility-inspector package.
 #
 # SPDX-FileCopyrightText: 2024 joserafael <joserafaeltic@riseup.net>
+# SPDX-FileCopyrightText: 2025 Geraldo Simiao <geraldosimiao@fedoraproject.org>
 msgid ""
 msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-08-12 00:36+0000\n"
-"PO-Revision-Date: 2024-11-14 21:49-0300\n"
-"Last-Translator: joserafael <joserafaeltic@riseup.net>\n"
+"PO-Revision-Date: 2025-02-06 07:51-0300\n"
+"Last-Translator: Geraldo Simiao <geraldosimiao@fedoraproject.org>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 24.08.3\n"
+"X-Generator: Lokalize 24.12.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "José Rafael"
+msgstr "José Rafael, Geraldo Simião"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "joserafaeltic@riseup.net"
+msgstr "joserafaeltic@riseup.net, geraldosimiao@fedoraproject.org"
 
 #. i18n: ectx: Menu (edit)
 #: accessibilityinspectorui.rc:11
@@ -133,7 +134,7 @@ msgstr "Limpar"
 #, kde-format
 msgctxt "@label"
 msgid "Strategy:"
-msgstr ""
+msgstr "Estratégia:"
 
 #: clientcachedialog.cpp:55
 #, kde-format
@@ -151,7 +152,7 @@ msgstr "Fraco"
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Count:"
-msgstr ""
+msgstr "Contagem:"
 
 #: clientcachedialog.cpp:101
 #, kde-format
@@ -295,7 +296,7 @@ msgstr "Filtro de evento"
 #: eventview.ui:65
 #, kde-format
 msgid "Clear Events"
-msgstr ""
+msgstr "Limpar eventos"
 
 #. i18n: ectx: property (text), widget (QPushButton, clearButton)
 #: eventview.ui:68
@@ -454,7 +455,7 @@ msgstr "Descrição"
 #: model/accessiblepropertiesmodel.cpp:96
 #, kde-format
 msgid "LocalizedRole"
-msgstr ""
+msgstr "LocalizedRole"
 
 #: model/accessiblepropertiesmodel.cpp:97
 #, kde-format
@@ -474,7 +475,7 @@ msgstr "Estado"
 #: model/accessiblepropertiesmodel.cpp:100
 #, kde-format
 msgid "AccessibleId"
-msgstr ""
+msgstr "AccessibleId"
 
 #: model/accessiblepropertiesmodel.cpp:101
 #, kde-format
@@ -504,7 +505,7 @@ msgstr "Componente"
 #: model/accessiblepropertiesmodel.cpp:120
 #, kde-format
 msgid "BoundingRect"
-msgstr ""
+msgstr "BoundingRect"
 
 #: model/accessiblepropertiesmodel.cpp:121
 #, kde-format
@@ -514,7 +515,7 @@ msgstr "Camada"
 #: model/accessiblepropertiesmodel.cpp:122
 #, kde-format
 msgid "MDIZOrder"
-msgstr ""
+msgstr "MDIZOrder"
 
 #: model/accessiblepropertiesmodel.cpp:123
 #, kde-format
@@ -534,7 +535,7 @@ msgstr "Aplicativo"
 #: model/accessiblepropertiesmodel.cpp:133
 #, kde-format
 msgid "ToolkitName"
-msgstr ""
+msgstr "ToolkitName"
 
 #: model/accessiblepropertiesmodel.cpp:134
 #, kde-format
@@ -555,7 +556,7 @@ msgstr "Local"
 #: model/accessiblepropertiesmodel.cpp:137
 #, kde-format
 msgid "BusAddress"
-msgstr ""
+msgstr "BusAddress"
 
 #: model/accessiblepropertiesmodel.cpp:140
 #, kde-format
@@ -585,7 +586,7 @@ msgstr "Imagem"
 #: model/accessiblepropertiesmodel.cpp:199
 #, kde-format
 msgid "Rect"
-msgstr ""
+msgstr "Rect"
 
 #: model/accessiblepropertiesmodel.cpp:202
 #, kde-format
@@ -607,7 +608,7 @@ msgstr "Texto"
 #: model/accessiblepropertiesmodel.cpp:245
 #, kde-format
 msgid "Caret Offset"
-msgstr ""
+msgstr "Deslocamento do caret (acento circunflexo)"
 
 #: model/accessiblepropertiesmodel.cpp:246
 #, kde-format
@@ -617,7 +618,7 @@ msgstr "Contagem de caracteres"
 #: model/accessiblepropertiesmodel.cpp:247
 #, kde-format
 msgid "Character Rect"
-msgstr ""
+msgstr "Caractere rect"
 
 #: model/accessiblepropertiesmodel.cpp:257
 #, kde-format
