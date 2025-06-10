@@ -3,6 +3,7 @@
 
 [Desktop Entry]
 Name=Accessibility Inspector
+Name[ar]=مفتش الإتاحة
 Name[ca]=Inspector d'accessibilitat
 Name[ca@valencia]=Inspector d'accessibilitat
 Name[cs]=Inspektor Přístupnosti
@@ -37,6 +38,7 @@ Name[x-test]=xxAccessibility Inspectorxx
 Name[zh_CN]=无障碍特性检测工具
 Name[zh_TW]=無障礙檢查工具
 GenericName=Accessibility Inspector
+GenericName[ar]=مفتش الإتاحة
 GenericName[ca]=Inspector d'accessibilitat
 GenericName[ca@valencia]=Inspector d'accessibilitat
 GenericName[cs]=Inspektor Přístupnosti
@@ -72,6 +74,7 @@ GenericName[x-test]=xxAccessibility Inspectorxx
 GenericName[zh_CN]=无障碍特性检测工具
 GenericName[zh_TW]=無障礙檢查工具
 Comment=Inspect your application and detect accessibility issues
+Comment[ar]=افحص تطبيقك واكتشف مشكلات إمكانية الوصول
 Comment[ca]=Inspecciona la vostra aplicació i detecta problemes d'accessibilitat
 Comment[ca@valencia]=Inspecciona la vostra aplicació i detecta problemes d'accessibilitat
 Comment[en_GB]=Inspect your application and detect accessibility issues
