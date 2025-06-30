@@ -1,15 +1,15 @@
 # Spanish translations for accessibilityinspector.po package.
-# Copyright (C) 2023 This file is copyright:
+# Copyright (C) 2023-2025 This file is copyright:
 # This file is distributed under the same license as the accessibility-inspector package.
 # Automatically generated, 2023.
 #
-# SPDX-FileCopyrightText: 2023, 2024 Eloy Cuadra <ecuadra@eloihr.net>
+# SPDX-FileCopyrightText: 2023, 2024, 2025 Eloy Cuadra <ecuadra@eloihr.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: accessibilityinspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-08-12 00:36+0000\n"
-"PO-Revision-Date: 2024-01-05 01:05+0100\n"
+"PO-Revision-Date: 2025-06-29 13:33+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -71,7 +71,7 @@ msgstr "Expandir todo"
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Filter..."
-msgstr "Filtro..."
+msgstr "Filtro…"
 
 #: apps/main.cpp:25
 #, kde-format
@@ -399,7 +399,7 @@ msgstr "Seguir el foco"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Cache..."
-msgstr "Caché..."
+msgstr "Caché…"
 
 #: mainwindow.cpp:91
 #, kde-format
@@ -705,14 +705,3 @@ msgstr "Límites"
 msgctxt "@info:whatsthis"
 msgid "Visualize the component boundaries"
 msgstr "Visualizar los límites del componente"
-
-#~ msgid "Developer"
-#~ msgstr "Desarrollador"
-
-#~ msgid "Tree"
-#~ msgstr "Árbol"
-
-#, fuzzy
-#~| msgid "Accessible"
-#~ msgid "Tree of accessibles"
-#~ msgstr "Accesible"
