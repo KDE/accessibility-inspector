@@ -128,7 +128,7 @@ msgstr "حدّث"
 #, kde-format
 msgctxt "@action:button"
 msgid "Clear"
-msgstr "امسح"
+msgstr "امحُ"
 
 #: clientcachedialog.cpp:50
 #, kde-format
@@ -296,7 +296,7 @@ msgstr "مرشح الأحداث"
 #: eventview.ui:65
 #, kde-format
 msgid "Clear Events"
-msgstr "امسح الأحداث"
+msgstr "امحُ الأحداث"
 
 #. i18n: ectx: property (text), widget (QPushButton, clearButton)
 #: eventview.ui:68
