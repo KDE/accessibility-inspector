@@ -115,9 +115,10 @@
   <categories>
     <category>Development</category>
   </categories>
-  <developer id="https://kde.org">
-    <name>The KDE Community</name>
-  </developer>
+  <developer id="org.kde">
+    <name translate="no">KDE</name>
+    <url>https://kde.org</url>
+  </developer>  
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>LGPL-2.0-or-later</project_license>
   <custom>
