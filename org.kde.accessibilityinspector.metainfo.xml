@@ -40,7 +40,6 @@
   <name xml:lang="tg">Нозири қобилияти дастрасӣ</name>
   <name xml:lang="tr">Erişilebilirlik Denetçisi</name>
   <name xml:lang="uk">Ревізор доступності</name>
-  <name xml:lang="x-test">xxAccessibility Inspectorxx</name>
   <name xml:lang="zh-CN">无障碍特性检测工具</name>
   <name xml:lang="zh-TW">無障礙檢查工具</name>
   <summary>Inspect your application accessibility tree</summary>
@@ -73,7 +72,6 @@
   <summary xml:lang="tg">Дарахти қобилияти дастрасии барномаи худро тафтиш намоед</summary>
   <summary xml:lang="tr">Uygulamanızın erişilebilirlik ağacını denetleyin</summary>
   <summary xml:lang="uk">Вивчення ієрархії доступності вашої програми</summary>
-  <summary xml:lang="x-test">xxInspect your application accessibility treexx</summary>
   <summary xml:lang="zh-CN">检测应用程序中的无障碍特性树</summary>
   <summary xml:lang="zh-TW">檢查您應用程式的無障礙樹狀圖</summary>
   <description>
@@ -106,7 +104,6 @@
     <p xml:lang="sv">Tillgänglighetsinspektören är som namnet anger en inspektör av ett programs tillgänglighetsträd. Den låter dig också kontrollera alla objekt som exponeras via At-SPI.</p>
     <p xml:lang="tr">Erişilebilirlik Denetçisi, adından da anlaşılabileceği üzere, uygulamalar için bir erişilebilirlik ağacı denetçisidir. At-SPI tarafından kullanıma açılan tüm ögeleri denetlemenize de izin verir.</p>
     <p xml:lang="uk">«Ревізор доступності», як можна зрозуміти з назви, ревізор для ієрархії доступності вашої програми. За її допомогою можна перевіряти усі запис, які відкриваються за допомогою At-SPI.</p>
-    <p xml:lang="x-test">xxAccessibility Inspector is as the name suggests an inspector for your application accessibility tree. It lets you check all the items exposed via At-SPI, too.xx</p>
     <p xml:lang="zh-CN">无障碍特性检测工具，顾名思义，就是用于检测应用程序的无障碍特性树。您可以使用它检查通过 At-SPI 暴露的所有项目。</p>
     <p xml:lang="zh-TW">無障礙檢查工具讓您檢查您的應用程式的無障礙樹狀圖。它也讓您檢查所有透過 At-SPI 公開的項目。</p>
   </description>
@@ -159,7 +156,6 @@
       <caption xml:lang="sv">Egenskaperna för en nod i tillgänglighetsträdet.</caption>
       <caption xml:lang="tr">Erişilebilirlik ağacının bir düğümünün özellikleri.</caption>
       <caption xml:lang="uk">Властивості вузла ієрархії доступності.</caption>
-      <caption xml:lang="x-test">xxThe properties of a node of the accessibility tree.xx</caption>
       <caption xml:lang="zh-CN">无障碍特性树中的一个节点的属性。</caption>
       <caption xml:lang="zh-TW">無障礙樹狀圖中一個節點的屬性。</caption>
     </screenshot>
@@ -196,7 +192,6 @@
       <caption xml:lang="tg">Рӯйхати ҳамаи рӯйдодҳои қаблӣ</caption>
       <caption xml:lang="tr">Tüm son gerçekleşen olayların bir listesi.</caption>
       <caption xml:lang="uk">Список усіх нещодавніх подій.</caption>
-      <caption xml:lang="x-test">xxThe list of all the recent events.xx</caption>
       <caption xml:lang="zh-CN">所有最近事件的清单。</caption>
       <caption xml:lang="zh-TW">所有最近事件的列表。</caption>
     </screenshot>
