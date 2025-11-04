@@ -531,7 +531,7 @@ msgstr "Application"
 #: model/accessiblepropertiesmodel.cpp:133
 #, kde-format
 msgid "ToolkitName"
-msgstr "Nom de la boîte à outils"
+msgstr "Nom de la boite à outils"
 
 #: model/accessiblepropertiesmodel.cpp:134
 #, kde-format
