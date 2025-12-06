@@ -26,7 +26,11 @@
             ],
             "buildsystem": "cmake-ninja",
             "sources": [
-                { "type": "git", "url": "https://invent.kde.org/libraries/libqaccessibilityclient.git", "branch": "master" }
+                {
+		    "type": "git",
+                    "url": "https://invent.kde.org/libraries/libqaccessibilityclient.git",
+                    "branch": "master"
+                }
             ]
         },
         {
