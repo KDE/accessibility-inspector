@@ -229,12 +229,28 @@
       <url>https://carlschwan.eu/2024/02/28/independent-releases/</url>
       <description>
         <p>Update to Qt6</p>
+        <p xml:lang="ca">Actualització a les Qt6</p>
+        <p xml:lang="es">Actualización a Qt6</p>
+        <p xml:lang="he">עדכון ל־Qt6</p>
+        <p xml:lang="ka">განახლება Qt6-ზე</p>
+        <p xml:lang="pt-BR">Atualizado para o Qt6</p>
+        <p xml:lang="ru">Обновление до Qt6</p>
+        <p xml:lang="sl">Posodobi na Qt6</p>
+        <p xml:lang="uk">Оновлено до Qt6</p>
       </description>
     </release>
     <release version="1.0.0" date="2023-12-04">
       <url>https://carlschwan.eu/2023/12/04/accessibility-inspector-1.0/</url>
       <description>
         <p>Initial version as a standalone component.</p>
+        <p xml:lang="ca">Versió inicial com a component autònom.</p>
+        <p xml:lang="es">Versión inicial como componente independiente.</p>
+        <p xml:lang="he">המהדורה הראשונית כרכיב עצמאי.</p>
+        <p xml:lang="ka">პირველი ვერსია ცალკეული კომპონენტის სახით.</p>
+        <p xml:lang="pt-BR">Versão inicial como componente independente.</p>
+        <p xml:lang="ru">Первоначальная версия как отдельный компонент.</p>
+        <p xml:lang="sl">Začetna različica kot samostojna komponenta.</p>
+        <p xml:lang="uk">Початкова версія окремого компонента.</p>
       </description>
     </release>
   </releases>
