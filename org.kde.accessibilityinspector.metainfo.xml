@@ -229,9 +229,11 @@
         <p xml:lang="ca-valencia">Actualització a les Qt6</p>
         <p xml:lang="es">Actualización a Qt6</p>
         <p xml:lang="he">עדכון ל־Qt6</p>
+        <p xml:lang="ia">Actualisa a Qt6</p>
         <p xml:lang="nl">Bijgewerkt tot Qt6</p>
         <p xml:lang="pt-BR">Atualizado para o Qt6</p>
         <p xml:lang="ru">Обновление до Qt6</p>
+        <p xml:lang="uk">Оновлено до Qt6</p>
         <p xml:lang="zh-CN">更新到 Qt6</p>
       </description>
     </release>
@@ -244,9 +246,11 @@
         <p xml:lang="ca-valencia">Versió inicial com a component autònom.</p>
         <p xml:lang="es">Versión inicial como componente independiente.</p>
         <p xml:lang="he">המהדורה הראשונית כרכיב עצמאי.</p>
+        <p xml:lang="ia">Version initial como un componente autonome.</p>
         <p xml:lang="nl">Initiële versie als een alleenstaande component.</p>
         <p xml:lang="pt-BR">Versão inicial como componente independente.</p>
         <p xml:lang="ru">Первоначальная версия как отдельный компонент.</p>
+        <p xml:lang="uk">Початкова версія окремого компонента.</p>
         <p xml:lang="zh-CN">初始版本作为一个独立组件。</p>
       </description>
     </release>
