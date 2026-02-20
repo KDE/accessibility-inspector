@@ -240,6 +240,7 @@
         <p xml:lang="pt-BR">Atualizado para o Qt6</p>
         <p xml:lang="ru">Обновление до Qt6</p>
         <p xml:lang="sl">Posodobi na Qt6</p>
+        <p xml:lang="tr">Qt6 güncellemesi</p>
         <p xml:lang="uk">Оновлено до Qt6</p>
         <p xml:lang="zh-CN">更新到 Qt6</p>
       </description>
@@ -259,6 +260,7 @@
         <p xml:lang="pt-BR">Versão inicial como componente independente.</p>
         <p xml:lang="ru">Первоначальная версия как отдельный компонент.</p>
         <p xml:lang="sl">Začetna različica kot samostojna komponenta.</p>
+        <p xml:lang="tr">Tek bir bileşen olarak ilk sürüm</p>
         <p xml:lang="uk">Початкова версія окремого компонента.</p>
         <p xml:lang="zh-CN">初始版本作为一个独立组件。</p>
       </description>
