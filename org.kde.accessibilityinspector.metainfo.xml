@@ -236,6 +236,7 @@
         <p xml:lang="fr">Mettre à jour vers Qt6</p>
         <p xml:lang="he">עדכון ל־Qt6</p>
         <p xml:lang="ia">Actualisa a Qt6</p>
+        <p xml:lang="it">Aggiornamento a Qt6</p>
         <p xml:lang="ka">განახლება Qt6-ზე</p>
         <p xml:lang="nl">Bijgewerkt tot Qt6</p>
         <p xml:lang="pt-BR">Atualizado para o Qt6</p>
@@ -257,6 +258,7 @@
         <p xml:lang="fr">Version initiale en tant que composant autonome.</p>
         <p xml:lang="he">המהדורה הראשונית כרכיב עצמאי.</p>
         <p xml:lang="ia">Version initial como un componente autonome.</p>
+        <p xml:lang="it">Versione iniziale come componente autonomo.</p>
         <p xml:lang="ka">პირველი ვერსია ცალკეული კომპონენტის სახით.</p>
         <p xml:lang="nl">Initiële versie als een alleenstaande component.</p>
         <p xml:lang="pt-BR">Versão inicial como componente independente.</p>
