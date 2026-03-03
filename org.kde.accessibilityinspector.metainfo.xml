@@ -235,6 +235,7 @@
         <p xml:lang="he">עדכון ל־Qt6</p>
         <p xml:lang="ia">Actualisa a Qt6</p>
         <p xml:lang="it">Aggiornamento a Qt6</p>
+        <p xml:lang="ka">განახლება Qt6-ზე</p>
         <p xml:lang="nl">Bijgewerkt tot Qt6</p>
         <p xml:lang="pt-BR">Atualizado para o Qt6</p>
         <p xml:lang="ru">Обновление до Qt6</p>
@@ -242,6 +243,7 @@
         <p xml:lang="tr">Qt6 güncellemesi</p>
         <p xml:lang="uk">Оновлено до Qt6</p>
         <p xml:lang="zh-CN">更新到 Qt6</p>
+        <p xml:lang="zh-TW">更新到 Qt6</p>
       </description>
     </release>
     <release version="1.0.0" date="2023-12-04">
@@ -257,6 +259,7 @@
         <p xml:lang="he">המהדורה הראשונית כרכיב עצמאי.</p>
         <p xml:lang="ia">Version initial como un componente autonome.</p>
         <p xml:lang="it">Versione iniziale come componente autonomo.</p>
+        <p xml:lang="ka">პირველი ვერსია დამოუკიდებელი კომპონენტის სახით.</p>
         <p xml:lang="nl">Initiële versie als een alleenstaande component.</p>
         <p xml:lang="pt-BR">Versão inicial como componente independente.</p>
         <p xml:lang="ru">Первоначальная версия как отдельный компонент.</p>
@@ -264,6 +267,7 @@
         <p xml:lang="tr">Tek bir bileşen olarak ilk sürüm</p>
         <p xml:lang="uk">Початкова версія окремого компонента.</p>
         <p xml:lang="zh-CN">初始版本作为一个独立组件。</p>
+        <p xml:lang="zh-TW">作為獨立元件的初始版本。</p>
       </description>
     </release>
   </releases>
