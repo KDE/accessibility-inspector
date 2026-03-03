@@ -248,6 +248,7 @@
         <p xml:lang="tr">Qt6 güncellemesi</p>
         <p xml:lang="uk">Оновлено до Qt6</p>
         <p xml:lang="zh-CN">更新到 Qt6</p>
+        <p xml:lang="zh-TW">更新到 Qt6</p>
       </description>
     </release>
     <release version="1.0.0" date="2023-12-04">
@@ -271,6 +272,7 @@
         <p xml:lang="tr">Tek bir bileşen olarak ilk sürüm</p>
         <p xml:lang="uk">Початкова версія окремого компонента.</p>
         <p xml:lang="zh-CN">初始版本作为一个独立组件。</p>
+        <p xml:lang="zh-TW">作為獨立元件的初始版本。</p>
       </description>
     </release>
   </releases>
