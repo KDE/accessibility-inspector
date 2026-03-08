@@ -603,7 +603,7 @@ msgstr "表格"
 #: model/accessiblepropertiesmodel.cpp:253
 #, kde-format
 msgid "Text"
-msgstr "文字"
+msgstr "文本"
 
 #: model/accessiblepropertiesmodel.cpp:245
 #, kde-format
