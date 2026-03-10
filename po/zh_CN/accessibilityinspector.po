@@ -14,9 +14,9 @@ msgstr ""
 "X-Crowdin-Project: kdeorg\n"
 "X-Crowdin-Project-ID: 269464\n"
 "X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /kf6-trunk/messages/accessibility-inspector/"
+"X-Crowdin-File: /kf6-stable/messages/accessibility-inspector/"
 "accessibilityinspector.pot\n"
-"X-Crowdin-File-ID: 48640\n"
+"X-Crowdin-File-ID: 53328\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
