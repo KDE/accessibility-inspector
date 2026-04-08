@@ -10,7 +10,7 @@ If you have an issue with Accessibility Inspector, please [open a support thread
 
 ## Building
 
-The easiest way to make changes and test Accessibility Inspector during development is to [build it with kdesrc-build](https://community.kde.org/Get_Involved/development).
+The easiest way to make changes and test Accessibility Inspector during development is to [build it with kde-builder](https://develop.kde.org/docs/getting-started/building).
 
 ## Contributing
 
@@ -21,8 +21,6 @@ Like other projects in the KDE ecosystem, contributions are welcome from all. Th
  to report bugs.
 * Is there a part of Accessibility Inspector that's not translated? See the [Getting Involved in Translation wiki page](https://community.kde.org/Get_Involved/translation) to see how
   you can help translate!
-
-If you get stuck or need help with anything at all, head over to the [KDE New Contributors room](https://go.kde.org/matrix/#/#kde-welcome:kde.org) on Matrix. For questions about Accessibility Inspector, please ask in the [KDE Development room](https://go.kde.org/matrix/#/#kde-devel:kde.org). See [Matrix](https://community.kde.org/Matrix) for more details.
 
 ## License
 
