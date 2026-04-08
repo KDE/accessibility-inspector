@@ -10,7 +10,7 @@ If you have an issue with Accessibility Inspector, please [open a support thread
 
 ## Building
 
-The easiest way to make changes and test Accessibility Inspector during development is to [build it with kdesrc-build](https://community.kde.org/Get_Involved/development).
+The easiest way to make changes and test Accessibility Inspector during development is to [build it with kde-builder](https://develop.kde.org/docs/getting-started/building).
 
 ## Contributing
 
