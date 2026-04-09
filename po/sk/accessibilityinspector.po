@@ -12,8 +12,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 23.08.3\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Lokalize 23.08.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -46,22 +46,22 @@ msgstr "&Nastavenia"
 #: accessibletreeview.cpp:24
 #, kde-format
 msgid "Displays a hierachical tree of accessible objects"
-msgstr ""
+msgstr "Zobrazuje hierarchický strom prístupných objektov"
 
 #: accessibletreeview.cpp:57
 #, kde-format
 msgid "Expand Node"
-msgstr ""
+msgstr "Rozbaliť uzol"
 
 #: accessibletreeview.cpp:60
 #, kde-format
 msgid "Collapse Node"
-msgstr ""
+msgstr "Zbaliť uzol"
 
 #: accessibletreeview.cpp:64
 #, kde-format
 msgid "Expand All"
-msgstr ""
+msgstr "Rozbaliť všetko"
 
 #: accessibletreewidget.cpp:26
 #, kde-format
@@ -75,15 +75,14 @@ msgid "Accessibility Inspector"
 msgstr "Inšpektor prístupnosti"
 
 #: apps/main.cpp:27
-#, fuzzy, kde-format
+#, kde-format
 msgid "Accessibility inspector"
 msgstr "Inšpektor prístupnosti"
 
 #: apps/main.cpp:29
-#, fuzzy, kde-format
-#| msgid "© 2021-2023 Carl Schwan, 2021-2023 KDE Community"
+#, kde-format
 msgid "© 2021-2023 Carl Schwan, 2021-2024 KDE Community"
-msgstr "© 2021-2023 Carl Schwan, 2021-2023 KDE komunita"
+msgstr "© 2021-2023 Carl Schwan, 2021-2024 KDE komunita"
 
 #: apps/main.cpp:31
 #, kde-format
@@ -98,10 +97,10 @@ msgstr "Pôvodný autor"
 #: apps/main.cpp:33
 #, kde-format
 msgid "Laurent Montel"
-msgstr ""
+msgstr "Laurent Montel"
 
 #: apps/main.cpp:33 apps/main.cpp:35
-#, fuzzy, kde-format
+#, kde-format
 msgid "Maintainer"
 msgstr "Správca"
 
@@ -117,16 +116,16 @@ msgid "Cache"
 msgstr "Vyrovnávacia pamäť"
 
 #: clientcachedialog.cpp:44
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@action:button"
 msgid "Refresh"
 msgstr "Obnoviť"
 
 #: clientcachedialog.cpp:47
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@action:button"
 msgid "Clear"
-msgstr "Vyčistiť"
+msgstr "Vymazať"
 
 #: clientcachedialog.cpp:50
 #, kde-format
@@ -141,7 +140,7 @@ msgid "Disable"
 msgstr "Zakázať"
 
 #: clientcachedialog.cpp:56
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Weak"
 msgstr "Slabá"
@@ -153,13 +152,13 @@ msgid "Count:"
 msgstr "Počet:"
 
 #: clientcachedialog.cpp:101
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title:row"
 msgid "Name"
 msgstr "Názov"
 
 #: clientcachedialog.cpp:101
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title:row"
 msgid "Role"
 msgstr "Rola"
@@ -177,7 +176,7 @@ msgid "Accessible"
 msgstr "Prístupné"
 
 #: eventview.cpp:65
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@label"
 msgid "Role"
 msgstr "Rola"
@@ -197,7 +196,7 @@ msgstr "Akcia"
 #: eventview.cpp:194
 #, kde-format
 msgid "Displays all received events"
-msgstr ""
+msgstr "Zobrazuje všetky prijaté udalosti"
 
 #: eventview.cpp:264
 #, kde-format
@@ -206,13 +205,13 @@ msgid "Focus"
 msgstr "Zameranie"
 
 #: eventview.cpp:267
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "Accessibility event name: state changed"
 msgid "State"
 msgstr "Stav"
 
 #: eventview.cpp:270
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "Accessibility event name: name changed"
 msgid "Name"
 msgstr "Názov"
@@ -242,19 +241,19 @@ msgid "Object"
 msgstr "Objekt"
 
 #: eventview.cpp:285
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "Accessibility event name"
 msgid "Text"
 msgstr "Text"
 
 #: eventview.cpp:288
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "Accessibility event name"
 msgid "Table"
 msgstr "Tabuľka"
 
 #: eventview.cpp:291
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "Accessibility event name"
 msgid "Others"
 msgstr "Ostatné"
@@ -263,7 +262,7 @@ msgstr "Ostatné"
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "No Event"
-msgstr ""
+msgstr "Žiadna udalosť"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, EventViewWidget)
 #: eventview.ui:18
@@ -275,30 +274,30 @@ msgstr "Formulár"
 #: eventview.ui:32
 #, kde-format
 msgid "Accessible Filter"
-msgstr ""
+msgstr "Filter prístupnosti"
 
 #. i18n: ectx: property (accessibleName), widget (QLineEdit, roleFilterEdit)
 #. i18n: ectx: property (placeholderText), widget (QLineEdit, roleFilterEdit)
 #: eventview.ui:39 eventview.ui:45
 #, kde-format
 msgid "Role Filter"
-msgstr ""
+msgstr "Filter roly"
 
 #. i18n: ectx: property (accessibleName), widget (QComboBox, filterComboBox)
 #: eventview.ui:52
 #, kde-format
 msgid "Event Filter"
-msgstr ""
+msgstr "Filter udalostí"
 
 #. i18n: ectx: property (accessibleName), widget (QPushButton, clearButton)
 #: eventview.ui:65
 #, kde-format
 msgid "Clear Events"
-msgstr ""
+msgstr "Vyčistiť udalosti"
 
 #. i18n: ectx: property (text), widget (QPushButton, clearButton)
 #: eventview.ui:68
-#, fuzzy, kde-format
+#, kde-format
 msgid "&Clear"
 msgstr "V&yčistiť"
 
@@ -321,39 +320,39 @@ msgid "Boundaries"
 msgstr "Hranice"
 
 #: mainwidget.cpp:147 mainwidget.cpp:149
-#, fuzzy, kde-format
+#, kde-format
 msgid "true"
 msgstr "pravda"
 
 #: mainwidget.cpp:147 mainwidget.cpp:149
-#, fuzzy, kde-format
+#, kde-format
 msgid "false"
 msgstr "nepravda"
 
 #: mainwidget.cpp:158
 #, kde-format
 msgid "Child Added %1"
-msgstr ""
+msgstr "Podriadený pridaný %1"
 
 #: mainwidget.cpp:164
 #, kde-format
 msgid "Child Removed %1"
-msgstr ""
+msgstr "Podriadený odstránený %1"
 
 #: mainwidget.cpp:170
 #, kde-format
 msgid "Visible Data Changed"
-msgstr ""
+msgstr "Viditeľné dáta sa zmenili"
 
 #: mainwidget.cpp:176
 #, kde-format
 msgid "Selection Changed"
-msgstr ""
+msgstr "Výber sa zmenil"
 
 #: mainwidget.cpp:182
 #, kde-format
 msgid "Model Changed"
-msgstr ""
+msgstr "Model sa zmenil"
 
 #: mainwidget.cpp:197
 #, kde-format
@@ -373,24 +372,24 @@ msgstr "Vytvoriť"
 #: mainwidget.cpp:220
 #, kde-format
 msgid "Destroy"
-msgstr ""
+msgstr "Zničiť"
 
 #: mainwidget.cpp:321
 #, kde-format
 msgid "Text caret moved (%1)"
-msgstr ""
+msgstr "Textový kurzor presunutý (%1)"
 
 #: mainwindow.cpp:73
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Reset Tree"
-msgstr ""
+msgstr "Obnoviť strom"
 
 #: mainwindow.cpp:79
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Follow Focus"
-msgstr ""
+msgstr "Sledovať fokus"
 
 #: mainwindow.cpp:86
 #, kde-format
@@ -402,7 +401,7 @@ msgstr "Vyrovnávacia pamäť..."
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Enable Accessibility"
-msgstr ""
+msgstr "Povoliť prístupnosť"
 
 #: mainwindow.cpp:101
 #, kde-format
@@ -414,7 +413,7 @@ msgstr "Povoliť čítačku obrazovky"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy property value"
-msgstr ""
+msgstr "Kopírovať hodnotu vlastnosti"
 
 #: model/accessibleobjecttreemodel.cpp:33
 #: model/accessiblepropertiesmodel.cpp:91
@@ -424,14 +423,14 @@ msgstr "Prístupné"
 
 #: model/accessibleobjecttreemodel.cpp:35
 #: model/accessiblepropertiesmodel.cpp:95
-#, fuzzy, kde-format
+#, kde-format
 msgid "Role"
 msgstr "Rola"
 
 #: model/accessiblepropertiesmodel.cpp:53
-#, fuzzy, kde-format
+#, kde-format
 msgid "Property"
-msgstr "Vlastnosť"
+msgstr "Vlastníctvo"
 
 #: model/accessiblepropertiesmodel.cpp:55
 #: model/accessiblepropertiesmodel.cpp:267
@@ -440,7 +439,7 @@ msgid "Value"
 msgstr "Hodnota"
 
 #: model/accessiblepropertiesmodel.cpp:93
-#, fuzzy, kde-format
+#, kde-format
 msgid "Name"
 msgstr "Názov"
 
@@ -453,57 +452,57 @@ msgstr "Popis"
 #: model/accessiblepropertiesmodel.cpp:96
 #, kde-format
 msgid "LocalizedRole"
-msgstr ""
+msgstr "Lokalizovaná rola"
 
 #: model/accessiblepropertiesmodel.cpp:97
-#, fuzzy, kde-format
+#, kde-format
 msgid "Visible"
-msgstr "Viditeľný"
+msgstr "Viditeľné"
 
 #: model/accessiblepropertiesmodel.cpp:98
-#, fuzzy, kde-format
+#, kde-format
 msgid "Default"
 msgstr "Predvolené"
 
 #: model/accessiblepropertiesmodel.cpp:99
-#, fuzzy, kde-format
+#, kde-format
 msgid "State"
 msgstr "Stav"
 
 #: model/accessiblepropertiesmodel.cpp:100
 #, kde-format
 msgid "AccessibleId"
-msgstr ""
+msgstr "AccessibleId"
 
 #: model/accessiblepropertiesmodel.cpp:101
-#, fuzzy, kde-format
+#, kde-format
 msgid "Url"
 msgstr "Url"
 
 #: model/accessiblepropertiesmodel.cpp:104
-#, fuzzy, kde-format
+#, kde-format
 msgid "Parent"
 msgstr "Rodič"
 
 #: model/accessiblepropertiesmodel.cpp:106
-#, fuzzy, kde-format
+#, kde-format
 msgid "Children"
-msgstr "Deti"
+msgstr "Podriadené"
 
 #: model/accessiblepropertiesmodel.cpp:110
 #, kde-format
 msgid "Broken child"
-msgstr ""
+msgstr "Poškodený podriadený"
 
 #: model/accessiblepropertiesmodel.cpp:118
-#, fuzzy, kde-format
+#, kde-format
 msgid "Component"
 msgstr "Komponent"
 
 #: model/accessiblepropertiesmodel.cpp:120
 #, kde-format
 msgid "BoundingRect"
-msgstr ""
+msgstr "BoundingRect"
 
 #: model/accessiblepropertiesmodel.cpp:121
 #, kde-format
@@ -513,7 +512,7 @@ msgstr "Vrstva"
 #: model/accessiblepropertiesmodel.cpp:122
 #, kde-format
 msgid "MDIZOrder"
-msgstr ""
+msgstr "MDIZOrder"
 
 #: model/accessiblepropertiesmodel.cpp:123
 #, kde-format
@@ -521,7 +520,7 @@ msgid "Alpha"
 msgstr "Alfa"
 
 #: model/accessiblepropertiesmodel.cpp:126
-#, fuzzy, kde-format
+#, kde-format
 msgid "Collection"
 msgstr "Kolekcia"
 
@@ -533,7 +532,7 @@ msgstr "Aplikácia"
 #: model/accessiblepropertiesmodel.cpp:133
 #, kde-format
 msgid "ToolkitName"
-msgstr ""
+msgstr "ToolkitName"
 
 #: model/accessiblepropertiesmodel.cpp:134
 #, kde-format
@@ -541,7 +540,7 @@ msgid "Version"
 msgstr "Verzia"
 
 #: model/accessiblepropertiesmodel.cpp:135
-#, fuzzy, kde-format
+#, kde-format
 msgid "Id"
 msgstr "Id"
 
@@ -554,7 +553,7 @@ msgstr "Lokalizácia"
 #: model/accessiblepropertiesmodel.cpp:137
 #, kde-format
 msgid "BusAddress"
-msgstr ""
+msgstr "BusAddress"
 
 #: model/accessiblepropertiesmodel.cpp:140
 #, kde-format
@@ -577,7 +576,7 @@ msgid "Hypertext"
 msgstr "Hypertext"
 
 #: model/accessiblepropertiesmodel.cpp:195
-#, fuzzy, kde-format
+#, kde-format
 msgid "Image"
 msgstr "Obrázok"
 
@@ -592,31 +591,31 @@ msgid "Selection"
 msgstr "Výber"
 
 #: model/accessiblepropertiesmodel.cpp:209
-#, fuzzy, kde-format
+#, kde-format
 msgid "Table"
 msgstr "Tabuľka"
 
 #: model/accessiblepropertiesmodel.cpp:242
 #: model/accessiblepropertiesmodel.cpp:251
 #: model/accessiblepropertiesmodel.cpp:253
-#, fuzzy, kde-format
+#, kde-format
 msgid "Text"
 msgstr "Text"
 
 #: model/accessiblepropertiesmodel.cpp:245
 #, kde-format
 msgid "Caret Offset"
-msgstr ""
+msgstr "Posun kurzora"
 
 #: model/accessiblepropertiesmodel.cpp:246
 #, kde-format
 msgid "Character Count"
-msgstr ""
+msgstr "Počet znakov"
 
 #: model/accessiblepropertiesmodel.cpp:247
 #, kde-format
 msgid "Character Rect"
-msgstr ""
+msgstr "Obdĺžnik znaku"
 
 #: model/accessiblepropertiesmodel.cpp:257
 #, kde-format
@@ -624,22 +623,22 @@ msgid "Selections"
 msgstr "Výbery"
 
 #: model/accessiblepropertiesmodel.cpp:269
-#, fuzzy, kde-format
+#, kde-format
 msgid "Current"
-msgstr "Aktuálne"
+msgstr "Aktuálny"
 
 #: model/accessiblepropertiesmodel.cpp:270
-#, fuzzy, kde-format
+#, kde-format
 msgid "Minimum"
 msgstr "Minimum"
 
 #: model/accessiblepropertiesmodel.cpp:271
-#, fuzzy, kde-format
+#, kde-format
 msgid "Maximum"
 msgstr "Maximum"
 
 #: model/accessiblepropertiesmodel.cpp:272
-#, fuzzy, kde-format
+#, kde-format
 msgid "Increment"
 msgstr "Zvýšiť"
 
@@ -651,27 +650,27 @@ msgstr "Soket"
 #: model/accessiblepropertiesmodel.cpp:281
 #, kde-format
 msgid "Event Keyboard"
-msgstr ""
+msgstr "Udalosť klávesnice"
 
 #: model/accessiblepropertiesmodel.cpp:286
 #, kde-format
 msgid "Event Mouse"
-msgstr ""
+msgstr "Udalosť myši"
 
 #: model/accessiblepropertiesmodel.cpp:291
 #, kde-format
 msgid "Event Object"
-msgstr ""
+msgstr "Udalosť objektu"
 
 #: model/accessiblepropertiesmodel.cpp:296
 #, kde-format
 msgid "Event Window"
-msgstr ""
+msgstr "Udalosť okna"
 
 #: model/accessiblepropertiesmodel.cpp:301
 #, kde-format
 msgid "Event Focus"
-msgstr ""
+msgstr "Udalosť fokusu"
 
 #: model/accessiblepropertiesmodel.cpp:308
 #: model/accessiblepropertiesmodel.cpp:336
@@ -689,7 +688,7 @@ msgstr "Zoznam vlastností"
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Displays properties of the selected accessible object"
-msgstr ""
+msgstr "Zobrazuje vlastnosti vybraného prístupného objektu"
 
 #: uiview.cpp:19
 #, kde-format
@@ -701,4 +700,4 @@ msgstr "Hranice"
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Visualize the component boundaries"
-msgstr ""
+msgstr "Vizualizovať hranice komponentu"
