@@ -70,6 +70,7 @@
   <summary xml:lang="ro">Inspectează arborele de accesibilitate al aplicației</summary>
   <summary xml:lang="ru">Анализ дерева доступности приложения</summary>
   <summary xml:lang="sa">स्वस्य अनुप्रयोगसुलभतावृक्षस्य निरीक्षणं कुर्वन्तु</summary>
+  <summary xml:lang="sk">Preskúmajte strom prístupnosti vašej aplikácie</summary>
   <summary xml:lang="sl">Preglejte drevo dostopnosti vaše aplikacije</summary>
   <summary xml:lang="sq">Inspektoni pemën e qasshmërisë të aplikacionit tuaj</summary>
   <summary xml:lang="sv">Inspektera programmets tillgänglighetsträd</summary>
@@ -105,6 +106,7 @@
     <p xml:lang="ro">Inspectorul de Accesibilitate, după cum sugerează denumirea, este un inspector pentru arborele de accesibilitate al aplicației dumneavoastră. Acesta vă ajută și să verificați toate elementele expuse prin At-SPI.</p>
     <p xml:lang="ru">Интерфейс «Accessibility Inspector» позволяет проанализировать дерево доступности приложения. Все выявленные элементы также можно проверить через At-SPI.</p>
     <p xml:lang="sa">अभिगम्यतानिरीक्षकः यथा नाम सूचयति तथा भवतः अनुप्रयोगसुलभतावृक्षस्य निरीक्षकः अस्ति । एतत् भवन्तं At-SPI मार्गेण अपि उजागरितानि सर्वाणि वस्तूनि परीक्षितुं शक्नोति ।</p>
+    <p xml:lang="sk">Inšpektor prístupnosti je, ako naznačuje názov, nástroj na kontrolu stromu prístupnosti vašej aplikácie. Umožňuje vám tiež skontrolovať všetky položky vystavené cez At-SPI.</p>
     <p xml:lang="sl">Inšpektor za dostopnost je, kot nakazuje ime, inšpektor za vaše drevo dostopnosti aplikacij. Omogoča vam, da preverite vse predmete, ki so izpostavljeni tudi prek At-SPI.</p>
     <p xml:lang="sq">Inspektori i Qasshmërisë, siç sugjeron edhe emri, është një inspektor për pemën e Qasshmërisë së aplikacionit tuaj. Gjithashtu, ju lejon të kontrolloni të gjitha elementet e ekspozuar nëpërmjet At-SPI.</p>
     <p xml:lang="sv">Tillgänglighetsinspektören är som namnet anger en inspektör av ett programs tillgänglighetsträd. Den låter dig också kontrollera alla objekt som exponeras via At-SPI.</p>
@@ -159,6 +161,7 @@
       <caption xml:lang="ro">Proprietățile unui nod al arborelui de accesibilitate.</caption>
       <caption xml:lang="ru">Свойства узла дерева доступности.</caption>
       <caption xml:lang="sa">सुलभतावृक्षस्य एकस्य नोडस्य गुणाः ।</caption>
+      <caption xml:lang="sk">Vlastnosti uzla stromu prístupnosti.</caption>
       <caption xml:lang="sl">Lastnosti vozlišča drevesa dostopnosti.</caption>
       <caption xml:lang="sq">Vetitë e një nyje të pemës së qasshmërisë.</caption>
       <caption xml:lang="sv">Egenskaperna för en nod i tillgänglighetsträdet.</caption>
@@ -196,6 +199,7 @@
       <caption xml:lang="ro">Lista tuturor evenimentelor recente.</caption>
       <caption xml:lang="ru">Список всех последних событий.</caption>
       <caption xml:lang="sa">अद्यतनस्य सर्वेषां घटनानां सूची।</caption>
+      <caption xml:lang="sk">Zoznam všetkých nedávnych udalostí.</caption>
       <caption xml:lang="sl">Seznam vseh zadnjih dogodkov.</caption>
       <caption xml:lang="sq">Lista e të gjitha ngjarjeve të fundit</caption>
       <caption xml:lang="sv">Listan över alla de senaste händelserna.</caption>
@@ -254,6 +258,7 @@
         <p xml:lang="pt-BR">Atualizado para o Qt6</p>
         <p xml:lang="ro">Actualizare la Qt6</p>
         <p xml:lang="ru">Обновление до Qt6</p>
+        <p xml:lang="sk">Aktualizácia na Qt6</p>
         <p xml:lang="sl">Posodobi na Qt6</p>
         <p xml:lang="tr">Qt6 güncellemesi</p>
         <p xml:lang="uk">Оновлено до Qt6</p>
@@ -282,6 +287,7 @@
         <p xml:lang="pt-BR">Versão inicial como componente independente.</p>
         <p xml:lang="ro">Versiune inițială ca componentă de sine stătătoare.</p>
         <p xml:lang="ru">Первоначальная версия как отдельный компонент.</p>
+        <p xml:lang="sk">Počiatočná verzia ako samostatná súčasť.</p>
         <p xml:lang="sl">Začetna različica kot samostojna komponenta.</p>
         <p xml:lang="tr">Tek bir bileşen olarak ilk sürüm</p>
         <p xml:lang="uk">Початкова версія окремого компонента.</p>
