@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: accessibility-inspector\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:48+0000\n"
-"PO-Revision-Date: 2026-05-23 10:40-0400\n"
+"PO-Revision-Date: 2026-05-28 16:50-0400\n"
 "Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
 "Language: ug\n"
@@ -22,12 +22,12 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "ئابدۇقادىر ئابلىز"
+msgstr "ئابدۇقادىر ئابلىز، غەيرەت كەنجى"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "sahranbay@gmail.com"
+msgstr "sahranbay@gmail.com, gheyret@gmail.com"
 
 #. i18n: ectx: Menu (edit)
 #: accessibilityinspectorui.rc:11
@@ -39,13 +39,13 @@ msgstr "تەھرىر(&E)"
 #: accessibilityinspectorui.rc:15
 #, kde-format
 msgid "View"
-msgstr ""
+msgstr "كۆرۈنۈش"
 
 #. i18n: ectx: Menu (settings)
 #: accessibilityinspectorui.rc:20
 #, kde-format
 msgid "&Settings"
-msgstr ""
+msgstr "تەڭشەك(&S)"
 
 #: accessibletreeview.cpp:24
 #, kde-format
@@ -55,328 +55,328 @@ msgstr ""
 #: accessibletreeview.cpp:57
 #, kde-format
 msgid "Expand Node"
-msgstr ""
+msgstr "تۈگۈننى ياي"
 
 #: accessibletreeview.cpp:60
 #, kde-format
 msgid "Collapse Node"
-msgstr ""
+msgstr "تۈگۈننى يىغ"
 
 #: accessibletreeview.cpp:64
 #, kde-format
 msgid "Expand All"
-msgstr ""
+msgstr "ھەممىنى ياي"
 
 #: accessibletreewidget.cpp:26
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Filter..."
-msgstr ""
+msgstr "سۈزگۈچ…"
 
 #: apps/main.cpp:25
 #, kde-format
 msgid "Accessibility Inspector"
-msgstr ""
+msgstr "قولايلىق تەكشۈرگۈچ"
 
 #: apps/main.cpp:27
 #, kde-format
 msgid "Accessibility inspector"
-msgstr ""
+msgstr "قولايلىق تەكشۈرگۈچ"
 
 #: apps/main.cpp:29
 #, kde-format
 msgid "© 2021-2023 Carl Schwan, 2021-2024 KDE Community"
-msgstr ""
+msgstr "© 2021-2023 Carl Schwan, 2021-2024 KDE جامائىتى"
 
 #: apps/main.cpp:31
 #, kde-format
 msgid "Frederik Gladhorn"
-msgstr ""
+msgstr "Frederik Gladhorn"
 
 #: apps/main.cpp:31
 #, kde-format
 msgid "Original author"
-msgstr ""
+msgstr "ئەسلى يازغۇچى"
 
 #: apps/main.cpp:33
 #, kde-format
 msgid "Laurent Montel"
-msgstr ""
+msgstr "Laurent Montel"
 
 #: apps/main.cpp:33 apps/main.cpp:35
 #, kde-format
 msgid "Maintainer"
-msgstr ""
+msgstr "ئاسرىغۇچى"
 
 #: apps/main.cpp:34
 #, kde-format
 msgid "Carl Schwan"
-msgstr ""
+msgstr "Carl Schwan"
 
 #: clientcachedialog.cpp:29
 #, kde-format
 msgctxt "@title:window"
 msgid "Cache"
-msgstr ""
+msgstr "غەملەك"
 
 #: clientcachedialog.cpp:44
 #, kde-format
 msgctxt "@action:button"
 msgid "Refresh"
-msgstr ""
+msgstr "يېڭىلا"
 
 #: clientcachedialog.cpp:47
 #, kde-format
 msgctxt "@action:button"
 msgid "Clear"
-msgstr ""
+msgstr "تازىلا"
 
 #: clientcachedialog.cpp:50
 #, kde-format
 msgctxt "@label"
 msgid "Strategy:"
-msgstr ""
+msgstr "تەدبىر:"
 
 #: clientcachedialog.cpp:55
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Disable"
-msgstr ""
+msgstr "چەكلە"
 
 #: clientcachedialog.cpp:56
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Weak"
-msgstr ""
+msgstr "ئاجىز"
 
 #: clientcachedialog.cpp:65
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Count:"
-msgstr ""
+msgstr "سانى:"
 
 #: clientcachedialog.cpp:101
 #, kde-format
 msgctxt "@title:row"
 msgid "Name"
-msgstr ""
+msgstr "ئاتى"
 
 #: clientcachedialog.cpp:101
 #, kde-format
 msgctxt "@title:row"
 msgid "Role"
-msgstr ""
+msgstr "رول"
 
 #: clientcachedialog.cpp:101
 #, kde-format
 msgctxt "@title:row"
 msgid "Identifier"
-msgstr ""
+msgstr "پەرقلەندۈرگۈچ"
 
 #: eventview.cpp:63
 #, kde-format
 msgctxt "@label"
 msgid "Accessible"
-msgstr ""
+msgstr "زىيارەتچان"
 
 #: eventview.cpp:65
 #, kde-format
 msgctxt "@label"
 msgid "Role"
-msgstr ""
+msgstr "رول"
 
 #: eventview.cpp:67
 #, kde-format
 msgctxt "@label"
 msgid "Event"
-msgstr ""
+msgstr "ھادىسە"
 
 #: eventview.cpp:69
 #, kde-format
 msgctxt "@label"
 msgid "Action"
-msgstr ""
+msgstr "مەشغۇلات"
 
 #: eventview.cpp:194
 #, kde-format
 msgid "Displays all received events"
-msgstr ""
+msgstr "تاپشۇرۇۋالغان بارلىق ھادىسىنى كۆرسەت"
 
 #: eventview.cpp:264
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Focus"
-msgstr ""
+msgstr "فوكۇس"
 
 #: eventview.cpp:267
 #, kde-format
 msgctxt "Accessibility event name: state changed"
 msgid "State"
-msgstr ""
+msgstr "ھالەت"
 
 #: eventview.cpp:270
 #, kde-format
 msgctxt "Accessibility event name: name changed"
 msgid "Name"
-msgstr ""
+msgstr "ئاتى"
 
 #: eventview.cpp:273
 #, kde-format
 msgctxt "Accessibility event name: description changed"
 msgid "Description"
-msgstr ""
+msgstr "چۈشەندۈرۈش"
 
 #: eventview.cpp:276
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Window"
-msgstr ""
+msgstr "كۆزنەك"
 
 #: eventview.cpp:279
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Document"
-msgstr ""
+msgstr "پۈتۈك"
 
 #: eventview.cpp:282
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Object"
-msgstr ""
+msgstr "نەڭ"
 
 #: eventview.cpp:285
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Text"
-msgstr ""
+msgstr "تېكىست"
 
 #: eventview.cpp:288
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Table"
-msgstr ""
+msgstr "جەدۋەل"
 
 #: eventview.cpp:291
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "Others"
-msgstr ""
+msgstr "باشقا"
 
 #: eventview.cpp:294
 #, kde-format
 msgctxt "Accessibility event name"
 msgid "No Event"
-msgstr ""
+msgstr "ھادىسە يوق"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, EventViewWidget)
 #: eventview.ui:18
 #, kde-format
 msgid "Form"
-msgstr ""
+msgstr "كۆزنەك"
 
 #. i18n: ectx: property (placeholderText), widget (QLineEdit, accessibleFilterEdit)
 #: eventview.ui:32
 #, kde-format
 msgid "Accessible Filter"
-msgstr ""
+msgstr "قولايلىق سۈزگۈچ"
 
 #. i18n: ectx: property (accessibleName), widget (QLineEdit, roleFilterEdit)
 #. i18n: ectx: property (placeholderText), widget (QLineEdit, roleFilterEdit)
 #: eventview.ui:39 eventview.ui:45
 #, kde-format
 msgid "Role Filter"
-msgstr ""
+msgstr "رول سۈزگۈچ"
 
 #. i18n: ectx: property (accessibleName), widget (QComboBox, filterComboBox)
 #: eventview.ui:52
 #, kde-format
 msgid "Event Filter"
-msgstr ""
+msgstr "ھادىسە سۈزگۈچ"
 
 #. i18n: ectx: property (accessibleName), widget (QPushButton, clearButton)
 #: eventview.ui:65
 #, kde-format
 msgid "Clear Events"
-msgstr ""
+msgstr "ھادىسە تازىلا"
 
 #. i18n: ectx: property (text), widget (QPushButton, clearButton)
 #: eventview.ui:68
 #, kde-format
 msgid "&Clear"
-msgstr ""
+msgstr "تازىلا(&C)"
 
 #: mainwidget.cpp:50
 #, kde-format
 msgctxt "@title:window"
 msgid "Properties"
-msgstr ""
+msgstr "خاسلىق"
 
 #: mainwidget.cpp:51
 #, kde-format
 msgctxt "@title:window"
 msgid "Events"
-msgstr ""
+msgstr "ھادىسە"
 
 #: mainwidget.cpp:52
 #, kde-format
 msgctxt "@title:window"
 msgid "Boundaries"
-msgstr ""
+msgstr "چېگرا"
 
 #: mainwidget.cpp:147 mainwidget.cpp:149
 #, kde-format
 msgid "true"
-msgstr ""
+msgstr "راست"
 
 #: mainwidget.cpp:147 mainwidget.cpp:149
 #, kde-format
 msgid "false"
-msgstr ""
+msgstr "يالغان"
 
 #: mainwidget.cpp:158
 #, kde-format
 msgid "Child Added %1"
-msgstr ""
+msgstr "تارماق %1 نى قوشتى"
 
 #: mainwidget.cpp:164
 #, kde-format
 msgid "Child Removed %1"
-msgstr ""
+msgstr "تارماق %1 نى چىقىرىۋەتتى"
 
 #: mainwidget.cpp:170
 #, kde-format
 msgid "Visible Data Changed"
-msgstr ""
+msgstr "كۆرۈنۈشچان سانلىق مەلۇمات ئۆزگەردى"
 
 #: mainwidget.cpp:176
 #, kde-format
 msgid "Selection Changed"
-msgstr ""
+msgstr "تاللاش ئۆزگەردى"
 
 #: mainwidget.cpp:182
 #, kde-format
 msgid "Model Changed"
-msgstr ""
+msgstr "مودېل ئۆزگەردى"
 
 #: mainwidget.cpp:197
 #, kde-format
 msgid "Add Object"
-msgstr ""
+msgstr "جىسىم قوش"
 
 #: mainwidget.cpp:203
 #, kde-format
 msgid "Remove Object"
-msgstr ""
+msgstr "جىسىمنى چىقىرىۋەت"
 
 #: mainwidget.cpp:214
 #, kde-format
 msgid "Create"
-msgstr ""
+msgstr "ياسا"
 
 #: mainwidget.cpp:220
 #, kde-format
 msgid "Destroy"
-msgstr ""
+msgstr "يوقات"
 
 #: mainwidget.cpp:321
 #, kde-format
@@ -411,7 +411,7 @@ msgstr ""
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Enable Screen Reader"
-msgstr ""
+msgstr "ئېكران ئوقۇغۇچنى قوزغىتىدۇ"
 
 #: mainwindow.cpp:112 propertytreeview.cpp:34
 #, kde-format
@@ -423,35 +423,35 @@ msgstr ""
 #: model/accessiblepropertiesmodel.cpp:91
 #, kde-format
 msgid "Accessible"
-msgstr ""
+msgstr "زىيارەتچان"
 
 #: model/accessibleobjecttreemodel.cpp:35
 #: model/accessiblepropertiesmodel.cpp:95
 #, kde-format
 msgid "Role"
-msgstr ""
+msgstr "رول"
 
 #: model/accessiblepropertiesmodel.cpp:53
 #, kde-format
 msgid "Property"
-msgstr ""
+msgstr "خاسلىق"
 
 #: model/accessiblepropertiesmodel.cpp:55
 #: model/accessiblepropertiesmodel.cpp:267
 #, kde-format
 msgid "Value"
-msgstr ""
+msgstr "قىممەت"
 
 #: model/accessiblepropertiesmodel.cpp:93
 #, kde-format
 msgid "Name"
-msgstr ""
+msgstr "ئاتى"
 
 #: model/accessiblepropertiesmodel.cpp:94
 #: model/accessiblepropertiesmodel.cpp:197
 #, kde-format
 msgid "Description"
-msgstr ""
+msgstr "چۈشەندۈرۈش"
 
 #: model/accessiblepropertiesmodel.cpp:96
 #, kde-format
@@ -461,17 +461,17 @@ msgstr ""
 #: model/accessiblepropertiesmodel.cpp:97
 #, kde-format
 msgid "Visible"
-msgstr ""
+msgstr "كۆرۈنۈشچان"
 
 #: model/accessiblepropertiesmodel.cpp:98
 #, kde-format
 msgid "Default"
-msgstr ""
+msgstr "كۆڭۈلدىكى"
 
 #: model/accessiblepropertiesmodel.cpp:99
 #, kde-format
 msgid "State"
-msgstr ""
+msgstr "ھالەت"
 
 #: model/accessiblepropertiesmodel.cpp:100
 #, kde-format
@@ -481,17 +481,17 @@ msgstr ""
 #: model/accessiblepropertiesmodel.cpp:101
 #, kde-format
 msgid "Url"
-msgstr ""
+msgstr "تور ئادرېس"
 
 #: model/accessiblepropertiesmodel.cpp:104
 #, kde-format
 msgid "Parent"
-msgstr ""
+msgstr "ئاتا"
 
 #: model/accessiblepropertiesmodel.cpp:106
 #, kde-format
 msgid "Children"
-msgstr ""
+msgstr "بالا"
 
 #: model/accessiblepropertiesmodel.cpp:110
 #, kde-format
@@ -501,7 +501,7 @@ msgstr ""
 #: model/accessiblepropertiesmodel.cpp:118
 #, kde-format
 msgid "Component"
-msgstr ""
+msgstr "بۆلەك"
 
 #: model/accessiblepropertiesmodel.cpp:120
 #, kde-format
@@ -511,7 +511,7 @@ msgstr ""
 #: model/accessiblepropertiesmodel.cpp:121
 #, kde-format
 msgid "Layer"
-msgstr ""
+msgstr "قەۋەت"
 
 #: model/accessiblepropertiesmodel.cpp:122
 #, kde-format
@@ -521,17 +521,17 @@ msgstr ""
 #: model/accessiblepropertiesmodel.cpp:123
 #, kde-format
 msgid "Alpha"
-msgstr ""
+msgstr "ئالفا"
 
 #: model/accessiblepropertiesmodel.cpp:126
 #, kde-format
 msgid "Collection"
-msgstr ""
+msgstr "توپلام"
 
 #: model/accessiblepropertiesmodel.cpp:131
 #, kde-format
 msgid "Application"
-msgstr ""
+msgstr "پىروگرامما"
 
 #: model/accessiblepropertiesmodel.cpp:133
 #, kde-format
@@ -541,7 +541,7 @@ msgstr ""
 #: model/accessiblepropertiesmodel.cpp:134
 #, kde-format
 msgid "Version"
-msgstr ""
+msgstr "نەشرى"
 
 #: model/accessiblepropertiesmodel.cpp:135
 #, kde-format
@@ -562,7 +562,7 @@ msgstr ""
 #: model/accessiblepropertiesmodel.cpp:140
 #, kde-format
 msgid "Document"
-msgstr ""
+msgstr "پۈتۈك"
 
 #: model/accessiblepropertiesmodel.cpp:149
 #, kde-format
@@ -582,7 +582,7 @@ msgstr ""
 #: model/accessiblepropertiesmodel.cpp:195
 #, kde-format
 msgid "Image"
-msgstr ""
+msgstr "سۈرەت"
 
 #: model/accessiblepropertiesmodel.cpp:199
 #, kde-format
@@ -592,19 +592,19 @@ msgstr ""
 #: model/accessiblepropertiesmodel.cpp:202
 #, kde-format
 msgid "Selection"
-msgstr ""
+msgstr "تاللاش"
 
 #: model/accessiblepropertiesmodel.cpp:209
 #, kde-format
 msgid "Table"
-msgstr ""
+msgstr "جەدۋەل"
 
 #: model/accessiblepropertiesmodel.cpp:242
 #: model/accessiblepropertiesmodel.cpp:251
 #: model/accessiblepropertiesmodel.cpp:253
 #, kde-format
 msgid "Text"
-msgstr ""
+msgstr "تېكىست"
 
 #: model/accessiblepropertiesmodel.cpp:245
 #, kde-format
@@ -629,22 +629,22 @@ msgstr ""
 #: model/accessiblepropertiesmodel.cpp:269
 #, kde-format
 msgid "Current"
-msgstr ""
+msgstr "نۆۋەتتىكى"
 
 #: model/accessiblepropertiesmodel.cpp:270
 #, kde-format
 msgid "Minimum"
-msgstr ""
+msgstr "ئەڭ كىچىك"
 
 #: model/accessiblepropertiesmodel.cpp:271
 #, kde-format
 msgid "Maximum"
-msgstr ""
+msgstr "ئەڭ چوڭ"
 
 #: model/accessiblepropertiesmodel.cpp:272
 #, kde-format
 msgid "Increment"
-msgstr ""
+msgstr "تەدرىجىي ئاشۇر"
 
 #: model/accessiblepropertiesmodel.cpp:275
 #, kde-format
@@ -680,7 +680,7 @@ msgstr ""
 #: model/accessiblepropertiesmodel.cpp:336
 #, kde-format
 msgid "Action"
-msgstr ""
+msgstr "مەشغۇلات"
 
 #: propertytreeview.cpp:14
 #, kde-format
@@ -698,7 +698,7 @@ msgstr ""
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Boundaries"
-msgstr ""
+msgstr "چېگرا"
 
 #: uiview.cpp:20
 #, kde-format
