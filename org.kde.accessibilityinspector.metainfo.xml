@@ -41,6 +41,7 @@
   <name xml:lang="sv">Tillgänglighetsinspektör</name>
   <name xml:lang="tg">Нозири қобилияти дастрасӣ</name>
   <name xml:lang="tr">Erişilebilirlik Denetçisi</name>
+  <name xml:lang="ug">قولايلىق تەكشۈرگۈچ</name>
   <name xml:lang="uk">Ревізор доступності</name>
   <name xml:lang="zh-CN">无障碍特性检测工具</name>
   <name xml:lang="zh-TW">無障礙檢查工具</name>
@@ -76,6 +77,7 @@
   <summary xml:lang="sv">Inspektera programmets tillgänglighetsträd</summary>
   <summary xml:lang="tg">Дарахти қобилияти дастрасии барномаи худро тафтиш намоед</summary>
   <summary xml:lang="tr">Uygulamanızın erişilebilirlik ağacını denetleyin</summary>
+  <summary xml:lang="ug">پىروگراممىنىڭ قولايلىق شېخىنى تەكشۈر</summary>
   <summary xml:lang="uk">Вивчення ієрархії доступності вашої програми</summary>
   <summary xml:lang="zh-CN">检测应用程序中的无障碍特性树</summary>
   <summary xml:lang="zh-TW">檢查您應用程式的無障礙樹狀圖</summary>
@@ -205,6 +207,7 @@
       <caption xml:lang="sv">Listan över alla de senaste händelserna.</caption>
       <caption xml:lang="tg">Рӯйхати ҳамаи рӯйдодҳои қаблӣ</caption>
       <caption xml:lang="tr">Tüm son gerçekleşen olayların bir listesi.</caption>
+      <caption xml:lang="ug">يېقىنقى بارلىق ھادىسىنىڭ تىزىملىكىنى كۆرسىتىدۇ.</caption>
       <caption xml:lang="uk">Список усіх нещодавніх подій.</caption>
       <caption xml:lang="zh-CN">所有最近事件的清单。</caption>
       <caption xml:lang="zh-TW">所有最近事件的列表。</caption>
@@ -264,6 +267,7 @@
         <p xml:lang="sk">Aktualizácia na Qt6</p>
         <p xml:lang="sl">Posodobi na Qt6</p>
         <p xml:lang="tr">Qt6 güncellemesi</p>
+        <p xml:lang="ug">Qt6 غا يېڭىلا</p>
         <p xml:lang="uk">Оновлено до Qt6</p>
         <p xml:lang="zh-CN">更新到 Qt6</p>
         <p xml:lang="zh-TW">更新到 Qt6</p>
