@@ -9,7 +9,6 @@
     "desktop-file-name-suffix": " (Nightly)",
     "finish-args": [
         "--device=dri",
-        "--share=at-spi",
         "--share=ipc",
         "--socket=fallback-x11",
         "--socket=wayland",
