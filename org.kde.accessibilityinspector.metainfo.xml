@@ -13,6 +13,7 @@
   <name xml:lang="ca">Inspector d'accessibilitat</name>
   <name xml:lang="ca-valencia">Inspector d'accessibilitat</name>
   <name xml:lang="cs">Inspektor Přístupnosti</name>
+  <name xml:lang="de">Accessibility Inspector</name>
   <name xml:lang="en-GB">Accessibility Inspector</name>
   <name xml:lang="eo">Accessibility Inspector</name>
   <name xml:lang="es">Inspector de accesibilidad</name>
@@ -255,6 +256,7 @@
         <p xml:lang="ca">Actualització a les Qt6</p>
         <p xml:lang="ca-valencia">Actualització a les Qt6</p>
         <p xml:lang="cs">Aktualizace na Qt6</p>
+        <p xml:lang="de">Auf Qt6 aktualisiert</p>
         <p xml:lang="es">Actualización a Qt6</p>
         <p xml:lang="eu">Qt6ra eguneratzea</p>
         <p xml:lang="fi">Päivitys Qt6:een</p>
