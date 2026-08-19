@@ -5,7 +5,9 @@
     "runtime-version": "6.11",
     "sdk": "org.kde.Sdk",
     "command": "accessibilityinspector",
-    "tags": ["nightly"],
+    "tags": [
+        "nightly"
+    ],
     "desktop-file-name-suffix": " (Nightly)",
     "finish-args": [
         "--device=dri",
@@ -27,7 +29,7 @@
             "buildsystem": "cmake-ninja",
             "sources": [
                 {
-		    "type": "git",
+                    "type": "git",
                     "url": "https://invent.kde.org/libraries/libqaccessibilityclient.git",
                     "branch": "master"
                 }
