@@ -118,7 +118,7 @@ msgstr "Cache"
 #, kde-format
 msgctxt "@action:button"
 msgid "Refresh"
-msgstr "Rafraîchir"
+msgstr "Rafraichir"
 
 #: clientcachedialog.cpp:47
 #, kde-format
