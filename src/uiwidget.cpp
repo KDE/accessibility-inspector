@@ -233,7 +233,7 @@ void UiWidget::drawObject(QPainter *painter, const QAccessibleClient::Accessible
             } else {
                 color = QColor(ROLECOLOR);
             }
-            color.setAlphaF(0.3);
+            color.setAlphaF(0.3f);
 
             painter->fillRect(r, color);
             if (depth == 1) {
