@@ -180,7 +180,7 @@ void AccessibleObjectTreeModel::updateTopLevelApps()
         if (indexOfApp < 0) {
             removeAccessible(index(i, 0, QModelIndex()));
         } else {
-            topLevelApps.takeAt(i);
+            topLevelApps.takeAt(indexOfApp);
         }
     }
 
@@ -233,7 +233,7 @@ QModelIndex AccessibleObjectTreeModel::indexForAccessible(const AccessibleObject
             for (const QAccessibleClient::AccessibleObject &child : object.children()) {
                 if (child.supportedInterfaces().testFlag(QAccessibleClient::AccessibleObject::ApplicationInterface)) {
                     for (int i = 0, total = mApps.size(); i < total; ++i) {
-                        if (mApps.at(i)->acc == object)
+                        if (mApps.at(i)->acc == child)
                             return createIndex(i, 0, mApps.at(i));
                     }
                 }
