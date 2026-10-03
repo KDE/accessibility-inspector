@@ -21,7 +21,7 @@ int AccessibleWrapper::childCount() const
 {
     if (mChildren.isEmpty())
         return acc.childCount();
-    return mChildren.count();
+    return static_cast<int>(mChildren.count());
 }
 
 AccessibleWrapper *AccessibleWrapper::parent() const
