@@ -1,0 +1,705 @@
+# Nemanja Hiršl <nemhirsl@gmail.com>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: accessibility-inspector\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2025-11-17 11:48+0000\n"
+"PO-Revision-Date: 2026-10-09 18:24+0200\n"
+"Last-Translator: Nemanja Hiršl <nemhirsl@gmail.com>\n"
+"Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
+"Language: sr@latin\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+"X-Environment: kde\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Nemanja Hiršl"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "nemhirsl@gmail.com"
+
+#. i18n: ectx: Menu (edit)
+#: accessibilityinspectorui.rc:11
+#, kde-format
+msgid "&Edit"
+msgstr "&Uređivanje"
+
+#. i18n: ectx: Menu (view)
+#: accessibilityinspectorui.rc:15
+#, kde-format
+msgid "View"
+msgstr "Prikaz"
+
+#. i18n: ectx: Menu (settings)
+#: accessibilityinspectorui.rc:20
+#, kde-format
+msgid "&Settings"
+msgstr "&Podešavanje"
+
+#: accessibletreeview.cpp:24
+#, kde-format
+msgid "Displays a hierachical tree of accessible objects"
+msgstr "Prikazuje hijerarhijsko stablo objekata pristupačnosti"
+
+#: accessibletreeview.cpp:57
+#, kde-format
+msgid "Expand Node"
+msgstr "Raširi čvor"
+
+#: accessibletreeview.cpp:60
+#, kde-format
+msgid "Collapse Node"
+msgstr "Sažmi čvor"
+
+#: accessibletreeview.cpp:64
+#, kde-format
+msgid "Expand All"
+msgstr "Raširi sve"
+
+#: accessibletreewidget.cpp:26
+#, kde-format
+msgctxt "@info:placeholder"
+msgid "Filter..."
+msgstr "Filter..."
+
+#: apps/main.cpp:25
+#, kde-format
+msgid "Accessibility Inspector"
+msgstr "Inspektor pristupačnosti"
+
+#: apps/main.cpp:27
+#, kde-format
+msgid "Accessibility inspector"
+msgstr "Inspektor pristupačnosti"
+
+#: apps/main.cpp:29
+#, kde-format
+msgid "© 2021-2023 Carl Schwan, 2021-2024 KDE Community"
+msgstr "© 2021–2023 Carl Schwan, 2021–2024 zajednica KDE‑a"
+
+#: apps/main.cpp:31
+#, kde-format
+msgid "Frederik Gladhorn"
+msgstr "Frederik Gladhorn"
+
+#: apps/main.cpp:31
+#, kde-format
+msgid "Original author"
+msgstr "Prvobitni autor"
+
+#: apps/main.cpp:33
+#, kde-format
+msgid "Laurent Montel"
+msgstr "Loren Montel"
+
+#: apps/main.cpp:33 apps/main.cpp:35
+#, kde-format
+msgid "Maintainer"
+msgstr "Održavalac"
+
+#: apps/main.cpp:34
+#, kde-format
+msgid "Carl Schwan"
+msgstr "Carl Schwan"
+
+#: clientcachedialog.cpp:29
+#, kde-format
+msgctxt "@title:window"
+msgid "Cache"
+msgstr "Keš"
+
+#: clientcachedialog.cpp:44
+#, kde-format
+msgctxt "@action:button"
+msgid "Refresh"
+msgstr "Osveži"
+
+#: clientcachedialog.cpp:47
+#, kde-format
+msgctxt "@action:button"
+msgid "Clear"
+msgstr "Očisti"
+
+#: clientcachedialog.cpp:50
+#, kde-format
+msgctxt "@label"
+msgid "Strategy:"
+msgstr "Strategija:"
+
+#: clientcachedialog.cpp:55
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Disable"
+msgstr "bez keša"
+
+#: clientcachedialog.cpp:56
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Weak"
+msgstr "slab keš"
+
+#: clientcachedialog.cpp:65
+#, kde-format
+msgctxt "@label:listbox"
+msgid "Count:"
+msgstr "Broj:"
+
+#: clientcachedialog.cpp:101
+#, kde-format
+msgctxt "@title:row"
+msgid "Name"
+msgstr "Ime"
+
+#: clientcachedialog.cpp:101
+#, kde-format
+msgctxt "@title:row"
+msgid "Role"
+msgstr "Uloga"
+
+#: clientcachedialog.cpp:101
+#, kde-format
+msgctxt "@title:row"
+msgid "Identifier"
+msgstr "Identifikator"
+
+#: eventview.cpp:63
+#, kde-format
+msgctxt "@label"
+msgid "Accessible"
+msgstr "Objekat pristupačnosti"
+
+#: eventview.cpp:65
+#, kde-format
+msgctxt "@label"
+msgid "Role"
+msgstr "Uloga"
+
+#: eventview.cpp:67
+#, kde-format
+msgctxt "@label"
+msgid "Event"
+msgstr "Događaj"
+
+#: eventview.cpp:69
+#, kde-format
+msgctxt "@label"
+msgid "Action"
+msgstr "Radnja"
+
+#: eventview.cpp:194
+#, kde-format
+msgid "Displays all received events"
+msgstr "Prikazuje sve primljene događaje"
+
+#: eventview.cpp:264
+#, kde-format
+msgctxt "Accessibility event name"
+msgid "Focus"
+msgstr "Fokus"
+
+#: eventview.cpp:267
+#, kde-format
+msgctxt "Accessibility event name: state changed"
+msgid "State"
+msgstr "Stanje"
+
+#: eventview.cpp:270
+#, kde-format
+msgctxt "Accessibility event name: name changed"
+msgid "Name"
+msgstr "Ime"
+
+#: eventview.cpp:273
+#, kde-format
+msgctxt "Accessibility event name: description changed"
+msgid "Description"
+msgstr "Opis"
+
+#: eventview.cpp:276
+#, kde-format
+msgctxt "Accessibility event name"
+msgid "Window"
+msgstr "Prozor"
+
+#: eventview.cpp:279
+#, kde-format
+msgctxt "Accessibility event name"
+msgid "Document"
+msgstr "Dokument"
+
+#: eventview.cpp:282
+#, kde-format
+msgctxt "Accessibility event name"
+msgid "Object"
+msgstr "Objekat"
+
+#: eventview.cpp:285
+#, kde-format
+msgctxt "Accessibility event name"
+msgid "Text"
+msgstr "Tekst"
+
+#: eventview.cpp:288
+#, kde-format
+msgctxt "Accessibility event name"
+msgid "Table"
+msgstr "Tabela"
+
+#: eventview.cpp:291
+#, kde-format
+msgctxt "Accessibility event name"
+msgid "Others"
+msgstr "Ostalo"
+
+#: eventview.cpp:294
+#, kde-format
+msgctxt "Accessibility event name"
+msgid "No Event"
+msgstr "Bez događaja"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, EventViewWidget)
+#: eventview.ui:18
+#, kde-format
+msgid "Form"
+msgstr "Formular"
+
+#. i18n: ectx: property (placeholderText), widget (QLineEdit, accessibleFilterEdit)
+#: eventview.ui:32
+#, kde-format
+msgid "Accessible Filter"
+msgstr "Filter objekata pristupačnosti"
+
+#. i18n: ectx: property (accessibleName), widget (QLineEdit, roleFilterEdit)
+#. i18n: ectx: property (placeholderText), widget (QLineEdit, roleFilterEdit)
+#: eventview.ui:39 eventview.ui:45
+#, kde-format
+msgid "Role Filter"
+msgstr "Filter uloga"
+
+#. i18n: ectx: property (accessibleName), widget (QComboBox, filterComboBox)
+#: eventview.ui:52
+#, kde-format
+msgid "Event Filter"
+msgstr "Filter događaja"
+
+#. i18n: ectx: property (accessibleName), widget (QPushButton, clearButton)
+#: eventview.ui:65
+#, kde-format
+msgid "Clear Events"
+msgstr "Očisti događaje"
+
+#. i18n: ectx: property (text), widget (QPushButton, clearButton)
+#: eventview.ui:68
+#, kde-format
+msgid "&Clear"
+msgstr "&Očisti"
+
+#: mainwidget.cpp:50
+#, kde-format
+msgctxt "@title:window"
+msgid "Properties"
+msgstr "Svojstva"
+
+#: mainwidget.cpp:51
+#, kde-format
+msgctxt "@title:window"
+msgid "Events"
+msgstr "Događaji"
+
+#: mainwidget.cpp:52
+#, kde-format
+msgctxt "@title:window"
+msgid "Boundaries"
+msgstr "Granice"
+
+#: mainwidget.cpp:147 mainwidget.cpp:149
+#, kde-format
+msgid "true"
+msgstr "tačno"
+
+#: mainwidget.cpp:147 mainwidget.cpp:149
+#, kde-format
+msgid "false"
+msgstr "netačno"
+
+#: mainwidget.cpp:158
+#, kde-format
+msgid "Child Added %1"
+msgstr "Dodato dete %1"
+
+#: mainwidget.cpp:164
+#, kde-format
+msgid "Child Removed %1"
+msgstr "Uklonjeno dete %1"
+
+#: mainwidget.cpp:170
+#, kde-format
+msgid "Visible Data Changed"
+msgstr "Promenjeni vidljivi podaci"
+
+#: mainwidget.cpp:176
+#, kde-format
+msgid "Selection Changed"
+msgstr "Promenjen izbor"
+
+#: mainwidget.cpp:182
+#, kde-format
+msgid "Model Changed"
+msgstr "Promenjen model"
+
+#: mainwidget.cpp:197
+#, kde-format
+msgid "Add Object"
+msgstr "Dodat objekat"
+
+#: mainwidget.cpp:203
+#, kde-format
+msgid "Remove Object"
+msgstr "Uklonjen objekat"
+
+#: mainwidget.cpp:214
+#, kde-format
+msgid "Create"
+msgstr "Napravljen"
+
+#: mainwidget.cpp:220
+#, kde-format
+msgid "Destroy"
+msgstr "Uništen"
+
+#: mainwidget.cpp:321
+#, kde-format
+msgid "Text caret moved (%1)"
+msgstr "Pomeren tekstualni kursor (%1)"
+
+#: mainwindow.cpp:73
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Reset Tree"
+msgstr "Resetuj stablo"
+
+#: mainwindow.cpp:79
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Follow Focus"
+msgstr "Prati fokus"
+
+#: mainwindow.cpp:86
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Cache..."
+msgstr "Keš..."
+
+#: mainwindow.cpp:91
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Enable Accessibility"
+msgstr "Uključi pristupačnost"
+
+#: mainwindow.cpp:101
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Enable Screen Reader"
+msgstr "Uključi čitač ekrana"
+
+#: mainwindow.cpp:112 propertytreeview.cpp:34
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Copy property value"
+msgstr "Kopiraj vrednost svojstva"
+
+#: model/accessibleobjecttreemodel.cpp:33
+#: model/accessiblepropertiesmodel.cpp:91
+#, kde-format
+msgid "Accessible"
+msgstr "Objekat pristupačnosti"
+
+#: model/accessibleobjecttreemodel.cpp:35
+#: model/accessiblepropertiesmodel.cpp:95
+#, kde-format
+msgid "Role"
+msgstr "Uloga"
+
+#: model/accessiblepropertiesmodel.cpp:53
+#, kde-format
+msgid "Property"
+msgstr "Svojstvo"
+
+#: model/accessiblepropertiesmodel.cpp:55
+#: model/accessiblepropertiesmodel.cpp:267
+#, kde-format
+msgid "Value"
+msgstr "Vrednost"
+
+#: model/accessiblepropertiesmodel.cpp:93
+#, kde-format
+msgid "Name"
+msgstr "Ime"
+
+#: model/accessiblepropertiesmodel.cpp:94
+#: model/accessiblepropertiesmodel.cpp:197
+#, kde-format
+msgid "Description"
+msgstr "Opis"
+
+#: model/accessiblepropertiesmodel.cpp:96
+#, kde-format
+msgid "LocalizedRole"
+msgstr "Lokalizovana uloga"
+
+#: model/accessiblepropertiesmodel.cpp:97
+#, kde-format
+msgid "Visible"
+msgstr "Vidljiv"
+
+#: model/accessiblepropertiesmodel.cpp:98
+#, kde-format
+msgid "Default"
+msgstr "Podrazumevan"
+
+#: model/accessiblepropertiesmodel.cpp:99
+#, kde-format
+msgid "State"
+msgstr "Stanje"
+
+#: model/accessiblepropertiesmodel.cpp:100
+#, kde-format
+msgid "AccessibleId"
+msgstr "ID pristupačnosti"
+
+#: model/accessiblepropertiesmodel.cpp:101
+#, kde-format
+msgid "Url"
+msgstr "URL"
+
+#: model/accessiblepropertiesmodel.cpp:104
+#, kde-format
+msgid "Parent"
+msgstr "Roditelj"
+
+#: model/accessiblepropertiesmodel.cpp:106
+#, kde-format
+msgid "Children"
+msgstr "Deca"
+
+#: model/accessiblepropertiesmodel.cpp:110
+#, kde-format
+msgid "Broken child"
+msgstr "Pokvareno dete"
+
+#: model/accessiblepropertiesmodel.cpp:118
+#, kde-format
+msgid "Component"
+msgstr "Komponenta"
+
+#: model/accessiblepropertiesmodel.cpp:120
+#, kde-format
+msgid "BoundingRect"
+msgstr "Granični pravougaonik"
+
+#: model/accessiblepropertiesmodel.cpp:121
+#, kde-format
+msgid "Layer"
+msgstr "Sloj"
+
+#: model/accessiblepropertiesmodel.cpp:122
+#, kde-format
+msgid "MDIZOrder"
+msgstr "MDI poredak po dubini"
+
+#: model/accessiblepropertiesmodel.cpp:123
+#, kde-format
+msgid "Alpha"
+msgstr "Alfa"
+
+#: model/accessiblepropertiesmodel.cpp:126
+#, kde-format
+msgid "Collection"
+msgstr "Zbirka"
+
+#: model/accessiblepropertiesmodel.cpp:131
+#, kde-format
+msgid "Application"
+msgstr "Program"
+
+#: model/accessiblepropertiesmodel.cpp:133
+#, kde-format
+msgid "ToolkitName"
+msgstr "Ime skupa alatki"
+
+#: model/accessiblepropertiesmodel.cpp:134
+#, kde-format
+msgid "Version"
+msgstr "Verzija"
+
+#: model/accessiblepropertiesmodel.cpp:135
+#, kde-format
+msgid "Id"
+msgstr "ID"
+
+#: model/accessiblepropertiesmodel.cpp:136
+#: model/accessiblepropertiesmodel.cpp:198
+#, kde-format
+msgid "Locale"
+msgstr "Lokalitet"
+
+#: model/accessiblepropertiesmodel.cpp:137
+#, kde-format
+msgid "BusAddress"
+msgstr "Adresa na magistrali"
+
+#: model/accessiblepropertiesmodel.cpp:140
+#, kde-format
+msgid "Document"
+msgstr "Dokument"
+
+#: model/accessiblepropertiesmodel.cpp:149
+#, kde-format
+msgid "Editable Text"
+msgstr "Urediv tekst"
+
+#: model/accessiblepropertiesmodel.cpp:154
+#, kde-format
+msgid "Hyperlink"
+msgstr "Hiperveza"
+
+#: model/accessiblepropertiesmodel.cpp:176
+#, kde-format
+msgid "Hypertext"
+msgstr "Hipertekst"
+
+#: model/accessiblepropertiesmodel.cpp:195
+#, kde-format
+msgid "Image"
+msgstr "Slika"
+
+#: model/accessiblepropertiesmodel.cpp:199
+#, kde-format
+msgid "Rect"
+msgstr "Pravougaonik"
+
+#: model/accessiblepropertiesmodel.cpp:202
+#, kde-format
+msgid "Selection"
+msgstr "Izbor"
+
+#: model/accessiblepropertiesmodel.cpp:209
+#, kde-format
+msgid "Table"
+msgstr "Tabela"
+
+#: model/accessiblepropertiesmodel.cpp:242
+#: model/accessiblepropertiesmodel.cpp:251
+#: model/accessiblepropertiesmodel.cpp:253
+#, kde-format
+msgid "Text"
+msgstr "Tekst"
+
+#: model/accessiblepropertiesmodel.cpp:245
+#, kde-format
+msgid "Caret Offset"
+msgstr "Pomak kursora"
+
+#: model/accessiblepropertiesmodel.cpp:246
+#, kde-format
+msgid "Character Count"
+msgstr "Broj znakova"
+
+#: model/accessiblepropertiesmodel.cpp:247
+#, kde-format
+msgid "Character Rect"
+msgstr "Pravougaonik znaka"
+
+#: model/accessiblepropertiesmodel.cpp:257
+#, kde-format
+msgid "Selections"
+msgstr "Izbori"
+
+#: model/accessiblepropertiesmodel.cpp:269
+#, kde-format
+msgid "Current"
+msgstr "Trenutna"
+
+#: model/accessiblepropertiesmodel.cpp:270
+#, kde-format
+msgid "Minimum"
+msgstr "Najmanja"
+
+#: model/accessiblepropertiesmodel.cpp:271
+#, kde-format
+msgid "Maximum"
+msgstr "Najveća"
+
+#: model/accessiblepropertiesmodel.cpp:272
+#, kde-format
+msgid "Increment"
+msgstr "Korak"
+
+#: model/accessiblepropertiesmodel.cpp:275
+#, kde-format
+msgid "Socket"
+msgstr "Soket"
+
+#: model/accessiblepropertiesmodel.cpp:281
+#, kde-format
+msgid "Event Keyboard"
+msgstr "Događaj tastature"
+
+#: model/accessiblepropertiesmodel.cpp:286
+#, kde-format
+msgid "Event Mouse"
+msgstr "Događaj miša"
+
+#: model/accessiblepropertiesmodel.cpp:291
+#, kde-format
+msgid "Event Object"
+msgstr "Događaj objekta"
+
+#: model/accessiblepropertiesmodel.cpp:296
+#, kde-format
+msgid "Event Window"
+msgstr "Događaj prozora"
+
+#: model/accessiblepropertiesmodel.cpp:301
+#, kde-format
+msgid "Event Focus"
+msgstr "Događaj fokusa"
+
+#: model/accessiblepropertiesmodel.cpp:308
+#: model/accessiblepropertiesmodel.cpp:336
+#, kde-format
+msgid "Action"
+msgstr "Radnja"
+
+#: propertytreeview.cpp:14
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "List of properties"
+msgstr "Spisak svojstava"
+
+#: propertytreeview.cpp:15
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Displays properties of the selected accessible object"
+msgstr "Prikazuje svojstva izabranog objekta pristupačnosti"
+
+#: uiview.cpp:19
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Boundaries"
+msgstr "Granice"
+
+#: uiview.cpp:20
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Visualize the component boundaries"
+msgstr "Prikazuje granice komponenti"
