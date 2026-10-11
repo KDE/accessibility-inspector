@@ -39,6 +39,10 @@
   <name xml:lang="sk">Inšpektor prístupnosti</name>
   <name xml:lang="sl">Inšpektor za dostopnost</name>
   <name xml:lang="sq">Inspektori i Qasshmërisë</name>
+  <name xml:lang="sr">Инспектор приступачности</name>
+  <name xml:lang="sr-Latn">Inspektor pristupačnosti</name>
+  <name xml:lang="sr-ijekavian">Инспектор приступачности</name>
+  <name xml:lang="sr-ijekavianlatin">Inspektor pristupačnosti</name>
   <name xml:lang="sv">Tillgänglighetsinspektör</name>
   <name xml:lang="tg">Нозири қобилияти дастрасӣ</name>
   <name xml:lang="tr">Erişilebilirlik Denetçisi</name>
@@ -76,6 +80,10 @@
   <summary xml:lang="sk">Preskúmajte strom prístupnosti vašej aplikácie</summary>
   <summary xml:lang="sl">Preglejte drevo dostopnosti vaše aplikacije</summary>
   <summary xml:lang="sq">Inspektoni pemën e qasshmërisë të aplikacionit tuaj</summary>
+  <summary xml:lang="sr">Прегледајте стабло приступачности свог програма</summary>
+  <summary xml:lang="sr-Latn">Pregledajte stablo pristupačnosti svog programa</summary>
+  <summary xml:lang="sr-ijekavian">Прегледајте стабло приступачности свог програма</summary>
+  <summary xml:lang="sr-ijekavianlatin">Pregledajte stablo pristupačnosti svog programa</summary>
   <summary xml:lang="sv">Inspektera programmets tillgänglighetsträd</summary>
   <summary xml:lang="tg">Дарахти қобилияти дастрасии барномаи худро тафтиш намоед</summary>
   <summary xml:lang="tr">Uygulamanızın erişilebilirlik ağacını denetleyin</summary>
@@ -114,6 +122,10 @@
     <p xml:lang="sk">Inšpektor prístupnosti je, ako naznačuje názov, nástroj na kontrolu stromu prístupnosti vašej aplikácie. Umožňuje vám tiež skontrolovať všetky položky vystavené cez At-SPI.</p>
     <p xml:lang="sl">Inšpektor za dostopnost je, kot nakazuje ime, inšpektor za vaše drevo dostopnosti aplikacij. Omogoča vam, da preverite vse predmete, ki so izpostavljeni tudi prek At-SPI.</p>
     <p xml:lang="sq">Inspektori i Qasshmërisë, siç sugjeron edhe emri, është një inspektor për pemën e Qasshmërisë së aplikacionit tuaj. Gjithashtu, ju lejon të kontrolloni të gjitha elementet e ekspozuar nëpërmjet At-SPI.</p>
+    <p xml:lang="sr">Инспектор приступачности је, како му име каже, инспектор стабла приступачности вашег програма. Омогућава и проверу свих ставки које су доступне преко протокола At-SPI.</p>
+    <p xml:lang="sr-Latn">Inspektor pristupačnosti je, kako mu ime kaže, inspektor stabla pristupačnosti vašeg programa. Omogućava i proveru svih stavki koje su dostupne preko protokola At-SPI.</p>
+    <p xml:lang="sr-ijekavian">Инспектор приступачности је, како му име каже, инспектор стабла приступачности вашег програма. Омогућава и провјеру свих ставки које су доступне преко протокола At-SPI.</p>
+    <p xml:lang="sr-ijekavianlatin">Inspektor pristupačnosti je, kako mu ime kaže, inspektor stabla pristupačnosti vašeg programa. Omogućava i provjeru svih stavki koje su dostupne preko protokola At-SPI.</p>
     <p xml:lang="sv">Tillgänglighetsinspektören är som namnet anger en inspektör av ett programs tillgänglighetsträd. Den låter dig också kontrollera alla objekt som exponeras via At-SPI.</p>
     <p xml:lang="tr">Erişilebilirlik Denetçisi, adından da anlaşılabileceği üzere, uygulamalar için bir erişilebilirlik ağacı denetçisidir. At-SPI tarafından kullanıma açılan tüm ögeleri denetlemenize de izin verir.</p>
     <p xml:lang="uk">«Ревізор доступності», як можна зрозуміти з назви, ревізор для ієрархії доступності вашої програми. За її допомогою можна перевіряти усі запис, які відкриваються за допомогою At-SPI.</p>
@@ -170,6 +182,10 @@
       <caption xml:lang="sk">Vlastnosti uzla stromu prístupnosti.</caption>
       <caption xml:lang="sl">Lastnosti vozlišča drevesa dostopnosti.</caption>
       <caption xml:lang="sq">Vetitë e një nyje të pemës së qasshmërisë.</caption>
+      <caption xml:lang="sr">Својства чвора у стаблу приступачности.</caption>
+      <caption xml:lang="sr-Latn">Svojstva čvora u stablu pristupačnosti.</caption>
+      <caption xml:lang="sr-ijekavian">Својства чвора у стаблу приступачности.</caption>
+      <caption xml:lang="sr-ijekavianlatin">Svojstva čvora u stablu pristupačnosti.</caption>
       <caption xml:lang="sv">Egenskaperna för en nod i tillgänglighetsträdet.</caption>
       <caption xml:lang="tr">Erişilebilirlik ağacının bir düğümünün özellikleri.</caption>
       <caption xml:lang="uk">Властивості вузла ієрархії доступності.</caption>
@@ -209,6 +225,10 @@
       <caption xml:lang="sk">Zoznam všetkých nedávnych udalostí.</caption>
       <caption xml:lang="sl">Seznam vseh zadnjih dogodkov.</caption>
       <caption xml:lang="sq">Lista e të gjitha ngjarjeve të fundit</caption>
+      <caption xml:lang="sr">Списак свих недавних догађаја.</caption>
+      <caption xml:lang="sr-Latn">Spisak svih nedavnih događaja.</caption>
+      <caption xml:lang="sr-ijekavian">Списак свих недавних догађаја.</caption>
+      <caption xml:lang="sr-ijekavianlatin">Spisak svih nedavnih događaja.</caption>
       <caption xml:lang="sv">Listan över alla de senaste händelserna.</caption>
       <caption xml:lang="tg">Рӯйхати ҳамаи рӯйдодҳои қаблӣ</caption>
       <caption xml:lang="tr">Tüm son gerçekleşen olayların bir listesi.</caption>
@@ -277,6 +297,10 @@
         <p xml:lang="ru">Обновление до Qt6</p>
         <p xml:lang="sk">Aktualizácia na Qt6</p>
         <p xml:lang="sl">Posodobi na Qt6</p>
+        <p xml:lang="sr">Пренос на КуТ 6</p>
+        <p xml:lang="sr-Latn">Prenos na Qt 6</p>
+        <p xml:lang="sr-ijekavian">Пренос на КуТ 6</p>
+        <p xml:lang="sr-ijekavianlatin">Prenos na Qt 6</p>
         <p xml:lang="sv">Uppdatering till Qt6</p>
         <p xml:lang="tr">Qt6 güncellemesi</p>
         <p xml:lang="ug">Qt6 غا يېڭىلا</p>
@@ -311,6 +335,10 @@
         <p xml:lang="ru">Первоначальная версия как отдельный компонент.</p>
         <p xml:lang="sk">Počiatočná verzia ako samostatná súčasť.</p>
         <p xml:lang="sl">Začetna različica kot samostojna komponenta.</p>
+        <p xml:lang="sr">Почетно издање као самостална компонента.</p>
+        <p xml:lang="sr-Latn">Početno izdanje kao samostalna komponenta.</p>
+        <p xml:lang="sr-ijekavian">Почетно издање као самостална компонента.</p>
+        <p xml:lang="sr-ijekavianlatin">Početno izdanje kao samostalna komponenta.</p>
         <p xml:lang="sv">Ursprunglig version som fristående komponent.</p>
         <p xml:lang="tr">Tek bir bileşen olarak ilk sürüm</p>
         <p xml:lang="uk">Початкова версія окремого компонента.</p>
