@@ -705,6 +705,3 @@ msgstr "Límits"
 msgctxt "@info:whatsthis"
 msgid "Visualize the component boundaries"
 msgstr "Visualitza els límits del component"
-
-#~ msgid "Developer"
-#~ msgstr "Desenvolupador"
