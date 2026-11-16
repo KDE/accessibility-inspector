@@ -253,10 +253,10 @@ void ObjectPropertiesModel::setAccessibleObject(const QAccessibleClient::Accessi
             append(i18n("Text"), text, item);
         }
 
-        QList<QPair<int, int>> selections = acc.textSelections();
+        const QList<std::pair<int, int>> selections = acc.textSelections();
         QStandardItem *selectionsItem = append(i18n("Selections"), selections.count(), item);
         for (int i = 0; i < selections.count(); ++i) {
-            QPair<int, int> sel = selections[i];
+            const std::pair<int, int> sel = selections[i];
             const int startOffset = sel.first;
             const int endOffset = sel.second;
             Q_ASSERT(startOffset <= endOffset);
